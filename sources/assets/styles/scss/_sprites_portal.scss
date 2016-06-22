@@ -1,0 +1,151 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sp-bg-add-info1-name: 'sp-bg_add_info1';
+$sp-bg-add-info1-x: 176px;
+$sp-bg-add-info1-y: 187px;
+$sp-bg-add-info1-offset-x: -176px;
+$sp-bg-add-info1-offset-y: -187px;
+$sp-bg-add-info1-width: 14px;
+$sp-bg-add-info1-height: 23px;
+$sp-bg-add-info1-total-width: 272px;
+$sp-bg-add-info1-total-height: 590px;
+$sp-bg-add-info1-image: '/assets/images/portal/portal_sprites.png';
+$sp-bg-add-info1: (176px, 187px, -176px, -187px, 14px, 23px, 272px, 590px, '/assets/images/portal/portal_sprites.png', 'sp-bg_add_info1', );
+$sp-bg-add-info2-name: 'sp-bg_add_info2';
+$sp-bg-add-info2-x: 0px;
+$sp-bg-add-info2-y: 166px;
+$sp-bg-add-info2-offset-x: 0px;
+$sp-bg-add-info2-offset-y: -166px;
+$sp-bg-add-info2-width: 100px;
+$sp-bg-add-info2-height: 424px;
+$sp-bg-add-info2-total-width: 272px;
+$sp-bg-add-info2-total-height: 590px;
+$sp-bg-add-info2-image: '/assets/images/portal/portal_sprites.png';
+$sp-bg-add-info2: (0px, 166px, 0px, -166px, 100px, 424px, 272px, 590px, '/assets/images/portal/portal_sprites.png', 'sp-bg_add_info2', );
+$sp-bg-agree-ico-name: 'sp-bg_agree_ico';
+$sp-bg-agree-ico-x: 0px;
+$sp-bg-agree-ico-y: 0px;
+$sp-bg-agree-ico-offset-x: 0px;
+$sp-bg-agree-ico-offset-y: 0px;
+$sp-bg-agree-ico-width: 272px;
+$sp-bg-agree-ico-height: 160px;
+$sp-bg-agree-ico-total-width: 272px;
+$sp-bg-agree-ico-total-height: 590px;
+$sp-bg-agree-ico-image: '/assets/images/portal/portal_sprites.png';
+$sp-bg-agree-ico: (0px, 0px, 0px, 0px, 272px, 160px, 272px, 590px, '/assets/images/portal/portal_sprites.png', 'sp-bg_agree_ico', );
+$sp-bg-arctxt-name: 'sp-bg_arctxt';
+$sp-bg-arctxt-x: 106px;
+$sp-bg-arctxt-y: 236px;
+$sp-bg-arctxt-offset-x: -106px;
+$sp-bg-arctxt-offset-y: -236px;
+$sp-bg-arctxt-width: 140px;
+$sp-bg-arctxt-height: 22px;
+$sp-bg-arctxt-total-width: 272px;
+$sp-bg-arctxt-total-height: 590px;
+$sp-bg-arctxt-image: '/assets/images/portal/portal_sprites.png';
+$sp-bg-arctxt: (106px, 236px, -106px, -236px, 140px, 22px, 272px, 590px, '/assets/images/portal/portal_sprites.png', 'sp-bg_arctxt', );
+$sp-bg-bubblepoint-name: 'sp-bg_bubblepoint';
+$sp-bg-bubblepoint-x: 176px;
+$sp-bg-bubblepoint-y: 166px;
+$sp-bg-bubblepoint-offset-x: -176px;
+$sp-bg-bubblepoint-offset-y: -166px;
+$sp-bg-bubblepoint-width: 22px;
+$sp-bg-bubblepoint-height: 15px;
+$sp-bg-bubblepoint-total-width: 272px;
+$sp-bg-bubblepoint-total-height: 590px;
+$sp-bg-bubblepoint-image: '/assets/images/portal/portal_sprites.png';
+$sp-bg-bubblepoint: (176px, 166px, -176px, -166px, 22px, 15px, 272px, 590px, '/assets/images/portal/portal_sprites.png', 'sp-bg_bubblepoint', );
+$sp-bg-caution-name: 'sp-bg_caution';
+$sp-bg-caution-x: 106px;
+$sp-bg-caution-y: 166px;
+$sp-bg-caution-offset-x: -106px;
+$sp-bg-caution-offset-y: -166px;
+$sp-bg-caution-width: 64px;
+$sp-bg-caution-height: 64px;
+$sp-bg-caution-total-width: 272px;
+$sp-bg-caution-total-height: 590px;
+$sp-bg-caution-image: '/assets/images/portal/portal_sprites.png';
+$sp-bg-caution: (106px, 166px, -106px, -166px, 64px, 64px, 272px, 590px, '/assets/images/portal/portal_sprites.png', 'sp-bg_caution', );
+$spritesheet-width: 272px;
+$spritesheet-height: 590px;
+$spritesheet-image: '/assets/images/portal/portal_sprites.png';
+$spritesheet-sprites: ($sp-bg-add-info1, $sp-bg-add-info2, $sp-bg-agree-ico, $sp-bg-arctxt, $sp-bg-bubblepoint, $sp-bg-caution, );
+$spritesheet: (272px, 590px, '/assets/images/portal/portal_sprites.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

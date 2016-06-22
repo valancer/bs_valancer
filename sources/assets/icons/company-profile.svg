@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="51px" height="57px" viewBox="0 0 51 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>0620E599-1CD2-48D0-B512-246166DE3C65</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="17.9444444" y="13.68" width="25.6888889" height="40.77552"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="25.6888889" height="40.77552" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="5.1" y="35.2133333" width="16.0555556" height="21.5333333"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="16.0555556" height="21.5333333" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="metering_global" transform="translate(-1149.000000, -2.000000)">
+            <g id="company-profile-icn" transform="translate(1149.000000, 2.000000)">
+                <g id="Group-5-Copy-5">
+                    <ellipse id="Oval-70" fill="#000000" cx="25.5" cy="25.65" rx="25.5" ry="25.65"></ellipse>
+                    <use id="Rectangle-280" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="6" xlink:href="#path-1"></use>
+                    <use id="Rectangle-280-Copy" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="6" xlink:href="#path-3"></use>
+                </g>
+                <circle id="Oval-29" fill="#FFFFFF" cx="26" cy="22" r="2"></circle>
+                <circle id="Oval-29-Copy-2" fill="#FFFFFF" cx="26" cy="31" r="2"></circle>
+                <circle id="Oval-29-Copy" fill="#FFFFFF" cx="35" cy="22" r="2"></circle>
+                <circle id="Oval-29-Copy-3" fill="#FFFFFF" cx="35" cy="31" r="2"></circle>
+                <circle id="Oval-29-Copy-5" fill="#FFFFFF" cx="26" cy="40" r="2"></circle>
+                <circle id="Oval-29-Copy-6" fill="#FFFFFF" cx="13" cy="43" r="2"></circle>
+                <circle id="Oval-29-Copy-4" fill="#FFFFFF" cx="35" cy="40" r="2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
