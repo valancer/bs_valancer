@@ -2,7 +2,6 @@
 	font-family: "Icons";
 	src: url('/assets/fonts/icons/Icons.eot');
 	src: url('/assets/fonts/icons/Icons.eot?#iefix') format('eot'),
-		url('/assets/fonts/icons/Icons.woff2') format('woff2'),
 		url('/assets/fonts/icons/Icons.woff') format('woff'),
 		url('/assets/fonts/icons/Icons.ttf') format('truetype'),
 		url('/assets/fonts/icons/Icons.svg#Icons') format('svg');
@@ -30,7 +29,7 @@
 	@if $filename == asset {
 		$char: "\E001";
 	}
-	@if $filename == company-profile {
+	@if $filename == bespinglobal {
 		$char: "\E002";
 	}
 	@if $filename == metering {
@@ -54,11 +53,20 @@
 	}
 }
 
+@mixin icon-before($filename, $extend: true) {
+	@if $extend {
+		@extend %icon;
+	} @else {
+		@include icon-styles;
+	}
+	content: icon-char($filename);
+}
+
 .icon-asset {
 	@include icon(asset);
 }
-.icon-company-profile {
-	@include icon(company-profile);
+.icon-bespinglobal {
+	@include icon(bespinglobal);
 }
 .icon-metering {
 	@include icon(metering);

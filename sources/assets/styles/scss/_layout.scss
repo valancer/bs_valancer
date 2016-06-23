@@ -1,8 +1,50 @@
+
 /* GNB HEADER */
-.header { position: fixed; top: 0; right: 0; left: 0; z-index: z("gnb"); height: 78px; border-bottom: 1px solid #c7c7c7; background-color: #fff;
-	> .inner { position: relative; margin: 0 auto; padding-top: 14px; height: 64px; width: $contents-width; }
+.global-menu { position: relative; padding: 15px 40px 0 25px; height: 70px; border-bottom: 3px solid #e7e7e7; background-color: #fff;
+	.title { display: block; position: absolute; top: 0px; right: 0; bottom: 0; left: 25px; z-index: z("default") - 1;
+		&:before { content: ''; display: block; position: absolute; top: 50%; right: 465px; left: 0; z-index: z("default") - 1; margin-top: -2px; height: 4px; background-color: #000; }
+
+		.btn-language { position: absolute; top: 25px; right: 465px; padding-right: 15px; font-size: 13px; color: #000; letter-spacing: 0.4px;
+			&:after { content: ''; position: absolute; top: 50%; right: 0px; margin-top: -5px; height: 9px; width: 13px; background-color: #0f0; }
+		}
+		
+		.bespin-global { display: block; float: left; position: relative; z-index: z("default"); margin-top: 15px; padding-right: 20px; height: 52px; background-color: #fff;
+			&:before { content: ''; display: block; margin-top: 52/2 - ($sc-bespin-logotype-height/2); @include sprite($sc-bespin-logotype); }
+		}
+	}
+	
+	.uilts { position: relative; float: right; overflow: hidden; background-color: #fff;
+		.btns { display: block; float: left; margin-left: 20px; height: 52px; width: 52px; vertical-align: middle; text-indent: -9999px;
+			&.notifications { position: relative; @include sprite($sc-icon-notification);
+				.badge { display: block; position: absolute; top: 1px; right: 8px; height: 14px; width: 15px; font-size: 11px; font-weight: bold; color: #fff; text-align: center; text-indent: 0px; border: 3px solid #fff; border-radius: 50%; background-color: #f34122; }
+			}
+
+			&.dashboard { @include sprite($sc-icon-grid); }
+		}
+	}
+
+	.user { float: right; position: relative; margin-left: 30px; padding: 3px 17px 0 70px; height: 49px; width: 150px; background-color: #fff;
+		.thumb { display: block; overflow: hidden; position: absolute; top: 50%; left: 0px; margin-top: -26px; height: 52px; width: 52px; border-radius: 50%; background-color: #000;
+			img { max-height: 100%; max-width: 100%; }
+		}
+		.name { display: block; font-size: 24px; font-weight: bold; color: #000; line-height: 25px;
+			html:lang(ko) & { font-size: 20px; letter-spacing: 1.8px; }
+		}
+		.company { display: block; overflow: hidden; position: relative; height: 21px; padding-right: 20px; width: 100%; font-size: 18px; color: rgba(0, 0, 0, 0.51); text-align: left; text-overflow: ellipsis; white-space: nowrap;
+			&:before { content: ''; position: absolute; right: 20px; bottom: 0; left: 0; height: 2px; background-color: #878787; }
+			&:after { content: ''; position: absolute; top: 50%; right: 0px; margin-top: -5px; height: 9px; width: 13px; background-color: #0f0; }
+		}
+	}
 }
 
+
+.sub-menus { height: 78px; background-color: #f6f6f6;
+	ul {
+		> li {
+			a {  }
+		}
+	}
+}
 
 /* contents */
 
@@ -10,8 +52,8 @@
 
 
 /* FOOTER */
-.footer { height: 92px; background-color: #fff;
-	> .inner { position: relative; margin: 0 auto; padding-top: 30px; width: $contents-width; }
+.footer { height: 400px; background-color: #000;
+	
 }
 
 

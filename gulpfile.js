@@ -241,7 +241,7 @@ gulp.task('clean:release', function () {
 
 /* files - copy */
 gulp.task('copy:assets', function () {
-	return gulp.src(['sources/assets/**', '!**/scss', '!**/scss/**', '!**/psd/**', '!**/sprites', '!**/sprites/**', '!**/templates/', '!**/templates/**', '!**/icons/', '!**/icons/**'])
+	return gulp.src(['sources/assets/**', '!**/scss', '!**/scss/**', '!**/psd/**', '!**/sprites', '!**/sprites/**', '!**/templates/', '!**/templates/**', '!**/assets/icons/', '!**/assets/icons/**'])
 	.pipe(gulp.dest('build/assets/'));
 });
 gulp.task('copy:scripts', function () {
