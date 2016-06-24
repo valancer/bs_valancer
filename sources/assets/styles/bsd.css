@@ -146,7 +146,7 @@ input[type=submit] {
   src: url("/assets/fonts/icons/Icons.eot");
   src: url("/assets/fonts/icons/Icons.eot?#iefix") format("eot"), url("/assets/fonts/icons/Icons.woff") format("woff"), url("/assets/fonts/icons/Icons.ttf") format("truetype"), url("/assets/fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-asset:before, .icon-bespinglobal:before, .icon-metering:before, .icon-notification:before {
+.icon-arrow01:before, .icon-asset:before, .icon-metering:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .user .company:after, .sub-menus .all:after {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -156,17 +156,14 @@ input[type=submit] {
   text-decoration: none;
   text-transform: none; }
 
-.icon-asset:before {
+.icon-arrow01:before {
   content: ""; }
 
-.icon-bespinglobal:before {
+.icon-asset:before {
   content: ""; }
 
 .icon-metering:before {
   content: ""; }
-
-.icon-notification:before {
-  content: ""; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -392,14 +389,17 @@ The `sprites` mixin generates identical output to the CSS template
       color: #000;
       letter-spacing: 0.4px; }
       .global-menu .title .btn-language:after {
-        content: '';
+        content: ""; }
+      .global-menu .title .btn-language:after {
         position: absolute;
         top: 50%;
-        right: 0px;
+        right: 5px;
         margin-top: -5px;
         height: 9px;
         width: 13px;
-        background-color: #0f0; }
+        font-size: 15px;
+        color: #000;
+        line-height: 9px; }
     .global-menu .title .bespin-global {
       display: block;
       float: left;
@@ -417,6 +417,30 @@ The `sprites` mixin generates identical output to the CSS template
         background-position: 0px 0px;
         width: 173px;
         height: 16px; }
+    .global-menu .title .service {
+      display: block;
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      margin-top: -17px;
+      padding-right: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #000;
+      line-height: 34px;
+      background-color: #fff; }
+      .global-menu .title .service:before {
+        display: inline-block;
+        height: 33px;
+        width: 37px;
+        margin-right: 20px;
+        font-size: 31px;
+        vertical-align: middle;
+        text-align: center; }
+      .global-menu .title .service.asset:before {
+        content: ""; }
+      .global-menu .title .service.metering:before {
+        content: ""; }
   .global-menu .uilts {
     position: relative;
     float: right;
@@ -480,13 +504,12 @@ The `sprites` mixin generates identical output to the CSS template
         max-width: 100%; }
     .global-menu .user .name {
       display: block;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
       color: #000;
       line-height: 25px; }
-      html:lang(ko) .global-menu .user .name {
-        font-size: 20px;
-        letter-spacing: 1.8px; }
+      html:lang(en) .global-menu .user .name {
+        font-size: 24px; }
     .global-menu .user .company {
       display: block;
       overflow: hidden;
@@ -508,18 +531,77 @@ The `sprites` mixin generates identical output to the CSS template
         height: 2px;
         background-color: #878787; }
       .global-menu .user .company:after {
-        content: '';
+        content: ""; }
+      .global-menu .user .company:after {
         position: absolute;
         top: 50%;
-        right: 0px;
+        right: 6px;
         margin-top: -5px;
         height: 9px;
         width: 13px;
-        background-color: #0f0; }
+        font-size: 15px;
+        line-height: 9px;
+        color: #878787; }
 
 .sub-menus {
+  position: relative;
   height: 78px;
   background-color: #f6f6f6; }
+  .sub-menus .all {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    margin-top: -21px;
+    padding: 0 60px 0 23px;
+    height: 42px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 42px;
+    background-color: #000; }
+    .sub-menus .all:after {
+      content: ""; }
+    .sub-menus .all:after {
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      margin-top: -5px;
+      height: 9px;
+      width: 13px;
+      font-size: 15px;
+      color: #fff;
+      line-height: 9px; }
+  .sub-menus .list-menes {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    padding: 0 0 0 20px; }
+    .sub-menus .list-menes > li {
+      padding: 0 20px; }
+      .sub-menus .list-menes > li a {
+        display: block;
+        font-size: 18px;
+        color: rgba(156, 156, 156, 0.7);
+        line-height: 20px; }
+        html:lang(en) .sub-menus .list-menes > li a {
+          font-size: 20px; }
+      .sub-menus .list-menes > li + li {
+        position: relative;
+        padding-left: 90px; }
+        .sub-menus .list-menes > li + li:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          margin-top: -2px;
+          height: 3px;
+          width: 70px;
+          background-color: #dedede; }
+      .sub-menus .list-menes > li.is-selected a {
+        color: #000; }
 
 /* contents */
 /* FOOTER */

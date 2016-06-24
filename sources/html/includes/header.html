@@ -1,6 +1,14 @@
 <header class="global-menu">
 	<div class="title">
-		<strong class="bespin-global"><span class="hidden">BESPIN GLOBAL</span></strong>
+		@@if ( service == "portal" ) {
+			<strong class="bespin-global"><span class="hidden">BESPIN GLOBAL</span></strong>
+		}
+		@@if ( service == "asset" ) {
+			<strong class="service asset">ASSET MANAGEMENT</strong>
+		}
+		@@if ( service == "metering" ) {
+			<strong class="service metering">METERING</strong>
+		}
 
 		<button type="button" class="btn-language">ENGLISH</button>
 	</div>
@@ -17,13 +25,42 @@
 		<button type="button" class="btns dashboard">대쉬보드 바로가기</button>
 	</p>
 </header>
+
+@@if ( service == "portal" ) {
 <nav class="sub-menus">
-	<button type="button">전체 클라우드 회사</button>
-	<ul>
-		<li><a href="#">대시보드</a></li>
-		<li><a href="#">청구서</a></li>
-		<li><a href="#">비용 애럴리틱스</a></li>
+	<button type="button" class="all">전체 클라우드 회사</button>
+	<ul class="list-menes">
+		<li class="is-selected"><a href="#">대시보드</a></li>
+		<li><a href="#">사용자 및 권한 관리</a></li>
+		<li><a href="#">비용 에널리틱스</a></li>
 		<li><a href="#">예산</a></li>
 		<li><a href="#">RI 현황</a></li>
 	</ul>
 </nav>
+}
+
+@@if ( service == "asset" ) {
+<nav class="sub-menus">
+	<button type="button" class="all">전체 클라우드 회사</button>
+	<ul class="list-menes">
+		<li class="is-selected"><a href="#">대시보드</a></li>
+		<li><a href="#">사용자 및 권한 관리</a></li>
+		<li><a href="#">비용 에널리틱스</a></li>
+		<li><a href="#">예산</a></li>
+		<li><a href="#">RI 현황</a></li>
+	</ul>
+</nav>
+}
+
+@@if ( service == "metering" ) {
+<nav class="sub-menus">
+	<button type="button" class="all">전체 클라우드 회사</button>
+	<ul class="list-menes">
+		<li class="is-selected"><a href="#">대시보드</a></li>
+		<li><a href="#">사용자 및 권한 관리</a></li>
+		<li><a href="#">비용 에널리틱스</a></li>
+		<li><a href="#">예산</a></li>
+		<li><a href="#">RI 현황</a></li>
+	</ul>
+</nav>
+}
