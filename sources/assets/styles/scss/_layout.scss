@@ -55,6 +55,7 @@
 
 
 .sub-menus { position: relative; height: 78px; background-color: #f6f6f6;
+	h2 { display: none; }
 	.all { display: block; position: absolute; top: 50%; right: 40px; margin-top: -21px; padding: 0 60px 0 23px; height: 42px; font-size: 16px; color: #fff; line-height: 42px; background-color: #000;
 		@include icon(arrow01, after); 
 		&:after { position: absolute; top: 50%; right: 25px; margin-top: -5px; height: 9px; width: 13px; font-size: 15px; color: #fff; line-height: 9px; }
@@ -63,10 +64,12 @@
 		> li { padding: 0 20px;
 			a { display: block; font-size: 18px; color: rgba(156, 156, 156, 0.7); line-height: 20px;
 				html:lang(en) & { font-size: 20px; }
+
+				&:hover { color: #000; }
 			}
 
-			+ li { position: relative; padding-left: 90px;
-				&:before { content: ''; display: block; position: absolute; top: 50%; left: 0; margin-top: -2px; height: 3px; width: 70px; background-color: #dedede; }
+			+ li { position: relative; padding-left: 50px;
+				&:before { content: ''; display: block; position: absolute; top: 50%; left: 0; margin-top: -2px; height: 3px; width: 30px; background-color: #dedede; }
 			}
 
 			&.is-selected {
@@ -90,5 +93,17 @@
 
 
 /* CONTENTS */
-article.contents {
+article.contents { 
+	@mixin inner() { box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
+	> .inner { overflow: hidden; @include inner(); margin-top: 35px; padding-bottom: 130px; }
+
+	.column-left { float: left; padding-right: $column-padding; width: $column-left-width; }
+	.column-right { float: left; width: $column-right-width; }
+
+	// protal
+	.portal & {
+		h1.title { background-color: #f6f6f6;
+			.inner { @include inner(); padding-top: 25px; height: 180px; font-size: 48px; }
+		}
+	}
 }

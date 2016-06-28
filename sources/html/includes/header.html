@@ -19,41 +19,31 @@
 	</p>
 </header>
 
-@@if ( service == "portal" ) {
-<nav class="sub-menus">
-	<button type="button" class="all">전체 클라우드 회사</button>
-	<ul class="list-menes">
-		<li class="is-selected"><a href="#">대시보드</a></li>
-		<li><a href="#">사용자 및 권한 관리</a></li>
-		<li><a href="#">비용 에널리틱스</a></li>
-		<li><a href="#">예산</a></li>
-		<li><a href="#">RI 현황</a></li>
-	</ul>
-</nav>
-}
-
 @@if ( service == "asset" ) {
 <nav class="sub-menus">
+	<h2>하위 메뉴 바로가기</h2>
+	
 	<button type="button" class="all">전체 클라우드 회사</button>
 	<ul class="list-menes">
-		<li class="is-selected"><a href="#">대시보드</a></li>
-		<li><a href="#">사용자 및 권한 관리</a></li>
-		<li><a href="#">비용 에널리틱스</a></li>
-		<li><a href="#">예산</a></li>
-		<li><a href="#">RI 현황</a></li>
+		<li class="is-selected"><a href="#">DASHBOARD</a></li>
+		<li><a href="#">SERVICE GROUP</a></li>
+		<li><a href="#">STATUS</a></li>
+		<li><a href="#">PERFORMANCE</a></li>
 	</ul>
 </nav>
 }
 
 @@if ( service == "metering" ) {
 <nav class="sub-menus">
+	<h2>하위 메뉴 바로가기</h2>
+
 	<button type="button" class="all">전체 클라우드 회사</button>
 	<ul class="list-menes">
-		<li class="is-selected"><a href="#">대시보드</a></li>
-		<li><a href="#">사용자 및 권한 관리</a></li>
-		<li><a href="#">비용 에널리틱스</a></li>
-		<li><a href="#">예산</a></li>
-		<li><a href="#">RI 현황</a></li>
+		<li class="is-selected"><a href="#">DASHBOARD</a></li>
+		<li><a href="#">BILLING</a></li>
+		<li><a href="#">USAGE ANALYTICS</a></li>
+		<li><a href="#">BUDGETING</a></li>
+		<li><a href="#">RI(AWS) STATUS</a></li>
 	</ul>
 </nav>
 }

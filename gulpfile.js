@@ -68,10 +68,9 @@ var paths = {
 		dest: 'sources/assets/styles/'
 	},
 	scripts: {
-		src: 'sources/assets/scripts/**/*',
+		src: 'sources/assets/scripts/*.js',
 		gulp: 'gulpfile.js',
-		vendor: 'sources/assets/scripts/libs/*',
-		exceptVendor: '!sources/assets/scripts/libs/*',
+		vendor: 'sources/assets/scripts/libs/*'
 	}
 };
 
@@ -222,7 +221,7 @@ gulp.task('csscomb', function() {
 
 /* scripts */
 gulp.task('jshint', function() {
-  return gulp.src([paths.scripts.gulp, paths.scripts.src, paths.scripts.exceptVendor])
+  return gulp.src([paths.scripts.gulp, paths.scripts.src])
     .pipe(jshint())
     .pipe(jshint.reporter(require('jshint-stylish')))
     .pipe(livereload());
