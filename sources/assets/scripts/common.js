@@ -25,6 +25,10 @@ if (!window.console) {
 
 
 $(document).ready(function(e) {
+	$('select').selectize({
+		create: true,
+		sortField: 'text'
+	});
 });
 
 

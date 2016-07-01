@@ -1,13 +1,10 @@
 
 /* GNB HEADER */
 .global-menu { position: relative; padding: 15px 40px 0 25px; height: 70px; border-bottom: 3px solid #e7e7e7; background-color: #fff;
-	.title { display: block; position: absolute; top: 0px; right: 0; bottom: 0; left: 25px; z-index: z("default") - 1;
+	.title { display: block; position: absolute; top: 0px; right: 0; bottom: 0; left: 25px; z-index: z("default");
 		&:before { content: ''; display: block; position: absolute; top: 50%; right: 465px; left: 0; z-index: z("default") - 1; margin-top: -2px; height: 4px; background-color: #000; }
 
-		.btn-language { position: absolute; top: 25px; right: 465px; padding-right: 15px; font-size: 13px; color: #000; letter-spacing: 0.4px;
-			@include icon(arrow01, after); 
-			&:after { position: absolute; top: 50%; right: 5px; margin-top: -5px; height: 9px; width: 13px; font-size: 15px; color: #000; line-height: 9px; }
-		}
+		.language { position: absolute; top: 23px; right: 465px; }
 		
 		// portal
 		.bespin-global { display: block; float: left; position: relative; z-index: z("default"); margin-top: 15px; padding-right: 20px; height: 52px; background-color: #fff;
@@ -45,11 +42,8 @@
 		.name { display: block; font-size: 20px; font-weight: bold; color: #000; line-height: 25px;
 			html:lang(en) & { font-size: 24px; }
 		}
-		.company { display: block; overflow: hidden; position: relative; height: 21px; padding-right: 20px; width: 100%; font-size: 18px; color: rgba(0, 0, 0, 0.51); text-align: left; text-overflow: ellipsis; white-space: nowrap;
-			&:before { content: ''; position: absolute; right: 20px; bottom: 0; left: 0; height: 2px; background-color: #878787; }
-			@include icon(arrow01, after); 
-			&:after { position: absolute; top: 50%; right: 6px; margin-top: -5px; height: 9px; width: 13px; font-size: 15px; line-height: 9px; color: #878787; }
-		}
+
+		.company { }
 	}
 }
 

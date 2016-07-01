@@ -70,7 +70,7 @@ var paths = {
 	scripts: {
 		src: 'sources/assets/scripts/*.js',
 		gulp: 'gulpfile.js',
-		vendor: 'sources/assets/scripts/libs/*'
+		vendor: 'sources/assets/scripts/libs/*.js'
 	}
 };
 
@@ -245,7 +245,7 @@ gulp.task('copy:assets', function () {
 	.pipe(gulp.dest('build/assets/'));
 });
 gulp.task('copy:scripts', function () {
-	return gulp.src([paths.scripts.src, paths.scripts.vendor])
+	return gulp.src('sources/assets/scripts/**')
 	.pipe(gulp.dest('build/assets/scripts/'));
 });
 gulp.task('copy:iconfont', function () {

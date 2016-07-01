@@ -3,14 +3,28 @@
 		@@if ( service == "portal" ) {<strong class="bespin-global"><span class="hidden">BESPIN GLOBAL</span></strong>}
 		@@if ( service == "asset" ) {<strong class="service asset">ASSET MANAGEMENT</strong>}
 		@@if ( service == "metering" ) {<strong class="service metering">METERING</strong>}
-		<button type="button" class="btn-language">ENGLISH</button>
+
+		<div class="language dropdown-language">
+			<select name="" id="">
+				<option value="0">English</option>
+				<option value="1">한국어</option>
+				<option value="2">中文</option>
+			</select>
+		</div>
 	</div>
 	
 	<figure class="user">
 		<div class="thumb"><img src="/assets/images/company_profile.png" alt=""></div>
 		<figcaption>
 			<button type="button" class="name">김재희</button>
-			<button type="button" class="company" title="NHN Asia Pacific">NHN Asia Pacific</button>
+			
+			<div class="company dropdown-company">
+				<select name="" id="">
+					<option value="0">NHN Korea</option>
+					<option value="1">NHN Asia Pacific</option>
+					<option value="2">NHN America</option>
+				</select>
+			</div>
 		</figcaption>
 	</figure>
 	<p class="uilts">

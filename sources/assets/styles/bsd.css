@@ -30,7 +30,7 @@ body {
   margin: 0 auto;
   font-size: 100%;
   line-height: 1.3em;
-  font-family: "Noyh", "Nanum Square", "Malgun Gothic", Gulim, Dotum, sans-serif;
+  font-family: "Noyh", "Malgun Gothic", Gulim, Dotum, sans-serif;
   -ms-text-size-adjust: 100%;
       text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -92,7 +92,7 @@ table {
   border-spacing: 0; }
 
 input, textarea, keygen, select, button {
-  font-family: "Noyh", "Nanum Square", "Malgun Gothic", Gulim, Dotum, sans-serif; }
+  font-family: "Noyh", "Malgun Gothic", Gulim, Dotum, sans-serif; }
 
 strong {
   font-weight: normal; }
@@ -137,7 +137,7 @@ input[type=submit] {
   src: url("/assets/fonts/icons/Icons.eot");
   src: url("/assets/fonts/icons/Icons.eot?#iefix") format("eot"), url("/assets/fonts/icons/Icons.woff") format("woff"), url("/assets/fonts/icons/Icons.ttf") format("truetype"), url("/assets/fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-asset:before, .icon-metering:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .user .company:after, .sub-menus .all:after {
+.icon-arrow01:before, .icon-asset:before, .icon-metering:before, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .sub-menus .all:after, .dropdown-language .selectize-control .selectize-input > .item:after, .dropdown-company .selectize-control .selectize-input > .item:after {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -359,7 +359,7 @@ The `sprites` mixin generates identical output to the CSS template
     right: 0;
     bottom: 0;
     left: 25px;
-    z-index: 0; }
+    z-index: 1; }
     .global-menu .title:before {
       content: '';
       display: block;
@@ -371,26 +371,10 @@ The `sprites` mixin generates identical output to the CSS template
       margin-top: -2px;
       height: 4px;
       background-color: #000; }
-    .global-menu .title .btn-language {
+    .global-menu .title .language {
       position: absolute;
-      top: 25px;
-      right: 465px;
-      padding-right: 15px;
-      font-size: 13px;
-      color: #000;
-      letter-spacing: 0.4px; }
-      .global-menu .title .btn-language:after {
-        content: ""; }
-      .global-menu .title .btn-language:after {
-        position: absolute;
-        top: 50%;
-        right: 5px;
-        margin-top: -5px;
-        height: 9px;
-        width: 13px;
-        font-size: 15px;
-        color: #000;
-        line-height: 9px; }
+      top: 23px;
+      right: 465px; }
     .global-menu .title .bespin-global {
       display: block;
       float: left;
@@ -502,38 +486,6 @@ The `sprites` mixin generates identical output to the CSS template
       line-height: 25px; }
       html:lang(en) .global-menu .user .name {
         font-size: 24px; }
-    .global-menu .user .company {
-      display: block;
-      overflow: hidden;
-      position: relative;
-      height: 21px;
-      padding-right: 20px;
-      width: 100%;
-      font-size: 18px;
-      color: rgba(0, 0, 0, 0.51);
-      text-align: left;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
-      .global-menu .user .company:before {
-        content: '';
-        position: absolute;
-        right: 20px;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        background-color: #878787; }
-      .global-menu .user .company:after {
-        content: ""; }
-      .global-menu .user .company:after {
-        position: absolute;
-        top: 50%;
-        right: 6px;
-        margin-top: -5px;
-        height: 9px;
-        width: 13px;
-        font-size: 15px;
-        line-height: 9px;
-        color: #878787; }
 
 .sub-menus {
   position: relative;
@@ -636,3 +588,95 @@ article.contents .column-right {
     padding-top: 25px;
     height: 180px;
     font-size: 48px; }
+
+/* dropdown */
+.selectize-control {
+  position: relative;
+  z-index: 500;
+  width: 100%; }
+  .selectize-control .selectize-input {
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border: 0px;
+    font-size: 20px;
+    color: #000;
+    line-height: 42px; }
+    .dropdown-language .selectize-control .selectize-input {
+      font-size: 13px;
+      line-height: 18px; }
+      .dropdown-language .selectize-control .selectize-input > input {
+        display: none; }
+      .dropdown-language .selectize-control .selectize-input > .item {
+        display: inline-block;
+        padding-right: 20px;
+        line-height: 10px; }
+        .dropdown-language .selectize-control .selectize-input > .item:after {
+          content: ""; }
+        .dropdown-language .selectize-control .selectize-input > .item:after {
+          position: absolute;
+          top: 50%;
+          right: 5px;
+          margin-top: -5px;
+          height: 9px;
+          width: 13px;
+          font-size: 11px;
+          color: #000;
+          line-height: 10px; }
+    .dropdown-company .selectize-control .selectize-input {
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.51); }
+      .dropdown-company .selectize-control .selectize-input > input {
+        display: none; }
+      .dropdown-company .selectize-control .selectize-input > .item {
+        border-bottom: 2px solid #878787; }
+        .dropdown-company .selectize-control .selectize-input > .item:after {
+          content: ""; }
+        .dropdown-company .selectize-control .selectize-input > .item:after {
+          position: absolute;
+          top: 50%;
+          right: 6px;
+          margin-top: -5px;
+          height: 9px;
+          width: 13px;
+          font-size: 15px;
+          line-height: 9px;
+          color: #878787; }
+    .selectize-control .selectize-input > input {
+      display: inline-block;
+      margin: 0 2px 0 0 !important;
+      padding: 0 !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      max-width: 100% !important;
+      text-indent: 0 !important;
+      line-height: inherit !important;
+      border: 0 none !important;
+      box-shadow: none !important;
+      background: none !important; }
+  .selectize-control .selectize-dropdown {
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 500;
+    width: 190px !important;
+    border: 3px solid #000;
+    background-color: #fff; }
+    .selectize-control .selectize-dropdown [data-selectable] {
+      overflow: hidden;
+      cursor: pointer;
+      line-height: 42px; }
+      .selectize-control .selectize-dropdown [data-selectable] .highlight {
+        background-color: #000; }
+    .selectize-control .selectize-dropdown .selectize-dropdown-content {
+      overflow-y: auto;
+      overflow-x: hidden;
+      max-height: 200px; }
+    .selectize-control .selectize-dropdown .option {
+      padding: 0 10px; }
+    .selectize-control .selectize-dropdown .active {
+      color: #fff;
+      background-color: #000; }
