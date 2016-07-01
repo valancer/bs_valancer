@@ -1,0 +1,29 @@
+/* 
+ * Noyh Web Fonts
+ */
+ 
+@font-face {
+  font-family: 'Noyh';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/eot/NoyhR.eot);
+  src: local('Noyh Regular'),
+       local('NoyhR'),
+       url(/assets/fonts/eot/NoyhR.eot?#iefix) format('embedded-opentype'),
+       url(/assets/fonts/woff/NoyhR.woff2) format('woff2'),
+       url(/assets/fonts/woff/NoyhR.woff) format('woff'),
+       url(/assets/fonts/ttf/NoyhR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noyh';
+  font-style: bold;
+  font-weight: 700;
+  src: url(/assets/fonts/eot/NoyhB.eot);
+  src: local('Noyh Bold'),
+       local('NoyhB'),
+       url(/assets/fonts/eot/NoyhB.eot?#iefix) format('embedded-opentype'),
+       url(/assets/fonts/woff/NoyhB.woff2) format('woff2'),
+       url(/assets/fonts/woff/NoyhB.woff) format('woff'),
+       url(/assets/fonts/ttf/NoyhB.ttf) format('truetype');
+}
