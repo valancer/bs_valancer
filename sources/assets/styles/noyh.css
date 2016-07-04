@@ -6,24 +6,31 @@
   font-family: 'Noyh';
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/fonts/eot/NoyhR.eot);
-  src: local('Noyh Regular'),
-       local('NoyhR'),
-       url(/assets/fonts/eot/NoyhR.eot?#iefix) format('embedded-opentype'),
-       url(/assets/fonts/woff/NoyhR.woff2) format('woff2'),
-       url(/assets/fonts/woff/NoyhR.woff) format('woff'),
-       url(/assets/fonts/ttf/NoyhR.ttf) format('truetype');
+  src: url(/assets/fonts/eot/Noyh-Regular.eot);
+  src: url(/assets/fonts/eot/Noyh-Regular.eot?#iefix) format('embedded-opentype'),
+       url(/assets/fonts/woff/Noyh-Regular.woff2) format('woff2'),
+       url(/assets/fonts/woff/Noyh-Regular.woff) format('woff'),
+       url(/assets/fonts/ttf/Noyh-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Noyh';
-  font-style: bold;
+  font-style: normal;
+  font-weight: 500;
+  src: url(/assets/fonts/eot/Noyh-SemiLight.eot);
+  src: url(/assets/fonts/eot/Noyh-SemiLight.eot?#iefix) format('embedded-opentype'),
+       url(/assets/fonts/woff/Noyh-SemiLight.woff2) format('woff2'),
+       url(/assets/fonts/woff/Noyh-SemiLight.woff) format('woff'),
+       url(/assets/fonts/ttf/Noyh-SemiLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noyh';
+  font-style: normal;
   font-weight: 700;
-  src: url(/assets/fonts/eot/NoyhB.eot);
-  src: local('Noyh Bold'),
-       local('NoyhB'),
-       url(/assets/fonts/eot/NoyhB.eot?#iefix) format('embedded-opentype'),
-       url(/assets/fonts/woff/NoyhB.woff2) format('woff2'),
-       url(/assets/fonts/woff/NoyhB.woff) format('woff'),
-       url(/assets/fonts/ttf/NoyhB.ttf) format('truetype');
+  src: url(/assets/fonts/eot/Noyh-Bold.eot);
+  src: url(/assets/fonts/eot/Noyh-Bold.eot?#iefix) format('embedded-opentype'),
+       url(/assets/fonts/woff/Noyh-Bold.woff2) format('woff2'),
+       url(/assets/fonts/woff/Noyh-Bold.woff) format('woff'),
+       url(/assets/fonts/ttf/Noyh-Bold.ttf) format('truetype');
 }

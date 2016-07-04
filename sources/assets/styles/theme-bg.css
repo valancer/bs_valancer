@@ -1,6 +1,6 @@
 .ag-bg {
   line-height: 1.4;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: inherit;
   font-size: 14px;
   color: #4a4a4a;
 /* this is for the rowGroupPanel, that appears along the top of the grid */
