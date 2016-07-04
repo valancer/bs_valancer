@@ -137,7 +137,7 @@ input[type=submit] {
   src: url("/assets/fonts/icons/Icons.eot");
   src: url("/assets/fonts/icons/Icons.eot?#iefix") format("eot"), url("/assets/fonts/icons/Icons.woff") format("woff"), url("/assets/fonts/icons/Icons.ttf") format("truetype"), url("/assets/fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-asset:before, .icon-metering:before, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .sub-menus .all:after, .dropdown-language .selectize-control .selectize-input > .item:after, .dropdown-company .selectize-control .selectize-input > .item:after {
+.icon-arrow01:before, .icon-arrow02:before, .icon-asset:before, .icon-grid:before, .icon-metering:before, .icon-noticifation:before, .icon-settings:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .popover .point:before, .dropdown-language .selectize-control .selectize-input > .item:after, .dropdown-company .selectize-control .selectize-input > .item:after, .btn-settings:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -150,11 +150,23 @@ input[type=submit] {
 .icon-arrow01:before {
   content: ""; }
 
-.icon-asset:before {
+.icon-arrow02:before {
   content: ""; }
 
-.icon-metering:before {
+.icon-asset:before {
   content: ""; }
+
+.icon-grid:before {
+  content: ""; }
+
+.icon-metering:before {
+  content: ""; }
+
+.icon-noticifation:before {
+  content: ""; }
+
+.icon-settings:before {
+  content: ""; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -358,8 +370,7 @@ The `sprites` mixin generates identical output to the CSS template
     top: 0px;
     right: 0;
     bottom: 0;
-    left: 25px;
-    z-index: 1; }
+    left: 25px; }
     .global-menu .title:before {
       content: '';
       display: block;
@@ -371,10 +382,26 @@ The `sprites` mixin generates identical output to the CSS template
       margin-top: -2px;
       height: 4px;
       background-color: #000; }
-    .global-menu .title .language {
+    .global-menu .title .btn-language {
       position: absolute;
-      top: 23px;
-      right: 465px; }
+      top: 25px;
+      right: 465px;
+      padding: 0 15px 0 13px;
+      font-size: 13px;
+      color: #000;
+      letter-spacing: 0.4px; }
+      .global-menu .title .btn-language:after {
+        content: ""; }
+      .global-menu .title .btn-language:after {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        margin-top: -5px;
+        height: 9px;
+        width: 13px;
+        font-size: 15px;
+        color: #000;
+        line-height: 9px; }
     .global-menu .title .bespin-global {
       display: block;
       float: left;
@@ -413,9 +440,9 @@ The `sprites` mixin generates identical output to the CSS template
         vertical-align: middle;
         text-align: center; }
       .global-menu .title .service.asset:before {
-        content: ""; }
-      .global-menu .title .service.metering:before {
         content: ""; }
+      .global-menu .title .service.metering:before {
+        content: ""; }
   .global-menu .uilts {
     position: relative;
     float: right;
@@ -427,14 +454,17 @@ The `sprites` mixin generates identical output to the CSS template
       margin-left: 20px;
       height: 52px;
       width: 52px;
-      vertical-align: middle;
-      text-indent: -9999px; }
+      vertical-align: middle; }
       .global-menu .uilts .btns.notifications {
-        position: relative;
-        background-image: url(/assets/images/sprites.png);
-        background-position: -58px -22px;
-        width: 52px;
-        height: 52px; }
+        position: relative; }
+        .global-menu .uilts .btns.notifications:before {
+          content: ""; }
+        .global-menu .uilts .btns.notifications:before {
+          display: block;
+          color: #000;
+          font-size: 34px;
+          line-height: 52px;
+          text-align: center; }
         .global-menu .uilts .btns.notifications .badge {
           display: block;
           position: absolute;
@@ -451,11 +481,14 @@ The `sprites` mixin generates identical output to the CSS template
           border: 3px solid #fff;
           border-radius: 14px;
           background-color: #f34122; }
-      .global-menu .uilts .btns.dashboard {
-        background-image: url(/assets/images/sprites.png);
-        background-position: 0px -22px;
-        width: 52px;
-        height: 52px; }
+      .global-menu .uilts .btns.dashboard:before {
+        content: ""; }
+      .global-menu .uilts .btns.dashboard:before {
+        display: block;
+        color: #000;
+        font-size: 25px;
+        line-height: 52px;
+        text-align: center; }
   .global-menu .user {
     float: right;
     position: relative;
@@ -480,12 +513,41 @@ The `sprites` mixin generates identical output to the CSS template
         max-width: 100%; }
     .global-menu .user .name {
       display: block;
-      font-size: 20px;
+      font-size: 24px;
       font-weight: bold;
       color: #000;
       line-height: 25px; }
-      html:lang(en) .global-menu .user .name {
-        font-size: 24px; }
+    .global-menu .user .company {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      height: 21px;
+      padding-right: 20px;
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.51);
+      text-align: left;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      .global-menu .user .company:before {
+        content: '';
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background-color: #878787; }
+      .global-menu .user .company:after {
+        content: ""; }
+      .global-menu .user .company:after {
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        margin-top: -3px;
+        height: 9px;
+        width: 13px;
+        font-size: 15px;
+        line-height: 9px;
+        color: #878787; }
 
 .sub-menus {
   position: relative;
@@ -493,30 +555,12 @@ The `sprites` mixin generates identical output to the CSS template
   background-color: #f6f6f6; }
   .sub-menus h2 {
     display: none; }
-  .sub-menus .all {
+  .sub-menus .btn-settings {
     display: block;
     position: absolute;
     top: 50%;
     right: 40px;
-    margin-top: -21px;
-    padding: 0 60px 0 23px;
-    height: 42px;
-    font-size: 16px;
-    color: #fff;
-    line-height: 42px;
-    background-color: #000; }
-    .sub-menus .all:after {
-      content: ""; }
-    .sub-menus .all:after {
-      position: absolute;
-      top: 50%;
-      right: 25px;
-      margin-top: -5px;
-      height: 9px;
-      width: 13px;
-      font-size: 15px;
-      color: #fff;
-      line-height: 9px; }
+    margin-top: -14px; }
   .sub-menus .list-menes {
     display: block;
     overflow: hidden;
@@ -527,11 +571,11 @@ The `sprites` mixin generates identical output to the CSS template
       padding: 0 20px; }
       .sub-menus .list-menes > li a {
         display: block;
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: bold;
         color: rgba(156, 156, 156, 0.7);
-        line-height: 20px; }
-        html:lang(en) .sub-menus .list-menes > li a {
-          font-size: 20px; }
+        line-height: 20px;
+        letter-spacing: 0.1em; }
         .sub-menus .list-menes > li a:hover {
           color: #000; }
       .sub-menus .list-menes > li + li {
@@ -589,7 +633,125 @@ article.contents .column-right {
     height: 180px;
     font-size: 48px; }
 
-/* dropdown */
+/* global menu shortcuts popover */
+.global-shortcuts .type-list {
+  min-width: 390px; }
+  .global-shortcuts .type-list > li {
+    position: relative; }
+    .global-shortcuts .type-list > li:after {
+      content: none;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      margin-top: -2px;
+      height: 3px;
+      background-color: #fff; }
+    .global-shortcuts .type-list > li.is-selected:after {
+      content: ''; }
+    .global-shortcuts .type-list > li.is-selected a {
+      color: #fff; }
+    .global-shortcuts .type-list > li a {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      padding-right: 15px;
+      font-size: 24px;
+      color: #999;
+      line-height: 63px;
+      background-color: #000; }
+      .global-shortcuts .type-list > li a:hover {
+        color: #fff; }
+
+.global-shortcuts .type-thumbnail {
+  overflow: hidden;
+  margin-bottom: -34px;
+  width: 390px; }
+  .global-shortcuts .type-thumbnail > li {
+    float: left;
+    padding-right: 50px;
+    padding-bottom: 34px;
+    width: 90px; }
+    .global-shortcuts .type-thumbnail > li:nth-child(3n+3) {
+      padding-right: 0; }
+    .global-shortcuts .type-thumbnail > li a {
+      display: block;
+      min-height: 90px;
+      width: 90px;
+      font-size: 18px;
+      color: #fff;
+      line-height: 18px; }
+      .global-shortcuts .type-thumbnail > li a:before {
+        content: '';
+        display: block;
+        box-sizing: border-box;
+        margin-bottom: 8px;
+        padding-top: 5px;
+        height: 85px;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        border: 5px solid #fff; }
+      .global-shortcuts .type-thumbnail > li a.metering:before {
+        content: ""; }
+      .global-shortcuts .type-thumbnail > li a.metering:before {
+        font-size: 58px;
+        line-height: 63px; }
+      .global-shortcuts .type-thumbnail > li a.asset:before {
+        content: ""; }
+      .global-shortcuts .type-thumbnail > li a.asset:before {
+        font-size: 44px;
+        line-height: 64px; }
+      .global-shortcuts .type-thumbnail > li a.none:before {
+        border: 5px solid rgba(255, 255, 255, 0.23); }
+
+/* popover */
+.popover {
+  display: block;
+  position: relative;
+  padding: 35px;
+  background-color: #000; }
+  .popover .point {
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -20px;
+    height: 41px;
+    width: 41px; }
+    .popover .point:before {
+      content: ""; }
+    .popover .point:before {
+      font-size: 41px;
+      line-height: 41px; }
+  .popover .btn-logout {
+    float: right;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+
+/* select layer popup */
+.list-select-popup {
+  display: block;
+  min-width: 160px;
+  border: 3px solid #000;
+  background-color: #fff; }
+  .list-select-popup > li {
+    display: block; }
+    .list-select-popup > li a {
+      display: block;
+      padding: 0 10px;
+      font-size: 18px;
+      color: #000;
+      line-height: 42px; }
+      .list-select-popup > li a.is-selected, .list-select-popup > li a:hover {
+        color: #fff;
+        background-color: #000; }
+  .list-select-popup.small a {
+    font-size: 13px; }
+
+/* dropdown(selectbox) */
 .selectize-control {
   position: relative;
   z-index: 500;
@@ -680,3 +842,17 @@ article.contents .column-right {
     .selectize-control .selectize-dropdown .active {
       color: #fff;
       background-color: #000; }
+
+/* buttons */
+.btn-settings {
+  overflow: hidden;
+  height: 28px;
+  width: 28px; }
+  .btn-settings:before {
+    content: ""; }
+  .btn-settings:before {
+    display: block;
+    height: 28px;
+    width: 28px;
+    font-size: 28px;
+    color: #666; }

@@ -4,40 +4,75 @@
 		@@if ( service == "asset" ) {<strong class="service asset">ASSET MANAGEMENT</strong>}
 		@@if ( service == "metering" ) {<strong class="service metering">METERING</strong>}
 
-		<div class="language dropdown-language">
-			<select name="" id="">
-				<option value="0">English</option>
-				<option value="1">한국어</option>
-				<option value="2">中文</option>
-			</select>
-		</div>
+		<button type="button" class="btn-language language_open">ENGLISH</button>
+		<ul id="language" class="list-select-popup small">
+			<li><a href="#english" class="is-selected">ENGLISH</a></li>
+			<li><a href="#korean">한국어</a></li>
+			<li><a href="#chinese">中文</a></li>
+		</ul>
 	</div>
 	
 	<figure class="user">
 		<div class="thumb"><img src="/assets/images/company_profile.png" alt=""></div>
 		<figcaption>
-			<button type="button" class="name">김재희</button>
+			<button type="button" class="name user-info_open">Jacob Kim</button>
 			
-			<div class="company dropdown-company">
-				<select name="" id="">
-					<option value="0">NHN Korea</option>
-					<option value="1">NHN Asia Pacific</option>
-					<option value="2">NHN America</option>
-				</select>
-			</div>
+			<button type="button" class="company company_open">NHN Korea</button>
+			<ul id="company" class="list-select-popup">
+				<li><a href="#NHNKorea" class="is-selected">NHN Korea</a></li>
+				<li><a href="#NHNAsiaPacific">NHN Asia Pacific</a></li>
+				<li><a href="#NHNAmerica">NHN America</a></li>
+			</ul>
 		</figcaption>
 	</figure>
 	<p class="uilts">
-		<a href="#" class="btns notifications"><span class="hidden">새로운 알림</span><em class="badge">2</em>알림 바로가기</a>
-		<button type="button" class="btns dashboard">대쉬보드 바로가기</button>
+		<a href="#notification" class="btns notifications">
+			<span class="hidden">new</span><em class="badge">2</em> notification
+		</a>
+		<button type="button" class="btns dashboard service-shortcut_open">shortcut service</button>
 	</p>
+
+
+	<!-- service shortcut -->
+	<aside id="service-shortcut" class="popover">
+		<span class="point"></span>
+
+		<nav class="global-shortcuts">
+			<ul class="type-thumbnail">
+				<li><a href="#" class="dashboard">My Bespin Dashboard</a></li>
+				<li><a href="#" class="metering">Cost Metering</a></li>
+				<li><a href="#" class="asset">Asset Management</a></li>
+				<li><a href="#" class="monitoring">Realtime Monitoring</a></li>
+				<li><a href="#" class="workflow">ITS Workflow</a></li>
+				<li><a href="#none" class="none"></a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<!-- user info -->
+	<aside id="user-info" class="popover">
+		<span class="point" style="right: 50px; left: auto;"></span>
+
+		<nav class="global-shortcuts">
+			<ul class="type-list">
+				<li class="is-selected"><a href="#">Home/Dashboard</a></li>
+				<li><a href="#">Permission Groups</a></li>
+				<li><a href="#">Cloud Vendor Accounts</a></li>
+				<li><a href="#">Company Service Groups </a></li>
+				<li><a href="#">Bespin Account &amp; Billing</a></li>
+			</ul>
+		</nav>
+		<button type="button" class="btn-logout">Logout</button>
+	</aside>
 </header>
+
+
 
 @@if ( service == "asset" ) {
 <nav class="sub-menus">
 	<h2>하위 메뉴 바로가기</h2>
 	
-	<button type="button" class="all">전체 클라우드 회사</button>
+	<button type="button" class="btn-settings">settings</button>
 	<ul class="list-menes">
 		<li class="is-selected"><a href="#">DASHBOARD</a></li>
 		<li><a href="#">SERVICE GROUP</a></li>
@@ -51,13 +86,13 @@
 <nav class="sub-menus">
 	<h2>하위 메뉴 바로가기</h2>
 
-	<button type="button" class="all">전체 클라우드 회사</button>
+	<button type="button" class="btn-settings">settings</button>
 	<ul class="list-menes">
 		<li class="is-selected"><a href="#">DASHBOARD</a></li>
 		<li><a href="#">BILLING</a></li>
 		<li><a href="#">USAGE ANALYTICS</a></li>
-		<li><a href="#">BUDGETING</a></li>
-		<li><a href="#">RI(AWS) STATUS</a></li>
+		<li><a href="#">BILLING</a></li>
+		<li><a href="#">COST ANALYTICS</a></li>
 	</ul>
 </nav>
 }
