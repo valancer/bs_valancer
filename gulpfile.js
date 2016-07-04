@@ -32,6 +32,7 @@ var paths = {
 	sprites : {
 		common: {
 			src: 'sources/assets/images/sprites/*.png',
+			filter: 'sources/assets/images/sprites/*@2x.png',
 			dest: {
 				img: 'sources/assets/images/',
 				css: 'sources/assets/styles/scss/'
@@ -96,8 +97,11 @@ gulp.task('includes', function() {
 /* styles */
 gulp.task('sprites:common', function () {
 	var spriteData = gulp.src(paths.sprites.common.src).pipe(spritesmith({
+		retinaSrcFilter: paths.sprites.common.filter,
 		imgPath: '/assets/images/sprites.png',
 		imgName: 'sprites.png',
+		retinaImgPath: '/assets/images/sprites@2x.png',
+		retinaImgName: 'sprites@2x.png',
 		cssName: '_sprites.scss',
 		padding: 6,
 		cssVarMap: function (sprite) {

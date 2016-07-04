@@ -1,0 +1,92 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+
+			<div class="inner">
+				
+				<h1>File List</h1>
+
+				<section class="section-item">
+					<h2 class="title">components</h2>
+
+					<ul class="filelist">
+						<li><a href="layout.html">layout(two columns)</a></li>
+						<li><a href="popover.html">popover</a></li>
+						<li><a href="controls.html">controls</a></li>
+						<li><a href="agGrid.html">agGrid</a></li>
+					</ul>
+				</section>
+
+
+				<section class="section-item" style="margin-top: 30px;">
+					<h2 class="title">portal pages</h2>
+
+					<ul class="filelist">
+						<li><a href="portal_global_menu.html">Global Menu</a></li>
+						<li><a href="#none">Home(Logged-out)</a></li>
+						<li><a href="#none">Home(Logged-in) - DASHBOARD</a></li>
+						<li><a href="#none">Manage Permissions/Users</a></li>
+						<li><a href="#none">Manage Cloud Vendor Accounts</a></li>
+						<li><a href="#none">Manage Service Groups</a></li>
+						<li><a href="#none">My Account &amp; Subscription</a></li>
+						<li><a href="#none">My Account</a></li>
+						<li><a href="#none">Notifications</a></li>
+					</ul>
+				</section>
+
+
+				<section class="section-item" style="margin-top: 30px;">
+					<h2 class="title">asset pages</h2>
+
+					<ul class="filelist">
+						<li><a href="asset_global_menu.html">Global Menu</a></li>
+						<li><a href="asset_filter.html">filter</a></li>
+						<li><a href="#none">Dashboard</a></li>
+						<li><a href="#none">Service Group</a></li>
+						<li><a href="#none">USAGE</a>
+							<ul class="filelist">
+								<li><a href="#none">dashboard</a></li>
+								<li><a href="#none">current</a></li>
+								<li><a href="#none">history</a></li>
+							</ul>
+						</li>
+						<li><a href="#none">performance</a>
+							<ul class="filelist">
+								<li><a href="#none">dashboard</a></li>
+								<li><a href="#none">current</a></li>
+								<li><a href="#none">history</a></li>
+							</ul>
+						</li>
+						<li><a href="#none">Permission Settings</a></li>
+					</ul>
+				</section>
+
+				<section class="section-item" style="margin-top: 30px;">
+					<h2 class="title">metering pages</h2>
+
+					<ul class="filelist">
+						<li><a href="metering_global_menu.html">Global Menu</a></li>
+					</ul>
+				</section>
+
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

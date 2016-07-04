@@ -1,0 +1,126 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+
+			<div class="inner">
+				<h1>Controls</h1>
+
+
+				<section class="section-item" style="margin-top: 30px;">
+					<h2 class="title">select box</h2>
+					<div class="clear"></div>
+					
+					<select name="" id="">
+						<option value="0">RDS</option>
+						<option value="1" selected>BBS</option>
+						<option value="2">EC2</option>
+					</select>
+					<script>
+					$(document).ready(function(){
+
+						$('select').selectize({
+							persist: false,
+							create: false
+						});
+					});
+					</script>
+				</section>
+
+
+				<section class="section-item" style="margin-top: 30px;">
+					<h2 class="title">checkbox &amp; radio</h2>
+					<div class="clear"></div>
+					
+					<fieldset>
+						<legend></legend>
+
+						<ul>
+							<li>
+								<input type="checkbox" id="region01" name="region" class="icheckbox">
+								<label for="region01">South Korea</label>
+							</li>
+							<li>
+								<input type="checkbox" id="region02" name="region" class="icheckbox">
+								<label for="region02">US-EAST</label>
+							</li>
+							<li>
+								<input type="checkbox" id="region03" name="region" class="icheckbox">
+								<label for="region03">China</label>
+							</li>
+							<li>
+								<input type="checkbox" id="region04" name="region" class="icheckbox">
+								<label for="region04">Japan</label>
+							</li>
+						</ul>
+					</fieldset>
+
+					<fieldset>
+						<legend></legend>
+
+						<ul>
+							<li>
+								<input type="radio" id="infrastructure01" name="infrastructure" class="iradio">
+								<label for="infrastructure01">EC2</label>
+							</li>
+							<li>
+								<input type="radio" id="infrastructure02" name="infrastructure" class="iradio">
+								<label for="infrastructure02">EBS</label>
+							</li>
+							<li>
+								<input type="radio" id="infrastructure03" name="infrastructure" class="iradio">
+								<label for="infrastructure03">RDS</label>
+							</li>
+							<li>
+								<input type="radio" id="infrastructure04" name="infrastructure" class="iradio">
+								<label for="infrastructure04">S3</label>
+							</li>
+						</ul>
+					</fieldset>
+					<script>
+					$(document).ready(function(){
+						// icheck
+						$('input.icheckbox').iCheck();
+						$('input.iradio').iCheck();
+					});
+					</script>
+				</section>
+
+
+				<section class="section-item" style="margin-top: 30px;">
+					<h2 class="title">BUTTONS</h2>
+					<div class="clear"></div>
+					
+					<p style="margin-top: 10px;">
+						<button type="button" class="btn-normal">SLIM BUTTON(TAG BUTTON)</button>
+						<button type="button" disabled class="btn-normal">SLIM BUTTON(disalbed)</button>
+						<a href="#" class="btn-normal">SLIM BUTTON(TAG A)</a>
+					</p>
+					
+					<p>
+						<button type="button" class="btn-normal large">LARGE BUTTON(TAG BUTTON)</button>	
+						<button type="button" disabled class="btn-normal large">SLIM BUTTON(disalbed)</button>
+						<a href="#" class="btn-normal large">LARGE BUTTON(TAG A)</a>
+					</p>
+				</section>
+
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

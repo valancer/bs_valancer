@@ -1,37 +1,38 @@
 <header class="global-menu">
-	<div class="title">
-		@@if ( service == "portal" ) {<strong class="bespin-global"><span class="hidden">BESPIN GLOBAL</span></strong>}
-		@@if ( service == "asset" ) {<strong class="service asset">ASSET MANAGEMENT</strong>}
-		@@if ( service == "metering" ) {<strong class="service metering">METERING</strong>}
+	<div class="inner">
+		<div class="title">
+			@@if ( service == "portal" ) {<strong class="bespin-global"><span class="hidden">BESPIN GLOBAL</span></strong>}
+			@@if ( service == "asset" ) {<strong class="service asset">ASSET MANAGEMENT</strong>}
+			@@if ( service == "metering" ) {<strong class="service metering">METERING</strong>}
 
-		<button type="button" class="btn-language language_open">ENGLISH</button>
-		<ul id="language" class="list-select-popup small">
-			<li><a href="#english" class="is-selected">ENGLISH</a></li>
-			<li><a href="#korean">한국어</a></li>
-			<li><a href="#chinese">中文</a></li>
-		</ul>
-	</div>
-	
-	<figure class="user">
-		<div class="thumb"><img src="/assets/images/company_profile.png" alt=""></div>
-		<figcaption>
-			<button type="button" class="name user-info_open">Jacob Kim</button>
-			
-			<button type="button" class="company company_open">NHN Korea</button>
-			<ul id="company" class="list-select-popup">
-				<li><a href="#NHNKorea" class="is-selected">NHN Korea</a></li>
-				<li><a href="#NHNAsiaPacific">NHN Asia Pacific</a></li>
-				<li><a href="#NHNAmerica">NHN America</a></li>
+			<button type="button" class="btn-language language_open">ENGLISH</button>
+			<ul id="language" class="list-select-popup small">
+				<li><a href="#english" class="is-selected">ENGLISH</a></li>
+				<li><a href="#korean">한국어</a></li>
+				<li><a href="#chinese">中文</a></li>
 			</ul>
-		</figcaption>
-	</figure>
-	<p class="uilts">
-		<a href="#notification" class="btns notifications">
-			<span class="hidden">new</span><em class="badge">2</em> notification
-		</a>
-		<button type="button" class="btns dashboard service-shortcut_open">shortcut service</button>
-	</p>
-
+		</div>
+		
+		<figure class="user">
+			<div class="thumb"><img src="/assets/images/company_profile.png" alt=""></div>
+			<figcaption>
+				<button type="button" class="name user-info_open">Jacob Kim</button>
+				
+				<button type="button" class="company company_open">NHN Asia Pacific</button>
+				<ul id="company" class="list-select-popup">
+					<li><a href="#NHNKorea" class="is-selected">NHN Korea</a></li>
+					<li><a href="#NHNAsiaPacific">NHN Asia Pacific</a></li>
+					<li><a href="#NHNAmerica">NHN America</a></li>
+				</ul>
+			</figcaption>
+		</figure>
+		<p class="uilts">
+			<a href="#notification" class="btns notifications">
+				<span class="hidden">new</span><em class="badge">2</em> notification
+			</a>
+			<button type="button" class="btns dashboard service-shortcut_open">shortcut service</button>
+		</p>
+	</div>
 
 	<!-- service shortcut -->
 	<aside id="service-shortcut" class="popover">
@@ -70,29 +71,33 @@
 
 @@if ( service == "asset" ) {
 <nav class="sub-menus">
-	<h2>하위 메뉴 바로가기</h2>
-	
-	<button type="button" class="btn-settings">settings</button>
-	<ul class="list-menes">
-		<li class="is-selected"><a href="#">DASHBOARD</a></li>
-		<li><a href="#">SERVICE GROUP</a></li>
-		<li><a href="#">STATUS</a></li>
-		<li><a href="#">PERFORMANCE</a></li>
-	</ul>
+	<div class="inner">
+		<h2>하위 메뉴 바로가기</h2>
+		
+		<button type="button" class="btn-settings">settings</button>
+		<ul class="list-menes">
+			<li class="is-selected"><a href="#">DASHBOARD</a></li>
+			<li><a href="#">SERVICE GROUP</a></li>
+			<li><a href="#">STATUS</a></li>
+			<li><a href="#">PERFORMANCE</a></li>
+		</ul>
+	</div>
 </nav>
 }
 
 @@if ( service == "metering" ) {
 <nav class="sub-menus">
-	<h2>하위 메뉴 바로가기</h2>
+	<div class="inner">
+		<h2>하위 메뉴 바로가기</h2>
 
-	<button type="button" class="btn-settings">settings</button>
-	<ul class="list-menes">
-		<li class="is-selected"><a href="#">DASHBOARD</a></li>
-		<li><a href="#">BILLING</a></li>
-		<li><a href="#">USAGE ANALYTICS</a></li>
-		<li><a href="#">BILLING</a></li>
-		<li><a href="#">COST ANALYTICS</a></li>
-	</ul>
+		<button type="button" class="btn-settings">settings</button>
+		<ul class="list-menes">
+			<li class="is-selected"><a href="#">DASHBOARD</a></li>
+			<li><a href="#">BILLING</a></li>
+			<li><a href="#">USAGE ANALYTICS</a></li>
+			<li><a href="#">BILLING</a></li>
+			<li><a href="#">COST ANALYTICS</a></li>
+		</ul>
+	</div>
 </nav>
 }

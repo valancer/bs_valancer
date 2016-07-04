@@ -1,4 +1,14 @@
+/*
+	popover
+*/
+.popover { display: block; position: relative; padding: 35px; background-color: #000;
+	.point { display: block; position: absolute; top: -15px; left: 50%; margin-left: -20px; height: 41px; width: 41px;
+		@include icon(arrow02);
+		&:before { font-size: 41px; line-height: 41px; }
+	}
 
+	.btn-logout { float: right; font-size: 18px; font-weight: 500; color: $white; border-bottom: 1px solid #fff; }	
+}
 
 /* global menu shortcuts popover */
 .global-shortcuts {
@@ -11,7 +21,7 @@
 				a { color: $white; }
 			}
 
-			a { display: inline-block; position: relative; z-index: z("default"); padding-right: 15px; font-size: 24px; color: #999; line-height: 63px; background-color: #000;
+			a { display: inline-block; position: relative; z-index: z("default"); padding-right: 15px; font-size: 24px; font-weight: 500; color: #999; line-height: 63px; background-color: #000;
 				&:hover { color: $white; }
 			}
 		}
@@ -21,7 +31,7 @@
 		> li { float: left; padding-right: 50px; padding-bottom: 34px; width: 90px;
 			&:nth-child(3n+3) { padding-right: 0; }
 
-			a { display: block; min-height: 90px; width: 90px; font-size: 18px; color: $white; line-height: 18px;
+			a { display: block; min-height: 90px; width: 90px; font-size: 18px; font-weight: 500; color: $white; line-height: 18px;
 				&:before { content: ''; display: block; box-sizing: border-box; margin-bottom: 8px; padding-top: 5px; height: 85px; width: 100%; text-align: center; vertical-align: middle; border: 5px solid #fff; }
 
 				&.metering {
@@ -44,22 +54,11 @@
 }
 
 
-/* popover */
-.popover { display: block; position: relative; padding: 35px; background-color: #000;
-	.point { display: block; position: absolute; top: -15px; left: 50%; margin-left: -20px; height: 41px; width: 41px;
-		@include icon(arrow02);
-		&:before { font-size: 41px; line-height: 41px; }
-	}
-
-	.btn-logout { float: right; font-size: 18px; color: $white; border-bottom: 1px solid #fff; }	
-}
-
-
 
 /* select layer popup */
 .list-select-popup { display: block; min-width: 160px; border: 3px solid #000; background-color: #fff;
 	> li { display: block;
-		a { display: block; padding: 0 10px; font-size: 18px; color: $black; line-height: 42px;
+		a { display: block; padding: 0 10px; font-size: 18px; font-weight: 500; color: $black; line-height: 42px;
 			&.is-selected,
 			&:hover { color: $white; background-color: #000; }
 		}
@@ -70,27 +69,40 @@
 	}
 }
 
+
+
+
+
+
+/*
+	dashboard
+*/
+/* section-item */
+.section-item { position: relative; z-index: z("default") - 1;
+	&:before { content: ''; display: block; position: absolute; top: 10px; right: 0; left: 0; height: 3px; background-color: #000; }
+
+	> .title { display: inline-block; position: relative; z-index: z("default"); padding-right: 15px; font-size: 18px; font-weight: 500; color: $black; background-color: #fff;
+		
+	}
+}
+
+
+
+
+
+
+
+/*
+	controls
+*/
 /* dropdown(selectbox) */
-.selectize-control { position: relative; z-index: z("dropdown"); width: 100%;
+.selectize-control { display: inline-block; position: relative; z-index: z("dropdown"); min-width: 120px;
 
-	.selectize-input { display: inline-block; box-sizing: border-box; overflow: hidden; position: relative; z-index: z("default"); width: 100%; border: 0px; font-size: 20px; color: #000; line-height: 42px;
-		.dropdown-language & { font-size: 13px; line-height: 18px; 
-			> input { display: none; }
-			> .item { display: inline-block; padding-right: 20px; line-height: 10px;
-				@include icon(arrow01, after);
-				&:after { position: absolute; top: 50%; right: 5px; margin-top: -5px; height: 9px; width: 13px; font-size: 11px; color: #000; line-height: 10px; }
-			}
-		}
+	.selectize-input { display: inline-block; box-sizing: border-box; overflow: hidden; position: relative; z-index: z("default"); padding: 0 25px 0 16px; width: 100%; border: 0px; font-size: 20px; font-weight: 500; color: #000; line-height: 36px; border: 3px solid #000;
+		@include icon(arrow01, after);
+		&:after { display: block; position: absolute; top: 50%; right: 10px; margin-top: -4px; height: 9px; width: 14px; font-size: 14px; line-height: 6px; vertical-align: middle; }
 
-		.dropdown-company & { font-size: 18px; color: rgba(0, 0, 0, 0.51);
-			> input { display: none; }
-			> .item { border-bottom: 2px solid #878787;
-				@include icon(arrow01, after); 
-				&:after { position: absolute; top: 50%; right: 6px; margin-top: -5px; height: 9px; width: 13px; font-size: 15px; line-height: 9px; color: #878787; }
-			}
-		}
-
-		> input { display: inline-block;
+		> input { display: none;
 			margin: 0 2px 0 0 !important;
 			padding: 0 !important;
 			min-height: 0 !important;
@@ -105,23 +117,68 @@
 	}
 
 
-	.selectize-dropdown { display: inline-block; box-sizing: border-box; position: absolute; z-index: z("dropdown"); width: 190px !important; border: 3px solid #000; background-color: #fff;
-		[data-selectable] { overflow: hidden; cursor: pointer; line-height: 42px;
+	.selectize-dropdown { display: inline-block; box-sizing: border-box; position: absolute; z-index: z("dropdown"); border: 3px solid #000; background-color: #fff;
+		[data-selectable] { overflow: hidden; cursor: pointer; line-height: 36px;
 			.highlight { background-color: #000; }
 		}
 
 		.selectize-dropdown-content { overflow-y: auto; overflow-x: hidden; max-height: 200px; }
-		.option { padding: 0 10px; }
+		.option { padding: 0 16px; font-size: 20px; font-weight: 500; line-height: 42px; }
 		.active { color: #fff; background-color: #000; }
 	}
 }
 
 
+/* checkbox & radio */
+.icheckbox { display: inline-block; margin: -2px 20px 0 0; vertical-align: middle; @include retina-sprite($sc-unchecked-group);
+	+ label { font-size: 20px; font-weight: 500; color: $black; line-height: 23px; cursor: pointer; }
+	&.checked { @include retina-sprite($sc-checked-group); }
+}
 
-/* buttons */
+.iradio { display: inline-block; margin: -2px 20px 0 0; vertical-align: middle; @include retina-sprite($sc-runchecked-group);
+	+ label { font-size: 20px; font-weight: 500; color: $black; cursor: pointer; }
+	&.checked { @include retina-sprite($sc-rchecked-group); }
+}
+
+
+
+
+/*
+	buttons
+*/
 .btn-settings { overflow: hidden; height: 28px; width: 28px;
 	@include icon(settings); 
 	&:before { display: block; height: 28px; width: 28px; font-size: 28px; color: #666; }
 }
 
+.btn-normal { display: inline-block; min-width: 300px; font-size: 18px; font-weight: 700; color: $black; text-align: center; line-height: 37px; border: 3px solid #000;
+	&.large { font-size: 20px; line-height: 59px; }
 
+	&:hover { color: $white; background-color: #000; }
+	&[disabled] { color: $gray; border-color: #e7e7e7;
+		&:hover { color: $gray; background-color: inherit; }
+	}
+}
+
+
+
+
+
+/*
+	etc
+*/
+.filelist {
+	> li { padding: 0 0 0 10px;
+		&:before { content: '- '; }
+
+		.filelist { 
+			> li { padding: 0 0 0 10px;
+				&:before { content: '* '; }
+			}
+		}
+	}
+
+	a { color: $vermillion;
+		&[href="#none"] { color: $gray; }
+	}
+}
