@@ -1,5 +1,5 @@
 @@include('./head.html', {
-	"lang": "ko",
+	"lang": "en",
 	"title": "Bespin Global"
 })
 <body class="portal">
@@ -83,6 +83,7 @@
 				        if (httpRequest.readyState == 4 && httpRequest.status == 200) {
 				            var httpResult = JSON.parse(httpRequest.responseText);
 				            gridOptions.api.setRowData(httpResult);
+				            gridOptions.api.sizeColumnsToFit();
 				        }
 				    };
 				});
