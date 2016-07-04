@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 @import url(noyh.css);
-@import url(nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 
 /**
  * variable
  */
-$font-base-stack: 'Noyh', 'Malgun Gothic', Gulim, Dotum, sans-serif;
+$font-base-stack: 'Noyh', 'Nanum Gothic', 'Malgun Gothic', Gulim, Dotum, sans-serif;
 $contents-width: 1440px;
 $column-left-width: 310px;
 $column-right-width: 1010px;
