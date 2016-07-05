@@ -1,6 +1,6 @@
-/*
+/**
 	popover
-*/
+**/
 .popover { display: block; position: relative; padding: 35px; background-color: #000;
 	.point { display: block; position: absolute; top: -15px; left: 50%; margin-left: -20px; height: 41px; width: 41px;
 		@include icon(arrow02);
@@ -10,7 +10,21 @@
 	.btn-logout { float: right; font-size: 18px; font-weight: 500; color: $white; border-bottom: 1px solid #fff; }	
 }
 
-/* global menu shortcuts popover */
+// select layer popup
+.list-select-popup { display: block; min-width: 160px; border: 3px solid #000; background-color: #fff;
+	> li { display: block;
+		a { display: block; padding: 0 10px; font-size: 18px; font-weight: 500; color: $black; line-height: 42px;
+			&.is-selected,
+			&:hover { color: $white; background-color: #000; }
+		}
+	}
+
+	&.small {
+		a { font-size: 13px; }
+	}
+}
+
+// global menu shortcuts popover
 .global-shortcuts {
 	.type-list { min-width: 390px;
 		> li { position: relative;
@@ -55,18 +69,38 @@
 
 
 
-/* select layer popup */
-.list-select-popup { display: block; min-width: 160px; border: 3px solid #000; background-color: #fff;
-	> li { display: block;
-		a { display: block; padding: 0 10px; font-size: 18px; font-weight: 500; color: $black; line-height: 42px;
-			&.is-selected,
-			&:hover { color: $white; background-color: #000; }
+/**
+	page tabs
+**/
+.page-tabs { display: block; position: relative; text-align: center;
+	&:before { content: ''; display: block; position: absolute; top: 50%; right: 0; left: 0; margin-top: -2px; height: 3px; background-color: #000; }
+
+	> .inner { display: inline-block; position: relative; z-index: z("default"); padding: 0 45px; background-color: #fff;
+		a { display: inline-block; padding: 0 60px; font-size: 18px; font-weight: 700; color: #000; text-align: center; line-height: 36px; letter-spacing: 0.1em; border: 3px solid #000; background-color: #fff;
+			&.is-selected { color: #fff; background-color: #000; }
+
+			+ a { margin-left: -6px; }
 		}
 	}
+}
 
-	&.small {
-		a { font-size: 13px; }
-	}
+
+
+// page sub tabs
+.page-sub-tabs {
+
+}
+
+
+
+/**
+	filter-util
+**/
+.filter-util { overflow: hidden; padding: 35px 40px; text-align: center;
+	.left-content { float: left; line-height: 43px; }
+	.right-content { float: right; line-height: 43px; }
+
+	.page-tabs { display: inline-block; }
 }
 
 
@@ -74,10 +108,12 @@
 
 
 
-/*
+
+
+/**
 	dashboard
-*/
-/* section-item */
+**/
+// section-item
 .section-item { position: relative;
 	&:before { content: ''; display: block; position: absolute; top: 10px; right: 0; left: 0; height: 3px; background-color: #000; }
 
@@ -92,71 +128,75 @@
 
 
 
-/*
-	controls
-*/
-/* dropdown(selectbox) */
-.selectize-control { display: inline-block; position: relative; z-index: z("dropdown"); min-width: 120px;
+/**
+	form controls
+**/
+// checkbox & radio
+.icheck { display: inline-block; position: relative; padding: 0 0 0 45px; font-size: 20px; font-weight: 500; color: $black; line-height: 23px; cursor: pointer; }
 
-	.selectize-input { display: inline-block; box-sizing: border-box; overflow: hidden; position: relative; z-index: z("default"); padding: 0 25px 0 16px; width: 100%; border: 0px; font-size: 20px; font-weight: 500; color: #000; line-height: 36px; border: 3px solid #000;
-		@include icon(arrow01, after);
-		&:after { display: block; position: absolute; top: 50%; right: 10px; margin-top: -4px; height: 9px; width: 14px; font-size: 14px; line-height: 6px; vertical-align: middle; }
-
-		> input { display: none;
-			margin: 0 2px 0 0 !important;
-			padding: 0 !important;
-			min-height: 0 !important;
-			max-height: none !important;
-			max-width: 100% !important;
-			text-indent: 0 !important;
-			line-height: inherit !important;
-			border: 0 none !important;
-			box-shadow: none !important;
-			background: none !important;
-		}
-	}
-
-
-	.selectize-dropdown { display: inline-block; box-sizing: border-box; position: absolute; z-index: z("dropdown"); border: 3px solid #000; background-color: #fff;
-		[data-selectable] { overflow: hidden; cursor: pointer; line-height: 36px;
-			.highlight { background-color: #000; }
-		}
-
-		.selectize-dropdown-content { overflow-y: auto; overflow-x: hidden; max-height: 200px; }
-		.option { padding: 0 16px; font-size: 20px; font-weight: 500; line-height: 42px; }
-		.active { color: #fff; background-color: #000; }
-	}
-}
-
-
-/* checkbox & radio */
-.icheckbox { display: inline-block; margin: -2px 20px 0 0; vertical-align: middle; @include retina-sprite($sc-unchecked-group);
-	+ label { font-size: 20px; font-weight: 500; color: $black; line-height: 23px; cursor: pointer; }
+.icheckbox { display: block; position: absolute !important; top: 0; left: 0; @include retina-sprite($sc-unchecked-group);
 	&.checked { @include retina-sprite($sc-checked-group); }
+	&.indeterminate { @include retina-sprite($sc-pending-group); }
 }
 
-.iradio { display: inline-block; margin: -2px 20px 0 0; vertical-align: middle; @include retina-sprite($sc-runchecked-group);
-	+ label { font-size: 20px; font-weight: 500; color: $black; cursor: pointer; }
+.iradio { display: block; position: absolute !important; top: 0; left: 0; @include retina-sprite($sc-runchecked-group);
 	&.checked { @include retina-sprite($sc-rchecked-group); }
 }
 
 
+.all-checked { display: block; position: relative; padding: 0 55px 0 15px; min-height: 40px; font-size: 20px; color: #000; line-height: 40px; border: 3px solid #000;
+    @include icon(arrow01, after);
+	&:after { display: block; position: absolute; top: 0; right: 0; bottom: 0; height: 40px; width: 40px; background-color: #0f0; }
+
+	> span { display: inline-block; height: 23px; width: 23px; text-indent: -9999px; vertical-align: middle; background-color: #f0f; }
+	&[value="0"] {
+		> span { @include retina-sprite($sc-unchecked-group); }
+	}
+	&[value="1"] {
+		> span { @include retina-sprite($sc-checked-group); }
+	}
+	&[value="2"] {
+		> span { @include retina-sprite($sc-pending-group); }
+	}
+
+	.list-select-popup { display: none; position: absolute; left: -3px; z-index: z("default");
+		&.open { display: block; transition: 0.3s all 0.1s; }
+		> li { text-align: left; }
+	}
+}
 
 
-/*
+
+/**
 	buttons
-*/
+**/
+// settings
 .btn-settings { overflow: hidden; height: 28px; width: 28px;
 	@include icon(settings); 
 	&:before { display: block; height: 28px; width: 28px; font-size: 28px; color: #666; }
 }
 
-.btn-normal { display: inline-block; min-width: 300px; font-size: 18px; font-weight: 700; color: $black; text-align: center; line-height: 37px; border: 3px solid #000;
+// btn text type
+.btn-text { display: inline-block; font-size: 20px; font-weight: 500; color: #6f6f6f; vertical-align: middle; text-decoration: underline;
+	&:before { display: inline-block; margin-right: 5px; height: 14px; width: 14px; font-size: 13px; }
+
+	&.reset { color: rgba(0, 0, 0, 0.43); text-decoration: none;
+		@include icon(reset);
+	}
+
+	&.show-hide {
+		@include icon(reset);
+	}
+}
+
+// normal
+input[type=submit].btn-normal,
+.btn-normal { display: inline-block; min-width: 300px; font-size: 18px; font-weight: 700; color: $black; text-align: center; vertical-align: middle; line-height: 37px; border: 3px solid #000; background-color: #fff;
 	&.large { font-size: 20px; line-height: 59px; }
 
 	&:hover { color: $white; background-color: #000; }
-	&[disabled] { color: $gray; border-color: #e7e7e7;
-		&:hover { color: $gray; background-color: inherit; }
+	&[disabled] { color: #cecece; border-color: #CECECE;
+		&:hover { color: #cecece; background-color: inherit; }
 	}
 }
 
@@ -164,16 +204,152 @@
 
 
 
+
+/**
+	filter
+**/
+.filter-container { position: relative; padding: 0 40px; height: 62px; background-color: #e7e7e7;
+    animation-delay: 0s;
+    animation-name: filter-up;
+    animation-timing-function: ease-out;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+	.btn-status { position: absolute; top: 50%; right: 67px; margin-top: -10px; font-size: 18px; font-weight: 700px; color: #000; border-bottom: 2px solid #000;
+		@include icon(arrow01, after);
+		&:after { position: absolute; top: 50%; right: -20px; margin-top: -2px; height: 8px; width: 12px; font-size: 15px; line-height: 8px; transform: rotate( 0deg ); }
+	}
+
+	.results { display: block; 
+		> .selected { height: 62px; font-size: 20px; font-weight: 500; color: #000; line-height: 62px;
+			@include icon(filter);
+			&:before { display: block; float: left; margin-right: 10px; height: 22px; width: 22px; font-size: 20px; color: #666; vertical-align: middle; line-height: 62px; }
+		}
+	}
+
+	.items { display: none; }
+
+
+	// open
+	&.is-opened { height: 490px; border-top: 2px solid #d0d0d0;
+        animation-delay: 0s;
+        animation-name: filter-down;
+        animation-timing-function: ease-out;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+		.btn-status { top: auto; bottom: 30px;
+			&:after { transform: rotate( -180deg ); }
+		}
+
+		.results { display: none; }
+
+		.items { display: block; overflow: hidden;
+			.filter-item { display: block; box-sizing: border-box; float: left; position: relative; overflow: hidden; padding: 15px 40px 0 0; height: 400px; width: 25%;
+				&:after { content: ''; display: block; position: absolute; right: 0; bottom: 0; left: 0; height: 50px;
+					background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(231,231,231,1) 100%);
+					background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(231,231,231,1) 100%);
+					background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(231,231,231,1) 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e7e7e7',GradientType=0 );
+				}
+
+				> .title { display: block; visibility: visible; position: relative; top: 25px; left: auto; height: auto; width: 100%; font-size: 18px; font-weight: 700; color: #000; letter-spacing: 0.1em;
+					&:before { content: ''; display: block; position: absolute; top: 50%; right: 0; margin-top: -2px; height: 3px; width: 100%; background-color: #000; }
+
+					> span { display: inline-block; position: relative; z-index: z("default"); padding-right: 15px; background-color: #e7e7e7; }
+				}
+				
+
+				.list-filter-items { position: relative; overflow: auto; margin-top: 15px; padding-bottom: 17px; height: 330px;
+					> li { display: block; padding: 25px 0 0 0;
+						&:first-child { padding-top: 10px; }
+
+						.btn-folding { display: block; float: right; position: relative; margin-right: 5px; height: 23px; width: 23px; text-indent: -9999px;
+							@include icon(arrow01, after);
+							&:after { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; font-size: 12px; line-height: 8px; text-indent: 0; line-height: 23px; transform: rotateX( 180deg ); transition-duration: 0.3s; }
+
+							&.is-opened {
+								&:after { transform: rotateX( 0deg ); transition-duration: 0.3s; }
+							}
+							&.is-opened ~ .list-filter-items { display: block; height: auto;  }
+						}
+
+						.list-filter-items { display: none; overflow: hidden; margin-top: 0; margin-left: 45px; height: 0;
+							> li { display: block; padding-top: 20px; }
+						}
+					}
+				}
+			}
+
+			.done { clear: both; padding-top: 23px; border-top: 3px solid #cecece;
+				.btn-text.reset { margin-left: 15px; }
+			}
+		}
+	}
+
+	@keyframes filter-down {
+		0% {
+			transform: translateY(-100%);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	@keyframes filter-up {
+		0% {
+			transform: translateY(-100%);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+}
+
+
+
+/**
+	warning message
+**/
+.warning-container { position: relative; padding: 15px 70px 15px 75px; height: 27px; background-color: #e74e0f;
+	@include icon(warning);
+	&:before { display: block; position: absolute; top: 15px; left: 30px; font-size: 30px; color: #fff; }
+
+	.btn-folding { display: block; position: absolute; top: 50%; right: 34px; z-index: z("default"); margin-top: -14px; height: 27px; width: 27px; text-indent: -9999px;
+		@include icon(arrow01, after);
+		&:after { position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 27px; font-size: 15px; color: #fff; line-height: 8px; vertical-align: middle; text-indent: 0; transform: rotateX( 0deg ); transition-duration: 0.3s; }
+	}
+
+	> .title { display: block; float: left; position: relative; margin-right: 3px; font-size: 18px; font-weight: 700; color: #fff; line-height: 27px; 
+		&:after { content: ':'; font-size: 16px; }
+	}
+	> .content { display: block; overflow: hidden; float: left; height: 27px; width: 90%; font-size: 16px; font-weight: 500; color: #fff; line-height: 27px; text-overflow: ellipsis; white-space: nowrap; }
+
+
+	&.is-opened { height: auto;
+		.btn-folding { top: 30px;
+			&:after { transform: rotateX( -180deg ); transition-duration: 0.3s; }
+		}
+
+		> .title { display: inline; float: none; margin-right: 0px; vertical-align: middle; }
+		> .content { display: inline; overflow: visible; float: none; height: auto; text-overflow: clip; white-space: normal; }
+	}
+}
+
+
 /*
 	etc
 */
-.filelist {
-	> li { padding: 0 0 0 10px;
-		&:before { content: '- '; }
-
-		.filelist { 
-			> li { padding: 0 0 0 10px;
-				&:before { content: '* '; }
+.filelist { padding: 0 0 0 10px;
+	> li { list-style-type: square;
+		.filelist { padding-left: 20px;
+			> li { list-style-type: circle;
 			}
 		}
 	}

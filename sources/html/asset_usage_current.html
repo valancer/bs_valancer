@@ -13,20 +13,51 @@
 		<article class="contents">
 			<div class="inner">
 				
-				<div id="myGrid" class="ag-bg"></div>
+				@@include('./inc_asset_filter.html')
+
+				<!--  -->
+				<div class="filter-util">
+					<div class="page-tabs">
+						<p class="inner">
+							<a href="#" class="is-selected">CURRENT</a>
+							<a href="#">HISTORY</a>
+						</p>
+					</div>
+
+
+					<div class="left-content">
+					</div>
+
+
+					<div class="right-content">
+						<button type="button" class="btn-text show-hide">hide graph</button>
+					</div>
+				</div>
+
+				
+
+				<!-- graph container -->
+				<div class="graph-container">
+					graph area
+				</div>
+				<!--// graph container -->
+
+
+				<!-- grid container -->
+				<div id="myGrid" class="ag-bespin-global"></div>
 
 				<script>
 				var columnDefs = [
-				    {headerName: "Athlete", field: "athlete", width: 150, sort: 'desc'},
-				    {headerName: "Age", field: "age", width: 90},
-				    {headerName: "Country", field: "country", width: 120},
-				    {headerName: "Year", field: "year", width: 90, unSortIcon: true},
-				    {headerName: "Date", field: "date", width: 110, comparator: dateComparator},
-				    {headerName: "Sport", field: "sport", width: 110},
-				    {headerName: "Gold", field: "gold", width: 100},
-				    {headerName: "Silver", field: "silver", width: 100},
-				    {headerName: "Bronze", field: "bronze", width: 100},
-				    {headerName: "Total", field: "total", width: 100}
+				    {headerName: "Athlete", field: "athlete", sort: 'desc'},
+				    {headerName: "Age", field: "age"},
+				    {headerName: "Country", field: "country"},
+				    {headerName: "Year", field: "year", unSortIcon: true},
+				    {headerName: "Date", field: "date", comparator: dateComparator},
+				    {headerName: "Sport", field: "sport"},
+				    {headerName: "Gold", field: "gold"},
+				    {headerName: "Silver", field: "silver"},
+				    {headerName: "Bronze", field: "bronze"},
+				    {headerName: "Total", field: "total"}
 				];
 
 				function dateComparator(date1, date2) {
@@ -89,6 +120,8 @@
 				    };
 				});
 				</script>
+				<!--// grid container -->
+
 
 			</div>
 		</article>
