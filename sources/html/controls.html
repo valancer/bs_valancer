@@ -20,18 +20,23 @@
 					<h2 class="title">select box</h2>
 					<div class="clear"></div>
 					
+					<span style="display: inline-block;">
+						<select name="" id="">
+							<option value="0">RDS</option>
+							<option value="1" selected>BBS</option>
+							<option value="2">EC2</option>
+						</select>
+					</span>
+
 					<select name="" id="">
-						<option value="0">RDS</option>
+						<option value="0">AWS</option>
 						<option value="1" selected>BBS</option>
 						<option value="2">EC2</option>
 					</select>
 					<script>
 					$(document).ready(function(){
 
-						$('select').selectize({
-							persist: false,
-							create: false
-						});
+						$('select').selectric({});
 					});
 					</script>
 				</section>

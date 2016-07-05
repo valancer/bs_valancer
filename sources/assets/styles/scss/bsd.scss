@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url(noyh.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(nanumgothic.css);
 
 
 /**
@@ -35,6 +35,8 @@ body { background-color: #fff; }
 @import "sprites_portal";
 @import "sprites_asset";
 @import "sprites_metering";
+
+@import "selectric";
 
 
 
