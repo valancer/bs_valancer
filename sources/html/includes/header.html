@@ -76,10 +76,10 @@
 		
 		<button type="button" class="btn-settings">settings</button>
 		<ul class="list-menes">
-			<li class="is-selected"><a href="#">DASHBOARD</a></li>
-			<li><a href="#">SERVICE GROUP</a></li>
-			<li><a href="#">STATUS</a></li>
-			<li><a href="#">PERFORMANCE</a></li>
+			<li @@if ( sub == "dashboard" ) { class="is-selected" }><a href="#">DASHBOARD</a></li>
+			<li @@if ( sub == "service" ) { class="is-selected" }><a href="#">SERVICE GROUP</a></li>
+			<li @@if ( sub == "usage" ) { class="is-selected" }><a href="#">USAGE</a></li>
+			<li @@if ( sub == "performance" ) { class="is-selected" }><a href="#">PERFORMANCE</a></li>
 		</ul>
 	</div>
 </nav>
@@ -92,11 +92,11 @@
 
 		<button type="button" class="btn-settings">settings</button>
 		<ul class="list-menes">
-			<li class="is-selected"><a href="#">DASHBOARD</a></li>
-			<li><a href="#">BILLING</a></li>
-			<li><a href="#">USAGE ANALYTICS</a></li>
-			<li><a href="#">BILLING</a></li>
-			<li><a href="#">COST ANALYTICS</a></li>
+			<li @@if ( sub == "dashboard" ) { class="is-selected" }><a href="#">DASHBOARD</a></li>
+			<li @@if ( sub == "billing" ) { class="is-selected" }><a href="#">BILLING</a></li>
+			<li @@if ( sub == "usage" ) { class="is-selected" }><a href="#">USAGE ANALYTICS</a></li>
+			<li @@if ( sub == "budgeting" ) { class="is-selected" }><a href="#">BUDGETING</a></li>
+			<li @@if ( sub == "status" ) { class="is-selected" }><a href="#">RI STATUS</a></li>
 		</ul>
 	</div>
 </nav>

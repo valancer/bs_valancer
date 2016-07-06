@@ -66,7 +66,7 @@
 	h2 { display: none; }
 	.btn-settings { display: block; position: absolute; top: 50%; right: 40px; margin-top: -14px; }
 
-	.list-menes { display: block; overflow: hidden; padding: 30px 0 0 20px; width: 100%;
+	.list-menes { display: block; box-sizing: border-box; overflow: hidden; padding: 30px 0 0 20px; width: 100%;
 		> li { float: left; padding: 0 20px;
 			a { display: block; font-size: 20px; font-weight: 700; color: rgba(156, 156, 156, 0.7); line-height: 20px; letter-spacing: 0.1em;
 				&:hover { color: #000; }
@@ -85,12 +85,6 @@
 
 
 
-
-/* contents */
-
-
-
-
 /* FOOTER */
 .footer { height: 400px; background-color: #000;
 	
@@ -103,7 +97,7 @@
 article.contents { 
 	@mixin inner() { box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
 	> .inner { overflow: hidden; @include inner(); margin-top: 35px; padding-bottom: 130px;
-		.asset & { margin-top: 0; padding: 0 0 130px 0; }
+		.asset & { margin-top: 0; padding: 0; }
 	}
 
 	.column-left { float: left; padding-right: $column-padding; width: $column-left-width; }

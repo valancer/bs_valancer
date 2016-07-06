@@ -15,19 +15,25 @@
 				
 				@@include('./inc_asset_filter.html')
 
-				@@include('./inc_warning.html')
-				
 				<!--  -->
 				<div class="filter-util">
 					<div class="page-tabs">
 						<p class="inner">
-							<a href="#" class="is-selected">CURRENT</a>
-							<a href="#">HISTORY</a>
+							<a href="#">CURRENT</a>
+							<a href="#" class="is-selected">HISTORY</a>
 						</p>
 					</div>
 
 
 					<div class="left-content">
+						<div class="datepicker">
+							<input type="text" name="daterange" value="">
+						</div>
+						<script>
+						$(document).ready(function(e) {
+							$('input[name="daterange"]').daterangepicker();
+						});
+						</script>
 					</div>
 
 

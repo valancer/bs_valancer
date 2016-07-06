@@ -35,38 +35,41 @@
 	@if $filename == asset {
 		$char: "\E003";
 	}
-	@if $filename == export {
+	@if $filename == calendar {
 		$char: "\E004";
 	}
-	@if $filename == eyes {
+	@if $filename == export {
 		$char: "\E005";
 	}
-	@if $filename == filter {
+	@if $filename == eyes {
 		$char: "\E006";
 	}
-	@if $filename == grid {
+	@if $filename == filter {
 		$char: "\E007";
 	}
-	@if $filename == metering {
+	@if $filename == grid {
 		$char: "\E008";
 	}
-	@if $filename == noticifation {
+	@if $filename == metering {
 		$char: "\E009";
 	}
-	@if $filename == refresh {
+	@if $filename == noticifation {
 		$char: "\E00A";
 	}
-	@if $filename == reset {
+	@if $filename == refresh {
 		$char: "\E00B";
 	}
-	@if $filename == search {
+	@if $filename == reset {
 		$char: "\E00C";
 	}
-	@if $filename == settings {
+	@if $filename == search {
 		$char: "\E00D";
 	}
-	@if $filename == warning {
+	@if $filename == settings {
 		$char: "\E00E";
+	}
+	@if $filename == warning {
+		$char: "\E00F";
 	}
 
 	@return $char;
@@ -92,6 +95,9 @@
 }
 .icon-asset {
 	@include icon(asset);
+}
+.icon-calendar {
+	@include icon(calendar);
 }
 .icon-export {
 	@include icon(export);

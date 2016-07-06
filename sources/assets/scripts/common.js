@@ -35,6 +35,18 @@ $(document).ready(function(e) {
 	GlobalMenu.init();
 	Filter.init();
 	WarningMessage.init();
+
+	$('.btn-toggle').on('click', function(e) {
+		var $btnToggle = $(this);
+		var target = $btnToggle.val();
+		$(target).slideToggle(function() {
+			if( $(this).is(":visible") ) {
+				$btnToggle.text("hide graph");
+			} else {
+				$btnToggle.text("show graph");
+			}
+		});
+	});
 });
 
 
@@ -172,6 +184,7 @@ var Filter = (function ($) {
 		}
 	};
 }(jQuery));
+
 
 
 /* WarningMessage */

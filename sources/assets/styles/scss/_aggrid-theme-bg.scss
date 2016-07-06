@@ -1,9 +1,39 @@
+/**
+	agGrid util
+**/
+.aggrid-uitls { clear: both; padding: 10px 40px; background-color: #fff;
+	.right-content { float: right;
+		.btn-text { margin-left: 35px; }
+	}
+
+	.search { display: block;
+		@include icon(search);
+		&:before { display: inline-block; margin-right: 10px; color: #999; line-height: 27px; vertical-align: middle; }
+
+		input[type=text] { height: 27px; width: 30%; font-size: 20px; font-weight: 500; color: #000; border: 0px; line-height: 27px; }
+	}
+
+}
+// popover
+.popover.export {
+	.point { right: 10px; left: auto; }
+
+	ul { display: block; width: 95px;
+		> li { text-align: center; border-top: 2px solid #343434;
+			&:first-child { border-top: 0px; }
+			button { font-size: 16px; font-weight: 500; color: #fff; line-height: 48px; }
+		}
+	}
+}
+
+
+
 .ag-bespin-global {
 	width: 100%;
 	line-height: 1.4;
 	font-family: inherit;
 	font-size: 14px;
-	color: #4a4a4a;
+	color: #000;
 
 	img {
 		vertical-align: middle;
@@ -39,7 +69,7 @@
 		transition: left 0.2s;
 	}
 	.ag-cell-focus {
-		border: 1px solid #a9a9a9;
+		border: 1px solid transparent;
 	}
 	.ag-cell-no-focus {
 		border-right: 1px solid transparent;
@@ -174,7 +204,8 @@
 			background-color: #f6f6f6;
 		}
 		.ag-row-selected {
-			background-color: #b0e0e6;
+			color: #fff;
+			background-color: #000;
 		}
 	}
 	.ag-floating-top .ag-row, .ag-floating-bottom .ag-row {
