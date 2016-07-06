@@ -1,0 +1,104 @@
+@font-face {
+	font-family: "Icons";
+	src: url('../fonts/icons/Icons.eot');
+	src: url('../fonts/icons/Icons.eot?#iefix') format('eot'),
+		url('../fonts/icons/Icons.woff') format('woff'),
+		url('../fonts/icons/Icons.ttf') format('truetype'),
+		url('../fonts/icons/Icons.svg#Icons') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "Icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == arrow01 {
+		$char: "\E001";
+	}
+	@if $filename == arrow02 {
+		$char: "\E002";
+	}
+	@if $filename == asset {
+		$char: "\E003";
+	}
+	@if $filename == filter {
+		$char: "\E004";
+	}
+	@if $filename == grid {
+		$char: "\E005";
+	}
+	@if $filename == metering {
+		$char: "\E006";
+	}
+	@if $filename == noticifation {
+		$char: "\E007";
+	}
+	@if $filename == reset {
+		$char: "\E008";
+	}
+	@if $filename == settings {
+		$char: "\E009";
+	}
+	@if $filename == warning {
+		$char: "\E00A";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+
+.icon-arrow01 {
+	@include icon(arrow01);
+}
+.icon-arrow02 {
+	@include icon(arrow02);
+}
+.icon-asset {
+	@include icon(asset);
+}
+.icon-filter {
+	@include icon(filter);
+}
+.icon-grid {
+	@include icon(grid);
+}
+.icon-metering {
+	@include icon(metering);
+}
+.icon-noticifation {
+	@include icon(noticifation);
+}
+.icon-reset {
+	@include icon(reset);
+}
+.icon-settings {
+	@include icon(settings);
+}
+.icon-warning {
+	@include icon(warning);
+}
