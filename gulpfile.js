@@ -204,12 +204,12 @@ gulp.task('iconfont', function(){
 
 gulp.task('sass', function () {
 	return gulp.src(paths.scss.src)
-        .pipe(sass({ errLogToConsole: true }))
+        .pipe(sass({ errLogToConsole: false }))
 		// .pipe(sass().on('error', sass.logError))
-        .on('error', function(err) {
-            notify().write(err);
-            this.emit('end');
-        })
+		.on('error', function(err) {
+			notify().write(err);
+			this.emit('end');
+		})
 		.pipe(gulp.dest(paths.scss.dest))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
