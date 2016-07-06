@@ -134,8 +134,8 @@ input[type=submit] {
 
 @font-face {
   font-family: "Icons";
-  src: url("/assets/fonts/icons/Icons.eot");
-  src: url("/assets/fonts/icons/Icons.eot?#iefix") format("eot"), url("/assets/fonts/icons/Icons.woff") format("woff"), url("/assets/fonts/icons/Icons.ttf") format("truetype"), url("/assets/fonts/icons/Icons.svg#Icons") format("svg"); }
+  src: url("../fonts/icons/Icons.eot");
+  src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
 .icon-arrow01:before, .icon-arrow02:before, .icon-asset:before, .icon-filter:before, .icon-grid:before, .icon-metering:before, .icon-noticifation:before, .icon-reset:before, .icon-settings:before, .icon-warning:before, .selectric .button:after, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container.is-opened .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after {
   font-family: "Icons";
@@ -619,13 +619,13 @@ The `sprites` mixin generates identical output to the CSS template
         content: '';
         display: block;
         margin-top: 18px;
-        background-image: url(/assets/images/sprites.png);
+        background-image: url(../images/sprites.png);
         background-position: 0px 0px;
         width: 173px;
         height: 16px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu .title .bespin-global:before {
-            background-image: url(/assets/images/sprites@2x.png);
+            background-image: url(../images/sprites@2x.png);
             background-size: 173px 45px; } }
     .global-menu .title .service {
       display: block;
@@ -1001,7 +1001,7 @@ article.contents .column-right {
       letter-spacing: 0.1em;
       border: 3px solid #000;
       background-color: #fff; }
-      .page-tabs > .inner a.is-selected {
+      .page-tabs > .inner a:hover, .page-tabs > .inner a.is-selected {
         color: #fff;
         background-color: #000; }
       .page-tabs > .inner a + a {
@@ -1064,31 +1064,31 @@ article.contents .column-right {
   position: absolute !important;
   top: 0;
   left: 0;
-  background-image: url(/assets/images/sprites.png);
+  background-image: url(../images/sprites.png);
   background-position: -116px -22px;
   width: 23px;
   height: 23px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icheckbox {
-      background-image: url(/assets/images/sprites@2x.png);
+      background-image: url(../images/sprites@2x.png);
       background-size: 173px 45px; } }
   .icheckbox.checked {
-    background-image: url(/assets/images/sprites.png);
+    background-image: url(../images/sprites.png);
     background-position: 0px -22px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.checked {
-        background-image: url(/assets/images/sprites@2x.png);
+        background-image: url(../images/sprites@2x.png);
         background-size: 173px 45px; } }
   .icheckbox.indeterminate {
-    background-image: url(/assets/images/sprites.png);
+    background-image: url(../images/sprites.png);
     background-position: -29px -22px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.indeterminate {
-        background-image: url(/assets/images/sprites@2x.png);
+        background-image: url(../images/sprites@2x.png);
         background-size: 173px 45px; } }
 
 .iradio {
@@ -1096,22 +1096,22 @@ article.contents .column-right {
   position: absolute !important;
   top: 0;
   left: 0;
-  background-image: url(/assets/images/sprites.png);
+  background-image: url(../images/sprites.png);
   background-position: -87px -22px;
   width: 23px;
   height: 23px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .iradio {
-      background-image: url(/assets/images/sprites@2x.png);
+      background-image: url(../images/sprites@2x.png);
       background-size: 173px 45px; } }
   .iradio.checked {
-    background-image: url(/assets/images/sprites.png);
+    background-image: url(../images/sprites.png);
     background-position: -58px -22px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .iradio.checked {
-        background-image: url(/assets/images/sprites@2x.png);
+        background-image: url(../images/sprites@2x.png);
         background-size: 173px 45px; } }
 
 .all-checked {
@@ -1142,31 +1142,31 @@ article.contents .column-right {
     vertical-align: middle;
     background-color: #f0f; }
   .all-checked[value="0"] > span {
-    background-image: url(/assets/images/sprites.png);
+    background-image: url(../images/sprites.png);
     background-position: -116px -22px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="0"] > span {
-        background-image: url(/assets/images/sprites@2x.png);
+        background-image: url(../images/sprites@2x.png);
         background-size: 173px 45px; } }
   .all-checked[value="1"] > span {
-    background-image: url(/assets/images/sprites.png);
+    background-image: url(../images/sprites.png);
     background-position: 0px -22px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="1"] > span {
-        background-image: url(/assets/images/sprites@2x.png);
+        background-image: url(../images/sprites@2x.png);
         background-size: 173px 45px; } }
   .all-checked[value="2"] > span {
-    background-image: url(/assets/images/sprites.png);
+    background-image: url(../images/sprites.png);
     background-position: -29px -22px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="2"] > span {
-        background-image: url(/assets/images/sprites@2x.png);
+        background-image: url(../images/sprites@2x.png);
         background-size: 173px 45px; } }
   .all-checked .list-select-popup {
     display: none;

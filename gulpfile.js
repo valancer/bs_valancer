@@ -98,9 +98,9 @@ gulp.task('includes', function() {
 gulp.task('sprites:common', function () {
 	var spriteData = gulp.src(paths.sprites.common.src).pipe(spritesmith({
 		retinaSrcFilter: paths.sprites.common.filter,
-		imgPath: '/assets/images/sprites.png',
+		imgPath: '../images/sprites.png',
 		imgName: 'sprites.png',
-		retinaImgPath: '/assets/images/sprites@2x.png',
+		retinaImgPath: '../images/sprites@2x.png',
 		retinaImgName: 'sprites@2x.png',
 		cssName: '_sprites.scss',
 		padding: 6,
@@ -122,7 +122,7 @@ gulp.task('sprites:common', function () {
 
 gulp.task('sprites:portal', function () {
 	var spriteData = gulp.src(paths.sprites.portal.src).pipe(spritesmith({
-		imgPath: '/assets/images/portal/portal_sprites.png',
+		imgPath: '../images/portal/portal_sprites.png',
 		imgName: 'sprites_portal.png',
 		cssName: '_sprites_portal.scss',
 		padding: 6,
@@ -144,7 +144,7 @@ gulp.task('sprites:portal', function () {
 
 gulp.task('sprites:asset', function () {
 	var spriteData = gulp.src(paths.sprites.asset.src).pipe(spritesmith({
-		imgPath: '/assets/images/asset/asset_sprites.png',
+		imgPath: '../images/asset/asset_sprites.png',
 		imgName: 'sprites_asset.png',
 		cssName: '_sprites_asset.scss',
 		padding: 6,
@@ -166,7 +166,7 @@ gulp.task('sprites:asset', function () {
 
 gulp.task('sprites:metering', function () {
 	var spriteData = gulp.src(paths.sprites.metering.src).pipe(spritesmith({
-		imgPath: '/assets/images/metering/metering_sprites.png',
+		imgPath: '../images/metering/metering_sprites.png',
 		imgName: 'sprites_metering.png',
 		cssName: '_sprites_metering.scss',
 		padding: 6,
@@ -193,7 +193,7 @@ gulp.task('iconfont', function(){
 			fontName: fontName,
 			path: 'sources/assets/styles/templates/_icons_template.scss',
 			targetPath: '../../styles/scss/_icons.scss',
-			fontPath: '/assets/fonts/icons/',
+			fontPath: '../fonts/icons/',
 			cssClass: 'icon'
 		}))
 		.pipe(iconfont({
