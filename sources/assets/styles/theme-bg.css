@@ -36,10 +36,6 @@
   background-color: rgba(0,0,0,0.4);
 }
 .ag-bespin-global .ag-column-moving .ag-cell {
-  -webkit-transition: left 0.2s;
-  -moz-transition: left 0.2s;
-  -o-transition: left 0.2s;
-  -ms-transition: left 0.2s;
   transition: left 0.2s;
 }
 .ag-bespin-global .ag-cell-focus {
@@ -61,10 +57,6 @@
   border: 1px solid #006400;
 }
 .ag-bespin-global .ag-cell-highlight-animation {
-  -webkit-transition: border 1s;
-  -moz-transition: border 1s;
-  -o-transition: border 1s;
-  -ms-transition: border 1s;
   transition: border 1s;
 }
 .ag-bespin-global .ag-value-change-delta {
@@ -78,22 +70,13 @@
 }
 .ag-bespin-global .ag-value-change-value {
   background-color: transparent;
-  -webkit-border-radius: 1px;
   border-radius: 1px;
   padding-left: 1px;
   padding-right: 1px;
-  -webkit-transition: background-color 1s;
-  -moz-transition: background-color 1s;
-  -o-transition: background-color 1s;
-  -ms-transition: background-color 1s;
   transition: background-color 1s;
 }
 .ag-bespin-global .ag-value-change-value-highlight {
   background-color: #cec;
-  -webkit-transition: background-color 0.1s;
-  -moz-transition: background-color 0.1s;
-  -o-transition: background-color 0.1s;
-  -ms-transition: background-color 0.1s;
   transition: background-color 0.1s;
 }
 .ag-bespin-global .ag-rich-select {
@@ -128,10 +111,6 @@
   fill: #000;
 }
 .ag-bespin-global .ag-no-scrolls .ag-header-container {
-  background: -webkit-linear-gradient(#fff, #d3d3d3);
-  background: -moz-linear-gradient(#fff, #d3d3d3);
-  background: -o-linear-gradient(#fff, #d3d3d3);
-  background: -ms-linear-gradient(#fff, #d3d3d3);
   background: linear-gradient(#fff, #d3d3d3);
   border-bottom: 1px solid #808080;
 }
@@ -170,12 +149,9 @@
   padding: 2px;
   margin-top: 4px;
   border: 1px solid transparent;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-sizing: content-box /* When using bootstrap, box-sizing was set to 'border-box' */;
-  -moz-box-sizing: content-box /* When using bootstrap, box-sizing was set to 'border-box' */;
-  box-sizing: content-box /* When using bootstrap, box-sizing was set to 'border-box' */;
-  line-height: 0px /* normal line height, a space was appearing below the menu button */;
+  box-sizing: content-box;
+  line-height: 0px;
 }
 .ag-bespin-global .ag-pinned-right-header {
   border-left: 1px solid #808080;
@@ -187,10 +163,6 @@
   background-color: #f6f6f6;
 }
 .ag-bespin-global .ag-body .ag-row {
-  -webkit-transition: background-color 0.1s;
-  -moz-transition: background-color 0.1s;
-  -o-transition: background-color 0.1s;
-  -ms-transition: background-color 0.1s;
   transition: background-color 0.1s;
 }
 .ag-bespin-global .ag-body .ag-row-odd {
@@ -214,7 +186,6 @@
 .ag-bespin-global .ag-overlay-loading-center {
   background-color: #fff;
   border: 1px solid #808080;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
   padding: 10px;
   color: #000;
@@ -222,7 +193,6 @@
 .ag-bespin-global .ag-overlay-no-rows-center {
   background-color: #fff;
   border: 1px solid #808080;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
   padding: 10px;
 }
@@ -256,7 +226,7 @@
   border: 1px solid #808080;
   background-color: #f6f6f6;
   cursor: default;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-size: 14px;
 }
 .ag-bespin-global .ag-menu .ag-tab-header {
@@ -382,7 +352,6 @@
   border: 1px solid transparent;
   padding-left: 2px;
   padding-right: 2px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 .ag-bespin-global .ag-column-drop-cell-button:hover {

@@ -35,26 +35,38 @@
 	@if $filename == asset {
 		$char: "\E003";
 	}
-	@if $filename == filter {
+	@if $filename == export {
 		$char: "\E004";
 	}
-	@if $filename == grid {
+	@if $filename == eyes {
 		$char: "\E005";
 	}
-	@if $filename == metering {
+	@if $filename == filter {
 		$char: "\E006";
 	}
-	@if $filename == noticifation {
+	@if $filename == grid {
 		$char: "\E007";
 	}
-	@if $filename == reset {
+	@if $filename == metering {
 		$char: "\E008";
 	}
-	@if $filename == settings {
+	@if $filename == noticifation {
 		$char: "\E009";
 	}
-	@if $filename == warning {
+	@if $filename == refresh {
 		$char: "\E00A";
+	}
+	@if $filename == reset {
+		$char: "\E00B";
+	}
+	@if $filename == search {
+		$char: "\E00C";
+	}
+	@if $filename == settings {
+		$char: "\E00D";
+	}
+	@if $filename == warning {
+		$char: "\E00E";
 	}
 
 	@return $char;
@@ -81,6 +93,12 @@
 .icon-asset {
 	@include icon(asset);
 }
+.icon-export {
+	@include icon(export);
+}
+.icon-eyes {
+	@include icon(eyes);
+}
 .icon-filter {
 	@include icon(filter);
 }
@@ -93,8 +111,14 @@
 .icon-noticifation {
 	@include icon(noticifation);
 }
+.icon-refresh {
+	@include icon(refresh);
+}
 .icon-reset {
 	@include icon(reset);
+}
+.icon-search {
+	@include icon(search);
 }
 .icon-settings {
 	@include icon(settings);
