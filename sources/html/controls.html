@@ -15,22 +15,84 @@
 			<div class="inner">
 				<h1>Controls</h1>
 
+				<div class="page-tabs">
+					<p class="inner">
+						<a href="#" class="is-selected">CURRENT</a>
+						<a href="#">HISTORY</a>
+					</p>
+				</div>
+
 
 				<section class="section-item" style="margin-top: 30px;">
-					<h2 class="title">select box</h2>
+					<h2 class="title">select box(http://selectric.js.org)</h2>
 					<div class="clear"></div>
 					
+					<span style="display: inline-block;">
+						<select name="" id="">
+							<option value="0">RDS</option>
+							<option value="1" selected>BBS</option>
+							<option value="2">EC2</option>
+						</select>
+					</span>
+
 					<select name="" id="">
-						<option value="0">RDS</option>
+						<option value="0">AWS</option>
 						<option value="1" selected>BBS</option>
 						<option value="2">EC2</option>
 					</select>
+				</section>
+
+
+
+				<section class="section-item" style="margin-top: 30px;">
+					<h2 class="title">all check/uncheck(...ing)</h2>
+					<div class="clear"></div>
+					
+					
+					<button type="button" value="0" class="all-checked">
+						<span>all check/uncheck</span>
+						<ul class="list-select-popup">
+							<li><a href="#0" data-index="2">Select Pending</a></li>
+							<li><a href="#1" data-index="1">Select All</a></li>
+							<li><a href="#2" data-index="0">Select None</a></li>
+						</ul>
+					</button>
+
+					<button type="button" value="1" class="all-checked">
+						<span>all check/uncheck</span>
+						<ul class="list-select-popup">
+							<li><a href="#0" data-index="2">Select Pending</a></li>
+							<li><a href="#1" data-index="1">Select All</a></li>
+							<li><a href="#2" data-index="0">Select None</a></li>
+						</ul>
+					</button>
+
 					<script>
 					$(document).ready(function(){
+						var $allChecked = $('.all-checked');
 
-						$('select').selectize({
-							persist: false,
-							create: false
+
+
+
+						$allChecked.on('click', function(e) {
+							e.preventDefault();
+
+							var $scope = $(e.target);
+							var value = $scope.val();
+							var $menu = $scope.find('.list-select-popup');
+							var $menuItems = $menu.find('a');
+
+							if( $menu.hasClass('open') ) {
+								$menu.removeClass('open');
+							} else {
+								$menu.addClass('open');
+								$menu.find('[data-index=' + value + "]").addClass('is-selected');
+							}
+
+							$menuItems.on('click', function(e) {
+								var $this = $(e.target);
+								$scope.val($this.data('index'));
+							});
 						});
 					});
 					</script>
@@ -38,7 +100,7 @@
 
 
 				<section class="section-item" style="margin-top: 30px;">
-					<h2 class="title">checkbox &amp; radio</h2>
+					<h2 class="title">checkbox &amp; radio(http://icheck.fronteed.com)</h2>
 					<div class="clear"></div>
 					
 					<fieldset>
@@ -46,20 +108,28 @@
 
 						<ul>
 							<li>
-								<input type="checkbox" id="region01" name="region" class="icheckbox">
-								<label for="region01">South Korea</label>
+								<label for="region01" class="icheck">
+									<input type="checkbox" id="region01" name="region" class="icheckbox" checked>
+									South Korea
+								</label>
 							</li>
 							<li>
-								<input type="checkbox" id="region02" name="region" class="icheckbox">
-								<label for="region02">US-EAST</label>
+								<label for="region02" class="icheck">
+									<input type="checkbox" id="region02" name="region" class="icheckbox" indeterminate="true">
+									US-EAST
+								</label>
 							</li>
 							<li>
-								<input type="checkbox" id="region03" name="region" class="icheckbox">
-								<label for="region03">China</label>
+								<label for="region03" class="icheck">
+									<input type="checkbox" id="region03" name="region" class="icheckbox">
+									China
+								</label>
 							</li>
 							<li>
-								<input type="checkbox" id="region04" name="region" class="icheckbox">
-								<label for="region04">Japan</label>
+								<label for="region04" class="icheck">
+									<input type="checkbox" id="region04" name="region" class="icheckbox">
+									Japan
+								</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -69,30 +139,31 @@
 
 						<ul>
 							<li>
-								<input type="radio" id="infrastructure01" name="infrastructure" class="iradio">
-								<label for="infrastructure01">EC2</label>
+								<label for="infrastructure01" class="icheck">
+									<input type="radio" id="infrastructure01" name="infrastructure" class="iradio">
+									EC2
+								</label>
 							</li>
 							<li>
-								<input type="radio" id="infrastructure02" name="infrastructure" class="iradio">
-								<label for="infrastructure02">EBS</label>
+								<label for="infrastructure02" class="icheck">
+									<input type="radio" id="infrastructure02" name="infrastructure" class="iradio">
+									EBS
+								</label>
 							</li>
 							<li>
-								<input type="radio" id="infrastructure03" name="infrastructure" class="iradio">
-								<label for="infrastructure03">RDS</label>
+								<label for="infrastructure03" class="icheck">
+									<input type="radio" id="infrastructure03" name="infrastructure" class="iradio">
+									RDS
+								</label>
 							</li>
 							<li>
-								<input type="radio" id="infrastructure04" name="infrastructure" class="iradio">
-								<label for="infrastructure04">S3</label>
+								<label for="infrastructure04" class="icheck">
+									<input type="radio" id="infrastructure04" name="infrastructure" class="iradio">
+									S3
+								</label>
 							</li>
 						</ul>
 					</fieldset>
-					<script>
-					$(document).ready(function(){
-						// icheck
-						$('input.icheckbox').iCheck();
-						$('input.iradio').iCheck();
-					});
-					</script>
 				</section>
 
 

@@ -102,7 +102,9 @@
 /* CONTENTS */
 article.contents { 
 	@mixin inner() { box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
-	> .inner { overflow: hidden; @include inner(); margin-top: 35px; padding-bottom: 130px; }
+	> .inner { overflow: hidden; @include inner(); margin-top: 35px; padding-bottom: 130px;
+		.asset & { margin-top: 0; padding: 0 0 130px 0; }
+	}
 
 	.column-left { float: left; padding-right: $column-padding; width: $column-left-width; }
 	.column-right { float: left; width: $column-right-width; }

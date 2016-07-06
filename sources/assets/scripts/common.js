@@ -25,7 +25,16 @@ if (!window.console) {
 
 
 $(document).ready(function(e) {
+	// icheck
+	$('input.icheckbox').iCheck();
+	$('input.iradio').iCheck();
+
+	// select
+	$('select').selectric({});
+
 	GlobalMenu.init();
+	Filter.init();
+	WarningMessage.init();
 });
 
 
@@ -86,10 +95,113 @@ var GlobalMenu = (function ($) {
 	}
 
 	return {
-		init: function () {
+		init: function() {
 			init();
 		}
 	};
 }(jQuery));
 
 
+
+/* Filter */
+var Filter = (function ($) {
+	var scope,
+		$container,
+		$btnToggleContainer,
+		$btnToggleItems,
+		$btnReset,
+		$selectedLabels,
+		init = function() {
+			$container = $('.filter-container');
+			$btnToggleContainer = $container.find('.btn-status');
+			$btnToggleItems = $container.find('.btn-folding');
+			$btnReset = $container.find('.btn-reset');
+			$selectedLabels = $container.find('.results > .selected');
+
+			initLayout();
+			initEvent();
+		};
+
+	function initLayout() {
+		_updateSelectedLabels();
+	}
+
+	function initEvent() {
+		// open / close
+		$btnToggleContainer.on('click', function(e) {
+			if( $container.hasClass('is-opened') ) {
+				$container.removeClass('is-opened');
+				$btnToggleContainer.text('Open Filters');
+			} else {
+				$container.addClass('is-opened');
+				$btnToggleContainer.text('Close');
+			}
+
+			_updateSelectedLabels();
+		});
+
+		// item open / close
+		$btnToggleItems.on('click', function(e) {
+			var $this = $(e.target);
+			$this.toggleClass('is-opened');
+		});
+
+		// reset
+		$btnReset.on('click', function(e) {
+			e.preventDefault();
+
+			$('input.icheckbox').iCheck('uncheck');
+			$('input.iradio').iCheck('uncheck');
+		});
+	}
+
+	function _updateSelectedLabels() {
+		var checkedLabels = $container.find('input:checked').map(function() {
+			return $(this).closest('label').text().trim();
+		}).get();
+
+		$selectedLabels.html(checkedLabels.join(", "));
+	}
+
+	return {
+		init: function() {
+			init();
+		},
+		updateSelectedLabels: function() {
+			_updateSelectedLabels();
+		}
+	};
+}(jQuery));
+
+
+/* WarningMessage */
+var WarningMessage = (function ($) {
+	var scope,
+		$container,
+		$btnToggleContainer,
+		init = function() {
+			$container = $('.warning-container');
+			$btnToggleContainer = $container.find('.btn-folding');
+
+			initLayout();
+			initEvent();
+		};
+
+	function initLayout() {
+	}
+
+	function initEvent() {
+		// item open / close
+		$btnToggleContainer.on('click', function(e) {
+			e.preventDefault();
+			
+			$container.toggleClass('is-opened');
+		});
+	}
+
+	return {
+		init: function() {
+			init();
+		}
+	};
+}(jQuery));
