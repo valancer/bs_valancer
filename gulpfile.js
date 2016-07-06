@@ -17,8 +17,8 @@ var	gulp = require('gulp'),
 	jshint = require('gulp-jshint'),
 	connect = require('gulp-connect'),
 	livereload = require('gulp-livereload'),
-	watch = require('gulp-watch');
-
+	watch = require('gulp-watch'),
+	notify = require('gulp-notify');
 
 var paths = {
 	sources: 'sources/**',
@@ -204,7 +204,12 @@ gulp.task('iconfont', function(){
 
 gulp.task('sass', function () {
 	return gulp.src(paths.scss.src)
-		.pipe(sass().on('error', sass.logError))
+        .pipe(sass({ errLogToConsole: false }))
+		// .pipe(sass().on('error', sass.logError))
+		.on('error', function(err) {
+			notify().write(err);
+			this.emit('end');
+		})
 		.pipe(gulp.dest(paths.scss.dest))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
@@ -304,7 +309,6 @@ gulp.task('connect', function () {
 		livereload: true
 	});
 });
-
 
 
 gulp.task('sass-build', ['iconfont', 'sprites:common', 'sprites:portal', 'sprites:asset', 'sprites:metering', 'sass'], function() { });
