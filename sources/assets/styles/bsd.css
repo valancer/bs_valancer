@@ -107,7 +107,7 @@ a:link, a:visited, a:active, a:focus {
 a:hover {
   text-decoration: none; }
 
-.hidden {
+.is-hidden {
   display: none !important; }
 
 .visible-hidden {
@@ -141,7 +141,7 @@ input[type=submit] {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-asset:before, .icon-calendar:before, .icon-dashboard:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .datepicker:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-dashboard:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .datepicker:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, body.asset.usage .chart-container.scroll .nav:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -157,53 +157,56 @@ input[type=submit] {
 .icon-arrow02:before {
   content: ""; }
 
-.icon-asset:before {
+.icon-arrow03:before {
   content: ""; }
 
-.icon-calendar:before {
+.icon-asset:before {
   content: ""; }
 
-.icon-dashboard:before {
+.icon-calendar:before {
   content: ""; }
 
-.icon-export:before {
+.icon-dashboard:before {
   content: ""; }
 
-.icon-eyes:before {
+.icon-export:before {
   content: ""; }
 
-.icon-filter:before {
+.icon-eyes:before {
   content: ""; }
 
-.icon-grid:before {
+.icon-filter:before {
   content: ""; }
 
-.icon-metering:before {
+.icon-grid:before {
   content: ""; }
 
-.icon-monitoring:before {
+.icon-metering:before {
   content: ""; }
 
-.icon-noticifation:before {
+.icon-monitoring:before {
   content: ""; }
 
-.icon-refresh:before {
+.icon-noticifation:before {
   content: ""; }
 
-.icon-reset:before {
+.icon-refresh:before {
   content: ""; }
 
-.icon-search:before {
+.icon-reset:before {
   content: ""; }
 
-.icon-settings:before {
+.icon-search:before {
   content: ""; }
 
-.icon-warning:before {
+.icon-settings:before {
   content: ""; }
 
-.icon-workflow:before {
+.icon-warning:before {
   content: ""; }
+
+.icon-workflow:before {
+  content: ""; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -590,7 +593,7 @@ The `sprites` mixin generates identical output to the CSS template
   .aggrid-uitls .search {
     display: block; }
     .aggrid-uitls .search:before {
-      content: ""; }
+      content: ""; }
     .aggrid-uitls .search:before {
       display: inline-block;
       margin-right: 10px;
@@ -1374,9 +1377,9 @@ The `sprites` mixin generates identical output to the CSS template
         vertical-align: middle;
         text-align: center; }
       .global-menu .title .service.asset:before {
-        content: ""; }
+        content: ""; }
       .global-menu .title .service.metering:before {
-        content: ""; }
+        content: ""; }
       .global-menu .title .service.metering:before {
         margin-top: -4px;
         font-size: 41px; }
@@ -1395,7 +1398,7 @@ The `sprites` mixin generates identical output to the CSS template
       .global-menu .uilts .btns.notifications {
         position: relative; }
         .global-menu .uilts .btns.notifications:before {
-          content: ""; }
+          content: ""; }
         .global-menu .uilts .btns.notifications:before {
           display: block;
           color: #000;
@@ -1419,7 +1422,7 @@ The `sprites` mixin generates identical output to the CSS template
           border-radius: 14px;
           background-color: #f34122; }
       .global-menu .uilts .btns.dashboard:before {
-        content: ""; }
+        content: ""; }
       .global-menu .uilts .btns.dashboard:before {
         display: block;
         color: #000;
@@ -1689,27 +1692,27 @@ article.contents .column-right {
         vertical-align: middle;
         border: 5px solid #fff; }
       .global-shortcuts .type-thumbnail > li a.dashboard:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.dashboard:before {
         font-size: 55px;
         line-height: 66px; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
         font-size: 58px;
         line-height: 63px; }
       .global-shortcuts .type-thumbnail > li a.asset:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.asset:before {
         font-size: 44px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
         font-size: 55px;
         line-height: 66px; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
         font-size: 55px;
         line-height: 66px; }
@@ -1784,7 +1787,7 @@ article.contents .column-right {
   position: relative;
   border-bottom: 2px solid #000; }
   .datepicker:after {
-    content: ""; }
+    content: ""; }
   .datepicker:after {
     position: absolute;
     top: 50%;
@@ -2001,7 +2004,7 @@ article.contents .column-right {
   height: 28px;
   width: 28px; }
   .btn-settings:before {
-    content: ""; }
+    content: ""; }
   .btn-settings:before {
     display: block;
     height: 28px;
@@ -2029,19 +2032,19 @@ article.contents .column-right {
     color: rgba(0, 0, 0, 0.43);
     text-decoration: none; }
     .btn-text.reset:before {
-      content: ""; }
+      content: ""; }
     .btn-text.reset:before {
       vertical-align: baseline; }
   .btn-text.show-hide:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
     margin-top: -5px;
     margin-right: 10px;
     font-size: 16px; }
   .btn-text.export:before {
-    content: ""; }
+    content: ""; }
   .btn-text.export:before {
     margin-top: -10px;
     font-size: 20px; }
@@ -2146,7 +2149,7 @@ input[type=submit].btn-normal,
       color: #000;
       line-height: 62px; }
       .filter-container .results > .selected:before {
-        content: ""; }
+        content: ""; }
       .filter-container .results > .selected:before {
         display: block;
         float: left;
@@ -2307,7 +2310,7 @@ input[type=submit].btn-normal,
   background-color: #e74e0f;
   transition: max-height 0.3s ease-in; }
   .warning-container:before {
-    content: ""; }
+    content: ""; }
   .warning-container:before {
     display: block;
     position: absolute;
@@ -2390,12 +2393,6 @@ input[type=submit].btn-normal,
 /**
 	graph container
 **/
-.graph-container {
-  clear: both;
-  padding: 20px 0;
-  height: 300px;
-  background-color: #0f0; }
-
 /*
 	etc
 */
@@ -2412,16 +2409,79 @@ input[type=submit].btn-normal,
     .filelist a[href="#none"] {
       color: #e7e7e7; }
 
-.usage-dashboard {
+body.asset .chart-container {
+  clear: both;
+  padding: 20px 0; }
+
+body.asset.usage .usage-dashboard {
   overflow: hidden;
   padding: 40px; }
-  .usage-dashboard > li {
+  body.asset.usage .usage-dashboard > li {
     display: block;
     box-sizing: border-box;
     float: left;
     padding: 0 0 60px 40px;
     width: 33%; }
-    .usage-dashboard > li:nth-child(3n+2) {
+    body.asset.usage .usage-dashboard > li:nth-child(3n+2) {
       width: 34%; }
-    .usage-dashboard > li:nth-child(3n+1) {
+    body.asset.usage .usage-dashboard > li:nth-child(3n+1) {
       padding-left: 0; }
+
+body.asset.usage .chart-container.scroll {
+  position: relative; }
+  body.asset.usage .chart-container.scroll:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
+  body.asset.usage .chart-container.scroll .nav {
+    display: block;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    margin-top: -17px;
+    height: 30px;
+    width: 34px;
+    text-indent: -9999px; }
+    body.asset.usage .chart-container.scroll .nav:before {
+      content: ""; }
+    body.asset.usage .chart-container.scroll .nav:before {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      font-size: 30px;
+      line-height: 30px;
+      text-indent: 0px; }
+    body.asset.usage .chart-container.scroll .nav.btn-prev {
+      left: 40px; }
+      body.asset.usage .chart-container.scroll .nav.btn-prev:before {
+        transform: rotate(180deg); }
+    body.asset.usage .chart-container.scroll .nav.btn-next {
+      right: 40px; }
+
+body.asset.usage .usage-current {
+  overflow: scroll; }
+  body.asset.usage .usage-current .list-usage-current {
+    overflow: hidden;
+    padding: 0 40px;
+    width: 2000px; }
+    body.asset.usage .usage-current .list-usage-current > li {
+      display: block;
+      box-sizing: border-box;
+      float: left;
+      padding-right: 30px;
+      width: 310px; }
+      body.asset.usage .usage-current .list-usage-current > li .chart {
+        clear: both;
+        padding-top: 15px;
+        height: 215px; }

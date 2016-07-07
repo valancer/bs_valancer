@@ -1,0 +1,92 @@
+<!-- grid container -->
+<fieldset class="aggrid-uitls">
+	<legend>Data Search &amp; uitls</legend>
+
+	<p class="right-content">
+		<button type="button" class="btn-text refresh">1 min ago</button>
+		<button type="button" class="btn-text export export_open">Export</button>
+	</p>
+
+	<div id="export" class="popover small export">
+		<span class="point"></span>
+
+		<ul>
+			<li><button type="button">Export Graph</button></li>
+			<li><button type="button">Export Table</button></li>
+		</ul>
+	</div>
+
+	<label for="" class="search">
+		<input type="text" id="" name="" placeholder="Enter Search">
+	</label>
+	<script>
+		$(document).ready(function(e) {
+			$('#export').popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				horizontal: 'rightedge',
+				offsettop: 10,
+				transition: '0.3s all 0.1s'
+			});
+		});
+	</script>
+</fieldset>
+
+<div id="myGrid" class="ag-bespin-global"></div>
+
+<script>
+var columnDefs = [
+    {headerName: "ATHLETE", field: "athlete", unSortIcon: true, sort: 'desc'},
+    {headerName: "AGE", field: "age", unSortIcon: true},
+    {headerName: "COUNTRY", field: "country", unSortIcon: true},
+    {headerName: "YEAR", field: "year", unSortIcon: true},
+    {headerName: "DATE", field: "date", unSortIcon: true},
+    {headerName: "SPORT", field: "sport", unSortIcon: true},
+    {headerName: "GOLD", field: "gold", unSortIcon: true},
+    {headerName: "SILVER", field: "silver", unSortIcon: true},
+    {headerName: "BRONZE", field: "bronze", unSortIcon: true},
+    {headerName: "TOTAL", field: "total", unSortIcon: true}
+];
+
+var gridOptions = {
+    columnDefs: columnDefs,
+    rowSelection: 'single',
+    rowData: null,
+    enableSorting: true,
+    headerHeight: 52,
+	headerCellTemplate:
+		'<div class="ag-header-cell">' +
+		'<div id="agResizeBar" class="ag-header-cell-resize"></div>' +
+		'<span id="agMenu" class="ag-header-icon ag-header-cell-menu-button"></span>' +
+		'<div id="agHeaderCellLabel" class="ag-header-cell-label">' +
+		'	<span id="agText" class="ag-header-cell-text"></span>' +
+		'	<span id="agSortAsc" class="ag-header-icon ag-sort-ascending-icon"></span>' +
+		'	<span id="agSortDesc" class="ag-header-icon ag-sort-descending-icon"></span>' +
+		'	<span id="agNoSort" class="ag-header-icon ag-sort-none-icon"></span>' +
+		'	<span id="agFilter" class="ag-header-icon ag-filter-icon"></span>' +
+		'</div>',
+	getRowHeight: function(params) {
+		return 52;
+	}
+};
+
+// setup the grid after the page has finished loading
+document.addEventListener('DOMContentLoaded', function() {
+    var gridDiv = document.querySelector('#myGrid');
+    new agGrid.Grid(gridDiv, gridOptions);
+
+    // do http request to get our sample data - not using any framework to keep the example self contained.
+    // you will probably use a framework like JQuery, Angular or something else to do your HTTP calls.
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.open('GET', '/assets/scripts/json/olympicWinners.json');
+    httpRequest.send();
+    httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+            var httpResult = JSON.parse(httpRequest.responseText);
+            gridOptions.api.setRowData(httpResult);
+            gridOptions.api.sizeColumnsToFit();
+        }
+    };
+});
+</script>
+<!--// grid container -->
