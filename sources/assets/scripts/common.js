@@ -123,12 +123,14 @@ var Filter = (function ($) {
 		$btnToggleItems,
 		$btnReset,
 		$selectedLabels,
+		$btnDone,
 		init = function() {
 			$container = $('.filter-container');
 			$btnToggleContainer = $container.find('.btn-status');
 			$btnToggleItems = $container.find('.btn-folding');
 			$btnReset = $container.find('.btn-reset');
 			$selectedLabels = $container.find('.results > .selected');
+			$btnDone = $container.find('.done > .btn-normal');
 
 			initLayout();
 			initEvent();
@@ -164,6 +166,11 @@ var Filter = (function ($) {
 
 			$('input.icheckbox').iCheck('uncheck');
 			$('input.iradio').iCheck('uncheck');
+		});
+
+		// done
+		$btnDone.on('click', function(e) {
+			_updateSelectedLabels();
 		});
 	}
 

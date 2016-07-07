@@ -22,6 +22,13 @@
 							<a href="#">CURRENT</a>
 							<a href="#" class="is-selected">HISTORY</a>
 						</p>
+
+						<ul class="page-sub-tabs">
+							<li><a href="#" class="is-selected">HOURLY</a></li>
+							<li><a href="#">DAILY</a></li>
+							<li><a href="#">WEEKLY</a></li>
+							<li><a href="#">MONTHLY</a></li>
+						</ul>
 					</div>
 
 
@@ -31,7 +38,9 @@
 						</div>
 						<script>
 						$(document).ready(function(e) {
-							$('input[name="daterange"]').daterangepicker();
+							$('input[name="daterange"]').daterangepicker({
+								"showISOWeekNumbers": true
+							});
 						});
 						</script>
 					</div>
@@ -49,6 +58,7 @@
 					graph area
 				</div>
 				<!--// graph container -->
+
 
 
 				<!-- grid container -->
