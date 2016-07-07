@@ -17,7 +17,7 @@
 
 				@@include('./inc_warning.html')
 				
-				<!--  -->
+				<!-- filter util -->
 				<div class="filter-util">
 					<div class="page-tabs">
 						<p class="inner">
@@ -35,7 +35,22 @@
 						<button type="button" class="btn-text show-hide btn-toggle" value="#graph-container">hide graph</button>
 					</div>
 				</div>
-
+				<script>
+				$(document).ready(function(e) {
+					$('.btn-toggle.show-hide').on('click', function(e) {
+						var $btnToggle = $(this);
+						var target = $btnToggle.val();
+						$(target).slideToggle(function() {
+							if( $(this).is(":visible") ) {
+								$btnToggle.text("hide graph");
+							} else {
+								$btnToggle.text("show graph");
+							}
+						});
+					});
+				});
+				</script>
+				<!--// filter util -->
 				
 
 				<!-- graph container -->
@@ -67,15 +82,15 @@
 						<input type="text" id="" name="" placeholder="Enter Search">
 					</label>
 					<script>
-						$(document).ready(function(e) {
-							$('#export').popup({
-								type: 'tooltip',
-								vertical: 'bottom',
-								horizontal: 'rightedge',
-								offsettop: 10,
-								transition: '0.3s all 0.1s'
-							});
+					$(document).ready(function(e) {
+						$('#export').popup({
+							type: 'tooltip',
+							vertical: 'bottom',
+							horizontal: 'rightedge',
+							offsettop: 10,
+							transition: '0.3s all 0.1s'
 						});
+					});
 					</script>
 				</fieldset>
 

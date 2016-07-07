@@ -15,7 +15,7 @@
 				
 				@@include('./inc_asset_filter.html')
 
-				<!--  -->
+				<!-- filter util -->
 				<div class="filter-util">
 					<div class="page-tabs">
 						<p class="inner">
@@ -33,16 +33,7 @@
 
 
 					<div class="left-content">
-						<div class="datepicker">
-							<input type="text" name="daterange" value="">
-						</div>
-						<script>
-						$(document).ready(function(e) {
-							$('input[name="daterange"]').daterangepicker({
-								"showISOWeekNumbers": true
-							});
-						});
-						</script>
+						@@include('./inc_datepicker.html')
 					</div>
 
 
@@ -50,6 +41,22 @@
 						<button type="button" class="btn-text show-hide btn-toggle" value="#graph-container">hide graph</button>
 					</div>
 				</div>
+				<script>
+				$(document).ready(function(e) {
+					$('.btn-toggle.show-hide').on('click', function(e) {
+						var $btnToggle = $(this);
+						var target = $btnToggle.val();
+						$(target).slideToggle(function() {
+							if( $(this).is(":visible") ) {
+								$btnToggle.text("hide graph");
+							} else {
+								$btnToggle.text("show graph");
+							}
+						});
+					});
+				});
+				</script>
+				<!--// filter util -->
 
 				
 

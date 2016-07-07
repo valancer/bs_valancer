@@ -1,0 +1,7 @@
+
+.usage-dashboard { overflow: hidden; padding: 40px;
+	> li { display: block; box-sizing: border-box; float: left; padding: 0 0 60px 40px; width: 33%;
+		&:nth-child(3n+2) { width: 34% }
+		&:nth-child(3n+1) { padding-left: 0; }
+	}
+}
