@@ -22,69 +22,33 @@
 			<ul class="list-filter-items">
 				<li>
 					<label for="all-accounts" class="icheck">
-						<input type="checkbox" id="all-accounts" name="all-accounts" class="icheckbox" checked>
-						All Accounts(6)
+						<input type="checkbox" id="all-accounts" name="all-accounts" data-all="account" data-title="CLOUD ACCOUNTS" class="icheckbox">
+						All Accounts
 					</label>
 				</li>
 				<li>
-					<button type="button" class="btn-folding is-opened">open/close</button>
-					<label for="all-aws" class="icheck">
-						<input type="checkbox" id="all-aws" name="all-aws" class="icheckbox">
-						AWS (4)
+					<label for="aws01" class="icheck">
+						<input type="checkbox" id="aws01" name="aws" data-ref="account" class="icheckbox">
+						129438483
 					</label>
-
-					<ul class="list-filter-items">
-						<li>
-							
-							<label for="aws01" class="icheck">
-								<input type="checkbox" id="aws01" name="aws" class="icheckbox">
-								129438483
-							</label>
-						</li>
-						<li>
-							
-							<label for="aws02" class="icheck">
-								<input type="checkbox" id="aws02" name="aws" class="icheckbox">
-								494737173
-							</label>
-						</li>
-						<li>
-							
-							<label for="aws03" class="icheck">
-								<input type="checkbox" id="aws03" name="aws" class="icheckbox">
-								129438483
-							</label>
-						</li>
-						<li>
-							
-							<label for="aws04" class="icheck">
-								<input type="checkbox" id="aws04" name="aws" class="icheckbox">
-								494737173
-							</label>
-						</li>
-					</ul>
 				</li>
 				<li>
-					<button type="button" class="btn-folding is-opened">open/close</button>
-					<label for="all-azure" class="icheck">
-						<input type="checkbox" id="all-azure" name="all-azure" class="icheckbox">
-						Azure (2)
+					<label for="aws02" class="icheck">
+						<input type="checkbox" id="aws02" name="aws" data-ref="account" class="icheckbox">
+						494737173
 					</label>
-
-					<ul class="list-filter-items">
-						<li>
-							<label for="azure01" class="icheck">
-								<input type="checkbox" id="azure01" name="azure" class="icheckbox">
-								129438483
-							</label>
-						</li>
-						<li>
-							<label for="azure02" class="icheck">
-								<input type="checkbox" id="azure02" name="azure" class="icheckbox">
-								494737173
-							</label>
-						</li>
-					</ul>
+				</li>
+				<li>
+					<label for="aws03" class="icheck">
+						<input type="checkbox" id="aws03" name="aws" data-ref="account" class="icheckbox">
+						129438483
+					</label>
+				</li>
+				<li>
+					<label for="aws04" class="icheck">
+						<input type="checkbox" id="aws04" name="aws" data-ref="account" class="icheckbox">
+						494737173
+					</label>
 				</li>
 			</ul>
 		</fieldset>
@@ -97,55 +61,55 @@
 			<ul class="list-filter-items">
 				<li>
 					<label for="all-service-group" class="icheck">
-						<input type="checkbox" id="all-service-group" name="all-service-group" class="icheckbox" checked>
-						All Service Group(8)
+						<input type="checkbox" id="all-service-group" name="all-service-group" data-all="service" data-title="SERVICE GROUPS" class="icheckbox">
+						All Service Group
 					</label>
 				</li>
 				<li>
 					<label for="service01" class="icheck">
-						<input type="checkbox" id="service01" name="service" class="icheckbox">
+						<input type="checkbox" id="service01" name="service" data-ref="service" class="icheckbox">
 						Maple Story2
 					</label>
 				</li>
 				<li>
 					<label for="service02" class="icheck">
-						<input type="checkbox" id="service02" name="service" class="icheckbox">
+						<input type="checkbox" id="service02" name="service" data-ref="service" class="icheckbox">
 						Line Talk
 					</label>
 				</li>
 				<li>
 					<label for="service03" class="icheck">
-						<input type="checkbox" id="service03" name="service" class="icheckbox">
+						<input type="checkbox" id="service03" name="service" data-ref="service" class="icheckbox">
 						Line Pay
 					</label>
 				</li>
 				<li>
 					<label for="service04" class="icheck">
-						<input type="checkbox" id="service04" name="service" class="icheckbox">
+						<input type="checkbox" id="service04" name="service" data-ref="service" class="icheckbox">
 						Line Rangers
 					</label>
 				</li>
 				<li>
 					<label for="service05" class="icheck">
-						<input type="checkbox" id="service05" name="service" class="icheckbox">
+						<input type="checkbox" id="service05" name="service" data-ref="service" class="icheckbox">
 						Line XYZ
 					</label>
 				</li>
 				<li>
 					<label for="service06" class="icheck">
-						<input type="checkbox" id="service06" name="service" class="icheckbox">
+						<input type="checkbox" id="service06" name="service" data-ref="service" class="icheckbox">
 						Kakao Talk
 					</label>
 				</li>
 				<li>
 					<label for="service07" class="icheck">
-						<input type="checkbox" id="service07" name="service" class="icheckbox">
+						<input type="checkbox" id="service07" name="service" data-ref="service" class="icheckbox">
 						Kakao Taxi
 					</label>
 				</li>
 				<li>
 					<label for="service08" class="icheck">
-						<input type="checkbox" id="service08" name="service" class="icheckbox">
+						<input type="checkbox" id="service08" name="service" data-ref="service" class="icheckbox">
 						Kakao Driver
 					</label>
 				</li>
@@ -159,37 +123,37 @@
 			<ul class="list-filter-items">
 				<li>
 					<label for="all-regions" class="icheck">
-						<input type="checkbox" id="all-regions" name="all-regions" class="icheckbox" checked>
-						All Regions(5)
+						<input type="checkbox" id="all-regions" name="all-regions" data-all="region" data-title="REGION" class="icheckbox">
+						All Regions
 					</label>
 				</li>
 				<li>
 					<label for="regions01" class="icheck">
-						<input type="checkbox" id="regions01" name="regions" class="icheckbox">
+						<input type="checkbox" id="regions01" name="regions" data-ref="region" class="icheckbox">
 						South Korea
 					</label>
 				</li>
 				<li>
 					<label for="regions02" class="icheck">
-						<input type="checkbox" id="regions02" name="regions" class="icheckbox">
+						<input type="checkbox" id="regions02" name="regions" data-ref="region" class="icheckbox">
 						US-East
 					</label>
 				</li>
 				<li>
 					<label for="regions03" class="icheck">
-						<input type="checkbox" id="regions03" name="regions" class="icheckbox">
+						<input type="checkbox" id="regions03" name="regions" data-ref="region" class="icheckbox">
 						China
 					</label>
 				</li>
 				<li>
 					<label for="regions04" class="icheck">
-						<input type="checkbox" id="regions04" name="regions" class="icheckbox">
+						<input type="checkbox" id="regions04" name="regions" data-ref="region" class="icheckbox">
 						Japan
 					</label>
 				</li>
 				<li>
 					<label for="regions05" class="icheck">
-						<input type="checkbox" id="regions05" name="regions" class="icheckbox">
+						<input type="checkbox" id="regions05" name="regions" data-ref="region" class="icheckbox">
 						US-West
 					</label>
 				</li>
@@ -244,7 +208,9 @@
 		<p class="done">
 			<input type="submit" class="btn-normal" value="DONE">
 			<button type="button" class="btn-text reset">Reset Filters</button>
+<!--
 			<button type="button" class="btn-text reset">Save as Defaults</button>
+-->
 		</p>
 	</div>
 </fieldset>
@@ -258,18 +224,34 @@ $(document).ready(function(e) {
 			$btnToggleItems,
 			$btnReset,
 			$selectedLabels,
+			$allItem,
+			$checkItems,
+			$btnDone,
 			init = function() {
 				$container = $('.filter-container');
 				$btnToggleContainer = $container.find('.btn-status');
 				$btnToggleItems = $container.find('.btn-folding');
-				$btnReset = $container.find('.btn-reset');
+				$btnReset = $container.find('.btn-text.reset');
 				$selectedLabels = $container.find('.results > .selected');
+
+				$allItem = $container.find('input[data-all]');
+				$checkItems = $container.find('input[data-ref]');
+
+				$btnDone = $container.find('.done > .btn-normal');
 
 				initLayout();
 				initEvent();
 			};
 
 		function initLayout() {
+			// init count
+			$allItem.each(function() {
+				var target = $(this).data('all');
+				var $items = $('input[data-ref=' + target + ']');
+				var $refLabel = $(this).closest("label");
+				$refLabel.append('(' + $items.length + ')');
+			});
+
 			_updateSelectedLabels();
 		}
 
@@ -283,8 +265,6 @@ $(document).ready(function(e) {
 					$container.addClass('is-opened');
 					$btnToggleContainer.text('Close');
 				}
-
-				_updateSelectedLabels();
 			});
 
 			// item open / close
@@ -300,14 +280,63 @@ $(document).ready(function(e) {
 				$('input.icheckbox').iCheck('uncheck');
 				$('input.iradio').iCheck('uncheck');
 			});
+
+			// all checked / all unchecked
+			$allItem.on('ifToggled', function(e) {
+				var target = $(this).data('all');
+				var $items = $('input[data-ref=' + target + ']');
+
+				if( $(this).prop("checked") ) {
+					$items.iCheck("check");
+				} else {
+					$items.iCheck("uncheck");
+				}
+			});
+
+			$checkItems.on('ifToggled', function(e) {
+				var target = $(this).data('ref');
+				var $all = $('input[data-all=' + target + ']');
+				var $items = $('input[data-ref=' + target + ']');
+				var $checked = $('input[data-ref=' + target + ']:checked');
+
+				if( $checked.length > 0 ) {
+					if( $items.length !== $checked.length ) {
+						$all.iCheck('indeterminate');
+					} else {
+						$all.iCheck('check');
+					}
+				} else {
+					$all.iCheck('determinate');
+				}
+			});
+
+			// done
+			$btnDone.on('click', function(e) {
+				_updateSelectedLabels();
+			});
 		}
 
 		function _updateSelectedLabels() {
-			var checkedLabels = $container.find('input:checked').map(function() {
-				return $(this).closest('label').text().trim();
-			}).get();
+			var checkedLabels = [];
 
-			$selectedLabels.html(checkedLabels.join(", "));
+			$allItem.each(function() {
+				var target = $(this).data('all');
+				var $items = $('input[data-ref=' + target + ']');
+				var $checked = $('input[data-ref=' + target + ']:checked');
+
+				if( $checked.length > 0 ) {
+					var result = $(this).data('title') + '(' + $checked.length + ')';
+					checkedLabels.push(result);
+				}
+			}).promise().done(function () { 
+				var infrastructure = $container.find('input[type=radio]:checked').closest('label').text().trim();
+				if( infrastructure.length > 0 ) {
+					checkedLabels.push(infrastructure);
+				}
+    			$selectedLabels.html(checkedLabels.join(", "));
+			});
+
+
 		}
 
 		return {

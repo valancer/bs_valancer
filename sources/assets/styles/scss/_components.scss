@@ -259,7 +259,7 @@ input[type=submit].btn-normal,
 
 	.btn-status { position: absolute; top: 50%; right: 67px; margin-top: -10px; font-size: 18px; font-weight: 700px; color: #000; border-bottom: 2px solid #000;
 		@include icon(arrow01, after);
-		&:after { position: absolute; top: 50%; right: -20px; margin-top: -2px; height: 8px; width: 12px; font-size: 15px; line-height: 8px; transform: rotate( 0deg ); }
+		&:after { overflow: hidden; position: absolute; top: 50%; right: -30px; margin-top: -2px; height: 8px; width: 20px; font-size: 15px; line-height: 8px; transform: rotate( 0deg ); }
 	}
 
 	.results { display: block;
