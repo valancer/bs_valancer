@@ -1,0 +1,47 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<div class="contents-inner">
+
+				<a href="#" class="test_open">open modal popup</a>
+
+				<aside id="test" class="modal-popup">
+					<button type="button" class="btn-close test_close">popup close</button>
+
+					<h2 class="title">Setup Account</h2>
+
+					<div class="content">
+						contents
+
+					</div>
+
+					<button type="button" class="btn-normal large">OK</button>
+				</aside>
+				<script>
+				$(document).ready(function(e) {	
+					$('#test').popup({
+					});
+				});
+				</script>
+
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

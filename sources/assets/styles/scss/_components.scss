@@ -1,4 +1,19 @@
 /**
+	modal popup
+**/
+.popup_wrapper,
+.popup_background { transition: all 0.3s; }
+.modal-popup { display: none; position: relative; box-sizing: border-box; padding: 40px 50px; width: 1074px; transition: 0.3s all; background-color: #fff;
+	.btn-close { display: block; position: absolute; top: 40px; right: 50px; height: 23px; width: 23px; text-indent: -9999px;
+		@include icon(close);
+		&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 23px; text-indent: 0px;; line-height: 23px; }
+	}
+
+	.title { font-size: 48px; font-weight: 500; color: #000; }
+}
+
+
+/**
 	popover
 **/
 .popover { display: none; position: relative; padding: 35px; background-color: #000;

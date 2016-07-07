@@ -41,47 +41,50 @@
 	@if $filename == calendar {
 		$char: "\E005";
 	}
-	@if $filename == dashboard {
+	@if $filename == close {
 		$char: "\E006";
 	}
-	@if $filename == export {
+	@if $filename == dashboard {
 		$char: "\E007";
 	}
-	@if $filename == eyes {
+	@if $filename == export {
 		$char: "\E008";
 	}
-	@if $filename == filter {
+	@if $filename == eyes {
 		$char: "\E009";
 	}
-	@if $filename == grid {
+	@if $filename == filter {
 		$char: "\E00A";
 	}
-	@if $filename == metering {
+	@if $filename == grid {
 		$char: "\E00B";
 	}
-	@if $filename == monitoring {
+	@if $filename == metering {
 		$char: "\E00C";
 	}
-	@if $filename == noticifation {
+	@if $filename == monitoring {
 		$char: "\E00D";
 	}
-	@if $filename == refresh {
+	@if $filename == noticifation {
 		$char: "\E00E";
 	}
-	@if $filename == reset {
+	@if $filename == refresh {
 		$char: "\E00F";
 	}
-	@if $filename == search {
+	@if $filename == reset {
 		$char: "\E010";
 	}
-	@if $filename == settings {
+	@if $filename == search {
 		$char: "\E011";
 	}
-	@if $filename == warning {
+	@if $filename == settings {
 		$char: "\E012";
 	}
-	@if $filename == workflow {
+	@if $filename == warning {
 		$char: "\E013";
+	}
+	@if $filename == workflow {
+		$char: "\E014";
 	}
 
 	@return $char;
@@ -113,6 +116,9 @@
 }
 .icon-calendar {
 	@include icon(calendar);
+}
+.icon-close {
+	@include icon(close);
 }
 .icon-dashboard {
 	@include icon(dashboard);

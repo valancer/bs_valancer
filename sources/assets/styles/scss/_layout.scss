@@ -16,7 +16,7 @@
 		}
 		
 		// portal
-		.bespin-global { display: block; float: left; position: relative; z-index: z("default"); margin-top: 15px; padding-right: 20px; height: 52px; background-color: #fff;
+		.bespin-global { display: block; float: left; position: relative; z-index: z("default"); margin-top: 15px; padding-right: 20px; height: 52px; text-indent: -9999px; background-color: #fff;
 			&:before { content: ''; display: block; margin-top: 52/2 - ($sc-bespin-logotype-height/2); @include retina-sprite($sc-bespin-logotype-group); }
 		}
 

@@ -814,7 +814,7 @@
         background: true,
         backgroundactive: false,
         color: 'black',
-        opacity: '0.5',
+        opacity: '0.37',
         horizontal: 'center',
         vertical: 'middle',
         offsettop: 0,
