@@ -114,6 +114,85 @@ var GlobalMenu = (function ($) {
 
 
 
+<<<<<<< HEAD
+=======
+/* Filter */
+var Filter = (function ($) {
+	var scope,
+		$container,
+		$btnToggleContainer,
+		$btnToggleItems,
+		$btnReset,
+		$selectedLabels,
+		$btnDone,
+		init = function() {
+			$container = $('.filter-container');
+			$btnToggleContainer = $container.find('.btn-status');
+			$btnToggleItems = $container.find('.btn-folding');
+			$btnReset = $container.find('.btn-reset');
+			$selectedLabels = $container.find('.results > .selected');
+			$btnDone = $container.find('.done > .btn-normal');
+
+			initLayout();
+			initEvent();
+		};
+
+	function initLayout() {
+		_updateSelectedLabels();
+	}
+
+	function initEvent() {
+		// open / close
+		$btnToggleContainer.on('click', function(e) {
+			if( $container.hasClass('is-opened') ) {
+				$container.removeClass('is-opened');
+				$btnToggleContainer.text('Open Filters');
+			} else {
+				$container.addClass('is-opened');
+				$btnToggleContainer.text('Close');
+			}
+
+			_updateSelectedLabels();
+		});
+
+		// item open / close
+		$btnToggleItems.on('click', function(e) {
+			var $this = $(e.target);
+			$this.toggleClass('is-opened');
+		});
+
+		// reset
+		$btnReset.on('click', function(e) {
+			e.preventDefault();
+
+			$('input.icheckbox').iCheck('uncheck');
+			$('input.iradio').iCheck('uncheck');
+		});
+
+		// done
+		$btnDone.on('click', function(e) {
+			_updateSelectedLabels();
+		});
+	}
+
+	function _updateSelectedLabels() {
+		var checkedLabels = $container.find('input:checked').map(function() {
+			return $(this).closest('label').text().trim();
+		}).get();
+
+		$selectedLabels.html(checkedLabels.join(", "));
+	}
+
+	return {
+		init: function() {
+			init();
+		},
+		updateSelectedLabels: function() {
+			_updateSelectedLabels();
+		}
+	};
+}(jQuery));
+>>>>>>> 8d0b864ee1ea64d9dffd9bfb370dfbedd30d4f50
 
 
 

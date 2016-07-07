@@ -5,7 +5,13 @@
 	<button type="button" class="btn-status">Open Filters</button>
 
 	<div class="results">
-		<p class="selected"></p>
+		<span class="category">
+			<select name="" id="">
+				<option value="0" selected>AWS</option>
+				<option value="1">AZURE</option>
+			</select>
+		</span>
+		<span class="selected"></span>
 	</div>
 
 
@@ -238,6 +244,7 @@
 		<p class="done">
 			<input type="submit" class="btn-normal" value="DONE">
 			<button type="button" class="btn-text reset">Reset Filters</button>
+			<button type="button" class="btn-text reset">Save as Defaults</button>
 		</p>
 	</div>
 </fieldset>
