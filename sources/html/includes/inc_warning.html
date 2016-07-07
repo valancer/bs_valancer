@@ -7,4 +7,41 @@
 		Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget quis risus eget datvm Aenean eu leo quam. Pellentesque ornare sem lacinia. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. daem davvd Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestiean eu leodt Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum?
 	</p>
 </aside>
+<script>
+$(document).ready(function(e) {	
+	/* WarningMessage */
+	var WarningMessage = (function ($) {
+		var scope,
+			$container,
+			$btnToggleContainer,
+			init = function() {
+				$container = $('.warning-container');
+				$btnToggleContainer = $container.find('.btn-folding');
+
+				initLayout();
+				initEvent();
+			};
+
+		function initLayout() {
+		}
+
+		function initEvent() {
+			// item open / close
+			$btnToggleContainer.on('click', function(e) {
+				e.preventDefault();
+				
+				$container.toggleClass('is-opened');
+			});
+		}
+
+		return {
+			init: function() {
+				init();
+			}
+		};
+	}(jQuery));
+	
+	WarningMessage.init();
+});
+</script>
 <!--// warning container -->

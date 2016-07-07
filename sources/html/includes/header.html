@@ -1,5 +1,7 @@
 <header class="global-menu">
-	<div class="inner">
+	<div class="contents-inner">
+		<a href="#" class="btn-home">BESPIN GLOBAL</a>
+
 		<div class="title">
 			@@if ( service == "portal" ) {<strong class="bespin-global"><span class="hidden">BESPIN GLOBAL</span></strong>}
 			@@if ( service == "asset" ) {<strong class="service asset">ASSET MANAGEMENT</strong>}
@@ -45,7 +47,6 @@
 				<li><a href="#" class="asset">Asset Management</a></li>
 				<li><a href="#" class="monitoring">Realtime Monitoring</a></li>
 				<li><a href="#" class="workflow">ITS Workflow</a></li>
-				<li><a href="#none" class="none"></a></li>
 			</ul>
 		</nav>
 	</aside>
@@ -71,7 +72,7 @@
 
 @@if ( service == "asset" ) {
 <nav class="sub-menus">
-	<div class="inner">
+	<div class="contents-inner">
 		<h2>하위 메뉴 바로가기</h2>
 		
 		<button type="button" class="btn-settings">settings</button>
@@ -87,7 +88,7 @@
 
 @@if ( service == "metering" ) {
 <nav class="sub-menus">
-	<div class="inner">
+	<div class="contents-inner">
 		<h2>하위 메뉴 바로가기</h2>
 
 		<button type="button" class="btn-settings">settings</button>
@@ -101,3 +102,71 @@
 	</div>
 </nav>
 }
+
+<script>
+$(document).ready(function(e) {	
+	/* GlobalMenu */
+	var GlobalMenu = (function ($) {
+		var scope,
+			$container,
+			$selectLanguage,
+			$selectCompany,
+			$userInfo,
+			$service,
+			init = function() {
+				$container = $('.global-menu');
+				$selectLanguage = $('#language');
+				$selectCompany = $('#company');
+				$service = $('#service-shortcut');
+				$userInfo = $('#user-info');
+
+
+				initLayout();
+				initEvent();
+			};
+
+		function initLayout() {
+		}
+
+		function initEvent() {
+			$selectLanguage.popup({
+				type: 'tooltip',
+				vertical: 'topedge',
+				offsettop: -16,
+				horizontal: 'leftedge',
+				transition: '0.3s all 0.1s'
+			});
+			$selectCompany.popup({
+				type: 'tooltip',
+				vertical: 'topedge',
+				offsettop: -12,
+				offsetleft: -12,
+				horizontal: 'leftedge',
+				transition: '0.3s all 0.1s'
+			});
+			$service.popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				offsettop: 50,
+				horizontal: 'center',
+				transition: '0.3s all 0.1s'
+			});
+			$userInfo.popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				offsettop: 70,
+				horizontal: 'rightedge',
+				transition: '0.3s all 0.1s'
+			});
+		}
+
+		return {
+			init: function() {
+				init();
+			}
+		};
+	}(jQuery));
+
+	GlobalMenu.init();
+});
+</script>

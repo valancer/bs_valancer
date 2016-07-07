@@ -1,7 +1,11 @@
 
 /* GNB HEADER */
 .global-menu { border-bottom: 3px solid #e7e7e7; background-color: #fff;
-	> .inner { box-sizing: border-box; position: relative; margin: 0 auto; padding: 15px 0px 0 25px; height: 85px; width: $contents-width; }
+	.contents-inner { box-sizing: border-box; position: relative; margin: 0 auto; padding: 15px 0px 0 25px; height: 85px; width: $contents-width; }
+
+	.btn-home { display: block; position: absolute; top: 15px; left: 83px; z-index: z("default") + 2; font-size: 15px; font-weight: 700; color: #000;
+		.portal & { display: none; }
+	}
 
 	.title { display: block; position: absolute; top: 0px; right: 0; bottom: 0; left: 25px;
 		&:before { content: ''; display: block; position: absolute; top: 50%; right: 465px; left: 0; z-index: z("default") - 1; margin-top: -2px; height: 4px; background-color: #000; }
@@ -25,7 +29,8 @@
 			}
 			// metering
 			&.metering {
-				@include icon(metering); 
+				@include icon(metering);
+				&:before { margin-top: -4px; font-size: 41px; }
 			}
 		}
 	}
@@ -61,7 +66,7 @@
 
 
 .sub-menus { background-color: #f6f6f6;
-	> .inner { position: relative; margin: 0 auto; height: 78px; width: $contents-width; }
+	.contents-inner { position: relative; margin: 0 auto; height: 78px; width: $contents-width; }
 
 	h2 { display: none; }
 	.btn-settings { display: block; position: absolute; top: 50%; right: 40px; margin-top: -14px; }
@@ -96,7 +101,7 @@
 /* CONTENTS */
 article.contents { 
 	@mixin inner() { box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
-	> .inner { overflow: hidden; @include inner(); margin-top: 35px; padding-bottom: 130px;
+	.contents-inner { overflow: hidden; @include inner(); margin-top: 35px; padding-bottom: 130px;
 		.asset & { margin-top: 0; padding: 0; }
 	}
 

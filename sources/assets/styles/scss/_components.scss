@@ -56,6 +56,11 @@
 			a { display: block; min-height: 90px; width: 90px; font-size: 18px; font-weight: 500; color: $white; line-height: 18px;
 				&:before { content: ''; display: block; box-sizing: border-box; margin-bottom: 8px; padding-top: 5px; height: 85px; width: 100%; text-align: center; vertical-align: middle; border: 5px solid #fff; }
 
+				&.dashboard {
+					@include icon(dashboard);
+					&:before { font-size: 55px; line-height: 66px; }
+				}
+
 				&.metering {
 					@include icon(metering);
 					&:before { font-size: 58px; line-height: 63px; }
@@ -64,6 +69,16 @@
 				&.asset {
 					@include icon(asset);
 					&:before { font-size: 44px; line-height: 64px; }
+				}
+
+				&.monitoring {
+					@include icon(monitoring);
+					&:before { font-size: 55px; line-height: 66px; }
+				}
+
+				&.workflow {
+					@include icon(workflow);
+					&:before { font-size: 55px; line-height: 66px; }
 				}
 
 				&.none {
