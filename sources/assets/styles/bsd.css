@@ -141,7 +141,7 @@ input[type=submit] {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .modal-popup .btn-close:before, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .datepicker:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, body.asset.usage .chart-container.scroll .nav:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .modal-popup .btn-close:before, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .datepicker:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, body.asset.usage .chart-container.scroll .slick-arrow:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -414,6 +414,74 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 .selectric-wrapper {
   position: relative;
   cursor: pointer; }
@@ -2482,10 +2550,10 @@ body.asset.usage .chart-container.scroll {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 100px;
+    width: 150px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
-  body.asset.usage .chart-container.scroll .nav {
+  body.asset.usage .chart-container.scroll .slick-arrow {
     display: block;
     position: absolute;
     top: 50%;
@@ -2493,10 +2561,11 @@ body.asset.usage .chart-container.scroll {
     margin-top: -17px;
     height: 30px;
     width: 34px;
-    text-indent: -9999px; }
-    body.asset.usage .chart-container.scroll .nav:before {
+    text-indent: -9999px;
+    transition: opacity 0.5s ease-in-out; }
+    body.asset.usage .chart-container.scroll .slick-arrow:before {
       content: ""; }
-    body.asset.usage .chart-container.scroll .nav:before {
+    body.asset.usage .chart-container.scroll .slick-arrow:before {
       display: block;
       position: absolute;
       top: 0;
@@ -2508,26 +2577,27 @@ body.asset.usage .chart-container.scroll {
       font-size: 30px;
       line-height: 30px;
       text-indent: 0px; }
-    body.asset.usage .chart-container.scroll .nav.btn-prev {
+    body.asset.usage .chart-container.scroll .slick-arrow.slick-prev {
       left: 40px; }
-      body.asset.usage .chart-container.scroll .nav.btn-prev:before {
+      body.asset.usage .chart-container.scroll .slick-arrow.slick-prev:before {
         transform: rotate(180deg); }
-    body.asset.usage .chart-container.scroll .nav.btn-next {
+    body.asset.usage .chart-container.scroll .slick-arrow.slick-next {
       right: 40px; }
+    body.asset.usage .chart-container.scroll .slick-arrow.slick-disabled {
+      cursor: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out; }
 
-body.asset.usage .usage-current {
-  overflow: scroll; }
-  body.asset.usage .usage-current .list-usage-current {
-    overflow: hidden;
-    padding: 0 40px;
-    width: 2000px; }
-    body.asset.usage .usage-current .list-usage-current > li {
-      display: block;
-      box-sizing: border-box;
-      float: left;
-      padding-right: 30px;
-      width: 310px; }
-      body.asset.usage .usage-current .list-usage-current > li .chart {
-        clear: both;
-        padding-top: 15px;
-        height: 215px; }
+body.asset.usage .usage-current .list-usage-current {
+  overflow: hidden;
+  padding: 0 40px; }
+  body.asset.usage .usage-current .list-usage-current li {
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    padding-right: 30px;
+    width: 310px; }
+    body.asset.usage .usage-current .list-usage-current li .chart {
+      clear: both;
+      padding-top: 15px;
+      height: 215px; }

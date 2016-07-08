@@ -57,11 +57,11 @@
 				<!-- chart container -->
 				<div id="chart-container" class="chart-container scroll">
 					
-					<button type="button" class="nav btn-prev">prev</button>
+<!-- 					<button type="button" class="nav btn-prev">prev</button>
 					<button type="button" class="nav btn-next">next</button>
-
+ -->
 					<div class="usage-current">
-						<ul class="list-usage-current">
+						<ul class="list-usage-current slick-container">
 							<li>
 								<div class="section-item">
 									<h2 class="title">EC2</h2>
@@ -73,7 +73,7 @@
 							</li>
 							<li>
 								<div class="section-item">
-									<h2 class="title">EC2</h2>
+									<h2 class="title">STATUS</h2>
 
 									<div class="content">
 										<div class="chart"></div>
@@ -82,7 +82,7 @@
 							</li>
 							<li>
 								<div class="section-item">
-									<h2 class="title">EC2</h2>
+									<h2 class="title">SERVICE GROUP</h2>
 
 									<div class="content">
 										<div class="chart"></div>
@@ -91,7 +91,7 @@
 							</li>
 							<li>
 								<div class="section-item">
-									<h2 class="title">EC2</h2>
+									<h2 class="title">REGION</h2>
 
 									<div class="content">
 										<div class="chart"></div>
@@ -100,7 +100,25 @@
 							</li>
 							<li>
 								<div class="section-item">
-									<h2 class="title">EC2</h2>
+									<h2 class="title">EBS</h2>
+
+									<div class="content">
+										<div class="chart"></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="section-item">
+									<h2 class="title">EBS</h2>
+
+									<div class="content">
+										<div class="chart"></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="section-item">
+									<h2 class="title">EBS</h2>
 
 									<div class="content">
 										<div class="chart"></div>
@@ -111,6 +129,17 @@
 					</div>
 
 				</div>
+				<script>
+				$(document).ready(function(e) {
+					$('.slick-container').slick({
+						dots: false,
+						infinite: false,
+						swipe: false,
+						speed: 300,
+						slidesToShow: 4
+					});
+				});
+				</script>
 				<!--// chart container -->
 
 
