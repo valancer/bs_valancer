@@ -141,7 +141,7 @@ input[type=submit] {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .modal-popup .btn-close:before, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .datepicker:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, body.asset.usage .chart-container.scroll .nav:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .datepicker:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, body.asset.usage .chart-container .slick-arrow:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -184,32 +184,35 @@ input[type=submit] {
 .icon-grid:before {
   content: ""; }
 
-.icon-metering:before {
+.icon-info:before {
   content: ""; }
 
-.icon-monitoring:before {
+.icon-metering:before {
   content: ""; }
 
-.icon-noticifation:before {
+.icon-monitoring:before {
   content: ""; }
 
-.icon-refresh:before {
+.icon-noticifation:before {
   content: ""; }
 
-.icon-reset:before {
+.icon-refresh:before {
   content: ""; }
 
-.icon-search:before {
+.icon-reset:before {
   content: ""; }
 
-.icon-settings:before {
+.icon-search:before {
   content: ""; }
 
-.icon-warning:before {
+.icon-settings:before {
   content: ""; }
 
-.icon-workflow:before {
+.icon-warning:before {
   content: ""; }
+
+.icon-workflow:before {
+  content: ""; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -414,6 +417,74 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 .selectric-wrapper {
   position: relative;
   cursor: pointer; }
@@ -596,7 +667,7 @@ The `sprites` mixin generates identical output to the CSS template
   .aggrid-uitls .search {
     display: block; }
     .aggrid-uitls .search:before {
-      content: ""; }
+      content: ""; }
     .aggrid-uitls .search:before {
       display: inline-block;
       margin-right: 10px;
@@ -1383,7 +1454,7 @@ The `sprites` mixin generates identical output to the CSS template
       .global-menu .title .service.asset:before {
         content: ""; }
       .global-menu .title .service.metering:before {
-        content: ""; }
+        content: ""; }
       .global-menu .title .service.metering:before {
         margin-top: -4px;
         font-size: 41px; }
@@ -1402,7 +1473,7 @@ The `sprites` mixin generates identical output to the CSS template
       .global-menu .uilts .btns.notifications {
         position: relative; }
         .global-menu .uilts .btns.notifications:before {
-          content: ""; }
+          content: ""; }
         .global-menu .uilts .btns.notifications:before {
           display: block;
           color: #000;
@@ -1551,6 +1622,7 @@ The `sprites` mixin generates identical output to the CSS template
 /* CONTENTS */
 article.contents .contents-inner {
   overflow: hidden;
+  position: relative;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 40px;
@@ -1573,6 +1645,7 @@ article.contents .column-right {
 .portal article.contents h1.title {
   background-color: #f6f6f6; }
   .portal article.contents h1.title .inner {
+    position: relative;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 40px;
@@ -1580,6 +1653,20 @@ article.contents .column-right {
     padding-top: 25px;
     height: 180px;
     font-size: 48px; }
+
+article.contents .list-column-03 {
+  overflow: hidden;
+  padding: 40px; }
+  article.contents .list-column-03 > li {
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 0 60px 40px;
+    width: 33%; }
+    article.contents .list-column-03 > li:nth-child(3n+2) {
+      width: 34%; }
+    article.contents .list-column-03 > li:nth-child(3n+1) {
+      padding-left: 0; }
 
 /**
 	modal popup
@@ -1597,27 +1684,9 @@ article.contents .column-right {
   transition: 0.3s all;
   background-color: #fff; }
   .modal-popup .btn-close {
-    display: block;
     position: absolute;
     top: 40px;
-    right: 50px;
-    height: 23px;
-    width: 23px;
-    text-indent: -9999px; }
-    .modal-popup .btn-close:before {
-      content: ""; }
-    .modal-popup .btn-close:before {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      font-size: 23px;
-      text-indent: 0px;
-      line-height: 23px; }
+    right: 50px; }
   .modal-popup .title {
     font-size: 48px;
     font-weight: 500;
@@ -1743,7 +1812,7 @@ article.contents .column-right {
         font-size: 55px;
         line-height: 66px; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
         font-size: 58px;
         line-height: 63px; }
@@ -1753,12 +1822,12 @@ article.contents .column-right {
         font-size: 44px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
         font-size: 55px;
         line-height: 66px; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
         font-size: 55px;
         line-height: 66px; }
@@ -1869,18 +1938,18 @@ article.contents .column-right {
 /**
 	dashboard
 **/
-.section-item {
+.box-item {
   position: relative; }
-  .section-item:before {
+  .box-item:before {
     content: '';
     display: block;
     position: absolute;
-    top: 10px;
+    top: 19px;
     right: 0;
     left: 0;
     height: 3px;
     background-color: #000; }
-  .section-item > .title {
+  .box-item > .title {
     display: block;
     float: left;
     position: relative;
@@ -1888,24 +1957,74 @@ article.contents .column-right {
     font-size: 18px;
     font-weight: 700;
     color: #000;
+    line-height: 43px;
     background-color: #fff; }
-  .section-item > .content {
+    .box-item > .title .thumb {
+      display: inline-block;
+      overflow: hidden;
+      margin-right: 5px;
+      height: 43px;
+      width: 43px;
+      line-height: 43px;
+      vertical-align: middle;
+      border-radius: 100%;
+      background-color: #0f0; }
+      .box-item > .title .thumb img {
+        display: inline-block;
+        height: 100%;
+        width: 100%; }
+  .box-item > .content {
     display: block;
     clear: both; }
-  .section-item .btn-bookmark {
+  .box-item .btn-bookmark {
     position: absolute;
-    top: 10px;
+    top: 19px;
     right: -1px; }
-  .section-item.usage .unit {
+  .box-item .btn-warning {
+    position: absolute;
+    top: 35px;
+    right: 35px; }
+  .box-item.service-group .info {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 15px; }
+    .box-item.service-group .info > li {
+      float: left;
+      padding-right: 45px; }
+      .box-item.service-group .info > li .title {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+        line-height: 1em; }
+        .box-item.service-group .info > li .title .btn-info {
+          display: inline-block;
+          vertical-align: middle; }
+      .box-item.service-group .info > li .unit {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000; }
+        .box-item.service-group .info > li .unit em {
+          font-size: 50px;
+          font-weight: 400;
+          line-height: 0.9em; }
+  .box-item.service-group .chart {
+    clear: both;
+    height: 140px;
+    border-top: 2px solid #E7E7E7;
+    background-color: rgba(0, 0, 0, 0.1); }
+  .box-item.usage .unit {
     display: block;
     padding: 15px 0 20px 0;
     font-size: 18px;
     font-weight: 500;
     color: #000; }
-    .section-item.usage .unit em {
+    .box-item.usage .unit em {
       font-size: 50px;
       font-weight: 400; }
-  .section-item.usage .chart {
+  .box-item.usage .chart {
+    clear: both;
     height: 324px;
     background-color: rgba(0, 0, 0, 0.1); }
 
@@ -2050,7 +2169,7 @@ article.contents .column-right {
   height: 28px;
   width: 28px; }
   .btn-settings:before {
-    content: ""; }
+    content: ""; }
   .btn-settings:before {
     display: block;
     height: 28px;
@@ -2078,13 +2197,13 @@ article.contents .column-right {
     color: rgba(0, 0, 0, 0.43);
     text-decoration: none; }
     .btn-text.reset:before {
-      content: ""; }
+      content: ""; }
     .btn-text.reset:before {
       vertical-align: baseline; }
   .btn-text.show-hide:before {
     content: ""; }
   .btn-text.refresh:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
     margin-top: -5px;
     margin-right: 10px;
@@ -2126,6 +2245,7 @@ input[type=submit].btn-normal,
 
 .btn-bookmark {
   display: block;
+  position: relative;
   text-indent: -9999px;
   background-image: url(../images/sprites.png);
   background-position: -28px -22px;
@@ -2145,12 +2265,77 @@ input[type=submit].btn-normal,
         background-image: url(../images/sprites@2x.png);
         background-size: 173px 79px; } }
 
+.btn-close {
+  display: block;
+  position: relative;
+  height: 23px;
+  width: 23px;
+  text-indent: -9999px; }
+  .btn-close:before {
+    content: ""; }
+  .btn-close:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 23px;
+    text-indent: 0px;
+    line-height: 23px; }
+
+.btn-warning {
+  display: block;
+  position: relative;
+  height: 24px;
+  width: 30px;
+  color: #E74E0F;
+  text-indent: -9999px; }
+  .btn-warning:before {
+    content: ""; }
+  .btn-warning:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    text-indent: 0px;
+    line-height: 24px; }
+
+.btn-info {
+  display: block;
+  position: relative;
+  height: 16px;
+  width: 16px;
+  color: #959595;
+  text-indent: -9999px; }
+  .btn-info:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    text-indent: 0px;
+    line-height: 16px;
+    background-color: #0f0; }
+
 /**
 	filter
 **/
 .filter-container {
   position: relative;
-  z-index: 1;
+  z-index: 901;
   padding: 0 40px;
   height: 62px;
   background-color: #e7e7e7;
@@ -2265,7 +2450,7 @@ input[type=submit].btn-normal,
         height: 330px; }
         .filter-container .items .filter-item .list-filter-items > li {
           display: block;
-          padding: 25px 0 0 0; }
+          padding: 0 0 25px 0; }
           .filter-container .items .filter-item .list-filter-items > li:first-child {
             padding-top: 10px; }
           .filter-container .items .filter-item .list-filter-items > li .btn-folding {
@@ -2300,12 +2485,15 @@ input[type=submit].btn-normal,
           .filter-container .items .filter-item .list-filter-items > li .list-filter-items {
             display: none;
             overflow: hidden;
-            margin-top: 0;
+            margin-top: 10px;
             margin-left: 45px;
+            padding-bottom: 0;
             height: 0; }
             .filter-container .items .filter-item .list-filter-items > li .list-filter-items > li {
               display: block;
-              padding-top: 20px; }
+              padding-bottom: 20px; }
+              .filter-container .items .filter-item .list-filter-items > li .list-filter-items > li:last-child {
+                padding-bottom: 0; }
     .filter-container .items .done {
       clear: both;
       padding-top: 23px;
@@ -2356,7 +2544,7 @@ input[type=submit].btn-normal,
   background-color: #e74e0f;
   transition: max-height 0.3s ease-in; }
   .warning-container:before {
-    content: ""; }
+    content: ""; }
   .warning-container:before {
     display: block;
     position: absolute;
@@ -2459,75 +2647,104 @@ body.asset .chart-container {
   clear: both;
   padding: 20px 0; }
 
-body.asset.usage .usage-dashboard {
-  overflow: hidden;
-  padding: 40px; }
-  body.asset.usage .usage-dashboard > li {
+body.asset .grid-detail {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 62px;
+  right: -100%;
+  bottom: 0;
+  z-index: 900;
+  padding: 30px 40px;
+  width: 400px;
+  color: #fff;
+  background-color: #3E3E3E;
+  transition: right 1s; }
+  body.asset .grid-detail .btn-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff; }
+  body.asset .grid-detail .title {
+    font-size: 32px;
+    font-weight: 500; }
+  body.asset .grid-detail dl {
     display: block;
     box-sizing: border-box;
-    float: left;
-    padding: 0 0 60px 40px;
-    width: 33%; }
-    body.asset.usage .usage-dashboard > li:nth-child(3n+2) {
-      width: 34%; }
-    body.asset.usage .usage-dashboard > li:nth-child(3n+1) {
-      padding-left: 0; }
+    overflow: auto;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%; }
+    body.asset .grid-detail dl dt {
+      padding: 15px 40px 12px;
+      font-size: 16px;
+      font-weight: 700;
+      background-color: #4E4E4E; }
+    body.asset .grid-detail dl dd {
+      padding: 15px 40px 12px;
+      font-size: 18px;
+      font-weight: 500; }
+  body.asset .grid-detail.is-opened {
+    right: 0;
+    transition: right 0.5s; }
 
-body.asset.usage .chart-container.scroll {
+body.asset.usage .chart-container {
   position: relative; }
-  body.asset.usage .chart-container.scroll:after {
+  body.asset.usage .chart-container:after {
     content: '';
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 40px;
     bottom: 0;
     width: 100px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
-  body.asset.usage .chart-container.scroll .nav {
+  body.asset.usage .chart-container .slick-arrow {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 0;
     z-index: 1;
-    margin-top: -17px;
-    height: 30px;
+    height: 100%;
     width: 34px;
-    text-indent: -9999px; }
-    body.asset.usage .chart-container.scroll .nav:before {
+    text-indent: -9999px;
+    transition: opacity 0.5s ease-in-out; }
+    body.asset.usage .chart-container .slick-arrow:before {
       content: ""; }
-    body.asset.usage .chart-container.scroll .nav:before {
+    body.asset.usage .chart-container .slick-arrow:before {
       display: block;
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
+      top: 50%;
+      margin-top: -17px;
+      height: 30px;
+      width: 34px;
       font-size: 30px;
       line-height: 30px;
       text-indent: 0px; }
-    body.asset.usage .chart-container.scroll .nav.btn-prev {
+    body.asset.usage .chart-container .slick-arrow.slick-prev {
       left: 40px; }
-      body.asset.usage .chart-container.scroll .nav.btn-prev:before {
+      body.asset.usage .chart-container .slick-arrow.slick-prev:before {
         transform: rotate(180deg); }
-    body.asset.usage .chart-container.scroll .nav.btn-next {
+    body.asset.usage .chart-container .slick-arrow.slick-next {
       right: 40px; }
+    body.asset.usage .chart-container .slick-arrow.slick-disabled {
+      cursor: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out; }
 
-body.asset.usage .usage-current {
-  overflow: scroll; }
-  body.asset.usage .usage-current .list-usage-current {
-    overflow: hidden;
-    padding: 0 40px;
-    width: 2000px; }
-    body.asset.usage .usage-current .list-usage-current > li {
-      display: block;
-      box-sizing: border-box;
-      float: left;
-      padding-right: 30px;
-      width: 310px; }
-      body.asset.usage .usage-current .list-usage-current > li .chart {
-        clear: both;
-        padding-top: 15px;
-        height: 215px; }
+body.asset.usage .usage-current .list-usage-current {
+  overflow: hidden;
+  padding: 0 40px; }
+  body.asset.usage .usage-current .list-usage-current li {
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    padding-right: 30px;
+    width: 310px; }
+    body.asset.usage .usage-current .list-usage-current li .chart {
+      clear: both;
+      padding-top: 15px;
+      height: 215px; }

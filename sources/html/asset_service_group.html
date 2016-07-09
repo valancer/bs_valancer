@@ -1,0 +1,61 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="asset usage">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "asset", "sub": "service"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<div class="contents-inner">
+				<h1 class="is-hidden">USAGE</h1>
+				
+				<ul class="list-column-03">
+					<li>
+						<div class="box-item service-group">
+							<h2 class="title">
+								<div class="thumb"><img src="/assets/images/@temp/service01.png" alt=""></div>
+								MAPLE STORY 2
+							</h2>
+							<button type="button" class="btn-bookmark is-selected">bookmark</button>
+							<button type="button" class="btn-warning">warning</button>
+							
+							<div class="content">
+								<ul class="info">
+									<li>
+										<label class="title">
+											Servers
+											<button type="button" class="btn-info">info</button>
+										</label>
+										<span class="unit"><em>180</em>EA</span>
+									</li>
+									<li>
+										<label class="title">
+											Database
+											<button type="button" class="btn-info">info</button>
+										</label>
+										<span class="unit"><em>500</em>GB</span>
+									</li>
+								</ul>
+
+								<div class="chart"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

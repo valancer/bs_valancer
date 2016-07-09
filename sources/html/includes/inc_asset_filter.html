@@ -27,28 +27,115 @@
 					</label>
 				</li>
 				<li>
-					<label for="aws01" class="icheck">
-						<input type="checkbox" id="aws01" name="aws" data-ref="account" class="icheckbox">
+					<button type="button" class="btn-folding is-opened">open/close</button>
+					<label for="all-aws" class="icheck">
+						<input type="checkbox" id="all-aws" name="all-aws" data-ref="account" data-all="aws" class="icheckbox">
+						AWS
+					</label>
+					
+					<ul class="list-filter-items">
+						<li>
+							<label for="aws01" class="icheck">
+								<input type="checkbox" id="aws01" name="aws" data-ref="aws" class="icheckbox">
+								129438483
+							</label>
+						</li>
+						<li>
+							<button type="button" class="btn-folding is-opened">open/close</button>
+							<label for="aws02" class="icheck">
+								<input type="checkbox" id="aws02" name="aws" data-ref="aws" data-all="test" class="icheckbox">
+								494737173
+							</label>
+
+							<ul class="list-filter-items">
+								<li>
+									<label for="test01" class="icheck">
+										<input type="checkbox" id="test01" name="test" data-ref="test" class="icheckbox">
+										129438483
+									</label>
+								</li>
+								<li>
+									<label for="test02" class="icheck">
+										<input type="checkbox" id="test02" name="test" data-ref="test" class="icheckbox">
+										494737173
+									</label>
+								</li>
+								<li>
+									<label for="test03" class="icheck">
+										<input type="checkbox" id="test03" name="test" data-ref="test" class="icheckbox">
+										129438483
+									</label>
+								</li>
+							</ul>
+
+						</li>
+						<li>
+							
+							<label for="aws03" class="icheck">
+								<input type="checkbox" id="aws03" name="aws" data-ref="aws" class="icheckbox">
+								129438483
+							</label>
+						</li>
+						<li>
+							
+							<label for="aws04" class="icheck">
+								<input type="checkbox" id="aws04" name="aws" data-ref="aws" class="icheckbox">
+								494737173
+							</label>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<label for="aws05" class="icheck">
+						<input type="checkbox" id="aws05" name="aws" data-ref="account" class="icheckbox">
 						129438483
 					</label>
 				</li>
 				<li>
-					<label for="aws02" class="icheck">
-						<input type="checkbox" id="aws02" name="aws" data-ref="account" class="icheckbox">
+					<label for="aws06" class="icheck">
+						<input type="checkbox" id="aws06" name="aws" data-ref="account" class="icheckbox">
 						494737173
 					</label>
 				</li>
 				<li>
-					<label for="aws03" class="icheck">
-						<input type="checkbox" id="aws03" name="aws" data-ref="account" class="icheckbox">
+					<label for="aws07" class="icheck">
+						<input type="checkbox" id="aws07" name="aws" data-ref="account" class="icheckbox">
 						129438483
 					</label>
 				</li>
 				<li>
-					<label for="aws04" class="icheck">
-						<input type="checkbox" id="aws04" name="aws" data-ref="account" class="icheckbox">
+					<label for="aws08" class="icheck">
+						<input type="checkbox" id="aws08" name="aws" data-ref="account" class="icheckbox">
 						494737173
 					</label>
+				</li>
+				<li>
+					<button type="button" class="btn-folding is-opened">open/close</button>
+					<label for="all-azure" class="icheck">
+						<input type="checkbox" id="all-azure" name="all-azure" data-ref="account" data-all="azure" class="icheckbox">
+						azure
+					</label>
+					
+					<ul class="list-filter-items">
+						<li>
+							<label for="azure01" class="icheck">
+								<input type="checkbox" id="azure05" name="azure" data-ref="azure" class="icheckbox">
+								129438483
+							</label>
+						</li>
+						<li>
+							<label for="azure02" class="icheck">
+								<input type="checkbox" id="azure06" name="azure" data-ref="azure" class="icheckbox">
+								494737173
+							</label>
+						</li>
+						<li>
+							<label for="azure03" class="icheck">
+								<input type="checkbox" id="azure07" name="azure" data-ref="azure" class="icheckbox">
+								129438483
+							</label>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</fieldset>
@@ -244,14 +331,7 @@ $(document).ready(function(e) {
 			};
 
 		function initLayout() {
-			// init count
-			$allItem.each(function() {
-				var target = $(this).data('all');
-				var $items = $('input[data-ref=' + target + ']');
-				var $refLabel = $(this).closest("label");
-				$refLabel.append('(' + $items.length + ')');
-			});
-
+			_initCount();
 			_updateSelectedLabels();
 		}
 
@@ -293,7 +373,7 @@ $(document).ready(function(e) {
 				}
 			});
 
-			$checkItems.on('ifToggled', function(e) {
+			$checkItems.on('ifChanged', function(e) {
 				var target = $(this).data('ref');
 				var $all = $('input[data-all=' + target + ']');
 				var $items = $('input[data-ref=' + target + ']');
@@ -310,22 +390,48 @@ $(document).ready(function(e) {
 				}
 			});
 
+			$checkItems.on('ifIndeterminate', function(e) {
+				var target = $(this).data('ref');
+				var $all = $('input[data-all=' + target + ']');
+				$all.iCheck('indeterminate');
+			});
+
 			// done
 			$btnDone.on('click', function(e) {
 				_updateSelectedLabels();
 			});
 		}
 
+		function _initCount() {
+			// init count
+			$($allItem.get().reverse()).each(function() {
+				var target = $(this).data('all');
+				var $refLabel = $(this).closest("label");
+				var $items = $('input[data-ref=' + target + ']');
+				var $subs = $items.filter('[data-count]');
+				var total = 0;
+				$subs.each(function() {
+					total = total + $(this).data('count') - 1;
+				});
+
+				var cnt = $items.length + total;
+				$(this).attr("data-count", cnt);
+				$refLabel.append('<em class="count">(' + cnt + ')</em>');
+			});
+		}
+
+
 		function _updateSelectedLabels() {
 			var checkedLabels = [];
 
-			$allItem.each(function() {
-				var target = $(this).data('all');
-				var $items = $('input[data-ref=' + target + ']');
-				var $checked = $('input[data-ref=' + target + ']:checked');
+			var $filterItems = $('.filter-item');
+			$filterItems.each(function() {
+				var $checed = $(this).find('input[data-ref]:checked');
+				var $except = $(this).find('input[data-all]:checked');
 
-				if( $checked.length > 0 ) {
-					var result = $(this).data('title') + '(' + $checked.length + ')';
+				var cnt = $checed.length - $except.length;
+				if( cnt > 0 ) {
+					var result = $(this).find('input[data-title]').data('title') + '(' + cnt + ')';
 					checkedLabels.push(result);
 				}
 			}).promise().done(function () { 
@@ -335,8 +441,6 @@ $(document).ready(function(e) {
 				}
     			$selectedLabels.html(checkedLabels.join(", "));
 			});
-
-
 		}
 
 		return {

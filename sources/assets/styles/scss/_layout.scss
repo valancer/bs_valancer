@@ -100,7 +100,7 @@
 
 /* CONTENTS */
 article.contents { 
-	@mixin inner() { box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
+	@mixin inner() { position: relative; box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
 	.contents-inner { overflow: hidden; @include inner(); margin-top: 35px; padding-bottom: 130px;
 		.asset & { margin-top: 0; padding: 0; }
 	}
@@ -112,6 +112,16 @@ article.contents {
 	.portal & {
 		h1.title { background-color: #f6f6f6;
 			.inner { @include inner(); padding-top: 25px; height: 180px; font-size: 48px; }
+		}
+	}
+
+
+
+	// list column 03
+	.list-column-03 { overflow: hidden; padding: 40px;
+		> li { display: block; box-sizing: border-box; float: left; padding: 0 0 60px 40px; width: 33%;
+			&:nth-child(3n+2) { width: 34% }
+			&:nth-child(3n+1) { padding-left: 0; }
 		}
 	}
 }

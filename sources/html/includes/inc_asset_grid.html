@@ -34,6 +34,74 @@
 
 <div id="myGrid" class="ag-bespin-global"></div>
 
+
+<aside id="grid-detail" class="grid-detail">
+	<button type="button" data-target="#grid-detail" class="btn-close">popup close</button>
+
+	<h2 class="title">asdftp-asd32</h2>
+	<dl>
+		<dt>COLUMN TITLE01</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE02</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE03</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE04</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE05</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE03</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE04</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE05</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE03</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE04</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE05</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE03</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE04</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE05</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE03</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE04</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE05</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE03</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE04</dt>
+		<dd>column value</dd>
+
+		<dt>COLUMN TITLE05</dt>
+		<dd>column value</dd>
+	</dl>
+</aside>
+
 <script>
 var columnDefs = [
     {headerName: "ATHLETE", field: "athlete", unSortIcon: true, sort: 'desc'},
@@ -51,6 +119,7 @@ var columnDefs = [
 var gridOptions = {
     columnDefs: columnDefs,
     rowSelection: 'single',
+    onSelectionChanged: onSelectionChanged,
     rowData: null,
     enableSorting: true,
     headerHeight: 52,
@@ -69,6 +138,15 @@ var gridOptions = {
 		return 52;
 	}
 };
+
+
+function onSelectionChanged() {
+	$('#grid-detail').addClass('is-opened');
+	$('.grid-detail .btn-close').off().on('click', function(e) {
+		var target = $(this).data('target');
+		$(target).removeClass('is-opened');
+	});
+}
 
 // setup the grid after the page has finished loading
 document.addEventListener('DOMContentLoaded', function() {

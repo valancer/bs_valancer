@@ -4,10 +4,7 @@
 .popup_wrapper,
 .popup_background { transition: all 0.3s; }
 .modal-popup { display: none; position: relative; box-sizing: border-box; padding: 40px 50px; width: 1074px; transition: 0.3s all; background-color: #fff;
-	.btn-close { display: block; position: absolute; top: 40px; right: 50px; height: 23px; width: 23px; text-indent: -9999px;
-		@include icon(close);
-		&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 23px; text-indent: 0px;; line-height: 23px; }
-	}
+	.btn-close { position: absolute; top: 40px; right: 50px; }
 
 	.title { font-size: 48px; font-weight: 500; color: #000; }
 }
@@ -169,14 +166,35 @@
 /**
 	dashboard
 **/
-// section-item
-.section-item { position: relative;
-	&:before { content: ''; display: block; position: absolute; top: 10px; right: 0; left: 0; height: 3px; background-color: #000; }
+// box-item
+.box-item { position: relative;
+	&:before { content: ''; display: block; position: absolute; top: 19px; right: 0; left: 0; height: 3px; background-color: #000; }
 
-	> .title { display: block; float: left; position: relative; padding-right: 15px; font-size: 18px; font-weight: 700; color: $black; background-color: #fff; }
+	> .title { display: block; float: left; position: relative; padding-right: 15px; font-size: 18px; font-weight: 700; color: #000; line-height: 43px; background-color: #fff;
+		.thumb { display: inline-block; overflow: hidden; margin-right: 5px; height: 43px; width: 43px; line-height: 43px; vertical-align: middle; border-radius: 100%; background-color: #0f0;
+			img { display: inline-block; height: 100%; width: 100%; }
+		}
+	}
 	> .content { display: block; clear: both; }
-	.btn-bookmark { position: absolute; top: 10px; right: -1px; }
 
+	.btn-bookmark { position: absolute; top: 19px; right: -1px; }
+	.btn-warning { position: absolute; top: 35px; right: 35px; }
+
+	// asset service group
+	&.service-group {
+		.info { float: left; padding-top: 20px; padding-bottom: 15px;
+			> li { float: left; padding-right: 45px;
+				.title { display: block; font-size: 16px; font-weight: 500; color: #000; line-height: 1em;
+					.btn-info { display: inline-block; vertical-align: middle; }
+				}
+				.unit { display: block; font-size: 18px; font-weight: 500; color: #000;
+					em { font-size: 50px; font-weight: 400; line-height: 0.9em; }
+				}
+			}
+		}
+
+		.chart { clear: both; height: 140px; border-top: 2px solid #E7E7E7; background-color: rgba(0, 0, 0, 0.1); }	
+	}
 
 	// asset usage
 	&.usage {
@@ -184,7 +202,7 @@
 			em { font-size: 50px; font-weight: 400; }
 		}
 
-		.chart { height: 324px; background-color: rgba(0, 0, 0, 0.1); }
+		.chart { clear: both; height: 324px; background-color: rgba(0, 0, 0, 0.1); }
 	}
 }
 
@@ -280,19 +298,33 @@ input[type=submit].btn-normal,
 }
 
 // bookmark
-.btn-bookmark { display: block; text-indent: -9999px; @include retina-sprite($sc-btn-bookmark-group);
+.btn-bookmark { display: block; position: relative; text-indent: -9999px; @include retina-sprite($sc-btn-bookmark-group);
 	&.is-selected,
 	&:hover { @include retina-sprite($sc-btn-bookmark-selected-group); }
 }
 
+// close
+.btn-close { display: block; position: relative; height: 23px; width: 23px; text-indent: -9999px;
+	@include icon(close);
+	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 23px; text-indent: 0px; line-height: 23px; }
+}
 
+// warning
+.btn-warning { display: block; position: relative; height: 24px; width: 30px; color: #E74E0F; text-indent: -9999px;
+	@include icon(warning);
+	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 24px; text-indent: 0px; line-height: 24px; }
+}
 
+// info
+.btn-info { display: block; position: relative; height: 16px; width: 16px; color: #959595; text-indent: -9999px;
+	&:before { content: ''; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 16px; text-indent: 0px; line-height: 16px; background-color: #0f0; }
+}
 
 
 /**
 	filter
 **/
-.filter-container { position: relative; z-index: z("default"); padding: 0 40px; height: 62px; background-color: #e7e7e7;
+.filter-container { position: relative; z-index: z("modaless") + 1; padding: 0 40px; height: 62px; background-color: #e7e7e7;
     animation-delay: 0s;
     animation-name: filter-up;
     animation-timing-function: ease-out;
@@ -330,7 +362,7 @@ input[type=submit].btn-normal,
 			
 
 			.list-filter-items { position: relative; overflow: auto; margin-top: 15px; padding-bottom: 17px; height: 330px;
-				> li { display: block; padding: 25px 0 0 0;
+				> li { display: block; padding: 0 0 25px 0;
 					&:first-child { padding-top: 10px; }
 
 					.btn-folding { display: block; float: right; position: relative; margin-right: 5px; height: 23px; width: 23px; text-indent: -9999px;
@@ -343,8 +375,10 @@ input[type=submit].btn-normal,
 						&.is-opened ~ .list-filter-items { display: block; height: auto;  }
 					}
 
-					.list-filter-items { display: none; overflow: hidden; margin-top: 0; margin-left: 45px; height: 0;
-						> li { display: block; padding-top: 20px; }
+					.list-filter-items { display: none; overflow: hidden; margin-top: 10px; margin-left: 45px; padding-bottom: 0; height: 0;
+						> li { display: block; padding-bottom: 20px;
+							&:last-child { padding-bottom: 0; }
+						}
 					}
 				}
 			}
