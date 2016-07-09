@@ -100,7 +100,7 @@
 
 /* CONTENTS */
 article.contents { 
-	@mixin inner() { box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
+	@mixin inner() { position: relative; box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
 	.contents-inner { overflow: hidden; @include inner(); margin-top: 35px; padding-bottom: 130px;
 		.asset & { margin-top: 0; padding: 0; }
 	}

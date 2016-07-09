@@ -4,10 +4,7 @@
 .popup_wrapper,
 .popup_background { transition: all 0.3s; }
 .modal-popup { display: none; position: relative; box-sizing: border-box; padding: 40px 50px; width: 1074px; transition: 0.3s all; background-color: #fff;
-	.btn-close { display: block; position: absolute; top: 40px; right: 50px; height: 23px; width: 23px; text-indent: -9999px;
-		@include icon(close);
-		&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 23px; text-indent: 0px;; line-height: 23px; }
-	}
+	.btn-close { position: absolute; top: 40px; right: 50px; }
 
 	.title { font-size: 48px; font-weight: 500; color: #000; }
 }
@@ -285,6 +282,11 @@ input[type=submit].btn-normal,
 	&:hover { @include retina-sprite($sc-btn-bookmark-selected-group); }
 }
 
+// close
+.btn-close { display: block; height: 23px; width: 23px; text-indent: -9999px;
+	@include icon(close);
+	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 23px; text-indent: 0px; line-height: 23px; }
+}
 
 
 
@@ -292,7 +294,7 @@ input[type=submit].btn-normal,
 /**
 	filter
 **/
-.filter-container { position: relative; z-index: z("default"); padding: 0 40px; height: 62px; background-color: #e7e7e7;
+.filter-container { position: relative; z-index: z("modaless") + 1; padding: 0 40px; height: 62px; background-color: #e7e7e7;
     animation-delay: 0s;
     animation-name: filter-up;
     animation-timing-function: ease-out;
