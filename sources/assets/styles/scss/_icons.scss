@@ -59,32 +59,35 @@
 	@if $filename == grid {
 		$char: "\E00B";
 	}
-	@if $filename == metering {
+	@if $filename == info {
 		$char: "\E00C";
 	}
-	@if $filename == monitoring {
+	@if $filename == metering {
 		$char: "\E00D";
 	}
-	@if $filename == noticifation {
+	@if $filename == monitoring {
 		$char: "\E00E";
 	}
-	@if $filename == refresh {
+	@if $filename == noticifation {
 		$char: "\E00F";
 	}
-	@if $filename == reset {
+	@if $filename == refresh {
 		$char: "\E010";
 	}
-	@if $filename == search {
+	@if $filename == reset {
 		$char: "\E011";
 	}
-	@if $filename == settings {
+	@if $filename == search {
 		$char: "\E012";
 	}
-	@if $filename == warning {
+	@if $filename == settings {
 		$char: "\E013";
 	}
-	@if $filename == workflow {
+	@if $filename == warning {
 		$char: "\E014";
+	}
+	@if $filename == workflow {
+		$char: "\E015";
 	}
 
 	@return $char;
@@ -134,6 +137,9 @@
 }
 .icon-grid {
 	@include icon(grid);
+}
+.icon-info {
+	@include icon(info);
 }
 .icon-metering {
 	@include icon(metering);
