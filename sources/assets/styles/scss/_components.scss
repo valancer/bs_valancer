@@ -167,13 +167,14 @@
 	dashboard
 **/
 // box-item
-.box-item { position: relative;
+.box-item { display: block; position: relative;
 	&:before { content: ''; display: block; position: absolute; top: 19px; right: 0; left: 0; height: 3px; background-color: #000; }
 
-	> .title { display: block; float: left; position: relative; padding-right: 15px; font-size: 18px; font-weight: 700; color: #000; line-height: 43px; background-color: #fff;
-		.thumb { display: inline-block; overflow: hidden; margin-right: 5px; height: 43px; width: 43px; line-height: 43px; vertical-align: middle; border-radius: 100%; background-color: #0f0;
+	> .title { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 18px; font-weight: 700; color: #000; line-height: 43px; background-color: #fff;
+		.thumb { display: inline-block; cursor: pointer; overflow: hidden; margin-right: 5px; height: 43px; width: 43px; line-height: 43px; vertical-align: middle; border-radius: 100%; background-color: #0f0;
 			img { display: inline-block; height: 100%; width: 100%; }
 		}
+		.thumb-over { display: block; position: absolute; top: 50px; left: 50px; opacity: 0; }
 	}
 	> .content { display: block; clear: both; }
 
@@ -183,11 +184,13 @@
 	// asset service group
 	&.service-group {
 		.info { float: left; padding-top: 20px; padding-bottom: 15px;
-			> li { float: left; padding-right: 45px;
-				.title { display: block; font-size: 16px; font-weight: 500; color: #000; line-height: 1em;
-					.btn-info { display: inline-block; vertical-align: middle; }
+			> li { float: left; position: relative; padding-right: 45px;
+				.btn-txt-info { display: block; font-size: 16px; font-weight: 500; color: #000; line-height: 1em; vertical-align: middle;
+					@include icon(info, after);
+					&:after { display: inline-block; margin: -2px 0 0 5px; height: 16px; width: 16px; color: #959595; line-height: 1em; vertical-align: middle; }
 				}
-				.unit { display: block; font-size: 18px; font-weight: 500; color: #000;
+
+				.unit { display: block; padding-top: 10px; font-size: 18px; font-weight: 500; color: #000;
 					em { font-size: 50px; font-weight: 400; line-height: 0.9em; }
 				}
 			}
@@ -317,7 +320,8 @@ input[type=submit].btn-normal,
 
 // info
 .btn-info { display: block; position: relative; height: 16px; width: 16px; color: #959595; text-indent: -9999px;
-	&:before { content: ''; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 16px; text-indent: 0px; line-height: 16px; background-color: #0f0; }
+	@include icon(info);
+	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 16px; text-indent: 0px; line-height: 16px; background-color: #0f0; }
 }
 
 

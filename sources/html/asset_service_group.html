@@ -2,7 +2,7 @@
 	"lang": "en",
 	"title": "Bespin Global"
 })
-<body class="asset usage">
+<body class="asset service-group">
 
 	<!-- 상단 영역 -->
 	@@include('./header.html', {"service": "asset", "sub": "service"})
@@ -12,41 +12,109 @@
 	<main>
 		<article class="contents">
 			<div class="contents-inner">
-				<h1 class="is-hidden">USAGE</h1>
-				
+				<h1 class="is-hidden">SERVICE GROUP</h1>
+
+				<p class="button-container">
+					<a href="#" class="btn-normal">MANAGE SERVICE GROUPS</a>
+				</p>
+
 				<ul class="list-column-03">
 					<li>
-						<div class="box-item service-group">
-							<h2 class="title">
-								<div class="thumb"><img src="/assets/images/@temp/service01.png" alt=""></div>
-								MAPLE STORY 2
-							</h2>
-							<button type="button" class="btn-bookmark is-selected">bookmark</button>
-							<button type="button" class="btn-warning">warning</button>
-							
-							<div class="content">
-								<ul class="info">
-									<li>
-										<label class="title">
-											Servers
-											<button type="button" class="btn-info">info</button>
-										</label>
-										<span class="unit"><em>180</em>EA</span>
-									</li>
-									<li>
-										<label class="title">
-											Database
-											<button type="button" class="btn-info">info</button>
-										</label>
-										<span class="unit"><em>500</em>GB</span>
-									</li>
-								</ul>
-
-								<div class="chart"></div>
-							</div>
-						</div>
+						@@include('./inc_asset_service_item.html', {"uid" : "mp2", "warning": "yes", "bookmark": "is-selected"})
+					</li>
+					<li>
+						@@include('./inc_asset_service_item.html', {"uid" : "mp3", "warning": "no", "bookmark": "is-selected"})
+					</li>
+					<li>
+						@@include('./inc_asset_service_item.html', {"uid" : "mp4", "warning": "no", "bookmark": ""})
+					</li>
+					<li>
+						@@include('./inc_asset_service_item.html', {"uid" : "mp5", "warning": "no", "bookmark": ""})
+					</li>
+					<li>
+						@@include('./inc_asset_service_item.html', {"uid" : "mp6", "warning": "no", "bookmark": ""})
+					</li>
+					<li>
+						@@include('./inc_asset_service_item.html', {"uid" : "mp7", "warning": "no", "bookmark": ""})
+					</li>
+					<li>
+						@@include('./inc_asset_service_item.html', {"uid" : "mp8", "warning": "no", "bookmark": ""})
+					</li>
+					<li>
+						@@include('./inc_asset_service_item.html', {"uid" : "mp9", "warning": "no", "bookmark": ""})
+					</li>
+					<li>
+						@@include('./inc_asset_service_item.html', {"uid" : "mp10", "warning": "no", "bookmark": ""})
 					</li>
 				</ul>
+				<script>
+				$(document).ready(function(e) {
+					// thumbnails
+					var $sgContainer = $('.box-item.service-group');
+					var thumbs = $sgContainer.find('.thumb');
+					thumbs.on({
+						mouseenter: function(e) {
+							var $img = $(this).find('img');
+							var $markup = $('<div class="thumb-over">' + $img[0]['outerHTML'] + '</div>');
+							var $parent = $(this).closest('.title');
+							if( $parent.has( ".thumb-over" ).length <= 0 ) {
+								$parent.append($markup);
+								$markup.animate({'opacity': 1}, 300, function() {});							
+							}
+						},
+						mouseleave: function(e) {
+							$(this).siblings('.thumb-over').remove();
+						}
+					});
+
+					// info servers
+					$sgContainer.find('.btn-txt-info.servers').on('click', function(e) {
+						e.preventDefault();
+
+						$($(this).val()).popup({
+							type: 'tooltip',
+							tooltipanchor: e.target,
+							vertical: 'top',
+							offsettop: -5,
+							horizontal: 'leftedge',
+							transition: '0.3s all 0.1s',
+							autoopen: true
+						});
+					});
+
+
+					// info database
+					$sgContainer.find('.btn-txt-info.database').on('click', function(e) {
+						e.preventDefault();
+
+						$($(this).val()).popup({
+							type: 'tooltip',
+							tooltipanchor: e.target,
+							vertical: 'top',
+							offsettop: -5,
+							horizontal: 'leftedge',
+							transition: '0.3s all 0.1s',
+							autoopen: true
+						});
+					});
+
+					// warning
+					$sgContainer.find('.btn-warning').on('click', function(e) {
+						e.preventDefault();
+
+						$($(this).val()).popup({
+							type: 'tooltip',
+							tooltipanchor: e.target,
+							vertical: 'top',
+							horizontal: 'left',
+							offsetleft: -340,
+							transition: '0.3s all 0.1s',
+							autoopen: true
+						});
+					});
+
+				});
+				</script>
 
 
 			</div>

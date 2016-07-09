@@ -1,0 +1,70 @@
+<a href="#none?uid=@@uid" class="box-item service-group">
+	<h2 class="title">
+		<div class="thumb"><img src="/assets/images/@temp/service01.png" alt="MAPLE STORY 2"></div>
+		MAPLE STORY 2
+	</h2>
+	<button type="button" class="btn-bookmark @@bookmark">bookmark</button>
+
+
+	@@if ( warning == "yes" ) {
+	<!-- warning -->
+	<button type="button" value="#@@uid-warning" class="btn-warning">warning</button>
+	<div id="@@uid-warning" class="popover service-group warning">
+		<span class="point" style="right: 8px; left: auto;"></span>
+
+		<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+	</div>
+	<!--// warning -->
+	}
+	
+	<div class="content">
+		<ul class="info">
+			<li>
+				<button type="button" value="#@@uid-servers" class="btn-txt-info servers">Servers</button>
+				<span class="unit"><em>180</em>EA</span>
+
+				<div id="@@uid-servers" class="popover service-group servers">
+					<span class="point" style="left: 54px;"></span>
+
+					<dl class="list-ea">
+						<dt>EC2</dt>
+						<dd>100EA</dd>
+
+						<dt>ABC</dt>
+						<dd>50EA</dd>
+
+						<dt>EC2</dt>
+						<dd>10EA</dd>
+
+						<dt>EC2</dt>
+						<dd>20EA</dd>
+					</dl>
+				</div>
+			</li>
+			<li>
+				<button type="button" value="#@@uid-database" class="btn-txt-info database">Database</button>
+				<span class="unit"><em>500</em>GB</span>
+
+				<div id="@@uid-database" class="popover service-group database">
+					<span class="point" style="left: 67px;"></span>
+
+					<dl class="list-ea">
+						<dt>EC2</dt>
+						<dd>100EA</dd>
+
+						<dt>ABC</dt>
+						<dd>50EA</dd>
+
+						<dt>EC2</dt>
+						<dd>10EA</dd>
+
+						<dt>EC2</dt>
+						<dd>20EA</dd>
+					</dl>
+				</div>
+			</li>
+		</ul>
+
+		<div class="chart"></div>
+	</div>
+</a>

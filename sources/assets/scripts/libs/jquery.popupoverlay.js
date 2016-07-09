@@ -507,7 +507,9 @@
 
                     if (!($el.data('popup-visible'))) {
                         if (options.detach) {
+                            // $el.data('popup-initialized', false);
                             $el.hide().detach();
+                            // $wrapper.remove();
                         } else {
                             $wrapper.hide();
                         }
@@ -527,7 +529,9 @@
                 });
             } else {
                 if (options.detach) {
+                    // $el.data('popup-initialized', false);
                     $el.hide().detach();
+                    // $wrapper.remove();
                 } else {
                     $wrapper.hide();
                 }
