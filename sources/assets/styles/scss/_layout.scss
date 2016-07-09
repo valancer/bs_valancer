@@ -114,4 +114,14 @@ article.contents {
 			.inner { @include inner(); padding-top: 25px; height: 180px; font-size: 48px; }
 		}
 	}
+
+
+
+	// list column 03
+	.list-column-03 { overflow: hidden; padding: 40px;
+		> li { display: block; box-sizing: border-box; float: left; padding: 0 0 60px 40px; width: 33%;
+			&:nth-child(3n+2) { width: 34% }
+			&:nth-child(3n+1) { padding-left: 0; }
+		}
+	}
 }

@@ -166,14 +166,35 @@
 /**
 	dashboard
 **/
-// section-item
-.section-item { position: relative;
-	&:before { content: ''; display: block; position: absolute; top: 10px; right: 0; left: 0; height: 3px; background-color: #000; }
+// box-item
+.box-item { position: relative;
+	&:before { content: ''; display: block; position: absolute; top: 19px; right: 0; left: 0; height: 3px; background-color: #000; }
 
-	> .title { display: block; float: left; position: relative; padding-right: 15px; font-size: 18px; font-weight: 700; color: $black; background-color: #fff; }
+	> .title { display: block; float: left; position: relative; padding-right: 15px; font-size: 18px; font-weight: 700; color: #000; line-height: 43px; background-color: #fff;
+		.thumb { display: inline-block; overflow: hidden; margin-right: 5px; height: 43px; width: 43px; line-height: 43px; vertical-align: middle; border-radius: 100%; background-color: #0f0;
+			img { display: inline-block; height: 100%; width: 100%; }
+		}
+	}
 	> .content { display: block; clear: both; }
-	.btn-bookmark { position: absolute; top: 10px; right: -1px; }
 
+	.btn-bookmark { position: absolute; top: 19px; right: -1px; }
+	.btn-warning { position: absolute; top: 35px; right: 35px; }
+
+	// asset service group
+	&.service-group {
+		.info { float: left; padding-top: 20px; padding-bottom: 15px;
+			> li { float: left; padding-right: 45px;
+				.title { display: block; font-size: 16px; font-weight: 500; color: #000; line-height: 1em;
+					.btn-info { display: inline-block; vertical-align: middle; }
+				}
+				.unit { display: block; font-size: 18px; font-weight: 500; color: #000;
+					em { font-size: 50px; font-weight: 400; line-height: 0.9em; }
+				}
+			}
+		}
+
+		.chart { clear: both; height: 140px; border-top: 2px solid #E7E7E7; background-color: rgba(0, 0, 0, 0.1); }	
+	}
 
 	// asset usage
 	&.usage {
@@ -181,7 +202,7 @@
 			em { font-size: 50px; font-weight: 400; }
 		}
 
-		.chart { height: 324px; background-color: rgba(0, 0, 0, 0.1); }
+		.chart { clear: both; height: 324px; background-color: rgba(0, 0, 0, 0.1); }
 	}
 }
 
@@ -277,18 +298,27 @@ input[type=submit].btn-normal,
 }
 
 // bookmark
-.btn-bookmark { display: block; text-indent: -9999px; @include retina-sprite($sc-btn-bookmark-group);
+.btn-bookmark { display: block; position: relative; text-indent: -9999px; @include retina-sprite($sc-btn-bookmark-group);
 	&.is-selected,
 	&:hover { @include retina-sprite($sc-btn-bookmark-selected-group); }
 }
 
 // close
-.btn-close { display: block; height: 23px; width: 23px; text-indent: -9999px;
+.btn-close { display: block; position: relative; height: 23px; width: 23px; text-indent: -9999px;
 	@include icon(close);
 	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 23px; text-indent: 0px; line-height: 23px; }
 }
 
+// warning
+.btn-warning { display: block; position: relative; height: 24px; width: 30px; color: #E74E0F; text-indent: -9999px;
+	@include icon(warning);
+	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 24px; text-indent: 0px; line-height: 24px; }
+}
 
+// info
+.btn-info { display: block; position: relative; height: 16px; width: 16px; color: #959595; text-indent: -9999px;
+	&:before { content: ''; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 16px; text-indent: 0px; line-height: 16px; background-color: #0f0; }
+}
 
 
 /**
