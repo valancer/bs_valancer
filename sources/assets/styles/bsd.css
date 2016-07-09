@@ -2337,7 +2337,7 @@ input[type=submit].btn-normal,
         height: 330px; }
         .filter-container .items .filter-item .list-filter-items > li {
           display: block;
-          padding: 25px 0 0 0; }
+          padding: 0 0 25px 0; }
           .filter-container .items .filter-item .list-filter-items > li:first-child {
             padding-top: 10px; }
           .filter-container .items .filter-item .list-filter-items > li .btn-folding {
@@ -2372,12 +2372,15 @@ input[type=submit].btn-normal,
           .filter-container .items .filter-item .list-filter-items > li .list-filter-items {
             display: none;
             overflow: hidden;
-            margin-top: 0;
+            margin-top: 10px;
             margin-left: 45px;
+            padding-bottom: 0;
             height: 0; }
             .filter-container .items .filter-item .list-filter-items > li .list-filter-items > li {
               display: block;
-              padding-top: 20px; }
+              padding-bottom: 20px; }
+              .filter-container .items .filter-item .list-filter-items > li .list-filter-items > li:last-child {
+                padding-bottom: 0; }
     .filter-container .items .done {
       clear: both;
       padding-top: 23px;
