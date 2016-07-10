@@ -119,6 +119,11 @@ article.contents {
 
 
 
+	// list column 01
+	.list-column-01 { overflow: hidden; padding: 40px;
+		> li { display: block; clear: both; box-sizing: border-box; padding: 0 0 20px 0; }
+	}
+
 	// list column 03
 	.list-column-03 { overflow: hidden; padding: 40px;
 		> li { display: block; box-sizing: border-box; float: left; padding: 0 0 60px 40px; width: 33%;

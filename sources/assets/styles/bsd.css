@@ -141,7 +141,7 @@ input[type=submit] {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, body.asset.usage .chart-container .slick-arrow:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, body.asset .chart-container .slick-arrow:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1658,6 +1658,15 @@ article.contents .column-right {
     height: 180px;
     font-size: 48px; }
 
+article.contents .list-column-01 {
+  overflow: hidden;
+  padding: 40px; }
+  article.contents .list-column-01 > li {
+    display: block;
+    clear: both;
+    box-sizing: border-box;
+    padding: 0 0 20px 0; }
+
 article.contents .list-column-03 {
   overflow: hidden;
   padding: 40px; }
@@ -1997,6 +2006,72 @@ article.contents .list-column-03 {
     position: absolute;
     top: 35px;
     right: 35px; }
+  .box-item.dashboard {
+    overflow: hidden; }
+    .box-item.dashboard .unit {
+      display: block;
+      padding: 10px 0 20px 0;
+      font-size: 84px;
+      font-weight: 500;
+      color: #000;
+      line-height: 1em; }
+      .box-item.dashboard .unit em {
+        line-height: 1em; }
+    .box-item.dashboard .chart {
+      clear: both;
+      height: 324px;
+      background-color: rgba(0, 0, 0, 0.1); }
+    .box-item.dashboard .summary {
+      float: left;
+      margin-right: 60px;
+      width: 300px; }
+      .box-item.dashboard .summary .unit {
+        display: block;
+        position: relative;
+        padding: 10px 0 10px 0;
+        font-size: 32px;
+        font-weight: 500;
+        color: #000; }
+        .box-item.dashboard .summary .unit:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 0px;
+          height: 3px;
+          width: 37px;
+          background-color: #000; }
+        .box-item.dashboard .summary .unit em {
+          font-size: 84px; }
+      .box-item.dashboard .summary .list-ea {
+        display: block;
+        box-sizing: border-box;
+        overflow: scroll;
+        margin-top: 10px;
+        padding: 0px 30px 0 0;
+        height: 220px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000; }
+        .box-item.dashboard .summary .list-ea dt {
+          clear: both;
+          float: left;
+          width: 50%;
+          line-height: 35px; }
+        .box-item.dashboard .summary .list-ea dd {
+          float: left;
+          width: 50%;
+          text-align: right;
+          line-height: 35px; }
+    .box-item.dashboard .chart-container {
+      clear: none;
+      float: left;
+      margin-top: 10px;
+      height: 324px;
+      width: 1000px; }
+      .box-item.dashboard .chart-container .list-dashboard-chart li {
+        float: left;
+        padding-right: 30px;
+        width: 310px; }
   .box-item.service-group .info {
     float: left;
     padding-top: 20px;
@@ -2715,6 +2790,71 @@ body.asset .grid-detail {
     right: 0;
     transition: right 0.5s; }
 
+body.asset .chart-container {
+  position: relative; }
+  body.asset .chart-container:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    bottom: 0;
+    width: 100px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
+  body.asset .chart-container .slick-arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 34px;
+    text-indent: -9999px;
+    transition: opacity 0.5s ease-in-out; }
+    body.asset .chart-container .slick-arrow:before {
+      content: ""; }
+    body.asset .chart-container .slick-arrow:before {
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -17px;
+      height: 30px;
+      width: 34px;
+      font-size: 30px;
+      line-height: 30px;
+      text-indent: 0px; }
+    body.asset .chart-container .slick-arrow.slick-prev {
+      left: 40px; }
+      body.asset .chart-container .slick-arrow.slick-prev:before {
+        transform: rotate(180deg); }
+    body.asset .chart-container .slick-arrow.slick-next {
+      right: 40px; }
+    body.asset .chart-container .slick-arrow.slick-disabled {
+      cursor: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out; }
+
+body.asset.dashboard .section-box {
+  padding-top: 30px;
+  border-bottom: 3px solid #E7E7E7; }
+  body.asset.dashboard .section-box .section-title {
+    padding: 0 40px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000; }
+
+body.asset.dashboard .list-column-03 {
+  padding-top: 20px; }
+
+body.asset.dashboard .chart-container {
+  padding: 0px; }
+  body.asset.dashboard .chart-container:after {
+    right: 0px; }
+  body.asset.dashboard .chart-container .slick-arrow.slick-prev {
+    left: 0px; }
+  body.asset.dashboard .chart-container .slick-arrow.slick-next {
+    right: 0px; }
+
 body.asset.service-group .popover.service-group {
   display: none;
   position: absolute;
@@ -2750,50 +2890,6 @@ body.asset.service-group .popover.service-group {
     background-color: #E74E0F; }
     body.asset.service-group .popover.service-group.warning .point {
       color: #E74E0F; }
-
-body.asset.usage .chart-container {
-  position: relative; }
-  body.asset.usage .chart-container:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 40px;
-    bottom: 0;
-    width: 100px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
-  body.asset.usage .chart-container .slick-arrow {
-    display: block;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    height: 100%;
-    width: 34px;
-    text-indent: -9999px;
-    transition: opacity 0.5s ease-in-out; }
-    body.asset.usage .chart-container .slick-arrow:before {
-      content: ""; }
-    body.asset.usage .chart-container .slick-arrow:before {
-      display: block;
-      position: absolute;
-      top: 50%;
-      margin-top: -17px;
-      height: 30px;
-      width: 34px;
-      font-size: 30px;
-      line-height: 30px;
-      text-indent: 0px; }
-    body.asset.usage .chart-container .slick-arrow.slick-prev {
-      left: 40px; }
-      body.asset.usage .chart-container .slick-arrow.slick-prev:before {
-        transform: rotate(180deg); }
-    body.asset.usage .chart-container .slick-arrow.slick-next {
-      right: 40px; }
-    body.asset.usage .chart-container .slick-arrow.slick-disabled {
-      cursor: none;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out; }
 
 body.asset.usage .usage-current .list-usage-current {
   overflow: hidden;

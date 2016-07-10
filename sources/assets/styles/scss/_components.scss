@@ -181,6 +181,35 @@
 	.btn-bookmark { position: absolute; top: 19px; right: -1px; }
 	.btn-warning { position: absolute; top: 35px; right: 35px; }
 
+
+	// asset dashboard
+	&.dashboard { overflow: hidden;
+		.unit { display: block; padding: 10px 0 20px 0; font-size: 84px; font-weight: 500; color: #000; line-height: 1em;
+			em { line-height: 1em; }
+		}
+
+		.chart { clear: both; height: 324px; background-color: rgba(0, 0, 0, 0.1); }
+
+		.summary { float: left; margin-right: 60px; width: 300px;
+			.unit { display: block; position: relative; padding: 10px 0 10px 0; font-size: 32px; font-weight: 500; color: #000;
+				&:before { content: ''; display: block; position: absolute; bottom: 0px; height: 3px; width: 37px; background-color: #000; }
+
+				em { font-size: 84px; }
+			}
+
+			.list-ea { display: block; box-sizing: border-box; overflow: scroll; margin-top: 10px; padding: 0px 30px 0 0; height: 220px; font-size: 16px; font-weight: 500; color: #000;
+				dt { clear: both; float: left; width: 50%; line-height: 35px; }
+				dd { float: left; width: 50%; text-align: right; line-height: 35px; }
+			}
+		}
+	
+		.chart-container { clear: none; float: left; margin-top: 10px; height: 324px; width: 1000px;
+			.list-dashboard-chart {
+				li { float: left; padding-right: 30px; width: 310px; }
+			}
+		}
+	}
+
 	// asset service group
 	&.service-group {
 		.info { float: left; padding-top: 20px; padding-bottom: 15px;

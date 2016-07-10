@@ -1,0 +1,257 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="asset dashboard">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "asset", "sub": "dashboard"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<div class="contents-inner">
+				<h1 class="is-hidden">ASSET DASHBOARD</h1>
+				
+
+				<!-- performance -->
+				<section class="section-box">
+					<h2 class="section-title">PERFORMANCE</h2>
+
+					<ul class="list-column-03">
+						<li>
+							<div class="box-item dashboard">
+								<h2 class="title">CPU</h2>
+								
+								<div class="content">
+									<strong class="unit"><em>66</em>%</strong>
+
+									<div class="chart"></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box-item dashboard">
+								<h2 class="title">MEMORY</h2>
+								
+								<div class="content">
+									<strong class="unit"><em>34</em>%</strong>
+
+									<div class="chart"></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box-item dashboard">
+								<h2 class="title">VOLUME</h2>
+								
+								<div class="content">
+									<strong class="unit"><em>87</em>%</strong>
+
+									<div class="chart"></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<!--// performance -->
+
+
+
+				<section class="section-box">
+					<h2 class="section-title">USAGE</h2>
+
+					<ul class="list-column-01">
+						<li>
+							<div class="box-item dashboard">
+								<h2 class="title">SERVER</h2>
+								
+								<div class="content">
+									<div class="summary">
+										<strong class="unit"><em>5500</em>EA</strong>
+
+										<dl class="list-ea">
+											<dt>EC2</dt>
+											<dd>100EA</dd>
+
+											<dt>ABC</dt>
+											<dd>50EA</dd>
+
+											<dt>EC2</dt>
+											<dd>10EA</dd>
+
+											<dt>EC2</dt>
+											<dd>20EA</dd>
+
+											<dt>EC2</dt>
+											<dd>100EA</dd>
+
+											<dt>ABC</dt>
+											<dd>50EA</dd>
+
+											<dt>EC2</dt>
+											<dd>10EA</dd>
+
+											<dt>EC2</dt>
+											<dd>20EA</dd>
+
+											<dt>EC2</dt>
+											<dd>100EA</dd>
+
+											<dt>ABC</dt>
+											<dd>50EA</dd>
+
+											<dt>EC2</dt>
+											<dd>10EA</dd>
+
+											<dt>EC2</dt>
+											<dd>20EA</dd>
+										</dl>
+									</div>
+
+									<div class="chart-container">
+										<ul class="list-dashboard-chart slick-container">
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box-item dashboard">
+								<h2 class="title">NETWORK DATA</h2>
+								
+								<div class="content">
+									<div class="summary">
+										<strong class="unit"><em>377</em>MB</strong>
+
+										<dl class="list-ea">
+											<dt>EC2</dt>
+											<dd>100EA</dd>
+
+											<dt>ABC</dt>
+											<dd>50EA</dd>
+
+											<dt>EC2</dt>
+											<dd>10EA</dd>
+
+											<dt>EC2</dt>
+											<dd>20EA</dd>
+										</dl>
+									</div>
+
+									<div class="chart-container">
+										<ul class="list-dashboard-chart slick-container">
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box-item dashboard">
+								<h2 class="title">DATABASE</h2>
+								
+								<div class="content">
+									<div class="summary">
+										<strong class="unit"><em>90</em>GB</strong>
+
+										<dl class="list-ea">
+											<dt>EC2</dt>
+											<dd>100EA</dd>
+
+											<dt>ABC</dt>
+											<dd>50EA</dd>
+
+											<dt>EC2</dt>
+											<dd>10EA</dd>
+
+											<dt>EC2</dt>
+											<dd>20EA</dd>
+										</dl>
+									</div>
+
+									<div class="chart-container">
+										<ul class="list-dashboard-chart slick-container">
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+											<li>
+												<div class="chart"></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<script>
+				$(document).ready(function(e) {
+					$('.slick-container').slick({
+						dots: false,
+						infinite: false,
+						swipe: false,
+						speed: 300,
+						slidesToShow: 3
+					});
+				});
+				</script>
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>
