@@ -90,6 +90,28 @@
 
 
 
+.side-menus { margin-top: 25px;
+	li {
+		.btn-edit { display: none; margin-left: 5px; }
+
+		a { display: block; position: relative; font-size: 28px; font-weight: 500; color: #AFAFAF; line-height: 60px;
+			&:before { content: ''; display: none; position: absolute; top: 50%; right: 0px; left: 0px; height: 3px; background-color: #000; }
+			span { display: inline-block; position: relative; z-index: z("default"); padding-right: 15px; background-color: #fff; }
+
+			&:hover { color: #000;
+				&:before { display: block; }
+				.btn-edit { display: inline-block; }
+			}
+
+			&.is-selected { color: #000;
+				&:before { display: block; }
+			}
+		}
+	}	
+}
+
+
+
 /* FOOTER */
 .footer { height: 400px; background-color: #000;
 	
@@ -107,7 +129,9 @@ article.contents {
 
 	.button-container { padding: 35px 40px 0px 40px; text-align: right; }
 
-	.column-left { float: left; padding-right: $column-padding; width: $column-left-width; }
+	.column-left { float: left; padding-right: $column-padding; width: $column-left-width;
+		.btn-normal { width: 100%; }
+	}
 	.column-right { float: left; width: $column-right-width; }
 
 	// protal
@@ -131,4 +155,6 @@ article.contents {
 			&:nth-child(3n+1) { padding-left: 0; }
 		}
 	}
+
+	.submit-btns { padding-top: 35px; }
 }

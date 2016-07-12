@@ -139,6 +139,35 @@
 }
 
 
+/**
+	accordion
+**/
+.accordion { margin-top: 40px; border-bottom: 3px solid rgba(151, 151, 151, 0.32);
+	.btn-folding { display: block; position: absolute; top: 50%; right: 0px; z-index: z("default"); margin-top: -41px; height: 82px; width: 82px; text-indent: -9999px;
+		@include icon(arrow01, after);
+		&:after { position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 100%; font-size: 15px; color: #000; line-height: 8px; vertical-align: middle; text-align: center; text-indent: 0; transform: rotateX( 0deg ); transition-duration: 0.3s; }
+	}
+
+	> dt { display: block; position: relative; padding: 0 0 0 35px; height: 82px; border-top: 3px solid rgba(151, 151, 151, 0.32); background-color: #fff;
+		.title { display: block; float: left; font-size: 26px; font-weight: 500; color: #000; line-height: 82px; }
+		.right { float: right; }
+
+		&.is-opened { background-color: #F6F6F6;
+			.btn-folding {
+				&:after { transform: rotateX( 180deg ); transition-duration: 0.3s; }
+			}
+
+			+ dd { opacity: 1; max-height: 1000px; transition: opacity 0.3s, max-height 0.3s; }
+		}
+	}
+
+	> dd { display: block; padding: 0 35px; opacity: 0; max-height: 0px; background-color: #F6F6F6;
+	}
+}
+
+
+
+
 
 /**
 	filter-util
@@ -248,7 +277,7 @@
 	form controls
 **/
 // checkbox & radio
-.icheck { display: inline-block; position: relative; padding: 0 0 0 45px; font-size: 20px; font-weight: 500; color: $black; line-height: 23px; cursor: pointer; }
+.icheck { display: inline-block; position: relative; padding: 0 0 0 45px; min-height: 23px; min-width: 23px; font-size: 20px; font-weight: 500; color: $black; line-height: 23px; vertical-align: middle; cursor: pointer; }
 
 .icheckbox { display: block; position: absolute !important; top: 0; left: 0; @include retina-sprite($sc-unchecked-group);
 	&.checked { @include retina-sprite($sc-checked-group); }
@@ -350,8 +379,17 @@ input[type=submit].btn-normal,
 // info
 .btn-info { display: block; position: relative; height: 16px; width: 16px; color: #959595; text-indent: -9999px;
 	@include icon(info);
-	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 16px; text-indent: 0px; line-height: 16px; background-color: #0f0; }
+	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 16px; text-indent: 0px; line-height: 16px; }
 }
+
+// edit
+.btn-edit { display: inline-block; position: relative; height: 25px; width: 25px; color: #000; text-indent: -9999px; vertical-align: middle;
+	@include icon(edit);
+	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 16px; text-indent: 0px; line-height: 25px; vertical-align: middle; }
+}
+
+
+
 
 
 /**

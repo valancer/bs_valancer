@@ -141,7 +141,7 @@ input[type=submit] {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, body.asset .chart-container .slick-arrow:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, body.asset .chart-container .slick-arrow:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -172,47 +172,50 @@ input[type=submit] {
 .icon-dashboard:before {
   content: ""; }
 
-.icon-export:before {
+.icon-edit:before {
   content: ""; }
 
-.icon-eyes:before {
+.icon-export:before {
   content: ""; }
 
-.icon-filter:before {
+.icon-eyes:before {
   content: ""; }
 
-.icon-grid:before {
+.icon-filter:before {
   content: ""; }
 
-.icon-info:before {
+.icon-grid:before {
   content: ""; }
 
-.icon-metering:before {
+.icon-info:before {
   content: ""; }
 
-.icon-monitoring:before {
+.icon-metering:before {
   content: ""; }
 
-.icon-noticifation:before {
+.icon-monitoring:before {
   content: ""; }
 
-.icon-refresh:before {
+.icon-noticifation:before {
   content: ""; }
 
-.icon-reset:before {
+.icon-refresh:before {
   content: ""; }
 
-.icon-search:before {
+.icon-reset:before {
   content: ""; }
 
-.icon-settings:before {
+.icon-search:before {
   content: ""; }
 
-.icon-warning:before {
+.icon-settings:before {
   content: ""; }
 
-.icon-workflow:before {
+.icon-warning:before {
   content: ""; }
+
+.icon-workflow:before {
+  content: ""; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -667,7 +670,7 @@ The `sprites` mixin generates identical output to the CSS template
   .aggrid-uitls .search {
     display: block; }
     .aggrid-uitls .search:before {
-      content: ""; }
+      content: ""; }
     .aggrid-uitls .search:before {
       display: inline-block;
       margin-right: 10px;
@@ -1454,7 +1457,7 @@ The `sprites` mixin generates identical output to the CSS template
       .global-menu .title .service.asset:before {
         content: ""; }
       .global-menu .title .service.metering:before {
-        content: ""; }
+        content: ""; }
       .global-menu .title .service.metering:before {
         margin-top: -4px;
         font-size: 41px; }
@@ -1473,7 +1476,7 @@ The `sprites` mixin generates identical output to the CSS template
       .global-menu .uilts .btns.notifications {
         position: relative; }
         .global-menu .uilts .btns.notifications:before {
-          content: ""; }
+          content: ""; }
         .global-menu .uilts .btns.notifications:before {
           display: block;
           color: #000;
@@ -1497,7 +1500,7 @@ The `sprites` mixin generates identical output to the CSS template
           border-radius: 14px;
           background-color: #f34122; }
       .global-menu .uilts .btns.dashboard:before {
-        content: ""; }
+        content: ""; }
       .global-menu .uilts .btns.dashboard:before {
         display: block;
         color: #000;
@@ -1614,6 +1617,44 @@ The `sprites` mixin generates identical output to the CSS template
       .sub-menus .list-menes > li.is-selected a {
         color: #000; }
 
+.side-menus {
+  margin-top: 25px; }
+  .side-menus li .btn-edit {
+    display: none;
+    margin-left: 5px; }
+  .side-menus li a {
+    display: block;
+    position: relative;
+    font-size: 28px;
+    font-weight: 500;
+    color: #AFAFAF;
+    line-height: 60px; }
+    .side-menus li a:before {
+      content: '';
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      left: 0px;
+      height: 3px;
+      background-color: #000; }
+    .side-menus li a span {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      padding-right: 15px;
+      background-color: #fff; }
+    .side-menus li a:hover {
+      color: #000; }
+      .side-menus li a:hover:before {
+        display: block; }
+      .side-menus li a:hover .btn-edit {
+        display: inline-block; }
+    .side-menus li a.is-selected {
+      color: #000; }
+      .side-menus li a.is-selected:before {
+        display: block; }
+
 /* FOOTER */
 .footer {
   height: 400px;
@@ -1641,6 +1682,8 @@ article.contents .column-left {
   float: left;
   padding-right: 40px;
   width: 310px; }
+  article.contents .column-left .btn-normal {
+    width: 100%; }
 
 article.contents .column-right {
   float: left;
@@ -1680,6 +1723,9 @@ article.contents .list-column-03 {
       width: 34%; }
     article.contents .list-column-03 > li:nth-child(3n+1) {
       padding-left: 0; }
+
+article.contents .submit-btns {
+  padding-top: 35px; }
 
 /**
 	modal popup
@@ -1825,7 +1871,7 @@ article.contents .list-column-03 {
         font-size: 55px;
         line-height: 66px; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
         font-size: 58px;
         line-height: 63px; }
@@ -1835,12 +1881,12 @@ article.contents .list-column-03 {
         font-size: 44px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
         font-size: 55px;
         line-height: 66px; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
         font-size: 55px;
         line-height: 66px; }
@@ -1906,6 +1952,71 @@ article.contents .list-column-03 {
       width: 40px;
       vertical-align: middle;
       background-color: #DEDEDE; }
+
+/**
+	accordion
+**/
+.accordion {
+  margin-top: 40px;
+  border-bottom: 3px solid rgba(151, 151, 151, 0.32); }
+  .accordion .btn-folding {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    z-index: 1;
+    margin-top: -41px;
+    height: 82px;
+    width: 82px;
+    text-indent: -9999px; }
+    .accordion .btn-folding:after {
+      content: ""; }
+    .accordion .btn-folding:after {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      margin-top: -4px;
+      height: 8px;
+      width: 100%;
+      font-size: 15px;
+      color: #000;
+      line-height: 8px;
+      vertical-align: middle;
+      text-align: center;
+      text-indent: 0;
+      transform: rotateX(0deg);
+      transition-duration: 0.3s; }
+  .accordion > dt {
+    display: block;
+    position: relative;
+    padding: 0 0 0 35px;
+    height: 82px;
+    border-top: 3px solid rgba(151, 151, 151, 0.32);
+    background-color: #fff; }
+    .accordion > dt .title {
+      display: block;
+      float: left;
+      font-size: 26px;
+      font-weight: 500;
+      color: #000;
+      line-height: 82px; }
+    .accordion > dt .right {
+      float: right; }
+    .accordion > dt.is-opened {
+      background-color: #F6F6F6; }
+      .accordion > dt.is-opened .btn-folding:after {
+        transform: rotateX(180deg);
+        transition-duration: 0.3s; }
+      .accordion > dt.is-opened + dd {
+        opacity: 1;
+        max-height: 1000px;
+        transition: opacity 0.3s, max-height 0.3s; }
+  .accordion > dd {
+    display: block;
+    padding: 0 35px;
+    opacity: 0;
+    max-height: 0px;
+    background-color: #F6F6F6; }
 
 /**
 	filter-util
@@ -2088,7 +2199,7 @@ article.contents .list-column-03 {
         line-height: 1em;
         vertical-align: middle; }
         .box-item.service-group .info > li .btn-txt-info:after {
-          content: ""; }
+          content: ""; }
         .box-item.service-group .info > li .btn-txt-info:after {
           display: inline-block;
           margin: -2px 0 0 5px;
@@ -2133,10 +2244,13 @@ article.contents .list-column-03 {
   display: inline-block;
   position: relative;
   padding: 0 0 0 45px;
+  min-height: 23px;
+  min-width: 23px;
   font-size: 20px;
   font-weight: 500;
   color: #000;
   line-height: 23px;
+  vertical-align: middle;
   cursor: pointer; }
 
 .icheckbox {
@@ -2267,7 +2381,7 @@ article.contents .list-column-03 {
   height: 28px;
   width: 28px; }
   .btn-settings:before {
-    content: ""; }
+    content: ""; }
   .btn-settings:before {
     display: block;
     height: 28px;
@@ -2295,19 +2409,19 @@ article.contents .list-column-03 {
     color: rgba(0, 0, 0, 0.43);
     text-decoration: none; }
     .btn-text.reset:before {
-      content: ""; }
+      content: ""; }
     .btn-text.reset:before {
       vertical-align: baseline; }
   .btn-text.show-hide:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
     margin-top: -5px;
     margin-right: 10px;
     font-size: 16px; }
   .btn-text.export:before {
-    content: ""; }
+    content: ""; }
   .btn-text.export:before {
     margin-top: -10px;
     font-size: 20px; }
@@ -2392,7 +2506,7 @@ input[type=submit].btn-normal,
   color: #E74E0F;
   text-indent: -9999px; }
   .btn-warning:before {
-    content: ""; }
+    content: ""; }
   .btn-warning:before {
     display: block;
     position: absolute;
@@ -2414,7 +2528,7 @@ input[type=submit].btn-normal,
   color: #959595;
   text-indent: -9999px; }
   .btn-info:before {
-    content: ""; }
+    content: ""; }
   .btn-info:before {
     display: block;
     position: absolute;
@@ -2426,8 +2540,31 @@ input[type=submit].btn-normal,
     width: 100%;
     font-size: 16px;
     text-indent: 0px;
-    line-height: 16px;
-    background-color: #0f0; }
+    line-height: 16px; }
+
+.btn-edit {
+  display: inline-block;
+  position: relative;
+  height: 25px;
+  width: 25px;
+  color: #000;
+  text-indent: -9999px;
+  vertical-align: middle; }
+  .btn-edit:before {
+    content: ""; }
+  .btn-edit:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    text-indent: 0px;
+    line-height: 25px;
+    vertical-align: middle; }
 
 /**
 	filter
@@ -2479,7 +2616,7 @@ input[type=submit].btn-normal,
       color: #000;
       line-height: 62px; }
       .filter-container .results > .selected:before {
-        content: ""; }
+        content: ""; }
       .filter-container .results > .selected:before {
         display: block;
         float: left;
@@ -2643,7 +2780,7 @@ input[type=submit].btn-normal,
   background-color: #e74e0f;
   transition: max-height 0.3s ease-in; }
   .warning-container:before {
-    content: ""; }
+    content: ""; }
   .warning-container:before {
     display: block;
     position: absolute;
@@ -2741,6 +2878,97 @@ input[type=submit].btn-normal,
     color: #e74e0f; }
     .filelist a[href="#none"] {
       color: #e7e7e7; }
+
+.permission {
+  table-layout: fixed;
+  width: 100%; }
+  .permission thead tr th {
+    height: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    text-align: center; }
+  .permission tbody tr {
+    border-top: 2px solid rgba(151, 151, 151, 0.32); }
+    .permission tbody tr th {
+      font-size: 18px;
+      font-weight: 500;
+      color: #000;
+      text-align: left; }
+    .permission tbody tr td {
+      height: 46px;
+      text-align: center; }
+      .permission tbody tr td label {
+        padding: 0; }
+
+.list-users-search {
+  overflow: hidden;
+  padding: 35px 0; }
+  .list-users-search .right-content {
+    float: right; }
+  .list-users-search .search {
+    display: block; }
+    .list-users-search .search:before {
+      content: ""; }
+    .list-users-search .search:before {
+      display: inline-block;
+      margin-right: 10px;
+      color: #999;
+      line-height: 42px;
+      vertical-align: middle; }
+    .list-users-search .search input[type=text] {
+      height: 42px;
+      width: 30%;
+      font-size: 20px;
+      font-weight: 500;
+      color: #000;
+      border: 0px;
+      line-height: 42px; }
+
+.list-users {
+  border-bottom: 3px solid rgba(151, 151, 151, 0.32); }
+  .list-users > li {
+    overflow: hidden;
+    height: 82px;
+    border-top: 3px solid rgba(151, 151, 151, 0.32); }
+    .list-users > li .user {
+      float: left;
+      position: relative;
+      padding: 0px 0px 0px 100px;
+      height: 82px;
+      width: auto;
+      background-color: #fff; }
+      .list-users > li .user .thumb {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        margin-top: -28px;
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        background-color: #d8d8d8; }
+        .list-users > li .user .thumb img {
+          max-height: 100%;
+          max-width: 100%; }
+      .list-users > li .user figcaption {
+        font-size: 26px;
+        font-weight: 500;
+        color: #000;
+        line-height: 82px; }
+    .list-users > li.pending .user figcaption {
+      color: rgba(0, 0, 0, 0.37); }
+      .list-users > li.pending .user figcaption:after {
+        content: 'PENDING';
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #E74E0F; }
+    .list-users > li .content {
+      float: right;
+      line-height: 82px; }
 
 body.asset .chart-container {
   clear: both;

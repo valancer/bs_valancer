@@ -15,11 +15,244 @@
 
 			<div class="contents-inner">
 				<div class="column-left">
-					column left
+					@@include('./inc_portal_sidemenu_permission.html')
 				</div>
 
+
 				<div class="column-right">
-					column right
+					<div class="page-tabs">
+						<p class="inner">
+							<a href="#" class="is-selected">PERMISSIONS</a>
+							<a href="#">USERS (33)</a>
+						</p>
+					</div>
+
+
+					<!--// accordion container -->
+					<dl class="accordion">
+						<dt>
+							<span class="title">Bespin Portal</span>
+
+							<p class="right">
+								<button type="button" class="btn-folding">open/close</button>
+							</p>
+						</dt>
+						<dd>
+							<fieldset class="content">
+								<legend>set permissions</legend>
+								Bespin Portal contents
+							</fieldset>
+						</dd>
+
+						<dt>
+							<span class="title">Metering</span>
+
+							<p class="right">
+								<button type="button" class="btn-folding">open/close</button>
+							</p>
+						</dt>
+						<dd>
+							<fieldset class="content">
+								<legend>set permissions</legend>
+
+								<table class="permission">
+									<caption></caption>
+									<colgroup>
+										<col style="width: 61%;">
+										<col style="width: 13%;">
+										<col style="width: 13%;">
+										<col style="width: 13%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th></th>
+											<th>ALL</th>
+											<th>EDIT</th>
+											<th>VIEW</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>Dashboard</th>
+											<td>
+												<label for="dashboard01" class="icheck">
+													<input type="checkbox" id="dashboard01" name="dashboard" value="0" class="icheckbox">
+													<span class="is-hidden">All</span>
+												</label>
+											</td>
+											<td>
+												<label for="dashboard02" class="icheck">
+													<input type="checkbox" id="dashboard02" name="dashboard" value="1" class="icheckbox">
+													<span class="is-hidden">Edit</span>
+												</label>
+											</td>
+											<td>
+												<label for="dashboard03" class="icheck">
+													<input type="checkbox" id="dashboard03" name="dashboard" value="2" class="icheckbox">
+													<span class="is-hidden">View</span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<th>Bill</th>
+											<td>
+												<label for="bill01" class="icheck">
+													<input type="checkbox" id="bill01" name="bill" value="0" class="icheckbox">
+													<span class="is-hidden">All</span>
+												</label>
+											</td>
+											<td>
+												<label for="bill02" class="icheck">
+													<input type="checkbox" id="bill02" name="bill" value="1" class="icheckbox">
+													<span class="is-hidden">Edit</span>
+												</label>
+											</td>
+											<td>
+												<label for="bill03" class="icheck">
+													<input type="checkbox" id="bill03" name="bill" value="2" class="icheckbox">
+													<span class="is-hidden">View</span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<th>Budget</th>
+											<td>
+												<label for="budget01" class="icheck">
+													<input type="checkbox" id="budget01" name="budget" value="0" class="icheckbox">
+													<span class="is-hidden">All</span>
+												</label>
+											</td>
+											<td>
+												<label for="budget02" class="icheck">
+													<input type="checkbox" id="budget02" name="budget" value="1" class="icheckbox">
+													<span class="is-hidden">Edit</span>
+												</label>
+											</td>
+											<td>
+												<label for="budget03" class="icheck">
+													<input type="checkbox" id="budget03" name="budget" value="2" class="icheckbox">
+													<span class="is-hidden">View</span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<th>Cost Analysis</th>
+											<td>
+												<label for="analysis01" class="icheck">
+													<input type="checkbox" id="analysis01" name="analysis" value="0" class="icheckbox">
+													<span class="is-hidden">All</span>
+												</label>
+											</td>
+											<td>
+												<label for="analysis02" class="icheck">
+													<input type="checkbox" id="analysis02" name="analysis" value="1" class="icheckbox">
+													<span class="is-hidden">Edit</span>
+												</label>
+											</td>
+											<td>
+												<label for="analysis03" class="icheck">
+													<input type="checkbox" id="analysis03" name="analysis" value="2" class="icheckbox">
+													<span class="is-hidden">View</span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<th>Settings</th>
+											<td>
+												<label for="settings01" class="icheck">
+													<input type="checkbox" id="settings01" name="settings" value="0" class="icheckbox">
+													<span class="is-hidden">All</span>
+												</label>
+											</td>
+											<td>
+												<label for="settings02" class="icheck">
+													<input type="checkbox" id="settings02" name="settings" value="1" class="icheckbox">
+													<span class="is-hidden">Edit</span>
+												</label>
+											</td>
+											<td>
+												<label for="settings03" class="icheck">
+													<input type="checkbox" id="settings03" name="settings" value="2" class="icheckbox">
+													<span class="is-hidden">View</span>
+												</label>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</fieldset>
+						</dd>
+
+						<dt>
+							<span class="title">Asset Management</span>
+
+							<p class="right">
+								<button type="button" class="btn-folding">open/close</button>
+							</p>
+						</dt>
+						<dd>
+							<fieldset class="content">
+								<legend>set permissions</legend>
+								Asset Management contents
+							</fieldset>
+						</dd>
+
+						<dt>
+							<span class="title">Monitoring</span>
+
+							<p class="right">
+								<button type="button" class="btn-folding">open/close</button>
+							</p>
+						</dt>
+						<dd>
+							<fieldset class="content">
+								<legend>set permissions</legend>
+								Monitoring contents
+							</fieldset>
+						</dd>
+					</dl>
+					<script>
+					$(document).ready(function(e) {	
+						/* accordion */
+						var Accordion = (function ($) {
+							var scope,
+								$container,
+								$btnToggleContainer,
+								init = function() {
+									$container = $('.accordion');
+									$btnToggleContainer = $container.find('.btn-folding');
+
+									initLayout();
+									initEvent();
+								};
+
+							function initLayout() {
+							}
+
+							function initEvent() {
+								// item open / close
+								$btnToggleContainer.on('click', function(e) {
+									e.preventDefault();
+									
+									$(this).closest('dt').toggleClass('is-opened');
+								});
+							}
+
+							return {
+								init: function() {
+									init();
+								}
+							};
+						}(jQuery));
+						
+						Accordion.init();
+					});
+					</script>
+					<!--// accordion container -->
+
+
+					<p class="submit-btns">
+						<a href="#" class="btn-normal large">SAVE CHANGES</a>
+					</p>
 				</div>
 			</div>
 		</article>
