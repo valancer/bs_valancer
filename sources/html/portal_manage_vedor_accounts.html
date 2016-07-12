@@ -1,0 +1,181 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title"><div class="inner">Manage Cloud Vendor Accounts</div></h1>
+
+			<div class="contents-inner">
+				<div class="column-left">
+					@@include('./inc_portal_sidemenu_vendor.html')
+				</div>
+
+
+				<div class="column-right">
+
+					<!--// accordion container -->
+					<dl class="accordion">
+						<dt class="is-opened">
+							<span class="title">AWS Account 1</span>
+
+							<p class="right">
+								<span class="content">Account ID: 233445453</span>
+								<button type="button" class="btn-folding">open/close</button>
+							</p>
+						</dt>
+						<dd>
+							<fieldset class="content vendor-accounts">
+								<legend>accout detail</legend>
+
+								<div class="key-code">
+									<p>
+										<label for="233445453-key" class="title">KEY</label>
+										<input type="text" id="233445453-key" name="233445453" value="93nfd7TZ3f">
+									</p>
+
+									<p>
+										<label for="233445453-secret" class="title">SECRET CODE</label>
+										<input type="text" id="233445453-secret" name="233445453" value="asjd329ri34askdhfkasdhg">
+									</p>
+								</div>
+
+								<div class="used-for">
+									<label for="233445453-all" class="title">USED FOR</label>
+
+									<label for="233445453-all" class="icheck">
+										<input type="checkbox" id="233445453-all" name="233445453" value="0" class="icheckbox">
+										All
+									</label>
+									<label for="233445453-asset" class="icheck">
+										<input type="checkbox" id="233445453-asset" name="233445453" value="1" class="icheckbox">
+										Asset
+									</label>
+									<label for="233445453-metering" class="icheck">
+										<input type="checkbox" id="233445453-metering" name="233445453" value="2" class="icheckbox">
+										Metering
+									</label>
+									<label for="233445453-monitoring" class="icheck">
+										<input type="checkbox" id="233445453-monitoring" name="233445453" value="3" class="icheckbox">
+										Monitoring
+									</label>
+								</div>
+
+								<p class="btns">
+									<input type="submit" class="btn-normal large" value="SAVE &amp; UPDATE">
+								</p>
+							</fieldset>
+						</dd>
+
+						<dt>
+							<span class="title">AWS Account 2</span>
+
+							<p class="right">
+								<span class="content">Account ID: 533445453</span>
+								<button type="button" class="btn-folding">open/close</button>
+							</p>
+						</dt>
+						<dd>
+							<fieldset class="content vendor-accounts">
+								<legend>accout detail</legend>
+
+								<div class="key-code">
+									<p>
+										<label for="533445453-key" class="title">KEY</label>
+										<input type="text" id="533445453-key" name="533445453" value="93nfd7TZ3f">
+									</p>
+
+									<p>
+										<label for="533445453-secret" class="title">SECRET CODE</label>
+										<input type="text" id="533445453-secret" name="533445453" value="asjd329ri34askdhfkasdhg">
+									</p>
+								</div>
+
+								<div class="used-for">
+									<label for="533445453-all" class="title">USED FOR</label>
+
+									<label for="533445453-all" class="icheck">
+										<input type="checkbox" id="533445453-all" name="533445453" value="0" class="icheckbox">
+										All
+									</label>
+									<label for="533445453-asset" class="icheck">
+										<input type="checkbox" id="533445453-asset" name="533445453" value="1" class="icheckbox">
+										Asset
+									</label>
+									<label for="533445453-metering" class="icheck">
+										<input type="checkbox" id="533445453-metering" name="533445453" value="2" class="icheckbox">
+										Metering
+									</label>
+									<label for="533445453-monitoring" class="icheck">
+										<input type="checkbox" id="533445453-monitoring" name="533445453" value="3" class="icheckbox">
+										Monitoring
+									</label>
+								</div>
+
+								<p class="btns">
+									<input type="submit" class="btn-normal large" value="SAVE &amp; UPDATE">
+								</p>
+							</fieldset>
+						</dd>
+					</dl>
+					<script>
+					$(document).ready(function(e) {	
+						/* accordion */
+						var Accordion = (function ($) {
+							var scope,
+								$container,
+								$btnToggleContainer,
+								init = function() {
+									$container = $('.accordion');
+									$btnToggleContainer = $container.find('.btn-folding');
+
+									initLayout();
+									initEvent();
+								};
+
+							function initLayout() {
+							}
+
+							function initEvent() {
+								// item open / close
+								$btnToggleContainer.on('click', function(e) {
+									e.preventDefault();
+									
+									$(this).closest('dt').toggleClass('is-opened');
+								});
+							}
+
+							return {
+								init: function() {
+									init();
+								}
+							};
+						}(jQuery));
+						
+						Accordion.init();
+					});
+					</script>
+					<!--// accordion container -->
+
+
+					<p class="submit-btns">
+						<button type="button" class="btn-normal">+ New Account</button>
+					</p>
+				</div>
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

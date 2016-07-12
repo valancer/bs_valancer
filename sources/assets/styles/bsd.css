@@ -791,31 +791,31 @@ The `sprites` mixin generates identical output to the CSS template
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -85px -56px;
+      background-position: -56px -101px;
       width: 22px;
       height: 13px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 173px 79px; } }
+          background-size: 173px 114px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -29px -56px;
+      background-position: 0px -101px;
       width: 22px;
       height: 13px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 173px 79px; } }
+          background-size: 173px 114px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -57px -56px;
+      background-position: -28px -101px;
       width: 22px;
       height: 13px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 173px 79px; } }
+          background-size: 173px 114px; } }
   .ag-bespin-global .ag-no-scrolls .ag-header-container {
     background: linear-gradient(#fff, #d3d3d3);
     border-bottom: 1px solid #808080; }
@@ -1433,7 +1433,7 @@ The `sprites` mixin generates identical output to the CSS template
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu .title .bespin-global:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 173px 79px; } }
+            background-size: 173px 114px; } }
     .global-menu .title .service {
       display: block;
       position: absolute;
@@ -1648,12 +1648,53 @@ The `sprites` mixin generates identical output to the CSS template
       color: #000; }
       .side-menus li a:hover:before {
         display: block; }
-      .side-menus li a:hover .btn-edit {
-        display: inline-block; }
     .side-menus li a.is-selected {
       color: #000; }
       .side-menus li a.is-selected:before {
         display: block; }
+    .side-menus li a.vendor span {
+      padding-left: 50px; }
+      .side-menus li a.vendor span:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -19px;
+        height: 39px;
+        width: 39px;
+        opacity: 0.4; }
+    .side-menus li a.vendor:hover span:before, .side-menus li a.vendor.is-selected span:before {
+      opacity: 1; }
+    .side-menus li a.vendor.aws span:before {
+      background-image: url(../images/sprites.png);
+      background-position: -45px -22px;
+      width: 39px;
+      height: 39px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .side-menus li a.vendor.aws span:before {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 173px 114px; } }
+    .side-menus li a.vendor.azure span:before {
+      background-image: url(../images/sprites.png);
+      background-position: -90px -22px;
+      width: 39px;
+      height: 39px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .side-menus li a.vendor.azure span:before {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 173px 114px; } }
+    .side-menus li a.vendor.aliyun span:before {
+      background-image: url(../images/sprites.png);
+      background-position: 0px -22px;
+      width: 39px;
+      height: 39px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .side-menus li a.vendor.aliyun span:before {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 173px 114px; } }
+  .side-menus.is-editable a:hover .btn-edit {
+    display: inline-block; }
 
 /* FOOTER */
 .footer {
@@ -1699,7 +1740,8 @@ article.contents .column-right {
     width: 1440px;
     padding-top: 25px;
     height: 180px;
-    font-size: 48px; }
+    font-size: 48px;
+    font-weight: 500; }
 
 article.contents .list-column-01 {
   overflow: hidden;
@@ -1960,12 +2002,8 @@ article.contents .submit-btns {
   margin-top: 40px;
   border-bottom: 3px solid rgba(151, 151, 151, 0.32); }
   .accordion .btn-folding {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    z-index: 1;
-    margin-top: -41px;
+    display: inline-block;
+    position: relative;
     height: 82px;
     width: 82px;
     text-indent: -9999px; }
@@ -2002,6 +2040,12 @@ article.contents .submit-btns {
       line-height: 82px; }
     .accordion > dt .right {
       float: right; }
+      .accordion > dt .right .content {
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.37);
+        vertical-align: middle; }
     .accordion > dt.is-opened {
       background-color: #F6F6F6; }
       .accordion > dt.is-opened .btn-folding:after {
@@ -2259,31 +2303,31 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -114px -22px;
+  background-position: -28px -67px;
   width: 23px;
   height: 23px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icheckbox {
       background-image: url(../images/sprites@2x.png);
-      background-size: 173px 79px; } }
+      background-size: 173px 114px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -56px -22px;
+    background-position: -57px -67px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 173px 79px; } }
+        background-size: 173px 114px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -85px -22px;
+    background-position: -144px -67px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.indeterminate {
         background-image: url(../images/sprites@2x.png);
-        background-size: 173px 79px; } }
+        background-size: 173px 114px; } }
 
 .iradio {
   display: block;
@@ -2291,22 +2335,22 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -143px -22px;
+  background-position: -115px -67px;
   width: 23px;
   height: 23px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .iradio {
       background-image: url(../images/sprites@2x.png);
-      background-size: 173px 79px; } }
+      background-size: 173px 114px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: 0px -56px;
+    background-position: -86px -67px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .iradio.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 173px 79px; } }
+        background-size: 173px 114px; } }
 
 .all-checked {
   display: block;
@@ -2337,31 +2381,31 @@ article.contents .submit-btns {
     background-color: #f0f; }
   .all-checked[value="0"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -114px -22px;
+    background-position: -28px -67px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="0"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 173px 79px; } }
+        background-size: 173px 114px; } }
   .all-checked[value="1"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -56px -22px;
+    background-position: -57px -67px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="1"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 173px 79px; } }
+        background-size: 173px 114px; } }
   .all-checked[value="2"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -85px -22px;
+    background-position: -144px -67px;
     width: 23px;
     height: 23px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="2"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 173px 79px; } }
+        background-size: 173px 114px; } }
   .all-checked .list-select-popup {
     display: none;
     position: absolute;
@@ -2460,22 +2504,22 @@ input[type=submit].btn-normal,
   position: relative;
   text-indent: -9999px;
   background-image: url(../images/sprites.png);
-  background-position: -28px -22px;
+  background-position: 0px -67px;
   width: 22px;
   height: 28px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .btn-bookmark {
       background-image: url(../images/sprites@2x.png);
-      background-size: 173px 79px; } }
+      background-size: 173px 114px; } }
   .btn-bookmark.is-selected, .btn-bookmark:hover {
     background-image: url(../images/sprites.png);
-    background-position: 0px -22px;
+    background-position: -135px -22px;
     width: 22px;
     height: 28px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .btn-bookmark.is-selected, .btn-bookmark:hover {
         background-image: url(../images/sprites@2x.png);
-        background-size: 173px 79px; } }
+        background-size: 173px 114px; } }
 
 .btn-close {
   display: block;
@@ -2879,6 +2923,7 @@ input[type=submit].btn-normal,
     .filelist a[href="#none"] {
       color: #e7e7e7; }
 
+/* set permission */
 .permission {
   table-layout: fixed;
   width: 100%; }
@@ -2900,6 +2945,37 @@ input[type=submit].btn-normal,
       text-align: center; }
       .permission tbody tr td label {
         padding: 0; }
+
+/* vendor accounts */
+.vendor-accounts {
+  padding-bottom: 35px; }
+  .vendor-accounts .title {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000; }
+  .vendor-accounts .key-code {
+    overflow: hidden; }
+    .vendor-accounts .key-code p {
+      float: left;
+      padding-right: 40px; }
+    .vendor-accounts .key-code input[type=text] {
+      padding-left: 30px;
+      height: 65px;
+      width: 390px;
+      font-size: 28px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.36);
+      border: 0px;
+      background-color: #fff; }
+  .vendor-accounts .used-for {
+    margin-top: 50px; }
+    .vendor-accounts .used-for .icheck {
+      padding-left: 35px;
+      min-width: 90px; }
+  .vendor-accounts .btns {
+    margin-top: 50px; }
 
 .list-users-search {
   overflow: hidden;

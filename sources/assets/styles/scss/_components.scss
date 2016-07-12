@@ -143,14 +143,16 @@
 	accordion
 **/
 .accordion { margin-top: 40px; border-bottom: 3px solid rgba(151, 151, 151, 0.32);
-	.btn-folding { display: block; position: absolute; top: 50%; right: 0px; z-index: z("default"); margin-top: -41px; height: 82px; width: 82px; text-indent: -9999px;
+	.btn-folding { display: inline-block; position: relative; height: 82px; width: 82px; text-indent: -9999px;
 		@include icon(arrow01, after);
 		&:after { position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 100%; font-size: 15px; color: #000; line-height: 8px; vertical-align: middle; text-align: center; text-indent: 0; transform: rotateX( 0deg ); transition-duration: 0.3s; }
 	}
 
 	> dt { display: block; position: relative; padding: 0 0 0 35px; height: 82px; border-top: 3px solid rgba(151, 151, 151, 0.32); background-color: #fff;
 		.title { display: block; float: left; font-size: 26px; font-weight: 500; color: #000; line-height: 82px; }
-		.right { float: right; }
+		.right { float: right;
+			.content { display: inline-block; font-size: 22px; font-weight: 500; color: rgba(0, 0, 0, 0.37); vertical-align: middle; }
+		}
 
 		&.is-opened { background-color: #F6F6F6;
 			.btn-folding {

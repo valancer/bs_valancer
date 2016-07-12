@@ -1,4 +1,5 @@
 
+/* set permission */
 .permission { table-layout: fixed; width: 100%;
 	thead {
 		tr {
@@ -14,6 +15,22 @@
 			}
 		}
 	}
+}
+
+/* vendor accounts */
+.vendor-accounts { padding-bottom: 35px;
+	.title { display: block; margin-bottom: 5px; font-size: 16px; font-weight: 700; color: #000; }
+
+	.key-code { overflow: hidden; 
+		p { float: left; padding-right: 40px; }
+		input[type=text] { padding-left: 30px; height: 65px; width: 390px; font-size: 28px; font-weight: 500; color: rgba(0, 0, 0, 0.36); border: 0px; background-color: #fff; }
+	}
+
+	.used-for { margin-top: 50px;
+		.icheck { padding-left: 35px; min-width: 90px; }
+	}
+
+	.btns { margin-top: 50px; }
 }
 
 

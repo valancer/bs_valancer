@@ -100,14 +100,41 @@
 
 			&:hover { color: #000;
 				&:before { display: block; }
-				.btn-edit { display: inline-block; }
 			}
 
 			&.is-selected { color: #000;
 				&:before { display: block; }
 			}
+
+
+			&.vendor {
+				span { padding-left: 50px;
+					&:before { content: ''; display: block; position: absolute; top: 50%; left: 0; margin-top: -19px; height: 39px; width: 39px; opacity: 0.4; }
+				}
+
+				&:hover,
+				&.is-selected { span:before { opacity: 1; } }
+
+				&.aws {
+					span:before { @include retina-sprite($sc-icon-aws-group); }
+				}
+				&.azure {
+					span:before { @include retina-sprite($sc-icon-azure-group); }
+				}
+				&.aliyun {
+					span:before { @include retina-sprite($sc-icon-aliyun-group); }
+				}
+			}
 		}
-	}	
+	}
+
+	&.is-editable {
+		a {
+			&:hover {
+				.btn-edit { display: inline-block; }
+			}
+		}
+	}
 }
 
 
@@ -137,7 +164,7 @@ article.contents {
 	// protal
 	.portal & {
 		h1.title { background-color: #f6f6f6;
-			.inner { @include inner(); padding-top: 25px; height: 180px; font-size: 48px; }
+			.inner { @include inner(); padding-top: 25px; height: 180px; font-size: 48px; font-weight: 500; }
 		}
 	}
 
