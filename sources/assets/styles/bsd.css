@@ -136,6 +136,9 @@ input[type=submit] {
   cursor: pointer;
   border: 0px; }
 
+button:focus {
+  outline: 0; }
+
 @font-face {
   font-family: "Icons";
   src: url("../fonts/icons/Icons.eot");
@@ -685,6 +688,50 @@ The `sprites` mixin generates identical output to the CSS template
       color: #000;
       border: 0px;
       line-height: 27px; }
+
+.grid-detail {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 62px;
+  right: -100%;
+  bottom: 0;
+  z-index: z("modaless");
+  padding: 30px 40px;
+  width: 400px;
+  color: #fff;
+  background-color: #3E3E3E;
+  transition: right 1s; }
+  .grid-detail .btn-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff; }
+  .grid-detail .title {
+    font-size: 32px;
+    font-weight: 500; }
+  .grid-detail dl {
+    display: block;
+    box-sizing: border-box;
+    overflow: auto;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%; }
+    .grid-detail dl dt {
+      padding: 15px 40px 12px;
+      font-size: 16px;
+      font-weight: 700;
+      background-color: #4E4E4E; }
+    .grid-detail dl dd {
+      padding: 15px 40px 12px;
+      font-size: 18px;
+      font-weight: 500; }
+  .grid-detail.is-opened {
+    right: 0;
+    transition: right 0.5s; }
 
 .popover.export .point {
   right: 10px;
@@ -1709,7 +1756,6 @@ article.contents .contents-inner {
   margin: 0 auto;
   padding: 0 40px;
   width: 1440px;
-  margin-top: 35px;
   padding-bottom: 130px; }
   .asset article.contents .contents-inner {
     margin-top: 0;
@@ -1721,6 +1767,7 @@ article.contents .button-container {
 
 article.contents .column-left {
   float: left;
+  padding-top: 35px;
   padding-right: 40px;
   width: 310px; }
   article.contents .column-left .btn-normal {
@@ -1728,6 +1775,8 @@ article.contents .column-left {
 
 article.contents .column-right {
   float: left;
+  overflow: hidden;
+  padding-top: 35px;
   width: 1010px; }
 
 .portal article.contents h1.title {
@@ -2026,6 +2075,7 @@ article.contents .submit-btns {
       transition-duration: 0.3s; }
   .accordion > dt {
     display: block;
+    overflow: hidden;
     position: relative;
     padding: 0 0 0 35px;
     height: 82px;
@@ -2039,7 +2089,10 @@ article.contents .submit-btns {
       color: #000;
       line-height: 82px; }
     .accordion > dt .right {
-      float: right; }
+      float: right;
+      line-height: 82px; }
+      .accordion > dt .right .icheck {
+        padding: 0 30px 0 0; }
       .accordion > dt .right .content {
         display: inline-block;
         font-size: 22px;
@@ -2980,13 +3033,11 @@ body.portal {
       margin-top: 50px; }
   body.portal .service-group {
     position: relative;
-    padding: 60px 0 0 234px;
+    padding: 30px 0 0 0px;
     min-height: 300px; }
     body.portal .service-group .service-profile {
       display: block;
-      position: absolute;
-      top: 20px;
-      left: 0;
+      float: left;
       width: 194px; }
       body.portal .service-group .service-profile .thumb {
         display: block;
@@ -3007,7 +3058,6 @@ body.portal {
           min-width: 63px;
           font-size: 18px;
           font-weight: 700;
-          color: #000;
           line-height: 27px; }
       body.portal .service-group .service-profile input[type=text] {
         display: block;
@@ -3022,6 +3072,9 @@ body.portal {
         line-height: 42px;
         border: 0px;
         background-color: #F6F6F6; }
+      body.portal .service-group .service-profile + .grid {
+        float: right;
+        width: 776px; }
   body.portal .list-users-search {
     overflow: hidden;
     padding: 35px 0; }
@@ -3077,6 +3130,10 @@ body.portal {
           font-weight: 500;
           color: #000;
           line-height: 82px; }
+          body.portal .list-single-check > li .user figcaption label button {
+            display: none; }
+          body.portal .list-single-check > li .user figcaption label:hover button {
+            display: inline-block; }
       body.portal .list-single-check > li .group-title {
         float: left;
         padding-left: 20px;
@@ -3100,50 +3157,6 @@ body.portal {
 body.asset .chart-container {
   clear: both;
   padding: 20px 0; }
-
-body.asset .grid-detail {
-  display: block;
-  box-sizing: border-box;
-  position: absolute;
-  top: 62px;
-  right: -100%;
-  bottom: 0;
-  z-index: 900;
-  padding: 30px 40px;
-  width: 400px;
-  color: #fff;
-  background-color: #3E3E3E;
-  transition: right 1s; }
-  body.asset .grid-detail .btn-close {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    color: #fff; }
-  body.asset .grid-detail .title {
-    font-size: 32px;
-    font-weight: 500; }
-  body.asset .grid-detail dl {
-    display: block;
-    box-sizing: border-box;
-    overflow: auto;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%; }
-    body.asset .grid-detail dl dt {
-      padding: 15px 40px 12px;
-      font-size: 16px;
-      font-weight: 700;
-      background-color: #4E4E4E; }
-    body.asset .grid-detail dl dd {
-      padding: 15px 40px 12px;
-      font-size: 18px;
-      font-weight: 500; }
-  body.asset .grid-detail.is-opened {
-    right: 0;
-    transition: right 0.5s; }
 
 body.asset .chart-container {
   position: relative; }

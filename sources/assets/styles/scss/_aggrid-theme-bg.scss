@@ -14,6 +14,26 @@
 	}
 
 }
+
+
+.grid-detail { display: block; box-sizing: border-box; position: absolute; top: 62px; right: -100%; bottom: 0; z-index: z("modaless"); padding: 30px 40px; width: 400px; color: #fff; background-color: #3E3E3E;
+	transition: right 1s;
+
+	.btn-close { position: absolute; top: 30px; right: 30px; color: #fff; }
+
+	.title { font-size: 32px; font-weight: 500; }
+
+	dl { display: block; box-sizing: border-box; overflow: auto; position: absolute; top: 100px; right: 0; bottom: 0; left: 0; height: 100%;
+		dt { padding: 15px 40px 12px; font-size: 16px; font-weight: 700; background-color: #4E4E4E; }
+		dd { padding: 15px 40px 12px; font-size: 18px; font-weight: 500; }
+	}
+
+
+	&.is-opened { right: 0;
+		transition: right 0.5s;
+	}
+}
+
 // popover
 .popover.export {
 	.point { right: 10px; left: auto; }

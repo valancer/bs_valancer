@@ -40,20 +40,6 @@
 						<dd>
 							<fieldset class="content">
 								<legend>set permissions</legend>
-								Bespin Portal contents
-							</fieldset>
-						</dd>
-
-						<dt class="is-opened">
-							<span class="title">Metering</span>
-
-							<p class="right">
-								<button type="button" class="btn-folding">open/close</button>
-							</p>
-						</dt>
-						<dd>
-							<fieldset class="content">
-								<legend>set permissions</legend>
 
 								<table class="permission">
 									<caption></caption>
@@ -76,19 +62,19 @@
 											<th>Dashboard</th>
 											<td>
 												<label for="dashboard01" class="icheck">
-													<input type="checkbox" id="dashboard01" name="dashboard" value="0" class="icheckbox">
+													<input type="radio" id="dashboard01" name="dashboard" value="0" class="iradio">
 													<span class="is-hidden">All</span>
 												</label>
 											</td>
 											<td>
 												<label for="dashboard02" class="icheck">
-													<input type="checkbox" id="dashboard02" name="dashboard" value="1" class="icheckbox">
+													<input type="radio" id="dashboard02" name="dashboard" value="1" class="iradio">
 													<span class="is-hidden">Edit</span>
 												</label>
 											</td>
 											<td>
 												<label for="dashboard03" class="icheck">
-													<input type="checkbox" id="dashboard03" name="dashboard" value="2" class="icheckbox">
+													<input type="radio" id="dashboard03" name="dashboard" value="2" class="iradio">
 													<span class="is-hidden">View</span>
 												</label>
 											</td>
@@ -97,19 +83,19 @@
 											<th>Bill</th>
 											<td>
 												<label for="bill01" class="icheck">
-													<input type="checkbox" id="bill01" name="bill" value="0" class="icheckbox">
+													<input type="radio" id="bill01" name="bill" value="0" class="iradio">
 													<span class="is-hidden">All</span>
 												</label>
 											</td>
 											<td>
 												<label for="bill02" class="icheck">
-													<input type="checkbox" id="bill02" name="bill" value="1" class="icheckbox">
+													<input type="radio" id="bill02" name="bill" value="1" class="iradio">
 													<span class="is-hidden">Edit</span>
 												</label>
 											</td>
 											<td>
 												<label for="bill03" class="icheck">
-													<input type="checkbox" id="bill03" name="bill" value="2" class="icheckbox">
+													<input type="radio" id="bill03" name="bill" value="2" class="iradio">
 													<span class="is-hidden">View</span>
 												</label>
 											</td>
@@ -118,19 +104,19 @@
 											<th>Budget</th>
 											<td>
 												<label for="budget01" class="icheck">
-													<input type="checkbox" id="budget01" name="budget" value="0" class="icheckbox">
+													<input type="radio" id="budget01" name="budget" value="0" class="iradio">
 													<span class="is-hidden">All</span>
 												</label>
 											</td>
 											<td>
 												<label for="budget02" class="icheck">
-													<input type="checkbox" id="budget02" name="budget" value="1" class="icheckbox">
+													<input type="radio" id="budget02" name="budget" value="1" class="iradio">
 													<span class="is-hidden">Edit</span>
 												</label>
 											</td>
 											<td>
 												<label for="budget03" class="icheck">
-													<input type="checkbox" id="budget03" name="budget" value="2" class="icheckbox">
+													<input type="radio" id="budget03" name="budget" value="2" class="iradio">
 													<span class="is-hidden">View</span>
 												</label>
 											</td>
@@ -139,19 +125,19 @@
 											<th>Cost Analysis</th>
 											<td>
 												<label for="analysis01" class="icheck">
-													<input type="checkbox" id="analysis01" name="analysis" value="0" class="icheckbox">
+													<input type="radio" id="analysis01" name="analysis" value="0" class="iradio">
 													<span class="is-hidden">All</span>
 												</label>
 											</td>
 											<td>
 												<label for="analysis02" class="icheck">
-													<input type="checkbox" id="analysis02" name="analysis" value="1" class="icheckbox">
+													<input type="radio" id="analysis02" name="analysis" value="1" class="iradio">
 													<span class="is-hidden">Edit</span>
 												</label>
 											</td>
 											<td>
 												<label for="analysis03" class="icheck">
-													<input type="checkbox" id="analysis03" name="analysis" value="2" class="icheckbox">
+													<input type="radio" id="analysis03" name="analysis" value="2" class="iradio">
 													<span class="is-hidden">View</span>
 												</label>
 											</td>
@@ -160,19 +146,19 @@
 											<th>Settings</th>
 											<td>
 												<label for="settings01" class="icheck">
-													<input type="checkbox" id="settings01" name="settings" value="0" class="icheckbox">
+													<input type="radio" id="settings01" name="settings" value="0" class="iradio">
 													<span class="is-hidden">All</span>
 												</label>
 											</td>
 											<td>
 												<label for="settings02" class="icheck">
-													<input type="checkbox" id="settings02" name="settings" value="1" class="icheckbox">
+													<input type="radio" id="settings02" name="settings" value="1" class="iradio">
 													<span class="is-hidden">Edit</span>
 												</label>
 											</td>
 											<td>
 												<label for="settings03" class="icheck">
-													<input type="checkbox" id="settings03" name="settings" value="2" class="icheckbox">
+													<input type="radio" id="settings03" name="settings" value="2" class="iradio">
 													<span class="is-hidden">View</span>
 												</label>
 											</td>
@@ -183,30 +169,50 @@
 						</dd>
 
 						<dt>
-							<span class="title">Asset Management</span>
+							<span class="title"><label for="metering">Metering</label></span>
 
 							<p class="right">
-								<button type="button" class="btn-folding">open/close</button>
+								<label for="metering" class="icheck">
+									<input type="checkbox" id="metering" name="settings" value="2" class="icheckbox">
+									<span class="is-hidden">View</span>
+								</label>
 							</p>
 						</dt>
 						<dd>
 							<fieldset class="content">
 								<legend>set permissions</legend>
-								Asset Management contents
 							</fieldset>
 						</dd>
 
 						<dt>
-							<span class="title">Monitoring</span>
+							<span class="title"><label for="asset">Asset Management</label></span>
 
 							<p class="right">
-								<button type="button" class="btn-folding">open/close</button>
+								<label for="asset" class="icheck">
+									<input type="checkbox" id="asset" name="settings" value="2" class="icheckbox">
+									<span class="is-hidden">View</span>
+								</label>
 							</p>
 						</dt>
 						<dd>
 							<fieldset class="content">
 								<legend>set permissions</legend>
-								Monitoring contents
+							</fieldset>
+						</dd>
+
+						<dt>
+							<span class="title"><label for="monitoring">Monitoring</label></span>
+
+							<p class="right">
+								<label for="monitoring" class="icheck">
+									<input type="checkbox" id="monitoring" name="settings" value="2" class="icheckbox">
+									<span class="is-hidden">View</span>
+								</label>
+							</p>
+						</dt>
+						<dd>
+							<fieldset class="content">
+								<legend>set permissions</legend>
 							</fieldset>
 						</dd>
 					</dl>
