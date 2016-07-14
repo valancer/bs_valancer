@@ -1,0 +1,163 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="asset">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "asset", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<div class="contents-inner">
+				<h1 class="is-hidden">Permission Settings</h1>
+
+				<div class="column-left">
+					@@include('./inc_portal_sidemenu_permission.html')
+				</div>
+
+
+				<div class="column-right">
+					<div class="page-tabs">
+						<p class="inner">
+							<a href="#">PERMISSIONS</a>
+							<a href="#" class="is-selected">USERS (33)</a>
+						</p>
+					</div>
+
+
+
+					<!-- users -->
+					<fieldset class="list-users-search">
+						<legend>Search</legend>
+
+						<p class="right-content">
+							<button type="button" class="btn-normal">+ INVITE NEW USER</button>
+						</p>
+
+						<label for="" class="search">
+							<input type="text" id="" name="" placeholder="Search for a user">
+						</label>
+					</fieldset>
+
+					<ul class="list-single-check">
+						<li class="pending">
+							<figure class="user">
+								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
+								<figcaption>Sylvia Sullivan</figcaption>
+							</figure>
+
+							<div class="content">
+								<button type="button" class="btn-normal">CONFIRM ACCOUNT</button>
+							</div>
+						</li>
+						<li>
+							<figure class="user">
+								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
+								<figcaption>
+									<label for="user01">
+										Sylvia Sullivan
+										<button type="button" class="btn-edit">edit</button>
+									</label>
+								</figcaption>
+							</figure>
+
+							<div class="content">
+								<label for="user01" class="icheck">
+									<input type="checkbox" id="user01" name="user" value="0" class="icheckbox">
+									<span class="is-hidden">select</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<figure class="user">
+								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
+								<figcaption>
+									<label for="user02">
+										Sylvia Sullivan
+										<button type="button" class="btn-edit">edit</button>
+									</label>
+								</figcaption>
+							</figure>
+
+							<div class="content">
+								<label for="user02" class="icheck">
+									<input type="checkbox" id="user02" name="user" value="0" class="icheckbox">
+									<span class="is-hidden">select</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<figure class="user">
+								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
+								<figcaption>
+									<label for="user03">
+										Sylvia Sullivan
+										<button type="button" class="btn-edit">edit</button>
+									</label>
+								</figcaption>
+							</figure>
+
+							<div class="content">
+								<label for="user03" class="icheck">
+									<input type="checkbox" id="user03" name="user" value="0" class="icheckbox">
+									<span class="is-hidden">select</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<figure class="user">
+								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
+								<figcaption>
+									<label for="user04">
+										Sylvia Sullivan
+										<button type="button" class="btn-edit">edit</button>
+									</label>
+								</figcaption>
+							</figure>
+
+							<div class="content">
+								<label for="user04" class="icheck">
+									<input type="checkbox" id="user04" name="user" value="0" class="icheckbox">
+									<span class="is-hidden">select</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<figure class="user">
+								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
+								<figcaption>
+									<label for="user05">
+										Sylvia Sullivan
+										<button type="button" class="btn-edit">edit</button>
+									</label>
+								</figcaption>
+							</figure>
+
+							<div class="content">
+								<label for="user05" class="icheck">
+									<input type="checkbox" id="user05" name="user" value="0" class="icheckbox">
+									<span class="is-hidden">select</span>
+								</label>
+							</div>
+						</li>
+					</ul>
+					<!--// users -->
+
+
+					<p class="submit-btns">
+						<a href="#" class="btn-normal large">SAVE CHANGES</a>
+					</p>
+				</div>
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

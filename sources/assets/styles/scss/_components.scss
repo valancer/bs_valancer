@@ -535,6 +535,56 @@ input[type=submit].btn-normal,
 
 
 /**
+	user single check
+**/
+/* manage users */
+.list-users-search { overflow: hidden; padding: 35px 0;
+	.right-content { float: right; }
+
+	.search { display: block;
+		@include icon(search);
+		&:before { display: inline-block; margin-right: 10px; color: #999; line-height: 42px; vertical-align: middle; }
+
+		input[type=text] { height: 42px; width: 30%; font-size: 20px; font-weight: 500; color: #000; border: 0px; line-height: 42px; }
+	}
+}
+
+.list-single-check { border-bottom: 3px solid rgba(151, 151, 151, 0.32);
+	> li { height: 82px; border-top: 3px solid rgba(151, 151, 151, 0.32);
+		.user { float: left; position: relative; padding: 0px 0px 0px 100px; height: 82px; width: auto; background-color: #fff;
+			.thumb { display: block; overflow: hidden; position: absolute; top: 50%; left: 10px; margin-top: -28px; height: 56px; width: 56px; border-radius: 50%; background-color: #d8d8d8;
+				img { max-height: 100%; max-width: 100%; }
+			}
+			figcaption { font-size: 26px; font-weight: 500; color: #000; line-height: 82px;
+				label {
+					button { display: none; }
+
+					&:hover {
+						button { display: inline-block; }
+					}
+				}
+			}
+		}
+
+		.group-title { float: left; padding-left: 20px; font-size: 26px; font-weight: 500; color: #000; line-height: 82px; }
+
+
+		&.pending {
+			.user {
+				figcaption { color: rgba(0, 0, 0, 0.37);
+					&:after { content: 'PENDING'; display: inline-block; margin-left: 20px; font-size: 18px; font-weight: 700; color: #E74E0F; }
+				}
+			}
+		}
+
+		.content { float: right; line-height: 82px;
+			div.inline-block { margin-right: 20px; }
+		}
+	}
+}
+
+
+/**
 	graph container
 **/
 
