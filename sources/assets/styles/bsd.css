@@ -136,6 +136,7 @@ input[type=submit] {
   cursor: pointer;
   border: 0px; }
 
+input:focus,
 button:focus {
   outline: 0; }
 
@@ -144,7 +145,7 @@ button:focus {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, body.asset .chart-container .slick-arrow:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, body.asset .chart-container .slick-arrow:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -843,31 +844,31 @@ The `sprites` mixin generates identical output to the CSS template
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -94px -90px;
+      background-position: -123px -90px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 130px 108px; } }
+          background-size: 159px 376px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -48px -90px;
+      background-position: -77px -90px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 130px 108px; } }
+          background-size: 159px 376px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -71px -90px;
+      background-position: -100px -90px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 130px 108px; } }
+          background-size: 159px 376px; } }
   .ag-bespin-global .ag-no-scrolls .ag-header-container {
     background: linear-gradient(#fff, #d3d3d3);
     border-bottom: 1px solid #808080; }
@@ -1629,13 +1630,13 @@ corresponds to the arrow we want to display */
         display: block;
         margin-top: 26px;
         background-image: url(../images/sprites.png);
-        background-position: 0px 0px;
+        background-position: -29px 0px;
         width: 130px;
         height: 12px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu .title .bespin-global:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 130px 108px; } }
+            background-size: 159px 376px; } }
     .global-menu .title .service {
       display: block;
       position: absolute;
@@ -1729,8 +1730,7 @@ corresponds to the arrow we want to display */
       margin-top: -20px;
       height: 40px;
       width: 40px;
-      border-radius: 50%;
-      background-color: #000; }
+      border-radius: 50%; }
       .global-menu .user .thumb img {
         max-height: 100%;
         max-width: 100%; }
@@ -1956,31 +1956,31 @@ corresponds to the arrow we want to display */
         opacity: 1; }
       .side-menus li a.vendor.aws span:before {
         background-image: url(../images/sprites.png);
-        background-position: -45px -18px;
+        background-position: -74px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li a.vendor.aws span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 130px 108px; } }
+            background-size: 159px 376px; } }
       .side-menus li a.vendor.azure span:before {
         background-image: url(../images/sprites.png);
-        background-position: -90px -18px;
+        background-position: -29px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li a.vendor.azure span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 130px 108px; } }
+            background-size: 159px 376px; } }
       .side-menus li a.vendor.aliyun span:before {
         background-image: url(../images/sprites.png);
-        background-position: 0px -18px;
+        background-position: -119px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li a.vendor.aliyun span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 130px 108px; } }
+            background-size: 159px 376px; } }
   .side-menus.is-editable a:hover .btn-edit {
     display: inline-block; }
 
@@ -2036,6 +2036,14 @@ article.contents .column-right {
     height: 135px;
     font-size: 36px;
     font-weight: 500; }
+  .portal article.contents h1.title .last-logged {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #999; }
 
 article.contents .list-column-01 {
   overflow: hidden;
@@ -2192,9 +2200,9 @@ article.contents .submit-btns {
       margin-top: -2px;
       height: 2px;
       background-color: #fff; }
-    .global-shortcuts .type-list > li.is-selected:after {
+    .global-shortcuts .type-list > li:hover:after, .global-shortcuts .type-list > li.is-selected:after {
       content: ''; }
-    .global-shortcuts .type-list > li.is-selected a {
+    .global-shortcuts .type-list > li:hover a, .global-shortcuts .type-list > li.is-selected a {
       color: #fff; }
     .global-shortcuts .type-list > li a {
       display: inline-block;
@@ -2529,6 +2537,33 @@ article.contents .submit-btns {
       line-height: 1em; }
       .box-item.dashboard .unit em {
         line-height: 1em; }
+    .box-item.dashboard .status {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 5px;
+      font-size: 15px;
+      font-weight: 500; }
+      .box-item.dashboard .status:before {
+        content: '';
+        display: inline-block;
+        margin: -2px 5px 0 0;
+        height: 10px;
+        width: 10px;
+        vertical-align: middle;
+        border-radius: 10px; }
+      .box-item.dashboard .status.great {
+        color: #009EE2; }
+        .box-item.dashboard .status.great:before {
+          background-color: #009EE2; }
+      .box-item.dashboard .status.good {
+        color: #6759A2; }
+        .box-item.dashboard .status.good:before {
+          background-color: #6759A2; }
+      .box-item.dashboard .status.poorly {
+        color: #E74E0F; }
+        .box-item.dashboard .status.poorly:before {
+          background-color: #E74E0F; }
     .box-item.dashboard .chart {
       clear: both;
       height: 243px;
@@ -2661,31 +2696,31 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -46px -63px;
+  background-position: -53px -90px;
   width: 18px;
   height: 18px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icheckbox {
       background-image: url(../images/sprites@2x.png);
-      background-size: 130px 108px; } }
+      background-size: 159px 376px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -70px -63px;
+    background-position: -75px -63px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 130px 108px; } }
+        background-size: 159px 376px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -24px -90px;
+    background-position: -99px -63px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.indeterminate {
         background-image: url(../images/sprites@2x.png);
-        background-size: 130px 108px; } }
+        background-size: 159px 376px; } }
 
 .iradio {
   display: block;
@@ -2693,22 +2728,22 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: 0px -90px;
+  background-position: -29px -90px;
   width: 18px;
   height: 18px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .iradio {
       background-image: url(../images/sprites@2x.png);
-      background-size: 130px 108px; } }
+      background-size: 159px 376px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -94px -63px;
+    background-position: -123px -63px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .iradio.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 130px 108px; } }
+        background-size: 159px 376px; } }
 
 .all-checked {
   display: block;
@@ -2737,31 +2772,31 @@ article.contents .submit-btns {
     vertical-align: middle; }
   .all-checked[value="0"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -46px -63px;
+    background-position: -53px -90px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="0"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 130px 108px; } }
+        background-size: 159px 376px; } }
   .all-checked[value="1"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -70px -63px;
+    background-position: -75px -63px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="1"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 130px 108px; } }
+        background-size: 159px 376px; } }
   .all-checked[value="2"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -24px -90px;
+    background-position: -99px -63px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="2"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 130px 108px; } }
+        background-size: 159px 376px; } }
   .all-checked .list-select-popup {
     display: block;
     position: absolute;
@@ -2860,22 +2895,22 @@ input[type=submit].btn-normal,
   position: relative;
   text-indent: -9999px;
   background-image: url(../images/sprites.png);
-  background-position: -23px -63px;
+  background-position: -52px -63px;
   width: 17px;
   height: 21px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .btn-bookmark {
       background-image: url(../images/sprites@2x.png);
-      background-size: 130px 108px; } }
+      background-size: 159px 376px; } }
   .btn-bookmark.is-selected, .btn-bookmark:hover {
     background-image: url(../images/sprites.png);
-    background-position: 0px -63px;
+    background-position: -29px -63px;
     width: 17px;
     height: 21px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .btn-bookmark.is-selected, .btn-bookmark:hover {
         background-image: url(../images/sprites@2x.png);
-        background-size: 130px 108px; } }
+        background-size: 159px 376px; } }
 
 .btn-close {
   display: block;
@@ -3344,8 +3379,124 @@ input[type=submit].btn-normal,
         margin-right: 15px; }
 
 /**
-	graph container
+	login container
 **/
+.login-container {
+  display: block;
+  position: relative;
+  margin: 100px auto 0;
+  padding: 30px 35px 150px 86px;
+  height: 376px;
+  width: 360px;
+  border: 3px solid #000; }
+  .login-container:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px 0px;
+    width: 23px;
+    height: 376px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .login-container:before {
+        background-image: url(../images/sprites@2x.png);
+        background-size: 159px 376px; } }
+  .login-container .bespin-global {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000; }
+  .login-container .message {
+    display: block;
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    line-height: 27px; }
+  .login-container p.input {
+    margin-top: 25px;
+    height: 50px;
+    width: 100%; }
+    .login-container p.input.invalid {
+      position: relative; }
+      .login-container p.input.invalid input[type=text],
+      .login-container p.input.invalid input[type=password] {
+        border: 1px solid #FF0101; }
+      .login-container p.input.invalid .invalid {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-right: 9px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #E74E0F;
+        line-height: 50px; }
+    .login-container p.input + .input {
+      margin-top: 10px; }
+  .login-container input[type=text],
+  .login-container input[type=password] {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 20px;
+    height: 50px;
+    width: 100%;
+    font-size: 21px;
+    font-weight: 500;
+    color: #000;
+    line-height: 50px;
+    border: 0px;
+    border: 1px solid #F5F5F5;
+    background-color: #F5F5F5; }
+    .login-container input[type=text]:focus,
+    .login-container input[type=password]:focus {
+      border: 1px solid #000; }
+  .login-container .icheck {
+    display: block;
+    margin-top: 10px; }
+  .login-container .invalid-message {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    margin: 14px 0 14px;
+    padding: 8px 0 0 40px;
+    height: 54px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #E74E0F; }
+    .login-container .invalid-message:before {
+      content: ""; }
+    .login-container .invalid-message:before {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 14px;
+      margin-top: -9px;
+      height: 15px;
+      width: 19px;
+      font-size: 15px;
+      color: #fff;
+      line-height: 15px;
+      text-align: center; }
+  .login-container input[type=submit].btn-normal {
+    display: block; }
+  .login-container .utils {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px 0 30px 40px;
+    background-color: #000; }
+    .login-container .utils > li a {
+      font-size: 16px;
+      font-weight: 500;
+      color: #9B9B9B;
+      text-decoration: underline; }
+      .login-container .utils > li a:hover {
+        color: #fff; }
+
 /*
 	etc
 */
@@ -3438,6 +3589,9 @@ body.portal {
       body.portal .service-group .service-profile + .grid {
         float: right;
         width: 582px; }
+  body.portal.dashboard .list-column-03 {
+    margin-top: 30px;
+    padding: 15px 0 0 0; }
 
 body.asset .chart-container {
   clear: both;

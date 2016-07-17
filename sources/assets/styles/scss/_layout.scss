@@ -55,7 +55,7 @@
 	}
 
 	.user { float: right; position: relative; margin-top: 12px; margin-left: 23px; padding: 0px 34px 0 53px; height: 40px;; width: auto;
-		.thumb { display: block; overflow: hidden; position: absolute; top: 50%; left: 0px; margin-top: -20px; height: 40px; width: 40px; border-radius: 50%; background-color: #000;
+		.thumb { display: block; overflow: hidden; position: absolute; top: 50%; left: 0px; margin-top: -20px; height: 40px; width: 40px; border-radius: 50%;
 			img { max-height: 100%; max-width: 100%; }
 		}
 		.name { display: block; font-size: 18px; font-weight: 700; color: #000; line-height: 19px; }
@@ -198,6 +198,7 @@ article.contents {
 	.portal & {
 		h1.title { background-color: #f6f6f6;
 			.inner { @include inner(); padding-top: 19px; height: 135px; font-size: 36px; font-weight: 500; }
+			.last-logged { display: block; position: absolute; bottom: 0; right: $column-padding; font-size: 16px; font-weight: 500; color: #999; }
 		}
 	}
 

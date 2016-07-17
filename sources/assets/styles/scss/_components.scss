@@ -72,6 +72,7 @@
 		> li { position: relative;
 			&:after { content: none; display: block; position: absolute; top: 50%; right: 0; left: 0; margin-top: -2px; height: 2px; background-color: #fff; }
 
+			&:hover,
 			&.is-selected {
 				&:after { content: ''; }
 				a { color: $white; }
@@ -256,10 +257,24 @@
 	.btn-warning { position: absolute; top: 33px; right: 33px; }
 
 
-	// asset dashboard
+	// portal/asset dashboard
 	&.dashboard { overflow: hidden;
 		.unit { display: block; padding: 8px 0 15px 0; font-size: 63px; font-weight: 500; color: #000; line-height: 1em;
 			em { line-height: 1em; }
+		}
+
+		.status { display: block; position: absolute; top: 20px; right: 5px; font-size: 15px; font-weight: 500;
+			&:before { content: ''; display: inline-block; margin: -2px 5px 0 0; height: 10px; width: 10px; vertical-align: middle; border-radius: 10px; }
+
+			&.great { color: #009EE2;
+				&:before { background-color: #009EE2; }
+			}
+			&.good { color: #6759A2;
+				&:before { background-color: #6759A2; }
+			}
+			&.poorly { color: #E74E0F;
+				&:before { background-color: #E74E0F; }
+			}
 		}
 
 		.chart { clear: both; height: 243px; background-color: rgba(0, 0, 0, 0.1); }
@@ -626,9 +641,50 @@ input[type=submit].btn-normal,
 }
 
 
+
+
 /**
-	graph container
+	login container
 **/
+.login-container { display: block; position: relative; margin: 100px auto 0; padding: 30px 35px 150px 86px; height: 376px; width: 360px; border: 3px solid #000;
+	&:before { content: ''; display: block; position: absolute; top: 30px; left: 30px; @include retina-sprite($sc-bespin-cloud-group); }
+
+	.bespin-global { font-size: 16px; font-weight: 700; color: #000; }
+	.message { display: block; margin-top: 25px; font-size: 26px; font-weight: 700; color: #000; line-height: 27px; }
+
+	p.input { margin-top: 25px; height: 50px; width: 100%;
+		&.invalid { position: relative;
+			input[type=text],
+			input[type=password] { border: 1px solid #FF0101; }
+
+			.invalid { position: absolute; top: 0; right: 0; padding-right: 9px; font-size: 16px; font-weight: 500; color: #E74E0F; line-height: 50px; }
+		}
+
+		+ .input { margin-top: 10px; }
+	}
+	input[type=text],
+	input[type=password] { display: block; box-sizing: border-box; padding-left: 20px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 0px; border: 1px solid #F5F5F5; background-color: #F5F5F5;
+		&:focus { border: 1px solid #000; }
+	}
+
+	.icheck { display: block; margin-top: 10px; }
+	.invalid-message { display: block; box-sizing: border-box; position: relative; margin: 14px 0 14px; padding: 8px 0 0 40px; height: 54px; font-size: 15px; font-weight: 500; color: #fff; background-color: #E74E0F; 
+		@include icon(warning);
+		&:before { display: block; position: absolute; top: 50%; left: 14px; margin-top: -9px; height: 15px; width: 19px; font-size: 15px; color: #fff; line-height: 15px; text-align: center; }
+	}
+
+	input[type=submit].btn-normal { display: block; }
+	.utils { display: block; position: absolute; right: 0; bottom: 0; left: 0; padding: 30px 0 30px 40px; background-color: #000;
+		> li {
+			a { font-size: 16px; font-weight: 500; color: #9B9B9B; text-decoration: underline;
+				&:hover { color: #fff; }
+			}
+		}
+	}
+}
+
+
+
 
 
 /*

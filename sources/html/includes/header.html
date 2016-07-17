@@ -18,9 +18,9 @@
 		
 		<!-- user -->
 		<figure class="user">
-			<div class="thumb"><img src="assets/images/company_profile.png" alt=""></div>
+			<a href="#user" class="thumb btn-user-info"><img src="assets/images/company_profile.png" alt=""></a>
 			<figcaption>
-				<button id="user-info" type="button" class="name">Jacob Kim</button>
+				<button type="button" class="name btn-user-info">Jacob Kim</button>
 				
 				<button id="company" type="button" class="company">NHN Asia Pacific</button>
 				<ul id="company-content" class="list-select-popup">
@@ -132,7 +132,7 @@ $(document).ready(function(e) {
 				$selectLanguage = $('#language');
 				$selectCompany = $('#company');
 				$service = $('#service-shortcut');
-				$userInfo = $('#user-info');
+				$userInfo = $('.btn-user-info');
 
 
 				initLayout();

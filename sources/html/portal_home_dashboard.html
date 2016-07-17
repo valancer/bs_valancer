@@ -1,0 +1,68 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal dashboard">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					My Bespin Dashboard
+
+					<time datetime="" class="last-logged">last logged in 3 weeks ago</time>
+				</div>
+			</h1>
+			
+			<div class="contents-inner">
+		
+				<!-- dashboard -->
+				<ul class="list-column-03">
+					<li>
+						<div class="box-item dashboard">
+							<h2 class="title">ASSET MANAGEMENT</h2>
+							
+							<div class="content">
+								<div class="status great">Great</div>
+								<div class="chart"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box-item dashboard">
+							<h2 class="title">COST METERING</h2>
+							
+							<div class="content">
+								<div class="status poorly">Poorly</div>
+								<div class="chart"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="box-item dashboard">
+							<h2 class="title">MONITORING</h2>
+							
+							<div class="content">
+								<div class="status good">Good</div>
+								<div class="chart"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!--// dashboard -->
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

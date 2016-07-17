@@ -1,0 +1,115 @@
+<header class="global-menu">
+	<div class="contents-inner">
+
+		<div class="title">
+			<a href="#" class="btn-home">BESPIN</a>
+
+			<strong class="bespin-global"><span class="is-hidden">BESPIN GLOBAL</span></strong>
+
+			<button id="language" type="button" class="btn-language">ENGLISH</button>
+			<ul id="language-content" class="list-select-popup small">
+				<li><a href="#english" class="is-selected">ENGLISH</a></li>
+				<li><a href="#korean">한국어</a></li>
+				<li><a href="#chinese">中文</a></li>
+			</ul>
+		</div>
+		
+		<!-- user -->
+		<div class="user">
+			<a href="#none" id="user-info" class="thumb"><img src="assets/images/user_profile.png" alt=""></a>
+		</div>
+		<!--// user -->
+	</div>
+
+
+
+	<!-- user info -->
+	<aside id="user-info-content" class="popover">
+		<span class="point"></span>
+
+		<nav class="global-shortcuts">
+			<ul class="type-list">
+				<li><a href="#">Log In</a></li>
+				<li><a href="#">Create and Account</a></li>
+				<li><a href="#">Talk to Us?</a></li>
+			</ul>
+		</nav>
+	</aside>
+</header>
+
+<script>
+$(document).ready(function(e) {	
+	/* GlobalMenu */
+	var GlobalMenu = (function ($) {
+		var scope,
+			$container,
+			$selectLanguage,
+			$selectCompany,
+			$userInfo,
+			$service,
+			init = function() {
+				$container = $('.global-menu');
+				$selectLanguage = $('#language');
+				$selectCompany = $('#company');
+				$service = $('#service-shortcut');
+				$userInfo = $('#user-info');
+
+
+				initLayout();
+				initEvent();
+			};
+
+		function initLayout() {
+		}
+
+		function initEvent() {
+			$selectLanguage.tooltipster({
+				content: $('#language-content').detach(),
+				contentAsHTML: true,
+				contentCloning: false,
+				arrow: false,
+				trigger: 'click'
+			});
+			$selectCompany.tooltipster({
+				content: $('#company-content').detach(),
+				contentCloning: false,
+				arrow: false,
+				trigger: 'click',
+				side: 'bottom'
+			});
+			$service.tooltipster({
+				content: $('#service-shortcut-content').detach(),
+				contentCloning: false,
+				arrow: false,
+				trigger: 'click',
+				side: 'bottom',
+				functionPosition: function(instance, helper, position){
+					position.coord.top += 30;
+					position.coord.left += 0;
+					return position;
+				}
+			});
+			$userInfo.tooltipster({
+				content: $('#user-info-content').detach(),
+				contentCloning: false,
+				arrow: false,
+				trigger: 'click',
+				side: 'bottom',
+				functionPosition: function(instance, helper, position){
+					position.coord.top += 30;
+					position.coord.left += 0;
+					return position;
+				}
+			});
+		}
+
+		return {
+			init: function() {
+				init();
+			}
+		};
+	}(jQuery));
+
+	GlobalMenu.init();
+});
+</script>
