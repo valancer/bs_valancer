@@ -27,7 +27,6 @@ body.asset {
 	&.dashboard {
 		.section-box { padding-top: 23px; border-bottom: 2px solid #E7E7E7;
 			.section-title { padding: 0 30px; font-size: 18px; font-weight: 700; color: #000; }
-
 		}
 
 		.list-column-03 { padding-top: 15px; }
@@ -44,7 +43,7 @@ body.asset {
 
 
 	&.service-group {
-		.popover.service-group { display: none; position: absolute; top: 35px; left: 0; padding: 20px; width: 100px; border: 4px solid #fff;
+		.popover.service-group { display: none; position: absolute; top: 35px; left: 0; padding: 20px; width: 100px; border: 3px solid #fff;
 			.point { top: -10px; z-index: z("default"); }
 
 			.list-ea { overflow: hidden; font-size: 16px; font-weight: 500; color: #fff;
@@ -52,7 +51,7 @@ body.asset {
 				dd { float: left; width: 50%; text-align: right; line-height: 23px; }
 			}
 
-			&.warning { font-size: 16px; font-weight: 500; color: #fff; line-height: 16px; width: 340px; background-color: #E74E0F;
+			&.warning { font-size: 14px; font-weight: 500; color: #fff; line-height: 14px; width: 255px; background-color: #E74E0F;
 				.point { color: #E74E0F; }
 			}
 		}

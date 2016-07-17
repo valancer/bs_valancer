@@ -1,16 +1,16 @@
 /**
 	agGrid util
 **/
-.aggrid-uitls { clear: both; padding: 10px 40px; background-color: #fff;
+.aggrid-uitls { clear: both; padding: 8px 30px; background-color: #fff;
 	.right-content { float: right;
-		.btn-text { margin-left: 35px; }
+		.btn-text { margin-left: 26px; }
 	}
 
 	.search { display: block;
 		@include icon(search);
-		&:before { display: inline-block; margin-right: 10px; color: #999; line-height: 27px; vertical-align: middle; }
+		&:before { display: inline-block; margin-right: 8px; color: #999; line-height: 20px; vertical-align: middle; }
 
-		input[type=text] { height: 27px; width: 30%; font-size: 20px; font-weight: 500; color: #000; border: 0px; line-height: 27px; }
+		input[type=text] { height: 20px; width: 30%; font-size: 15px; font-weight: 500; color: #000; border: 0px; line-height: 20px; }
 	}
 
 }

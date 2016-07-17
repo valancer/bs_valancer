@@ -1,50 +1,32 @@
 body.portal {
 
-	/* set permission */
-	.permission { table-layout: fixed; width: 100%;
-		thead {
-			tr {
-				th { height: 32px; font-size: 16px; font-weight: 700; color: #000; text-align: center; }
-			}
-		}
-
-		tbody {
-			tr { border-top: 2px solid rgba(151, 151, 151, 0.32);
-				th { font-size: 18px; font-weight: 500; color: #000; text-align: left; }
-				td { height: 46px; text-align: center;
-					label { padding: 0; }
-				}
-			}
-		}
-	}
-
 	/* vendor accounts */
-	.vendor-accounts { padding-bottom: 35px;
-		.title { display: block; margin-bottom: 5px; font-size: 16px; font-weight: 700; color: #000; }
+	.vendor-accounts { padding-bottom: 26px;
+		.title { display: block; margin-bottom: 5px; font-size: 14px; font-weight: 700; color: #000; }
 
 		.key-code { overflow: hidden; 
-			p { float: left; padding-right: 40px; }
-			input[type=text] { padding-left: 30px; height: 65px; width: 390px; font-size: 28px; font-weight: 500; color: rgba(0, 0, 0, 0.36); border: 0px; background-color: #fff; }
+			p { float: left; padding-right: 30px; }
+			input[type=text] { padding-left: 23px; height: 49px; width: 290px; font-size: 21px; font-weight: 500; color: rgba(0, 0, 0, 0.36); border: 0px; background-color: #fff; }
 		}
 
-		.used-for { margin-top: 50px;
-			.icheck { padding-left: 35px; min-width: 90px; }
+		.used-for { margin-top: 38px;
+			.icheck { padding-left: 26px; min-width: 70px; }
 		}
 
-		.btns { margin-top: 50px; }
+		.btns { margin-top: 38px; }
 	}
 
 
 	/* manage service group */
-	.service-group { position: relative; padding: 30px 0 0 0px; min-height: 300px;
-		.service-profile { display: block; float: left; width: 194px;
-			.thumb { display: block; position: relative; overflow: hidden; height: 194px; width: 194px; border-radius: 100%;
+	.service-group { position: relative; padding: 23px 0 0 0px; min-height: 225px;
+		.service-profile { display: block; float: left; width: 145px;
+			.thumb { display: block; position: relative; overflow: hidden; height: 145px; width: 145px; border-radius: 100%;
 				img { display: inline-block; max-height: 100%; }
-				.btn-normal.small { display: block; position: absolute; bottom: 13px; left: 50%; margin-left: -32px; min-width: 63px; font-size: 18px; font-weight: 700; line-height: 27px; }
+				.btn-normal.small { display: block; position: absolute; bottom: 10px; left: 50%; margin-left: -24px; min-width: 47px; font-size: 14px; font-weight: 700; line-height: 20px; }
 			}
-			input[type=text] { display: block; box-sizing: border-box; margin-top: 20px; padding-left: 12px; height: 42px; width: 100%; font-size: 18px; font-weight: 500; color: rgba(0, 0, 0, 0.36); line-height: 42px; border: 0px; background-color: #F6F6F6; }
+			input[type=text] { display: block; box-sizing: border-box; margin-top: 15px; padding-left: 10px; height: 32px; width: 100%; font-size: 14px; font-weight: 500; color: rgba(0, 0, 0, 0.36); line-height: 32px; border: 0px; background-color: #F6F6F6; }
 
-			+ .grid { float: right; width: 776px; }
+			+ .grid { float: right; width: 582px; }
 		}
 	}
 
