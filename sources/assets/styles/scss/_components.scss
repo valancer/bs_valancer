@@ -31,7 +31,7 @@
 // select layer popup
 .list-select-popup { display: block; min-width: 160px; border: 3px solid #000; background-color: #fff;
 	> li { display: block;
-		a { display: block; padding: 0 10px; font-size: 18px; font-weight: 500; color: $black; line-height: 42px;
+		a { display: block; padding: 0 10px; font-size: 18px; font-weight: 500; color: #000; line-height: 42px;
 			&.is-selected,
 			&:hover { color: $white; background-color: #000; }
 		}
@@ -107,11 +107,11 @@
 /**
 	page tabs
 **/
-.page-tabs { display: block; position: relative; text-align: center;
-	&:before { content: ''; display: block; position: absolute; top: 20px; right: 0; left: 0; height: 3px; background-color: #000; }
+.page-tabs { display: block; position: relative; z-index: z("default"); text-align: center;
+	&:before { content: ''; display: block; position: absolute; top: 50%; right: 0; left: 0; margin-top: -1px; height: 2px; background-color: #000; }
 
-	> .inner { display: inline-block; position: relative; z-index: z("default"); padding: 0 45px; background-color: #fff;
-		a { display: inline-block; padding: 0 60px; font-size: 18px; font-weight: 700; color: #000; text-align: center; line-height: 36px; letter-spacing: 0.1em; border: 3px solid #000; background-color: #fff;
+	> .inner { display: inline-block; position: relative; z-index: z("default"); padding: 0 34px; background-color: #fff;
+		a { display: inline-block; padding: 0 45px; font-size: 14px; font-weight: 700; color: #000; text-align: center; line-height: 27px; letter-spacing: 0.1em; border: 2px solid #000; background-color: #fff;
 			&:hover,
 			&.is-selected { color: #fff; background-color: #000; }
 
@@ -119,7 +119,7 @@
 		}
 	}
 
-	.page-sub-tabs { margin-top: 30px; }
+	.page-sub-tabs { margin-top: 23px; }
 }
 
 
@@ -200,10 +200,10 @@
 **/
 // box-item
 .box-item { display: block; position: relative;
-	&:before { content: ''; display: block; position: absolute; top: 19px; right: 0; left: 0; height: 3px; background-color: #000; }
+	&:before { content: ''; display: block; position: absolute; top: 15px; right: 0; left: 0; height: 2px; background-color: #000; }
 
-	> .title { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 18px; font-weight: 700; color: #000; line-height: 43px; background-color: #fff;
-		.thumb { display: inline-block; cursor: pointer; overflow: hidden; margin-right: 5px; height: 43px; width: 43px; line-height: 43px; vertical-align: middle; border-radius: 100%; background-color: #0f0;
+	> .title { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 14px; font-weight: 700; color: #000; line-height: 24px; background-color: #fff;
+		.thumb { display: inline-block; cursor: pointer; overflow: hidden; margin-right: 5px; height: 24px; width: 24px; line-height: 24px; vertical-align: middle; border-radius: 100%; background-color: #0f0;
 			img { display: inline-block; height: 100%; width: 100%; }
 		}
 		.thumb-over { display: block; position: absolute; top: 50px; left: 50px; opacity: 0; }
@@ -216,28 +216,28 @@
 
 	// asset dashboard
 	&.dashboard { overflow: hidden;
-		.unit { display: block; padding: 10px 0 20px 0; font-size: 84px; font-weight: 500; color: #000; line-height: 1em;
+		.unit { display: block; padding: 8px 0 15px 0; font-size: 63px; font-weight: 500; color: #000; line-height: 1em;
 			em { line-height: 1em; }
 		}
 
-		.chart { clear: both; height: 324px; background-color: rgba(0, 0, 0, 0.1); }
+		.chart { clear: both; height: 243px; background-color: rgba(0, 0, 0, 0.1); }
 
-		.summary { float: left; margin-right: 60px; width: 300px;
-			.unit { display: block; position: relative; padding: 10px 0 10px 0; font-size: 32px; font-weight: 500; color: #000;
+		.summary { float: left; margin-right: 45px; width: 225px;
+			.unit { display: block; position: relative; padding: 10px 0 10px 0; font-size: 24px; font-weight: 500; color: #000;
 				&:before { content: ''; display: block; position: absolute; bottom: 0px; height: 3px; width: 37px; background-color: #000; }
 
 				em { font-size: 84px; }
 			}
 
-			.list-ea { display: block; box-sizing: border-box; overflow: scroll; margin-top: 10px; padding: 0px 30px 0 0; height: 220px; font-size: 16px; font-weight: 500; color: #000;
-				dt { clear: both; float: left; width: 50%; line-height: 35px; }
-				dd { float: left; width: 50%; text-align: right; line-height: 35px; }
+			.list-ea { display: block; box-sizing: border-box; overflow: scroll; margin-top: 8px; padding: 0px 23px 0 0; height: 130px; font-size: 16px; font-weight: 500; color: #000;
+				dt { clear: both; float: left; width: 50%; line-height: 26px; }
+				dd { float: left; width: 50%; text-align: right; line-height: 26px; }
 			}
 		}
 	
-		.chart-container { clear: none; float: left; margin-top: 10px; height: 324px; width: 1000px;
+		.chart-container { clear: none; float: left; margin-top: 15px; height: 243px; width: 710px;
 			.list-dashboard-chart {
-				li { float: left; padding-right: 30px; width: 310px; }
+				li { float: left; padding-right: 30px; width: 230px; }
 			}
 		}
 	}
@@ -280,7 +280,7 @@
 	form controls
 **/
 // checkbox & radio
-.icheck { display: inline-block; position: relative; padding: 0 0 0 45px; min-height: 23px; min-width: 23px; font-size: 20px; font-weight: 500; color: $black; line-height: 23px; vertical-align: middle; cursor: pointer; }
+.icheck { display: inline-block; position: relative; padding: 0 0 0 26px; min-height: 18px; min-width: 18px; font-size: 15px; font-weight: 500; color: #000; line-height: 18px; vertical-align: middle; cursor: pointer; }
 
 .icheckbox { display: block; position: absolute !important; top: 0; left: 0; @include retina-sprite($sc-unchecked-group);
 	&.checked { @include retina-sprite($sc-checked-group); }
@@ -319,14 +319,14 @@
 	buttons
 **/
 // settings
-.btn-settings { overflow: hidden; height: 28px; width: 28px;
+.btn-settings { overflow: hidden; height: 21px; width: 21px;
 	@include icon(settings); 
-	&:before { display: block; height: 28px; width: 28px; font-size: 28px; color: #666; }
+	&:before { display: block; height: 21px; width: 21px; font-size: 21px; color: #666; }
 }
 
 // btn text type
-.btn-text { display: inline-block; font-size: 20px; font-weight: 500; color: #959595; vertical-align: middle; text-decoration: underline;
-	&:before { display: inline-block; margin-right: 5px; height: 14px; width: 14px; font-size: 13px; vertical-align: middle; }
+.btn-text { display: inline-block; font-size: 15px; font-weight: 500; color: #959595; vertical-align: middle; text-decoration: underline;
+	&:before { display: inline-block; margin-right: 5px; height: 11px; width: 11px; font-size: 10px; vertical-align: middle; }
 
 	&:hover { color: #000; }
 
@@ -352,10 +352,10 @@
 
 // normal
 input[type=submit].btn-normal,
-.btn-normal { display: inline-block; min-width: 300px; font-size: 18px; font-weight: 700; color: $black; text-align: center; vertical-align: middle; line-height: 37px; border: 3px solid #000; background-color: #fff;
-	&.large { font-size: 20px; line-height: 59px; }
+.btn-normal { display: inline-block; min-width: 225px; font-size: 14px; font-weight: 700; color: #000; text-align: center; vertical-align: middle; line-height: 28px; border: 2px solid #000; background-color: #fff;
+	&.large { font-size: 15px; line-height: 44px; }
 
-	&:hover { color: $white; background-color: #000; }
+	&:hover { color: #fff; background-color: #000; }
 	&[disabled] { color: #cecece; border-color: #CECECE;
 		&:hover { color: #cecece; background-color: inherit; }
 	}
@@ -398,7 +398,7 @@ input[type=submit].btn-normal,
 /**
 	filter
 **/
-.filter-container { position: relative; z-index: z("modaless") + 1; padding: 0 40px; height: 62px; background-color: #e7e7e7;
+.filter-container { position: relative; z-index: z("modaless") + 1; padding: 0 30px; height: 47px; background-color: #e7e7e7;
     animation-delay: 0s;
     animation-name: filter-up;
     animation-timing-function: ease-out;
@@ -406,38 +406,38 @@ input[type=submit].btn-normal,
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-	.btn-status { position: absolute; top: 50%; right: 67px; margin-top: -10px; font-size: 18px; font-weight: 700px; color: #000; border-bottom: 2px solid #000;
+	.btn-status { position: absolute; top: 50%; right: 50px; margin-top: -8px; font-size: 14px; font-weight: 700px; color: #000; border-bottom: 1px solid #000;
 		@include icon(arrow01, after);
-		&:after { overflow: hidden; position: absolute; top: 50%; right: -30px; margin-top: -2px; height: 8px; width: 20px; font-size: 15px; line-height: 8px; transform: rotate( 0deg ); }
+		&:after { overflow: hidden; position: absolute; top: 50%; right: -25px; margin-top: -2px; height: 8px; width: 20px; font-size: 13px; line-height: 8px; transform: rotate( 0deg ); }
 	}
 
 	.results { display: block;
 		.category { display: inline-block; margin: -3px 20px 0 0; vertical-align: middle; }
-		> .selected { height: 62px; font-size: 20px; font-weight: 500; color: #000; line-height: 62px;
+		> .selected { height: 47px; font-size: 15px; font-weight: 500; color: #000; line-height: 47px;
 			@include icon(filter);
-			&:before { display: block; float: left; margin-right: 10px; height: 22px; width: 22px; font-size: 20px; color: #666; vertical-align: middle; line-height: 62px; }
+			&:before { display: block; float: left; margin-right: 10px; height: 22px; width: 22px; font-size: 18px; color: #666; vertical-align: middle; line-height: 47px; }
 		}
 	}
 
-	.items { display: none; overflow: hidden; border-top: 3px solid #cecece;
-		.filter-item { display: block; box-sizing: border-box; float: left; position: relative; overflow: hidden; padding: 15px 40px 0 0; height: 400px; width: 25%;
-			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 0; left: 0; height: 50px;
-				background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(231,231,231,1) 100%);
-				background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(231,231,231,1) 100%);
-				background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(231,231,231,1) 100%);
+	.items { display: none; overflow: hidden; padding-bottom: 15px; border-top: 2px solid #cecece;
+		.filter-item { display: block; box-sizing: border-box; float: left; position: relative; overflow: hidden; padding: 0px 40px 0 0; height: auto; width: 25%;
+			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 0; left: 0; height: 30px;
+				background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(231,231,231,1) 100%);
+				background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(231,231,231,1) 100%);
+				background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(231,231,231,1) 100%);
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e7e7e7',GradientType=0 );
 			}
 
-			> .title { display: block; visibility: visible; position: relative; top: 25px; left: auto; height: auto; width: 100%; font-size: 18px; font-weight: 700; color: #000; letter-spacing: 0.1em;
+			> .title { display: block; visibility: visible; position: relative; top: 10px; left: auto; height: auto; width: 100%; font-size: 14px; font-weight: 700; color: #000; letter-spacing: 0.1em;
 				&:before { content: ''; display: block; position: absolute; top: 50%; right: 0; margin-top: -2px; height: 3px; width: 100%; background-color: #000; }
 
 				> span { display: inline-block; position: relative; z-index: z("default"); padding-right: 15px; background-color: #e7e7e7; }
 			}
 			
 
-			.list-filter-items { position: relative; overflow: auto; margin-top: 15px; padding-bottom: 17px; height: 330px;
-				> li { display: block; padding: 0 0 25px 0;
-					&:first-child { padding-top: 10px; }
+			.list-filter-items { position: relative; overflow: auto; margin-top: 15px; padding-bottom: 17px; height: 180px;
+				> li { display: block; padding: 0 0 3px 0;
+					&:first-child { padding-top: 5px; }
 
 					.btn-folding { display: block; float: right; position: relative; margin-right: 5px; height: 23px; width: 23px; text-indent: -9999px;
 						@include icon(arrow01, after);
@@ -449,8 +449,8 @@ input[type=submit].btn-normal,
 						&.is-opened ~ .list-filter-items { display: block; height: auto;  }
 					}
 
-					.list-filter-items { display: none; overflow: hidden; margin-top: 10px; margin-left: 45px; padding-bottom: 0; height: 0;
-						> li { display: block; padding-bottom: 20px;
+					.list-filter-items { display: none; overflow: hidden; margin: 0px 0 5px 25px; padding-bottom: 0; height: 0;
+						> li { display: block;
 							&:last-child { padding-bottom: 0; }
 						}
 					}
@@ -458,14 +458,14 @@ input[type=submit].btn-normal,
 			}
 		}
 
-		.done { clear: both; padding-top: 23px; border-top: 3px solid #cecece;
+		.done { clear: both; padding-top: 15px; border-top: 3px solid #cecece;
 			.btn-text.reset { margin-left: 15px; }
 		}
 	}
 
 
 	// open
-	&.is-opened { height: 552px; border-top: 2px solid #d0d0d0;
+	&.is-opened { height: auto; padding-bottom: 0px; border-top: 2px solid #d0d0d0;
         animation-delay: 0s;
         animation-name: filter-down;
         animation-timing-function: ease-out;
@@ -473,8 +473,8 @@ input[type=submit].btn-normal,
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
 
-		.btn-status { top: auto; bottom: 30px;
-			&:after { transform: rotate( -180deg ); }
+		.btn-status { top: auto; bottom: 20px;
+			&:after { margin-top: -5px; transform: rotate( -180deg ); }
 		}
 
 		.items { display: block; }
@@ -508,23 +508,23 @@ input[type=submit].btn-normal,
 /**
 	warning message
 **/
-.warning-container { position: relative; padding: 15px 70px 15px 75px; max-height: 27px; height: 27px; background-color: #e74e0f; transition: max-height 0.3s ease-in;
+.warning-container { position: relative; padding: 15px 70px 15px 75px; max-height: 20px; height: 20px; background-color: #e74e0f; transition: max-height 0.3s ease-in;
 	@include icon(warning);
-	&:before { display: block; position: absolute; top: 15px; left: 30px; font-size: 30px; color: #fff; }
+	&:before { display: block; position: absolute; top: 15px; left: 30px; font-size: 23px; color: #fff; }
 
-	.btn-folding { display: block; position: absolute; top: 50%; right: 34px; z-index: z("default"); margin-top: -14px; height: 27px; width: 27px; text-indent: -9999px;
+	.btn-folding { display: block; position: absolute; top: 15px; right: 34px; z-index: z("default"); height: 20px; width: 20px; text-indent: -9999px;
 		@include icon(arrow01, after);
-		&:after { position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 27px; font-size: 15px; color: #fff; line-height: 8px; vertical-align: middle; text-indent: 0; transform: rotateX( 0deg ); transition-duration: 0.3s; }
+		&:after { position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 20px; font-size: 15px; color: #fff; line-height: 8px; vertical-align: middle; text-indent: 0; transform: rotateX( 0deg ); transition-duration: 0.3s; background-color: #0f0; }
 	}
 
-	> .title { display: block; float: left; position: relative; margin-right: 3px; font-size: 18px; font-weight: 700; color: #fff; line-height: 27px; 
+	> .title { display: block; float: left; position: relative; margin-right: 3px; font-size: 16px; font-weight: 700; color: #fff; line-height: 20px; 
 		&:after { content: ':'; font-size: 16px; }
 	}
-	> .content { display: block; overflow: hidden; float: left; height: 27px; width: 90%; font-size: 16px; font-weight: 500; color: #fff; line-height: 27px; text-overflow: ellipsis; white-space: nowrap; }
+	> .content { display: block; overflow: hidden; float: left; height: 20px; width: 90%; font-size: 14px; font-weight: 500; color: #fff; line-height: 20px; text-overflow: ellipsis; white-space: nowrap; }
 
 
 	&.is-opened { max-height: 500px; height: auto; transition: max-height 0.3s ease-in;
-		.btn-folding { top: 30px;
+		.btn-folding {
 			&:after { transform: rotateX( -180deg ); transition-duration: 0.3s; }
 		}
 

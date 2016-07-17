@@ -1,8 +1,9 @@
 <header class="global-menu">
 	<div class="contents-inner">
-		<a href="#" class="btn-home">BESPIN GLOBAL</a>
 
 		<div class="title">
+			<a href="#" class="btn-home">BESPIN</a>
+
 			@@if ( service == "portal" ) {<strong class="bespin-global"><span class="is-hidden">BESPIN GLOBAL</span></strong>}
 			@@if ( service == "asset" ) {<strong class="service asset">ASSET MANAGEMENT</strong>}
 			@@if ( service == "metering" ) {<strong class="service metering">METERING</strong>}
@@ -15,6 +16,7 @@
 			</ul>
 		</div>
 		
+		<!-- user -->
 		<figure class="user">
 			<div class="thumb"><img src="assets/images/company_profile.png" alt=""></div>
 			<figcaption>
@@ -28,12 +30,17 @@
 				</ul>
 			</figcaption>
 		</figure>
+		<!--// user -->
+		
+
+		<!-- notifications, shortcut -->
 		<p class="uilts">
 			<a href="#notification" class="btns notifications">
 				<span class="hidden">new</span><em class="badge">2</em> notification
 			</a>
 			<button type="button" class="btns dashboard service-shortcut_open">shortcut service</button>
 		</p>
+		<!--// notifications, shortcut -->
 	</div>
 
 	<!-- service shortcut -->
@@ -95,7 +102,7 @@
 		<ul class="list-menes">
 			<li @@if ( sub == "dashboard" ) { class="is-selected" }><a href="#">DASHBOARD</a></li>
 			<li @@if ( sub == "billing" ) { class="is-selected" }><a href="#">BILLING</a></li>
-			<li @@if ( sub == "usage" ) { class="is-selected" }><a href="#">USAGE ANALYTICS</a></li>
+			<li @@if ( sub == "usage" ) { class="is-selected" }><a href="#">COST STATISTICS</a></li>
 			<li @@if ( sub == "budgeting" ) { class="is-selected" }><a href="#">BUDGETING</a></li>
 			<li @@if ( sub == "status" ) { class="is-selected" }><a href="#">RI STATUS</a></li>
 		</ul>
