@@ -13,32 +13,54 @@
 /**
 	popover
 **/
-.popover { display: none; position: relative; padding: 26px; background-color: #000;
-	.point { display: block; position: absolute; top: -15px; left: 50%; z-index: z("default") - 2; margin-left: -20px; height: 31px; width: 31px;
+.popover { display: block; position: relative; padding: 26px; background-color: #000;
+	&:after { content: ''; display: block; clear: both; }
+
+	.point { display: block; position: absolute; top: -10px; left: 50%; z-index: z("default") - 2; margin-left: -20px; height: 31px; width: 31px;
 		@include icon(arrow02);
-		&:before { font-size: 31px; line-height: 31px; }
+		&:before { font-size: 31px; color: #000; line-height: 31px; }
 	}
 
 	.btn-logout { float: right; font-size: 18px; font-weight: 500; color: $white; border-bottom: 1px solid #fff; }	
 
+	// controls
+	input[type=text] { display: inline-block; box-sizing: border-box; padding-left: 15px; height: 50px; width: 250px; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 0px; background-color: #F6F6F6; }
+	.list-menu {
+		> li { font-size: 18px; font-weight: 500; color: #fff; line-height: 30px; white-space: nowrap; 
+			button { font-size: 18px; font-weight: 500; color: #fff; line-height: 30px; }
+		}
+	}
+
+	// edit
+	&.edit { padding: 10px 15px;
+
+	}
+
+	// small
 	&.small { padding: 0px 14px;
 		.point { top: -8px; }
+	}
+	// create
+	&.create {
+		input[type=submit].btn-normal { margin-top: 15px; padding: 0 20px; min-width: auto; width: auto;
+			&:hover { color: #000; background-color: #fff; }
+		}
 	}
 }
 
 
 
 // select layer popup
-.list-select-popup { display: block; min-width: 160px; border: 3px solid #000; background-color: #fff;
+.list-select-popup { display: block; min-width: 120px; border: 2px solid #000; background-color: #fff;
 	> li { display: block;
-		a { display: block; padding: 0 10px; font-size: 18px; font-weight: 500; color: #000; line-height: 42px;
+		a { display: block; padding: 0 8px; font-size: 14px; font-weight: 500; color: #000; line-height: 32px;
 			&.is-selected,
 			&:hover { color: $white; background-color: #000; }
 		}
 	}
 
 	&.small {
-		a { font-size: 13px; }
+		a { font-size: 12px; }
 	}
 }
 
@@ -46,55 +68,55 @@
 
 // global menu shortcuts popover
 .global-shortcuts {
-	.type-list { min-width: 390px;
+	.type-list { min-width: 290px;
 		> li { position: relative;
-			&:after { content: none; display: block; position: absolute; top: 50%; right: 0; left: 0; margin-top: -2px; height: 3px; background-color: #fff; }
+			&:after { content: none; display: block; position: absolute; top: 50%; right: 0; left: 0; margin-top: -2px; height: 2px; background-color: #fff; }
 
 			&.is-selected {
 				&:after { content: ''; }
 				a { color: $white; }
 			}
 
-			a { display: inline-block; position: relative; z-index: z("default"); padding-right: 15px; font-size: 24px; font-weight: 500; color: #999; line-height: 63px; background-color: #000;
+			a { display: inline-block; position: relative; z-index: z("default"); padding-right: 11px; font-size: 18px; font-weight: 500; color: #999; line-height: 47px; background-color: #000;
 				&:hover { color: $white; }
 			}
 		}
 	}
 
-	.type-thumbnail { overflow: hidden; margin-bottom: -34px; width: 390px;
-		> li { float: left; padding-right: 50px; padding-bottom: 34px; width: 90px;
+	.type-thumbnail { overflow: hidden; margin-bottom: -26px; width: 290px;
+		> li { float: left; padding-right: 40px; padding-bottom: 26px; width: 70px;
 			&:nth-child(3n+3) { padding-right: 0; }
 
-			a { display: block; min-height: 90px; width: 90px; font-size: 18px; font-weight: 500; color: $white; line-height: 18px;
-				&:before { content: ''; display: block; box-sizing: border-box; margin-bottom: 8px; padding-top: 5px; height: 85px; width: 100%; text-align: center; vertical-align: middle; border: 5px solid #fff; }
+			a { display: block; min-height: 70px; width: 72px; font-size: 14px; font-weight: 500; color: $white; line-height: 14px;
+				&:before { content: ''; display: block; box-sizing: border-box; margin-bottom: 8px; height: 70px; width: 70px; text-align: center; vertical-align: middle; border: 4px solid #fff; }
 
 				&.dashboard {
 					@include icon(dashboard);
-					&:before { font-size: 55px; line-height: 66px; }
+					&:before { font-size: 41px; line-height: 64px; }
 				}
 
 				&.metering {
 					@include icon(metering);
-					&:before { font-size: 58px; line-height: 63px; }
+					&:before { font-size: 44px; line-height: 64px; }
 				}
 
 				&.asset {
 					@include icon(asset);
-					&:before { font-size: 44px; line-height: 64px; }
+					&:before { font-size: 33px; line-height: 64px; }
 				}
 
 				&.monitoring {
 					@include icon(monitoring);
-					&:before { font-size: 55px; line-height: 66px; }
+					&:before { font-size: 41px; line-height: 64px; }
 				}
 
 				&.workflow {
 					@include icon(workflow);
-					&:before { font-size: 55px; line-height: 66px; }
+					&:before { font-size: 41px; line-height: 64px; }
 				}
 
 				&.none {
-					&:before { border: 5px solid rgba(255, 255, 255, 0.23); }
+					&:before { border: 4px solid rgba(255, 255, 255, 0.23); }
 				}
 			}
 
@@ -223,7 +245,7 @@
 	&:before { content: ''; display: block; position: absolute; top: 11px; right: 0; left: 0; height: 2px; background-color: #000; }
 
 	> .title { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 14px; font-weight: 700; color: #000; line-height: 24px; background-color: #fff;
-		.thumb { display: inline-block; cursor: pointer; overflow: hidden; margin-right: 5px; height: 24px; width: 24px; line-height: 24px; vertical-align: middle; border-radius: 100%; background-color: #0f0;
+		.thumb { display: inline-block; cursor: pointer; overflow: hidden; margin-right: 5px; height: 24px; width: 24px; line-height: 24px; vertical-align: middle; border-radius: 100%;
 			img { display: inline-block; height: 100%; width: 100%; }
 		}
 		.thumb-over { display: block; position: absolute; top: 50px; left: 50px; opacity: 0; }
@@ -255,7 +277,7 @@
 			}
 		}
 	
-		.chart-container { clear: none; float: left; margin-top: 15px; height: 243px; width: 710px;
+		.chart-container { clear: none; float: left; margin-top: 15px; height: 243px; width: 750px;
 			.list-dashboard-chart {
 				li { float: left; padding-right: 30px; width: 230px; }
 			}
@@ -314,9 +336,9 @@
 
 .all-checked { display: block; position: relative; padding: 0 55px 0 15px; min-height: 40px; font-size: 20px; color: #000; line-height: 40px; border: 3px solid #000;
     @include icon(arrow01, after);
-	&:after { display: block; position: absolute; top: 0; right: 0; bottom: 0; height: 40px; width: 40px; background-color: #0f0; }
+	&:after { display: block; position: absolute; top: 0; right: 0; bottom: 0; height: 40px; width: 40px; }
 
-	> span { display: inline-block; height: 23px; width: 23px; text-indent: -9999px; vertical-align: middle; background-color: #f0f; }
+	> span { display: inline-block; height: 23px; width: 23px; text-indent: -9999px; vertical-align: middle; }
 	&[value="0"] {
 		> span { @include retina-sprite($sc-unchecked-group); }
 	}
@@ -327,7 +349,7 @@
 		> span { @include retina-sprite($sc-pending-group); }
 	}
 
-	.list-select-popup { display: none; position: absolute; left: -3px; z-index: z("default");
+	.list-select-popup { display: block; position: absolute; left: -3px; z-index: z("default");
 		&.open { display: block; transition: 0.3s all 0.1s; }
 		> li { text-align: left; }
 	}
@@ -361,12 +383,12 @@
 
 	&.refresh {
 		@include icon(refresh);
-		&:before { margin-top: -5px; margin-right: 10px; font-size: 16px; }
+		&:before { margin-top: -4px; margin-right: 10px; font-size: 13px; }
 	}
 
 	&.export {
 		@include icon(export);
-		&:before { margin-top: -10px; font-size: 20px; }
+		&:before { margin-top: -10px; font-size: 16px; }
 	}
 }
 
@@ -532,9 +554,9 @@ input[type=submit].btn-normal,
 	@include icon(warning);
 	&:before { display: block; position: absolute; top: 15px; left: 30px; font-size: 23px; color: #fff; }
 
-	.btn-folding { display: block; position: absolute; top: 15px; right: 34px; z-index: z("default"); height: 20px; width: 20px; text-indent: -9999px;
+	.btn-folding { display: block; position: absolute; top: 15px; right: 27px; z-index: z("default"); height: 20px; width: 20px; text-indent: -9999px;
 		@include icon(arrow01, after);
-		&:after { position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 20px; font-size: 15px; color: #fff; line-height: 8px; vertical-align: middle; text-indent: 0; transform: rotateX( 0deg ); transition-duration: 0.3s; background-color: #0f0; }
+		&:after { position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 20px; font-size: 15px; color: #fff; line-height: 8px; vertical-align: middle; text-indent: 0; transform: rotateX( 0deg ); transition-duration: 0.3s; }
 	}
 
 	> .title { display: block; float: left; position: relative; margin-right: 3px; font-size: 16px; font-weight: 700; color: #fff; line-height: 20px; 

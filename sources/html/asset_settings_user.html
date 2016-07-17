@@ -34,13 +34,45 @@
 						<legend>Search</legend>
 
 						<p class="right-content">
-							<button type="button" class="btn-normal">+ INVITE NEW USER</button>
+							<button type="button" id="invite-user" class="btn-normal">+ INVITE NEW USER</button>
 						</p>
 
 						<label for="" class="search">
 							<input type="text" id="" name="" placeholder="Search for a user">
 						</label>
 					</fieldset>
+
+					<!-- invite new user -->
+					<div id="invite-user-content" class="popover create">
+						<span class="point"></span>
+
+						<fieldset>
+							<legend>Invite New User</legend>
+
+							<p>
+								<input type="text" id="" name="" placeholder="Email Address">
+							</p>
+							<input type="submit" value="INVITE" class="btn-normal large">
+						</fieldset>
+					</div>
+					<script>
+					$(document).ready(function(e) {	
+						$('#invite-user').tooltipster({
+							content: $('#invite-user-content').detach(),
+							contentAsHTML: true,
+							contentCloning: false,
+							arrow: false,
+							interactive: true,
+							side: 'bottom',
+							trigger: 'click',
+							functionPosition: function(instance, helper, position) {
+								position.coord.top += 10;
+								return position;
+							}
+						});
+					});
+					</script>
+
 
 					<ul class="list-single-check">
 						<li class="pending">
@@ -145,6 +177,48 @@
 						</li>
 					</ul>
 					<!--// users -->
+
+					<!-- edit user -->
+					<div id="edit-user-content" class="popover edit">
+						<span class="point"></span>
+
+						<ul class="list-menu">
+							<li><button type="button" class="btn-delete-user">Delete User</button></li>
+						</ul>
+					</div>
+
+					<script>
+					$(document).ready(function(e) {	
+						$('.list-single-check .btn-edit').tooltipster({
+							content: $('#edit-user-content').detach(),
+							contentAsHTML: true,
+							contentCloning: false,
+							arrow: false,
+							interactive: true,
+							side: 'bottom',
+							trigger: 'click',
+							functionPosition: function(instance, helper, position) {
+								position.coord.top += 10;
+								return position;
+							},
+							functionBefore: function(instance, helper) {
+								helper.event.stopPropagation();
+							},
+							functionReady: function(instance, helper) {
+								helper.event.stopPropagation();
+
+								var $orign = $(helper.origin);
+								var $btnEdit = $(helper.tooltip).find('.btn-edit-name');
+								var $btnDelete = $(helper.tooltip).find('.btn-delete-group');
+								
+								$btnDelete.off().on('click', function(e) {
+									console.log('delete click');
+									console.log($orign.val());
+								});
+							}
+						});
+					});
+					</script>
 
 
 					<p class="submit-btns">

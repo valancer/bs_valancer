@@ -8,8 +8,8 @@
 			@@if ( service == "asset" ) {<strong class="service asset">ASSET MANAGEMENT</strong>}
 			@@if ( service == "metering" ) {<strong class="service metering">METERING</strong>}
 
-			<button type="button" class="btn-language language_open">ENGLISH</button>
-			<ul id="language" class="list-select-popup small">
+			<button id="language" type="button" class="btn-language">ENGLISH</button>
+			<ul id="language-content" class="list-select-popup small">
 				<li><a href="#english" class="is-selected">ENGLISH</a></li>
 				<li><a href="#korean">한국어</a></li>
 				<li><a href="#chinese">中文</a></li>
@@ -20,12 +20,12 @@
 		<figure class="user">
 			<div class="thumb"><img src="assets/images/company_profile.png" alt=""></div>
 			<figcaption>
-				<button type="button" class="name user-info_open">Jacob Kim</button>
+				<button id="user-info" type="button" class="name">Jacob Kim</button>
 				
-				<button type="button" class="company company_open">NHN Asia Pacific</button>
-				<ul id="company" class="list-select-popup">
-					<li><a href="#NHNKorea" class="is-selected">NHN Korea</a></li>
-					<li><a href="#NHNAsiaPacific">NHN Asia Pacific</a></li>
+				<button id="company" type="button" class="company">NHN Asia Pacific</button>
+				<ul id="company-content" class="list-select-popup">
+					<li><a href="#NHNKorea">NHN Korea</a></li>
+					<li><a href="#NHNAsiaPacific" class="is-selected">NHN Asia Pacific</a></li>
 					<li><a href="#NHNAmerica">NHN America</a></li>
 				</ul>
 			</figcaption>
@@ -38,13 +38,13 @@
 			<a href="#notification" class="btns notifications">
 				<span class="hidden">new</span><em class="badge">2</em> notification
 			</a>
-			<button type="button" class="btns dashboard service-shortcut_open">shortcut service</button>
+			<button id="service-shortcut" type="button" class="btns dashboard">shortcut service</button>
 		</p>
 		<!--// notifications, shortcut -->
 	</div>
 
 	<!-- service shortcut -->
-	<aside id="service-shortcut" class="popover">
+	<aside id="service-shortcut-content" class="popover">
 		<span class="point"></span>
 
 		<nav class="global-shortcuts">
@@ -59,8 +59,8 @@
 	</aside>
 
 	<!-- user info -->
-	<aside id="user-info" class="popover">
-		<span class="point" style="right: 50px; left: auto;"></span>
+	<aside id="user-info-content" class="popover">
+		<span class="point"></span>
 
 		<nav class="global-shortcuts">
 			<ul class="type-list">
@@ -83,7 +83,7 @@
 		<h2>하위 메뉴 바로가기</h2>
 		
 		<button type="button" class="btn-settings">settings</button>
-		<ul class="list-menes">
+		<ul class="list-menus">
 			<li @@if ( sub == "dashboard" ) { class="is-selected" }><a href="#">DASHBOARD</a></li>
 			<li @@if ( sub == "service" ) { class="is-selected" }><a href="#">SERVICE GROUP</a></li>
 			<li @@if ( sub == "usage" ) { class="is-selected" }><a href="#">USAGE</a></li>
@@ -99,11 +99,18 @@
 		<h2>하위 메뉴 바로가기</h2>
 
 		<button type="button" class="btn-settings">settings</button>
-		<ul class="list-menes">
+		<ul class="list-menus">
 			<li @@if ( sub == "dashboard" ) { class="is-selected" }><a href="#">DASHBOARD</a></li>
 			<li @@if ( sub == "billing" ) { class="is-selected" }><a href="#">BILLING</a></li>
 			<li @@if ( sub == "usage" ) { class="is-selected" }><a href="#">COST STATISTICS</a></li>
-			<li @@if ( sub == "budgeting" ) { class="is-selected" }><a href="#">BUDGETING</a></li>
+			<li @@if ( sub == "budgeting" ) { class="is-selected" }>
+				<a href="#">BUDGETING</a>
+				<ul class="list-sub-menus">
+					<li><a href="#">Budget Overview</a></li>
+					<li class="is-selected"><a href="#">Budget Setting</a></li>
+					<li><a href="#">Alarm Setting</a></li>
+				</ul>
+			</li>
 			<li @@if ( sub == "status" ) { class="is-selected" }><a href="#">RI STATUS</a></li>
 		</ul>
 	</div>
@@ -136,34 +143,43 @@ $(document).ready(function(e) {
 		}
 
 		function initEvent() {
-			$selectLanguage.popup({
-				type: 'tooltip',
-				vertical: 'topedge',
-				offsettop: -16,
-				horizontal: 'leftedge',
-				transition: '0.3s all 0.1s'
+			$selectLanguage.tooltipster({
+				content: $('#language-content').detach(),
+				contentAsHTML: true,
+				contentCloning: false,
+				arrow: false,
+				trigger: 'click'
 			});
-			$selectCompany.popup({
-				type: 'tooltip',
-				vertical: 'topedge',
-				offsettop: -12,
-				offsetleft: -12,
-				horizontal: 'leftedge',
-				transition: '0.3s all 0.1s'
+			$selectCompany.tooltipster({
+				content: $('#company-content').detach(),
+				contentCloning: false,
+				arrow: false,
+				trigger: 'click',
+				side: 'bottom'
 			});
-			$service.popup({
-				type: 'tooltip',
-				vertical: 'bottom',
-				offsettop: 50,
-				horizontal: 'center',
-				transition: '0.3s all 0.1s'
+			$service.tooltipster({
+				content: $('#service-shortcut-content').detach(),
+				contentCloning: false,
+				arrow: false,
+				trigger: 'click',
+				side: 'bottom',
+				functionPosition: function(instance, helper, position){
+					position.coord.top += 30;
+					position.coord.left += 0;
+					return position;
+				}
 			});
-			$userInfo.popup({
-				type: 'tooltip',
-				vertical: 'bottom',
-				offsettop: 70,
-				horizontal: 'rightedge',
-				transition: '0.3s all 0.1s'
+			$userInfo.tooltipster({
+				content: $('#user-info-content').detach(),
+				contentCloning: false,
+				arrow: false,
+				trigger: 'click',
+				side: 'bottom',
+				functionPosition: function(instance, helper, position){
+					position.coord.top += 30;
+					position.coord.left += 0;
+					return position;
+				}
 			});
 		}
 

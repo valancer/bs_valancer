@@ -1,11 +1,11 @@
-<button type="button" class="btn-normal">+ CREATE GROUP</button>
+<button type="button" id="create-group" class="btn-normal">+ CREATE GROUP</button>
 <nav class="side-menus is-editable">
 	<ul>
 		<li>
 			<a href="#" class="is-selected">
 				<span>
 					Default Group
-					<button type="button" class="btn-edit">edit</button>
+					<button type="button" value="0" class="btn-edit">edit</button>
 				</span>
 			</a>
 		</li>
@@ -13,17 +13,96 @@
 			<a href="#">
 				<span>
 					Perm. Group 1
-					<button type="button" class="btn-edit">edit</button>
+					<button type="button" value="1" class="btn-edit">edit</button>
 				</span>
 			</a>
+
+			<fieldset id="edit-title" class="edit-mode">
+				<legend>Edit Group</legend>
+
+				<input type="text" id="" name="" value="Perm. Group 1">
+			</fieldset>
 		</li>
 		<li>
 			<a href="#">
 				<span>
 					Perm. Group 2
-					<button type="button" class="btn-edit">edit</button>
+					<button type="button" value="2" class="btn-edit">edit</button>
 				</span>
 			</a>
 		</li>
 	</ul>
 </nav>
+
+<!-- create group -->
+<div id="create-group-content" class="popover create">
+	<span class="point"></span>
+
+	<fieldset>
+		<legend>Create Group</legend>
+
+		<p>
+			<input type="text" id="" name="" placeholder="Enter Group Name">
+		</p>
+		<input type="submit" value="CREATE" class="btn-normal large">
+	</fieldset>
+</div>
+
+
+<!-- edit group -->
+<div id="edit-group-content" class="popover edit">
+	<span class="point"></span>
+
+	<ul class="list-menu">
+		<li><button type="button" class="btn-edit-name">Edit Name</button></li>
+		<li><button type="button" class="btn-delete-group">Delete Group</button></li>
+	</ul>
+</div>
+
+
+<script>
+$(document).ready(function(e) {	
+	$('#create-group').tooltipster({
+		content: $('#create-group-content').detach(),
+		contentAsHTML: true,
+		contentCloning: false,
+		arrow: false,
+		interactive: true,
+		side: 'bottom',
+		trigger: 'click',
+		functionPosition: function(instance, helper, position) {
+			position.coord.top += 10;
+			return position;
+		}
+	});
+
+	$('.side-menus.is-editable .btn-edit').tooltipster({
+		content: $('#edit-group-content').detach(),
+		contentAsHTML: true,
+		contentCloning: false,
+		arrow: false,
+		interactive: true,
+		side: 'bottom',
+		trigger: 'click',
+		functionPosition: function(instance, helper, position) {
+			position.coord.top += 10;
+			return position;
+		},
+		functionReady: function(instance, helper) {
+			var $orign = $(helper.origin);
+			var $btnEdit = $(helper.tooltip).find('.btn-edit-name');
+			var $btnDelete = $(helper.tooltip).find('.btn-delete-group');
+
+			$btnEdit.off().on('click', function(e) {
+				console.log('edit click');
+				console.log($orign.val());
+			});
+			
+			$btnDelete.off().on('click', function(e) {
+				console.log('delete click');
+				console.log($orign.val());
+			});
+		}
+	});
+});
+</script>

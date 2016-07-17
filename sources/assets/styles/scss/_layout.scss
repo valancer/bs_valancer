@@ -24,7 +24,7 @@
 
 		// asset, metering
 		.service { display: block; position: absolute; top: 50%; left: 75px; z-index: z("default"); margin-top: -32px; padding-right: 20px; font-size: 20px; font-weight: 700; color: #000; line-height: 64px; background-color: #fff;
-			&:before { display: inline-block; height: 25px; width: 28px; margin-top: -3px; margin-right: 15px; font-size: 27px; vertical-align: middle; line-height: 25px; text-align: center; }
+			&:before { display: inline-block; height: 35px; width: 35px; margin-top: -3px; margin-right: 15px; font-size: 24px; color: #fff; vertical-align: middle; line-height: 35px; text-align: center; background-color: #000; }
 
 			// asset
 			&.asset { 
@@ -75,7 +75,7 @@
 	h2 { display: none; }
 	.btn-settings { display: block; position: absolute; top: 50%; right: 30px; margin-top: -10px; }
 
-	.list-menes { display: block; box-sizing: border-box; overflow: hidden; padding-left: 20px; height: 100%; width: 100%;
+	.list-menus { display: block; box-sizing: border-box; padding-left: 20px; height: 100%; width: 100%;
 		> li { float: left; padding: 0 15px;
 			a { display: block; font-size: 15px; font-weight: 700; color: rgba(156, 156, 156, 0.7); line-height: 1em; letter-spacing: 0.1em; line-height: 59px;
 				&:hover { color: #000; }
@@ -87,6 +87,30 @@
 
 			&.is-selected {
 				a { color: #000; }
+				.list-sub-menus { display: block; }
+			}
+			&:hover {
+				.list-sub-menus { display: block; }
+			}
+
+			// sub menus
+			.list-sub-menus { display: none; position: absolute; top: 100%; right: -23px; left: 0px; z-index: z("default"); padding: 15px 0; background-color: #DADADA;
+				@include icon(arrow02, after);
+				&:after { display: block; position: absolute; top: 0; left: 50%; margin-top: -15px; margin-left: -15px; height: 30px; width: 30px; font-size: 23px; color: #F6F6F6; text-align: center; line-height: 30px; }
+
+				> li { position: relative; overflow: hidden; padding: 0 20px;
+					&:before { content: ''; display: none; position: absolute; top: 50%; right: 20px; left: 20px; z-index: z("default") - 1; margin-top: -1px; height: 2px; background-color: #000; }
+
+					a { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 14px; color: rgba(155, 155, 155, 0.5); line-height: 25px; letter-spacing: -0.01em; white-space: nowrap; background-color: #DADADA;
+						&:hover { color: #000; }
+					}
+
+					&.is-selected {
+						&:before { display: block; }
+
+						a { color: #000; }
+					}
+				}
 			}
 		}
 	}
@@ -95,8 +119,11 @@
 
 // side menu
 .side-menus { margin-top: 19px;
-	li {
+	li { position: relative;
 		.btn-edit { display: none; margin-left: 5px; }
+		.edit-mode { display: block; position: absolute; top: 0; right: 0; left: 0; z-index: z("default");
+			input[type=text] { box-sizing: border-box; padding-left: 14px; height: 45px; width: 100%; font-size: 21px; font-weight: 500; color: #000; border: 2px solid #000; background-color: #F6F6F6; }
+		}
 
 		a { display: block; position: relative; font-size: 21px; font-weight: 500; color: #AFAFAF; line-height: 45px;
 			&:before { content: ''; display: none; position: absolute; top: 50%; right: 0px; left: 0px; height: 2px; background-color: #000; }

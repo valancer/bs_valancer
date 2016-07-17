@@ -16,7 +16,7 @@
 }
 
 
-.grid-detail { display: block; box-sizing: border-box; position: absolute; top: 46px; right: -100%; bottom: 0; z-index: z("modaless"); padding: 23px 30px; width: 300px; color: #fff; background-color: #3E3E3E;
+.grid-detail { display: block; box-sizing: border-box; position: absolute; top: 0px; right: -100%; bottom: 0; z-index: z("modaless"); padding: 23px 30px; width: 300px; color: #fff; background-color: #3E3E3E;
 	transition: right 1s;
 
 	.btn-close { position: absolute; top: 23px; right: 23px; color: #fff; }
@@ -36,7 +36,7 @@
 
 // popover
 .popover.export {
-	.point { right: 10px; left: auto; }
+	.point { }
 
 	ul { display: block; width: 95px;
 		> li { text-align: center; border-top: 2px solid #343434;

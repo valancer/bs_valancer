@@ -4,10 +4,10 @@
 
 	<p class="right-content">
 		<button type="button" class="btn-text refresh">1 min ago</button>
-		<button type="button" class="btn-text export export_open">Export</button>
+		<button type="button" id="export" class="btn-text export">Export</button>
 	</p>
 
-	<div id="export" class="popover small export">
+	<div id="export-content" class="popover small export">
 		<span class="point"></span>
 
 		<ul>
@@ -21,86 +21,92 @@
 	</label>
 	<script>
 		$(document).ready(function(e) {
-			$('#export').popup({
-				type: 'tooltip',
-				vertical: 'bottom',
-				horizontal: 'rightedge',
-				offsettop: 10,
-				transition: '0.3s all 0.1s'
+			$('#export').tooltipster({
+				content: $('#export-content').detach(),
+				contentAsHTML: true,
+				contentCloning: false,
+				arrow: false,
+				side: 'bottom',
+				trigger: 'click',
+				functionPosition: function(instance, helper, position){
+					position.coord.top += 10;
+					return position;
+				}
 			});
 		});
 	</script>
 </fieldset>
 
-<div id="myGrid" class="ag-bespin-global"></div>
 
 
-<aside id="grid-detail" class="grid-detail">
-	<button type="button" data-target="#grid-detail" class="btn-close">popup close</button>
+<div id="myGrid" class="ag-bespin-global" style="position: relative; height: 500px;">
+	<aside id="grid-detail" class="grid-detail">
+		<button type="button" data-target="#grid-detail" class="btn-close">popup close</button>
 
-	<h2 class="title">asdftp-asd32</h2>
-	<dl>
-		<dt>COLUMN TITLE01</dt>
-		<dd>column value</dd>
+		<h2 class="title">asdftp-asd32</h2>
+		<dl>
+			<dt>COLUMN TITLE01</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE02</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE02</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE03</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE03</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE04</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE04</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE05</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE05</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE03</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE03</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE04</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE04</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE05</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE05</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE03</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE03</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE04</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE04</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE05</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE05</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE03</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE03</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE04</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE04</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE05</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE05</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE03</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE03</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE04</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE04</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE05</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE05</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE03</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE03</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE04</dt>
-		<dd>column value</dd>
+			<dt>COLUMN TITLE04</dt>
+			<dd>column value</dd>
 
-		<dt>COLUMN TITLE05</dt>
-		<dd>column value</dd>
-	</dl>
-</aside>
+			<dt>COLUMN TITLE05</dt>
+			<dd>column value</dd>
+		</dl>
+	</aside>
+</div>
 
 <script>
 var columnDefs = [

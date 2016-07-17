@@ -68,51 +68,51 @@
 					});
 
 					// info servers
-					$sgContainer.find('.btn-txt-info.servers').on('click', function(e) {
-						e.preventDefault();
-
-						$($(this).val()).popup({
-							type: 'tooltip',
-							tooltipanchor: e.target,
-							vertical: 'top',
-							offsettop: -5,
-							horizontal: 'leftedge',
-							transition: '0.3s all 0.1s',
-							autoopen: true
-						});
+					$sgContainer.find('.btn-txt-info.servers').tooltipster({
+						contentCloning: false,
+						arrow: false,
+						side: 'left',
+    					functionInit: function(instance, helper) {
+							var content = $(helper.origin).find('~ .popover.service-group.servers').detach();
+							instance.content(content);
+						},
+						functionPosition: function(instance, helper, position){
+							position.coord.top += 20;
+							return position;
+						}
 					});
 
 
 					// info database
-					$sgContainer.find('.btn-txt-info.database').on('click', function(e) {
-						e.preventDefault();
-
-						$($(this).val()).popup({
-							type: 'tooltip',
-							tooltipanchor: e.target,
-							vertical: 'top',
-							offsettop: -5,
-							horizontal: 'leftedge',
-							transition: '0.3s all 0.1s',
-							autoopen: true
-						});
+					$sgContainer.find('.btn-txt-info.database').tooltipster({
+						contentCloning: false,
+						arrow: false,
+						side: 'left',
+						functionInit: function(instance, helper) {
+							var content = $(helper.origin).find('~ .popover.service-group.database').detach();
+							instance.content(content);
+						},
+						functionPosition: function(instance, helper, position){
+							position.coord.top += 20;
+							return position;
+						}
 					});
 
 					// warning
-					$sgContainer.find('.btn-warning').on('click', function(e) {
-						e.preventDefault();
-
-						$($(this).val()).popup({
-							type: 'tooltip',
-							tooltipanchor: e.target,
-							vertical: 'top',
-							horizontal: 'left',
-							offsetleft: -340,
-							transition: '0.3s all 0.1s',
-							autoopen: true
-						});
+					$sgContainer.find('.btn-warning').tooltipster({
+						contentCloning: false,
+						arrow: false,
+						side: 'left',
+						distance: 250,
+						functionInit: function(instance, helper) {
+							var content = $(helper.origin).find('~ .popover.service-group.warning').detach();
+							instance.content(content);
+						},
+						functionPosition: function(instance, helper, position){
+							position.coord.top += 20;
+							return position;
+						}
 					});
-
 				});
 				</script>
 
