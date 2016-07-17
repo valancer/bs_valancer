@@ -2,18 +2,18 @@
 	"lang": "en",
 	"title": "Bespin Global"
 })
-<body class="portal">
+<body class="asset">
 
 	<!-- 상단 영역 -->
-	@@include('./header.html', {"service": "portal", "sub": ""})
+	@@include('./header.html', {"service": "asset", "sub": ""})
 
 
 	<!-- 본문 영역 -->
 	<main>
 		<article class="contents">
-			<h1 class="title"><div class="inner">Manage Permissions</div></h1>
-
 			<div class="contents-inner">
+				<h1 class="is-hidden">Permission Settings</h1>
+
 				<div class="column-left">
 					@@include('./inc_portal_sidemenu_permission.html')
 				</div>
@@ -31,7 +31,7 @@
 					<!--// accordion container -->
 					<dl class="accordion">
 						<dt>
-							<span class="title">Bespin Portal</span>
+							<span class="title">SERVICE GROUP</span>
 
 							<p class="right">
 								<button type="button" class="btn-folding">open/close</button>
@@ -59,7 +59,7 @@
 									</thead>
 									<tbody>
 										<tr>
-											<th>Dashboard</th>
+											<th>Permission 1</th>
 											<td>
 												<label for="dashboard01" class="icheck">
 													<input type="radio" id="dashboard01" name="dashboard" value="0" class="iradio">
@@ -80,7 +80,7 @@
 											</td>
 										</tr>
 										<tr>
-											<th>Bill</th>
+											<th>Permission 2</th>
 											<td>
 												<label for="bill01" class="icheck">
 													<input type="radio" id="bill01" name="bill" value="0" class="iradio">
@@ -100,8 +100,41 @@
 												</label>
 											</td>
 										</tr>
+									</tbody>
+								</table>
+							</fieldset>
+						</dd>
+
+						<dt>
+							<span class="title">USAGE</span>
+
+							<p class="right">
+								<button type="button" class="btn-folding">open/close</button>
+							</p>
+						</dt>
+						<dd>
+							<fieldset class="content">
+								<legend>set permissions</legend>
+
+								<table class="permission">
+									<caption></caption>
+									<colgroup>
+										<col style="width: 61%;">
+										<col style="width: 13%;">
+										<col style="width: 13%;">
+										<col style="width: 13%;">
+									</colgroup>
+									<thead>
 										<tr>
-											<th>Budget</th>
+											<th></th>
+											<th>ALL</th>
+											<th>EDIT</th>
+											<th>VIEW</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>Permission 1</th>
 											<td>
 												<label for="budget01" class="icheck">
 													<input type="radio" id="budget01" name="budget" value="0" class="iradio">
@@ -122,7 +155,7 @@
 											</td>
 										</tr>
 										<tr>
-											<th>Cost Analysis</th>
+											<th>Permission 2</th>
 											<td>
 												<label for="analysis01" class="icheck">
 													<input type="radio" id="analysis01" name="analysis" value="0" class="iradio">
@@ -142,77 +175,8 @@
 												</label>
 											</td>
 										</tr>
-										<tr>
-											<th>Settings</th>
-											<td>
-												<label for="settings01" class="icheck">
-													<input type="radio" id="settings01" name="settings" value="0" class="iradio">
-													<span class="is-hidden">All</span>
-												</label>
-											</td>
-											<td>
-												<label for="settings02" class="icheck">
-													<input type="radio" id="settings02" name="settings" value="1" class="iradio">
-													<span class="is-hidden">Edit</span>
-												</label>
-											</td>
-											<td>
-												<label for="settings03" class="icheck">
-													<input type="radio" id="settings03" name="settings" value="2" class="iradio">
-													<span class="is-hidden">View</span>
-												</label>
-											</td>
-										</tr>
 									</tbody>
 								</table>
-							</fieldset>
-						</dd>
-
-						<dt>
-							<span class="title"><label for="metering">Metering</label></span>
-
-							<p class="right">
-								<label for="metering" class="icheck">
-									<input type="checkbox" id="metering" name="settings" value="2" class="icheckbox">
-									<span class="is-hidden">View</span>
-								</label>
-							</p>
-						</dt>
-						<dd>
-							<fieldset class="content">
-								<legend>set permissions</legend>
-							</fieldset>
-						</dd>
-
-						<dt>
-							<span class="title"><label for="asset">Asset Management</label></span>
-
-							<p class="right">
-								<label for="asset" class="icheck">
-									<input type="checkbox" id="asset" name="settings" value="2" class="icheckbox">
-									<span class="is-hidden">View</span>
-								</label>
-							</p>
-						</dt>
-						<dd>
-							<fieldset class="content">
-								<legend>set permissions</legend>
-							</fieldset>
-						</dd>
-
-						<dt>
-							<span class="title"><label for="monitoring">Monitoring</label></span>
-
-							<p class="right">
-								<label for="monitoring" class="icheck">
-									<input type="checkbox" id="monitoring" name="settings" value="2" class="icheckbox">
-									<span class="is-hidden">View</span>
-								</label>
-							</p>
-						</dt>
-						<dd>
-							<fieldset class="content">
-								<legend>set permissions</legend>
 							</fieldset>
 						</dd>
 					</dl>

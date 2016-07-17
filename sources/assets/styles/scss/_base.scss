@@ -39,3 +39,5 @@ a:hover { text-decoration: none; }
 /* forms */
 fieldset { appearance: none; }
 input[type=submit] { appearance: none; cursor: pointer; border: 0px; }
+
+button:focus {outline:0;}

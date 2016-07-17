@@ -8,10 +8,10 @@
  * variable
  */
 $font-base-stack: 'Noyh', 'Nanum Gothic', 'Malgun Gothic', Gulim, Dotum, sans-serif;
-$contents-width: 1440px;
-$column-left-width: 310px;
-$column-right-width: 1010px;
-$column-padding: 40px;
+$contents-width: 1080px;
+$column-left-width: 230px;
+$column-right-width: 760px;
+$column-padding: 30px;
 
 
 /**
@@ -35,11 +35,6 @@ body { background-color: #fff; }
 @import "sprites_portal";
 @import "sprites_asset";
 @import "sprites_metering";
-
-@import "slick";
-@import "selectric";
-@import "aggrid-theme-bg";
-@import "daterangepicker_custom";
 
 
 /**
@@ -74,6 +69,12 @@ $z-layers: (
 /**
  * import
  */
+@import "slick";
+@import "selectric";
+@import "aggrid-theme-bg";
+@import "daterangepicker_custom";
+
+
 @import "layout";
 @import "components";
 @import "portal";
