@@ -1,0 +1,151 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<div class="contents-inner">
+
+				<a href="#" class="btn-step01">account setup User - step1</a><br>
+				<a href="#" class="btn-step02">account setup User - step2</a><br>
+
+
+				<!-- Account Setup Company - Step 1 -->
+				<aside id="setup-company01" class="modal-popup mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
+
+					<h2 class="title">Hello Jacob! To join as a user of Nexon<br>Bespin helps you adopt and Try it Now on Bespin create an account below.</h2>
+
+					<div class="content">
+						
+						<div class="box-item">
+							<h2 class="title">BASIC INFO</h2>
+
+							<fieldset class="forms">
+								<legend>BASIC INFO</legend>
+
+								<p>
+									<input type="text" id="" name="" placeholder="Email">
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Enter Name">
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Name of Department">
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Enter Mobile Number">
+									<button type="button" class="btn-normal small">Send Code</button>
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Enter Code">
+									<button type="button" class="btn-normal small">Confirm</button>
+								</p>
+								<p>
+									<input type="password" id="" name="" placeholder="Enter Password">
+								</p>
+								<p>
+									<input type="password" id="" name="" placeholder="Confirm Password">
+								</p>
+							</fieldset>
+						</div>
+					</div>
+
+					<div class="bottom">
+						<button type="button" class="btn-normal large">NEXT</button>
+						<span class="step">step 1/2</span>					
+					</div>
+				</aside>
+				<!--// Account Setup Company - Step 1 -->
+
+
+				<!-- Account Setup Company - Step 2 -->
+				<aside id="setup-company02" class="modal-popup mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
+
+					<h2 class="title">Terms of Service</h2>
+
+					<div class="content">
+						
+						<fieldset class="forms terms-of-service">
+							<legend>Terms of Service</legend>
+
+							<label for="agreement01" class="icheck">
+								<input type="checkbox" id="agreement01" name="agreement" class="icheckbox" checked>
+								이용약관 동의
+							</label>
+
+							<div class="agreement">
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+							</div>
+							
+							<label for="agreement01" class="icheck">
+								<input type="checkbox" id="agreement01" name="agreement" class="icheckbox" checked>
+								개인정보 수집 및 이용 동의
+							</label>
+
+							<div class="agreement">
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+								약관 내용 약관 내용 약관 내용 약관 내용<br>
+							</div>
+						</fieldset>
+
+					</div>
+
+					<div class="bottom">
+						<button type="button" class="btn-normal large">DONE</button>
+						<span class="step">step 2/2</span>					
+					</div>
+				</aside>
+				<!--// Account Setup Company - Step 2 -->
+
+				<script>
+				$(document).ready(function(e) {	
+					$('.btn-step01').magnificPopup({
+						items: {
+							src: '#setup-company01'
+						}
+					});
+
+					$('.btn-step02').magnificPopup({
+						items: {
+							src: '#setup-company02'
+						}
+					});
+				});
+				</script>
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

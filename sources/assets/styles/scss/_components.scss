@@ -1,13 +1,18 @@
 /**
 	modal popup
 **/
-.popup_wrapper,
-.popup_background { transition: all 0.3s; }
-.modal-popup { display: none; position: relative; box-sizing: border-box; padding: 40px 50px; width: 1074px; transition: 0.3s all; background-color: #fff;
-	.btn-close { position: absolute; top: 40px; right: 50px; }
+.modal-popup { display: block; position: relative; box-sizing: border-box; margin: 0 auto; padding: 30px 38px; width: 800px; transition: 0.3s all; background-color: #fff;
+	.btn-close { position: absolute; top: 30px; right: 38px; }
 
-	.title { font-size: 48px; font-weight: 500; color: #000; }
+	.title { font-size: 36px; font-weight: 500; color: #000; }
+	.content { padding-right: 50%;
+		.box-item { margin-top: 20px; }
+	}
+	.bottom { margin-top: 25px;
+		.step { display: block; position: absolute; bottom: 30px; right: 30px; font-size: 17px; font-weight: 500; color: rgba(0, 0, 0, 0.43); line-height: 48px; }
+	}
 }
+
 
 
 /**
@@ -244,6 +249,7 @@
 // box-item
 .box-item { display: block; position: relative;
 	&:before { content: ''; display: block; position: absolute; top: 11px; right: 0; left: 0; height: 2px; background-color: #000; }
+	&:after { content: ''; display: block; clear: both; }
 
 	> .title { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 14px; font-weight: 700; color: #000; line-height: 24px; background-color: #fff;
 		.thumb { display: inline-block; cursor: pointer; overflow: hidden; margin-right: 5px; height: 24px; width: 24px; line-height: 24px; vertical-align: middle; border-radius: 100%;
@@ -416,6 +422,7 @@ input[type=submit].btn-normal,
 	&[disabled] { color: #cecece; border-color: #CECECE;
 		&:hover { color: #cecece; background-color: inherit; }
 	}
+	&.small { padding: 0 15px; min-width: auto; }
 }
 
 // bookmark
@@ -668,7 +675,7 @@ input[type=submit].btn-normal,
 	}
 
 	.icheck { display: block; margin-top: 10px; }
-	.invalid-message { display: block; box-sizing: border-box; position: relative; margin: 14px 0 14px; padding: 8px 0 0 40px; height: 54px; font-size: 15px; font-weight: 500; color: #fff; background-color: #E74E0F; 
+	.invalid-message { display: block; visibility: hidden; box-sizing: border-box; position: relative; margin: 14px 0 14px; padding: 8px 0 0 40px; height: 54px; font-size: 15px; font-weight: 500; color: #fff; background-color: #E74E0F; 
 		@include icon(warning);
 		&:before { display: block; position: absolute; top: 50%; left: 14px; margin-top: -9px; height: 15px; width: 19px; font-size: 15px; color: #fff; line-height: 15px; text-align: center; }
 	}
@@ -683,6 +690,34 @@ input[type=submit].btn-normal,
 	}
 }
 
+
+
+/**
+	setup forms
+**/
+.forms { display: block; clear: both;
+	p { margin-top: 10px; }
+	input[type=text],
+	input[type=password] { display: block; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; background-color: #F6F6F6;
+		&:focus { border: 1px solid #000; }
+	}
+
+	select { appearance: none; display: block; position: relative; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; background: #F6F6F6 url('/assets/images/select_arrow01.png') center right no-repeat;
+		
+		&:invalid { color: #999; }
+		option[value=""][disabled] {
+			display: none;
+		}
+		option { color: #000; }
+	}
+
+	&.terms-of-service {
+		label { display: block; margin-top: 20px; }
+		.agreement { display: block; clear: both; overflow: scroll; margin-top: 10px; padding: 15px; height: 200px; font-size: 14px; font-weight: 500; color: #000; line-height: 1.3em; background-color: #F6F6F6;
+
+		}
+	}
+}
 
 
 

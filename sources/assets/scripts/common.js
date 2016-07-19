@@ -29,7 +29,7 @@ $(document).ready(function(e) {
 	$('input.iradio').iCheck();
 
 	// select
-	$('select').selectric({});
+	$('select.selectric').selectric({});
 });
 
 

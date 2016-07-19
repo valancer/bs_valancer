@@ -23,7 +23,7 @@
 
 	.title { font-size: 24px; font-weight: 500; }
 
-	dl { display: block; box-sizing: border-box; overflow: auto; position: absolute; top: 100px; right: 0; bottom: 0; left: 0; height: 100%;
+	dl { display: block; box-sizing: border-box; overflow: auto; position: absolute; top: 100px; right: 0; bottom: 0; left: 0; height: auto;
 		dt { padding: 15px 40px 12px; font-size: 12px; font-weight: 700; background-color: #4E4E4E; }
 		dd { padding: 15px 40px 12px; font-size: 14px; font-weight: 500; }
 	}

@@ -46,11 +46,88 @@
 					</fieldset>
 
 					<ul class="utils">
-						<li><a href="#">Forgot email?</a></li>
-						<li><a href="#">Forgot password?</a></li>
-						<li><a href="#">Create an account</a></li>
+						<li><a href="#" class="btn-forgot-email">Forgot email?</a></li>
+						<li><a href="#" class="btn-forgot-password">Forgot password?</a></li>
+						<li><a href="#" class="btn-">Create an account</a></li>
 					</ul>
 				</aside>				
+
+
+				<!-- Forgot ID -->
+				<aside id="forgot-email" class="modal-popup mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
+
+					<h2 class="title">Forgot Email</h2>
+
+					<div class="content">
+
+						<fieldset class="forms">
+							<legend>Forgot email</legend>
+
+							<p>
+								<input type="text" id="" name="" placeholder="Mobile Number">
+							</p>
+							<p>
+								<input type="text" id="" name="" placeholder="Full Name">
+							</p>
+						</fieldset>
+
+					</div>
+
+					<div class="bottom">
+						<button type="button" class="btn-normal large">DONE</button>
+					</div>
+				</aside>
+				<!--// Forgot ID -->
+
+
+				<!-- Forgot Password -->
+				<aside id="forgot-password" class="modal-popup mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
+
+					<h2 class="title">Forgot Password</h2>
+
+					<div class="content">
+						<p>Enter your username/email and we will send you a link with a new password.</p>
+
+						<fieldset class="forms">
+							<legend>Forgot Password</legend>
+
+							<p>
+								<input type="text" id="" name="" placeholder="Email Address">
+							</p>
+							<p>
+								<input type="text" id="" name="" placeholder="Mobile Number">
+							</p>
+							<p>
+								<input type="text" id="" name="" placeholder="Full Name">
+							</p>
+						</fieldset>
+
+					</div>
+
+					<div class="bottom">
+						<button type="button" class="btn-normal large">DONE</button>
+					</div>
+				</aside>
+				<!--// Forgot Password -->
+
+
+				<script>
+				$(document).ready(function(e) {	
+					$('.btn-forgot-email').magnificPopup({
+						items: {
+							src: '#forgot-email'
+						}
+					});
+
+					$('.btn-forgot-password').magnificPopup({
+						items: {
+							src: '#forgot-password'
+						}
+					});
+				});
+				</script>
 
 			</div>
 		</article>

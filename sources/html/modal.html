@@ -13,10 +13,10 @@
 		<article class="contents">
 			<div class="contents-inner">
 
-				<a href="#" class="test_open">open modal popup</a>
+				<a href="#" class="test">open modal popup</a>
 
-				<aside id="test" class="modal-popup">
-					<button type="button" class="btn-close test_close">popup close</button>
+				<aside id="test" class="modal-popup mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
 
 					<h2 class="title">Setup Account</h2>
 
@@ -29,7 +29,10 @@
 				</aside>
 				<script>
 				$(document).ready(function(e) {	
-					$('#test').popup({
+					$('.test').magnificPopup({
+						items: {
+							src: '#test'
+						}
 					});
 				});
 				</script>
