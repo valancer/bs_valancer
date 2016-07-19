@@ -1,0 +1,140 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="metering dashboard">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "metering", "sub": "dashboard"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="is-hidden">METERING DASHBOARD</h1>
+
+			<!-- dashboard summary -->
+			<header class="summary">
+				<div class="contents-inner">
+
+					<ul class="status">
+						<li>
+							<h2 class="title">PREVIOUS MONTH TOTAL</h2>
+							<p class="cost">
+								<strong>$000,000.00</strong>
+							</p>
+
+							<a href="#" class="btn-goto">GO TO BILLING</a>
+						</li>
+						<li>
+							<h2 class="title">CURRENT COST TOTAL</h2>
+							<p class="cost">
+								<strong>$62.00</strong>
+
+								<span class="growth big up">00.0% <span class="txt">up</span></span>
+							</p>
+
+							<time datetime="" class="remain">15 days Remaning</time>
+						</li>
+						<li>
+							<h2 class="title">CURRENT MONTH PROJECTORY</h2>
+							<p class="cost">
+								<strong>$000,000.00</strong>
+								<span class="growth big down">00.0% <span class="txt">down</span></span>
+							</p>
+						</li>
+					</ul>
+
+
+					<ul class="page-sub-tabs">
+						<li><a href="#" class="is-selected">MONTHLY</a></li>
+						<li><a href="#">DAILY</a></li>
+					</ul>
+
+					<div class="chart-container">
+						
+					</div>
+
+				</div>
+			</header>
+			<!--// dashboard summary -->
+
+
+			<div class="contents-inner">
+				
+				<ul class="list-column-complex">
+					<li>
+						
+						<section class="box-item">
+							<h2 class="title">CURRENT COST BY SERVICE GROUP</h2>
+							<a href="#" class="btn-detail">detail</a>
+							
+							<div class="content">
+								
+								<div class="column">
+									<strong class="unit"><em>$00,000.00</em>ALL COMPUTING</strong>
+									
+									<table>
+										<caption></caption>
+										<thead>
+											<tr>
+												<th>SERVICE GROUP NAME</th>
+												<th>MTD</th>
+												<th>VARIANCE</th>
+												<th>RUNTIME</th>
+												<th>UNIT PRICE</th>
+												<th>INSTANCE</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Maple story 2</td>
+												<td>$00,000.00</td>
+												<td>
+													<span class="">
+														00.0%
+													</span>
+												</td>
+												<td>1023 hrs</td>
+												<td>$00.000</td>
+												<td>0000 ea</td>
+											</tr>
+											<tr>
+												<td>Maple story 2</td>
+												<td>$00,000.00</td>
+												<td>
+													<span class="">
+														00.0%
+													</span>
+												</td>
+												<td>1023 hrs</td>
+												<td>$00.000</td>
+												<td>0000 ea</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+
+								
+								<div class="column">
+									<strong class="unit"><em>$00,000.00</em>SHARED</strong>
+									
+									
+								</div>
+							</div>
+						</section>
+					</li>
+				</ul>
+				
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

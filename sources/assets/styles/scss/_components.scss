@@ -155,7 +155,7 @@
 // page sub tabs
 .page-sub-tabs { text-align: center;
 	> li { display: inline-block;
-		a { font-size: 14px; font-weight: 700; color: #A3A3A3;
+		a { font-size: 16px; font-weight: 700; color: #A3A3A3;
 			&:hover,
 			&.is-selected { color: #000; }
 		}
@@ -251,16 +251,21 @@
 	&:before { content: ''; display: block; position: absolute; top: 11px; right: 0; left: 0; height: 2px; background-color: #000; }
 	&:after { content: ''; display: block; clear: both; }
 
-	> .title { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 14px; font-weight: 700; color: #000; line-height: 24px; background-color: #fff;
+	> .title { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 16px; font-weight: 700; color: #000; line-height: 24px; background-color: #fff;
 		.thumb { display: inline-block; cursor: pointer; overflow: hidden; margin-right: 5px; height: 24px; width: 24px; line-height: 24px; vertical-align: middle; border-radius: 100%;
 			img { display: inline-block; height: 100%; width: 100%; }
 		}
 		.thumb-over { display: block; position: absolute; top: 50px; left: 50px; opacity: 0; }
 	}
-	> .content { display: block; clear: both; }
+	> .content { display: block; clear: both;
+		.column { float: left; }
+	}
 
 	.btn-bookmark { position: absolute; top: 13px; right: -1px; }
 	.btn-warning { position: absolute; top: 33px; right: 33px; }
+	.btn-detail { position: absolute; top: 11px; right: 0px; }
+
+
 
 
 	// portal/asset dashboard
@@ -455,6 +460,11 @@ input[type=submit].btn-normal,
 	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 15px; text-indent: 0px; line-height: 19px; vertical-align: middle; }
 }
 
+// detail
+.btn-detail { display: block; position: relative; height: 33px; width: 33px; text-indent: -9999px; border: 2px solid #000;
+	@include icon(arrow04);
+	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 23px; color: #000; text-align: center; text-indent: 0px; line-height: 33px; }
+}
 
 
 

@@ -146,7 +146,7 @@ button:focus {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, body.asset .chart-container .slick-arrow:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, body.asset .chart-container .slick-arrow:before, body.metering .growth:after, body.metering.dashboard .summary .status > li .btn-goto:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -165,62 +165,68 @@ button:focus {
 .icon-arrow03:before {
   content: ""; }
 
-.icon-asset:before {
+.icon-arrow04:before {
   content: ""; }
 
-.icon-calendar:before {
+.icon-asset:before {
   content: ""; }
 
-.icon-close:before {
+.icon-calendar:before {
   content: ""; }
 
-.icon-dashboard:before {
+.icon-close:before {
   content: ""; }
 
-.icon-edit:before {
+.icon-dashboard:before {
   content: ""; }
 
-.icon-export:before {
+.icon-edit:before {
   content: ""; }
 
-.icon-eyes:before {
+.icon-export:before {
   content: ""; }
 
-.icon-filter:before {
+.icon-eyes:before {
   content: ""; }
 
-.icon-grid:before {
+.icon-filter:before {
   content: ""; }
 
-.icon-info:before {
+.icon-grid:before {
   content: ""; }
 
-.icon-metering:before {
+.icon-growth:before {
   content: ""; }
 
-.icon-monitoring:before {
+.icon-info:before {
   content: ""; }
 
-.icon-noticifation:before {
+.icon-metering:before {
   content: ""; }
 
-.icon-refresh:before {
+.icon-monitoring:before {
   content: ""; }
 
-.icon-reset:before {
+.icon-noticifation:before {
   content: ""; }
 
-.icon-search:before {
+.icon-refresh:before {
   content: ""; }
 
-.icon-settings:before {
+.icon-reset:before {
   content: ""; }
 
-.icon-warning:before {
+.icon-search:before {
   content: ""; }
 
-.icon-workflow:before {
+.icon-settings:before {
   content: ""; }
+
+.icon-warning:before {
+  content: ""; }
+
+.icon-workflow:before {
+  content: ""; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -684,7 +690,7 @@ The `sprites` mixin generates identical output to the CSS template
   .aggrid-uitls .search {
     display: block; }
     .aggrid-uitls .search:before {
-      content: ""; }
+      content: ""; }
     .aggrid-uitls .search:before {
       display: inline-block;
       margin-right: 8px;
@@ -1664,9 +1670,9 @@ corresponds to the arrow we want to display */
         text-align: center;
         background-color: #000; }
       .global-menu .title .service.asset:before {
-        content: ""; }
+        content: ""; }
       .global-menu .title .service.metering:before {
-        content: ""; }
+        content: ""; }
   .global-menu .uilts {
     position: relative;
     float: right;
@@ -1682,7 +1688,7 @@ corresponds to the arrow we want to display */
       .global-menu .uilts .btns.notifications {
         position: relative; }
         .global-menu .uilts .btns.notifications:before {
-          content: ""; }
+          content: ""; }
         .global-menu .uilts .btns.notifications:before {
           display: block;
           color: #000;
@@ -1707,7 +1713,7 @@ corresponds to the arrow we want to display */
           border-radius: 14px;
           background-color: #f34122; }
       .global-menu .uilts .btns.dashboard:before {
-        content: ""; }
+        content: ""; }
       .global-menu .uilts .btns.dashboard:before {
         display: block;
         color: #000;
@@ -2046,6 +2052,21 @@ article.contents .column-right {
     font-weight: 500;
     color: #999; }
 
+article.contents .list-column-complex {
+  overflow: hidden; }
+  article.contents .list-column-complex > li {
+    display: block;
+    clear: both;
+    box-sizing: border-box;
+    padding: 0 0 0 0; }
+    article.contents .list-column-complex > li.column-03 {
+      float: left;
+      width: 33%; }
+      article.contents .list-column-complex > li.column-03:nth-child(3n+2) {
+        width: 34%; }
+      article.contents .list-column-complex > li.column-03:nth-child(3n+1) {
+        padding-left: 0; }
+
 article.contents .list-column-01 {
   overflow: hidden;
   padding: 30px; }
@@ -2260,27 +2281,27 @@ article.contents .submit-btns {
         vertical-align: middle;
         border: 4px solid #fff; }
       .global-shortcuts .type-thumbnail > li a.dashboard:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.dashboard:before {
         font-size: 41px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
         font-size: 44px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.asset:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.asset:before {
         font-size: 33px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
         font-size: 41px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
         font-size: 41px;
         line-height: 64px; }
@@ -2334,7 +2355,7 @@ article.contents .submit-btns {
   .page-sub-tabs > li {
     display: inline-block; }
     .page-sub-tabs > li a {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 700;
       color: #A3A3A3; }
       .page-sub-tabs > li a:hover, .page-sub-tabs > li a.is-selected {
@@ -2449,7 +2470,7 @@ article.contents .submit-btns {
   position: relative;
   border-bottom: 2px solid #000; }
   .datepicker:after {
-    content: ""; }
+    content: ""; }
   .datepicker:after {
     position: absolute;
     top: 50%;
@@ -2507,7 +2528,7 @@ article.contents .submit-btns {
     position: relative;
     z-index: 1;
     padding-right: 15px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     color: #000;
     line-height: 24px;
@@ -2535,6 +2556,8 @@ article.contents .submit-btns {
   .box-item > .content {
     display: block;
     clear: both; }
+    .box-item > .content .column {
+      float: left; }
   .box-item .btn-bookmark {
     position: absolute;
     top: 13px;
@@ -2543,6 +2566,10 @@ article.contents .submit-btns {
     position: absolute;
     top: 33px;
     right: 33px; }
+  .box-item .btn-detail {
+    position: absolute;
+    top: 11px;
+    right: 0px; }
   .box-item.dashboard {
     overflow: hidden; }
     .box-item.dashboard .unit {
@@ -2652,7 +2679,7 @@ article.contents .submit-btns {
         line-height: 1em;
         vertical-align: middle; }
         .box-item.service-group .info > li .btn-txt-info:after {
-          content: ""; }
+          content: ""; }
         .box-item.service-group .info > li .btn-txt-info:after {
           display: inline-block;
           margin: -2px 0 0 5px;
@@ -2833,7 +2860,7 @@ article.contents .submit-btns {
   height: 21px;
   width: 21px; }
   .btn-settings:before {
-    content: ""; }
+    content: ""; }
   .btn-settings:before {
     display: block;
     height: 21px;
@@ -2861,19 +2888,19 @@ article.contents .submit-btns {
     color: rgba(0, 0, 0, 0.43);
     text-decoration: none; }
     .btn-text.reset:before {
-      content: ""; }
+      content: ""; }
     .btn-text.reset:before {
       vertical-align: baseline; }
   .btn-text.show-hide:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
     margin-top: -4px;
     margin-right: 10px;
     font-size: 13px; }
   .btn-text.export:before {
-    content: ""; }
+    content: ""; }
   .btn-text.export:before {
     margin-top: -10px;
     font-size: 16px; }
@@ -2940,7 +2967,7 @@ input[type=submit].btn-normal,
   width: 23px;
   text-indent: -9999px; }
   .btn-close:before {
-    content: ""; }
+    content: ""; }
   .btn-close:before {
     display: block;
     position: absolute;
@@ -2962,7 +2989,7 @@ input[type=submit].btn-normal,
   color: #E74E0F;
   text-indent: -9999px; }
   .btn-warning:before {
-    content: ""; }
+    content: ""; }
   .btn-warning:before {
     display: block;
     position: absolute;
@@ -2984,7 +3011,7 @@ input[type=submit].btn-normal,
   color: #959595;
   text-indent: -9999px; }
   .btn-info:before {
-    content: ""; }
+    content: ""; }
   .btn-info:before {
     display: block;
     position: absolute;
@@ -3007,7 +3034,7 @@ input[type=submit].btn-normal,
   text-indent: -9999px;
   vertical-align: middle; }
   .btn-edit:before {
-    content: ""; }
+    content: ""; }
   .btn-edit:before {
     display: block;
     position: absolute;
@@ -3021,6 +3048,30 @@ input[type=submit].btn-normal,
     text-indent: 0px;
     line-height: 19px;
     vertical-align: middle; }
+
+.btn-detail {
+  display: block;
+  position: relative;
+  height: 33px;
+  width: 33px;
+  text-indent: -9999px;
+  border: 2px solid #000; }
+  .btn-detail:before {
+    content: ""; }
+  .btn-detail:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 23px;
+    color: #000;
+    text-align: center;
+    text-indent: 0px;
+    line-height: 33px; }
 
 /**
 	filter
@@ -3072,7 +3123,7 @@ input[type=submit].btn-normal,
       color: #000;
       line-height: 47px; }
       .filter-container .results > .selected:before {
-        content: ""; }
+        content: ""; }
       .filter-container .results > .selected:before {
         display: block;
         float: left;
@@ -3237,7 +3288,7 @@ input[type=submit].btn-normal,
   background-color: #e74e0f;
   transition: max-height 0.3s ease-in; }
   .warning-container:before {
-    content: ""; }
+    content: ""; }
   .warning-container:before {
     display: block;
     position: absolute;
@@ -3326,7 +3377,7 @@ input[type=submit].btn-normal,
   .list-users-search .search {
     display: block; }
     .list-users-search .search:before {
-      content: ""; }
+      content: ""; }
     .list-users-search .search:before {
       display: inline-block;
       margin-right: 8px;
@@ -3488,7 +3539,7 @@ input[type=submit].btn-normal,
     color: #fff;
     background-color: #E74E0F; }
     .login-container .invalid-message:before {
-      content: ""; }
+      content: ""; }
     .login-container .invalid-message:before {
       display: block;
       position: absolute;
@@ -3805,3 +3856,102 @@ body.asset.usage .usage-current .list-usage-current {
       clear: both;
       padding-top: 15px;
       height: 215px; }
+
+body.metering .growth {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0em; }
+  body.metering .growth:after {
+    content: ""; }
+  body.metering .growth:after {
+    display: inline-block; }
+  body.metering .growth > .txt {
+    display: none; }
+  body.metering .growth.up {
+    color: #E74E0F; }
+    body.metering .growth.up:after {
+      vertical-align: top;
+      transform: rotateX(180deg); }
+  body.metering .growth.down {
+    color: #0DACEA; }
+  body.metering .growth.big {
+    height: 33px;
+    font-size: 18px; }
+    body.metering .growth.big:after {
+      height: 33px;
+      width: 33px;
+      font-size: 33px;
+      line-height: 33px; }
+
+body.metering.dashboard .summary {
+  box-sizing: border-box;
+  padding: 50px 0 0 0;
+  height: 580px;
+  background: url("/assets/images/bg_metering_dashboard.png") center top no-repeat; }
+  body.metering.dashboard .summary .status {
+    overflow: hidden; }
+    body.metering.dashboard .summary .status > li {
+      float: left;
+      box-sizing: border-box;
+      padding: 0 20px;
+      width: 33%;
+      text-align: center; }
+      body.metering.dashboard .summary .status > li .title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #9B9B9B; }
+      body.metering.dashboard .summary .status > li .cost {
+        position: relative;
+        margin-bottom: 10px;
+        height: 70px;
+        font-size: 55px;
+        font-weight: 500;
+        color: #fff;
+        text-align: right;
+        letter-spacing: -0.05em; }
+      body.metering.dashboard .summary .status > li .btn-goto {
+        display: inline-block;
+        padding: 0 18px;
+        height: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #9B9B9B;
+        line-height: 30px;
+        border: 1px solid #9B9B9B;
+        border-raidus: 2px; }
+        body.metering.dashboard .summary .status > li .btn-goto:before {
+          content: ""; }
+        body.metering.dashboard .summary .status > li .btn-goto:before {
+          display: inline-block;
+          margin: -4px 8px 0 0;
+          height: 12px;
+          width: 14px;
+          font-size: 15px;
+          line-height: 12px;
+          vertical-align: middle; }
+      body.metering.dashboard .summary .status > li .remain {
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        color: #9B9B9B;
+        text-align: left;
+        line-height: 30px; }
+      body.metering.dashboard .summary .status > li .growth {
+        position: absolute;
+        bottom: -40px;
+        right: 0; }
+  body.metering.dashboard .summary .page-sub-tabs {
+    display: block;
+    margin-top: 44px; }
+    body.metering.dashboard .summary .page-sub-tabs > li {
+      display: inline-block; }
+      body.metering.dashboard .summary .page-sub-tabs > li a {
+        color: #9B9B9B; }
+        body.metering.dashboard .summary .page-sub-tabs > li a:hover, body.metering.dashboard .summary .page-sub-tabs > li a.is-selected {
+          color: #fff; }
+      body.metering.dashboard .summary .page-sub-tabs > li + li:before {
+        background-color: #979797; }
+  body.metering.dashboard .summary .chart-container {
+    margin-top: 25px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.3); }
