@@ -146,7 +146,7 @@ button:focus {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, body.asset .chart-container .slick-arrow:before, body.metering .growth:after, body.metering .growth.tbl:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, .chart-container .slick-arrow:before, body.metering .growth:after, body.metering .growth.tbl:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2008,6 +2008,9 @@ article.contents .contents-inner {
   .asset article.contents .contents-inner {
     margin-top: 0;
     padding: 0; }
+  .metering article.contents .contents-inner {
+    margin-top: 0;
+    padding: 0; }
 
 article.contents .button-container {
   padding: 35px 40px 0px 40px;
@@ -3622,6 +3625,65 @@ input[type=submit].btn-normal,
     line-height: 1.3em;
     background-color: #F6F6F6; }
 
+/**
+	chart-container
+**/
+.chart-container {
+  position: relative; }
+  .chart-container .slick-arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 34px;
+    text-indent: -9999px;
+    transition: opacity 0.5s ease-in-out; }
+    .chart-container .slick-arrow:before {
+      content: ""; }
+    .chart-container .slick-arrow:before {
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -17px;
+      height: 30px;
+      width: 34px;
+      font-size: 30px;
+      line-height: 30px;
+      text-indent: 0px; }
+    .chart-container .slick-arrow.slick-prev {
+      left: 40px; }
+      .chart-container .slick-arrow.slick-prev:before {
+        transform: rotate(180deg); }
+      .chart-container .slick-arrow.slick-prev:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        bottom: 0;
+        z-index: -1;
+        width: 34px;
+        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); }
+    .chart-container .slick-arrow.slick-next {
+      right: 40px; }
+      .chart-container .slick-arrow.slick-next:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        bottom: 0;
+        z-index: -1;
+        width: 90px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
+    .chart-container .slick-arrow.slick-disabled {
+      cursor: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out; }
+
 /*
 	etc
 */
@@ -3721,62 +3783,6 @@ body.portal {
 body.asset .chart-container {
   clear: both;
   padding: 20px 0; }
-
-body.asset .chart-container {
-  position: relative; }
-  body.asset .chart-container .slick-arrow {
-    display: block;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    height: 100%;
-    width: 34px;
-    text-indent: -9999px;
-    transition: opacity 0.5s ease-in-out; }
-    body.asset .chart-container .slick-arrow:before {
-      content: ""; }
-    body.asset .chart-container .slick-arrow:before {
-      display: block;
-      position: absolute;
-      top: 50%;
-      margin-top: -17px;
-      height: 30px;
-      width: 34px;
-      font-size: 30px;
-      line-height: 30px;
-      text-indent: 0px; }
-    body.asset .chart-container .slick-arrow.slick-prev {
-      left: 40px; }
-      body.asset .chart-container .slick-arrow.slick-prev:before {
-        transform: rotate(180deg); }
-      body.asset .chart-container .slick-arrow.slick-prev:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0px;
-        bottom: 0;
-        z-index: -1;
-        width: 34px;
-        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); }
-    body.asset .chart-container .slick-arrow.slick-next {
-      right: 40px; }
-      body.asset .chart-container .slick-arrow.slick-next:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0px;
-        bottom: 0;
-        z-index: -1;
-        width: 90px;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
-    body.asset .chart-container .slick-arrow.slick-disabled {
-      cursor: none;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out; }
 
 body.asset.dashboard .section-box {
   padding-top: 23px;
@@ -4268,3 +4274,17 @@ body.metering.dashboard .summary {
     margin-top: 25px;
     height: 250px;
     background-color: rgba(0, 0, 0, 0.3); }
+
+body.metering.statistics .statistics-summary .list-statistics-summary {
+  overflow: hidden;
+  padding: 0 40px; }
+  body.metering.statistics .statistics-summary .list-statistics-summary li {
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    padding-right: 30px;
+    width: 310px; }
+    body.metering.statistics .statistics-summary .list-statistics-summary li .chart {
+      clear: both;
+      padding-top: 15px;
+      height: 215px; }

@@ -196,8 +196,18 @@ body.metering {
 
 			.chart-container { margin-top: 25px; height: 250px; background-color: rgba(0, 0, 0, 0.3); }
 		}
+	}
 
 
+	&.statistics {
+		.statistics-summary {
+			.list-statistics-summary { overflow: hidden; padding: 0 40px;
+				li { display: block; box-sizing: border-box; float: left; padding-right: 30px; width: 310px;
+					.chart { clear: both; padding-top: 15px; height: 215px; }
+				}
+			}
+		}
 
 	}
+
 }

@@ -736,6 +736,39 @@ input[type=submit].btn-normal,
 
 
 
+/**
+	chart-container
+**/
+.chart-container { position: relative;
+	.slick-arrow { display: block; position: absolute; top: 0; z-index: z("default"); height: 100%; width: 34px; text-indent: -9999px; transition: opacity 0.5s ease-in-out;
+		@include icon(arrow03);
+		&:before { display: block; position: absolute; top: 50%; margin-top: -17px; height: 30px; width: 34px; font-size: 30px; line-height: 30px; text-indent: 0px; }
+
+		&.slick-prev { left: 40px;
+			&:before { transform: rotate( 180deg ); }
+			&:after { content: ''; display: block; position: absolute; top: 0; right: 0px; bottom: 0; z-index: z("default") - 2; width: 34px;
+				background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+				background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+				background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+			}
+		}
+		&.slick-next { right: 40px;
+			&:after { content: ''; display: block; position: absolute; top: 0; right: 0px; bottom: 0; z-index: z("default") - 2; width: 90px;
+				background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+				background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+				background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+			}
+		}
+		&.slick-disabled { cursor: none; opacity: 0; transition: opacity 0.5s ease-in-out; }
+	}
+}
+
+
+
+
+
 /*
 	etc
 */
