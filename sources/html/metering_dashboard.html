@@ -65,24 +65,31 @@
 				<ul class="list-column-complex">
 					<li>
 						
+						<!-- CURRENT COST BY SERVICE GROUP -->
 						<section class="box-item">
 							<h2 class="title">CURRENT COST BY SERVICE GROUP</h2>
 							<a href="#" class="btn-detail">detail</a>
 							
 							<div class="content">
 								
-								<div class="column">
+								<div class="column" style="padding-right: 30px; width: 690px;">
 									<strong class="unit"><em>$00,000.00</em>ALL COMPUTING</strong>
 									
-									<table>
-										<caption></caption>
+									<table class="tbl-data-v scroll">
+										<caption>ALL COMPUTING</caption>
 										<thead>
 											<tr>
 												<th>SERVICE GROUP NAME</th>
-												<th>MTD</th>
-												<th>VARIANCE</th>
+												<th>
+													<button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">MTD</button>
+												</th>
+												<th>
+													<button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">VARIANCE</button>
+												</th>
 												<th>RUNTIME</th>
-												<th>UNIT PRICE</th>
+												<th>
+													<button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">UNIT PRICE</button>
+												</th>
 												<th>INSTANCE</th>
 											</tr>
 										</thead>
@@ -91,9 +98,7 @@
 												<td>Maple story 2</td>
 												<td>$00,000.00</td>
 												<td>
-													<span class="">
-														00.0%
-													</span>
+													<span class="growth tbl up">00.0% <span class="txt">up</span></span>
 												</td>
 												<td>1023 hrs</td>
 												<td>$00.000</td>
@@ -103,9 +108,57 @@
 												<td>Maple story 2</td>
 												<td>$00,000.00</td>
 												<td>
-													<span class="">
-														00.0%
-													</span>
+													<span class="growth tbl down">00.0% <span class="txt">down</span></span>
+												</td>
+												<td>1023 hrs</td>
+												<td>$00.000</td>
+												<td>0000 ea</td>
+											</tr>
+											<tr>
+												<td>Maple story 2</td>
+												<td>$00,000.00</td>
+												<td>
+													<span class="growth tbl up">00.0% <span class="txt">up</span></span>
+												</td>
+												<td>1023 hrs</td>
+												<td>$00.000</td>
+												<td>0000 ea</td>
+											</tr>
+											<tr>
+												<td>Maple story 2</td>
+												<td>$00,000.00</td>
+												<td>
+													<span class="growth tbl down">00.0% <span class="txt">down</span></span>
+												</td>
+												<td>1023 hrs</td>
+												<td>$00.000</td>
+												<td>0000 ea</td>
+											</tr>
+											<tr>
+												<td>Maple story 2</td>
+												<td>$00,000.00</td>
+												<td>
+													<span class="growth tbl up">00.0% <span class="txt">up</span></span>
+												</td>
+												<td>1023 hrs</td>
+												<td>$00.000</td>
+												<td>0000 ea</td>
+											</tr>
+											<tr>
+												<td>Maple story 2</td>
+												<td>$00,000.00</td>
+												<td>
+													<span class="growth tbl down">00.0% <span class="txt">down</span></span>
+												</td>
+												<td>1023 hrs</td>
+												<td>$00.000</td>
+												<td>0000 ea</td>
+											</tr>
+											<tr>
+												<td>Maple story 2</td>
+												<td>$00,000.00</td>
+												<td>
+													<span class="growth tbl up">00.0% <span class="txt">up</span></span>
 												</td>
 												<td>1023 hrs</td>
 												<td>$00.000</td>
@@ -113,17 +166,339 @@
 											</tr>
 										</tbody>
 									</table>
+									<script>
+										$(window.document).ready(function(){
+											$('.tbl-data-v.scroll').tableScroll({height:166});
+										});
+									</script>
 								</div>
 
 
 								
-								<div class="column">
+								<div class="column" style="width: 330px;">
 									<strong class="unit"><em>$00,000.00</em>SHARED</strong>
 									
 									
+									<table class="tbl-data-v scroll">
+										<caption>SHARED</caption>
+										<thead>
+											<tr>
+												<th>COST BREAKDOWN</th>
+												<th><button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">MTD</button></th>
+												<th><button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">VARIANCE</button></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>NETWORK</td>
+												<td>$00,000.00</td>
+												<td>
+													<span class="growth tbl up">00.0% <span class="txt">up</span></span>
+												</td>
+											</tr>
+											<tr>
+												<td>DATABASE</td>
+												<td>$00,000.00</td>
+												<td>
+													<span class="growth tbl down">00.0% <span class="txt">down</span></span>
+												</td>
+											</tr>
+											<tr>
+												<td>STRORAGE</td>
+												<td>$00,000.00</td>
+												<td>
+													<span class="growth tbl up">00.0% <span class="txt">up</span></span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<script>
+									$(window.document).ready(function(){
+										$('.tbl-data-v.scroll').tableScroll({height:166});
+
+										// info
+										$('.tbl-data-v').find('.btn-txt-info').tooltipster({
+											theme: 'tooltipster-metering',
+											side: 'top'
+										});
+									});
+									</script>
 								</div>
 							</div>
 						</section>
+
+					</li>
+					<li>
+
+						<!-- CURRENT COST BY CLOUD PRODUCT- [ VENDOR NAME] -->
+						<section class="box-item">
+							<h2 class="title">CURRENT COST BY CLOUD PRODUCT- [ VENDOR NAME]</h2>
+							<a href="#" class="btn-detail">detail</a>
+							
+							<div class="content">
+								<!-- cumulative -->
+								@@include('./inc_metering_cumulative.html')
+
+
+								<!-- top5 -->
+								@@include('./inc_metering_top5.html')
+
+
+								<!-- compare -->
+								@@include('./inc_metering_compare.html')
+							</div>
+						</section>
+						
+					</li>
+					<li>
+
+						<!-- CURRENT COST BY REGION- [ VENDOR NAME] -->
+						<section class="box-item">
+							<h2 class="title">CURRENT COST BY REGION- [ VENDOR NAME]</h2>
+							<a href="#" class="btn-detail">detail</a>
+							
+							<div class="content">
+								<!-- cumulative -->
+								@@include('./inc_metering_cumulative.html')
+
+
+								<!-- top5 -->
+								@@include('./inc_metering_top5.html')
+
+
+								<!-- compare -->
+								@@include('./inc_metering_compare.html')
+							</div>
+						</section>
+						
+					</li>
+					<li class="column-03" style="width: 30%;">
+						
+						<section class="box-item">
+							<h2 class="title">COST BY ACCOUNT</h2>
+							<a href="#" class="btn-detail">detail</a>
+
+							<div class="content cost-by-account">
+								<div class="title-with-cost">
+									<strong class="title">[AWS] 8192037462</strong>
+									<strong class="unit"><em>$00,000.00</em></strong>
+									<span class="growth up">00.0% <span class="txt">up</span></span>
+								</div>
+
+								<table class="tbl-data-v scroll">
+									<caption>SHARED</caption>
+									<thead>
+										<tr>
+											<th>ACCOUNT</th>
+											<th><button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">MTD</button></th>
+											<th><button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">VARIANCE</button></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Vender-Account no.</td>
+											<td>$00,000.00</td>
+											<td>
+												<span class="growth tbl up">00.0% <span class="txt">up</span></span>
+											</td>
+										</tr>
+										<tr>
+											<td>Vender-Account no.</td>
+											<td>$00,000.00</td>
+											<td>
+												<span class="growth tbl down">00.0% <span class="txt">down</span></span>
+											</td>
+										</tr>
+										<tr>
+											<td>Vender-Account no.</td>
+											<td>$00,000.00</td>
+											<td>
+												<span class="growth tbl up">00.0% <span class="txt">up</span></span>
+											</td>
+										</tr>
+										<tr>
+											<td>Vender-Account no.</td>
+											<td>$00,000.00</td>
+											<td>
+												<span class="growth tbl up">00.0% <span class="txt">up</span></span>
+											</td>
+										</tr>
+										<tr>
+											<td>Vender-Account no.</td>
+											<td>$00,000.00</td>
+											<td>
+												<span class="growth tbl up">00.0% <span class="txt">up</span></span>
+											</td>
+										</tr>
+										<tr>
+											<td>Vender-Account no.</td>
+											<td>$00,000.00</td>
+											<td>
+												<span class="growth tbl up">00.0% <span class="txt">up</span></span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<script>
+								$(window.document).ready(function(){
+									$('.tbl-data-v.scroll').tableScroll({height:166});
+								});
+								</script>
+							</div>
+						</section>
+
+					</li>
+					<li class="column-03" style="padding: 0 15px; width: 40%;">
+						
+						<section class="box-item">
+							<h2 class="title">BUDGET STATUS</h2>
+							<a href="#" class="btn-detail">detail</a>
+	
+							<!-- warning -->
+							<button type="button" value="" class="btn-warning">warning</button>
+							<div id="" class="popover warning">
+								<span class="point" style="right: 10px; left: auto;"></span>
+								<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+							</div>
+							<!--// warning -->
+
+							<div class="content budget">
+								<div class="title-with-cost">
+									<strong class="title">REMAINING BUDGET</strong>
+									<strong class="unit"><em>$00.00</em></strong>
+									<span class="out-of">OUT OF <em>$00,000.00</em></span>
+								</div>
+
+								<div class="chart none" style="height: 200px;">
+									<p>
+										No budget set to<br>
+										display any insights!
+									</p>
+								</div>
+							</div>
+						</section>
+						<script>
+						$(window.document).ready(function(){
+							// warning
+							$('.box-item').find('.btn-warning').tooltipster({
+								contentCloning: false,
+								arrow: false,
+								side: 'left',
+								distance: 245,
+								functionInit: function(instance, helper) {
+									var content = $(helper.origin).find('~ .popover.warning').detach();
+									instance.content(content);
+								},
+								functionPosition: function(instance, helper, position){
+									position.coord.top += 30;
+									return position;
+								}
+							});
+						});
+						</script>
+
+					</li>
+					<li class="column-03" style="width: 30%;">
+						
+						<section class="box-item">
+							<h2 class="title">PAYMENT HISTORY</h2>
+							<a href="#" class="btn-detail">detail</a>
+	
+							<!-- warning -->
+							<button type="button" value="" class="btn-warning">warning</button>
+							<div id="" class="popover warning">
+								<span class="point" style="right: 10px; left: auto;"></span>
+								<p>There is [ 1 ] bill [ 34 days ] overdue.<br>2016. 01.20</p>
+							</div>
+							<!--// warning -->
+
+
+							<div class="content" style="height: 120px;">
+								
+								<!-- 없을 경우
+								<div class="tbl-none">
+									<p>
+										Your first bill is arriving in [ 15 days ].
+									</p>
+								</div>
+								<! 없을 경우 -->
+
+								<table class="tbl-data-v">
+									<caption></caption>
+									<thead>
+										<tr>
+											<th>DATE</th>
+											<th>BILLED <span class="currency">₩</span></th>
+											<th>PAYED <span class="currency">₩</span></th>
+											<th>STATUS</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="warning">
+											<td>16.05.20</td>
+											<td>000,000,000</td>
+											<td>000,000,000</td>
+											<td>Overdue</td>
+										</tr>
+										<tr>
+											<td>16.05.20</td>
+											<td>000,000,000</td>
+											<td>000,000,000</td>
+											<td>Unpaid</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</section>
+
+
+						
+						<section class="box-item" style="margin-top: 20px;">
+							<h2 class="title">CREDIT BALANCE</h2>
+							<a href="#" class="btn-detail">detail</a>
+
+
+							<div class="content" style="height: 120px;">
+								
+								<!-- 없을 경우
+								<div class="tbl-none">
+									<p>
+										Your first bill is arriving in [ 15 days ].
+									</p>
+								</div>
+								<! 없을 경우 -->
+
+								<table class="tbl-data-v">
+									<caption></caption>
+									<thead>
+										<tr>
+											<th>VENDOR</th>
+											<th>USED <span class="currency dollar">$</span></th>
+											<th>REMAINING <span class="currency dollar">$</span></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Vendor Name</td>
+											<td>000,000,000</td>
+											<td>000,000,000</td>
+										</tr>
+										<tr>
+											<td>Vendor Name</td>
+											<td>000,000,000</td>
+											<td>000,000,000</td>
+										</tr>
+										<tr>
+											<td>Vendor Name</td>
+											<td>000,000,000</td>
+											<td>000,000,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+
 					</li>
 				</ul>
 				

@@ -2,10 +2,11 @@ body.metering {
 
 	.growth { font-size: 14px; font-weight: 500; letter-spacing: 0em;
 		@include icon(growth, after);
-		&:after { display: inline-block; }
+		&:after { display: inline-block; height: 25px; width: 25px; font-size: 23px; line-height: 25px; }
 
 		> .txt { display: none; }
 		
+
 		&.up { 
 			&:after { vertical-align: top; transform: rotateX( 180deg ); }
 			color: #E74E0F;
@@ -15,27 +16,165 @@ body.metering {
 			color: #0DACEA;
 		}
 
+
 		&.big { height: 33px; font-size: 18px;
 			&:after { height: 33px; width: 33px; font-size: 33px; line-height: 33px; }
 			
 		}
+
+		&.tbl { font-size: 15px;
+			@include icon(growth);
+			&:before { display: inline-block; margin-right: 3px; height: 11px; width: 11px; font-size: 10px; line-height: 11px; }
+			&:after { content: none; }
+
+			&.up { &:before { transform: rotateX( 180deg ); } }
+			&.down { }
+		}
 	}
+
+
+	.btn-goto { display: inline-block; padding: 0 18px; height: 30px; font-size: 16px; font-weight: 700; color: #9B9B9B; line-height: 30px; border: 1px solid #9B9B9B; border-raidus: 2px;
+		@include icon(arrow03);
+		&:before { display: inline-block; margin: -4px 8px 0 0; height: 12px; width: 14px; font-size: 15px; line-height: 12px; vertical-align: middle; }
+
+		&:hover { color: #000; border: 1px solid #fff; background-color: #fff; }
+	}
+
+
+	// list-column-complex
+	.list-column-complex { overflow: hidden; margin-top: 50px;
+		> li { display: block; clear: both; box-sizing: border-box; padding: 0 0 60px 0;
+			&.column-03 { float: left; clear: none; width: 33%;
+			}
+		}
+	}
+
+
+
 
 	.box-item {
-		
+		&:before { content: ''; display: block; position: absolute; top: 11px; right: 0; left: 0; height: 2px; background-color: #000; }
+		&:after { content: ''; display: block; clear: both; }
+
+		> .title { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; padding-bottom: 25px; font-size: 16px; font-weight: 700; color: #000; line-height: 24px; background-color: #fff;
+			.thumb { display: inline-block; cursor: pointer; overflow: hidden; margin-right: 5px; height: 24px; width: 24px; line-height: 24px; vertical-align: middle; border-radius: 100%;
+				img { display: inline-block; height: 100%; width: 100%; }
+			}
+			.thumb-over { display: block; position: absolute; top: 50px; left: 50px; opacity: 0; }
+		}
+
+		> .content { display: block; clear: both;
+			.column { float: left; box-sizing: border-box; }
+			.tbl-none { box-sizing: border-box; padding: 30px; height: 100%; font-size: 20px; font-weight: 500; color: #9B9B9B; line-height: 1em; background-color: #F2F2F2; }
+			.chart { background-color: rgba(0, 0, 0, 0.3); }
+		}
+
+		// button warning
+		.btn-warning { position: absolute; top: 11px; right: 34px; }
+		.btn-warning { display: block; height: 34px; width: 34px; color: #fff; text-indent: -9999px; background-color: #E74E0F;
+			@include icon(warning);
+			&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 18px; text-indent: 0px; line-height: 34px; text-align: center; }
+		}
+
+		// total
+		.unit { display: block; margin: 0px 0 20px; padding: 0 0 0 0; font-size: 20px; font-weight: 500; color: #000; line-height: 1em;
+			em { display: inline-block; margin-right: 5px; font-size: 50px; line-height: 1em; letter-spacing: -0.07em; }
+		}
+
+		// cumulative
+		.cumulative { position: relative;
+			.growth { float: right; margin-top: -55px; }
+			.chart { height: 300px; }
+		}
+
+		.title-with-cost { clear: both; position: relative; overflow: hidden; min-height: 85px;
+			.title { float: left; padding-top: 5px; width: 70px; font-size: 20px; font-weight: 500; color: #000; line-height: 20px; letter-spacing: -0.1em; }
+			.unit { float: right; text-align: right; }
+			.growth { display: block; position: absolute; top: 50px; right: 5px; }
+			.out-of { display: block; position: absolute; top: 70px; right: 0px; padding-right: 5px; font-size: 20px; font-weight: 500; color: #9B9B9B; margin-top: -20px;
+				em { display: inline-block; margin-left: 10px; min-width: 90px; color: #000; text-align: right; }
+			}
+		}
+
+		// top5
+		.top5 { position: relative;
+			.tbl-data-v { margin-top: 20px; }
+		}
+
+		// compare last month
+		.compare-last-month { position: relative;
+			.title { margin-bottom: 20px; font-size: 16px; font-weight: 500; color: #000; text-align: center; line-height: 40px; border-bottom: 2px solid #CECECE; }
+			.chart { height: 300px; }
+		}
+
+		// cost-by-account
+		.cost-by-account {
+			.tablescroll { margin-top: 20px; }
+		}
+
+		// budget status
+		.budget {
+			.chart { margin-top: 20px; }
+			.chart.none { background-color: #F2F2F2;
+				p { padding: 30px; font-size: 20px; font-weight: 500; color: #9B9B9B;
+					@include icon(warning);
+					&:before { display: block; margin-bottom: 30px; height: 32px; width: 40px; font-size: 30px; color: #9B9B9B; line-height: 32px; }
+				}
+			}
+		}
+
 	}
 
+	.popover.warning { display: block; position: absolute; padding: 15px; min-width: 75px; font-size: 14px; font-weight: 500; color: #fff; line-height: 14px; width: 255px; border: 2px solid #fff; background-color: #E74E0F;
+		.point { top: -10px; z-index: z("default");
+				&:before { color: #E74E0F; }
+		}
+	}
+
+
+
+	// table detail
+	.tbl-data-v { width: 100%;
+		.btn-txt-info { display: block; font-size: 14px; font-weight: 700; color: #000; line-height: 20px; vertical-align: middle;
+			@include icon(info, after);
+			&:after { display: inline-block; margin: -2px 0 0 5px; height: 14px; width: 14px; font-size: 14px; color: #959595; line-height: 1em; vertical-align: middle; }
+		}
+
+		thead {
+			th, td { font-size: 14px; font-weight: 700; color: #000; text-align: left; line-height: 20px; border-bottom: 2px solid #CECECE; }
+		}
+
+		tfoot {
+			th, td { font-size: 14px; font-weight: 700; color: #000; text-align: left; line-height: 25px; border-top: 2px solid #CECECE; }
+		}
+
+		tbody {
+			th, td { font-size: 15px; font-weight: 500; color: #000; text-align: left; line-height: 33px; }
+		}
+
+		tr.warning {
+			th, td { color: #E74E0F; }
+		}
+
+		.currency { display: inline-block; margin-top: -3px; height: 17px; width: 17px; font-size: 10px; font-weight: 500; font-style: normal; color: #fff; text-align: center; line-height: 17px; vertical-align: middle; border-radius: 100%; background-color: #000;
+			&.dollar { font-size: 13px; }
+		}
+	}
+	.tablescroll_wrapper { padding-top: 5px; }
+
+	// tlb-data-v tooptip
+	.tooltipster-metering .tooltipster-box { padding: 10px; width: 100px; font-size: 11px; color: #fff; line-height: 14px; background-color: #000; }
+
+
+
+
+	// dashboard
 	&.dashboard {
 		.summary { box-sizing: border-box; padding: 50px 0 0 0; height: 580px; background: url('/assets/images/bg_metering_dashboard.png') center top no-repeat;
 			.status { overflow: hidden;
 				>li { float: left; box-sizing: border-box; padding: 0 20px; width: 33%; text-align: center;
 					.title { font-size: 16px; font-weight: 500; color: #9B9B9B; }
 					.cost { position: relative; margin-bottom: 10px; height: 70px; font-size: 55px; font-weight: 500; color: #fff; text-align: right; letter-spacing: -0.05em; }
-
-					.btn-goto { display: inline-block; padding: 0 18px; height: 30px; font-size: 16px; font-weight: 700; color: #9B9B9B; line-height: 30px; border: 1px solid #9B9B9B; border-raidus: 2px;
-						@include icon(arrow03);
-						&:before { display: inline-block; margin: -4px 8px 0 0; height: 12px; width: 14px; font-size: 15px; line-height: 12px; vertical-align: middle; }
-					}
 
 					.remain { display: block; font-size: 15px; font-weight: 500; color: #9B9B9B; text-align: left; line-height: 30px; }
 					.growth { position: absolute; bottom: -40px; right: 0; }
@@ -57,5 +196,8 @@ body.metering {
 
 			.chart-container { margin-top: 25px; height: 250px; background-color: rgba(0, 0, 0, 0.3); }
 		}
+
+
+
 	}
 }

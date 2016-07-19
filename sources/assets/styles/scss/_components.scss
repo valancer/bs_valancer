@@ -461,9 +461,13 @@ input[type=submit].btn-normal,
 }
 
 // detail
-.btn-detail { display: block; position: relative; height: 33px; width: 33px; text-indent: -9999px; border: 2px solid #000;
+.btn-detail { display: block; position: relative; height: 30px; width: 30px; text-indent: -9999px; border: 2px solid #000;
 	@include icon(arrow04);
-	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 23px; color: #000; text-align: center; text-indent: 0px; line-height: 33px; }
+	&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; font-size: 16px; color: #000; text-align: center; text-indent: 0px; line-height: 30px; }
+
+	&:hover { color: #fff; background-color: #000;
+		&:before { color: #fff; }
+	}
 }
 
 

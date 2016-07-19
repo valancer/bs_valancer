@@ -146,7 +146,7 @@ button:focus {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, body.asset .chart-container .slick-arrow:before, body.metering .growth:after, body.metering.dashboard .summary .status > li .btn-goto:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, body.asset .chart-container .slick-arrow:before, body.metering .growth:after, body.metering .growth.tbl:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2052,21 +2052,6 @@ article.contents .column-right {
     font-weight: 500;
     color: #999; }
 
-article.contents .list-column-complex {
-  overflow: hidden; }
-  article.contents .list-column-complex > li {
-    display: block;
-    clear: both;
-    box-sizing: border-box;
-    padding: 0 0 0 0; }
-    article.contents .list-column-complex > li.column-03 {
-      float: left;
-      width: 33%; }
-      article.contents .list-column-complex > li.column-03:nth-child(3n+2) {
-        width: 34%; }
-      article.contents .list-column-complex > li.column-03:nth-child(3n+1) {
-        padding-left: 0; }
-
 article.contents .list-column-01 {
   overflow: hidden;
   padding: 30px; }
@@ -3052,8 +3037,8 @@ input[type=submit].btn-normal,
 .btn-detail {
   display: block;
   position: relative;
-  height: 33px;
-  width: 33px;
+  height: 30px;
+  width: 30px;
   text-indent: -9999px;
   border: 2px solid #000; }
   .btn-detail:before {
@@ -3067,11 +3052,16 @@ input[type=submit].btn-normal,
     left: 0;
     height: 100%;
     width: 100%;
-    font-size: 23px;
+    font-size: 16px;
     color: #000;
     text-align: center;
     text-indent: 0px;
-    line-height: 33px; }
+    line-height: 30px; }
+  .btn-detail:hover {
+    color: #fff;
+    background-color: #000; }
+    .btn-detail:hover:before {
+      color: #fff; }
 
 /**
 	filter
@@ -3864,7 +3854,11 @@ body.metering .growth {
   body.metering .growth:after {
     content: ""; }
   body.metering .growth:after {
-    display: inline-block; }
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    font-size: 23px;
+    line-height: 25px; }
   body.metering .growth > .txt {
     display: none; }
   body.metering .growth.up {
@@ -3882,6 +3876,345 @@ body.metering .growth {
       width: 33px;
       font-size: 33px;
       line-height: 33px; }
+  body.metering .growth.tbl {
+    font-size: 15px; }
+    body.metering .growth.tbl:before {
+      content: ""; }
+    body.metering .growth.tbl:before {
+      display: inline-block;
+      margin-right: 3px;
+      height: 11px;
+      width: 11px;
+      font-size: 10px;
+      line-height: 11px; }
+    body.metering .growth.tbl:after {
+      content: none; }
+    body.metering .growth.tbl.up:before {
+      transform: rotateX(180deg); }
+
+body.metering .btn-goto {
+  display: inline-block;
+  padding: 0 18px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #9B9B9B;
+  line-height: 30px;
+  border: 1px solid #9B9B9B;
+  border-raidus: 2px; }
+  body.metering .btn-goto:before {
+    content: ""; }
+  body.metering .btn-goto:before {
+    display: inline-block;
+    margin: -4px 8px 0 0;
+    height: 12px;
+    width: 14px;
+    font-size: 15px;
+    line-height: 12px;
+    vertical-align: middle; }
+  body.metering .btn-goto:hover {
+    color: #000;
+    border: 1px solid #fff;
+    background-color: #fff; }
+
+body.metering .list-column-complex {
+  overflow: hidden;
+  margin-top: 50px; }
+  body.metering .list-column-complex > li {
+    display: block;
+    clear: both;
+    box-sizing: border-box;
+    padding: 0 0 60px 0; }
+    body.metering .list-column-complex > li.column-03 {
+      float: left;
+      clear: none;
+      width: 33%; }
+
+body.metering .box-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 11px;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background-color: #000; }
+
+body.metering .box-item:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+body.metering .box-item > .title {
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 1;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  line-height: 24px;
+  background-color: #fff; }
+  body.metering .box-item > .title .thumb {
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 5px;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    border-radius: 100%; }
+    body.metering .box-item > .title .thumb img {
+      display: inline-block;
+      height: 100%;
+      width: 100%; }
+  body.metering .box-item > .title .thumb-over {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    opacity: 0; }
+
+body.metering .box-item > .content {
+  display: block;
+  clear: both; }
+  body.metering .box-item > .content .column {
+    float: left;
+    box-sizing: border-box; }
+  body.metering .box-item > .content .tbl-none {
+    box-sizing: border-box;
+    padding: 30px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #9B9B9B;
+    line-height: 1em;
+    background-color: #F2F2F2; }
+  body.metering .box-item > .content .chart {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+body.metering .box-item .btn-warning {
+  position: absolute;
+  top: 11px;
+  right: 34px; }
+
+body.metering .box-item .btn-warning {
+  display: block;
+  height: 34px;
+  width: 34px;
+  color: #fff;
+  text-indent: -9999px;
+  background-color: #E74E0F; }
+  body.metering .box-item .btn-warning:before {
+    content: ""; }
+  body.metering .box-item .btn-warning:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    text-indent: 0px;
+    line-height: 34px;
+    text-align: center; }
+
+body.metering .box-item .unit {
+  display: block;
+  margin: 0px 0 20px;
+  padding: 0 0 0 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1em; }
+  body.metering .box-item .unit em {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 50px;
+    line-height: 1em;
+    letter-spacing: -0.07em; }
+
+body.metering .box-item .cumulative {
+  position: relative; }
+  body.metering .box-item .cumulative .growth {
+    float: right;
+    margin-top: -55px; }
+  body.metering .box-item .cumulative .chart {
+    height: 300px; }
+
+body.metering .box-item .title-with-cost {
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  min-height: 85px; }
+  body.metering .box-item .title-with-cost .title {
+    float: left;
+    padding-top: 5px;
+    width: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    line-height: 20px;
+    letter-spacing: -0.1em; }
+  body.metering .box-item .title-with-cost .unit {
+    float: right;
+    text-align: right; }
+  body.metering .box-item .title-with-cost .growth {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 5px; }
+  body.metering .box-item .title-with-cost .out-of {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #9B9B9B;
+    margin-top: -20px; }
+    body.metering .box-item .title-with-cost .out-of em {
+      display: inline-block;
+      margin-left: 10px;
+      min-width: 90px;
+      color: #000;
+      text-align: right; }
+
+body.metering .box-item .top5 {
+  position: relative; }
+  body.metering .box-item .top5 .tbl-data-v {
+    margin-top: 20px; }
+
+body.metering .box-item .compare-last-month {
+  position: relative; }
+  body.metering .box-item .compare-last-month .title {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 2px solid #CECECE; }
+  body.metering .box-item .compare-last-month .chart {
+    height: 300px; }
+
+body.metering .box-item .cost-by-account .tablescroll {
+  margin-top: 20px; }
+
+body.metering .box-item .budget .chart {
+  margin-top: 20px; }
+
+body.metering .box-item .budget .chart.none {
+  background-color: #F2F2F2; }
+  body.metering .box-item .budget .chart.none p {
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #9B9B9B; }
+    body.metering .box-item .budget .chart.none p:before {
+      content: ""; }
+    body.metering .box-item .budget .chart.none p:before {
+      display: block;
+      margin-bottom: 30px;
+      height: 32px;
+      width: 40px;
+      font-size: 30px;
+      color: #9B9B9B;
+      line-height: 32px; }
+
+body.metering .popover.warning {
+  display: block;
+  position: absolute;
+  padding: 15px;
+  min-width: 75px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 14px;
+  width: 255px;
+  border: 2px solid #fff;
+  background-color: #E74E0F; }
+  body.metering .popover.warning .point {
+    top: -10px;
+    z-index: 1; }
+    body.metering .popover.warning .point:before {
+      color: #E74E0F; }
+
+body.metering .tbl-data-v {
+  width: 100%; }
+  body.metering .tbl-data-v .btn-txt-info {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    line-height: 20px;
+    vertical-align: middle; }
+    body.metering .tbl-data-v .btn-txt-info:after {
+      content: ""; }
+    body.metering .tbl-data-v .btn-txt-info:after {
+      display: inline-block;
+      margin: -2px 0 0 5px;
+      height: 14px;
+      width: 14px;
+      font-size: 14px;
+      color: #959595;
+      line-height: 1em;
+      vertical-align: middle; }
+  body.metering .tbl-data-v thead th, body.metering .tbl-data-v thead td {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    line-height: 20px;
+    border-bottom: 2px solid #CECECE; }
+  body.metering .tbl-data-v tfoot th, body.metering .tbl-data-v tfoot td {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    line-height: 25px;
+    border-top: 2px solid #CECECE; }
+  body.metering .tbl-data-v tbody th, body.metering .tbl-data-v tbody td {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    line-height: 33px; }
+  body.metering .tbl-data-v tr.warning th, body.metering .tbl-data-v tr.warning td {
+    color: #E74E0F; }
+  body.metering .tbl-data-v .currency {
+    display: inline-block;
+    margin-top: -3px;
+    height: 17px;
+    width: 17px;
+    font-size: 10px;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    line-height: 17px;
+    vertical-align: middle;
+    border-radius: 100%;
+    background-color: #000; }
+    body.metering .tbl-data-v .currency.dollar {
+      font-size: 13px; }
+
+body.metering .tablescroll_wrapper {
+  padding-top: 5px; }
+
+body.metering .tooltipster-metering .tooltipster-box {
+  padding: 10px;
+  width: 100px;
+  font-size: 11px;
+  color: #fff;
+  line-height: 14px;
+  background-color: #000; }
 
 body.metering.dashboard .summary {
   box-sizing: border-box;
@@ -3909,26 +4242,6 @@ body.metering.dashboard .summary {
         color: #fff;
         text-align: right;
         letter-spacing: -0.05em; }
-      body.metering.dashboard .summary .status > li .btn-goto {
-        display: inline-block;
-        padding: 0 18px;
-        height: 30px;
-        font-size: 16px;
-        font-weight: 700;
-        color: #9B9B9B;
-        line-height: 30px;
-        border: 1px solid #9B9B9B;
-        border-raidus: 2px; }
-        body.metering.dashboard .summary .status > li .btn-goto:before {
-          content: ""; }
-        body.metering.dashboard .summary .status > li .btn-goto:before {
-          display: inline-block;
-          margin: -4px 8px 0 0;
-          height: 12px;
-          width: 14px;
-          font-size: 15px;
-          line-height: 12px;
-          vertical-align: middle; }
       body.metering.dashboard .summary .status > li .remain {
         display: block;
         font-size: 15px;
