@@ -35,62 +35,68 @@
 	@if $filename == arrow03 {
 		$char: "\E003";
 	}
-	@if $filename == asset {
+	@if $filename == arrow04 {
 		$char: "\E004";
 	}
-	@if $filename == calendar {
+	@if $filename == asset {
 		$char: "\E005";
 	}
-	@if $filename == close {
+	@if $filename == calendar {
 		$char: "\E006";
 	}
-	@if $filename == dashboard {
+	@if $filename == close {
 		$char: "\E007";
 	}
-	@if $filename == edit {
+	@if $filename == dashboard {
 		$char: "\E008";
 	}
-	@if $filename == export {
+	@if $filename == edit {
 		$char: "\E009";
 	}
-	@if $filename == eyes {
+	@if $filename == export {
 		$char: "\E00A";
 	}
-	@if $filename == filter {
+	@if $filename == eyes {
 		$char: "\E00B";
 	}
-	@if $filename == grid {
+	@if $filename == filter {
 		$char: "\E00C";
 	}
-	@if $filename == info {
+	@if $filename == grid {
 		$char: "\E00D";
 	}
-	@if $filename == metering {
+	@if $filename == growth {
 		$char: "\E00E";
 	}
-	@if $filename == monitoring {
+	@if $filename == info {
 		$char: "\E00F";
 	}
-	@if $filename == noticifation {
+	@if $filename == metering {
 		$char: "\E010";
 	}
-	@if $filename == refresh {
+	@if $filename == monitoring {
 		$char: "\E011";
 	}
-	@if $filename == reset {
+	@if $filename == noticifation {
 		$char: "\E012";
 	}
-	@if $filename == search {
+	@if $filename == refresh {
 		$char: "\E013";
 	}
-	@if $filename == settings {
+	@if $filename == reset {
 		$char: "\E014";
 	}
-	@if $filename == warning {
+	@if $filename == search {
 		$char: "\E015";
 	}
-	@if $filename == workflow {
+	@if $filename == settings {
 		$char: "\E016";
+	}
+	@if $filename == warning {
+		$char: "\E017";
+	}
+	@if $filename == workflow {
+		$char: "\E018";
 	}
 
 	@return $char;
@@ -116,6 +122,9 @@
 }
 .icon-arrow03 {
 	@include icon(arrow03);
+}
+.icon-arrow04 {
+	@include icon(arrow04);
 }
 .icon-asset {
 	@include icon(asset);
@@ -143,6 +152,9 @@
 }
 .icon-grid {
 	@include icon(grid);
+}
+.icon-growth {
+	@include icon(growth);
 }
 .icon-info {
 	@include icon(info);
