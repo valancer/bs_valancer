@@ -561,6 +561,17 @@ The `sprites` mixin generates identical output to the CSS template
       font-size: 16px;
       text-align: center;
       background-color: #0f0; }
+  .type02 .selectric {
+    border: 0px;
+    border-bottom: 2px solid #000; }
+    .type02 .selectric .label {
+      height: 26px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: right;
+      line-height: 26px; }
+    .type02 .selectric .button {
+      height: 26px; }
 
 .selectric-focus .selectric {
   border-color: black; }
@@ -752,6 +763,15 @@ The `sprites` mixin generates identical output to the CSS template
   .grid-detail.is-opened {
     right: 0;
     transition: right 0.5s; }
+
+.grid-bottom {
+  padding: 20px 0;
+  text-align: center; }
+  .grid-bottom .btn-more {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    line-height: 30px; }
 
 .popover.export ul {
   display: block;
@@ -2473,6 +2493,7 @@ article.contents .submit-btns {
 **/
 .datepicker {
   display: inline-block;
+  margin-right: 25px;
   position: relative;
   border-bottom: 2px solid #000; }
   .datepicker:after {
@@ -2481,12 +2502,12 @@ article.contents .submit-btns {
     position: absolute;
     top: 50%;
     right: -25px;
-    margin-top: -8px; }
+    margin-top: -10px; }
   .datepicker input[type=text] {
     display: inline-block;
     padding: 3px 0;
-    width: 220px;
-    font-size: 20px;
+    width: 230px;
+    font-size: 16px;
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -2496,18 +2517,23 @@ article.contents .submit-btns {
   position: relative;
   margin: 35px 40px;
   text-align: center; }
+  .filter-util .top-content {
+    padding: 0 0 50px 0;
+    text-align: left; }
+    .filter-util .top-content .inline-select {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: bottom; }
   .filter-util .left-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 43px; }
+    float: left;
+    line-height: 31px; }
   .filter-util .right-content {
-    position: absolute;
-    top: 0;
-    right: 0;
-    line-height: 43px; }
+    float: right;
+    line-height: 31px; }
   .filter-util .page-tabs {
     display: inline-block; }
+  .metering .filter-util {
+    margin-top: 5px; }
 
 /**
 	dashboard

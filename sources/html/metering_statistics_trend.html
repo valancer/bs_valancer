@@ -21,11 +21,42 @@
 				
 				<!-- filter util -->
 				<div class="filter-util">
+					<div class="top-content">
+						@@include('./inc_datepicker.html')
+
+						<div class="inline-select type02" style="min-width: 200px;">
+							<select name="" id="" class="selectric">
+								<option value="0">ALL VIEW GROUP</option>
+								<option value="1">ALL COST GROUP</option>
+								<option value="2">CLOUD VENDOR COST</option>
+								<option value="3">ACCOUNT COST</option>
+								<option value="4">SERVICE GROUP COST</option>
+								<option value="5">CLOUD PRODUCT COST</option>
+								<option value="6">REGIONAL COST</option>
+								<option value="7">TAG GROUP</option>
+							</select>
+						</div>
+
+						<div class="inline-select type02" style="min-width: 200px;">
+							<select name="" id="" class="selectric">
+								<option value="0">2ND DEPTH MENU</option>
+								<option value="1">2ND DEPTH MENU 1</option>
+								<option value="2">2ND DEPTH MENU 2</option>
+							</select>
+						</div>
+					</div>
+
 					<div class="page-tabs">
 						<p class="inner">
 							<a href="#" class="is-selected">SUMMARY</a>
 							<a href="#">TREND</a>
 						</p>
+
+						<ul class="page-sub-tabs">
+							<li><a href="#" class="is-selected">DAILY</a></li>
+							<li><a href="#">WEEKLY</a></li>
+							<li><a href="#">MONTHLY</a></li>
+						</ul>
 					</div>
 
 
@@ -53,7 +84,7 @@
 				});
 				</script>
 				<!--// filter util -->
-				
+								
 
 				<!-- chart container -->
 				<div id="chart-container" class="chart-container">
@@ -63,6 +94,7 @@
 							<li>
 								<div class="box-item">
 									<h2 class="title">CLOUD VENDOR</h2>
+									<a href="#" class="btn-detail">detail</a>
 
 									<div class="content">
 										<div class="chart"></div>
@@ -72,6 +104,7 @@
 							<li>
 								<div class="box-item">
 									<h2 class="title">CLOUD PRODUCT</h2>
+									<a href="#" class="btn-detail">detail</a>
 
 									<div class="content">
 										<div class="chart"></div>
@@ -81,6 +114,7 @@
 							<li>
 								<div class="box-item">
 									<h2 class="title">REGION</h2>
+									<a href="#" class="btn-detail">detail</a>
 
 									<div class="content">
 										<div class="chart"></div>
@@ -90,6 +124,7 @@
 							<li>
 								<div class="box-item">
 									<h2 class="title">REGION</h2>
+									<a href="#" class="btn-detail">detail</a>
 
 									<div class="content">
 										<div class="chart"></div>
@@ -99,6 +134,7 @@
 							<li>
 								<div class="box-item">
 									<h2 class="title">EBS</h2>
+									<a href="#" class="btn-detail">detail</a>
 
 									<div class="content">
 										<div class="chart"></div>
@@ -108,6 +144,7 @@
 							<li>
 								<div class="box-item">
 									<h2 class="title">EBS</h2>
+									<a href="#" class="btn-detail">detail</a>
 
 									<div class="content">
 										<div class="chart"></div>
@@ -117,6 +154,7 @@
 							<li>
 								<div class="box-item">
 									<h2 class="title">EBS</h2>
+									<a href="#" class="btn-detail">detail</a>
 
 									<div class="content">
 										<div class="chart"></div>

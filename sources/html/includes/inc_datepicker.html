@@ -4,7 +4,11 @@
 <script>
 $(document).ready(function(e) {
 	$('input[name="daterange"]').daterangepicker({
-		"showISOWeekNumbers": true
+		"showDropdowns": true,
+		"showISOWeekNumbers": true,
+		locale: {
+			format: '(WW)YYYY.MM.DD'
+		}
 	});
 });
 </script>

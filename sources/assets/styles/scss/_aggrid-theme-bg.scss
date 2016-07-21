@@ -12,7 +12,6 @@
 
 		input[type=text] { height: 20px; width: 30%; font-size: 15px; font-weight: 500; color: #000; border: 0px; line-height: 20px; }
 	}
-
 }
 
 
@@ -32,6 +31,10 @@
 	&.is-opened { right: 0;
 		transition: right 0.5s;
 	}
+}
+
+.grid-bottom { padding: 20px 0; text-align: center;
+	.btn-more { font-size: 15px; font-weight: 700; color: #000; line-height: 30px; }
 }
 
 // popover

@@ -61,6 +61,11 @@ $selectric-inner-height:    $selectric-height - ($selectric-border-width * 2) !d
       background-color: #0f0;
     }
   }
+
+  .type02 & { border: 0px; border-bottom: $selectric-border-width solid $selectric-main-color;
+    .label { height: 26px; font-size: 14px; font-weight: 700; text-align: right; line-height: 26px; }
+    .button { height: 26px; }
+  }
 }
 
 .selectric-focus .selectric {

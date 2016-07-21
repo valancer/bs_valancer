@@ -223,19 +223,23 @@
 /**
 	filter-util
 **/
-.datepicker { display: inline-block; position: relative; border-bottom: 2px solid #000;
+.datepicker { display: inline-block; margin-right: 25px; position: relative; border-bottom: 2px solid #000;
 	@include icon(calendar, after);
-	&:after { position: absolute; top: 50%; right: -25px; margin-top: -8px; }
+	&:after { position: absolute; top: 50%; right: -25px; margin-top: -10px; }
 
-	input[type=text] { display: inline-block; padding: 3px 0; width: 220px; font-size: 20px; font-weight: 700; color: #000; text-align: center; border: 0px; }
+	input[type=text] { display: inline-block; padding: 3px 0; width: 230px; font-size: 16px; font-weight: 700; color: #000; text-align: center; border: 0px; }
 }
 
 .filter-util { position: relative; margin: 35px 40px; text-align: center;
-	.left-content { position: absolute; top: 0; left: 0; line-height: 43px; }
-	.right-content { position: absolute; top: 0; right: 0; line-height: 43px; }
+	.top-content { padding: 0 0 50px 0; text-align: left;
+		.inline-select { display: inline-block; margin-left: 10px; vertical-align: bottom; }
+	}
+	.left-content { float: left; line-height: 31px; }
+	.right-content { float: right; line-height: 31px; }
 
 	.page-tabs { display: inline-block; }
 
+	.metering & { margin-top: 5px; }
 }
 
 
