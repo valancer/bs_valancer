@@ -127,7 +127,11 @@ var gridOptions = {
     rowSelection: 'single',
     onSelectionChanged: onSelectionChanged,
     rowData: null,
+    enableFilter: true,
     enableSorting: true,
+	suppressContextMenu: true,
+	suppressMenuMainPanel: true,
+	suppressMenuColumnPanel: true,
     headerHeight: 40,
 	headerCellTemplate:
 		'<div class="ag-header-cell">' +

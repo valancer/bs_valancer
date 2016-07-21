@@ -71,32 +71,35 @@
 	@if $filename == info {
 		$char: "\E00F";
 	}
-	@if $filename == metering {
+	@if $filename == menu {
 		$char: "\E010";
 	}
-	@if $filename == monitoring {
+	@if $filename == metering {
 		$char: "\E011";
 	}
-	@if $filename == noticifation {
+	@if $filename == monitoring {
 		$char: "\E012";
 	}
-	@if $filename == refresh {
+	@if $filename == noticifation {
 		$char: "\E013";
 	}
-	@if $filename == reset {
+	@if $filename == refresh {
 		$char: "\E014";
 	}
-	@if $filename == search {
+	@if $filename == reset {
 		$char: "\E015";
 	}
-	@if $filename == settings {
+	@if $filename == search {
 		$char: "\E016";
 	}
-	@if $filename == warning {
+	@if $filename == settings {
 		$char: "\E017";
 	}
-	@if $filename == workflow {
+	@if $filename == warning {
 		$char: "\E018";
+	}
+	@if $filename == workflow {
+		$char: "\E019";
 	}
 
 	@return $char;
@@ -158,6 +161,9 @@
 }
 .icon-info {
 	@include icon(info);
+}
+.icon-menu {
+	@include icon(menu);
 }
 .icon-metering {
 	@include icon(metering);
