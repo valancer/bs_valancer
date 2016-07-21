@@ -203,6 +203,14 @@ article.contents {
 		}
 	}
 
+	// metering
+	.metering & {
+		h1.title {
+			.inner { @include inner(); padding-top: 19px; height: 135px; font-size: 36px; font-weight: 500; }
+			.inline { display: inline-block; margin-left: 20px; vertical-align: middle; }
+			.right-content { float: right; }
+		}
+	}
 
 	// list column 01
 	.list-column-01 { overflow: hidden; padding: 30px;

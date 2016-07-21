@@ -1,0 +1,81 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="metering">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "metering", "sub": "billing"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<div class="contents-inner">
+				<h1 class="is-hidden">Combined Billing</h1>
+
+				<div class="column-left">
+
+					<select name="" id="" class="selectric">
+						<optgroup label="Year 2016">
+							<option value="1">JUNE.2016</option>
+							<option value="2">MAY.2016</option>
+							<option value="3">APRIL.2016</option>
+							<option value="4">MARCH.2016</option>
+							<option value="5">FEBUARY.2016</option>
+							<option value="6">JANUARY.2016</option>
+						</optgroup>
+						<optgroup label="Year 2015">
+							<option value="1">JUNE.2015</option>
+							<option value="2">MAY.2015</option>
+							<option value="3">APRIL.2015</option>
+							<option value="4">MARCH.2015</option>
+							<option value="5">FEBUARY.2015</option>
+							<option value="6">JANUARY.2015</option>
+						</optgroup>
+					</select>
+
+					<nav class="side-menus">
+						<ul>
+							<li>
+								<a href="#" class="vendor aws is-selected">
+									<span>Amazon AWS</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="vendor azure">
+									<span>Microsoft Azure</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="vendor aliyun">
+									<span>Aliyun</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+
+				<div class="column-right">
+
+					<select name="" id="" class="selectric">
+						<option value="0">VIEW BY ACCOUNT</option>
+						<option value="1">VIEW BY SERVICE GROUP</option>
+						<option value="2">VIEW BY REGION</option>
+						<option value="3">VIEW BY TAGS</option>
+						<option value="4">VIEW BY CLOUD PRODUCT</option>
+					</select>
+						
+
+				</div>
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

@@ -6,6 +6,10 @@
 		.btn-text { margin-left: 26px; }
 	}
 
+	.left-content { float: left;
+		.icheck { margin-right: 10px; }
+	}
+
 	.search { display: block;
 		@include icon(search);
 		&:before { display: inline-block; margin-right: 8px; color: #999; line-height: 20px; vertical-align: middle; }

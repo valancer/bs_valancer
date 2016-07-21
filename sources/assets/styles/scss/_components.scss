@@ -237,7 +237,9 @@
 	.left-content { float: left; line-height: 31px; }
 	.right-content { float: right; line-height: 31px; }
 
-	.page-tabs { display: inline-block; }
+	.page-tabs { display: inline-block;
+		&.line { display: block; }
+	}
 
 	.metering & { margin-top: 5px; }
 }

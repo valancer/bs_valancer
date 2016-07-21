@@ -1,0 +1,38 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="metering history">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "metering", "sub": "history"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					Payment history
+
+					<p class="right-content">
+						<a href="#" class="btn-goto">GO TO ANNUAL BILLING</a>
+					</p>
+				</div>
+			</h1>
+
+			<div class="contents-inner">
+
+				@@include('./inc_metering_grid.html')
+
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

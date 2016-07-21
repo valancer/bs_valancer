@@ -701,6 +701,10 @@ The `sprites` mixin generates identical output to the CSS template
     float: right; }
     .aggrid-uitls .right-content .btn-text {
       margin-left: 26px; }
+  .aggrid-uitls .left-content {
+    float: left; }
+    .aggrid-uitls .left-content .icheck {
+      margin-right: 10px; }
   .aggrid-uitls .search {
     display: block; }
     .aggrid-uitls .search:before {
@@ -2093,6 +2097,25 @@ article.contents .column-right {
     font-weight: 500;
     color: #999; }
 
+.metering article.contents h1.title .inner {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 1080px;
+  padding-top: 19px;
+  height: 135px;
+  font-size: 36px;
+  font-weight: 500; }
+
+.metering article.contents h1.title .inline {
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: middle; }
+
+.metering article.contents h1.title .right-content {
+  float: right; }
+
 article.contents .list-column-01 {
   overflow: hidden;
   padding: 30px; }
@@ -2532,6 +2555,8 @@ article.contents .submit-btns {
     line-height: 31px; }
   .filter-util .page-tabs {
     display: inline-block; }
+    .filter-util .page-tabs.line {
+      display: block; }
   .metering .filter-util {
     margin-top: 5px; }
 
@@ -3964,7 +3989,7 @@ body.metering .btn-goto {
     vertical-align: middle; }
   body.metering .btn-goto:hover {
     color: #000;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     background-color: #fff; }
 
 body.metering .list-column-complex {
@@ -4332,3 +4357,6 @@ body.metering.statistics .statistics-summary .list-statistics-summary {
       clear: both;
       padding-top: 15px;
       height: 215px; }
+
+body.metering.history.credit .filter-util {
+  margin: 5px 0 0 0; }
