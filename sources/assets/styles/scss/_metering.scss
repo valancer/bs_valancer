@@ -198,6 +198,58 @@ body.metering {
 		}
 	}
 
+
+	// billing
+	.billing-summary { font-weight: 700; color: rgba(0, 0, 0, 0.5); border: 2px solid #000; background-color: #fff;
+		> .inner { position: relative; padding: 10px 10px; height: 200px; }
+	
+		.title { font-size: 14px; }
+		.cost { display: block; margin-top: 10px; font-size: 38px; font-weight: 500; color: #000; }
+
+		.currency { display: block; position: absolute; bottom: 25px;
+			dt { display: block; font-size: 12px; line-height: 20px; }
+			dd { display: block; font-size: 14px; line-height: 25px; border-top: 1px solid #979797; }
+		}
+
+		.status { padding: 10px 0; background-color: #000;
+			table { width: 100%; color: rgba(255, 255, 255, 0.5);
+				tbody {
+					th { padding-left: 10px; font-size: 12px; text-align: left; line-height: 20px; }
+					td { padding-right: 10px; font-size: 12px; font-weight: 500; text-align: right; line-height: 20px; }
+				}
+			}
+
+			.payment {
+				&:before { content: ''; display: inline-block; margin: -2px 5px 0 0; height: 10px; width: 10px; border-radius: 10px; vertical-align: middle; }
+
+				&.paid { color: #0DACEA;
+					&:before { background-color: #0DACEA; }
+				}
+				&.not-paid { color: #F5A623; 
+					&:before { background-color: #F5A623; }
+				}
+				&.overdue { color: #E74E0F; 
+					&:before { background-color: #E74E0F; }
+				}
+			}
+		}
+
+		// invert
+		&.invert { color: rgba(255, 255, 255, 0.5);
+			> .inner { background-color: #000; }
+
+			.cost { color: #fff; }
+			.currency { display: block; position: absolute; bottom: 25px;
+				dd { border-top: 1px solid #979797; }
+			}
+		}
+	}
+
+
+	&.billing {
+
+	}
+
 	// cost statistics
 	&.statistics {
 		.statistics-summary {

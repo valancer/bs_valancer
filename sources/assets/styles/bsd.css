@@ -878,7 +878,7 @@ The `sprites` mixin generates identical output to the CSS template
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -123px -90px;
+      background-position: -120px -90px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -887,7 +887,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 159px 376px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -77px -90px;
+      background-position: -74px -90px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -896,7 +896,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 159px 376px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -100px -90px;
+      background-position: -97px -90px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1970,7 +1970,7 @@ corresponds to the arrow we want to display */
         content: '';
         display: none;
         position: absolute;
-        top: 50%;
+        top: 21px;
         right: 0px;
         left: 0px;
         height: 2px;
@@ -1989,9 +1989,9 @@ corresponds to the arrow we want to display */
         color: #000; }
         .side-menus li a.is-selected:before {
           display: block; }
-      .side-menus li a.vendor span {
+      .side-menus li a.vendor > span {
         padding-left: 50px; }
-        .side-menus li a.vendor span:before {
+        .side-menus li a.vendor > span:before {
           content: '';
           display: block;
           position: absolute;
@@ -2001,37 +2001,61 @@ corresponds to the arrow we want to display */
           height: 39px;
           width: 39px;
           opacity: 0.4; }
-      .side-menus li a.vendor:hover span:before, .side-menus li a.vendor.is-selected span:before {
+      .side-menus li a.vendor .cost {
+        margin-top: -5px;
+        padding-left: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #9B9B9B;
+        opacity: 0.4; }
+        .side-menus li a.vendor .cost .dollar {
+          color: #000; }
+      .side-menus li a.vendor:hover > span:before, .side-menus li a.vendor.is-selected > span:before {
         opacity: 1; }
-      .side-menus li a.vendor.aws span:before {
-        background-image: url(../images/sprites.png);
-        background-position: -74px -18px;
-        width: 39px;
-        height: 39px; }
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-          .side-menus li a.vendor.aws span:before {
-            background-image: url(../images/sprites@2x.png);
-            background-size: 159px 376px; } }
-      .side-menus li a.vendor.azure span:before {
+      .side-menus li a.vendor:hover .cost, .side-menus li a.vendor.is-selected .cost {
+        opacity: 1; }
+      .side-menus li a.vendor.total > span:before {
+        margin-top: -8px;
         background-image: url(../images/sprites.png);
         background-position: -29px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-          .side-menus li a.vendor.azure span:before {
+          .side-menus li a.vendor.total > span:before {
             background-image: url(../images/sprites@2x.png);
             background-size: 159px 376px; } }
-      .side-menus li a.vendor.aliyun span:before {
+      .side-menus li a.vendor.aws > span:before {
         background-image: url(../images/sprites.png);
         background-position: -119px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-          .side-menus li a.vendor.aliyun span:before {
+          .side-menus li a.vendor.aws > span:before {
+            background-image: url(../images/sprites@2x.png);
+            background-size: 159px 376px; } }
+      .side-menus li a.vendor.azure > span:before {
+        background-image: url(../images/sprites.png);
+        background-position: -74px -18px;
+        width: 39px;
+        height: 39px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .side-menus li a.vendor.azure > span:before {
+            background-image: url(../images/sprites@2x.png);
+            background-size: 159px 376px; } }
+      .side-menus li a.vendor.aliyun > span:before {
+        background-image: url(../images/sprites.png);
+        background-position: -29px -63px;
+        width: 39px;
+        height: 39px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .side-menus li a.vendor.aliyun > span:before {
             background-image: url(../images/sprites@2x.png);
             background-size: 159px 376px; } }
   .side-menus.is-editable a:hover .btn-edit {
     display: inline-block; }
+  .metering .side-menus a {
+    margin-bottom: 10px;
+    font-size: 25px; }
 
 /* FOOTER */
 .footer {
@@ -2047,10 +2071,7 @@ article.contents .contents-inner {
   padding: 0 30px;
   width: 1080px;
   padding-bottom: 100px; }
-  .asset article.contents .contents-inner {
-    margin-top: 0;
-    padding: 0; }
-  .metering article.contents .contents-inner {
+  article.contents .contents-inner.size-fit {
     margin-top: 0;
     padding: 0; }
 
@@ -2797,7 +2818,7 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -53px -90px;
+  background-position: -101px -108px;
   width: 18px;
   height: 18px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2806,7 +2827,7 @@ article.contents .submit-btns {
       background-size: 159px 376px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -75px -63px;
+    background-position: -120px -63px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2815,7 +2836,7 @@ article.contents .submit-btns {
         background-size: 159px 376px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -99px -63px;
+    background-position: -29px -108px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2829,7 +2850,7 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -29px -90px;
+  background-position: -77px -108px;
   width: 18px;
   height: 18px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2838,7 +2859,7 @@ article.contents .submit-btns {
       background-size: 159px 376px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -123px -63px;
+    background-position: -53px -108px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2873,7 +2894,7 @@ article.contents .submit-btns {
     vertical-align: middle; }
   .all-checked[value="0"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -53px -90px;
+    background-position: -101px -108px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2882,7 +2903,7 @@ article.contents .submit-btns {
         background-size: 159px 376px; } }
   .all-checked[value="1"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -75px -63px;
+    background-position: -120px -63px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2891,7 +2912,7 @@ article.contents .submit-btns {
         background-size: 159px 376px; } }
   .all-checked[value="2"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -99px -63px;
+    background-position: -29px -108px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3000,7 +3021,7 @@ input[type=submit].btn-normal,
   position: relative;
   text-indent: -9999px;
   background-image: url(../images/sprites.png);
-  background-position: -52px -63px;
+  background-position: -97px -63px;
   width: 17px;
   height: 21px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3009,7 +3030,7 @@ input[type=submit].btn-normal,
       background-size: 159px 376px; } }
   .btn-bookmark.is-selected, .btn-bookmark:hover {
     background-image: url(../images/sprites.png);
-    background-position: -29px -63px;
+    background-position: -74px -63px;
     width: 17px;
     height: 21px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -4343,6 +4364,86 @@ body.metering.dashboard .summary {
     margin-top: 25px;
     height: 250px;
     background-color: rgba(0, 0, 0, 0.3); }
+
+body.metering .billing-summary {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #000;
+  background-color: #fff; }
+  body.metering .billing-summary > .inner {
+    position: relative;
+    padding: 10px 10px;
+    height: 200px; }
+  body.metering .billing-summary .title {
+    font-size: 14px; }
+  body.metering .billing-summary .cost {
+    display: block;
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: 500;
+    color: #000; }
+  body.metering .billing-summary .currency {
+    display: block;
+    position: absolute;
+    bottom: 25px; }
+    body.metering .billing-summary .currency dt {
+      display: block;
+      font-size: 12px;
+      line-height: 20px; }
+    body.metering .billing-summary .currency dd {
+      display: block;
+      font-size: 14px;
+      line-height: 25px;
+      border-top: 1px solid #979797; }
+  body.metering .billing-summary .status {
+    padding: 10px 0;
+    background-color: #000; }
+    body.metering .billing-summary .status table {
+      width: 100%;
+      color: rgba(255, 255, 255, 0.5); }
+      body.metering .billing-summary .status table tbody th {
+        padding-left: 10px;
+        font-size: 12px;
+        text-align: left;
+        line-height: 20px; }
+      body.metering .billing-summary .status table tbody td {
+        padding-right: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: right;
+        line-height: 20px; }
+    body.metering .billing-summary .status .payment:before {
+      content: '';
+      display: inline-block;
+      margin: -2px 5px 0 0;
+      height: 10px;
+      width: 10px;
+      border-radius: 10px;
+      vertical-align: middle; }
+    body.metering .billing-summary .status .payment.paid {
+      color: #0DACEA; }
+      body.metering .billing-summary .status .payment.paid:before {
+        background-color: #0DACEA; }
+    body.metering .billing-summary .status .payment.not-paid {
+      color: #F5A623; }
+      body.metering .billing-summary .status .payment.not-paid:before {
+        background-color: #F5A623; }
+    body.metering .billing-summary .status .payment.overdue {
+      color: #E74E0F; }
+      body.metering .billing-summary .status .payment.overdue:before {
+        background-color: #E74E0F; }
+  body.metering .billing-summary.invert {
+    color: rgba(255, 255, 255, 0.5); }
+    body.metering .billing-summary.invert > .inner {
+      background-color: #000; }
+    body.metering .billing-summary.invert .cost {
+      color: #fff; }
+    body.metering .billing-summary.invert .currency {
+      display: block;
+      position: absolute;
+      bottom: 25px; }
+      body.metering .billing-summary.invert .currency dd {
+        border-top: 1px solid #979797; }
 
 body.metering.statistics .statistics-summary .list-statistics-summary {
   overflow: hidden;

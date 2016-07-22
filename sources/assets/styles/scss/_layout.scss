@@ -126,7 +126,8 @@
 		}
 
 		a { display: block; position: relative; font-size: 21px; font-weight: 500; color: #AFAFAF; line-height: 45px;
-			&:before { content: ''; display: none; position: absolute; top: 50%; right: 0px; left: 0px; height: 2px; background-color: #000; }
+			&:before { content: ''; display: none; position: absolute; top: 21px; right: 0px; left: 0px; height: 2px; background-color: #000; }
+
 			span { display: inline-block; position: relative; z-index: z("default"); padding-right: 11px; background-color: #fff; }
 
 			&:hover { color: #000;
@@ -139,21 +140,30 @@
 
 
 			&.vendor {
-				span { padding-left: 50px;
+				> span { padding-left: 50px;
 					&:before { content: ''; display: block; position: absolute; top: 50%; left: 0; margin-top: -19px; height: 39px; width: 39px; opacity: 0.4; }
+				}
+				.cost { margin-top: -5px; padding-left: 50px; font-size: 16px; font-weight: 700; color: #9B9B9B; opacity: 0.4;
+					.dollar { color: #000; }
 				}
 
 				&:hover,
-				&.is-selected { span:before { opacity: 1; } }
+				&.is-selected {
+					> span:before { opacity: 1; }
+					.cost { opacity: 1; }
+				}
 
+				&.total {
+					> span:before { margin-top: -8px; @include retina-sprite($sc-icon-cloud-group); }
+				}
 				&.aws {
-					span:before { @include retina-sprite($sc-icon-aws-group); }
+					> span:before { @include retina-sprite($sc-icon-aws-group); }
 				}
 				&.azure {
-					span:before { @include retina-sprite($sc-icon-azure-group); }
+					> span:before { @include retina-sprite($sc-icon-azure-group); }
 				}
 				&.aliyun {
-					span:before { @include retina-sprite($sc-icon-aliyun-group); }
+					> span:before { @include retina-sprite($sc-icon-aliyun-group); }
 				}
 			}
 		}
@@ -164,6 +174,14 @@
 			&:hover {
 				.btn-edit { display: inline-block; }
 			}
+		}
+	}
+
+
+	// metering
+	.metering & {
+		a { margin-bottom: 10px; font-size: 25px;
+
 		}
 	}
 }
@@ -182,8 +200,7 @@
 article.contents { 
 	@mixin inner() { position: relative; box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
 	.contents-inner { overflow: hidden; @include inner(); padding-bottom: 100px;
-		.asset & { margin-top: 0; padding: 0; }
-		.metering & { margin-top: 0; padding: 0; }
+		&.size-fit { margin-top: 0; padding: 0; }
 	}
 
 	.button-container { padding: 35px 40px 0px 40px; text-align: right; }

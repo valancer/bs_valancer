@@ -2,7 +2,7 @@
 	"lang": "en",
 	"title": "Bespin Global"
 })
-<body class="metering">
+<body class="metering billing">
 
 	<!-- 상단 영역 -->
 	@@include('./header.html', {"service": "metering", "sub": "billing"})
@@ -14,6 +14,7 @@
 			<div class="contents-inner">
 				<h1 class="is-hidden">Combined Billing</h1>
 
+				<!-- column left -->
 				<div class="column-left">
 
 					<select name="" id="" class="selectric">
@@ -38,25 +39,90 @@
 					<nav class="side-menus">
 						<ul>
 							<li>
+								<a href="#" class="vendor total">
+									<span>Combined Billing</span>
+									<p class="cost">
+										<em class="dollar">$46,763</em> / 48,119,127 won
+									</p>
+								</a>
+							</li>
+							<li>
 								<a href="#" class="vendor aws is-selected">
 									<span>Amazon AWS</span>
+									<p class="cost">
+										<em class="dollar">$46,763</em> / 48,119,127 won
+									</p>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="vendor azure">
 									<span>Microsoft Azure</span>
+									<p class="cost">
+										<em class="dollar">$46,763</em> / 48,119,127 won
+									</p>
 								</a>
 							</li>
 							<li>
 								<a href="#" class="vendor aliyun">
 									<span>Aliyun</span>
+									<p class="cost">
+										<em class="dollar">$46,763</em> / 48,119,127 won
+									</p>
 								</a>
 							</li>
 						</ul>
 					</nav>
+
+
+					<!-- billing summary -->
+					<aside class="billing-summary invert">
+						<div class="inner">
+							<h2 class="title">TOTAL AMOUNT DUE[ JUNE.2016 ]</h2>
+							<p>
+								<strong class="cost">₩99,927,857</strong>
+							</p>
+
+							<dl class="currency">
+								<dt>CURRENCY CONVERTED:</dt>
+								<dd>
+									$000,000.00 / ₩000,000,000
+								</dd>
+							</dl>
+						</div>
+
+						<footer class="status">
+							<table>
+								<caption></caption>
+								<tbody>
+									<tr>
+										<th>PAYMENT STATUS:</th>
+										<td>
+											<strong class="payment paid">PAID</strong>
+										</td>
+									</tr>
+									<tr>
+										<th>BILL ISSUED:</th>
+										<td>
+											<time datetime="">6/14/16</time>
+										</td>
+									</tr>
+									<tr>
+										<th>BILL DUE:</th>
+										<td>
+											<!-- <time datetime="">7/13/16(15 days)</time> -->
+											<strong class="payment overdue">OVERDUE</strong>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</footer>
+					</aside>
+
 				</div>
+				<!--// column left -->
 
 
+				<!-- column right -->
 				<div class="column-right">
 
 					<select name="" id="" class="selectric">
@@ -69,6 +135,8 @@
 						
 
 				</div>
+				<!--// column right -->
+
 			</div>
 		</article>
 	</main>
