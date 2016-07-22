@@ -1,0 +1,37 @@
+<script>
+$(document).ready(function(e) {	
+	/* accordion */
+	var Accordion = (function ($) {
+		var scope,
+			$container,
+			$btnToggleContainer,
+			init = function() {
+				$container = $('.accordion');
+				$btnToggleContainer = $container.find('.btn-folding');
+
+				initLayout();
+				initEvent();
+			};
+
+		function initLayout() {
+		}
+
+		function initEvent() {
+			// item open / close
+			$btnToggleContainer.on('click', function(e) {
+				e.preventDefault();
+				
+				$(this).closest('dt').toggleClass('is-opened');
+			});
+		}
+
+		return {
+			init: function() {
+				init();
+			}
+		};
+	}(jQuery));
+	
+	Accordion.init();
+});
+</script>
