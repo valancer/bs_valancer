@@ -17,7 +17,7 @@
 				<!-- column left -->
 				<div class="column-left">
 					@@include('./inc_metering_billing_sidemenus.html')
-					
+
 					@@include('./inc_metering_billing_summary.html')
 				</div>
 				<!--// column left -->
@@ -26,13 +26,25 @@
 				<!-- column right -->
 				<div class="column-right">
 
+					<div class="view-by">
+						<select name="" id="" class="selectric">
+							<option value="0">VIEW BY ACCOUNT</option>
+							<option value="1" selected>VIEW BY SERVICE GROUP</option>
+							<option value="2">VIEW BY REGION</option>
+							<option value="3">VIEW BY TAGS</option>
+							<option value="4">VIEW BY CLOUD PRODUCT</option>
+						</select>
+					</div>
+
+
 					<div class="vendor-cost">
 						<div class="month last">
 							<time datetime="" class="title">VENDOR TOTAL [ MAY.2016 ]</time>
 
 							<p class="cost">
 								<strong>
-									₩99,927,857
+									$99,927,857<br>
+									<small>₩90,907,381</small>
 								</strong>
 							</p>
 						</div>
@@ -43,20 +55,25 @@
 							<p class="cost">
 								<span class="growth up">00.0% <span class="txt">up</span></span>
 								<strong>
-									₩99,927,857
+									$99,927,857<br>
+									<small>₩90,907,381</small>
 								</strong>
 							</p>
 						</div>
 					</div>
-										
+
 
 					<!--// accordion container -->
 					<dl class="accordion">
-						<dt class="is-opened">
-							<span class="title">AWS Infrastructure Total</span>
+						<dt>
+							<span class="title">
+								<span class="thumb"><img src="/assets/images/@temp/service01.png" alt=""></span>
+								92864820384
+							</span>
 
 							<p class="right">
-								<span class="content"><em>$46,763</em> / 48,119,127 won</span>
+								<span class="content"><em>$000,000.00</em> / 000,000,000 won</span>
+								<button type="button" class="btn-folding">open/close</button>
 							</p>
 						</dt>
 						<dd>
@@ -65,11 +82,15 @@
 							</div>
 						</dd>
 
-						<dt class="is-opened">
-							<span class="title">Microsoft Azure Infrastructure Total</span>
+						<dt>
+							<span class="title">
+								<span class="thumb"><img src="/assets/images/@temp/service01.png" alt=""></span>
+								92864820384
+							</span>
 
 							<p class="right">
-								<span class="content"><em>$46,763</em> / 48,119,127 won</span>
+								<span class="content"><em>$000,000.00</em> / 000,000,000 won</span>
+								<button type="button" class="btn-folding">open/close</button>
 							</p>
 						</dt>
 						<dd>
@@ -78,11 +99,15 @@
 							</div>
 						</dd>
 
-						<dt class="is-opened">
-							<span class="title">Aliyun Infrastructure Total</span>
+						<dt>
+							<span class="title">
+								<span class="thumb"><img src="/assets/images/@temp/service01.png" alt=""></span>
+								92864820384
+							</span>
 
 							<p class="right">
-								<span class="content"><em>$46,763</em> / 48,119,127 won</span>
+								<span class="content"><em>$000,000.00</em> / 000,000,000 won</span>
+								<button type="button" class="btn-folding">open/close</button>
 							</p>
 						</dt>
 						<dd>
@@ -91,6 +116,7 @@
 							</div>
 						</dd>
 					</dl>
+					@@include('./inc_accordion_script.html')
 					<!--// accordion container -->
 
 				</div>

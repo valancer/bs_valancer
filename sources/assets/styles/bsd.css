@@ -146,7 +146,8 @@ button:focus {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-menu:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, .chart-container .slick-arrow:before, body.metering .growth:after, body.metering .growth.tbl:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-download:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-menu:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, input[type=submit].btn-normal.download:before,
+.btn-normal.download:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, .chart-container .slick-arrow:before, body.metering .growth:after, body.metering .growth.tbl:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -180,56 +181,59 @@ button:focus {
 .icon-dashboard:before {
   content: ""; }
 
-.icon-edit:before {
+.icon-download:before {
   content: ""; }
 
-.icon-export:before {
+.icon-edit:before {
   content: ""; }
 
-.icon-eyes:before {
+.icon-export:before {
   content: ""; }
 
-.icon-filter:before {
+.icon-eyes:before {
   content: ""; }
 
-.icon-grid:before {
+.icon-filter:before {
   content: ""; }
 
-.icon-growth:before {
+.icon-grid:before {
   content: ""; }
 
-.icon-info:before {
+.icon-growth:before {
   content: ""; }
 
-.icon-menu:before {
+.icon-info:before {
   content: ""; }
 
-.icon-metering:before {
+.icon-menu:before {
   content: ""; }
 
-.icon-monitoring:before {
+.icon-metering:before {
   content: ""; }
 
-.icon-noticifation:before {
+.icon-monitoring:before {
   content: ""; }
 
-.icon-refresh:before {
+.icon-noticifation:before {
   content: ""; }
 
-.icon-reset:before {
+.icon-refresh:before {
   content: ""; }
 
-.icon-search:before {
+.icon-reset:before {
   content: ""; }
 
-.icon-settings:before {
+.icon-search:before {
   content: ""; }
 
-.icon-warning:before {
+.icon-settings:before {
   content: ""; }
 
-.icon-workflow:before {
+.icon-warning:before {
   content: ""; }
+
+.icon-workflow:before {
+  content: ""; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -529,7 +533,7 @@ The `sprites` mixin generates identical output to the CSS template
     text-overflow: ellipsis;
     margin: 0 31px 0 15px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 31px;
     color: #444;
     height: 31px;
@@ -708,7 +712,7 @@ The `sprites` mixin generates identical output to the CSS template
   .aggrid-uitls .search {
     display: block; }
     .aggrid-uitls .search:before {
-      content: ""; }
+      content: ""; }
     .aggrid-uitls .search:before {
       display: inline-block;
       margin-right: 8px;
@@ -1714,7 +1718,7 @@ corresponds to the arrow we want to display */
       .global-menu .title .service.asset:before {
         content: ""; }
       .global-menu .title .service.metering:before {
-        content: ""; }
+        content: ""; }
   .global-menu .uilts {
     position: relative;
     float: right;
@@ -1730,7 +1734,7 @@ corresponds to the arrow we want to display */
       .global-menu .uilts .btns.notifications {
         position: relative; }
         .global-menu .uilts .btns.notifications:before {
-          content: ""; }
+          content: ""; }
         .global-menu .uilts .btns.notifications:before {
           display: block;
           color: #000;
@@ -1755,7 +1759,7 @@ corresponds to the arrow we want to display */
           border-radius: 14px;
           background-color: #f34122; }
       .global-menu .uilts .btns.dashboard:before {
-        content: ""; }
+        content: ""; }
       .global-menu .uilts .btns.dashboard:before {
         display: block;
         color: #000;
@@ -2053,9 +2057,11 @@ corresponds to the arrow we want to display */
             background-size: 159px 376px; } }
   .side-menus.is-editable a:hover .btn-edit {
     display: inline-block; }
-  .metering .side-menus a {
-    margin-bottom: 10px;
-    font-size: 25px; }
+  .metering .side-menus {
+    margin-bottom: 50px; }
+    .metering .side-menus a {
+      margin-bottom: 10px;
+      font-size: 25px; }
 
 /* FOOTER */
 .footer {
@@ -2356,7 +2362,7 @@ article.contents .submit-btns {
         font-size: 41px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
         font-size: 44px;
         line-height: 64px; }
@@ -2366,12 +2372,12 @@ article.contents .submit-btns {
         font-size: 33px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
         font-size: 41px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
         font-size: 41px;
         line-height: 64px; }
@@ -2484,6 +2490,19 @@ article.contents .submit-btns {
       font-weight: 500;
       color: #000;
       line-height: 60px; }
+      .accordion > dt .title .thumb {
+        display: inline-block;
+        overflow: hidden;
+        margin-top: -4px;
+        margin-right: 5px;
+        height: 43px;
+        width: 43px;
+        border-radius: 43px;
+        vertical-align: middle;
+        background-color: #0f0; }
+        .accordion > dt .title .thumb img {
+          height: 100%;
+          width: 100%; }
     .accordion > dt .right {
       float: right;
       line-height: 60px; }
@@ -2495,6 +2514,8 @@ article.contents .submit-btns {
         font-weight: 500;
         color: rgba(0, 0, 0, 0.37);
         vertical-align: middle; }
+        .accordion > dt .right .content em {
+          color: #000; }
     .accordion > dt.is-opened {
       background-color: #F6F6F6; }
       .accordion > dt.is-opened .btn-folding:after {
@@ -2510,6 +2531,9 @@ article.contents .submit-btns {
     opacity: 0;
     max-height: 0px;
     background-color: #F6F6F6; }
+  .metering .accordion > dt .right .content {
+    padding-right: 20px;
+    font-size: 22px; }
   .accordion .permission {
     table-layout: fixed;
     width: 100%; }
@@ -2757,7 +2781,7 @@ article.contents .submit-btns {
         line-height: 1em;
         vertical-align: middle; }
         .box-item.service-group .info > li .btn-txt-info:after {
-          content: ""; }
+          content: ""; }
         .box-item.service-group .info > li .btn-txt-info:after {
           display: inline-block;
           margin: -2px 0 0 5px;
@@ -2938,7 +2962,7 @@ article.contents .submit-btns {
   height: 21px;
   width: 21px; }
   .btn-settings:before {
-    content: ""; }
+    content: ""; }
   .btn-settings:before {
     display: block;
     height: 21px;
@@ -2966,19 +2990,19 @@ article.contents .submit-btns {
     color: rgba(0, 0, 0, 0.43);
     text-decoration: none; }
     .btn-text.reset:before {
-      content: ""; }
+      content: ""; }
     .btn-text.reset:before {
       vertical-align: baseline; }
   .btn-text.show-hide:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
     margin-top: -4px;
     margin-right: 10px;
     font-size: 13px; }
   .btn-text.export:before {
-    content: ""; }
+    content: ""; }
   .btn-text.export:before {
     margin-top: -10px;
     font-size: 16px; }
@@ -3015,6 +3039,15 @@ input[type=submit].btn-normal,
   .btn-normal.small {
     padding: 0 15px;
     min-width: auto; }
+  input[type=submit].btn-normal.download:before,
+  .btn-normal.download:before {
+    content: ""; }
+  input[type=submit].btn-normal.download:before,
+  .btn-normal.download:before {
+    display: inline-block;
+    margin: -2px 5px 0 0;
+    font-size: 14px;
+    vertical-align: middle; }
 
 .btn-bookmark {
   display: block;
@@ -3067,7 +3100,7 @@ input[type=submit].btn-normal,
   color: #E74E0F;
   text-indent: -9999px; }
   .btn-warning:before {
-    content: ""; }
+    content: ""; }
   .btn-warning:before {
     display: block;
     position: absolute;
@@ -3089,7 +3122,7 @@ input[type=submit].btn-normal,
   color: #959595;
   text-indent: -9999px; }
   .btn-info:before {
-    content: ""; }
+    content: ""; }
   .btn-info:before {
     display: block;
     position: absolute;
@@ -3112,7 +3145,7 @@ input[type=submit].btn-normal,
   text-indent: -9999px;
   vertical-align: middle; }
   .btn-edit:before {
-    content: ""; }
+    content: ""; }
   .btn-edit:before {
     display: block;
     position: absolute;
@@ -3206,7 +3239,7 @@ input[type=submit].btn-normal,
       color: #000;
       line-height: 47px; }
       .filter-container .results > .selected:before {
-        content: ""; }
+        content: ""; }
       .filter-container .results > .selected:before {
         display: block;
         float: left;
@@ -3371,7 +3404,7 @@ input[type=submit].btn-normal,
   background-color: #e74e0f;
   transition: max-height 0.3s ease-in; }
   .warning-container:before {
-    content: ""; }
+    content: ""; }
   .warning-container:before {
     display: block;
     position: absolute;
@@ -3460,7 +3493,7 @@ input[type=submit].btn-normal,
   .list-users-search .search {
     display: block; }
     .list-users-search .search:before {
-      content: ""; }
+      content: ""; }
     .list-users-search .search:before {
       display: inline-block;
       margin-right: 8px;
@@ -3622,7 +3655,7 @@ input[type=submit].btn-normal,
     color: #fff;
     background-color: #E74E0F; }
     .login-container .invalid-message:before {
-      content: ""; }
+      content: ""; }
     .login-container .invalid-message:before {
       display: block;
       position: absolute;
@@ -3948,7 +3981,7 @@ body.metering .growth {
   font-weight: 500;
   letter-spacing: 0em; }
   body.metering .growth:after {
-    content: ""; }
+    content: ""; }
   body.metering .growth:after {
     display: inline-block;
     height: 25px;
@@ -3975,7 +4008,7 @@ body.metering .growth {
   body.metering .growth.tbl {
     font-size: 15px; }
     body.metering .growth.tbl:before {
-      content: ""; }
+      content: ""; }
     body.metering .growth.tbl:before {
       display: inline-block;
       margin-right: 3px;
@@ -4105,7 +4138,7 @@ body.metering .box-item .btn-warning {
   text-indent: -9999px;
   background-color: #E74E0F; }
   body.metering .box-item .btn-warning:before {
-    content: ""; }
+    content: ""; }
   body.metering .box-item .btn-warning:before {
     display: block;
     position: absolute;
@@ -4214,7 +4247,7 @@ body.metering .box-item .budget .chart.none {
     font-weight: 500;
     color: #9B9B9B; }
     body.metering .box-item .budget .chart.none p:before {
-      content: ""; }
+      content: ""; }
     body.metering .box-item .budget .chart.none p:before {
       display: block;
       margin-bottom: 30px;
@@ -4252,7 +4285,7 @@ body.metering .tbl-data-v {
     line-height: 20px;
     vertical-align: middle; }
     body.metering .tbl-data-v .btn-txt-info:after {
-      content: ""; }
+      content: ""; }
     body.metering .tbl-data-v .btn-txt-info:after {
       display: inline-block;
       margin: -2px 0 0 5px;
@@ -4366,6 +4399,7 @@ body.metering.dashboard .summary {
     background-color: rgba(0, 0, 0, 0.3); }
 
 body.metering .billing-summary {
+  margin-bottom: 5px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.5);
   border: 2px solid #000;
@@ -4376,6 +4410,8 @@ body.metering .billing-summary {
     height: 200px; }
   body.metering .billing-summary .title {
     font-size: 14px; }
+    body.metering .billing-summary .title.total {
+      color: #fff; }
   body.metering .billing-summary .cost {
     display: block;
     margin-top: 10px;
@@ -4396,7 +4432,9 @@ body.metering .billing-summary {
       line-height: 25px;
       border-top: 1px solid #979797; }
   body.metering .billing-summary .status {
+    position: relative;
     padding: 10px 0;
+    min-height: 60px;
     background-color: #000; }
     body.metering .billing-summary .status table {
       width: 100%;
@@ -4432,6 +4470,13 @@ body.metering .billing-summary {
       color: #E74E0F; }
       body.metering .billing-summary .status .payment.overdue:before {
         background-color: #E74E0F; }
+    body.metering .billing-summary .status .btn-goto {
+      display: block;
+      position: absolute;
+      right: 5px;
+      bottom: 10px;
+      left: 5px;
+      letter-spacing: -0.05em; }
   body.metering .billing-summary.invert {
     color: rgba(255, 255, 255, 0.5); }
     body.metering .billing-summary.invert > .inner {
@@ -4444,6 +4489,45 @@ body.metering .billing-summary {
       bottom: 25px; }
       body.metering .billing-summary.invert .currency dd {
         border-top: 1px solid #979797; }
+
+body.metering.billing .view-by {
+  margin-bottom: 25px;
+  width: 230px; }
+
+body.metering.billing .vendor-cost {
+  overflow: hidden;
+  padding-top: 7px; }
+  body.metering.billing .vendor-cost .month {
+    float: right; }
+    body.metering.billing .vendor-cost .month .title {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.5); }
+    body.metering.billing .vendor-cost .month .cost {
+      text-align: right; }
+      body.metering.billing .vendor-cost .month .cost strong {
+        display: block;
+        float: right;
+        font-size: 50px;
+        font-weight: 500;
+        color: #000;
+        vertical-align: middle; }
+        body.metering.billing .vendor-cost .month .cost strong small {
+          display: block;
+          font-size: 16px;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.3);
+          line-height: 1em; }
+      body.metering.billing .vendor-cost .month .cost .growth {
+        display: block;
+        float: right;
+        margin-top: 15px;
+        margin-left: 10px; }
+    body.metering.billing .vendor-cost .month.last {
+      margin-left: 70px; }
+      body.metering.billing .vendor-cost .month.last .cost strong {
+        color: rgba(0, 0, 0, 0.3); }
 
 body.metering.statistics .statistics-summary .list-statistics-summary {
   overflow: hidden;

@@ -199,11 +199,14 @@ body.metering {
 	}
 
 
+
 	// billing
-	.billing-summary { font-weight: 700; color: rgba(0, 0, 0, 0.5); border: 2px solid #000; background-color: #fff;
+	.billing-summary { margin-bottom: 5px; font-weight: 700; color: rgba(0, 0, 0, 0.5); border: 2px solid #000; background-color: #fff;
 		> .inner { position: relative; padding: 10px 10px; height: 200px; }
 	
-		.title { font-size: 14px; }
+		.title { font-size: 14px;
+			&.total { color: #fff; }
+		}
 		.cost { display: block; margin-top: 10px; font-size: 38px; font-weight: 500; color: #000; }
 
 		.currency { display: block; position: absolute; bottom: 25px;
@@ -211,7 +214,7 @@ body.metering {
 			dd { display: block; font-size: 14px; line-height: 25px; border-top: 1px solid #979797; }
 		}
 
-		.status { padding: 10px 0; background-color: #000;
+		.status { position: relative; padding: 10px 0; min-height: 60px; background-color: #000;
 			table { width: 100%; color: rgba(255, 255, 255, 0.5);
 				tbody {
 					th { padding-left: 10px; font-size: 12px; text-align: left; line-height: 20px; }
@@ -232,6 +235,8 @@ body.metering {
 					&:before { background-color: #E74E0F; }
 				}
 			}
+
+			.btn-goto { display: block; position: absolute; right: 5px; bottom: 10px; left: 5px; letter-spacing: -0.05em; }
 		}
 
 		// invert
@@ -247,7 +252,26 @@ body.metering {
 
 
 	&.billing {
+		.view-by { margin-bottom: 25px; width: 230px; }
 
+		.vendor-cost { overflow: hidden; padding-top: 7px;
+			.month { float: right;
+				.title { display: block; font-size: 14px; font-weight: 700; color: rgba(0, 0, 0, 0.5); }
+				.cost { text-align: right;
+					strong { display: block; float: right; font-size: 50px; font-weight: 500; color: #000; vertical-align: middle;
+						small { display: block; font-size: 16px; font-weight: 500; color: rgba(0, 0, 0, 0.3); line-height: 1em; }
+					}
+					.growth { display: block; float: right; margin-top: 15px; margin-left: 10px; }
+				}
+
+				&.last { margin-left: 70px;
+					.cost {
+						strong { color: rgba(0, 0, 0, 0.3); }
+					}
+				}
+				&.this { }
+			}
+		}
 	}
 
 	// cost statistics
