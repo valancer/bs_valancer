@@ -1789,15 +1789,20 @@ corresponds to the arrow we want to display */
         max-width: 100%; }
     .global-menu .user .name {
       display: block;
+      overflow: hidden;
+      width: 75px;
       font-size: 18px;
       font-weight: 700;
       color: #000;
-      line-height: 19px; }
+      line-height: 19px;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
     .global-menu .user .company {
       display: block;
       overflow: hidden;
       position: relative;
       height: 21px;
+      width: 105px;
       padding-right: 15px;
       font-size: 14px;
       font-weight: 500;
@@ -2169,8 +2174,6 @@ article.contents .list-column-03 {
       padding-left: 0; }
 
 article.contents .submit-btns {
-  position: relative;
-  z-index: 1;
   padding-top: 26px; }
 
 /**
@@ -2531,6 +2534,7 @@ article.contents .submit-btns {
         transition: opacity 0.3s, max-height 0.3s; }
   .accordion > dd {
     display: block;
+    overflow: hidden;
     padding: 0 26px;
     opacity: 0;
     max-height: 0px;

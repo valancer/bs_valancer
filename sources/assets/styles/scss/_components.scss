@@ -198,7 +198,7 @@
 		}
 	}
 
-	> dd { display: block; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6; }
+	> dd { display: block; overflow: hidden; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6; }
 
 	// metering 하위
 	.metering & {
