@@ -23,7 +23,7 @@ body.asset {
 
 
 	&.service-group {
-		.popover.service-group { display: block; position: absolute; padding: 15px; min-width: 75px; border: 2px solid #fff;
+		.popover.service-group { position: absolute; padding: 15px; min-width: 75px; border: 2px solid #fff;
 			.point { top: -10px; z-index: z("default"); }
 
 			.list-ea { overflow: hidden; font-size: 14px; font-weight: 500; color: #fff;

@@ -50,6 +50,10 @@ body.metering {
 	}
 
 
+	// tooltip
+	.metering-tooltip { padding: 10px; width: 100px;
+		p { font-size: 12px; font-weight: 500; color: #fff; line-height: 14px; }
+	}
 
 
 	.box-item {
@@ -125,7 +129,7 @@ body.metering {
 
 	}
 
-	.popover.warning { display: block; position: absolute; padding: 15px; min-width: 75px; font-size: 14px; font-weight: 500; color: #fff; line-height: 14px; width: 255px; border: 2px solid #fff; background-color: #E74E0F;
+	.popover.warning { position: absolute; padding: 15px; min-width: 75px; font-size: 14px; font-weight: 500; color: #fff; line-height: 14px; width: 255px; border: 2px solid #fff; background-color: #E74E0F;
 		.point { top: -10px; z-index: z("default");
 				&:before { color: #E74E0F; }
 		}

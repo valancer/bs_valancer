@@ -2057,6 +2057,8 @@ corresponds to the arrow we want to display */
             background-size: 159px 376px; } }
   .side-menus.is-editable a:hover .btn-edit {
     display: inline-block; }
+  .side-menus.is-editable a .btn-edit.is-selected {
+    display: inline-block; }
   .metering .side-menus {
     margin-bottom: 50px; }
     .metering .side-menus a {
@@ -2167,6 +2169,8 @@ article.contents .list-column-03 {
       padding-left: 0; }
 
 article.contents .submit-btns {
+  position: relative;
+  z-index: 1;
   padding-top: 26px; }
 
 /**
@@ -2209,7 +2213,7 @@ article.contents .submit-btns {
 	popover
 **/
 .popover {
-  display: block;
+  display: none;
   position: relative;
   padding: 26px;
   background-color: #000; }
@@ -2277,7 +2281,7 @@ article.contents .submit-btns {
       background-color: #fff; }
 
 .list-select-popup {
-  display: block;
+  display: none;
   min-width: 120px;
   border: 2px solid #000;
   background-color: #fff; }
@@ -3542,6 +3546,8 @@ input[type=submit].btn-normal,
         line-height: 60px; }
         .list-single-check > li .user figcaption label button {
           display: none; }
+          .list-single-check > li .user figcaption label button.is-selected {
+            display: inline-block; }
         .list-single-check > li .user figcaption label:hover button {
           display: inline-block; }
     .list-single-check > li .group-title {
@@ -3929,7 +3935,6 @@ body.asset.dashboard .chart-container {
     right: 0px; }
 
 body.asset.service-group .popover.service-group {
-  display: block;
   position: absolute;
   padding: 15px;
   min-width: 75px;
@@ -4058,6 +4063,15 @@ body.metering .list-column-complex {
       float: left;
       clear: none;
       width: 33%; }
+
+body.metering .metering-tooltip {
+  padding: 10px;
+  width: 100px; }
+  body.metering .metering-tooltip p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 14px; }
 
 body.metering .box-item:before {
   content: '';
@@ -4258,7 +4272,6 @@ body.metering .box-item .budget .chart.none {
       line-height: 32px; }
 
 body.metering .popover.warning {
-  display: block;
   position: absolute;
   padding: 15px;
   min-width: 75px;

@@ -174,6 +174,8 @@
 			&:hover {
 				.btn-edit { display: inline-block; }
 			}
+
+			.btn-edit.is-selected { display: inline-block; }
 		}
 	}
 
@@ -242,5 +244,5 @@ article.contents {
 		}
 	}
 
-	.submit-btns { padding-top: 26px; }
+	.submit-btns { position: relative; z-index: z("default"); padding-top: 26px; }
 }
