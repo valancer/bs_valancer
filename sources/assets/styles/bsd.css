@@ -2161,17 +2161,13 @@ article.contents .list-column-01 {
 
 article.contents .list-column-03 {
   overflow: hidden;
-  padding: 30px; }
+  padding: 30px 15px; }
   article.contents .list-column-03 > li {
     display: block;
     box-sizing: border-box;
     float: left;
-    padding: 0 0 45px 30px;
-    width: 33%; }
-    article.contents .list-column-03 > li:nth-child(3n+2) {
-      width: 34%; }
-    article.contents .list-column-03 > li:nth-child(3n+1) {
-      padding-left: 0; }
+    padding: 0 15px 45px 15px;
+    width: 33.3%; }
 
 article.contents .submit-btns {
   padding-top: 26px; }
@@ -2601,10 +2597,14 @@ article.contents .submit-btns {
       margin-left: 10px;
       vertical-align: bottom; }
   .filter-util .left-content {
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
     line-height: 31px; }
   .filter-util .right-content {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     line-height: 31px; }
   .filter-util .page-tabs {
     display: inline-block; }

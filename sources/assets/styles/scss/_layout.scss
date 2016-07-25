@@ -237,11 +237,8 @@ article.contents {
 	}
 
 	// list column 03
-	.list-column-03 { overflow: hidden; padding: 30px;
-		> li { display: block; box-sizing: border-box; float: left; padding: 0 0 45px 30px; width: 33%;
-			&:nth-child(3n+2) { width: 34% }
-			&:nth-child(3n+1) { padding-left: 0; }
-		}
+	.list-column-03 { overflow: hidden; padding: 30px 15px;
+		> li { display: block; box-sizing: border-box; float: left; padding: 0 15px 45px 15px; width: 33.3%; }
 	}
 
 	.submit-btns { padding-top: 26px; }

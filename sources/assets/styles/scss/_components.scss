@@ -248,8 +248,8 @@
 	.top-content { padding: 0 0 50px 0; text-align: left;
 		.inline-select { display: inline-block; margin-left: 10px; vertical-align: bottom; }
 	}
-	.left-content { float: left; line-height: 31px; }
-	.right-content { float: right; line-height: 31px; }
+	.left-content { position: absolute; top: 0; left: 0; line-height: 31px; }
+	.right-content { position: absolute; top: 0; right: 0; line-height: 31px; }
 
 	.page-tabs { display: inline-block;
 		&.line { display: block; }
