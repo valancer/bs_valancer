@@ -1789,15 +1789,20 @@ corresponds to the arrow we want to display */
         max-width: 100%; }
     .global-menu .user .name {
       display: block;
+      overflow: hidden;
+      width: 75px;
       font-size: 18px;
       font-weight: 700;
       color: #000;
-      line-height: 19px; }
+      line-height: 19px;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
     .global-menu .user .company {
       display: block;
       overflow: hidden;
       position: relative;
       height: 21px;
+      width: 105px;
       padding-right: 15px;
       font-size: 14px;
       font-weight: 500;
@@ -2057,6 +2062,8 @@ corresponds to the arrow we want to display */
             background-size: 159px 376px; } }
   .side-menus.is-editable a:hover .btn-edit {
     display: inline-block; }
+  .side-menus.is-editable a .btn-edit.is-selected {
+    display: inline-block; }
   .metering .side-menus {
     margin-bottom: 50px; }
     .metering .side-menus a {
@@ -2154,17 +2161,13 @@ article.contents .list-column-01 {
 
 article.contents .list-column-03 {
   overflow: hidden;
-  padding: 30px; }
+  padding: 30px 15px; }
   article.contents .list-column-03 > li {
     display: block;
     box-sizing: border-box;
     float: left;
-    padding: 0 0 45px 30px;
-    width: 33%; }
-    article.contents .list-column-03 > li:nth-child(3n+2) {
-      width: 34%; }
-    article.contents .list-column-03 > li:nth-child(3n+1) {
-      padding-left: 0; }
+    padding: 0 15px 45px 15px;
+    width: 33.3%; }
 
 article.contents .submit-btns {
   padding-top: 26px; }
@@ -2209,7 +2212,7 @@ article.contents .submit-btns {
 	popover
 **/
 .popover {
-  display: block;
+  display: none;
   position: relative;
   padding: 26px;
   background-color: #000; }
@@ -2277,7 +2280,7 @@ article.contents .submit-btns {
       background-color: #fff; }
 
 .list-select-popup {
-  display: block;
+  display: none;
   min-width: 120px;
   border: 2px solid #000;
   background-color: #fff; }
@@ -2527,6 +2530,7 @@ article.contents .submit-btns {
         transition: opacity 0.3s, max-height 0.3s; }
   .accordion > dd {
     display: block;
+    overflow: hidden;
     padding: 0 26px;
     opacity: 0;
     max-height: 0px;
@@ -2593,10 +2597,14 @@ article.contents .submit-btns {
       margin-left: 10px;
       vertical-align: bottom; }
   .filter-util .left-content {
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
     line-height: 31px; }
   .filter-util .right-content {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     line-height: 31px; }
   .filter-util .page-tabs {
     display: inline-block; }
@@ -3542,6 +3550,8 @@ input[type=submit].btn-normal,
         line-height: 60px; }
         .list-single-check > li .user figcaption label button {
           display: none; }
+          .list-single-check > li .user figcaption label button.is-selected {
+            display: inline-block; }
         .list-single-check > li .user figcaption label:hover button {
           display: inline-block; }
     .list-single-check > li .group-title {
@@ -3929,7 +3939,6 @@ body.asset.dashboard .chart-container {
     right: 0px; }
 
 body.asset.service-group .popover.service-group {
-  display: block;
   position: absolute;
   padding: 15px;
   min-width: 75px;
@@ -4058,6 +4067,15 @@ body.metering .list-column-complex {
       float: left;
       clear: none;
       width: 33%; }
+
+body.metering .metering-tooltip {
+  padding: 10px;
+  width: 100px; }
+  body.metering .metering-tooltip p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 14px; }
 
 body.metering .box-item:before {
   content: '';
@@ -4258,7 +4276,6 @@ body.metering .box-item .budget .chart.none {
       line-height: 32px; }
 
 body.metering .popover.warning {
-  display: block;
   position: absolute;
   padding: 15px;
   min-width: 75px;

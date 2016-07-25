@@ -81,14 +81,14 @@
 											<tr>
 												<th>SERVICE GROUP NAME</th>
 												<th>
-													<button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">MTD</button>
+													<button type="button" class="btn-txt-info mtd">MTD</button>
 												</th>
 												<th>
-													<button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">VARIANCE</button>
+													<button type="button" class="btn-txt-info variance">VARIANCE</button>
 												</th>
 												<th>RUNTIME</th>
 												<th>
-													<button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">UNIT PRICE</button>
+													<button type="button" class="btn-txt-info unit-price">UNIT PRICE</button>
 												</th>
 												<th>INSTANCE</th>
 											</tr>
@@ -184,7 +184,7 @@
 										<thead>
 											<tr>
 												<th>COST BREAKDOWN</th>
-												<th><button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">MTD</button></th>
+												<th><button type="button" class="btn-txt-info" title="">MTD</button></th>
 												<th><button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">VARIANCE</button></th>
 											</tr>
 										</thead>
@@ -215,12 +215,6 @@
 									<script>
 									$(window.document).ready(function(){
 										$('.tbl-data-v.scroll').tableScroll({height:166});
-
-										// info
-										$('.tbl-data-v').find('.btn-txt-info').tooltipster({
-											theme: 'tooltipster-metering',
-											side: 'top'
-										});
 									});
 									</script>
 								</div>
@@ -290,8 +284,8 @@
 									<thead>
 										<tr>
 											<th>ACCOUNT</th>
-											<th><button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">MTD</button></th>
-											<th><button type="button" class="btn-txt-info" title="Variance rate is based on data from the same date of last month">VARIANCE</button></th>
+											<th><button type="button" class="btn-txt-info mtd">MTD</button></th>
+											<th><button type="button" class="btn-txt-info variance">VARIANCE</button></th>
 										</tr>
 									</thead>
 									<tbody>
@@ -355,8 +349,8 @@
 							<a href="#" class="btn-detail">detail</a>
 	
 							<!-- warning -->
-							<button type="button" value="" class="btn-warning">warning</button>
-							<div id="" class="popover warning">
+							<button type="button" value="#warning01" class="btn-warning">warning</button>
+							<div id="warning01" class="popover warning">
 								<span class="point" style="right: 10px; left: auto;"></span>
 								<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 							</div>
@@ -380,18 +374,21 @@
 						<script>
 						$(window.document).ready(function(){
 							// warning
-							$('.box-item').find('.btn-warning').tooltipster({
-								contentCloning: false,
-								arrow: false,
-								side: 'left',
-								distance: 245,
-								functionInit: function(instance, helper) {
-									var content = $(helper.origin).find('~ .popover.warning').detach();
-									instance.content(content);
+							$('.btn-warning').on({
+								mouseenter: function(e) {
+									$($(this).val()).popup({
+										type: 'tooltip',
+										tooltipanchor: e.target,
+										vertical: 'bottom',
+										offsettop: 20,
+										offsetleft: -276,
+										horizontal: 'right',
+										transition: '0.3s all 0.1s',
+										autoopen: true
+									});
 								},
-								functionPosition: function(instance, helper, position){
-									position.coord.top += 30;
-									return position;
+								mouseleave: function(e) {
+									$($(this).val()).popup('hide');
 								}
 							});
 						});
@@ -405,8 +402,8 @@
 							<a href="#" class="btn-detail">detail</a>
 	
 							<!-- warning -->
-							<button type="button" value="" class="btn-warning">warning</button>
-							<div id="" class="popover warning">
+							<button type="button" value="#warning02" class="btn-warning">warning</button>
+							<div id="warning02" class="popover warning">
 								<span class="point" style="right: 10px; left: auto;"></span>
 								<p>There is [ 1 ] bill [ 34 days ] overdue.<br>2016. 01.20</p>
 							</div>
@@ -507,7 +504,79 @@
 		</article>
 	</main>
 
-	
+
+	<!-- popup mtd -->
+	<div id="mtd" class="popover metering-tooltip">
+		<span class="point" style="left: 50%;"></span>
+		<p>Variance rate is based on data from the same date of last month</p>
+	</div>
+
+	<!-- popup variance -->
+	<div id="variance" class="popover metering-tooltip">
+		<span class="point" style="left: 50%;"></span>
+		<p>Variance rate is based on data from the same date of last month</p>
+	</div>
+
+	<!-- popup unit price -->
+	<div id="unit-price" class="popover metering-tooltip">
+		<span class="point" style="left: 50%;"></span>
+		<p>Variance rate is based on data from the same date of last month</p>
+	</div>
+	<script>
+	$(window.document).ready(function(){
+		$('.btn-txt-info.mtd').on({
+			mouseenter: function(e) {
+				$('#mtd').popup({
+					type: 'tooltip',
+					tooltipanchor: e.target,
+					vertical: 'bottom',
+					offsettop: 20,
+					horizontal: 'center',
+					transition: '0.3s all 0.1s',
+					autoopen: true
+				});
+			},
+			mouseleave: function(e) {
+				$('#mtd').popup('hide');
+			}
+		});
+
+		$('.btn-txt-info.variance').on({
+			mouseenter: function(e) {
+				$('#variance').popup({
+					type: 'tooltip',
+					tooltipanchor: e.target,
+					vertical: 'bottom',
+					offsettop: 20,
+					horizontal: 'center',
+					transition: '0.3s all 0.1s',
+					autoopen: true
+				});
+			},
+			mouseleave: function(e) {
+				$('#variance').popup('hide');
+			}
+		});
+
+		$('.btn-txt-info.unit-price').on({
+			mouseenter: function(e) {
+				$('#unit-price').popup({
+					type: 'tooltip',
+					tooltipanchor: e.target,
+					vertical: 'bottom',
+					offsettop: 20,
+					horizontal: 'center',
+					transition: '0.3s all 0.1s',
+					autoopen: true
+				});
+			},
+			mouseleave: function(e) {
+				$('#unit-price').popup('hide');
+			}
+		});
+	});
+	</script>
+
 	<!-- 하단 영역 -->
 	@@include('./footer.html')
 

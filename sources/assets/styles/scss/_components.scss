@@ -18,7 +18,7 @@
 /**
 	popover
 **/
-.popover { display: block; position: relative; padding: 26px; background-color: #000;
+.popover { display: none; position: relative; padding: 26px; background-color: #000;
 	&:after { content: ''; display: block; clear: both; }
 
 	.point { display: block; position: absolute; top: -10px; left: 50%; z-index: z("default") - 2; margin-left: -20px; height: 31px; width: 31px;
@@ -56,7 +56,7 @@
 
 
 // select layer popup
-.list-select-popup { display: block; min-width: 120px; border: 2px solid #000; background-color: #fff;
+.list-select-popup { display: none; min-width: 120px; border: 2px solid #000; background-color: #fff;
 	> li { display: block;
 		a { display: block; padding: 0 8px; font-size: 14px; font-weight: 500; color: #000; line-height: 32px;
 			&.is-selected,
@@ -198,7 +198,7 @@
 		}
 	}
 
-	> dd { display: block; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6; }
+	> dd { display: block; overflow: hidden; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6; }
 
 	// metering 하위
 	.metering & {
@@ -248,8 +248,8 @@
 	.top-content { padding: 0 0 50px 0; text-align: left;
 		.inline-select { display: inline-block; margin-left: 10px; vertical-align: bottom; }
 	}
-	.left-content { float: left; line-height: 31px; }
-	.right-content { float: right; line-height: 31px; }
+	.left-content { position: absolute; top: 0; left: 0; line-height: 31px; }
+	.right-content { position: absolute; top: 0; right: 0; line-height: 31px; }
 
 	.page-tabs { display: inline-block;
 		&.line { display: block; }
@@ -660,7 +660,9 @@ input[type=submit].btn-normal,
 			}
 			figcaption { font-size: 20px; font-weight: 500; color: #000; line-height: 60px;
 				label {
-					button { display: none; }
+					button { display: none;
+						&.is-selected { display: inline-block; }
+					}
 
 					&:hover {
 						button { display: inline-block; }

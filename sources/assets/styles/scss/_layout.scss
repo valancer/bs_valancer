@@ -58,9 +58,9 @@
 		.thumb { display: block; overflow: hidden; position: absolute; top: 50%; left: 0px; margin-top: -20px; height: 40px; width: 40px; border-radius: 50%;
 			img { max-height: 100%; max-width: 100%; }
 		}
-		.name { display: block; font-size: 18px; font-weight: 700; color: #000; line-height: 19px; }
+		.name { display: block; overflow: hidden; width: 75px; font-size: 18px; font-weight: 700; color: #000; line-height: 19px; text-overflow: ellipsis; white-space: nowrap; }
 
-		.company { display: block; overflow: hidden; position: relative; height: 21px; padding-right: 15px; font-size: 14px; font-weight: 500; color: rgba(0, 0, 0, 0.51); text-align: left; text-overflow: ellipsis; white-space: nowrap; 
+		.company { display: block; overflow: hidden; position: relative; height: 21px; width: 105px; padding-right: 15px; font-size: 14px; font-weight: 500; color: rgba(0, 0, 0, 0.51); text-align: left; text-overflow: ellipsis; white-space: nowrap; 
 			&:before { content: ''; position: absolute; right: 15px; bottom: 0; left: 0; height: 2px; background-color: #878787; }
 			@include icon(arrow01, after); 
 			&:after { display: block; position: absolute; top: 50%; right: -4px; margin-top: -3px; height: 7px; width: 20px; font-size: 14px; line-height: 7px; color: #878787; text-align: left; }
@@ -174,6 +174,8 @@
 			&:hover {
 				.btn-edit { display: inline-block; }
 			}
+
+			.btn-edit.is-selected { display: inline-block; }
 		}
 	}
 
@@ -235,11 +237,8 @@ article.contents {
 	}
 
 	// list column 03
-	.list-column-03 { overflow: hidden; padding: 30px;
-		> li { display: block; box-sizing: border-box; float: left; padding: 0 0 45px 30px; width: 33%;
-			&:nth-child(3n+2) { width: 34% }
-			&:nth-child(3n+1) { padding-left: 0; }
-		}
+	.list-column-03 { overflow: hidden; padding: 30px 15px;
+		> li { display: block; box-sizing: border-box; float: left; padding: 0 15px 45px 15px; width: 33.3%; }
 	}
 
 	.submit-btns { padding-top: 26px; }

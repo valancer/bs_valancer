@@ -68,6 +68,63 @@
 					});
 
 					// info servers
+					$sgContainer.find('.btn-txt-info.servers').on({
+						mouseenter: function(e) {
+							$($(this).val()).popup({
+								type: 'tooltip',
+								tooltipanchor: e.target,
+								vertical: 'top',
+								offsettop: 25,
+								horizontal: 'leftedge',
+								transition: '0.3s all 0.1s',
+								autoopen: true
+							});
+						},
+						mouseleave: function(e) {
+							$($(this).val()).popup('hide');
+						}
+					});
+
+					// info database
+					$sgContainer.find('.btn-txt-info.database').on({
+						mouseenter: function(e) {
+							$($(this).val()).popup({
+								type: 'tooltip',
+								tooltipanchor: e.target,
+								vertical: 'top',
+								offsettop: 25,
+								horizontal: 'leftedge',
+								transition: '0.3s all 0.1s',
+								autoopen: true
+							});
+						},
+						mouseleave: function(e) {
+							$($(this).val()).popup('hide');
+						}
+					});
+
+					// warning
+					$sgContainer.find('.btn-warning').on({
+						mouseenter: function(e) {
+							$($(this).val()).popup({
+								type: 'tooltip',
+								tooltipanchor: e.target,
+								vertical: 'top',
+								horizontal: 'left',
+								offsettop: 30,
+								offsetleft: -260,
+								transition: '0.3s all 0.1s',
+								autoopen: true
+							});
+						},
+						mouseleave: function(e) {
+							$($(this).val()).popup('hide');
+						}
+					});
+
+
+/*
+					// info servers
 					$sgContainer.find('.btn-txt-info.servers').tooltipster({
 						contentCloning: false,
 						arrow: false,
@@ -113,6 +170,7 @@
 							return position;
 						}
 					});
+*/
 				});
 				</script>
 

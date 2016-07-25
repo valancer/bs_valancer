@@ -34,7 +34,7 @@
 						<legend>Search</legend>
 
 						<p class="right-content">
-							<button type="button" id="invite-user" class="btn-normal">+ INVITE NEW USER</button>
+							<button type="button" class="btn-normal invite-user_open">+ INVITE NEW USER</button>
 						</p>
 
 						<label for="" class="search">
@@ -43,7 +43,7 @@
 					</fieldset>
 
 					<!-- invite new user -->
-					<div id="invite-user-content" class="popover create">
+					<div id="invite-user" class="popover create">
 						<span class="point"></span>
 
 						<fieldset>
@@ -57,18 +57,12 @@
 					</div>
 					<script>
 					$(document).ready(function(e) {	
-						$('#invite-user').tooltipster({
-							content: $('#invite-user-content').detach(),
-							contentAsHTML: true,
-							contentCloning: false,
-							arrow: false,
-							interactive: true,
-							side: 'bottom',
-							trigger: 'click',
-							functionPosition: function(instance, helper, position) {
-								position.coord.top += 10;
-								return position;
-							}
+						$('#invite-user').popup({
+							type: 'tooltip',
+							vertical: 'bottom',
+							horizontal: 'center',
+							offsettop: 20,
+							transition: '0.3s all 0.1s'
 						});
 					});
 					</script>
@@ -89,7 +83,7 @@
 							<figure class="user">
 								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
 								<figcaption>
-									<label for="user01">
+									<label>
 										Sylvia Sullivan
 										<button type="button" class="btn-edit">edit</button>
 									</label>
@@ -107,7 +101,7 @@
 							<figure class="user">
 								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
 								<figcaption>
-									<label for="user02">
+									<label>
 										Sylvia Sullivan
 										<button type="button" class="btn-edit">edit</button>
 									</label>
@@ -125,7 +119,7 @@
 							<figure class="user">
 								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
 								<figcaption>
-									<label for="user03">
+									<label>
 										Sylvia Sullivan
 										<button type="button" class="btn-edit">edit</button>
 									</label>
@@ -143,7 +137,7 @@
 							<figure class="user">
 								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
 								<figcaption>
-									<label for="user04">
+									<label>
 										Sylvia Sullivan
 										<button type="button" class="btn-edit">edit</button>
 									</label>
@@ -161,7 +155,7 @@
 							<figure class="user">
 								<div class="thumb"><img src="assets/images/user_profile.png" alt=""></div>
 								<figcaption>
-									<label for="user05">
+									<label>
 										Sylvia Sullivan
 										<button type="button" class="btn-edit">edit</button>
 									</label>
@@ -179,43 +173,32 @@
 					<!--// users -->
 
 					<!-- edit user -->
-					<div id="edit-user-content" class="popover edit">
+					<div id="edit-user" class="popover edit">
 						<span class="point"></span>
 
 						<ul class="list-menu">
 							<li><button type="button" class="btn-delete-user">Delete User</button></li>
 						</ul>
 					</div>
-
 					<script>
 					$(document).ready(function(e) {	
-						$('.list-single-check .btn-edit').tooltipster({
-							content: $('#edit-user-content').detach(),
-							contentAsHTML: true,
-							contentCloning: false,
-							arrow: false,
-							interactive: true,
-							side: 'bottom',
-							trigger: 'click',
-							functionPosition: function(instance, helper, position) {
-								position.coord.top += 10;
-								return position;
-							},
-							functionBefore: function(instance, helper) {
-								helper.event.stopPropagation();
-							},
-							functionReady: function(instance, helper) {
-								helper.event.stopPropagation();
+						$('.list-single-check .btn-edit').on('click', function(e) {
+							$(this).addClass('is-selected');
 
-								var $orign = $(helper.origin);
-								var $btnEdit = $(helper.tooltip).find('.btn-edit-name');
-								var $btnDelete = $(helper.tooltip).find('.btn-delete-group');
-								
-								$btnDelete.off().on('click', function(e) {
-									console.log('delete click');
-									console.log($orign.val());
-								});
-							}
+							$('#edit-user').popup({
+								type: 'tooltip',
+								tooltipanchor: e.target,
+								vertical: 'bottom',
+								horizontal: 'center',
+								offsettop: 20,
+								autoopen: true,
+								transition: '0.3s all 0.1s',
+								onopen: function(e) {
+								},
+								onclose: function(e) {
+									$('.list-single-check .btn-edit').removeClass("is-selected");
+								}
+							});
 						});
 					});
 					</script>

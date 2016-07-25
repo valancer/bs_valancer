@@ -1,4 +1,4 @@
-<button type="button" id="create-group" class="btn-normal">+ NEW SERVICE GROUP</button>
+<button type="button" class="btn-normal create-group_open">+ NEW SERVICE GROUP</button>
 <nav class="side-menus is-editable">
 	<ul>
 		<li>
@@ -35,7 +35,7 @@
 </nav>
 
 <!-- create group -->
-<div id="create-group-content" class="popover create">
+<div id="create-group" class="popover create">
 	<span class="point"></span>
 
 	<fieldset>
@@ -50,7 +50,7 @@
 
 
 <!-- edit group -->
-<div id="edit-group-content" class="popover edit">
+<div id="sidemenu-edit-group" class="popover edit">
 	<span class="point"></span>
 
 	<ul class="list-menu">
@@ -61,47 +61,31 @@
 
 <script>
 $(document).ready(function(e) {	
-	$('#create-group').tooltipster({
-		content: $('#create-group-content').detach(),
-		contentAsHTML: true,
-		contentCloning: false,
-		arrow: false,
-		interactive: true,
-		side: 'bottom',
-		trigger: 'click',
-		functionPosition: function(instance, helper, position) {
-			position.coord.top += 10;
-			return position;
-		}
+	$('#create-group').popup({
+		type: 'tooltip',
+		vertical: 'bottom',
+		horizontal: 'center',
+		offsettop: 20,
+		transition: '0.3s all 0.1s'
 	});
 
-	$('.side-menus.is-editable .btn-edit').tooltipster({
-		content: $('#edit-group-content').detach(),
-		contentAsHTML: true,
-		contentCloning: false,
-		arrow: false,
-		interactive: true,
-		side: 'bottom',
-		trigger: 'click',
-		functionPosition: function(instance, helper, position) {
-			position.coord.top += 10;
-			return position;
-		},
-		functionReady: function(instance, helper) {
-			var $orign = $(helper.origin);
-			var $btnEdit = $(helper.tooltip).find('.btn-edit-name');
-			var $btnDelete = $(helper.tooltip).find('.btn-delete-group');
+	$('.side-menus.is-editable .btn-edit').on('click', function(e) {
+		$(this).addClass('is-selected');
 
-			$btnEdit.off().on('click', function(e) {
-				console.log('edit click');
-				console.log($orign.val());
-			});
-			
-			$btnDelete.off().on('click', function(e) {
-				console.log('delete click');
-				console.log($orign.val());
-			});
-		}
+		$('#sidemenu-edit-group').popup({
+			type: 'tooltip',
+			tooltipanchor: e.target,
+			vertical: 'bottom',
+			horizontal: 'center',
+			offsettop: 20,
+			autoopen: true,
+			transition: '0.3s all 0.1s',
+			onopen: function(e) {
+			},
+			onclose: function(e) {
+				$('.side-menus.is-editable .btn-edit').removeClass("is-selected");
+			}
+		});
 	});
 });
 </script>
