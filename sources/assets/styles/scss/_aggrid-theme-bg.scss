@@ -96,19 +96,19 @@
 		transition: left 0.2s;
 	}
 	.ag-cell-focus {
-		border: 1px solid transparent;
+		// border: 1px solid transparent;
 	}
 	.ag-cell-no-focus {
-		border-right: 1px solid transparent;
-		border-top: 1px solid transparent;
-		border-left: 1px solid transparent;
-		border-bottom: 1px solid transparent;
+		// border-right: 1px solid transparent;
+		// border-top: 1px solid transparent;
+		// border-left: 1px solid transparent;
+		// border-bottom: 1px solid transparent;
 	}
 	.ag-cell-first-right-pinned {
-		border-left: 1px solid #808080;
+		// border-left: 1px solid #808080;
 	}
 	.ag-cell-last-left-pinned {
-		border-right: 1px solid #808080;
+		// border-right: 1px solid #808080;
 	}
 	.ag-cell-highlight {
 		border: 1px solid #006400;
@@ -187,10 +187,10 @@
 		background-color: #bebebe;
 	}
 	.ag-header-group-cell {
-		border-right: 1px solid #808080;
+		// border-right: 1px solid #808080;
 	}
 	.ag-header-group-cell-with-group {
-		border-bottom: 1px solid #808080;
+		border-bottom: 1px solid #d8d8d8;
 	}
 	.ag-header-cell-label {
 		position: relative;
@@ -202,14 +202,16 @@
 		padding-left: 2px;
 	}
 	.ag-header-group-cell-label {
-		padding: 4px;
-		padding-left: 10px;
+		// padding: 4px;
+		padding-left: 20px;
 	}
 	.ag-header-group-text {
+		line-height: 40px;
 		margin-right: 2px;
 	}
 	.ag-header-cell-menu-button {
-		margin-top: 9px; padding: 0px;
+		position: absolute; top: 9px; right: 0; z-index: 1;
+		padding: 0px;
 		height: 22px; width: 20px;
 		border: 1px solid transparent;
 		box-sizing: content-box;
@@ -220,15 +222,15 @@
 
 	}
 	.ag-pinned-right-header {
-		border-left: 1px solid #808080;
+		// border-left: 1px solid #808080;
 	}
 	.ag-header-cell-menu-button:hover {
-		border: 1px solid #808080;
+		// border: 1px solid #808080;
 	}
 	.ag-body {
 		background-color: #f6f6f6;
 		.ag-row {
-			transition: background-color 0.1s;
+			// transition: background-color 0.1s;
 		}
 		.ag-row-odd {
 			background-color: #fff;
@@ -242,8 +244,13 @@
 		}
 	}
 	.ag-floating-top .ag-row, .ag-floating-bottom .ag-row {
-		background-color: #f0f0f0;
+		background-color: #fff;
 	}
+	.ag-floating-bottom .ag-row { border-top: 2px solid #000;
+		.ag-cell { line-height: 50px; }
+	}
+	.ag-floating-bottom { z-index: 1; height: 50px !important; border-bottom: 2px solid #000; }
+
 	.ag-overlay-loading-wrapper {
 		background-color: rgba(255, 255, 255, 0.5);
 	}
@@ -277,10 +284,10 @@
 		font-style: italic;
 	}
 	.ag-menu {
+		z-index: 1;
 		border: 1px solid #808080;
 		background-color: #f6f6f6;
 		cursor: default;
-		/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 		font-size: 14px;
 		.ag-tab-header {
 			background-color: #e6e6e6;

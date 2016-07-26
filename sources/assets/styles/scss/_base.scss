@@ -41,4 +41,5 @@ fieldset { appearance: none; }
 input[type=submit] { appearance: none; cursor: pointer; border: 0px; }
 
 input:focus,
-button:focus {outline:0;}
+button:focus,
+div {outline:0;}

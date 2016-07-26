@@ -1,0 +1,143 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="metering budgeting">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "metering", "sub": "budgeting"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+
+			<div class="contents-inner">
+				
+				@@include('./inc_metering_budgeting_overview.html')
+
+
+				<!-- management -->
+				<h2 class="title-sub">
+					Budget Management
+				</h2>
+
+					<!-- filter util -->
+					<div class="page-tabs">
+						<p class="inner">
+							<a href="#">BUDGET SETTING</a>
+							<a href="#" class="is-selected">ALARM SETTING</a>
+						</p>
+					</div>
+
+
+					<!-- column left -->
+					<div class="column-left">
+						<nav class="side-menus">
+							<ul>
+								<li>
+									<a href="#" class="is-selected">
+										<span>Alarm List</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Alarm Receivers</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--// column left -->
+					
+
+
+					<!-- column right -->
+					<div class="column-right">
+						
+						<!-- accordion container -->
+						<dl class="accordion is-editable">
+							<dt>
+								<button type="button" class="btn-delete">Delete</button>
+								<span class="title">
+									My Alarm 01
+
+									<button type="button" class="btn-edit">edit</button>
+								</span>
+
+								<div class="right">
+									<div class="content">
+										<span class="priority">Highest Priority</span>
+										<label for="myalarm01-on" class="icheck">
+											<input type="radio" id="myalarm01-on" name="myalarm" class="iradio">
+											ON
+										</label>
+										<label for="myalarm01-off" class="icheck">
+											<input type="radio" id="myalarm01-off" name="myalarm" class="iradio">
+											OFF
+										</label>
+									</div>
+
+									<button type="button" class="btn-folding">open/close</button>
+								</div>
+							</dt>
+							<dd>
+								<fieldset class="content">
+									<legend>alarm detail</legend>
+
+									alarm detail
+								</fieldset>
+							</dd>
+						</dl>
+						<script>
+						$(document).ready(function(e) {	
+							/* accordion */
+							var Accordion = (function ($) {
+								var scope,
+									$container,
+									$btnToggleContainer,
+									init = function() {
+										$container = $('.accordion');
+										$btnToggleContainer = $container.find('.btn-folding');
+
+										initLayout();
+										initEvent();
+									};
+
+								function initLayout() {
+								}
+
+								function initEvent() {
+									// item open / close
+									$btnToggleContainer.on('click', function(e) {
+										e.preventDefault();
+										
+										$(this).closest('dt').toggleClass('is-opened');
+									});
+								}
+
+								return {
+									init: function() {
+										init();
+									}
+								};
+							}(jQuery));
+							
+							Accordion.init();
+						});
+						</script>
+						<!--// accordion container -->
+
+
+					</div>
+					<!--// column right -->
+			</div>
+		</article>
+	</main>
+
+
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

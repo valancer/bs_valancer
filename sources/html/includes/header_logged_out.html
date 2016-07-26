@@ -6,8 +6,8 @@
 
 			<strong class="bespin-global"><span class="is-hidden">BESPIN GLOBAL</span></strong>
 
-			<button id="language" type="button" class="btn-language">ENGLISH</button>
-			<ul id="language-content" class="list-select-popup small">
+			<button type="button" class="btn-language language_open">ENGLISH</button>
+			<ul id="language" class="list-select-popup small">
 				<li><a href="#english" class="is-selected">ENGLISH</a></li>
 				<li><a href="#korean">한국어</a></li>
 				<li><a href="#chinese">中文</a></li>
@@ -16,7 +16,7 @@
 		
 		<!-- user -->
 		<div class="user">
-			<a href="#none" id="user-info" class="thumb"><img src="assets/images/user_profile.png" alt=""></a>
+			<a href="#none" class="thumb user-info_open"><img src="assets/images/user_profile.png" alt=""></a>
 		</div>
 		<!--// user -->
 	</div>
@@ -24,7 +24,7 @@
 
 
 	<!-- user info -->
-	<aside id="user-info-content" class="popover">
+	<aside id="user-info" class="popover">
 		<span class="point"></span>
 
 		<nav class="global-shortcuts">
@@ -50,7 +50,6 @@ $(document).ready(function(e) {
 			init = function() {
 				$container = $('.global-menu');
 				$selectLanguage = $('#language');
-				$selectCompany = $('#company');
 				$service = $('#service-shortcut');
 				$userInfo = $('#user-info');
 
@@ -63,43 +62,19 @@ $(document).ready(function(e) {
 		}
 
 		function initEvent() {
-			$selectLanguage.tooltipster({
-				content: $('#language-content').detach(),
-				contentAsHTML: true,
-				contentCloning: false,
-				arrow: false,
-				trigger: 'click'
+			$selectLanguage.popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				horizontal: 'leftedge',
+				transition: '0.3s all 0.1s'
 			});
-			$selectCompany.tooltipster({
-				content: $('#company-content').detach(),
-				contentCloning: false,
-				arrow: false,
-				trigger: 'click',
-				side: 'bottom'
-			});
-			$service.tooltipster({
-				content: $('#service-shortcut-content').detach(),
-				contentCloning: false,
-				arrow: false,
-				trigger: 'click',
-				side: 'bottom',
-				functionPosition: function(instance, helper, position){
-					position.coord.top += 30;
-					position.coord.left += 0;
-					return position;
-				}
-			});
-			$userInfo.tooltipster({
-				content: $('#user-info-content').detach(),
-				contentCloning: false,
-				arrow: false,
-				trigger: 'click',
-				side: 'bottom',
-				functionPosition: function(instance, helper, position){
-					position.coord.top += 30;
-					position.coord.left += 0;
-					return position;
-				}
+
+			$userInfo.popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				horizontal: 'center',
+				offsettop: 30,
+				transition: '0.3s all 0.1s'
 			});
 		}
 

@@ -138,7 +138,8 @@ input[type=submit] {
   border: 0px; }
 
 input:focus,
-button:focus {
+button:focus,
+div {
   outline: 0; }
 
 @font-face {
@@ -146,7 +147,7 @@ button:focus {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-close:before, .icon-dashboard:before, .icon-download:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-menu:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, input[type=submit].btn-normal.download:before,
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-close:before, .icon-dashboard:before, .icon-done:before, .icon-download:before, .icon-edit:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-menu:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-text.edit:before, .btn-text.cancel:before, .btn-text.save-update:before, input[type=submit].btn-normal.download:before,
 .btn-normal.download:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, .chart-container .slick-arrow:before, body.metering .growth:after, body.metering .growth.tbl:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
@@ -175,65 +176,71 @@ button:focus {
 .icon-calendar:before {
   content: ""; }
 
-.icon-close:before {
+.icon-cancel:before {
   content: ""; }
 
-.icon-dashboard:before {
+.icon-close:before {
   content: ""; }
 
-.icon-download:before {
+.icon-dashboard:before {
   content: ""; }
 
-.icon-edit:before {
+.icon-done:before {
   content: ""; }
 
-.icon-export:before {
+.icon-download:before {
   content: ""; }
 
-.icon-eyes:before {
+.icon-edit:before {
   content: ""; }
 
-.icon-filter:before {
+.icon-export:before {
   content: ""; }
 
-.icon-grid:before {
+.icon-eyes:before {
   content: ""; }
 
-.icon-growth:before {
+.icon-filter:before {
   content: ""; }
 
-.icon-info:before {
+.icon-grid:before {
   content: ""; }
 
-.icon-menu:before {
+.icon-growth:before {
   content: ""; }
 
-.icon-metering:before {
+.icon-info:before {
   content: ""; }
 
-.icon-monitoring:before {
+.icon-menu:before {
   content: ""; }
 
-.icon-noticifation:before {
+.icon-metering:before {
   content: ""; }
 
-.icon-refresh:before {
+.icon-monitoring:before {
   content: ""; }
 
-.icon-reset:before {
+.icon-noticifation:before {
   content: ""; }
 
-.icon-search:before {
+.icon-refresh:before {
   content: ""; }
 
-.icon-settings:before {
+.icon-reset:before {
   content: ""; }
 
-.icon-warning:before {
+.icon-search:before {
   content: ""; }
 
-.icon-workflow:before {
+.icon-settings:before {
   content: ""; }
+
+.icon-warning:before {
+  content: ""; }
+
+.icon-workflow:before {
+  content: ""; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -712,7 +719,7 @@ The `sprites` mixin generates identical output to the CSS template
   .aggrid-uitls .search {
     display: block; }
     .aggrid-uitls .search:before {
-      content: ""; }
+      content: ""; }
     .aggrid-uitls .search:before {
       display: inline-block;
       margin-right: 8px;
@@ -825,17 +832,6 @@ The `sprites` mixin generates identical output to the CSS template
     background-color: rgba(0, 0, 0, 0.4); }
   .ag-bespin-global .ag-column-moving .ag-cell {
     transition: left 0.2s; }
-  .ag-bespin-global .ag-cell-focus {
-    border: 1px solid transparent; }
-  .ag-bespin-global .ag-cell-no-focus {
-    border-right: 1px solid transparent;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid transparent; }
-  .ag-bespin-global .ag-cell-first-right-pinned {
-    border-left: 1px solid #808080; }
-  .ag-bespin-global .ag-cell-last-left-pinned {
-    border-right: 1px solid #808080; }
   .ag-bespin-global .ag-cell-highlight {
     border: 1px solid #006400; }
   .ag-bespin-global .ag-cell-highlight-animation {
@@ -882,7 +878,7 @@ The `sprites` mixin generates identical output to the CSS template
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -120px -90px;
+      background-position: -121px -167px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -891,7 +887,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 159px 376px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -74px -90px;
+      background-position: -29px -190px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -900,7 +896,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 159px 376px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -97px -90px;
+      background-position: -98px -167px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -919,10 +915,8 @@ The `sprites` mixin generates identical output to the CSS template
       opacity: 0.5;
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
       filter: alpha(opacity=50); }
-  .ag-bespin-global .ag-header-group-cell {
-    border-right: 1px solid #808080; }
   .ag-bespin-global .ag-header-group-cell-with-group {
-    border-bottom: 1px solid #808080; }
+    border-bottom: 1px solid #d8d8d8; }
   .ag-bespin-global .ag-header-cell-label {
     position: relative;
     font-size: 12px;
@@ -931,12 +925,15 @@ The `sprites` mixin generates identical output to the CSS template
   .ag-bespin-global .ag-header-cell-text {
     padding-left: 2px; }
   .ag-bespin-global .ag-header-group-cell-label {
-    padding: 4px;
-    padding-left: 10px; }
+    padding-left: 20px; }
   .ag-bespin-global .ag-header-group-text {
+    line-height: 40px;
     margin-right: 2px; }
   .ag-bespin-global .ag-header-cell-menu-button {
-    margin-top: 9px;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    z-index: 1;
     padding: 0px;
     height: 22px;
     width: 20px;
@@ -955,14 +952,8 @@ The `sprites` mixin generates identical output to the CSS template
     margin-top: -14px;
     height: 28px;
     border: 2px solid #000; }
-  .ag-bespin-global .ag-pinned-right-header {
-    border-left: 1px solid #808080; }
-  .ag-bespin-global .ag-header-cell-menu-button:hover {
-    border: 1px solid #808080; }
   .ag-bespin-global .ag-body {
     background-color: #f6f6f6; }
-    .ag-bespin-global .ag-body .ag-row {
-      transition: background-color 0.1s; }
     .ag-bespin-global .ag-body .ag-row-odd {
       background-color: #fff; }
     .ag-bespin-global .ag-body .ag-row-even {
@@ -971,7 +962,15 @@ The `sprites` mixin generates identical output to the CSS template
       color: #fff;
       background-color: #000; }
   .ag-bespin-global .ag-floating-top .ag-row, .ag-bespin-global .ag-floating-bottom .ag-row {
-    background-color: #f0f0f0; }
+    background-color: #fff; }
+  .ag-bespin-global .ag-floating-bottom .ag-row {
+    border-top: 2px solid #000; }
+    .ag-bespin-global .ag-floating-bottom .ag-row .ag-cell {
+      line-height: 50px; }
+  .ag-bespin-global .ag-floating-bottom {
+    z-index: 1;
+    height: 50px !important;
+    border-bottom: 2px solid #000; }
   .ag-bespin-global .ag-overlay-loading-wrapper {
     background-color: rgba(255, 255, 255, 0.5); }
   .ag-bespin-global .ag-overlay-loading-center {
@@ -997,10 +996,10 @@ The `sprites` mixin generates identical output to the CSS template
   .ag-bespin-global .ag-footer-cell {
     font-style: italic; }
   .ag-bespin-global .ag-menu {
+    z-index: 1;
     border: 1px solid #808080;
     background-color: #f6f6f6;
     cursor: default;
-    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-size: 14px; }
     .ag-bespin-global .ag-menu .ag-tab-header {
       background-color: #e6e6e6; }
@@ -1718,7 +1717,7 @@ corresponds to the arrow we want to display */
       .global-menu .title .service.asset:before {
         content: ""; }
       .global-menu .title .service.metering:before {
-        content: ""; }
+        content: ""; }
   .global-menu .uilts {
     position: relative;
     float: right;
@@ -1734,7 +1733,7 @@ corresponds to the arrow we want to display */
       .global-menu .uilts .btns.notifications {
         position: relative; }
         .global-menu .uilts .btns.notifications:before {
-          content: ""; }
+          content: ""; }
         .global-menu .uilts .btns.notifications:before {
           display: block;
           color: #000;
@@ -1759,7 +1758,7 @@ corresponds to the arrow we want to display */
           border-radius: 14px;
           background-color: #f34122; }
       .global-menu .uilts .btns.dashboard:before {
-        content: ""; }
+        content: ""; }
       .global-menu .uilts .btns.dashboard:before {
         display: block;
         color: #000;
@@ -2026,7 +2025,7 @@ corresponds to the arrow we want to display */
       .side-menus li a.vendor.total > span:before {
         margin-top: -8px;
         background-image: url(../images/sprites.png);
-        background-position: -29px -18px;
+        background-position: -29px -63px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2035,7 +2034,7 @@ corresponds to the arrow we want to display */
             background-size: 159px 376px; } }
       .side-menus li a.vendor.aws > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -119px -18px;
+        background-position: -74px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2044,7 +2043,7 @@ corresponds to the arrow we want to display */
             background-size: 159px 376px; } }
       .side-menus li a.vendor.azure > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -74px -18px;
+        background-position: -119px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2053,7 +2052,7 @@ corresponds to the arrow we want to display */
             background-size: 159px 376px; } }
       .side-menus li a.vendor.aliyun > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -29px -63px;
+        background-position: -29px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2360,12 +2359,12 @@ article.contents .submit-btns {
         vertical-align: middle;
         border: 4px solid #fff; }
       .global-shortcuts .type-thumbnail > li a.dashboard:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.dashboard:before {
         font-size: 41px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.metering:before {
         font-size: 44px;
         line-height: 64px; }
@@ -2375,12 +2374,12 @@ article.contents .submit-btns {
         font-size: 33px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.monitoring:before {
         font-size: 41px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li a.workflow:before {
         font-size: 41px;
         line-height: 64px; }
@@ -2486,9 +2485,21 @@ article.contents .submit-btns {
     height: 60px;
     border-top: 2px solid rgba(151, 151, 151, 0.32);
     background-color: #fff; }
+    .accordion > dt .btn-delete {
+      display: none;
+      margin: -2px 10px 0 -10px;
+      vertical-align: middle;
+      text-indent: -9999px;
+      background-image: url(../images/sprites.png);
+      background-position: -63px -108px;
+      width: 28px;
+      height: 29px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .accordion > dt .btn-delete {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 159px 376px; } }
     .accordion > dt .title {
-      display: block;
-      float: left;
+      display: inline-block;
       font-size: 20px;
       font-weight: 500;
       color: #000;
@@ -2506,11 +2517,13 @@ article.contents .submit-btns {
         .accordion > dt .title .thumb img {
           height: 100%;
           width: 100%; }
+      .accordion > dt .title .btn-edit {
+        display: none;
+        margin: -2px 0 0 10px;
+        color: #000; }
     .accordion > dt .right {
       float: right;
       line-height: 60px; }
-      .accordion > dt .right .icheck {
-        padding: 0 23px 0 0; }
       .accordion > dt .right .content {
         display: inline-block;
         font-size: 17px;
@@ -2519,6 +2532,24 @@ article.contents .submit-btns {
         vertical-align: middle; }
         .accordion > dt .right .content em {
           color: #000; }
+        .accordion > dt .right .content .priority {
+          margin-right: 20px;
+          font-size: 16px;
+          font-weight: 500;
+          color: #000; }
+        .accordion > dt .right .content .icheck {
+          margin-left: 5px; }
+    .accordion > dt:hover {
+      background-color: #F6F6F6; }
+      .accordion > dt:hover .btn-delete {
+        background-image: url(../images/sprites.png);
+        background-position: -29px -108px;
+        width: 28px;
+        height: 29px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .accordion > dt:hover .btn-delete {
+            background-image: url(../images/sprites@2x.png);
+            background-size: 159px 376px; } }
     .accordion > dt.is-opened {
       background-color: #F6F6F6; }
       .accordion > dt.is-opened .btn-folding:after {
@@ -2535,6 +2566,10 @@ article.contents .submit-btns {
     opacity: 0;
     max-height: 0px;
     background-color: #F6F6F6; }
+  .accordion.is-editable > dt .btn-delete {
+    display: inline-block; }
+  .accordion.is-editable > dt:hover .btn-edit {
+    display: inline-block; }
   .metering .accordion > dt .right .content {
     padding-right: 20px;
     font-size: 22px; }
@@ -2663,6 +2698,10 @@ article.contents .submit-btns {
       top: 50px;
       left: 50px;
       opacity: 0; }
+    .box-item > .title .filter {
+      display: inline-block;
+      margin: -2px 0 0 24px;
+      vertical-align: middle; }
   .box-item > .content {
     display: block;
     clear: both; }
@@ -2789,7 +2828,7 @@ article.contents .submit-btns {
         line-height: 1em;
         vertical-align: middle; }
         .box-item.service-group .info > li .btn-txt-info:after {
-          content: ""; }
+          content: ""; }
         .box-item.service-group .info > li .btn-txt-info:after {
           display: inline-block;
           margin: -2px 0 0 5px;
@@ -2834,15 +2873,17 @@ article.contents .submit-btns {
 .icheck {
   display: inline-block;
   position: relative;
-  padding: 0 0 0 26px;
+  padding: 0 0 0 23px;
   min-height: 18px;
   min-width: 18px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: #000;
   line-height: 18px;
   vertical-align: middle;
   cursor: pointer; }
+  .icheck.disabled {
+    color: rgba(0, 0, 0, 0.3); }
 
 .icheckbox {
   display: block;
@@ -2850,26 +2891,44 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -101px -108px;
+  background-position: -53px -143px;
   width: 18px;
   height: 18px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icheckbox {
       background-image: url(../images/sprites@2x.png);
       background-size: 159px 376px; } }
+  .icheckbox.disabled {
+    background-image: url(../images/sprites.png);
+    background-position: -120px -108px;
+    width: 18px;
+    height: 18px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .icheckbox.disabled {
+        background-image: url(../images/sprites@2x.png);
+        background-size: 159px 376px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -120px -63px;
-    width: 18px;
+    background-position: -100px -143px;
+    width: 17px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.checked {
         background-image: url(../images/sprites@2x.png);
         background-size: 159px 376px; } }
+    .icheckbox.checked.disabled {
+      background-image: url(../images/sprites.png);
+      background-position: -123px -143px;
+      width: 17px;
+      height: 17px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .icheckbox.checked.disabled {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 159px 376px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -29px -108px;
-    width: 18px;
+    background-position: -77px -143px;
+    width: 17px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.indeterminate {
@@ -2882,22 +2941,31 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -77px -108px;
-  width: 18px;
-  height: 18px; }
+  background-position: -29px -167px;
+  width: 17px;
+  height: 17px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .iradio {
       background-image: url(../images/sprites@2x.png);
       background-size: 159px 376px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -53px -108px;
-    width: 18px;
-    height: 18px; }
+    background-position: -52px -167px;
+    width: 17px;
+    height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .iradio.checked {
         background-image: url(../images/sprites@2x.png);
         background-size: 159px 376px; } }
+    .iradio.checked.disabled {
+      background-image: url(../images/sprites.png);
+      background-position: -75px -167px;
+      width: 17px;
+      height: 17px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .iradio.checked.disabled {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 159px 376px; } }
 
 .all-checked {
   display: block;
@@ -2926,7 +2994,7 @@ article.contents .submit-btns {
     vertical-align: middle; }
   .all-checked[value="0"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -101px -108px;
+    background-position: -53px -143px;
     width: 18px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2935,8 +3003,8 @@ article.contents .submit-btns {
         background-size: 159px 376px; } }
   .all-checked[value="1"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -120px -63px;
-    width: 18px;
+    background-position: -100px -143px;
+    width: 17px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="1"] > span {
@@ -2944,8 +3012,8 @@ article.contents .submit-btns {
         background-size: 159px 376px; } }
   .all-checked[value="2"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -29px -108px;
-    width: 18px;
+    background-position: -77px -143px;
+    width: 17px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="2"] > span {
@@ -2970,7 +3038,7 @@ article.contents .submit-btns {
   height: 21px;
   width: 21px; }
   .btn-settings:before {
-    content: ""; }
+    content: ""; }
   .btn-settings:before {
     display: block;
     height: 21px;
@@ -2998,22 +3066,37 @@ article.contents .submit-btns {
     color: rgba(0, 0, 0, 0.43);
     text-decoration: none; }
     .btn-text.reset:before {
-      content: ""; }
+      content: ""; }
     .btn-text.reset:before {
       vertical-align: baseline; }
   .btn-text.show-hide:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
     margin-top: -4px;
     margin-right: 10px;
     font-size: 13px; }
   .btn-text.export:before {
-    content: ""; }
+    content: ""; }
   .btn-text.export:before {
     margin-top: -10px;
     font-size: 16px; }
+  .btn-text.edit:before {
+    content: ""; }
+  .btn-text.edit:before {
+    margin: -4px 5px 0 0;
+    font-size: 13px; }
+  .btn-text.cancel:before {
+    content: ""; }
+  .btn-text.cancel:before {
+    margin: -4px 5px 0 0;
+    font-size: 13px; }
+  .btn-text.save-update:before {
+    content: ""; }
+  .btn-text.save-update:before {
+    margin: -4px 5px 0 0;
+    font-size: 13px; }
 
 input[type=submit].btn-normal,
 .btn-normal {
@@ -3049,7 +3132,7 @@ input[type=submit].btn-normal,
     min-width: auto; }
   input[type=submit].btn-normal.download:before,
   .btn-normal.download:before {
-    content: ""; }
+    content: ""; }
   input[type=submit].btn-normal.download:before,
   .btn-normal.download:before {
     display: inline-block;
@@ -3062,7 +3145,7 @@ input[type=submit].btn-normal,
   position: relative;
   text-indent: -9999px;
   background-image: url(../images/sprites.png);
-  background-position: -97px -63px;
+  background-position: -97px -108px;
   width: 17px;
   height: 21px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3071,7 +3154,7 @@ input[type=submit].btn-normal,
       background-size: 159px 376px; } }
   .btn-bookmark.is-selected, .btn-bookmark:hover {
     background-image: url(../images/sprites.png);
-    background-position: -74px -63px;
+    background-position: -142px -63px;
     width: 17px;
     height: 21px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3086,7 +3169,7 @@ input[type=submit].btn-normal,
   width: 23px;
   text-indent: -9999px; }
   .btn-close:before {
-    content: ""; }
+    content: ""; }
   .btn-close:before {
     display: block;
     position: absolute;
@@ -3108,7 +3191,7 @@ input[type=submit].btn-normal,
   color: #E74E0F;
   text-indent: -9999px; }
   .btn-warning:before {
-    content: ""; }
+    content: ""; }
   .btn-warning:before {
     display: block;
     position: absolute;
@@ -3130,7 +3213,7 @@ input[type=submit].btn-normal,
   color: #959595;
   text-indent: -9999px; }
   .btn-info:before {
-    content: ""; }
+    content: ""; }
   .btn-info:before {
     display: block;
     position: absolute;
@@ -3153,7 +3236,7 @@ input[type=submit].btn-normal,
   text-indent: -9999px;
   vertical-align: middle; }
   .btn-edit:before {
-    content: ""; }
+    content: ""; }
   .btn-edit:before {
     display: block;
     position: absolute;
@@ -3247,7 +3330,7 @@ input[type=submit].btn-normal,
       color: #000;
       line-height: 47px; }
       .filter-container .results > .selected:before {
-        content: ""; }
+        content: ""; }
       .filter-container .results > .selected:before {
         display: block;
         float: left;
@@ -3412,7 +3495,7 @@ input[type=submit].btn-normal,
   background-color: #e74e0f;
   transition: max-height 0.3s ease-in; }
   .warning-container:before {
-    content: ""; }
+    content: ""; }
   .warning-container:before {
     display: block;
     position: absolute;
@@ -3501,7 +3584,7 @@ input[type=submit].btn-normal,
   .list-users-search .search {
     display: block; }
     .list-users-search .search:before {
-      content: ""; }
+      content: ""; }
     .list-users-search .search:before {
       display: inline-block;
       margin-right: 8px;
@@ -3665,7 +3748,7 @@ input[type=submit].btn-normal,
     color: #fff;
     background-color: #E74E0F; }
     .login-container .invalid-message:before {
-      content: ""; }
+      content: ""; }
     .login-container .invalid-message:before {
       display: block;
       position: absolute;
@@ -3990,7 +4073,7 @@ body.metering .growth {
   font-weight: 500;
   letter-spacing: 0em; }
   body.metering .growth:after {
-    content: ""; }
+    content: ""; }
   body.metering .growth:after {
     display: inline-block;
     height: 25px;
@@ -4017,7 +4100,7 @@ body.metering .growth {
   body.metering .growth.tbl {
     font-size: 15px; }
     body.metering .growth.tbl:before {
-      content: ""; }
+      content: ""; }
     body.metering .growth.tbl:before {
       display: inline-block;
       margin-right: 3px;
@@ -4156,7 +4239,7 @@ body.metering .box-item .btn-warning {
   text-indent: -9999px;
   background-color: #E74E0F; }
   body.metering .box-item .btn-warning:before {
-    content: ""; }
+    content: ""; }
   body.metering .box-item .btn-warning:before {
     display: block;
     position: absolute;
@@ -4265,7 +4348,7 @@ body.metering .box-item .budget .chart.none {
     font-weight: 500;
     color: #9B9B9B; }
     body.metering .box-item .budget .chart.none p:before {
-      content: ""; }
+      content: ""; }
     body.metering .box-item .budget .chart.none p:before {
       display: block;
       margin-bottom: 30px;
@@ -4302,7 +4385,7 @@ body.metering .tbl-data-v {
     line-height: 20px;
     vertical-align: middle; }
     body.metering .tbl-data-v .btn-txt-info:after {
-      content: ""; }
+      content: ""; }
     body.metering .tbl-data-v .btn-txt-info:after {
       display: inline-block;
       margin: -2px 0 0 5px;
@@ -4559,6 +4642,36 @@ body.metering.statistics .statistics-summary .list-statistics-summary {
       clear: both;
       padding-top: 15px;
       height: 215px; }
+
+body.metering.budgeting .title-sub {
+  padding: 30px 0 10px 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: #000; }
+  body.metering.budgeting .title-sub .filter {
+    display: inline-block;
+    margin: -2px 0 0 25px;
+    width: 200px;
+    vertical-align: middle; }
+  body.metering.budgeting .title-sub + .page-tabs {
+    margin-top: 25px; }
+
+body.metering.budgeting .box-item {
+  margin-top: 40px; }
+  body.metering.budgeting .box-item .btn-warning {
+    position: absolute;
+    top: 11px;
+    right: 0px; }
+  body.metering.budgeting .box-item .content .chart {
+    height: 283px;
+    background-color: rgba(0, 0, 0, 0.1); }
+
+body.metering.budgeting .aggrid-uitls {
+  padding-top: 50px;
+  padding-bottom: 35px; }
+  body.metering.budgeting .aggrid-uitls .right-content .btn-text {
+    margin-top: 7px;
+    margin-left: 10px; }
 
 body.metering.history.credit .filter-util {
   margin: 5px 0 0 0; }
