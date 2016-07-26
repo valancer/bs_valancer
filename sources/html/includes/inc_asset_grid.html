@@ -4,10 +4,10 @@
 
 	<p class="right-content">
 		<button type="button" class="btn-text refresh">1 min ago</button>
-		<button type="button" id="export" class="btn-text export">Export</button>
+		<button type="button" class="btn-text export export_open">Export</button>
 	</p>
 
-	<div id="export-content" class="popover small export">
+	<div id="export" class="popover small export">
 		<span class="point"></span>
 
 		<ul>
@@ -21,17 +21,12 @@
 	</label>
 	<script>
 		$(document).ready(function(e) {
-			$('#export').tooltipster({
-				content: $('#export-content').detach(),
-				contentAsHTML: true,
-				contentCloning: false,
-				arrow: false,
-				side: 'bottom',
-				trigger: 'click',
-				functionPosition: function(instance, helper, position){
-					position.coord.top += 10;
-					return position;
-				}
+			$('#export').popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				horizontal: 'center',
+				offsettop: 10,
+				transition: '0.3s all 0.1s'
 			});
 		});
 	</script>

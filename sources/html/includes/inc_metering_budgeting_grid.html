@@ -3,42 +3,21 @@
 	<legend>Data Search &amp; uitls</legend>
 
 	<p class="right-content">
-		<button type="button" class="btn-text export export_open">Export</button>
+		<button type="button" class="btn-text edit">EDIT</button>
+		<button type="button" class="btn-text cancel">CANCEL</button>
+		<button type="button" class="btn-text save-update">SAVE &amp; UPDATE</button>
 	</p>
-
-	<div id="export" class="popover small export">
-		<span class="point"></span>
-
-		<ul>
-			<li><button type="button">Export Graph</button></li>
-			<li><button type="button">Export Table</button></li>
-		</ul>
-	</div>
 
 	<p class="left-content">
-		<label for="filter01" class="icheck">
-			<input type="radio" id="filter01" name="filter" class="iradio">
-			All
-		</label>
-		<label for="filter02" class="icheck">
-			<input type="radio" id="filter02" name="filter" class="iradio">
-			Remaining only
-		</label>
+		<div class="inline-block">
+		<select name="" id="" class="selectric">
+			<option value="2106">YEAR 2016</option>
+			<option value="2015">YEAR 2015</option>
+			<option value="2014">YEAR 2014</option>
+		</select>
+		</div>
 	</p>
-
-	<script>
-		$(document).ready(function(e) {
-			$('#export').popup({
-				type: 'tooltip',
-				vertical: 'bottom',
-				horizontal: 'center',
-				offsettop: 10,
-				transition: '0.3s all 0.1s'
-			});
-		});
-	</script>
 </fieldset>
-
 
 
 <div id="myGrid" class="ag-bespin-global" style="position: relative; height: 500px;">
@@ -110,39 +89,34 @@
 	</aside>
 </div>
 
-<div class="grid-bottom">
-	<a href="#" class="btn-more">+ MORE</a>
-</div>
-
 <script>
 var columnDefs = [
-    {
-        headerName: "Athlete Details",
-        marryChildren: true,
-        children: [
-            {headerName: "Athlete", field: "athlete", width: 150, filter: 'text'},
-            {headerName: "Country", field: "country", width: 120}
-        ]
-    },
-    {
-        headerName: "Sports Results",
-        children: [
-            {headerName: "Sport", field: "sport", width: 110},
-            {headerName: "Total", columnGroupShow: 'closed', field: "total", width: 100, filter: 'number'},
-            {headerName: "Gold", columnGroupShow: 'open', field: "gold", width: 100, filter: 'number'},
-            {headerName: "Silver", columnGroupShow: 'open', field: "silver", width: 100, filter: 'number'},
-            {headerName: "Bronze", columnGroupShow: 'open', field: "bronze", width: 100, filter: 'number'}
-        ]
-    }
-    ];
+    {headerName: "ATHLETE", field: "athlete", unSortIcon: true, sort: 'desc', pinned: 'left'},
+    {headerName: "AGE", field: "age", unSortIcon: true},
+    {headerName: "COUNTRY", field: "country", unSortIcon: true},
+    {headerName: "YEAR", field: "year", unSortIcon: true},
+    {headerName: "DATE", field: "date", unSortIcon: true},
+    {headerName: "SPORT", field: "sport", unSortIcon: true},
+    {headerName: "GOLD", field: "gold", unSortIcon: true},
+    {headerName: "SILVER", field: "silver", unSortIcon: true},
+    {headerName: "BRONZE", field: "bronze", unSortIcon: true},
+    {headerName: "TOTAL", field: "total", unSortIcon: true, pinned: 'right'}
+];
 
 var gridOptions = {
     columnDefs: columnDefs,
     rowSelection: 'single',
     onSelectionChanged: onSelectionChanged,
     rowData: null,
-    enableFilter: true,
+    enableFilter: false,
     enableSorting: true,
+    enableColResize: true,
+    getRowStyle: function(params) {
+        if (params.node.floating) {
+            return {'font-weight': 'bold'}
+        }
+    },
+    floatingBottomRowData: [],
     headerHeight: 40,
 	headerCellTemplate:
 		'<div class="ag-header-cell">' +
@@ -156,9 +130,43 @@ var gridOptions = {
 		'	<span id="agFilter" class="ag-header-icon ag-filter-icon"></span>' +
 		'</div>',
 	getRowHeight: function(params) {
-		return 40;
+		if (params.node.floating == 'bottom' ) {
+			return 52;
+		} else {
+			return 40;
+		}
 	}
 };
+
+function createData(count, prefix) {
+    var result = [];
+    for (var i = 0; i<count; i++) {
+        result.push({
+            athlete: prefix + ' Athlete ' + i,
+            age: prefix + ' Age ' + i,
+            country: prefix + ' Country ' + i,
+            year: prefix + ' Year ' + i,
+            date: prefix + ' Date ' + i,
+            sport: prefix + ' Sport ' + i,
+            gold: prefix + ' gold ' + i,
+            silver: prefix + ' silver ' + i,
+            bronze: prefix + ' bronze ' + i,
+            total: prefix + ' total ' + i
+        });
+    }
+    return result;
+}
+
+function onFloatingBottomCount(footerRowsToFloat) {
+	var count = Number(footerRowsToFloat);
+	var rows = createData(count, 'Bottom');
+	gridOptions.api.setFloatingBottomRowData(rows);
+}
+
+function setData(rowData) {
+	gridOptions.api.setRowData(rowData);
+	onFloatingBottomCount(1);
+}
 
 
 function onSelectionChanged() {
@@ -168,6 +176,7 @@ function onSelectionChanged() {
 		$(target).removeClass('is-opened');
 	});
 }
+
 
 // setup the grid after the page has finished loading
 document.addEventListener('DOMContentLoaded', function() {
@@ -182,8 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
     httpRequest.onreadystatechange = function() {
         if (httpRequest.readyState == 4 && httpRequest.status == 200) {
             var httpResult = JSON.parse(httpRequest.responseText);
-            gridOptions.api.setRowData(httpResult);
-            gridOptions.api.sizeColumnsToFit();
+            setData(httpResult);
         }
     };
 });

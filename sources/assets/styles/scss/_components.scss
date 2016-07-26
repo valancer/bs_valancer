@@ -177,16 +177,27 @@
 	}
 
 	> dt { display: block; overflow: hidden; position: relative; padding: 0 0 0 26px; height: 60px; border-top: 2px solid rgba(151, 151, 151, 0.32); background-color: #fff;
-		.title { display: block; float: left; font-size: 20px; font-weight: 500; color: #000; line-height: 60px;
+		.btn-delete { display: none; margin: -2px 10px 0 -10px; vertical-align: middle; text-indent: -9999px; @include retina-sprite($sc-icon-minus-group); }
+
+		.title { display: inline-block; font-size: 20px; font-weight: 500; color: #000; line-height: 60px;
 			.thumb { display: inline-block; overflow: hidden; margin-top: -4px; margin-right: 5px; height: 43px; width: 43px; border-radius: 43px; vertical-align: middle; background-color: #0f0;
 				img { height: 100%; width: 100%; }
 			}
+
+			.btn-edit { display: none; margin: -2px 0 0 10px; color: #000; }
 		}
 		.right { float: right; line-height: 60px;
-			.icheck { padding: 0 23px 0 0; }
 			.content { display: inline-block; font-size: 17px; font-weight: 500; color: rgba(0, 0, 0, 0.37); vertical-align: middle;
 				em { color: #000; }
+
+				.priority { margin-right: 20px; font-size: 16px; font-weight: 500; color: #000; }
+				.icheck { margin-left: 5px; }
 			}
+		}
+
+		
+		&:hover { background-color: #F6F6F6;
+			.btn-delete { @include retina-sprite($sc-icon-minus-selected-group); }
 		}
 
 		&.is-opened { background-color: #F6F6F6;
@@ -199,6 +210,17 @@
 	}
 
 	> dd { display: block; overflow: hidden; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6; }
+
+	&.is-editable {
+		> dt {
+			.btn-delete { display: inline-block; }
+			&:hover {
+				.btn-edit { display: inline-block; }
+			}
+		}
+
+	}
+
 
 	// metering 하위
 	.metering & {
@@ -276,6 +298,7 @@
 			img { display: inline-block; height: 100%; width: 100%; }
 		}
 		.thumb-over { display: block; position: absolute; top: 50px; left: 50px; opacity: 0; }
+		.filter { display: inline-block; margin: -2px 0 0 24px; vertical-align: middle; }
 	}
 	> .content { display: block; clear: both;
 		.column { float: left; }
@@ -368,15 +391,22 @@
 	form controls
 **/
 // checkbox & radio
-.icheck { display: inline-block; position: relative; padding: 0 0 0 26px; min-height: 18px; min-width: 18px; font-size: 15px; font-weight: 500; color: #000; line-height: 18px; vertical-align: middle; cursor: pointer; }
+.icheck { display: inline-block; position: relative; padding: 0 0 0 23px; min-height: 18px; min-width: 18px; font-size: 14px; font-weight: 500; color: #000; line-height: 18px; vertical-align: middle; cursor: pointer;
+	&.disabled { color: rgba(0, 0, 0, 0.3); }
+}
 
 .icheckbox { display: block; position: absolute !important; top: 0; left: 0; @include retina-sprite($sc-unchecked-group);
-	&.checked { @include retina-sprite($sc-checked-group); }
-	&.indeterminate { @include retina-sprite($sc-pending-group); }
+	&.disabled { @include retina-sprite($sc-unchecked-disabled-group); }
+	&.checked { @include retina-sprite($sc-checked-group);
+		&.disabled { @include retina-sprite($sc-checked-disabled-group); }
+	}
+	&.indeterminate { @include retina-sprite($sc-indeterminate-group); }
 }
 
 .iradio { display: block; position: absolute !important; top: 0; left: 0; @include retina-sprite($sc-runchecked-group);
-	&.checked { @include retina-sprite($sc-rchecked-group); }
+	&.checked { @include retina-sprite($sc-rchecked-group);
+		&.disabled { @include retina-sprite($sc-rchecked-disabled-group); }
+	}
 }
 
 
@@ -392,7 +422,7 @@
 		> span { @include retina-sprite($sc-checked-group); }
 	}
 	&[value="2"] {
-		> span { @include retina-sprite($sc-pending-group); }
+		> span { @include retina-sprite($sc-indeterminate-group); }
 	}
 
 	.list-select-popup { display: block; position: absolute; left: -3px; z-index: z("default");
@@ -435,6 +465,21 @@
 	&.export {
 		@include icon(export);
 		&:before { margin-top: -10px; font-size: 16px; }
+	}
+
+	&.edit {
+		@include icon(edit);
+		&:before { margin: -4px 5px 0 0; font-size: 13px; }
+	}
+
+	&.cancel {
+		@include icon(cancel);
+		&:before { margin: -4px 5px 0 0; font-size: 13px; }
+	}
+
+	&.save-update {
+		@include icon(done);
+		&:before { margin: -4px 5px 0 0; font-size: 13px; }
 	}
 }
 
