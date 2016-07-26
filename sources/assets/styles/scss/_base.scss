@@ -38,7 +38,8 @@ a:hover { text-decoration: none; }
 
 /* forms */
 fieldset { appearance: none; }
-input[type=submit] { appearance: none; cursor: pointer; border: 0px; }
+input[type=submit],
+input[type=search] { appearance: none; cursor: pointer; border: 0px; }
 
 input:focus,
 button:focus,

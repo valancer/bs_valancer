@@ -179,7 +179,7 @@
 	> dt { display: block; overflow: hidden; position: relative; padding: 0 0 0 26px; height: 60px; border-top: 2px solid rgba(151, 151, 151, 0.32); background-color: #fff;
 		.btn-delete { display: none; margin: -2px 10px 0 -10px; vertical-align: middle; text-indent: -9999px; @include retina-sprite($sc-icon-minus-group); }
 
-		.title { display: inline-block; font-size: 20px; font-weight: 500; color: #000; line-height: 60px;
+		.title { display: inline-block; width: 45%; font-size: 20px; font-weight: 500; color: #000; line-height: 60px;
 			.thumb { display: inline-block; overflow: hidden; margin-top: -4px; margin-right: 5px; height: 43px; width: 43px; border-radius: 43px; vertical-align: middle; background-color: #0f0;
 				img { height: 100%; width: 100%; }
 			}
@@ -207,9 +207,27 @@
 
 			+ dd { opacity: 1; max-height: 1000px; transition: opacity 0.3s, max-height 0.3s; }
 		}
+
+		&.edit-mode { overflow: visible; background-color: #F6F6F6;
+			.title { margin-left: 26px;
+				input[type=search] { width: 100%; font-size: 22px; font-weight: 500; color: #000; line-height: 60px; border: 0px; background-color: #fff; }
+			}
+			.right { padding-right: 44px;
+				.content { padding-right: 20px; 
+					.inline-block { margin-right: 30px; }
+				}
+			}
+			+ dd { opacity: 1; max-height: 1000px; transition: opacity 0.3s, max-height 0.3s; }
+		}
 	}
 
-	> dd { display: block; overflow: hidden; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6; }
+	> dd { display: block; overflow: hidden; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6;
+		.edit-submit { margin: 0 -26px; padding: 0 56px; height: 65px; line-height: 65px; background-color: #000;
+			.btn-text { margin-right: 20px; text-decoration: none;
+				&:hover { color: #fff; }
+			}
+		}
+	}
 
 	&.is-editable {
 		> dt {
@@ -226,7 +244,38 @@
 	.metering & {
 		> dt {
 			.right {
-				.content { padding-right: 20px; font-size: 22px; }
+				.content { font-size: 22px; }
+			}
+		}
+
+		.sub-items { margin: 0 -26px;
+			> li { padding: 0 36px 0 56px; border-top: 1px solid #CECECE;
+				.sub-items-title { font-size: 18px; font-weight: 500; color: #000; line-height: 65px;
+					.icheck { margin-left: 20px; font-size: 18px; }
+				}
+				.right-content { float: right; padding-right: 20px; line-height: 65px;
+					&.via-message {
+						.icheck { margin-left: 20px; }
+					}
+
+					input[type=text] { display: inline-block; box-sizing: border-box; height: 31px; font-size: 18px; font-weight: 500; color: #000; text-align: center; vertical-align: middle; border: 1px solid #fff; background-color: #fff;
+						&:focus { border: 1px solid #000; }
+					}
+				}
+
+				.alarm-setting-detail { width: 100%; background-color: #E9E9E9;
+					tbody {
+						tr { border-top: 1px solid #9B9B9B;
+							th { padding-left: 50px; font-size: 15px; font-weight: 500; color: #000; line-height: 40px; }
+							td { font-size: 15px; font-weight: 500; color: #000; line-height: 40px;
+								input[type=text] { box-sizing: border-box; padding-left: 15px; width: 100%; font-size: 15px; font-weight: 500; color: #000; line-height: 40px; border: 0px; background-color: #fff; }
+								&.setting { padding-right: 30px; text-align: right;
+									.icheck { margin-left: 5px; }
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -249,7 +298,16 @@
 			}
 		}
 	}
+}
 
+.accordion-bottom { padding: 0 26px; border-bottom: 2px solid rgba(151, 151, 151, 0.32);
+	.btn-add { display: inline-block; font-size: 22px; font-weight: 500; color: #CECECE; line-height: 60px;
+		&:before { content: ''; display: inline-block; margin: -2px 10px 0 -10px; vertical-align: middle; @include retina-sprite($sc-icon-plus-group); }
+
+		&:hover { color: #000;
+			&:before { @include retina-sprite($sc-icon-plus-selected-group); }
+		}
+	}
 }
 
 

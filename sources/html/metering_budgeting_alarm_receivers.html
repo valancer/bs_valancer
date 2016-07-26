@@ -1,0 +1,244 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="metering budgeting">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "metering", "sub": "budgeting"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+
+			<div class="contents-inner">
+				
+				@@include('./inc_metering_budgeting_overview.html')
+
+
+				<!-- management -->
+				<h2 class="title-sub">
+					Budget Management
+				</h2>
+
+					<!-- filter util -->
+					<div class="page-tabs">
+						<p class="inner">
+							<a href="#">BUDGET SETTING</a>
+							<a href="#" class="is-selected">ALARM SETTING</a>
+						</p>
+					</div>
+
+
+					<!-- column left -->
+					<div class="column-left">
+						<nav class="side-menus">
+							<ul>
+								<li>
+									<a href="#">
+										<span>Alarm List</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="is-selected">
+										<span>Alarm Receivers</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--// column left -->
+					
+
+
+					<!-- column right -->
+					<div class="column-right">
+						
+						<!-- accordion container -->
+						<dl class="accordion is-editable">
+
+
+							<!-- 리시버 view -->
+							<dt>
+								<button type="button" value="{delete01}" class="btn-delete">Delete</button>
+								<span class="title">
+									Jacob Kim
+
+									<button type="button" value="{edit01}" class="btn-edit">edit</button>
+								</span>
+
+								<div class="right">
+									<button type="button" class="btn-folding">open/close</button>
+								</div>
+							</dt>
+							<dd>
+								<fieldset class="content">
+									<legend>Jacob Kim detail</legend>
+
+									<ul class="sub-items">
+										<li>
+											<em class="sub-items-title alarm">Email</em>
+											<p class="right-content">
+												JacobTheBudgetKeeper @ mycompany.com
+											</p>
+										</li>
+										<li>
+											<em class="sub-items-title alarm">Mobile</em>
+											<p class="right-content">
+												+82  010-0000-0000
+											</p>
+										</li>
+									</ul>
+								</fieldset>
+							</dd>
+							<!--// 리시버 view -->
+
+							<dt>
+								<button type="button" value="{delete02}" class="btn-delete">Delete</button>
+								<span class="title">
+									Vincent Weaver
+
+									<button type="button" value="{edit02}" class="btn-edit">edit</button>
+								</span>
+
+								<div class="right">
+									<button type="button" class="btn-folding">open/close</button>
+								</div>
+							</dt>
+							<dd>
+								<fieldset class="content">
+									<legend>Vincent Weaver detail</legend>
+
+									<ul class="sub-items">
+										<li>
+											<em class="sub-items-title alarm">Email</em>
+											<p class="right-content">
+												JacobTheBudgetKeeper @ mycompany.com
+											</p>
+										</li>
+										<li>
+											<em class="sub-items-title alarm">Mobile</em>
+											<p class="right-content">
+												+82  010-0000-0000
+											</p>
+										</li>
+									</ul>
+								</fieldset>
+							</dd>
+
+							<!-- 리시버 edit & add -->
+							<dt class="edit-mode">
+								<span class="title">
+									<input type="search" id="" name="" placeholder="Type in New Receiver Name" value="">
+								</span>
+							</dt>
+							<dd>
+								<fieldset class="content">
+									<legend>My Alarm 01 edit</legend>
+
+									<ul class="sub-items">
+										<li>
+											<em class="sub-items-title via-email">Email</em>
+											<p class="right-content">
+												<input type="text" id="" name="" style="width: 300px;">
+												@
+												<input type="text" id="" name="" style="width: 200px;">
+											</p>
+										</li>
+										<li>
+											<em class="sub-items-title via-mobile">Mobile</em>
+											<p class="right-content">
+												<span class="inline-block" style="width: 211px;">
+													<select name="" id="" class="selectric">
+														<option value="0">Select Country</option>
+														<option value="82">Republic of Korea(+82)</option>
+													</select>
+												</span>
+												-
+												<input type="text" id="" name="" style="width: 90px;">
+												-
+												<input type="text" id="" name="" style="width: 90px;">
+												-
+												<input type="text" id="" name="" style="width: 90px;">
+											</p>
+										</li>
+									</ul>
+
+									<p class="edit-submit">
+										<button type="button" class="btn-text cancel">CANCEL</button>
+										<button type="button" class="btn-text save-update">SAVE &amp; UPDATE</button>
+									</p>
+								</fieldset>
+							</dd>
+							<!--// 리시버 edit & add -->
+
+						</dl>
+
+						<p class="accordion-bottom">
+							<button type="button" class="btn-add">Add new receiver</button>
+						</p>
+						<script>
+						$(document).ready(function(e) {	
+							/* accordion */
+							var Accordion = (function ($) {
+								var scope,
+									$container,
+									$btnToggleContainer,
+									$btnDelete,
+									init = function() {
+										$container = $('.accordion');
+										$btnToggleContainer = $container.find('.btn-folding');
+										$btnDelete = $container.find('.btn-delete');
+
+										initLayout();
+										initEvent();
+									};
+
+								function initLayout() {
+								}
+
+								function initEvent() {
+									// item open / close
+									$btnToggleContainer.on('click', function(e) {
+										e.preventDefault();
+										
+										$(this).closest('dt').toggleClass('is-opened');
+									});
+
+									// delete
+									$btnDelete.on('click', function(e) {
+										var del = confirm("해당 리시버를 삭제하시겠습니까?");
+										if( del ) {
+											console.log('delete click : ' + $(this).val());
+										} else {
+											console.log('cancel delete');
+										}
+									});
+								}
+
+								return {
+									init: function() {
+										init();
+									}
+								};
+							}(jQuery));
+							
+							Accordion.init();
+						});
+						</script>
+						<!--// accordion container -->
+
+
+					</div>
+					<!--// column right -->
+			</div>
+		</article>
+	</main>
+
+
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

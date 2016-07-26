@@ -57,23 +57,26 @@
 						
 						<!-- accordion container -->
 						<dl class="accordion is-editable">
+
+
+							<!-- 설정 view -->
 							<dt>
-								<button type="button" class="btn-delete">Delete</button>
+								<button type="button" value="{delete01}" class="btn-delete">Delete</button>
 								<span class="title">
 									My Alarm 01
 
-									<button type="button" class="btn-edit">edit</button>
+									<button type="button" value="{edit01}" class="btn-edit">edit</button>
 								</span>
 
 								<div class="right">
 									<div class="content">
 										<span class="priority">Highest Priority</span>
 										<label for="myalarm01-on" class="icheck">
-											<input type="radio" id="myalarm01-on" name="myalarm" class="iradio">
+											<input type="radio" id="myalarm01-on" name="myalarm01" class="iradio" checked disabled>
 											ON
 										</label>
 										<label for="myalarm01-off" class="icheck">
-											<input type="radio" id="myalarm01-off" name="myalarm" class="iradio">
+											<input type="radio" id="myalarm01-off" name="myalarm01" class="iradio" disabled>
 											OFF
 										</label>
 									</div>
@@ -83,12 +86,320 @@
 							</dt>
 							<dd>
 								<fieldset class="content">
-									<legend>alarm detail</legend>
+									<legend>My Alarm 01 detail</legend>
 
-									alarm detail
+									<ul class="sub-items">
+										<li>
+											<em class="sub-items-title alarm">Alarm based on Budget Threshold</em>
+
+											<table class="alarm-setting-detail">
+												<caption></caption>
+												<colgroup>
+													<col style="width: 50%;">
+													<col style="width: 25%;">
+													<col style="width: 25%;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th>Threshold for Total Cost</th>
+														<td>90%</td>
+														<td class="setting">
+															<label for="sub-myalarm01-on" class="icheck">
+																<input type="radio" id="sub-myalarm01-on" name="sub-myalarm01" class="iradio" checked disabled>
+																ON
+															</label>
+															<label for="sub-myalarm01-off" class="icheck">
+																<input type="radio" id="sub-myalarm01-off" name="sub-myalarm01" class="iradio" disabled>
+																OFF
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<th>Threshold for [ Vendor Name ]</th>
+														<td>90%</td>
+														<td class="setting">
+															<label for="sub-myalarm02-on" class="icheck">
+																<input type="radio" id="sub-myalarm02-on" name="sub-myalarm02" class="iradio" checked disabled>
+																ON
+															</label>
+															<label for="sub-myalarm02-off" class="icheck">
+																<input type="radio" id="sub-myalarm02-off" name="sub-myalarm02" class="iradio" disabled>
+																OFF
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<th>Threshold for [ Vendor Name ]</th>
+														<td>90%</td>
+														<td class="setting">
+															<label for="sub-myalarm03-on" class="icheck">
+																<input type="radio" id="sub-myalarm03-on" name="sub-myalarm03" class="iradio" checked disabled>
+																ON
+															</label>
+															<label for="sub-myalarm03-off" class="icheck">
+																<input type="radio" id="sub-myalarm03-off" name="sub-myalarm03" class="iradio" disabled>
+																OFF
+															</label>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li>
+											<em class="sub-items-title via-message">Receive Alarm Message Via</em>
+											<p class="right-content via-message">
+												<label for="sms" class="icheck">
+													<input type="checkbox" id="sms" name="message" class="icheckbox">
+													SMS
+												</label>
+												<label for="email" class="icheck">
+													<input type="checkbox" id="email" name="message" class="icheckbox">
+													EMAIL
+												</label>
+											</p>
+										</li>
+									</ul>
 								</fieldset>
 							</dd>
+							<!--// 설정 view -->
+
+							<dt>
+								<button type="button" value="{delete02}" class="btn-delete">Delete</button>
+								<span class="title">
+									My Alarm 02
+
+									<button type="button" value="{edit02}" class="btn-edit">edit</button>
+								</span>
+
+								<div class="right">
+									<div class="content">
+										<span class="priority">Attention Required</span>
+										<label for="myalarm02-on" class="icheck">
+											<input type="radio" id="myalarm02-on" name="myalarm02" class="iradio" checked disabled>
+											ON
+										</label>
+										<label for="myalarm02-off" class="icheck">
+											<input type="radio" id="myalarm02-off" name="myalarm02" class="iradio" disabled>
+											OFF
+										</label>
+									</div>
+
+									<button type="button" class="btn-folding">open/close</button>
+								</div>
+							</dt>
+							<dd>
+								<fieldset class="content">
+									<legend>My Alarm 02 detail</legend>
+
+									<ul class="sub-items">
+										<li>
+											<em class="sub-items-title alarm">Alarm based on Absolute Amount</em>
+
+											<table class="alarm-setting-detail">
+												<caption></caption>
+												<colgroup>
+													<col style="width: 50%;">
+													<col style="width: 25%;">
+													<col style="width: 25%;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th>Amount for Total Cost</th>
+														<td>$000,000.00</td>
+														<td class="setting">
+															<label for="sub-myalarm04-on" class="icheck">
+																<input type="radio" id="sub-myalarm04-on" name="sub-myalarm04" class="iradio" checked disabled>
+																ON
+															</label>
+															<label for="sub-myalarm04-off" class="icheck">
+																<input type="radio" id="sub-myalarm04-off" name="sub-myalarm04" class="iradio" disabled>
+																OFF
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<th>Amount for [ Vendor Name ]</th>
+														<td>$000,000.00</td>
+														<td class="setting">
+															<label for="sub-myalarm05-on" class="icheck">
+																<input type="radio" id="sub-myalarm05-on" name="sub-myalarm05" class="iradio" checked disabled>
+																ON
+															</label>
+															<label for="sub-myalarm05-off" class="icheck">
+																<input type="radio" id="sub-myalarm05-off" name="sub-myalarm05" class="iradio" disabled>
+																OFF
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<th>Amount for [ Vendor Name ]</th>
+														<td>$000,000.00</td>
+														<td class="setting">
+															<label for="sub-myalarm06-on" class="icheck">
+																<input type="radio" id="sub-myalarm06-on" name="sub-myalarm06" class="iradio" checked disabled>
+																ON
+															</label>
+															<label for="sub-myalarm06-off" class="icheck">
+																<input type="radio" id="sub-myalarm06-off" name="sub-myalarm06" class="iradio" disabled>
+																OFF
+															</label>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li>
+											<em class="sub-items-title via-message">Receive Alarm Message Via</em>
+											<p class="right-content via-message">
+												<label for="sms" class="icheck">
+													<input type="checkbox" id="sms" name="message" class="icheckbox">
+													SMS
+												</label>
+												<label for="email" class="icheck">
+													<input type="checkbox" id="email" name="message" class="icheckbox">
+													EMAIL
+												</label>
+											</p>
+										</li>
+									</ul>
+								</fieldset>
+							</dd>
+
+
+
+
+
+
+							<!-- 설정 edit & add -->
+							<dt class="edit-mode">
+								<span class="title">
+									<input type="search" id="" name="" placeholder="Type in New Alarm Name" value="">
+								</span>
+
+								<div class="right">
+									<div class="content">
+										<div class="inline-block">
+											<select name="" id="" class="selectric">
+												<option value="0">Select Alarm Lavel</option>
+												<option value="1">Highest Priority</option>
+												<option value="2">Attention Required</option>
+											</select>
+										</div>
+
+										<label for="edit01-on" class="icheck">
+											<input type="radio" id="edit01-on" name="edit01" class="iradio" checked>
+											ON
+										</label>
+										<label for="edit01-off" class="icheck">
+											<input type="radio" id="edit01-off" name="edit01" class="iradio" >
+											OFF
+										</label>
+									</div>
+								</div>
+							</dt>
+							<dd>
+								<fieldset class="content">
+									<legend>My Alarm 01 edit</legend>
+
+									<ul class="sub-items">
+										<li>
+											<em class="sub-items-title alarm">Alarm based on
+												<label for="edit02-on" class="icheck">
+													<input type="radio" id="edit02-on" name="edit02" class="iradio" checked>
+													Budget threshold
+												</label>
+												<label for="edit02-off" class="icheck">
+													<input type="radio" id="edit02-off" name="edit02" class="iradio" >
+													Absolute amount
+												</label>
+											</em>
+
+											<table class="alarm-setting-detail">
+												<caption></caption>
+												<colgroup>
+													<col style="width: 50%;">
+													<col style="width: 25%;">
+													<col style="width: 25%;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th>Threshold for Total Cost</th>
+														<td>
+															<input type="text" id="" name="" value="90%">
+														</td>
+														<td class="setting">
+															<label for="sub-myalarm01-on" class="icheck">
+																<input type="radio" id="sub-myalarm01-on" name="sub-myalarm01" class="iradio" checked>
+																ON
+															</label>
+															<label for="sub-myalarm01-off" class="icheck">
+																<input type="radio" id="sub-myalarm01-off" name="sub-myalarm01" class="iradio">
+																OFF
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<th>Threshold for [ Vendor Name ]</th>
+														<td>
+															<input type="text" id="" name="" value="90%">
+														</td>
+														<td class="setting">
+															<label for="sub-myalarm02-on" class="icheck">
+																<input type="radio" id="sub-myalarm02-on" name="sub-myalarm02" class="iradio" checked>
+																ON
+															</label>
+															<label for="sub-myalarm02-off" class="icheck">
+																<input type="radio" id="sub-myalarm02-off" name="sub-myalarm02" class="iradio">
+																OFF
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<th>Threshold for [ Vendor Name ]</th>
+														<td>
+															<input type="text" id="" name="" value="90%">
+														</td>
+														<td class="setting">
+															<label for="sub-myalarm03-on" class="icheck">
+																<input type="radio" id="sub-myalarm03-on" name="sub-myalarm03" class="iradio" checked>
+																ON
+															</label>
+															<label for="sub-myalarm03-off" class="icheck">
+																<input type="radio" id="sub-myalarm03-off" name="sub-myalarm03" class="iradio">
+																OFF
+															</label>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li>
+											<em class="sub-items-title via-message">Receive Alarm Message Via</em>
+											<p class="right-content via-message">
+												<label for="sms" class="icheck">
+													<input type="checkbox" id="sms" name="message" class="icheckbox">
+													SMS
+												</label>
+												<label for="email" class="icheck">
+													<input type="checkbox" id="email" name="message" class="icheckbox">
+													EMAIL
+												</label>
+											</p>
+										</li>
+									</ul>
+
+									<p class="edit-submit">
+										<button type="button" class="btn-text cancel">CANCEL</button>
+										<button type="button" class="btn-text save-update">SAVE &amp; UPDATE</button>
+									</p>
+								</fieldset>
+							</dd>
+							<!--// 설정 edit & add -->
 						</dl>
+
+						<p class="accordion-bottom">
+							<button type="button" class="btn-add">Add new alarm</button>
+						</p>
 						<script>
 						$(document).ready(function(e) {	
 							/* accordion */
@@ -96,9 +407,11 @@
 								var scope,
 									$container,
 									$btnToggleContainer,
+									$btnDelete,
 									init = function() {
 										$container = $('.accordion');
 										$btnToggleContainer = $container.find('.btn-folding');
+										$btnDelete = $container.find('.btn-delete');
 
 										initLayout();
 										initEvent();
@@ -113,6 +426,16 @@
 										e.preventDefault();
 										
 										$(this).closest('dt').toggleClass('is-opened');
+									});
+
+									// delete
+									$btnDelete.on('click', function(e) {
+										var del = confirm("해당 알람을 삭제하시겠습니까?");
+										if( del ) {
+											console.log('delete click : ' + $(this).val());
+										} else {
+											console.log('cancel delete');
+										}
 									});
 								}
 

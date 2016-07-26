@@ -130,7 +130,8 @@ fieldset {
      -moz-appearance: none;
           appearance: none; }
 
-input[type=submit] {
+input[type=submit],
+input[type=search] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2500,6 +2501,7 @@ article.contents .submit-btns {
           background-size: 159px 376px; } }
     .accordion > dt .title {
       display: inline-block;
+      width: 45%;
       font-size: 20px;
       font-weight: 500;
       color: #000;
@@ -2559,6 +2561,29 @@ article.contents .submit-btns {
         opacity: 1;
         max-height: 1000px;
         transition: opacity 0.3s, max-height 0.3s; }
+    .accordion > dt.edit-mode {
+      overflow: visible;
+      background-color: #F6F6F6; }
+      .accordion > dt.edit-mode .title {
+        margin-left: 26px; }
+        .accordion > dt.edit-mode .title input[type=search] {
+          width: 100%;
+          font-size: 22px;
+          font-weight: 500;
+          color: #000;
+          line-height: 60px;
+          border: 0px;
+          background-color: #fff; }
+      .accordion > dt.edit-mode .right {
+        padding-right: 44px; }
+        .accordion > dt.edit-mode .right .content {
+          padding-right: 20px; }
+          .accordion > dt.edit-mode .right .content .inline-block {
+            margin-right: 30px; }
+      .accordion > dt.edit-mode + dd {
+        opacity: 1;
+        max-height: 1000px;
+        transition: opacity 0.3s, max-height 0.3s; }
   .accordion > dd {
     display: block;
     overflow: hidden;
@@ -2566,13 +2591,86 @@ article.contents .submit-btns {
     opacity: 0;
     max-height: 0px;
     background-color: #F6F6F6; }
+    .accordion > dd .edit-submit {
+      margin: 0 -26px;
+      padding: 0 56px;
+      height: 65px;
+      line-height: 65px;
+      background-color: #000; }
+      .accordion > dd .edit-submit .btn-text {
+        margin-right: 20px;
+        text-decoration: none; }
+        .accordion > dd .edit-submit .btn-text:hover {
+          color: #fff; }
   .accordion.is-editable > dt .btn-delete {
     display: inline-block; }
   .accordion.is-editable > dt:hover .btn-edit {
     display: inline-block; }
   .metering .accordion > dt .right .content {
-    padding-right: 20px;
     font-size: 22px; }
+  .metering .accordion .sub-items {
+    margin: 0 -26px; }
+    .metering .accordion .sub-items > li {
+      padding: 0 36px 0 56px;
+      border-top: 1px solid #CECECE; }
+      .metering .accordion .sub-items > li .sub-items-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+        line-height: 65px; }
+        .metering .accordion .sub-items > li .sub-items-title .icheck {
+          margin-left: 20px;
+          font-size: 18px; }
+      .metering .accordion .sub-items > li .right-content {
+        float: right;
+        padding-right: 20px;
+        line-height: 65px; }
+        .metering .accordion .sub-items > li .right-content.via-message .icheck {
+          margin-left: 20px; }
+        .metering .accordion .sub-items > li .right-content input[type=text] {
+          display: inline-block;
+          box-sizing: border-box;
+          height: 31px;
+          font-size: 18px;
+          font-weight: 500;
+          color: #000;
+          text-align: center;
+          vertical-align: middle;
+          border: 1px solid #fff;
+          background-color: #fff; }
+          .metering .accordion .sub-items > li .right-content input[type=text]:focus {
+            border: 1px solid #000; }
+      .metering .accordion .sub-items > li .alarm-setting-detail {
+        width: 100%;
+        background-color: #E9E9E9; }
+        .metering .accordion .sub-items > li .alarm-setting-detail tbody tr {
+          border-top: 1px solid #9B9B9B; }
+          .metering .accordion .sub-items > li .alarm-setting-detail tbody tr th {
+            padding-left: 50px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #000;
+            line-height: 40px; }
+          .metering .accordion .sub-items > li .alarm-setting-detail tbody tr td {
+            font-size: 15px;
+            font-weight: 500;
+            color: #000;
+            line-height: 40px; }
+            .metering .accordion .sub-items > li .alarm-setting-detail tbody tr td input[type=text] {
+              box-sizing: border-box;
+              padding-left: 15px;
+              width: 100%;
+              font-size: 15px;
+              font-weight: 500;
+              color: #000;
+              line-height: 40px;
+              border: 0px;
+              background-color: #fff; }
+            .metering .accordion .sub-items > li .alarm-setting-detail tbody tr td.setting {
+              padding-right: 30px;
+              text-align: right; }
+              .metering .accordion .sub-items > li .alarm-setting-detail tbody tr td.setting .icheck {
+                margin-left: 5px; }
   .accordion .permission {
     table-layout: fixed;
     width: 100%; }
@@ -2594,6 +2692,40 @@ article.contents .submit-btns {
         text-align: center; }
         .accordion .permission tbody tr td label {
           padding: 0; }
+
+.accordion-bottom {
+  padding: 0 26px;
+  border-bottom: 2px solid rgba(151, 151, 151, 0.32); }
+  .accordion-bottom .btn-add {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    color: #CECECE;
+    line-height: 60px; }
+    .accordion-bottom .btn-add:before {
+      content: '';
+      display: inline-block;
+      margin: -2px 10px 0 -10px;
+      vertical-align: middle;
+      background-image: url(../images/sprites.png);
+      background-position: -108px -63px;
+      width: 28px;
+      height: 29px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .accordion-bottom .btn-add:before {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 159px 376px; } }
+    .accordion-bottom .btn-add:hover {
+      color: #000; }
+      .accordion-bottom .btn-add:hover:before {
+        background-image: url(../images/sprites.png);
+        background-position: -74px -63px;
+        width: 28px;
+        height: 29px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .accordion-bottom .btn-add:hover:before {
+            background-image: url(../images/sprites@2x.png);
+            background-size: 159px 376px; } }
 
 /**
 	filter-util
