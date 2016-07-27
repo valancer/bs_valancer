@@ -1,21 +1,5 @@
 body.portal {
 
-	/* vendor accounts */
-	.vendor-accounts { padding-bottom: 26px;
-		.title { display: block; margin-bottom: 5px; font-size: 14px; font-weight: 700; color: #000; }
-
-		.key-code { overflow: hidden; 
-			p { float: left; padding-right: 30px; }
-			input[type=text] { padding-left: 23px; height: 49px; width: 290px; font-size: 21px; font-weight: 500; color: rgba(0, 0, 0, 0.36); border: 0px; background-color: #fff; }
-		}
-
-		.used-for { margin-top: 38px;
-			.icheck { padding-left: 26px; min-width: 70px; }
-		}
-
-		.btns { margin-top: 38px; }
-	}
-
 
 	/* manage service group */
 	.service-group { position: relative; padding: 23px 0 0 0px; min-height: 225px;

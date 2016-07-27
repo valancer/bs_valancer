@@ -22,9 +22,15 @@
 				<div class="column-right">
 
 					<!-- accordion container -->
-					<dl class="accordion">
-						<dt class="is-opened">
-							<span class="title">AWS Account 1</span>
+					<dl class="accordion is-editable">
+						<!-- 설정 view -->
+						<dt>
+							<button type="button" value="{delete01}" class="btn-delete">Delete</button>
+							<span class="title">
+								AWS Account 1
+
+								<button type="button" value="{edit01}" class="btn-edit">edit</button>
+							</span>
 
 							<p class="right">
 								<span class="content">Account ID: 233445453</span>
@@ -35,47 +41,51 @@
 							<fieldset class="content vendor-accounts">
 								<legend>accout detail</legend>
 
-								<div class="key-code">
-									<p>
-										<label for="233445453-key" class="title">KEY</label>
-										<input type="text" id="233445453-key" name="233445453" value="93nfd7TZ3f">
-									</p>
+								<div class="vendor-accounts">
+									<div class="key-code">
+										<p>
+											<label for="233445453-key" class="title">KEY</label>
+											<input type="text" id="233445453-key" name="233445453" value="93nfd7TZ3f" disabled>
+										</p>
 
-									<p>
-										<label for="233445453-secret" class="title">SECRET CODE</label>
-										<input type="text" id="233445453-secret" name="233445453" value="asjd329ri34askdhfkasdhg">
-									</p>
+										<p>
+											<label for="233445453-secret" class="title">SECRET CODE</label>
+											<input type="text" id="233445453-secret" name="233445453" value="asjd329ri34askdhfkasdhg" disabled>
+										</p>
+									</div>
+
+									<div class="used-for">
+										<label for="233445453-all" class="title">USED FOR</label>
+
+										<label for="233445453-all" class="icheck">
+											<input type="checkbox" id="233445453-all" name="233445453" value="0" class="icheckbox" disabled>
+											All
+										</label>
+										<label for="233445453-asset" class="icheck">
+											<input type="checkbox" id="233445453-asset" name="233445453" value="1" class="icheckbox" disabled>
+											Asset
+										</label>
+										<label for="233445453-metering" class="icheck">
+											<input type="checkbox" id="233445453-metering" name="233445453" value="2" class="icheckbox" disabled>
+											Metering
+										</label>
+										<label for="233445453-monitoring" class="icheck">
+											<input type="checkbox" id="233445453-monitoring" name="233445453" value="3" class="icheckbox" disabled>
+											Monitoring
+										</label>
+									</div>
 								</div>
-
-								<div class="used-for">
-									<label for="233445453-all" class="title">USED FOR</label>
-
-									<label for="233445453-all" class="icheck">
-										<input type="checkbox" id="233445453-all" name="233445453" value="0" class="icheckbox">
-										All
-									</label>
-									<label for="233445453-asset" class="icheck">
-										<input type="checkbox" id="233445453-asset" name="233445453" value="1" class="icheckbox">
-										Asset
-									</label>
-									<label for="233445453-metering" class="icheck">
-										<input type="checkbox" id="233445453-metering" name="233445453" value="2" class="icheckbox">
-										Metering
-									</label>
-									<label for="233445453-monitoring" class="icheck">
-										<input type="checkbox" id="233445453-monitoring" name="233445453" value="3" class="icheckbox">
-										Monitoring
-									</label>
-								</div>
-
-								<p class="btns">
-									<input type="submit" class="btn-normal large" value="SAVE &amp; UPDATE">
-								</p>
 							</fieldset>
 						</dd>
+						<!--// 설정 view -->
 
 						<dt>
-							<span class="title">AWS Account 2</span>
+							<button type="button" value="{delete02}" class="btn-delete">Delete</button>
+							<span class="title">
+								AWS Account 2
+
+								<button type="button" value="{edit02}" class="btn-edit">edit</button>
+							</span>
 
 							<p class="right">
 								<span class="content">Account ID: 533445453</span>
@@ -83,48 +93,103 @@
 							</p>
 						</dt>
 						<dd>
-							<fieldset class="content vendor-accounts">
+							<fieldset class="content">
 								<legend>accout detail</legend>
 
-								<div class="key-code">
-									<p>
-										<label for="533445453-key" class="title">KEY</label>
-										<input type="text" id="533445453-key" name="533445453" value="93nfd7TZ3f">
-									</p>
+								<div class="vendor-accounts">
+									<div class="key-code">
+										<p>
+											<label for="533445453-key" class="title">KEY</label>
+											<input type="text" id="533445453-key" name="533445453" value="93nfd7TZ3f" disabled>
+										</p>
 
-									<p>
-										<label for="533445453-secret" class="title">SECRET CODE</label>
-										<input type="text" id="533445453-secret" name="533445453" value="asjd329ri34askdhfkasdhg">
-									</p>
+										<p>
+											<label for="533445453-secret" class="title">SECRET CODE</label>
+											<input type="text" id="533445453-secret" name="533445453" value="asjd329ri34askdhfkasdhg" disabled>
+										</p>
+									</div>
+
+									<div class="used-for">
+										<label for="533445453-all" class="title">USED FOR</label>
+
+										<label for="533445453-all" class="icheck">
+											<input type="checkbox" id="533445453-all" name="533445453" value="0" class="icheckbox" disabled>
+											All
+										</label>
+										<label for="533445453-asset" class="icheck">
+											<input type="checkbox" id="533445453-asset" name="533445453" value="1" class="icheckbox" disabled>
+											Asset
+										</label>
+										<label for="533445453-metering" class="icheck">
+											<input type="checkbox" id="533445453-metering" name="533445453" value="2" class="icheckbox" disabled>
+											Metering
+										</label>
+										<label for="533445453-monitoring" class="icheck">
+											<input type="checkbox" id="533445453-monitoring" name="533445453" value="3" class="icheckbox" disabled>
+											Monitoring
+										</label>
+									</div>
+								</div>
+							</fieldset>
+						</dd>
+
+						<!-- 설정 edit & add -->
+						<dt class="edit-mode">
+							<span class="title">
+								<input type="search" id="" name="" placeholder="Type in New Account Name" value="">
+							</span>
+						</dt>
+						<dd>
+							<fieldset class="content">
+								<legend>accout detail</legend>
+
+								<div class="vendor-accounts">
+									<div class="key-code">
+										<p>
+											<label for="633445453-key" class="title">KEY</label>
+											<input type="text" id="633445453-key" name="633445453" value="">
+										</p>
+
+										<p>
+											<label for="633445453-secret" class="title">SECRET CODE</label>
+											<input type="text" id="633445453-secret" name="633445453" value="">
+										</p>
+									</div>
+
+									<div class="used-for">
+										<label for="633445453-all" class="title">USED FOR</label>
+
+										<label for="633445453-all" class="icheck">
+											<input type="checkbox" id="633445453-all" name="633445453" value="0" class="icheckbox">
+											All
+										</label>
+										<label for="633445453-asset" class="icheck">
+											<input type="checkbox" id="633445453-asset" name="633445453" value="1" class="icheckbox">
+											Asset
+										</label>
+										<label for="633445453-metering" class="icheck">
+											<input type="checkbox" id="633445453-metering" name="633445453" value="2" class="icheckbox">
+											Metering
+										</label>
+										<label for="633445453-monitoring" class="icheck">
+											<input type="checkbox" id="633445453-monitoring" name="633445453" value="3" class="icheckbox">
+											Monitoring
+										</label>
+									</div>
 								</div>
 
-								<div class="used-for">
-									<label for="533445453-all" class="title">USED FOR</label>
-
-									<label for="533445453-all" class="icheck">
-										<input type="checkbox" id="533445453-all" name="533445453" value="0" class="icheckbox">
-										All
-									</label>
-									<label for="533445453-asset" class="icheck">
-										<input type="checkbox" id="533445453-asset" name="533445453" value="1" class="icheckbox">
-										Asset
-									</label>
-									<label for="533445453-metering" class="icheck">
-										<input type="checkbox" id="533445453-metering" name="533445453" value="2" class="icheckbox">
-										Metering
-									</label>
-									<label for="533445453-monitoring" class="icheck">
-										<input type="checkbox" id="533445453-monitoring" name="533445453" value="3" class="icheckbox">
-										Monitoring
-									</label>
-								</div>
-
-								<p class="btns">
-									<input type="submit" class="btn-normal large" value="SAVE &amp; UPDATE">
+								<p class="edit-submit">
+									<button type="button" class="btn-text cancel">CANCEL</button>
+									<button type="button" class="btn-text save-update">SAVE &amp; UPDATE</button>
 								</p>
 							</fieldset>
 						</dd>
+						<!--// 설정 edit & add -->
 					</dl>
+
+					<p class="accordion-bottom">
+						<button type="button" class="btn-add">Add New Account</button>
+					</p>
 					<script>
 					$(document).ready(function(e) {	
 						/* accordion */
@@ -132,9 +197,11 @@
 							var scope,
 								$container,
 								$btnToggleContainer,
+								$btnDelete,
 								init = function() {
 									$container = $('.accordion');
 									$btnToggleContainer = $container.find('.btn-folding');
+									$btnDelete = $container.find('.btn-delete');
 
 									initLayout();
 									initEvent();
@@ -150,6 +217,17 @@
 									
 									$(this).closest('dt').toggleClass('is-opened');
 								});
+
+
+								// delete
+								$btnDelete.on('click', function(e) {
+									var del = confirm("해당 계정을 삭제하시겠습니까?");
+									if( del ) {
+										console.log('delete click : ' + $(this).val());
+									} else {
+										console.log('cancel delete');
+									}
+								});
 							}
 
 							return {
@@ -163,11 +241,6 @@
 					});
 					</script>
 					<!--// accordion container -->
-
-
-					<p class="submit-btns">
-						<button type="button" class="btn-normal">+ New Account</button>
-					</p>
 				</div>
 			</div>
 		</article>

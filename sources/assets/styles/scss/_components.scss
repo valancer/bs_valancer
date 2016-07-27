@@ -7,6 +7,8 @@
 	.title { font-size: 36px; font-weight: 500; color: #000; }
 	.content { padding-right: 50%;
 		.box-item { margin-top: 20px; }
+
+		&.full { padding-right: 0; }
 	}
 	.bottom { margin-top: 25px;
 		.step { display: block; position: absolute; bottom: 30px; right: 30px; font-size: 17px; font-weight: 500; color: rgba(0, 0, 0, 0.43); line-height: 48px; }
@@ -217,7 +219,9 @@
 					.inline-block { margin-right: 30px; }
 				}
 			}
-			+ dd { opacity: 1; max-height: 1000px; transition: opacity 0.3s, max-height 0.3s; }
+			+ dd { opacity: 1; max-height: 1000px; transition: opacity 0.3s, max-height 0.3s;
+				.vendor-accounts { padding-top: 30px; }
+			}
 		}
 	}
 
@@ -281,6 +285,23 @@
 	}
 
 
+	/* vendor accounts */
+	.vendor-accounts { padding: 0 26px 26px 26px;
+		.title { display: block; margin-bottom: 5px; font-size: 14px; font-weight: 700; color: #000; }
+
+		.key-code { overflow: hidden;
+			p { float: left; padding-right: 30px; }
+			input[type=text] { padding-left: 23px; height: 49px; width: 240px; font-size: 21px; font-weight: 500; color: rgba(0, 0, 0, 0.36); border: 1px solid #fff; background-color: #fff;
+				&:focus { border: 1px solid #000; }
+			}
+		}
+
+		.used-for { margin-top: 38px;
+			.icheck { padding-left: 26px; min-width: 70px; }
+		}
+	}
+
+
 	/* set permission */
 	.permission { table-layout: fixed; width: 100%;
 		thead {
@@ -300,9 +321,9 @@
 	}
 }
 
-.accordion-bottom { padding: 0 26px; border-bottom: 2px solid rgba(151, 151, 151, 0.32);
+.accordion-bottom { padding: 0 26px 0 16px; border-bottom: 2px solid rgba(151, 151, 151, 0.32);
 	.btn-add { display: inline-block; font-size: 22px; font-weight: 500; color: #CECECE; line-height: 60px;
-		&:before { content: ''; display: inline-block; margin: -2px 10px 0 -10px; vertical-align: middle; @include retina-sprite($sc-icon-plus-group); }
+		&:before { content: ''; display: inline-block; margin: -2px 10px 0 0px; vertical-align: middle; @include retina-sprite($sc-icon-plus-group); }
 
 		&:hover { color: #000;
 			&:before { @include retina-sprite($sc-icon-plus-selected-group); }
@@ -543,7 +564,7 @@
 
 // normal
 input[type=submit].btn-normal,
-.btn-normal { display: inline-block; min-width: 225px; font-size: 14px; font-weight: 700; color: #000; text-align: center; vertical-align: middle; line-height: 28px; border: 2px solid #000; background-color: #fff;
+.btn-normal { display: inline-block; min-width: 200px; font-size: 14px; font-weight: 700; color: #000; text-align: center; vertical-align: middle; line-height: 28px; border: 2px solid #000; background-color: #fff;
 	&.large { font-size: 15px; line-height: 44px; }
 
 	&:hover { color: #fff; background-color: #000; }
@@ -555,6 +576,15 @@ input[type=submit].btn-normal,
 	&.download {
 		@include icon(download);
 		&:before { display: inline-block; margin: -2px 5px 0 0; font-size: 14px; vertical-align: middle; }
+	}
+
+	&.icon-its {
+		@include icon(workflow);
+		&:before { margin: -1px 5px 0 0; font-size: 20px; vertical-align: middle; }
+		
+		&.ing { color: #fff; border: 2px solid #717171; background-color: #717171;
+			&:before { content: none; }
+		}
 	}
 }
 
@@ -626,7 +656,7 @@ input[type=submit].btn-normal,
 	}
 
 	.items { display: none; overflow: hidden; padding-bottom: 15px; border-top: 2px solid #cecece;
-		.filter-item { display: block; box-sizing: border-box; float: left; position: relative; overflow: hidden; padding: 0px 40px 0 0; height: auto; width: 25%;
+		.filter-item { display: block; box-sizing: border-box; float: left; position: relative; overflow: hidden; padding: 0px 20px 0 0; height: auto; width: 25%;
 			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 0; left: 0; height: 30px;
 				background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(231,231,231,1) 100%);
 				background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(231,231,231,1) 100%);
@@ -671,7 +701,7 @@ input[type=submit].btn-normal,
 
 
 	// open
-	&.is-opened { height: auto; padding-bottom: 0px; border-top: 2px solid #d0d0d0;
+	&.is-opened { height: auto; padding-bottom: 0px;
         animation-delay: 0s;
         animation-name: filter-down;
         animation-timing-function: ease-out;
@@ -840,9 +870,10 @@ input[type=submit].btn-normal,
 	setup forms
 **/
 .forms { display: block; clear: both;
-	p { margin-top: 10px; }
+	.sub { display: block; margin-top: 10px; }
+	p { margin-top: 10px; vertical-align: middle; }
 	input[type=text],
-	input[type=password] { display: block; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; background-color: #F6F6F6;
+	input[type=password] { display: inline-block; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; vertical-align: middle; border: 1px solid #F6F6F6; background-color: #F6F6F6;
 		&:focus { border: 1px solid #000; }
 	}
 
