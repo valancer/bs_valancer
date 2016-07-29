@@ -41,6 +41,7 @@
 
 		<div class="copyright">
 			<a href="#" class="btn-customer">기술지원 및 컨설팅 예약</a><br>
+
 			1600-0511<br>
 			<small>
 				사업자정보 638-87-00223
@@ -48,6 +49,58 @@
 				© 2016 BESPIN GLOBAL
 			</small>
 		</div>
+
+
+		<!-- Account Setup Company - Step 1 -->
+		<aside id="setup-company01" class="modal-popup mfp-hide">
+			<button type="button" class="btn-close mfp-close">popup close</button>
+
+			<h2 class="title">Contact Us</h2>
+			<p class="desc">
+				Please fill up your contact information below for tech-support and consulting reservation. 
+			</p>
+
+			<div class="content">
+				
+				<div class="box-item">
+					<h2 class="title">CONTACT INFO</h2>
+
+					<fieldset class="forms">
+						<legend>COMPANY INFO</legend>
+
+						<p>
+							<input type="text" id="" name="" placeholder="Name">
+						</p>
+						<p>
+							<input type="text" id="" name="" placeholder="Email address">
+						</p>
+						<p>
+							<input type="text" id="" name="" placeholder="Subject">
+						</p>
+						<p>
+							<textarea name="" id="" cols="50" rows="10" placeholder="Description"></textarea>
+						</p>
+					</fieldset>
+				</div>
+
+			</div>
+
+			<div class="bottom">
+				<button type="button" class="btn-normal large">SEND REQUEST</button>
+			</div>
+		</aside>
+		<!--// Account Setup Company - Step 1 -->
+
+		<script>
+		$(document).ready(function(e) {	
+			$('.btn-customer').magnificPopup({
+				items: {
+					src: '#setup-company01'
+				},
+				closeOnBgClick: false
+			});
+		});
+		</script>
 
 	</div>
 </footer>

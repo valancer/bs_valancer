@@ -5,6 +5,7 @@
 	.btn-close { position: absolute; top: 30px; right: 38px; }
 
 	.title { font-size: 36px; font-weight: 500; color: #000; }
+	.desc { font-size: 22px; font-weight: 500; color: #000; }
 	.content { padding-right: 50%;
 		.box-item { margin-top: 20px; }
 
@@ -896,6 +897,7 @@ input[type=submit].btn-normal,
 	input[type=password] { display: inline-block; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; vertical-align: middle; border: 1px solid #F6F6F6; background-color: #F6F6F6;
 		&:focus { border: 1px solid #000; }
 	}
+	textarea { box-sizing: border-box; padding: 20px 0 0  23px; height: 340px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 30px; vertical-align: middle; border: 1px solid #F6F6F6; background-color: #F6F6F6; }
 
 	select { appearance: none; display: inline-block; position: relative; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; border-radius: 0; background: #F6F6F6 url('/assets/images/select_arrow01.png') center right no-repeat;
 		&:focus { border: 1px solid #000; }

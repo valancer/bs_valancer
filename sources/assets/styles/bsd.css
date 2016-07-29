@@ -2321,6 +2321,10 @@ article.contents .submit-btns {
     font-size: 36px;
     font-weight: 500;
     color: #000; }
+  .modal-popup .desc {
+    font-size: 22px;
+    font-weight: 500;
+    color: #000; }
   .modal-popup .content {
     padding-right: 50%; }
     .modal-popup .content .box-item {
@@ -4145,6 +4149,18 @@ input[type=submit].btn-normal,
     .forms input[type=text]:focus,
     .forms input[type=password]:focus {
       border: 1px solid #000; }
+  .forms textarea {
+    box-sizing: border-box;
+    padding: 20px 0 0  23px;
+    height: 340px;
+    width: 100%;
+    font-size: 21px;
+    font-weight: 500;
+    color: #000;
+    line-height: 30px;
+    vertical-align: middle;
+    border: 1px solid #F6F6F6;
+    background-color: #F6F6F6; }
   .forms select {
     -webkit-appearance: none;
        -moz-appearance: none;
