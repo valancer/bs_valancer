@@ -40,7 +40,7 @@
 
 
 		<div class="copyright">
-			<a href="#" class="btn-customer">기술지원 및 컨설팅 예약</a><br>
+			<a href="#contact-us" class="btn-customer">기술지원 및 컨설팅 예약</a><br>
 
 			1600-0511<br>
 			<small>
@@ -51,8 +51,8 @@
 		</div>
 
 
-		<!-- Account Setup Company - Step 1 -->
-		<aside id="setup-company01" class="modal-popup mfp-hide">
+		<!-- contact us -->
+		<aside id="contact-us" class="modal-popup mfp-hide">
 			<button type="button" class="btn-close mfp-close">popup close</button>
 
 			<h2 class="title">Contact Us</h2>
@@ -66,7 +66,7 @@
 					<h2 class="title">CONTACT INFO</h2>
 
 					<fieldset class="forms">
-						<legend>COMPANY INFO</legend>
+						<legend>CONTACT INFO</legend>
 
 						<p>
 							<input type="text" id="" name="" placeholder="Name">
@@ -89,15 +89,12 @@
 				<button type="button" class="btn-normal large">SEND REQUEST</button>
 			</div>
 		</aside>
-		<!--// Account Setup Company - Step 1 -->
+		<!--// contact us -->
 
 		<script>
 		$(document).ready(function(e) {	
 			$('.btn-customer').magnificPopup({
-				items: {
-					src: '#setup-company01'
-				},
-				closeOnBgClick: false
+				closeOnBgClick: true
 			});
 		});
 		</script>

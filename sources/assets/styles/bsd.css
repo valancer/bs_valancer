@@ -4208,6 +4208,34 @@ input[type=submit].btn-normal,
       background-color: #fff; }
     .forms.base select {
       background-color: #fff; }
+  .forms .list-groups {
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 56px;
+    max-height: 460px;
+    border-bottom: 2px solid #979797; }
+    .forms .list-groups > li {
+      display: block;
+      position: relative;
+      border-top: 2px solid #979797; }
+      .forms .list-groups > li input[type=radio] {
+        position: absolute;
+        left: -9999px; }
+        .forms .list-groups > li input[type=radio]:checked + label {
+          color: #fff;
+          background-color: #000; }
+      .forms .list-groups > li label {
+        display: block;
+        cursor: pointer;
+        padding-left: 23px;
+        height: 45px;
+        font-size: 17px;
+        font-weight: 500;
+        color: #000;
+        line-height: 45px; }
+        .forms .list-groups > li label:hover {
+          color: #fff;
+          background-color: #000; }
 
 /**
 	chart-container
@@ -4511,7 +4539,9 @@ body.portal {
             width: 63.917525773196%; }
             body.portal .solutions .solution-container .solution-item .box .list-feature > li {
               display: block;
+              box-sizing: border-box;
               float: left;
+              padding-right: 10px;
               width: 33%;
               font-size: 15px;
               font-weight: 400;

@@ -926,8 +926,20 @@ input[type=submit].btn-normal,
 		}
 
 	}
-}
 
+	.list-groups { overflow: scroll; overflow-x: hidden; margin-top: 56px; max-height: 460px; border-bottom: 2px solid #979797;
+		> li { display: block; position: relative; border-top: 2px solid #979797;
+			input[type=radio] { position: absolute; left: -9999px;
+				&:checked {
+					+ label { color: #fff; background-color: #000; }
+				}
+			}
+			label { display: block; cursor: pointer; padding-left: 23px; height: 45px; font-size: 17px; font-weight: 500; color: #000; line-height: 45px;
+				&:hover { color: #fff; background-color: #000; }
+			}
+		}
+	}
+}
 
 
 

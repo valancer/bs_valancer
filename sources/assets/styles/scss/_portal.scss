@@ -66,7 +66,7 @@ body.portal {
 					}
 
 					.list-feature { float: left; margin-top: 5px; width: 63.917525773196%;
-						> li { display: block; float: left; width: 33%; font-size: 15px; font-weight: 400; color: #3F3F3F; line-height: 22px;
+						> li { display: block; box-sizing: border-box; float: left; padding-right: 10px; width: 33%; font-size: 15px; font-weight: 400; color: #3F3F3F; line-height: 22px;
 							&:before { content: ''; display: block; height: 80px; }
 
 							&.asset01 {
