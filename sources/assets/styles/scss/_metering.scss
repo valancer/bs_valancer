@@ -70,7 +70,7 @@ body.metering {
 		> .content { display: block; clear: both;
 			.column { float: left; box-sizing: border-box; }
 			.tbl-none { box-sizing: border-box; padding: 30px; height: 100%; font-size: 20px; font-weight: 500; color: #9B9B9B; line-height: 1em; background-color: #F2F2F2; }
-			.chart { background-color: rgba(0, 0, 0, 0.3); }
+			.chart { }
 		}
 
 		// button warning
@@ -198,7 +198,7 @@ body.metering {
 				}
 			}
 
-			.chart-container { margin-top: 25px; height: 250px; background-color: rgba(0, 0, 0, 0.3); }
+			.chart-container { margin-top: 25px; height: 250px; }
 		}
 	}
 
@@ -258,7 +258,7 @@ body.metering {
 	&.billing {
 		.view-by { margin-bottom: 25px; width: 230px; }
 
-		.vendor-cost { overflow: hidden; padding-top: 7px;
+		.vendor-cost { overflow: hidden; padding-top: 7px; padding-bottom: 40px;
 			.month { float: right;
 				.title { display: block; font-size: 14px; font-weight: 700; color: rgba(0, 0, 0, 0.5); }
 				.cost { text-align: right;

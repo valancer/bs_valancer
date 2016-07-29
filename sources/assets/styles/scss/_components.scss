@@ -178,7 +178,7 @@
 		&:after { position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 100%; font-size: 15px; color: #000; line-height: 8px; vertical-align: middle; text-align: center; text-indent: 0; transform: rotateX( 0deg ); transition-duration: 0.3s; }
 	}
 
-	> dt { display: block; overflow: hidden; position: relative; padding: 0 0 0 26px; height: 60px; border-top: 2px solid rgba(151, 151, 151, 0.32); background-color: #fff;
+	> dt { display: block; overflow: hidden; position: relative; padding: 0 0 0 26px; height: 62px; border-top: 2px solid rgba(151, 151, 151, 0.32); background-color: #fff;
 		.btn-delete { display: none; margin: -2px 10px 0 -10px; vertical-align: middle; text-indent: -9999px; @include retina-sprite($sc-icon-minus-group); }
 
 		.title { display: inline-block; width: 45%; font-size: 20px; font-weight: 500; color: #000; line-height: 60px;
@@ -212,10 +212,10 @@
 
 		&.edit-mode { overflow: visible; background-color: #F6F6F6;
 			.title { margin-left: 26px;
-				input[type=search] { width: 100%; font-size: 22px; font-weight: 500; color: #000; line-height: 60px; border: 0px; background-color: #fff; }
+				input[type=search] { cursor: text; width: 100%; font-size: 22px; font-weight: 500; color: #000; line-height: 60px; border: 0px; background-color: #fff; }
 			}
-			.right { padding-right: 44px;
-				.content { padding-right: 20px; 
+			.right { padding-right: 0;
+				.content { padding-right: 0px; 
 					.inline-block { margin-right: 30px; }
 				}
 			}
@@ -225,7 +225,7 @@
 		}
 	}
 
-	> dd { display: block; overflow: hidden; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6;
+	> dd { clear: both; display: block; overflow: hidden; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6;
 		.edit-submit { margin: 0 -26px; padding: 0 56px; height: 65px; line-height: 65px; background-color: #000;
 			.btn-text { margin-right: 20px; text-decoration: none;
 				&:hover { color: #fff; }
@@ -249,6 +249,26 @@
 		> dt {
 			.right {
 				.content { font-size: 22px; }
+			}
+		}
+
+		&.combined {
+			> dt {
+				.right { padding-right: 20px;
+				}
+		
+				&.is-opened { background-color: #fff; }
+			}
+
+			> dd { padding: 0;
+				.infrastructure { width: 100%;
+					tbody {
+						tr { border-top: 1px solid #cecece; }
+						th { padding-left: 25px; font-size: 18px; font-weight: 500; color: #000; text-align: left; line-height: 55px; }
+						td { padding-right: 20px; font-size: 18px; font-weight: 500; color: #000; line-height: 55px; }
+					}
+					.r { text-align: right; }
+				}
 			}
 		}
 
@@ -292,7 +312,7 @@
 		.key-code { overflow: hidden;
 			p { float: left; padding-right: 30px; }
 			input[type=text] { padding-left: 23px; height: 49px; width: 240px; font-size: 21px; font-weight: 500; color: rgba(0, 0, 0, 0.36); border: 1px solid #fff; background-color: #fff;
-				&:focus { border: 1px solid #000; }
+				&:focus { outline: 1px solid #000; }
 			}
 		}
 
@@ -877,8 +897,9 @@ input[type=submit].btn-normal,
 		&:focus { border: 1px solid #000; }
 	}
 
-	select { appearance: none; display: block; position: relative; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; background: #F6F6F6 url('/assets/images/select_arrow01.png') center right no-repeat;
-		
+	select { appearance: none; display: inline-block; position: relative; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; border-radius: 0; background: #F6F6F6 url('/assets/images/select_arrow01.png') center right no-repeat;
+		&:focus { border: 1px solid #000; }
+
 		&:invalid { color: #999; }
 		option[value=""][disabled] {
 			display: none;
@@ -892,6 +913,17 @@ input[type=submit].btn-normal,
 
 		}
 	}
+
+	// my account 용
+	&.base { padding-bottom: 40px;
+		input[type=text],
+		input[type=password] { background-color: #fff; }
+
+		select { background-color: #fff;
+
+		}
+
+	}
 }
 
 
@@ -900,6 +932,14 @@ input[type=submit].btn-normal,
 /**
 	chart-container
 **/
+.chart { position: relative;
+	&.none { background-color: #F2F2F2;
+		p { padding: 30px; font-size: 20px; font-weight: 500; color: #9B9B9B;
+			@include icon(warning);
+			&:before { display: block; margin-bottom: 30px; height: 32px; width: 40px; font-size: 30px; color: #9B9B9B; line-height: 32px; }
+		}
+	}
+}
 .chart-container { position: relative;
 	.slick-arrow { display: block; position: absolute; top: 0; z-index: z("default"); height: 100%; width: 34px; text-indent: -9999px; transition: opacity 0.5s ease-in-out;
 		@include icon(arrow03);
@@ -928,7 +968,10 @@ input[type=submit].btn-normal,
 
 
 
-
+/**
+	spinner
+**/
+.spinner { display: block; position: absolute; top: 50%; left: 50%; margin: -25px 0 0 -25px; height: 50px; width: 50px; border: 2px solid #000; border-left-color: transparent; border-radius: 50%; animation: rotate 0.4s infinite linear; }
 
 /*
 	etc

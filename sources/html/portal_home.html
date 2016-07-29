@@ -2,7 +2,7 @@
 	"lang": "en",
 	"title": "Bespin Global"
 })
-<body class="portal">
+<body class="portal home">
 
 	<!-- 상단 영역 -->
 	@@include('./header_logged_out.html')
@@ -11,9 +11,130 @@
 	<!-- 본문 영역 -->
 	<main>
 		<article class="contents">
+			
+			<header class="solutions">
+				<div class="contents-inner">
+					<h2 class="is-hidden">SOLUTIONS</h2>
+
+					<div class="solution-container slick-container">
+
+						<div class="solution-item portal">
+							<div class="message">EVERY GLOBAL INFRASTRUCTURE MANAGEMENT LEADS TO<br>BESPIN GLOBAL.</div>
+						</div>
+
+						<div class="solution-item">
+							<small>SOLUTION</small>
+							<h3 class="title">ASSET<br>MANAGEMENT</h3>
+
+							<div class="box">
+								<p class="desc">
+									Unified management through Integration of hybrid infrastructures, assets and resources.
+
+									<a href="#" class="btn-try">TRY NOW</a>
+								</p>
+								<ul class="list-feature">
+									<li class="asset01">User-centric designed insight views</li>
+									<li class="asset02">Fundamental IT management service empowered by key-point report feature </li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="solution-item">
+							<small>SOLUTION</small>
+							<h3 class="title">METERING<br><br></h3>
+
+							<div class="box">
+								<p class="desc">
+									Consolidated cost management accross various cloud service vendors.
+
+									<a href="#" class="btn-try">TRY NOW</a>
+								</p>
+								<ul class="list-feature">
+									<li class="metering01">Efficient budget management</li>
+									<li class="metering02">Cost reduction through clear planning, budgetting and reports</li>
+									<li class="metering03">Accurate invoicing accross various cloud service vendors</li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="solution-item">
+							<small>SOLUTION</small>
+							<h3 class="title">MONITORING<br>DASHBOARD</h3>
+
+							<div class="box">
+								<p class="desc">
+									A new paradigm of monitoring service focusing organization’s needs, not infrastructure’s.
+
+									<a href="#" class="btn-try">TRY NOW</a>
+								</p>
+								<ul class="list-feature">
+									<li class="monitoring01">Powerful application monitoring features</li>
+									<li class="monitoring02">24/7 dependable stability</li>
+									<li class="monitoring03">powerful consolidated operation and trouble shooting </li>
+								</ul>
+							</div>
+						</div>
+
+					</div>	<!-- class="solution-container" -->
+					<script>
+					$(document).ready(function(e) {
+						$('.slick-container').slick({
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							autoplaySpeed: 7000,
+							infinite: true,
+							arrows: false,
+							dots: true,
+							swipe: false,
+							speed: 300,
+						});
+						$('.slick-container').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+							if( nextSlide != 0 ) {
+								$('.solutions').addClass('bg');
+							} else {
+								$('.solutions').removeClass('bg');
+							}
+						});
+					});
+					</script>
+
+				</div>
+			</header>
+
+
 			<div class="contents-inner">
-		
-			컨텐츠 미정
+				<ul class="services">
+					<li>
+						<h3 class="title asset">ASSET MANAGEMENT</h3>
+
+						<ul class="list-detail">
+							<li>Dashboard provides a clear visibility of current status based on asset volume</li>
+							<li>Status analytics based on organization’s service group</li>
+							<li>Personalization features enable custom asset management to fit any needs</li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="title metering">METERING</h3>
+
+						<ul class="list-detail">
+							<li>Multi-payer account supported</li>
+							<li>Accurately segmented RI charge through separated payer account within an organization.</li>
+							<li>Consolidated billing of infrastructure &amp; services</li>
+							<li>Cost status statistics and reports for collaboration</li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="title monitoring">MONITORING DASHBOARD</h3>
+
+						<ul class="list-detail">
+							<li>Monitoring information collected based on organization’s service group units</li>
+							<li>Distinct Monitoring dashboard and services on individual infrastructure unit</li>
+							<li>Trouble shooting and abnormality tracking services</li>
+						</ul>
+					</li>
+				</ul>
 
 			</div>
 		</article>

@@ -467,4 +467,8 @@
 			background-color: #bde2e5;
 		}
 	}
+
+	&.ag-none-overflow-x {
+		.ag-body-viewport { overflow-x: hidden; }
+	}
 }

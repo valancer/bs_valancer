@@ -1,0 +1,135 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal account">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title"><div class="inner">My Account</div></h1>
+
+			<div class="contents-inner">
+				<div class="column-left">
+					<nav class="side-menus">
+						<ul>
+							<li>
+								<a href="#">
+									<span>Basic Account</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-selected">
+									<span>Billing Account Info</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Company Admin</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Company Legal Info</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+
+				<div class="column-right">
+					
+					<dl class="accordion is-editable">
+						<dt class="is-opened">
+							<span class="title">Billing Account Info</span>
+						</dt>
+						<dd>
+							<fieldset class="forms base">
+								<legend>BILLING ACCOUNT MANAGER</legend>
+
+								<p>
+									<input type="text" id="" name="" placeholder="Full Name">
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Email Address">
+								</p>
+								<p>
+									<select name="" id="" required="">
+										<option value="" disabled="" selected="">Country</option>
+										<option value="">us</option>
+										<option value="">korea</option>
+									</select>
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Address 1">
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Address 2">
+								</p>
+								<p>
+									<select name="" id="" required="">
+										<option value="" disabled="" selected="">State</option>
+										<option value="">State1</option>
+									</select>
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Postal Code">
+								</p>
+
+
+								<label for="" class="sub">Work Phone Number</label>
+								<p>
+									<select name="" id="" required="">
+										<option value="" disabled="" selected="">Select Country</option>
+										<option value="">Repulic of Korea(+82)</option>
+									</select>
+								</p>
+								<p>
+									<input type="text" id="" name="" style="width: 32%;">
+									-
+									<input type="text" id="" name="" style="width: 32%;">
+									-
+									<input type="text" id="" name="" style="width: 32%;">
+								</p>
+
+
+								<label for="" class="sub">Mobile Number</label>
+								<p>
+									<select name="" id="" required="">
+										<option value="" disabled="" selected="">Select Country</option>
+										<option value="">Repulic of Korea(+82)</option>
+									</select>
+								</p>
+								<p>
+									<input type="text" id="" name="" style="width: 32%;">
+									-
+									<input type="text" id="" name="" style="width: 32%;">
+									-
+									<input type="text" id="" name="" style="width: 32%;">
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Fax Number">
+								</p>
+							</fieldset>
+						</dd>
+					</dl>
+
+					<p class="submit-btns">
+						<a href="#" class="btn-normal large">SAVE &amp; CHANGES</a>
+					</p>
+				</div>
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

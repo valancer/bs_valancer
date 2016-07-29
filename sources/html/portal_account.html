@@ -2,7 +2,7 @@
 	"lang": "en",
 	"title": "Bespin Global"
 })
-<body class="portal">
+<body class="portal account">
 
 	<!-- 상단 영역 -->
 	@@include('./header.html', {"service": "portal", "sub": ""})
@@ -45,14 +45,29 @@
 				<div class="column-right">
 					
 
-					
+					<dl class="accordion is-editable">
+						<dt class="is-opened">
+							<span class="title">Basic Account</span>
+						</dt>
+						<dd>
+							<fieldset class="forms base">
+								<legend>COMPANY INFO</legend>
 
-
-					
-
+								<p>
+									<input type="text" id="" name="" placeholder="Legal Name of Company">
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Name of Department">
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Name of Sub-Department">
+								</p>
+							</fieldset>
+						</dd>
+					</dl>
 
 					<p class="submit-btns">
-						<a href="#" class="btn-normal large">SAVE CHANGES</a>
+						<a href="#" class="btn-normal large">SAVE &amp; CHANGES</a>
 					</p>
 				</div>
 			</div>
