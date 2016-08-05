@@ -3,6 +3,7 @@
 @import url(noyh.css);
 @import url(nanumgothic.css);
 @import url(magnific-popup.css);
+@import url(jquery-confirm.css);
 
 
 /**
@@ -31,7 +32,10 @@ $black: #000;
 body { background-color: #fff; }
 
 @import "base";
+
+/** web font icons **/
 @import "icons";
+/** web font icons **/
 @import "sprites";
 @import "sprites_portal";
 @import "sprites_asset";
@@ -100,8 +104,10 @@ $z-layers: (
 @import "daterangepicker_custom";
 @import "tooltipster";
 
-
+/** layout **/
 @import "layout";
+/** layout **/
+
 @import "components";
 @import "portal";
 @import "asset";

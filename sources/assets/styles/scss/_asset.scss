@@ -4,57 +4,68 @@ body.asset {
 	}
 
 
-	main {
-		article.contents {
+	&.dashboard {
+		.section-box { padding-top: 23px; border-bottom: 2px solid #E7E7E7;
+			.section-title { padding: 0 30px; font-size: 18px; font-weight: 700; color: #000; }
+		}
 
-				.contents-inner.dashboard {
-					.section-box { padding-top: 23px; border-bottom: 2px solid #E7E7E7;
-						.section-title { padding: 0 30px; font-size: 18px; font-weight: 700; color: #000; }
-					}
+		.box-item { 
+			> .title.perfomance { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 16px; font-weight: 700; color: #000; line-height: 24px; background-color: #fff;
+				@include icon(info, after);
+				&:after { display: inline-block; margin: -2px 0 0 5px; color: #959595; vertical-align: middle; }
+			}
+		}
 
-					.list-column-03 { padding-top: 15px; }
+		// tooltip
+		.asset-tooltip { padding: 10px; width: 200px;
+			.point { top: 50%; left: -10px; margin-top: -15px; margin-left: 0; }
 
-					.chart-container { padding: 0px;
-						&:after { right: 0px; }
+			p { font-size: 14px; font-weight: 500; color: #fff; line-height: 16px; }
+		}
 
-						.slick-arrow {
-							&.slick-prev { left: 0px; }
-							&.slick-next { right: 0px; }
-						}
-					}
-				}
+		.list-column-03 { padding-top: 15px; }
 
+		.chart-container { padding: 0px;
+			&:after { right: 0px; }
 
-				.contents-inner.service-group {
-					.popover.service-group { position: absolute; padding: 15px; min-width: 75px; border: 2px solid #fff;
-						.point { top: -10px; z-index: z("default"); }
-
-						.list-ea { overflow: hidden; font-size: 14px; font-weight: 500; color: #fff;
-							dt { clear: both; float: left; width: 50%; line-height: 17px; }
-							dd { float: left; width: 50%; text-align: right; line-height: 17px; }
-						}
-
-						&.warning { font-size: 14px; font-weight: 500; color: #fff; line-height: 14px; width: 255px; background-color: #E74E0F;
-							.point { 
-								&:before { color: #E74E0F; }
-							}
-						}
-					}
-				}
-
-
-				.contents-inner.usage {
-					.usage-current {
-						.list-usage-current { overflow: hidden; padding: 0 40px;
-							li { display: block; box-sizing: border-box; float: left; padding-right: 30px; width: 310px;
-								.chart { clear: both; padding-top: 15px; height: 215px; }
-							}
-						}
-					}
-				}
-
-		}	
+			.slick-arrow {
+				&.slick-prev { left: 0px; }
+				&.slick-next { right: 0px; }
+			}
+		}
 	}
 
+
+	&.service-group {
+		.popover.service-group { position: absolute; padding: 15px; min-width: 75px; border: 2px solid #fff;
+			.point { top: -10px; z-index: z("default"); }
+
+			.list-ea { overflow: hidden; font-size: 14px; font-weight: 500; color: #fff;
+				dt { clear: both; float: left; width: 50%; line-height: 17px; }
+				dd { float: left; width: 50%; text-align: right; line-height: 17px; }
+			}
+
+			&.warning { font-size: 14px; font-weight: 500; color: #fff; line-height: 14px; width: 255px; background-color: #E74E0F;
+				.point { 
+					&:before { color: #E74E0F; }
+				}
+			}
+		}
+	}
+
+
+	&.usage,
+	&.performance {
+		.usage-current {
+			.list-usage-current { overflow: hidden; padding: 0 40px;
+				li { display: block; box-sizing: border-box; float: left; padding-right: 30px; width: 310px;
+					.chart { clear: both; padding-top: 15px; height: 215px; }
+				}
+			}
+		}
+
+		// usage - history chart
+		.chart-container .amChartsLegend.amcharts-legend-div { max-height: 200px !important; overflow: auto !important; overflow-x: hidden !important; }		
+	}
 
 }

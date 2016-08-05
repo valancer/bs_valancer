@@ -158,6 +158,7 @@
 						Maple Story2
 					</label>
 				</li>
+<!--
 				<li>
 					<label for="service02" class="icheck">
 						<input type="checkbox" id="service02" name="service" data-ref="service" class="icheckbox">
@@ -200,6 +201,7 @@
 						Kakao Driver
 					</label>
 				</li>
+-->
 			</ul>
 		</fieldset>
 
@@ -386,8 +388,10 @@ $(document).ready(function(e) {
 						$all.iCheck('check');
 					}
 				} else {
+					$all.iCheck('uncheck');
 					$all.iCheck('determinate');
 				}
+				
 			});
 
 			$checkItems.on('ifIndeterminate', function(e) {
@@ -417,6 +421,19 @@ $(document).ready(function(e) {
 				var cnt = $items.length + total;
 				$(this).attr("data-count", cnt);
 				$refLabel.append('<em class="count">(' + cnt + ')</em>');
+			});
+
+			_allChecked();
+		}
+
+
+		function _allChecked() {
+			$allItem.each(function(e) {
+				var target = $(this).data('all');
+				var $items = $('input[data-ref=' + target + ']');
+
+				$(this).iCheck("check");
+				$items.iCheck("check");
 			});
 		}
 
@@ -449,6 +466,9 @@ $(document).ready(function(e) {
 			},
 			updateSelectedLabels: function() {
 				_updateSelectedLabels();
+			},
+			allChecked: function() {
+				_allChecked();
 			}
 		};
 	}(jQuery));

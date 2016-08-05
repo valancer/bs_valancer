@@ -7,12 +7,14 @@
 			@@if ( service == "portal" ) {<strong class="bespin-global"><span class="is-hidden">BESPIN GLOBAL</span></strong>}
 			@@if ( service == "asset" ) {<strong class="service asset">ASSET MANAGEMENT</strong>}
 			@@if ( service == "metering" ) {<strong class="service metering">METERING</strong>}
+			@@if ( service == "monitoring" ) {<strong class="service monitoring">MONITORING</strong>}
+			@@if ( service == "workflow" ) {<strong class="service workflow">WORKFLOW</strong>}
 
 			<button type="button" class="btn-language language_open">ENGLISH</button>
 			<ul id="language" class="list-select-popup small">
-				<li><a href="#english" class="is-selected">ENGLISH</a></li>
-				<li><a href="#korean">한국어</a></li>
-				<li><a href="#chinese">中文</a></li>
+				<li><button type="button" class="is-selected">ENGLISH</button></li>
+				<li><button type="button">한국어</button></li>
+				<li><button type="button">中文</button></li>
 			</ul>
 		</div>
 		
@@ -20,13 +22,13 @@
 		<figure class="user">
 			<a href="#user" class="thumb user-info_open"><img src="assets/images/company_profile.png" alt=""></a>
 			<figcaption>
-				<button type="button" class="name user-info_open" title="Jacob Middle Kim">Jacob Middle Kim</button>
+				<button type="button" class="name user-info_open" title="Jacob Middle Kim">박남정남</button>
 				
 				<button type="button" class="company company_open" title="NHN Asia Pacific xyz">NHN Asia Pacific xyz</button>
 				<ul id="company" class="list-select-popup">
-					<li><a href="#NHNKorea">NHN Korea</a></li>
-					<li><a href="#NHNAsiaPacific" class="is-selected">NHN Asia Pacific xyz</a></li>
-					<li><a href="#NHNAmerica">NHN America</a></li>
+					<li><button type="button">NHN Korea</button></li>
+					<li><button type="button" class="is-selected">NHN Asia Pacific xyz</button></li>
+					<li><button type="button">NHN America</button></li>
 				</ul>
 			</figcaption>
 		</figure>

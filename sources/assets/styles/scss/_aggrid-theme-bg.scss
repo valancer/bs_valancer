@@ -175,7 +175,6 @@
 		border-bottom: 1px solid #808080;
 	}
 	.ag-header-cell {
-		position: relative;
 		border-right: 1px solid transparent;
 	}
 	.ag-header-cell-moving {
@@ -187,13 +186,11 @@
 		background-color: #bebebe;
 	}
 	.ag-header-group-cell {
-		// border-right: 1px solid #808080;
 	}
 	.ag-header-group-cell-with-group {
 		border-bottom: 1px solid #d8d8d8;
 	}
 	.ag-header-cell-label {
-		position: relative;
 		font-size: 12px;
 		padding: 0;
 		line-height: 40px;
@@ -210,13 +207,14 @@
 		margin-right: 2px;
 	}
 	.ag-header-cell-menu-button {
-		position: absolute; top: 9px; right: 0; z-index: 1;
+		position: absolute; top: 9px; right: 5px; z-index: 1;
 		padding: 0px;
 		height: 22px; width: 20px;
 		border: 1px solid transparent;
 		box-sizing: content-box;
 		line-height: 40px;
-		background-color: #0f0;
+		@include icon(menu);
+		&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; font-size: 18px; line-height: 24px; vertical-align: middle; }
 	}
 	.ag-filter-icon { display: block; box-sizing: border-box; position: absolute; top: 50%; right: 0px; bottom: 2px; left: -2px; margin-top: -14px; height: 28px; border: 2px solid #000;
 
@@ -285,12 +283,14 @@
 	}
 	.ag-menu {
 		z-index: 1;
-		border: 1px solid #808080;
-		background-color: #f6f6f6;
+		padding: 10px;
+		border: 2px solid #000;
+		background-color: #fff;
 		cursor: default;
 		font-size: 14px;
 		.ag-tab-header {
-			background-color: #e6e6e6;
+			display: none;
+			background-color: #fff;
 		}
 		.ag-tab {
 			padding: 6px 8px 6px 8px;
@@ -341,7 +341,11 @@
 		left: 2px;
 	}
 	.ag-filter-header-container {
-		border-bottom: 1px solid #d3d3d3;
+		// border-bottom: 1px solid #d3d3d3;
+		.ag-filter-filter { box-sizing: border-box; padding-left: 20px; height: 27px; width: 100%; font-size: 16px; font-weight: 500; color: #000; border: 0px; background-color: #E7E7E7; }
+		> label { display: block;  }
+	}
+	.ag-set-filter-list {
 	}
 	.ag-filter-apply-panel {
 		border-top: 1px solid #d3d3d3;
@@ -468,7 +472,7 @@
 		}
 	}
 
-	&.ag-none-overflow-x {
+	&.hidden-overflow-x {
 		.ag-body-viewport { overflow-x: hidden; }
 	}
 }
