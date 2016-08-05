@@ -153,7 +153,7 @@ div {
 
 .icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-close:before, .icon-dashboard:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .title .service.monitoring:before, .global-menu .title .service.workflow:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li button.dashboard:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li button.metering:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li button.asset:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li button.monitoring:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li button.workflow:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-text.edit:before, .btn-text.cancel:before, .btn-text.save-update:before, input[type=submit].btn-normal.download:before,
 .btn-normal.download:before, input[type=submit].btn-normal.icon-its:before,
-.btn-normal.icon-its:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, .forms .invalid-message:before, .forms .contactus.phone:before, .forms .contactus.email:before, .chart.none p:before, .chart-container .slick-arrow:before, .page-no-data:before, body.portal.dashboard .box-item.dashboard .info > li button.btn-txt-info:after, body.portal.home .services > li .title.asset:before, body.portal.home .services > li .title.metering:before, body.portal.home .services > li .title.monitoring:before, body.asset.dashboard .box-item > .title.perfomance:after, body.metering .growth:after, body.metering .growth.tbl:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after {
+.btn-normal.icon-its:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .btn-back:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, .forms .invalid-message:before, .forms .contactus.phone:before, .forms .contactus.email:before, .chart.none p:before, .chart-container .slick-arrow:before, .page-no-data:before, body.portal.dashboard .box-item.dashboard .info > li button.btn-txt-info:after, body.portal.home .services > li .title.asset:before, body.portal.home .services > li .title.metering:before, body.portal.home .services > li .title.monitoring:before, body.asset.dashboard .box-item > .title.perfomance:after, body.metering .growth:after, body.metering .growth.tbl:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3728,6 +3728,35 @@ input[type=submit].btn-normal,
     .btn-detail:hover:before {
       color: #fff; }
 
+.btn-back {
+  display: block;
+  position: relative;
+  height: 36px;
+  width: 36px;
+  text-indent: -9999px;
+  border: 3px solid #000; }
+  .btn-back:before {
+    content: ""; }
+  .btn-back:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    text-indent: 0px;
+    line-height: 30px;
+    vertical-align: middle;
+    transform: rotate(180deg); }
+  .btn-back:hover {
+    color: #fff;
+    background-color: #000; }
+    .btn-back:hover:before {
+      color: #fff; }
+
 /**
 	filter
 **/
@@ -4134,6 +4163,10 @@ input[type=submit].btn-normal,
       .login-container:before {
         background-image: url(../images/sprites@2x.png);
         background-size: 443px 458px; } }
+  .login-container .btn-back {
+    position: absolute;
+    top: -3px;
+    left: -36px; }
   .login-container .bespin-global {
     font-size: 16px;
     font-weight: 700;
