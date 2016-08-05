@@ -2,7 +2,7 @@
 	"lang": "en",
 	"title": "Bespin Global"
 })
-<body class="asset">
+<body class="asset dashboard">
 
 	<!-- 상단 영역 -->
 	@@include('./header.html', {"service": "asset", "sub": "dashboard"})
@@ -11,7 +11,7 @@
 	<!-- 본문 영역 -->
 	<main>
 		<article class="contents">
-			<div class="contents-inner size-fit dashboard">
+			<div class="contents-inner size-fit">
 				<h1 class="is-hidden">ASSET DASHBOARD</h1>
 				
 
@@ -22,7 +22,7 @@
 					<ul class="list-column-03">
 						<li>
 							<div class="box-item dashboard">
-								<h2 class="title">CPU</h2>
+								<h2 class="title perfomance" data-target="#average">CPU</h2>
 								
 								<div class="content">
 									<strong class="unit"><em>66</em>%</strong>
@@ -33,7 +33,7 @@
 						</li>
 						<li>
 							<div class="box-item dashboard">
-								<h2 class="title">MEMORY</h2>
+								<h2 class="title perfomance" data-target="#average">MEMORY</h2>
 								
 								<div class="content">
 									<strong class="unit"><em>34</em>%</strong>
@@ -44,7 +44,7 @@
 						</li>
 						<li>
 							<div class="box-item dashboard">
-								<h2 class="title">VOLUME</h2>
+								<h2 class="title perfomance" data-target="#average">VOLUME</h2>
 								
 								<div class="content">
 									<strong class="unit"><em>87</em>%</strong>
@@ -54,6 +54,33 @@
 							</div>
 						</li>
 					</ul>
+					<script>
+					$(document).ready(function(e) {
+						// info
+						$('.title.perfomance').on({
+							mouseenter: function(e) {
+								$($(this).data("target")).popup({
+									type: 'tooltip',
+									tooltipanchor: e.target,
+									offsettop: 0,
+									horizontal: 'right',
+									// transition: '0.3s all 0.1s',
+									autoopen: true
+								});
+							},
+							mouseleave: function(e) {
+								$($(this).data("target")).popup('hide');
+							}
+						});
+					});
+					</script>
+
+					<!-- popup info -->
+					<div id="average" class="popover asset-tooltip">
+						<span class="point"></span>
+						<p>The value indicates usages average all of your instances.</p>
+					</div>
+
 				</section>
 				<!--// performance -->
 

@@ -1,0 +1,72 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<div class="contents-inner">
+
+				<p>
+					<a href="#" class="btn-alert">alert</a>
+				</p>	
+				<script>
+				$('.btn-alert').on('click', function() {
+					$.alert({
+						animation: 'zoom',
+						closeAnimation: 'scale',
+						animationBounce: 1,
+						backgroundDismiss: true,
+						opacity: 1,
+						title: "alert title",
+						content: "alert contents",
+						confirmButton: "확인",
+						confirm: function(){
+							console.log("확인");
+						}
+					});
+				});
+				</script>
+
+				<p>
+					<a href="#" class="btn-confirm">confirm</a>
+				</p>
+				<script>
+				$('.btn-confirm').on('click', function() {
+					$.confirm({
+						animation: 'zoom',
+						closeAnimation: 'scale',
+						animationBounce: 1,
+						backgroundDismiss: true,
+						opacity: 1,
+						title: "컨펌 타이틀 영역",
+						content: "컨펌 컨텐츠 영역 컨펌 컨텐츠 영역 컨펌 컨텐츠 영역 컨펌 컨텐츠 영역 컨펌 컨텐츠 영역",
+						confirmButton: "확인",
+						cancelButton: "취소",
+						confirm: function(){
+							console.log("확인");
+						},
+						cancel:function(){
+							console.log("취소");
+						}
+					});
+				});
+				</script>
+
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

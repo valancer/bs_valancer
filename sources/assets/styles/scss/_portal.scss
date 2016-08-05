@@ -15,49 +15,98 @@ body.portal {
 	}
 
 
-	main {
-		article.contents {
-			.contents-inner.dashboard {
-				.list-column-03 { margin: 30px -15px 0 -15px; padding: 15px 0 0 0; }
+	&.dashboard {
+		.list-column-03 { margin: 30px -15px 0 -15px; padding: 15px 0 0 0;
+			> li { padding-bottom: 0;
+				&:nth-child(3n+1) { clear: both; }
 			}
+		}
 
+		.box-item { display: block; position: relative;
+			&.dashboard { overflow: hidden; min-height: 300px;
+				> .content { position: relative; min-height: 240px; }
 
-			// home
-			.contents-inner.home {
-				.services { overflow: hidden; padding-top: 48px; padding-bottom: 100px;
-					> li { box-sizing: border-box; float: left; padding: 0 20px; width: 33.3%;
-						.title { font-size: 26px; font-weight: 700; color: #000;
-							&:before { display: block; margin-bottom: 22px; height: 52px; width: 52px; text-align: center; vertical-align: middle; line-height: 52px; border: 4px solid #000; }
-							&.asset {
-								@include icon(asset);
-								&:before { font-size: 34px; }
-							}
+				// portal dashboard
+				.info { float: left; padding-top: 40px; padding-bottom: 0px; width: 100%; border-bottom: 1px solid #E7E7E7;
+					> li { float: left; position: relative;
+						.btn-txt-info { display: block; font-size: 14px; font-weight: 500; color: #000; line-height: 1em; vertical-align: middle; }
+
+						button.btn-txt-info {
+							@include icon(info, after);
+							&:after { display: inline-block; margin: -2px 0 0 5px; height: 14px; width: 14px; font-size: 14px; color: #959595; line-height: 1em; vertical-align: middle; }
+						}
+
+						.unit { display: block; padding: 0px; height: 46px; font-size: 16px; font-weight: 500; color: #000; line-height: 46px;
+							em { font-size: 38px; font-weight: 400; line-height: 37px; }
+
 							&.metering {
-								@include icon(metering);
-								&:before { font-size: 38px; }
+								em { font-size: 26px; }
 							}
-							&.monitoring {
-								@include icon(monitoring);
-								&:before { font-size: 38px; }
-							}
+						}
+
+						+ li { padding-left: 34px; }
+					}
+				}
+
+				.chart { clear: both; position: relative; height: 200px; }
+				.charts { clear: both; overflow: hidden; padding: 14px 0 0 0;
+					> li { float: left; width: 33.3%;
+						.title { display: block; font-size: 14px; font-weight: 500; color: #000; line-height: 1em; vertical-align: middle; }
+						
+						.chart { display: block; margin-top: 10px; height: 96px; width: 96px; }
+						.radius { display: block; margin-top: 10px; height: 68px; width: 68px; font-size: 16px; font-weight: 500; line-height: 68px; text-align: center; border-radius: 100%;
+							&.normal { color: #0DACEA; border: 5px solid #0DACEA; }
+							&.custom { color: #FFB300; border: 5px solid #FFB300; }
+							&.volume { color: #E74E0F; border: 5px solid #E74E0F; }
 						}
 					}
 				}
 
-				.list-detail { margin-top: 3px;
-					> li { display: block; position: relative; margin-top: 8px; padding: 0 0 0 12px; font-size: 15px; font-weight: 400; color: #6E6E6E; line-height: 23px;
-						&:before { content: ''; display: block; position: absolute; top: 6px; left: 0; padding: 0; @include retina-sprite($sc-icon-dot-group); height: 15px; width: 15px; }
+				.require-signup { display: block; position: absolute; top: 0px; left: 0; margin-bottom: 10px; height: 247px; width: 100%; z-index: z("default"); background-repeat: no-repeat; background-position: center center; background-color: rgba(255, 255, 255, 0.3);
+					.btn-normal { position: absolute; top: 50%; left: 50%; margin: -22px 0 0 -100px; }
+				}
+			}
+		}
+
+	}
+
+
+	// home
+	&.home {
+		.services { overflow: hidden; padding-top: 48px; padding-bottom: 100px;
+			> li { box-sizing: border-box; float: left; padding: 0 20px; width: 33.3%;
+				.title { font-size: 26px; font-weight: 700; color: #000;
+					&:before { display: block; margin-bottom: 22px; height: 52px; width: 52px; text-align: center; vertical-align: middle; line-height: 52px; border: 4px solid #000; }
+					&.asset {
+						@include icon(asset);
+						&:before { font-size: 34px; }
+					}
+					&.metering {
+						@include icon(metering);
+						&:before { font-size: 38px; }
+					}
+					&.monitoring {
+						@include icon(monitoring);
+						&:before { font-size: 38px; }
 					}
 				}
+			}
+		}
+
+		.list-detail { margin-top: 3px;
+			> li { display: block; position: relative; margin-top: 8px; padding: 0 0 0 12px; font-size: 15px; font-weight: 400; color: #6E6E6E; line-height: 23px;
+				&:before { content: ''; display: block; position: absolute; top: 6px; left: 0; padding: 0; @include retina-sprite($sc-icon-dot-group); height: 15px; width: 15px; }
 			}
 		}
 	}
 
 
 	.solutions { position: relative; height: 600px; background-color: #fff; background-position: center top; background-repeat: repeat-x;
-		&:before { content: ''; display: block; opacity: 0; transition: opacity 0.3s; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; background: url('/assets/images/bg_solutions.jpg') center top repeat-x; }
+		&:before { content: ''; display: block; transition: all 0.3s; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; background: url('/assets/images/bg_solutions_02.jpg') center center no-repeat; background-size: cover; }
+		&:after { content: ''; transition: all 0.3s; opacity: 1; display: block; position: absolute; top: 128px; left: 0; right: 65%; height: 265px; background: url('/assets/images/bg_solutions_02_object.png') left top repeat-x; }
 		&.bg {
-			&:before { opacity: 1.0; transition: opacity 0.3s; }
+			&:before { transition: all 0.3s; background: url('/assets/images/bg_solutions.jpg') center center no-repeat; background-size: cover; }
+			&:after { transition: all 0.3s; opacity: 0; }
 		}
 
 		.solution-container { display: block; box-sizing: border-box; overflow: hidden; padding: 0 20px; height: 600px; width: 100%;
@@ -106,9 +155,15 @@ body.portal {
 					}
 				}
 
-				&.portal { margin-top: 28px;
-					.message { position: relative; padding-top: 80px; padding-left: 136px; height: 380px; width: 540px; font-size: 72px; font-weight: 700; color: #000; line-height: 60px;
-						&:before { content: ''; display: block; position: absolute; top: 0; left: 0; @include retina-sprite($sc-bespin-cloud-02-group); }
+				&.portal { overflow: hidden; position: relative; margin-top: 28px; width: 100%;
+					&:before { content: ''; display: block; position: absolute; top: 100px; left: 0; height: 265px; width: 979px; background: url('/assets/images/bg_solutions_02_object.png') right top no-repeat; }
+
+					.title { position: relative; padding-top: 38px; height: 350px; width: 550px; font-size: 65px; font-weight: 700; color: #000; line-height: 50px; }
+					.message { float: left; margin-top: 20px; font-size: 20px; font-weight: 400; color: #000; }
+					.list-service { overflow: hidden; float: right; width: 346px;
+						> li { float: left; display: block; position: relative; padding-left: 28px; width: 145px; font-size: 20px; font-weight: 700; color: #4A4A4A; line-height: 38px;
+							&:before { content: ''; display: block; position: absolute; top: 12px; left: 0; height: 12px; width: 12px; border-radius: 12px; background-color: #000; }
+						}
 					}
 				}
 			}

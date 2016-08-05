@@ -34,7 +34,7 @@
 
 
 
-<div id="myGrid" class="ag-bespin-global" style="position: relative; height: 500px;">
+<div id="myGrid" class="ag-bespin-global hidden-overflow-x" style="position: relative; height: 500px;">
 	<aside id="grid-detail" class="grid-detail">
 		<button type="button" data-target="#grid-detail" class="btn-close">popup close</button>
 
@@ -126,6 +126,7 @@ var gridOptions = {
     rowSelection: 'single',
     onSelectionChanged: onSelectionChanged,
     rowData: null,
+	enableColResize: true,
     enableFilter: true,
     enableSorting: true,
 	suppressContextMenu: true,
@@ -171,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (httpRequest.readyState == 4 && httpRequest.status == 200) {
             var httpResult = JSON.parse(httpRequest.responseText);
             gridOptions.api.setRowData(httpResult);
-            gridOptions.api.sizeColumnsToFit();
+            // gridOptions.api.sizeColumnsToFit();
         }
     };
 });

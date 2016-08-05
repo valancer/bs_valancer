@@ -2,7 +2,7 @@
 	"lang": "en",
 	"title": "Bespin Global"
 })
-<body class="">
+<body class="portal">
 
 	<!-- 상단 영역 -->
 	@@include('./header.html', {"service": "portal", "sub": ""})
@@ -39,6 +39,9 @@
 								</p>
 								<p>
 									<input type="text" id="" name="" placeholder="Name of Department">
+									<span class="invalid-message">
+										Incorrect Email address or password.
+									</span>
 								</p>
 
 
@@ -55,11 +58,20 @@
 									<input type="text" id="" name="" style="width: 31%;">
 									-
 									<input type="text" id="" name="" style="width: 31%;">
-									<button type="button" class="btn-normal small">Send Code</button>
+
+									<span class="right-addon">
+										<button type="button" class="btn-normal small">SEND CODE</button>
+									</span>
+									<span class="invalid-message">
+										Incorrect Email address or password.
+									</span>
 								</p>
 								<p>
 									<input type="text" id="" name="" placeholder="Enter Code">
-									<button type="button" class="btn-normal small">Confirm</button>
+
+									<span class="right-addon">
+										<button type="button" class="btn-normal small">CONFIRM</button>
+									</span>
 								</p>
 								<p>
 									<input type="password" id="" name="" placeholder="Enter Password">

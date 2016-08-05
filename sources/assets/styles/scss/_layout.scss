@@ -3,10 +3,10 @@
 	.contents-inner { box-sizing: border-box; position: relative; margin: 0 auto; padding: 0px 0px 0 25px; height: 64px; width: $contents-width; }
 
 	.title { display: block; position: absolute; top: 0px; right: 0; bottom: 0; left: 25px;
-		&:before { content: ''; display: block; position: absolute; top: 50%; right: 349px; left: 0; z-index: z("default") - 1; margin-top: -2px; height: 3px; background-color: #000; }
+		&:before { content: ''; display: block; position: absolute; top: 50%; right: 290px; left: 0; z-index: z("default") - 1; margin-top: -2px; height: 3px; background-color: #000; }
 
 		// select language
-		.btn-language { position: absolute; top: 50%; right: 349px; margin-top: -18px; padding: 0 15px 0 13px; font-size: 13px; color: #000; letter-spacing: 0.4px;
+		.btn-language { position: absolute; top: 50%; right: 290px; margin-top: -18px; padding: 0 15px 0 13px; font-size: 13px; color: #000; letter-spacing: 0.4px;
 			@include icon(arrow01, after); 
 			&:after { position: absolute; top: 50%; right: 5px; margin-top: -5px; height: 9px; width: 13px; font-size: 15px; color: #000; line-height: 9px; }
 		}
@@ -34,13 +34,28 @@
 			&.metering {
 				@include icon(metering);
 			}
+			// monitoring
+			&.monitoring {
+				@include icon(monitoring);
+			}
+			// workflow
+			&.workflow {
+				@include icon(workflow);
+			}
+		}
+	}
+
+	&.logout {
+		.title {
+			&:before { right: 110px; }
+			.btn-language { right: 110px; }
 		}
 	}
 	
 	.uilts { position: relative; float: right; overflow: hidden; margin-top: 12px;
 		
 		.btns { display: block; float: left; margin-left: 15px; height: 40px; width: 40px; vertical-align: middle;
-			&.notifications { position: relative;
+			&.notifications { display: none; position: relative;
 				@include icon(noticifation);
 				&:before { display: block; color: #000; font-size: 26px; line-height: 40px; text-align: center; }
 
@@ -58,9 +73,9 @@
 		.thumb { display: block; overflow: hidden; position: absolute; top: 50%; left: 0px; margin-top: -20px; height: 40px; width: 40px; border-radius: 50%;
 			img { max-height: 100%; max-width: 100%; }
 		}
-		.name { display: block; overflow: hidden; width: 75px; font-size: 18px; font-weight: 700; color: #000; line-height: 19px; text-overflow: ellipsis; white-space: nowrap; }
+		.name { display: block; overflow: hidden; width: 110px; font-size: 18px; font-weight: 700; color: #000; line-height: 19px; text-align: left; text-overflow: ellipsis; white-space: nowrap; }
 
-		.company { display: block; overflow: hidden; position: relative; height: 21px; width: 105px; padding-right: 15px; font-size: 14px; font-weight: 500; color: rgba(0, 0, 0, 0.51); text-align: left; text-overflow: ellipsis; white-space: nowrap; 
+		.company { display: block; overflow: hidden; position: relative; height: 21px; width: 110px; padding-right: 15px; font-size: 14px; font-weight: 500; color: rgba(0, 0, 0, 0.51); text-align: left; text-overflow: ellipsis; white-space: nowrap; 
 			&:before { content: ''; position: absolute; right: 15px; bottom: 0; left: 0; height: 2px; background-color: #878787; }
 			@include icon(arrow01, after); 
 			&:after { display: block; position: absolute; top: 50%; right: -4px; margin-top: -3px; height: 7px; width: 20px; font-size: 14px; line-height: 7px; color: #878787; text-align: left; }
@@ -69,7 +84,7 @@
 }
 
 // 2depth - sub
-.sub-menus { background-color: #f6f6f6;
+.sub-menus { position: relative; z-index: z("modaless") + 2; background-color: #f6f6f6;
 	.contents-inner { position: relative; margin: 0 auto; height: 59px; width: $contents-width; }
 
 	h2 { display: none; }
@@ -77,7 +92,7 @@
 
 	.list-menus { display: block; box-sizing: border-box; padding-left: 20px; height: 100%; width: 100%;
 		> li { float: left; padding: 0 15px;
-			a { display: block; font-size: 15px; font-weight: 700; color: rgba(156, 156, 156, 0.7); line-height: 1em; letter-spacing: 0.1em; line-height: 59px;
+			button, a { display: block; font-size: 15px; font-weight: 700; color: rgba(156, 156, 156, 0.7); line-height: 1em; letter-spacing: 0.1em; line-height: 59px;
 				&:hover { color: #000; }
 			}
 
@@ -86,7 +101,7 @@
 			}
 
 			&.is-selected {
-				a { color: #000; }
+				button, a { color: #000; }
 				.list-sub-menus { display: block; }
 			}
 			&:hover {
@@ -101,14 +116,14 @@
 				> li { position: relative; overflow: hidden; padding: 0 20px;
 					&:before { content: ''; display: none; position: absolute; top: 50%; right: 20px; left: 20px; z-index: z("default") - 1; margin-top: -1px; height: 2px; background-color: #000; }
 
-					a { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 14px; color: rgba(155, 155, 155, 0.5); line-height: 25px; letter-spacing: -0.01em; white-space: nowrap; background-color: #DADADA;
+					button, a { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 14px; color: rgba(155, 155, 155, 0.5); line-height: 25px; letter-spacing: -0.01em; white-space: nowrap; background-color: #DADADA;
 						&:hover { color: #000; }
 					}
 
 					&.is-selected {
 						&:before { display: block; }
 
-						a { color: #000; }
+						button, a { color: #000; }
 					}
 				}
 			}
@@ -125,10 +140,12 @@
 			input[type=text] { box-sizing: border-box; padding-left: 14px; height: 45px; width: 100%; font-size: 21px; font-weight: 500; color: #000; border: 2px solid #000; background-color: #F6F6F6; }
 		}
 
-		button, a { display: block; position: relative; font-size: 21px; font-weight: 500; color: #AFAFAF; line-height: 45px; text-align: left;
+		> button, a { display: block; position: relative; font-size: 21px; font-weight: 500; color: #AFAFAF; line-height: 45px; text-align: left;
 			&:before { content: ''; display: none; position: absolute; top: 21px; right: 0px; left: 0px; height: 2px; background-color: #000; }
 
-			span { display: inline-block; position: relative; z-index: z("default"); padding-right: 11px; background-color: #fff; }
+			span { display: inline-block; position: relative; z-index: z("default"); padding-right: 11px; background-color: #fff;
+				&:first-letter { text-transform: capitalize; }
+			}
 
 			&:hover { color: #000;
 				&:before { display: block; }
@@ -170,7 +187,7 @@
 	}
 
 	&.is-editable {
-		button, a {
+		> button, a {
 			&:hover {
 				.btn-edit { display: inline-block; }
 			}
@@ -182,7 +199,7 @@
 
 	// metering
 	.metering & { margin-bottom: 50px;
-		button, a { margin-bottom: 10px; font-size: 25px;
+		> button, a { margin-bottom: 10px; font-size: 25px;
 
 		}
 	}
@@ -200,7 +217,7 @@
 
 	.box { display: inline-block; margin: 0 17px; height: 200px; width: auto; font-size: 16px; color: #CDCDCD; text-align: left; vertical-align: top;
 		h2 { margin-bottom: 20px; font-size: 16px; font-weight: 700; }
-		a { font-size: 18px; font-weight: 500; color: rgba(186, 186, 186, 0.73); line-height: 30px;
+		button, a { font-size: 18px; font-weight: 500; color: rgba(186, 186, 186, 0.73); line-height: 30px;
 			&:hover { color: #fff; }
 			&[lang=ko] { font-size: 13px; }
 		}
@@ -208,9 +225,9 @@
 	}
 
 	.copyright { clear: both; font-size: 18px; font-weight: 700; color: #999;
-		.btn-customer { display: inline-block; margin-bottom: 15px; width: 170px; font-size: 14px; font-weight: 400; color: #fff; line-height: 37px; line-height: 37px; border: 1px solid #fff; }
-		small { display: inline-block; margin-top: 10px; padding-right: 20px; font-size: 16px; font-weight: 400; color: #4E4E4E; }
-		.btn-contactus { display: inline-block; margin: 0 15px; color: #4E4E4E; }
+		.btn-customer { display: inline-block; margin-bottom: 15px; width: 170px; font-size: 16px; font-weight: 400; color: #fff; line-height: 37px; line-height: 37px; border: 1px solid #fff; }
+		small { display: inline-block; margin-top: 10px; font-size: 16px; font-weight: 400; color: #4E4E4E; }
+		.btn-contactus { display: inline-block; margin: 0 0 0 15px; color: #4E4E4E; }
 	}
 }
 

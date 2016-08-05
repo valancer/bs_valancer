@@ -2,7 +2,7 @@
 	"lang": "en",
 	"title": "Bespin Global"
 })
-<body>
+<body class="portal">
 
 	<!-- 상단 영역 -->
 	@@include('./header.html', {"service": "portal", "sub": ""})
@@ -32,8 +32,14 @@
 							<fieldset class="forms">
 								<legend>COMPANY INFO</legend>
 
-								<p>
+								<p class="invalid">
 									<input type="text" id="" name="" placeholder="Legal Name of Company">
+									<span class="requried">Requried</span>
+
+									<span class="invalid-message">
+										Incorrect Email address or password.<br>
+										Incorrect Email address or password.
+									</span>
 								</p>
 								<p>
 									<input type="text" id="" name="" placeholder="Name of Department">
@@ -53,17 +59,22 @@
 
 								<p>
 									<input type="text" id="" name="" placeholder="Full Name">
+
+									<span class="invalid-message">
+										Incorrect Email address or password.
+									</span>
 								</p>
 								<p>
 									<input type="text" id="" name="" placeholder="Email Address">
 								</p>
 
 								<label for="" class="sub">Work Phone Number</label>
-								<p>
+								<p class="select">
 									<select name="" id="" required>
 										<option value="" disabled selected>Select Country</option>
 										<option value="">Repulic of Korea(+82)</option>
 									</select>
+									<span class="requried">Requried</span>
 								</p>
 								<p>
 									<input type="text" id="" name="" style="width: 30%;">

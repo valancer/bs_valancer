@@ -2,7 +2,7 @@
 	"lang": "en",
 	"title": "Bespin Global"
 })
-<body class="portal">
+<body class="portal dashboard">
 
 	<!-- 상단 영역 -->
 	@@include('./header.html', {"service": "portal", "sub": ""})
@@ -19,42 +19,231 @@
 				</div>
 			</h1>
 			
-			<div class="contents-inner dashboard">
+			<div class="contents-inner">
 		
 				<!-- dashboard -->
 				<ul class="list-column-03">
 					<li>
 						<div class="box-item dashboard">
 							<h2 class="title">ASSET MANAGEMENT</h2>
+							<a href="#" class="btn-detail">detail</a>
 							
 							<div class="content">
 								<div class="status great">Great</div>
-								<div class="chart"></div>
+
+								<ul class="info">
+									<li>
+										<button type="button" value="#mp1-servers" class="btn-txt-info servers">Servers</button>
+										<span class="unit"><em>180</em>EA</span>
+
+										<div id="mp1-servers" class="popover service-group servers">
+											<span class="point" style="left: 54px;"></span>
+
+											<dl class="list-ea">
+												<dt>EC2</dt>
+												<dd>100EA</dd>
+
+												<dt>ABC</dt>
+												<dd>50EA</dd>
+
+												<dt>EC2</dt>
+												<dd>10EA</dd>
+
+												<dt>EC2</dt>
+												<dd>20EA</dd>
+											</dl>
+										</div>
+									</li>
+									<li>
+										<button type="button" value="#mp1-database" class="btn-txt-info database">Database</button>
+										<span class="unit"><em>500</em>GB</span>
+
+										<div id="mp1-database" class="popover service-group database">
+											<span class="point" style="left: 67px;"></span>
+
+											<dl class="list-ea">
+												<dt>EC2</dt>
+												<dd>100EA</dd>
+
+												<dt>ABC</dt>
+												<dd>50EA</dd>
+
+												<dt>EC2</dt>
+												<dd>10EA</dd>
+
+												<dt>EC2</dt>
+												<dd>20EA</dd>
+											</dl>
+										</div>
+									</li>
+								</ul>
+
+								<ul class="charts">
+									<li>
+										<span class="title">CPU</span>
+
+										<div class="chart"></div>
+									</li>
+									<li>
+										<span class="title">Memory</span>
+										<div class="chart"></div>
+									</li>
+									<li>
+										<span class="title">Volume</span>
+										<div class="chart"></div>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div class="box-item dashboard">
-							<h2 class="title">COST METERING</h2>
+							<h2 class="title">METERING</h2>
+							<a href="#" class="btn-detail">detail</a>
 							
 							<div class="content">
 								<div class="status poorly">Poorly</div>
-								<div class="chart"></div>
+
+								<ul class="info">
+									<li>
+										<span class="btn-txt-info">Current Total</span>
+										<span class="unit metering"><em>$39,280.00</em></span>
+									</li>
+									<li>
+										<span class="btn-txt-info">Previous Month Total</span>
+										<span class="unit metering"><em>$N/A</em></span>
+									</li>
+								</ul>
+
+								<ul class="charts">
+									<li style="width: 100%;">
+										<span class="title">Current Cost Breakdown</span>
+
+										<div class="chart" style="height: 120px; width: 100%;"></div>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div class="box-item dashboard">
 							<h2 class="title">MONITORING</h2>
-							
+							<a href="#" class="btn-detail">detail</a>
+
 							<div class="content">
 								<div class="status good">Good</div>
-								<div class="chart"></div>
+
+								<ul class="info">
+									<li>
+										<span class="btn-txt-info">Total Monitoring</span>
+										<span class="unit"><em>180</em>SERVICES</span>
+									</li>
+								</ul>
+
+								<ul class="charts">
+									<li>
+										<span class="title">Normal</span>
+
+										<div class="radius normal">4</div>
+									</li>
+									<li>
+										<span class="title">Custom Alarm</span>
+										<div class="radius custom">0</div>
+									</li>
+									<li>
+										<span class="title">Volume</span>
+										<div class="radius volume">0</div>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</li>
+					<li>
+						<div class="box-item dashboard">
+							<h2 class="title">MONITORING</h2>
+
+							<div class="content">
+<!--
+								<div class="status good">Good</div>
+
+								<ul class="info">
+									<li>
+										<span class="btn-txt-info">Total Monitoring</span>
+										<span class="unit"><em>180</em>SERVICES</span>
+									</li>
+								</ul>
+
+								<div class="chart">
+									chart
+								</div>
+-->
+								
+								<!-- 가입 전 -->
+								<div class="require-signup" style="background-image: url(/assets/images/bg_portal_03.png);">
+									<a href="#" class="btn-normal large">SIGN UP</a>
+								</div>
+							</div>
+
+						</div>
+					</li>
+					<li>
+						<div class="box-item dashboard">
+							<h2 class="title">METERING</h2>
+							
+							<div class="content">
+								<div class="no-data">
+									NO DATA AVAILABLE,
+									<small>Sorry, there is no data to collect yet.</small>
+								</div>
 							</div>
 						</div>
 					</li>
+
 				</ul>
 				<!--// dashboard -->
+				<script>
+				$(document).ready(function(e) {
+					// thumbnails
+					var $sgContainer = $('.box-item.dashboard');
+
+					// info servers
+					$sgContainer.find('.btn-txt-info.servers').on({
+						mouseenter: function(e) {
+							$($(this).val()).popup({
+								type: 'tooltip',
+								tooltipanchor: e.target,
+								vertical: 'bottom',
+								offsettop: 25,
+								horizontal: 'leftedge',
+								transition: '0.3s all 0.1s',
+								autoopen: true
+							});
+						},
+						mouseleave: function(e) {
+							$($(this).val()).popup('hide');
+						}
+					});
+
+					// info database
+					$sgContainer.find('.btn-txt-info.database').on({
+						mouseenter: function(e) {
+							$($(this).val()).popup({
+								type: 'tooltip',
+								tooltipanchor: e.target,
+								vertical: 'bottom',
+								offsettop: 25,
+								horizontal: 'leftedge',
+								transition: '0.3s all 0.1s',
+								autoopen: true
+							});
+						},
+						mouseleave: function(e) {
+							$($(this).val()).popup('hide');
+						}
+					});
+				});
+				</script>
 
 			</div>
 		</article>
