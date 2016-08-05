@@ -5,8 +5,11 @@
 	.btn-close { position: absolute; top: 30px; right: 38px; }
 
 	.title { font-size: 36px; font-weight: 500; color: #000; }
+	.desc { font-size: 22px; font-weight: 500; color: #000; }
 	.content { padding-right: 50%;
 		.box-item { margin-top: 20px; }
+
+		&.full { padding-right: 0; }
 	}
 	.bottom { margin-top: 25px;
 		.step { display: block; position: absolute; bottom: 30px; right: 30px; font-size: 17px; font-weight: 500; color: rgba(0, 0, 0, 0.43); line-height: 48px; }
@@ -176,7 +179,7 @@
 		&:after { position: absolute; top: 50%; right: 0px; margin-top: -4px; height: 8px; width: 100%; font-size: 15px; color: #000; line-height: 8px; vertical-align: middle; text-align: center; text-indent: 0; transform: rotateX( 0deg ); transition-duration: 0.3s; }
 	}
 
-	> dt { display: block; overflow: hidden; position: relative; padding: 0 0 0 26px; height: 60px; border-top: 2px solid rgba(151, 151, 151, 0.32); background-color: #fff;
+	> dt { display: block; overflow: hidden; position: relative; padding: 0 0 0 26px; height: 62px; border-top: 2px solid rgba(151, 151, 151, 0.32); background-color: #fff;
 		.btn-delete { display: none; margin: -2px 10px 0 -10px; vertical-align: middle; text-indent: -9999px; @include retina-sprite($sc-icon-minus-group); }
 
 		.title { display: inline-block; width: 45%; font-size: 20px; font-weight: 500; color: #000; line-height: 60px;
@@ -210,18 +213,20 @@
 
 		&.edit-mode { overflow: visible; background-color: #F6F6F6;
 			.title { margin-left: 26px;
-				input[type=search] { width: 100%; font-size: 22px; font-weight: 500; color: #000; line-height: 60px; border: 0px; background-color: #fff; }
+				input[type=search] { cursor: text; width: 100%; font-size: 22px; font-weight: 500; color: #000; line-height: 60px; border: 0px; background-color: #fff; }
 			}
-			.right { padding-right: 44px;
-				.content { padding-right: 20px; 
+			.right { padding-right: 0;
+				.content { padding-right: 0px; 
 					.inline-block { margin-right: 30px; }
 				}
 			}
-			+ dd { opacity: 1; max-height: 1000px; transition: opacity 0.3s, max-height 0.3s; }
+			+ dd { opacity: 1; max-height: 1000px; transition: opacity 0.3s, max-height 0.3s;
+				.vendor-accounts { padding-top: 30px; }
+			}
 		}
 	}
 
-	> dd { display: block; overflow: hidden; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6;
+	> dd { clear: both; display: block; overflow: hidden; padding: 0 26px; opacity: 0; max-height: 0px; background-color: #F6F6F6;
 		.edit-submit { margin: 0 -26px; padding: 0 56px; height: 65px; line-height: 65px; background-color: #000;
 			.btn-text { margin-right: 20px; text-decoration: none;
 				&:hover { color: #fff; }
@@ -245,6 +250,26 @@
 		> dt {
 			.right {
 				.content { font-size: 22px; }
+			}
+		}
+
+		&.combined {
+			> dt {
+				.right { padding-right: 20px;
+				}
+		
+				&.is-opened { background-color: #fff; }
+			}
+
+			> dd { padding: 0;
+				.infrastructure { width: 100%;
+					tbody {
+						tr { border-top: 1px solid #cecece; }
+						th { padding-left: 25px; font-size: 18px; font-weight: 500; color: #000; text-align: left; line-height: 55px; }
+						td { padding-right: 20px; font-size: 18px; font-weight: 500; color: #000; line-height: 55px; }
+					}
+					.r { text-align: right; }
+				}
 			}
 		}
 
@@ -281,6 +306,23 @@
 	}
 
 
+	/* vendor accounts */
+	.vendor-accounts { padding: 0 26px 26px 26px;
+		.title { display: block; margin-bottom: 5px; font-size: 14px; font-weight: 700; color: #000; }
+
+		.key-code { overflow: hidden;
+			p { float: left; padding-right: 30px; }
+			input[type=text] { padding-left: 23px; height: 49px; width: 240px; font-size: 21px; font-weight: 500; color: rgba(0, 0, 0, 0.36); border: 1px solid #fff; background-color: #fff;
+				&:focus { outline: 1px solid #000; }
+			}
+		}
+
+		.used-for { margin-top: 38px;
+			.icheck { padding-left: 26px; min-width: 70px; }
+		}
+	}
+
+
 	/* set permission */
 	.permission { table-layout: fixed; width: 100%;
 		thead {
@@ -300,9 +342,9 @@
 	}
 }
 
-.accordion-bottom { padding: 0 26px; border-bottom: 2px solid rgba(151, 151, 151, 0.32);
+.accordion-bottom { padding: 0 26px 0 16px; border-bottom: 2px solid rgba(151, 151, 151, 0.32);
 	.btn-add { display: inline-block; font-size: 22px; font-weight: 500; color: #CECECE; line-height: 60px;
-		&:before { content: ''; display: inline-block; margin: -2px 10px 0 -10px; vertical-align: middle; @include retina-sprite($sc-icon-plus-group); }
+		&:before { content: ''; display: inline-block; margin: -2px 10px 0 0px; vertical-align: middle; @include retina-sprite($sc-icon-plus-group); }
 
 		&:hover { color: #000;
 			&:before { @include retina-sprite($sc-icon-plus-selected-group); }
@@ -317,11 +359,11 @@
 /**
 	filter-util
 **/
-.datepicker { display: inline-block; margin-right: 25px; position: relative; border-bottom: 2px solid #000;
+.datepicker { display: inline-block; position: relative; margin-right: 25px; height: 21px; border-bottom: 1px solid #000;
 	@include icon(calendar, after);
 	&:after { position: absolute; top: 50%; right: -25px; margin-top: -10px; }
 
-	input[type=text] { display: inline-block; padding: 3px 0; width: 230px; font-size: 16px; font-weight: 700; color: #000; text-align: center; border: 0px; }
+	input[type=text] { display: inline-block; padding-top: 2px; width: 230px; font-size: 16px; font-weight: 700; color: #000; text-align: center; border: 0px; }
 }
 
 .filter-util { position: relative; margin: 35px 40px; text-align: center;
@@ -543,7 +585,7 @@
 
 // normal
 input[type=submit].btn-normal,
-.btn-normal { display: inline-block; min-width: 225px; font-size: 14px; font-weight: 700; color: #000; text-align: center; vertical-align: middle; line-height: 28px; border: 2px solid #000; background-color: #fff;
+.btn-normal { display: inline-block; min-width: 200px; font-size: 14px; font-weight: 700; color: #000; text-align: center; vertical-align: middle; line-height: 28px; border: 2px solid #000; background-color: #fff;
 	&.large { font-size: 15px; line-height: 44px; }
 
 	&:hover { color: #fff; background-color: #000; }
@@ -555,6 +597,15 @@ input[type=submit].btn-normal,
 	&.download {
 		@include icon(download);
 		&:before { display: inline-block; margin: -2px 5px 0 0; font-size: 14px; vertical-align: middle; }
+	}
+
+	&.icon-its {
+		@include icon(workflow);
+		&:before { margin: -1px 5px 0 0; font-size: 20px; vertical-align: middle; }
+		
+		&.ing { color: #fff; border: 2px solid #717171; background-color: #717171;
+			&:before { content: none; }
+		}
 	}
 }
 
@@ -626,7 +677,7 @@ input[type=submit].btn-normal,
 	}
 
 	.items { display: none; overflow: hidden; padding-bottom: 15px; border-top: 2px solid #cecece;
-		.filter-item { display: block; box-sizing: border-box; float: left; position: relative; overflow: hidden; padding: 0px 40px 0 0; height: auto; width: 25%;
+		.filter-item { display: block; box-sizing: border-box; float: left; position: relative; overflow: hidden; padding: 0px 20px 0 0; height: auto; width: 25%;
 			&:after { content: ''; display: block; position: absolute; right: 0; bottom: 0; left: 0; height: 30px;
 				background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(231,231,231,1) 100%);
 				background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(231,231,231,1) 100%);
@@ -671,7 +722,7 @@ input[type=submit].btn-normal,
 
 
 	// open
-	&.is-opened { height: auto; padding-bottom: 0px; border-top: 2px solid #d0d0d0;
+	&.is-opened { height: auto; padding-bottom: 0px;
         animation-delay: 0s;
         animation-name: filter-down;
         animation-timing-function: ease-out;
@@ -840,14 +891,17 @@ input[type=submit].btn-normal,
 	setup forms
 **/
 .forms { display: block; clear: both;
-	p { margin-top: 10px; }
+	.sub { display: block; margin-top: 10px; }
+	p { margin-top: 10px; vertical-align: middle; }
 	input[type=text],
-	input[type=password] { display: block; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; background-color: #F6F6F6;
+	input[type=password] { display: inline-block; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; vertical-align: middle; border: 1px solid #F6F6F6; background-color: #F6F6F6;
 		&:focus { border: 1px solid #000; }
 	}
+	textarea { box-sizing: border-box; padding: 20px 0 0  23px; height: 340px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 30px; vertical-align: middle; border: 1px solid #F6F6F6; background-color: #F6F6F6; }
 
-	select { appearance: none; display: block; position: relative; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; background: #F6F6F6 url('/assets/images/select_arrow01.png') center right no-repeat;
-		
+	select { appearance: none; display: inline-block; position: relative; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; border-radius: 0; background: #F6F6F6 url('/assets/images/select_arrow01.png') center right no-repeat;
+		&:focus { border: 1px solid #000; }
+
 		&:invalid { color: #999; }
 		option[value=""][disabled] {
 			display: none;
@@ -861,14 +915,45 @@ input[type=submit].btn-normal,
 
 		}
 	}
-}
 
+	// my account 용
+	&.base { padding-bottom: 40px;
+		input[type=text],
+		input[type=password] { background-color: #fff; }
+
+		select { background-color: #fff;
+
+		}
+
+	}
+
+	.list-groups { overflow: scroll; overflow-x: hidden; margin-top: 56px; max-height: 460px; border-bottom: 2px solid #979797;
+		> li { display: block; position: relative; border-top: 2px solid #979797;
+			input[type=radio] { position: absolute; left: -9999px;
+				&:checked {
+					+ label { color: #fff; background-color: #000; }
+				}
+			}
+			label { display: block; cursor: pointer; padding-left: 23px; height: 45px; font-size: 17px; font-weight: 500; color: #000; line-height: 45px;
+				&:hover { color: #fff; background-color: #000; }
+			}
+		}
+	}
+}
 
 
 
 /**
 	chart-container
 **/
+.chart { position: relative;
+	&.none { background-color: #F2F2F2;
+		p { padding: 30px; font-size: 20px; font-weight: 500; color: #9B9B9B;
+			@include icon(warning);
+			&:before { display: block; margin-bottom: 30px; height: 32px; width: 40px; font-size: 30px; color: #9B9B9B; line-height: 32px; }
+		}
+	}
+}
 .chart-container { position: relative;
 	.slick-arrow { display: block; position: absolute; top: 0; z-index: z("default"); height: 100%; width: 34px; text-indent: -9999px; transition: opacity 0.5s ease-in-out;
 		@include icon(arrow03);
@@ -897,7 +982,10 @@ input[type=submit].btn-normal,
 
 
 
-
+/**
+	spinner
+**/
+.spinner { display: block; position: absolute; top: 50%; left: 50%; margin: -25px 0 0 -25px; height: 50px; width: 50px; border: 2px solid #000; border-left-color: transparent; border-radius: 50%; animation: rotate 0.4s infinite linear; }
 
 /*
 	etc

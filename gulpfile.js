@@ -253,6 +253,10 @@ gulp.task('copy:assets', function () {
 	return gulp.src(['sources/assets/**', '!**/scss', '!**/scss/**', '!**/psd/**', '!**/sprites', '!**/sprites/**', '!**/templates/', '!**/templates/**', '!**/assets/icons/', '!**/assets/icons/**'])
 	.pipe(gulp.dest('build/assets/'));
 });
+gulp.task('copy:emails', function () {
+	return gulp.src('sources/html/email/**')
+	.pipe(gulp.dest('build/email/'));
+});
 gulp.task('copy:scripts', function () {
 	return gulp.src('sources/assets/scripts/**')
 	.pipe(gulp.dest('build/assets/scripts/'));
@@ -317,10 +321,10 @@ gulp.task('scripts-build', ['jshint'], function() { });
 gulp.task('html-build', ['includes'], function() { });
 
 gulp.task('build', ['clean:build'], function() {
-	gulp.run(['sass-build', 'scripts-build', 'html-build', 'copy:assets', 'connect', 'watch']);
+	gulp.run(['sass-build', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets', 'connect', 'watch']);
 });
 gulp.task('release', ['clean:release'], function() {
-	gulp.run(['sass-release', 'scripts-build', 'html-build', 'copy:assets', 'csscomb', 'copy:release']);
+	gulp.run(['sass-release', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets', 'csscomb', 'copy:release']);
 });
 gulp.task('release-after', [], function() {
 	gulp.run(['csscomb', 'copy:release']);

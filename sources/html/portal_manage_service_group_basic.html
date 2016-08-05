@@ -9,19 +9,28 @@
 
 
 	<!-- 본문 영역 -->
-	<main>
+	<main class="scroll-left">
 		<article class="contents">
 			<h1 class="title"><div class="inner">Manage Service Groups</div></h1>
 
 			<div class="contents-inner">
-				@@include('./inc_asset_filter.html')
-
 				<div class="column-left">
-					@@include('./inc_portal_sidemenu_service_group.html')
+					<div class="its">
+						<button type="button" class="btn-normal icon-its">ITS SYNC REQUEST</button>
+						<!-- 진행중
+						<button type="button" class="btn-normal icon-its ing">ITS SYNC REQUEST...</button>
+						진행중 -->
+					</div>
+
+					<div class="scroll">
+						@@include('./inc_portal_sidemenu_service_group.html')
+					</div>
 				</div>
 
 
 				<div class="column-right">
+					@@include('./inc_asset_filter.html')
+
 					<div class="page-tabs">
 						<p class="inner">
 							<a href="#" class="is-selected">SELECTED</a>

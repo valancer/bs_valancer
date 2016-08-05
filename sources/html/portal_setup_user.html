@@ -40,8 +40,21 @@
 								<p>
 									<input type="text" id="" name="" placeholder="Name of Department">
 								</p>
+
+
+								<label for="" class="sub">Mobile Number</label>
 								<p>
-									<input type="text" id="" name="" placeholder="Enter Mobile Number">
+									<select name="" id="" required>
+										<option value="" disabled selected>Select Country</option>
+										<option value="">Repulic of Korea(+82)</option>
+									</select>
+								</p>
+								<p>
+									<input type="text" id="" name="" style="width: 30%;">
+									-
+									<input type="text" id="" name="" style="width: 31%;">
+									-
+									<input type="text" id="" name="" style="width: 31%;">
 									<button type="button" class="btn-normal small">Send Code</button>
 								</p>
 								<p>
@@ -72,7 +85,7 @@
 
 					<h2 class="title">Terms of Service</h2>
 
-					<div class="content">
+					<div class="content full">
 						
 						<fieldset class="forms terms-of-service">
 							<legend>Terms of Service</legend>
@@ -128,13 +141,15 @@
 					$('.btn-step01').magnificPopup({
 						items: {
 							src: '#setup-company01'
-						}
+						},
+						closeOnBgClick: false
 					});
 
 					$('.btn-step02').magnificPopup({
 						items: {
 							src: '#setup-company02'
-						}
+						},
+						closeOnBgClick: false
 					});
 				});
 				</script>
