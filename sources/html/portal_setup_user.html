@@ -15,6 +15,7 @@
 
 				<a href="#" class="btn-step01">account setup User - step1</a><br>
 				<a href="#" class="btn-step02">account setup User - step2</a><br>
+				<a href="#" class="btn-step03">account setup User - complete</a><br>
 
 
 				<!-- Account Setup Company - Step 1 -->
@@ -27,6 +28,7 @@
 						
 						<div class="box-item">
 							<h2 class="title">BASIC INFO</h2>
+							<span class="required">Required <strong>*</strong></span>
 
 							<fieldset class="forms">
 								<legend>BASIC INFO</legend>
@@ -53,14 +55,14 @@
 									</select>
 								</p>
 								<p>
-									<input type="text" id="" name="" style="width: 30%;">
+									<input type="number" id="" name="" style="width: 30%;">
 									-
 									<input type="text" id="" name="" style="width: 31%;">
 									-
 									<input type="text" id="" name="" style="width: 31%;">
 
 									<span class="right-addon">
-										<button type="button" class="btn-normal small">SEND CODE</button>
+										<button type="button" class="btn-normal small">인증번호전송</button>
 									</span>
 									<span class="invalid-message">
 										Incorrect Email address or password.
@@ -148,6 +150,29 @@
 				</aside>
 				<!--// Account Setup Company - Step 2 -->
 
+
+
+				<!-- Account Setup Company - Step Complete -->
+				<aside id="setup-company03" class="modal-popup mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
+
+					<h2 class="title">Account Setup Successful.</h2>
+
+					<div class="content full">
+						
+						<p class="complete-message">
+							complete message....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, velit ac commodo varius, enim justo laoreet ante, at varius ex dui id nulla. Cras et tellus vitae orci cursus lacinia. Sed non laoreet odio. Etiam quis bibendum quam. Morbi at quam leo. Phasellus venenatis pulvinar risus, in malesuada justo ullamcorper a. Proin et enim interdum nulla rutrum porta. Sed et augue sit amet arcu varius molestie. Duis porttitor sapien nibh, in dapibus ante consequat nec.
+						</p>
+
+					</div>
+
+					<div class="bottom">
+						<button type="button" class="btn-normal large">OK &amp; CLOSE</button>
+					</div>
+				</aside>
+				<!--// Account Setup Company - Complete -->
+
+
 				<script>
 				$(document).ready(function(e) {	
 					$('.btn-step01').magnificPopup({
@@ -160,6 +185,13 @@
 					$('.btn-step02').magnificPopup({
 						items: {
 							src: '#setup-company02'
+						},
+						closeOnBgClick: false
+					});
+
+					$('.btn-step03').magnificPopup({
+						items: {
+							src: '#setup-company03'
 						},
 						closeOnBgClick: false
 					});

@@ -8,6 +8,7 @@
 	.desc { font-size: 22px; font-weight: 500; color: #000; }
 	.content { padding-right: 50%;
 		.box-item { margin-top: 20px; }
+		.complete-message { padding: 40px 0; font-size: 20px; font-weight: 500; color: #4A4A4A; }
 
 		&.full { padding-right: 0; }
 	}
@@ -29,7 +30,7 @@
 		&:before { font-size: 31px; color: #000; line-height: 31px; }
 	}
 
-	.btn-logout { float: right; font-size: 18px; font-weight: 500; color: $white; border-bottom: 1px solid #fff; }	
+	.btn-logout { float: right; font-size: 16px; font-weight: 500; color: $white; border-bottom: 1px solid #fff; }	
 
 	// controls
 	input[type=text] { display: inline-block; box-sizing: border-box; padding-left: 15px; height: 50px; width: 250px; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 0px; background-color: #F6F6F6; }
@@ -70,7 +71,7 @@
 // select layer popup
 .list-select-popup { display: none; min-width: 120px; border: 2px solid #000; background-color: #fff;
 	> li { display: block;
-		button, a { display: block; box-sizing: border-box; padding: 0 8px; width: 100%; font-size: 14px; font-weight: 500; color: #000; text-align: left; line-height: 32px;
+		button, a { display: block; box-sizing: border-box; padding: 0 8px; width: 100%; font-family: $font-base-ko-stack; font-size: 12px; font-weight: 500; color: #000; text-align: left; line-height: 32px;
 			&.is-selected,
 			&:hover { color: $white; background-color: #000; }
 		}
@@ -95,7 +96,7 @@
 				button, a { color: $white; }
 			}
 
-			button, a { display: inline-block; position: relative; z-index: z("default"); padding-right: 11px; font-size: 18px; font-weight: 500; color: #999; line-height: 47px; background-color: #000;
+			button, a { display: inline-block; position: relative; z-index: z("default"); padding-right: 11px; font-family: $font-base-ko-stack; font-size: 16px; font-weight: 500; color: #999; line-height: 47px; background-color: #000;
 				&:hover { color: $white; }
 			}
 		}
@@ -409,6 +410,12 @@
 		}
 		.thumb-over { display: block; position: absolute; top: 50px; left: 50px; opacity: 0; }
 		.filter { display: inline-block; margin: -2px 0 0 24px; vertical-align: middle; }
+
+		+ .required { position: absolute; top: 15px; right: 0; font-size: 14px; font-weight: 500; color: #4A4A4A; line-height: 21px; 
+			strong { font-size: 21px; color: #E74E0F; vertical-align: bottom; line-height: 14px; }
+
+			+ .forms { padding-top: 20px; }
+		}
 	}
 	> .content { display: block; clear: both; position: relative;
 		.column { float: left; }
@@ -417,8 +424,6 @@
 	.btn-bookmark { position: absolute; top: 13px; right: -1px; }
 	.btn-warning { position: absolute; top: 33px; right: 33px; }
 	.btn-detail { position: absolute; top: 11px; right: 0px; z-index: z("default"); }
-
-
 
 
 	// portal/asset dashboard
@@ -608,7 +613,7 @@ input[type=submit].btn-normal,
 	&[disabled] { color: #cecece; border-color: #CECECE;
 		&:hover { color: #cecece; background-color: inherit; }
 	}
-	&.small { padding: 0 15px; min-width: auto; }
+	&.small { padding: 0 10px; min-width: auto; }
 	
 	&.download {
 		@include icon(download);
@@ -837,7 +842,7 @@ input[type=submit].btn-normal,
 			.thumb { display: block; overflow: hidden; position: absolute; top: 50%; left: 8px; margin-top: -21px; height: 42px; width: 42px; border-radius: 50%; background-color: #d8d8d8;
 				img { max-height: 100%; max-width: 100%; }
 			}
-			figcaption { font-size: 20px; font-weight: 500; color: #000; line-height: 60px;
+			figcaption { font-family: $font-base-ko-stack; font-size: 16px; font-weight: 500; color: #000; line-height: 60px;
 				label {
 					button { display: none;
 						&.is-selected { display: inline-block; }
@@ -892,7 +897,7 @@ input[type=submit].btn-normal,
 		+ .input { margin-top: 10px; }
 	}
 	input[type=text],
-	input[type=password] { display: block; box-sizing: border-box; padding-left: 20px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 0px; border: 1px solid #F5F5F5; background-color: #F5F5F5;
+	input[type=password] { display: block; box-sizing: border-box; padding-left: 20px; height: 50px; width: 100%; font-family: $font-base-ko-stack; font-size: 16px; font-weight: 500; color: #000; line-height: 50px; border: 0px; border: 1px solid #F5F5F5; background-color: #F5F5F5;
 		&:focus { border: 1px solid #000; }
 	}
 
@@ -902,7 +907,9 @@ input[type=submit].btn-normal,
 		&:before { display: block; position: absolute; top: 50%; left: 14px; margin-top: -9px; height: 15px; width: 19px; font-size: 15px; color: #fff; line-height: 15px; text-align: center; }
 	}
 
-	input[type=submit].btn-normal { display: block; }
+	.btns {
+		.btn-normal { display: inline-block; min-width: 178px; }
+	}
 	.utils { display: block; position: absolute; right: 0; bottom: 0; left: 0; padding: 30px 0 30px 40px; background-color: #000;
 		> li {
 			a { font-size: 16px; font-weight: 500; color: #9B9B9B; text-decoration: underline;
@@ -922,42 +929,52 @@ input[type=submit].btn-normal,
 	p { position: relative; margin-top: 10px; vertical-align: middle;
 		&.invalid { position: relative;
 			input[type=text],
-			input[type=password] { border: 1px solid #FF0101; }
+			input[type=password],
+			input[type=email],
+			input[type=number],
+			select { border: 1px solid #FF0101; }
 
 			.invalid { position: absolute; top: 0; right: 0; padding-right: 9px; font-size: 16px; font-weight: 500; color: #E74E0F; line-height: 50px; }
 		}
 
 		&.select {
-			.requried { right: 35px; }
+			.required { right: 35px; }
 		}
 	}
 
-	.requried { position: absolute; top: 0; right: 0; padding-right: 9px; font-size: 16px; font-weight: 500; color: #E74E0F; line-height: 50px; }
+	.required { position: absolute; top: 0; right: 0; padding-right: 9px; font-size: 21px; font-weight: 500; color: #E74E0F; line-height: 50px; }
 
-	.invalid {
+	.invalid { position: relative;
 		input[type=text],
-		input[type=password] { border: 1px solid #FF0101; }
+		input[type=password],
+		input[type=email],
+		input[type=number] { border: 1px solid #FF0101;
+			&:focus { border: 1px solid #FF0101; }
+		}
 	}
 	.invalid-message { display: block; position: absolute; top: 0; left: 100%; box-sizing: border-box; margin-left: 10px; padding: 10px 0 12px 40px; width: 360px; font-size: 15px; font-weight: 500; color: #fff; line-height: 15px; background-color: #E74E0F; 
 		@include icon(warning);
 		&:before { display: block; position: absolute; top: 50%; left: 14px; margin-top: -9px; height: 15px; width: 19px; font-size: 15px; color: #fff; line-height: 15px; text-align: center; }
 	}
+	p.invalid-message { position: relative; top: auto; left: auto; margin: 10px 0 0; width: 100%; }
 
-	.right-addon { display: block; position: absolute; top: 0; left: 100%; margin-left: 10px; width: 100px;
-		.btn-normal.small { height: 48px; width: 100px; line-height: 48px; }
+	.right-addon { display: block; position: absolute; top: 0; left: 100%; width: 100px;
+		.btn-normal.small { height: 48px; width: 110px; line-height: 48px; }
 
-		 + .invalid-message { position: absolute; top: 0; left: 130%; width: 250px; }
+		 + .invalid-message { position: absolute; top: 0; left: 470px; width: 250px; }
 	}
 
 	input[type=text],
-	input[type=password] { display: inline-block; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; vertical-align: middle; border: 1px solid #F6F6F6; background-color: #F6F6F6;
+	input[type=password],
+	input[type=email],
+	input[type=number], { display: inline-block; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-family: $font-base-ko-stack; font-size: 16px; font-weight: 500; color: #000; line-height: 50px; vertical-align: middle; border: 1px solid #F6F6F6; background-color: #F6F6F6;
 		&:focus { border: 1px solid #000; }
 	}
-	textarea { box-sizing: border-box; padding: 20px 0 0  23px; height: 340px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 30px; vertical-align: middle; border: 1px solid #F6F6F6; background-color: #F6F6F6;
+	textarea { box-sizing: border-box; padding: 20px 0 0  23px; height: 340px; width: 100%; font-family: $font-base-ko-stack; font-size: 16px; font-weight: 500; color: #000; line-height: 30px; vertical-align: middle; border: 1px solid #F6F6F6; background-color: #F6F6F6;
 		&:focus { border: 1px solid #000; }
 	}
 
-	select { appearance: none; display: inline-block; position: relative; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-size: 21px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; border-radius: 0; background: #F6F6F6 url('/assets/images/select_arrow01.png') center right no-repeat;
+	select { appearance: none; display: inline-block; position: relative; box-sizing: border-box; padding-left: 23px; height: 50px; width: 100%; font-family: $font-base-ko-stack; font-size: 16px; font-weight: 500; color: #000; line-height: 50px; border: 1px solid #F6F6F6; border-radius: 0; background: #F6F6F6 url('/assets/images/select_arrow01.png') center right no-repeat;
 		&:focus { border: 1px solid #000; }
 
 		&:invalid { color: #999; }
@@ -977,7 +994,9 @@ input[type=submit].btn-normal,
 	// my account 용
 	&.base { padding-bottom: 40px;
 		input[type=text],
-		input[type=password] { background-color: #fff; }
+		input[type=password],
+		input[type=email],
+		input[type=number] { background-color: #fff; }
 
 		select { background-color: #fff;
 
@@ -1071,6 +1090,53 @@ input[type=submit].btn-normal,
 		em { font-weight: 700; }
 	}
 }
+
+
+/**
+	statement
+**/
+.statement { padding: 40px 0 100px; font-family: $font-base-ko-stack;
+	p, li { font-size: 14px; color: #000000; line-height: 22px; }
+	em, strong, a { color: #E74E0F; }
+
+	.title { display: block; margin-top: 65px; font-size: 24px; font-weight: 500; color: #000;
+		+ .title-02 { margin-top: 30px; }
+	}
+
+	.title-02 { display: block; position: relative; margin-top: 65px; font-size: 18px; font-weight: 500; color: #000;
+		&:before { content: ''; display: block; position: absolute; top: 50%; right: 0; left: 0; margin-top: -2px; height: 3px; background-color: #000; }
+		span { display: inline-block; position: relative; z-index:  z("default"); padding-right: 25px; background-color: #fff; }
+
+		+ p, + ul, + ol { margin-top: 32px; padding-left: 30px; }
+		~ .title-03 { padding-left: 30px; }
+	}
+
+
+	.title-03 { display: block; margin-top: 30px; padding-left: 60px; font-size: 14px; font-weight: 500; color: #000;
+		~ p, ~ ul, ~ ol { margin-top: 15px; padding-left: 30px; }
+	}
+
+	p + p { margin-top: 30px; }
+
+	p, ul, ol {
+		+ table { margin-top: 30px; margin-left: 60px; }
+	}
+
+	table { width: 100%;
+		caption { display: table-caption; visibility: visible; position: static; margin-bottom: 10px; height: auto; width: auto; font-size: 14px; font-weight: normal; color: #000; text-align: left; }
+		thead {
+			th { font-size: 12px; font-weight: normal; color: #000; text-align: left; line-height: 25px; border-bottom: 2px solid #CECECE; }
+		}
+		tbody {
+			.top {
+				td { padding-top: 10px; }
+			}
+			td { font-size: 14px; font-weight: normal; color: #000; text-align: left; line-height: 25px; }
+		}
+	}
+}
+
+
 
 
 /*

@@ -132,16 +132,23 @@ fieldset {
           appearance: none; }
 
 input[type=submit],
-input[type=search] {
+input[type=search],
+input[type=number] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   cursor: pointer;
   border: 0px; }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
 input:focus,
 button:focus,
 textarea:focus,
+select,
 div {
   outline: 0; }
 
@@ -2137,6 +2144,7 @@ corresponds to the arrow we want to display */
 .footer {
   overflow: hidden;
   height: 400px;
+  font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
   text-align: center;
   background-color: #000; }
   .footer .contents-inner {
@@ -2166,38 +2174,36 @@ corresponds to the arrow we want to display */
     margin: 0 17px;
     height: 200px;
     width: auto;
-    font-size: 16px;
+    font-size: 14px;
     color: #CDCDCD;
     text-align: left;
     vertical-align: top; }
     .footer .box h2 {
       margin-bottom: 20px;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 700; }
     .footer .box button, .footer .box a {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 500;
       color: rgba(186, 186, 186, 0.73);
       line-height: 30px; }
       .footer .box button:hover, .footer .box a:hover {
         color: #fff; }
-      .footer .box button[lang=ko], .footer .box a[lang=ko] {
-        font-size: 13px; }
     .footer .box p {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 500;
       color: rgba(186, 186, 186, 0.73);
       line-height: 30px; }
   .footer .copyright {
     clear: both;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     color: #999; }
     .footer .copyright .btn-customer {
       display: inline-block;
       margin-bottom: 15px;
       width: 170px;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
       color: #fff;
       line-height: 37px;
@@ -2206,7 +2212,7 @@ corresponds to the arrow we want to display */
     .footer .copyright small {
       display: inline-block;
       margin-top: 10px;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
       color: #4E4E4E; }
     .footer .copyright .btn-contactus {
@@ -2380,6 +2386,11 @@ article.contents .submit-btns {
     padding-right: 50%; }
     .modal-popup .content .box-item {
       margin-top: 20px; }
+    .modal-popup .content .complete-message {
+      padding: 40px 0;
+      font-size: 20px;
+      font-weight: 500;
+      color: #4A4A4A; }
     .modal-popup .content.full {
       padding-right: 0; }
   .modal-popup .bottom {
@@ -2423,7 +2434,7 @@ article.contents .submit-btns {
       line-height: 31px; }
   .popover .btn-logout {
     float: right;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #fff;
     border-bottom: 1px solid #fff; }
@@ -2501,7 +2512,8 @@ article.contents .submit-btns {
       box-sizing: border-box;
       padding: 0 8px;
       width: 100%;
-      font-size: 14px;
+      font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+      font-size: 12px;
       font-weight: 500;
       color: #000;
       text-align: left;
@@ -2535,7 +2547,8 @@ article.contents .submit-btns {
       position: relative;
       z-index: 1;
       padding-right: 11px;
-      font-size: 18px;
+      font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+      font-size: 16px;
       font-weight: 500;
       color: #999;
       line-height: 47px;
@@ -3109,6 +3122,21 @@ article.contents .submit-btns {
       display: inline-block;
       margin: -2px 0 0 24px;
       vertical-align: middle; }
+    .box-item > .title + .required {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: #4A4A4A;
+      line-height: 21px; }
+      .box-item > .title + .required strong {
+        font-size: 21px;
+        color: #E74E0F;
+        vertical-align: bottom;
+        line-height: 14px; }
+      .box-item > .title + .required + .forms {
+        padding-top: 20px; }
   .box-item > .content {
     display: block;
     clear: both;
@@ -3560,7 +3588,7 @@ input[type=submit].btn-normal,
       background-color: inherit; }
   input[type=submit].btn-normal.small,
   .btn-normal.small {
-    padding: 0 15px;
+    padding: 0 10px;
     min-width: auto; }
   input[type=submit].btn-normal.download:before,
   .btn-normal.download:before {
@@ -4106,7 +4134,8 @@ input[type=submit].btn-normal,
           max-height: 100%;
           max-width: 100%; }
       .list-single-check > li .user figcaption {
-        font-size: 20px;
+        font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+        font-size: 16px;
         font-weight: 500;
         color: #000;
         line-height: 60px; }
@@ -4205,7 +4234,8 @@ input[type=submit].btn-normal,
     padding-left: 20px;
     height: 50px;
     width: 100%;
-    font-size: 21px;
+    font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+    font-size: 16px;
     font-weight: 500;
     color: #000;
     line-height: 50px;
@@ -4244,8 +4274,9 @@ input[type=submit].btn-normal,
       color: #fff;
       line-height: 15px;
       text-align: center; }
-  .login-container input[type=submit].btn-normal {
-    display: block; }
+  .login-container .btns .btn-normal {
+    display: inline-block;
+    min-width: 178px; }
   .login-container .utils {
     display: block;
     position: absolute;
@@ -4278,7 +4309,10 @@ input[type=submit].btn-normal,
     .forms p.invalid {
       position: relative; }
       .forms p.invalid input[type=text],
-      .forms p.invalid input[type=password] {
+      .forms p.invalid input[type=password],
+      .forms p.invalid input[type=email],
+      .forms p.invalid input[type=number],
+      .forms p.invalid select {
         border: 1px solid #FF0101; }
       .forms p.invalid .invalid {
         position: absolute;
@@ -4289,20 +4323,29 @@ input[type=submit].btn-normal,
         font-weight: 500;
         color: #E74E0F;
         line-height: 50px; }
-    .forms p.select .requried {
+    .forms p.select .required {
       right: 35px; }
-  .forms .requried {
+  .forms .required {
     position: absolute;
     top: 0;
     right: 0;
     padding-right: 9px;
-    font-size: 16px;
+    font-size: 21px;
     font-weight: 500;
     color: #E74E0F;
     line-height: 50px; }
-  .forms .invalid input[type=text],
-  .forms .invalid input[type=password] {
-    border: 1px solid #FF0101; }
+  .forms .invalid {
+    position: relative; }
+    .forms .invalid input[type=text],
+    .forms .invalid input[type=password],
+    .forms .invalid input[type=email],
+    .forms .invalid input[type=number] {
+      border: 1px solid #FF0101; }
+      .forms .invalid input[type=text]:focus,
+      .forms .invalid input[type=password]:focus,
+      .forms .invalid input[type=email]:focus,
+      .forms .invalid input[type=number]:focus {
+        border: 1px solid #FF0101; }
   .forms .invalid-message {
     display: block;
     position: absolute;
@@ -4331,30 +4374,38 @@ input[type=submit].btn-normal,
       color: #fff;
       line-height: 15px;
       text-align: center; }
+  .forms p.invalid-message {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 10px 0 0;
+    width: 100%; }
   .forms .right-addon {
     display: block;
     position: absolute;
     top: 0;
     left: 100%;
-    margin-left: 10px;
     width: 100px; }
     .forms .right-addon .btn-normal.small {
       height: 48px;
-      width: 100px;
+      width: 110px;
       line-height: 48px; }
     .forms .right-addon + .invalid-message {
       position: absolute;
       top: 0;
-      left: 130%;
+      left: 470px;
       width: 250px; }
   .forms input[type=text],
-  .forms input[type=password] {
+  .forms input[type=password],
+  .forms input[type=email],
+  .forms input[type=number] {
     display: inline-block;
     box-sizing: border-box;
     padding-left: 23px;
     height: 50px;
     width: 100%;
-    font-size: 21px;
+    font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+    font-size: 16px;
     font-weight: 500;
     color: #000;
     line-height: 50px;
@@ -4362,14 +4413,17 @@ input[type=submit].btn-normal,
     border: 1px solid #F6F6F6;
     background-color: #F6F6F6; }
     .forms input[type=text]:focus,
-    .forms input[type=password]:focus {
+    .forms input[type=password]:focus,
+    .forms input[type=email]:focus,
+    .forms input[type=number]:focus {
       border: 1px solid #000; }
   .forms textarea {
     box-sizing: border-box;
     padding: 20px 0 0  23px;
     height: 340px;
     width: 100%;
-    font-size: 21px;
+    font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+    font-size: 16px;
     font-weight: 500;
     color: #000;
     line-height: 30px;
@@ -4388,7 +4442,8 @@ input[type=submit].btn-normal,
     padding-left: 23px;
     height: 50px;
     width: 100%;
-    font-size: 21px;
+    font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+    font-size: 16px;
     font-weight: 500;
     color: #000;
     line-height: 50px;
@@ -4423,7 +4478,9 @@ input[type=submit].btn-normal,
   .forms.base {
     padding-bottom: 40px; }
     .forms.base input[type=text],
-    .forms.base input[type=password] {
+    .forms.base input[type=password],
+    .forms.base input[type=email],
+    .forms.base input[type=number] {
       background-color: #fff; }
     .forms.base select {
       background-color: #fff; }
@@ -4591,6 +4648,98 @@ input[type=submit].btn-normal,
     color: #9B9B9B; }
     .page-no-data small em {
       font-weight: 700; }
+
+/**
+	statement
+**/
+.statement {
+  padding: 40px 0 100px;
+  font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif; }
+  .statement p, .statement li {
+    font-size: 14px;
+    color: #000000;
+    line-height: 22px; }
+  .statement em, .statement strong, .statement a {
+    color: #E74E0F; }
+  .statement .title {
+    display: block;
+    margin-top: 65px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000; }
+    .statement .title + .title-02 {
+      margin-top: 30px; }
+  .statement .title-02 {
+    display: block;
+    position: relative;
+    margin-top: 65px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000; }
+    .statement .title-02:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      margin-top: -2px;
+      height: 3px;
+      background-color: #000; }
+    .statement .title-02 span {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      padding-right: 25px;
+      background-color: #fff; }
+    .statement .title-02 + p, .statement .title-02 + ul, .statement .title-02 + ol {
+      margin-top: 32px;
+      padding-left: 30px; }
+    .statement .title-02 ~ .title-03 {
+      padding-left: 30px; }
+  .statement .title-03 {
+    display: block;
+    margin-top: 30px;
+    padding-left: 60px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000; }
+    .statement .title-03 ~ p, .statement .title-03 ~ ul, .statement .title-03 ~ ol {
+      margin-top: 15px;
+      padding-left: 30px; }
+  .statement p + p {
+    margin-top: 30px; }
+  .statement p + table, .statement ul + table, .statement ol + table {
+    margin-top: 30px;
+    margin-left: 60px; }
+  .statement table {
+    width: 100%; }
+    .statement table caption {
+      display: table-caption;
+      visibility: visible;
+      position: static;
+      margin-bottom: 10px;
+      height: auto;
+      width: auto;
+      font-size: 14px;
+      font-weight: normal;
+      color: #000;
+      text-align: left; }
+    .statement table thead th {
+      font-size: 12px;
+      font-weight: normal;
+      color: #000;
+      text-align: left;
+      line-height: 25px;
+      border-bottom: 2px solid #CECECE; }
+    .statement table tbody .top td {
+      padding-top: 10px; }
+    .statement table tbody td {
+      font-size: 14px;
+      font-weight: normal;
+      color: #000;
+      text-align: left;
+      line-height: 25px; }
 
 /*
 	etc

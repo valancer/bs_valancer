@@ -209,24 +209,23 @@
 
 
 /* FOOTER */
-.footer { overflow: hidden; height: 400px; text-align: center; background-color: #000;
+.footer { overflow: hidden; height: 400px; font-family: $font-base-ko-stack; text-align: center; background-color: #000;
 	@mixin inner() { position: relative; box-sizing: border-box; margin: 0 auto; padding: 0; min-height: 100%; width: $contents-width; }
 	.contents-inner { overflow: hidden; @include inner(); padding-top: 40px;
 		&:before { content: ''; display: inline-block; margin-top: -5px; margin-right: 25px; @include retina-sprite($sc-footer-cloud-group); }
 	}
 
-	.box { display: inline-block; margin: 0 17px; height: 200px; width: auto; font-size: 16px; color: #CDCDCD; text-align: left; vertical-align: top;
-		h2 { margin-bottom: 20px; font-size: 16px; font-weight: 700; }
-		button, a { font-size: 18px; font-weight: 500; color: rgba(186, 186, 186, 0.73); line-height: 30px;
+	.box { display: inline-block; margin: 0 17px; height: 200px; width: auto; font-size: 14px; color: #CDCDCD; text-align: left; vertical-align: top;
+		h2 { margin-bottom: 20px; font-size: 14px; font-weight: 700; }
+		button, a { font-size: 14px; font-weight: 500; color: rgba(186, 186, 186, 0.73); line-height: 30px;
 			&:hover { color: #fff; }
-			&[lang=ko] { font-size: 13px; }
 		}
-		p { font-size: 18px; font-weight: 500; color: rgba(186, 186, 186, 0.73); line-height: 30px; }
+		p { font-size: 14px; font-weight: 500; color: rgba(186, 186, 186, 0.73); line-height: 30px; }
 	}
 
-	.copyright { clear: both; font-size: 18px; font-weight: 700; color: #999;
-		.btn-customer { display: inline-block; margin-bottom: 15px; width: 170px; font-size: 16px; font-weight: 400; color: #fff; line-height: 37px; line-height: 37px; border: 1px solid #fff; }
-		small { display: inline-block; margin-top: 10px; font-size: 16px; font-weight: 400; color: #4E4E4E; }
+	.copyright { clear: both; font-size: 14px; font-weight: 700; color: #999;
+		.btn-customer { display: inline-block; margin-bottom: 15px; width: 170px; font-size: 14px; font-weight: 400; color: #fff; line-height: 37px; line-height: 37px; border: 1px solid #fff; }
+		small { display: inline-block; margin-top: 10px; font-size: 14px; font-weight: 400; color: #4E4E4E; }
 		.btn-contactus { display: inline-block; margin: 0 0 0 15px; color: #4E4E4E; }
 	}
 }

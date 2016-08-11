@@ -15,7 +15,8 @@
 
 				<a href="#" class="btn-step01">account setup company - step1</a><br>
 				<a href="#" class="btn-step02">account setup company - step2</a><br>
-				<a href="#" class="btn-step03">account setup company - step3</a>
+				<a href="#" class="btn-step03">account setup company - step3</a><br>
+				<a href="#" class="btn-step04">account setup company - complete</a>
 
 
 				<!-- Account Setup Company - Step 1 -->
@@ -28,13 +29,13 @@
 						
 						<div class="box-item">
 							<h2 class="title">COMPANY INFO</h2>
+							<span class="required">Required <strong>*</strong></span>
 
 							<fieldset class="forms">
 								<legend>COMPANY INFO</legend>
 
 								<p class="invalid">
 									<input type="text" id="" name="" placeholder="Legal Name of Company">
-									<span class="requried">Requried</span>
 
 									<span class="invalid-message">
 										Incorrect Email address or password.<br>
@@ -43,6 +44,7 @@
 								</p>
 								<p>
 									<input type="text" id="" name="" placeholder="Name of Department">
+									<span class="required">*</span>
 								</p>
 								<p>
 									<input type="text" id="" name="" placeholder="Name of Sub-Department">
@@ -53,12 +55,13 @@
 						
 						<div class="box-item">
 							<h2 class="title">COMPANY ADMIN INFO</h2>
+							<span class="required">Required <strong>*</strong></span>
 
 							<fieldset class="forms">
 								<legend>COMPANY ADMIN INFO</legend>
 
 								<p>
-									<input type="text" id="" name="" placeholder="Full Name">
+									<input type="email" id="" name="" placeholder="Full Name">
 
 									<span class="invalid-message">
 										Incorrect Email address or password.
@@ -69,12 +72,12 @@
 								</p>
 
 								<label for="" class="sub">Work Phone Number</label>
-								<p class="select">
+								<p class="select invalid">
 									<select name="" id="" required>
 										<option value="" disabled selected>Select Country</option>
 										<option value="">Repulic of Korea(+82)</option>
 									</select>
-									<span class="requried">Requried</span>
+									<span class="required">*</span>
 								</p>
 								<p>
 									<input type="text" id="" name="" style="width: 30%;">
@@ -93,11 +96,11 @@
 									</select>
 								</p>
 								<p>
-									<input type="text" id="" name="" style="width: 30%;">
+									<span class="invalid"><input type="number" id="" name="" style="width: 30%;"></span>
 									-
-									<input type="text" id="" name="" style="width: 31%;">
+									<input type="number" id="" name="" style="width: 31%;">
 									-
-									<input type="text" id="" name="" style="width: 31%;">
+									<input type="number" id="" name="" style="width: 31%;">
 								</p>
 							</fieldset>
 						</div>
@@ -158,6 +161,10 @@
 								약관 내용 약관 내용 약관 내용 약관 내용<br>
 								약관 내용 약관 내용 약관 내용 약관 내용<br>
 							</div>
+
+							<p class="invalid-message">
+								Incorrect Email address or password.
+							</p>
 						</fieldset>
 
 					</div>
@@ -181,6 +188,7 @@
 						
 						<div class="box-item">
 							<h2 class="title">BILLING ACCOUNT MANAGER</h2>
+							<span class="required">Required <strong>*</strong></span>
 
 							<fieldset class="forms">
 								<legend>BILLING ACCOUNT MANAGER</legend>
@@ -254,6 +262,7 @@
 						
 						<div class="box-item">
 							<h2 class="title">COMPANY LEGAL INFO</h2>
+							<span class="required">Required <strong>*</strong></span>
 
 							<fieldset class="forms">
 								<legend>COMPANY LEGAL INFO</legend>
@@ -315,6 +324,28 @@
 				</aside>
 				<!--// Account Setup Company - Step 3 -->
 
+
+				<!-- Account Setup Company - Step Complete -->
+				<aside id="setup-company04" class="modal-popup mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
+
+					<h2 class="title">Account Setup Successful.</h2>
+
+					<div class="content full">
+						
+						<p class="complete-message">
+							complete message....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, velit ac commodo varius, enim justo laoreet ante, at varius ex dui id nulla. Cras et tellus vitae orci cursus lacinia. Sed non laoreet odio. Etiam quis bibendum quam. Morbi at quam leo. Phasellus venenatis pulvinar risus, in malesuada justo ullamcorper a. Proin et enim interdum nulla rutrum porta. Sed et augue sit amet arcu varius molestie. Duis porttitor sapien nibh, in dapibus ante consequat nec.
+						</p>
+
+					</div>
+
+					<div class="bottom">
+						<button type="button" class="btn-normal large">OK &amp; CLOSE</button>
+					</div>
+				</aside>
+				<!--// Account Setup Company - Complete -->
+
+
 				<script>
 				$(document).ready(function(e) {	
 					$('.btn-step01').magnificPopup({
@@ -334,6 +365,13 @@
 					$('.btn-step03').magnificPopup({
 						items: {
 							src: '#setup-company03'
+						},
+						closeOnBgClick: false
+					});
+
+					$('.btn-step04').magnificPopup({
+						items: {
+							src: '#setup-company04'
 						},
 						closeOnBgClick: false
 					});

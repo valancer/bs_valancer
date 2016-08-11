@@ -39,9 +39,17 @@ a:hover { text-decoration: none; }
 /* forms */
 fieldset { appearance: none; }
 input[type=submit],
-input[type=search] { appearance: none; cursor: pointer; border: 0px; }
+input[type=search],
+input[type=number] { appearance: none; cursor: pointer; border: 0px; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
 
 input:focus,
 button:focus,
 textarea:focus,
+select,
 div {outline:0;}
