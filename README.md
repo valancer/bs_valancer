@@ -1,6 +1,8 @@
 # BESPIN GLOBAL MARKUP GUIDE
 베스핀 글로벌 HTML, CSS, JAVASCRIPT 가이드 문서입니다.
 
+
+
 ## 작업환경
   gulp로 자동화 작업을 추가하여 효율적인 리소스 관리와 작업 속도를 향상할 수 있습니다.
 
@@ -8,6 +10,8 @@
   - GIT
   - gulp(file include, sass, iconfont, image sprite, autoprefixer, csscomb)
   - SASS
+
+
   
 ## 시작
 npm install 로 관련 모듈 다운로드 후, gulp build로 로컬 작업 시작
@@ -24,6 +28,8 @@ gulp build
 // 개발에 전달할 최종 파일이 /srouces/release/ 폴더에 생성
 gulp release
 ```
+
+
 
 
 ## HTML 관련 모듈
@@ -58,6 +64,9 @@ gulp release
 </html>
 ```
 [gulp-file-include]: https://www.npmjs.com/package/gulp-file-include
+
+
+
 
 
 ## CSS 관련 모듈
@@ -119,7 +128,10 @@ gulp release
 [gulp-iconfont-css]: https://www.npmjs.com/package/gulp-iconfont-css
 
 
-## JQEURY 관련 라이브러리
+
+
+
+## JQUERY 관련 라이브러리
 - [agGrid] - (enterprise)테이블 데이터
 - [amChart] - 챠트
 - [daterangepicker.custom.js] - 날짜 기간 선택 레이어
