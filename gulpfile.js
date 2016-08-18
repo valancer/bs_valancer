@@ -18,7 +18,8 @@ var	gulp = require('gulp'),
 	connect = require('gulp-connect'),
 	livereload = require('gulp-livereload'),
 	watch = require('gulp-watch'),
-	notify = require('gulp-notify');
+	notify = require('gulp-notify'),
+	runSequence = require('run-sequence');
 
 var paths = {
 	sources: 'sources/**',
@@ -323,10 +324,15 @@ gulp.task('html-build', ['includes'], function() { });
 gulp.task('build', ['clean:build'], function() {
 	gulp.run(['sass-build', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets', 'connect', 'watch']);
 });
+
+gulp.task('release', function(callback) {
+	runSequence('clean:release', ['sass-release', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets'], ['csscomb', 'copy:release'], callback);
+});
+/*
 gulp.task('release', ['clean:release'], function() {
 	gulp.run(['sass-release', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets', 'csscomb', 'copy:release']);
 });
 gulp.task('release-after', [], function() {
 	gulp.run(['csscomb', 'copy:release']);
 });
-
+*/
