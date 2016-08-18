@@ -822,7 +822,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .popover.export ul {
   display: block;
-  width: 95px; }
+  width: 110px; }
   .popover.export ul > li {
     text-align: center;
     border-top: 2px solid #343434; }
@@ -2355,6 +2355,8 @@ article.contents .list-column-03 {
 
 article.contents .submit-btns {
   padding-top: 26px; }
+  article.contents .submit-btns .btn-normal {
+    margin-right: 5px; }
 
 /** layout **/
 /**
@@ -4301,11 +4303,13 @@ input[type=submit].btn-normal,
   clear: both; }
   .forms .sub {
     display: block;
-    margin-top: 10px; }
+    margin-top: 20px; }
   .forms p {
     position: relative;
     margin-top: 10px;
-    vertical-align: middle; }
+    font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+    vertical-align: middle;
+    line-height: 50px; }
     .forms p.invalid {
       position: relative; }
       .forms p.invalid input[type=text],
@@ -4325,6 +4329,11 @@ input[type=submit].btn-normal,
         line-height: 50px; }
     .forms p.select .required {
       right: 35px; }
+    .forms p.txt {
+      padding-left: 23px;
+      border-bottom: 1px solid #EBEBEB; }
+    .forms p.none {
+      color: #a9a9a9; }
   .forms .required {
     position: absolute;
     top: 0;
@@ -4482,8 +4491,13 @@ input[type=submit].btn-normal,
     .forms.base input[type=email],
     .forms.base input[type=number] {
       background-color: #fff; }
+    .forms.base input[disabled] {
+      border-bottom: 1px solid #EBEBEB;
+      background-color: transparent; }
     .forms.base select {
       background-color: #fff; }
+      .forms.base select[disabled] {
+        background-color: transparent; }
   .forms .list-groups {
     overflow: scroll;
     overflow-x: hidden;

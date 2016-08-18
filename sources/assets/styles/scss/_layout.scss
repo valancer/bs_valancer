@@ -294,5 +294,7 @@ article.contents {
 		> li { display: block; box-sizing: border-box; float: left; padding: 0 15px 45px 15px; width: 33.3%; }
 	}
 
-	.submit-btns { padding-top: 26px; }
+	.submit-btns { padding-top: 26px;
+		.btn-normal { margin-right: 5px; }
+	}
 }

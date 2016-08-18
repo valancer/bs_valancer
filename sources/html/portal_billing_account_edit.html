@@ -23,12 +23,12 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="#" class="is-selected">
 									<span>Billing Account Info</span>
 								</a>
 							</li>
 							<li>
-								<a href="#" class="is-selected">
+								<a href="#">
 									<span>Company Admin</span>
 								</a>
 							</li>
@@ -44,26 +44,49 @@
 
 				<div class="column-right">
 					
-
 					<dl class="accordion is-editable">
 						<dt class="is-opened">
-							<span class="title">Company Admin</span>
+							<span class="title">Billing Account Info</span>
 						</dt>
 						<dd>
 							<fieldset class="forms base">
-								<legend>COMPANY ADMIN INFO</legend>
+								<legend>BILLING ACCOUNT MANAGER</legend>
 
 								<p>
-									<input type="text" id="" name="" placeholder="Full Name">
+									<input type="text" id="" name="" placeholder="Full Name" value="" disabled>
 								</p>
 								<p>
-									<input type="text" id="" name="" placeholder="Email Address">
+									<input type="email" id="" name="" placeholder="Email Address">
 								</p>
+								<p>
+									<select name="" id="" required="">
+										<option value="" disabled="" selected="">Country</option>
+										<option value="">us</option>
+										<option value="">korea</option>
+									</select>
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Address 1">
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Address 2">
+								</p>
+								<p>
+									<select name="" id="" required="">
+										<option value="" disabled="" selected="">State</option>
+										<option value="">State1</option>
+									</select>
+								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Postal Code">
+								</p>
+
 
 								<label for="" class="sub">Work Phone Number</label>
 								<p>
-									<select name="" id="">
-										<option value=0"">Repulic of Korea(+82)</option>
+									<select name="" id="" required="">
+										<option value="" disabled="" selected="">Select Country</option>
+										<option value="">Repulic of Korea(+82)</option>
 									</select>
 								</p>
 								<p>
@@ -89,12 +112,16 @@
 									-
 									<input type="text" id="" name="" style="width: 31.9%;">
 								</p>
+								<p>
+									<input type="text" id="" name="" placeholder="Fax Number">
+								</p>
 							</fieldset>
 						</dd>
 					</dl>
 
 					<p class="submit-btns">
-						<a href="#" class="btn-normal large">SAVE CHANGES</a>
+						<a href="#" class="btn-normal large">CANCEL</a>
+						<a href="#" class="btn-normal large">SAVE &amp; CHANGES</a>
 					</p>
 				</div>
 			</div>

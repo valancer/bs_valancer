@@ -925,8 +925,8 @@ input[type=submit].btn-normal,
 	setup forms
 **/
 .forms { display: block; clear: both;
-	.sub { display: block; margin-top: 10px; }
-	p { position: relative; margin-top: 10px; vertical-align: middle;
+	.sub { display: block; margin-top: 20px; }
+	p { position: relative; margin-top: 10px; font-family: $font-base-ko-stack; vertical-align: middle; line-height: 50px;
 		&.invalid { position: relative;
 			input[type=text],
 			input[type=password],
@@ -940,6 +940,9 @@ input[type=submit].btn-normal,
 		&.select {
 			.required { right: 35px; }
 		}
+
+		&.txt { padding-left: 23px; border-bottom: 1px solid #EBEBEB; }
+		&.none { color: #a9a9a9; }
 	}
 
 	.required { position: absolute; top: 0; right: 0; padding-right: 9px; font-size: 21px; font-weight: 500; color: #E74E0F; line-height: 50px; }
@@ -991,17 +994,18 @@ input[type=submit].btn-normal,
 		}
 	}
 
+
 	// my account 용
 	&.base { padding-bottom: 40px;
 		input[type=text],
 		input[type=password],
 		input[type=email],
 		input[type=number] { background-color: #fff; }
+		input[disabled] { border-bottom: 1px solid #EBEBEB; background-color: transparent; }
 
 		select { background-color: #fff;
-
+			&[disabled] { background-color: transparent; }
 		}
-
 	}
 
 	.list-groups { overflow: scroll; overflow-x: hidden; margin-top: 56px; max-height: 460px; border-bottom: 2px solid #979797;
