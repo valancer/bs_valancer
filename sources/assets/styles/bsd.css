@@ -28,7 +28,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 body {
   position: relative;
   /*min-height: 800px;*/
-  min-width: 1080px;
+  min-width: 1200px;
   margin: 0 auto;
   font-size: 100%;
   line-height: 1.3em;
@@ -1667,7 +1667,7 @@ corresponds to the arrow we want to display */
     margin: 0 auto;
     padding: 0px 0px 0 25px;
     height: 64px;
-    width: 1080px; }
+    width: 1200px; }
   .global-menu .title {
     display: block;
     position: absolute;
@@ -1906,7 +1906,7 @@ corresponds to the arrow we want to display */
     position: relative;
     margin: 0 auto;
     height: 59px;
-    width: 1080px; }
+    width: 1200px; }
   .sub-menus h2 {
     display: none; }
   .sub-menus .btn-settings {
@@ -2154,7 +2154,7 @@ corresponds to the arrow we want to display */
     margin: 0 auto;
     padding: 0;
     min-height: 100%;
-    width: 1080px;
+    width: 1200px;
     padding-top: 40px; }
     .footer .contents-inner:before {
       content: '';
@@ -2245,7 +2245,7 @@ article.contents .contents-inner {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 30px;
-  width: 1080px;
+  width: 1200px;
   padding-bottom: 0px; }
   article.contents .contents-inner.size-fit {
     margin-top: 0;
@@ -2261,21 +2261,21 @@ article.contents .column-left {
   position: relative;
   padding-top: 35px;
   padding-bottom: 30px;
-  width: 230px; }
+  width: 280px; }
   article.contents .column-left .btn-normal {
     width: 100%; }
   article.contents .column-left .scroll {
     overflow: auto;
     position: absolute;
-    top: 62px;
+    top: 82px;
     right: -10px;
     bottom: 135px;
     left: 10px;
     padding: 0 10px 0 0; }
   article.contents .column-left .its {
     position: absolute;
-    top: 0;
-    right: -30px;
+    top: 20px;
+    right: -50px;
     left: 0;
     padding: 0 30px 0 10px;
     height: 47px;
@@ -2290,7 +2290,7 @@ article.contents .column-right {
   overflow: hidden;
   padding-top: 35px;
   padding-bottom: 30px;
-  width: 760px; }
+  width: 810px; }
   .asset article.contents .column-right {
     padding-bottom: 100px; }
 
@@ -2301,7 +2301,7 @@ article.contents .column-right {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 30px;
-    width: 1080px;
+    width: 1200px;
     padding-top: 19px;
     height: 135px;
     font-size: 36px;
@@ -2320,7 +2320,7 @@ article.contents .column-right {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 30px;
-  width: 1080px;
+  width: 1200px;
   padding-top: 19px;
   height: 135px;
   font-size: 36px;
@@ -3793,6 +3793,7 @@ input[type=submit].btn-normal,
 .filter-container {
   position: relative;
   z-index: 901;
+  margin-top: 20px;
   padding: 0 30px;
   height: 47px;
   background-color: #e7e7e7;

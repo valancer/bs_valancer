@@ -257,9 +257,9 @@ article.contents {
 	.column-left { float: left; box-sizing: border-box; position: relative; padding-top: 35px; padding-bottom: 30px; width: $column-left-width;
 		.btn-normal { width: 100%; }
 
-		.scroll { overflow: auto; position: absolute; top: 62px; right: -10px; bottom: 135px; left: 10px; padding: 0 10px 0 0; }
+		.scroll { overflow: auto; position: absolute; top: 82px; right: -10px; bottom: 135px; left: 10px; padding: 0 10px 0 0; }
 		
-		.its { position: absolute; top: 0; right: -30px; left: 0; padding: 0 30px 0 10px; height: 47px; vertical-align: middle; line-height: 47px; background-color: #e7e7e7;
+		.its { position: absolute; top: 20px; right: -50px; left: 0; padding: 0 30px 0 10px; height: 47px; vertical-align: middle; line-height: 47px; background-color: #e7e7e7;
 			.btn-normal { width: 100%;  }
 		}
 	}
