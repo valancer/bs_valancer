@@ -4,6 +4,7 @@
 
 	<p class="right-content">
 		<button type="button" class="btn-text export export_open">Export</button>
+		<button type="button" class="btn-text size-view">Wide View</button>
 	</p>
 
 	<div id="export" class="popover small export">
@@ -28,12 +29,34 @@
 
 	<script>
 		$(document).ready(function(e) {
+			// export
 			$('#export').popup({
 				type: 'tooltip',
 				vertical: 'bottom',
 				horizontal: 'center',
 				offsettop: 10,
 				transition: '0.3s all 0.1s'
+			});
+
+
+			// default/wide view
+			$('.btn-text.size-view').on('click', function() {
+				var $this = $(this);
+				var $container = $('article.contents .size-fit');
+
+				if( $this.hasClass('default') ) {
+					$this.removeClass('default');
+					$this.text('Wide View');
+					$container.removeClass('fullsize');
+
+					$('.slick-container').slick('setPosition');
+				} else {
+					$this.addClass('default');
+					$this.text('Default View');
+					$container.addClass('fullsize');
+
+					$('.slick-container').slick('setPosition');
+				}
 			});
 		});
 	</script>

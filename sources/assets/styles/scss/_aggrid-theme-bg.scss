@@ -177,6 +177,7 @@
 	.ag-header-cell {
 		border-right: 1px solid transparent;
 	}
+	.ag-header-cell-resize { width: 3px; background: url('/assets/images/ag_cell_resize.png') center center no-repeat; background-size: 3px 30px; }
 	.ag-header-cell-moving {
 		.ag-header-cell-label {
 			opacity: 0.5;

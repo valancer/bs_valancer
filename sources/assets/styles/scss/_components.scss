@@ -602,6 +602,16 @@
 		@include icon(done);
 		&:before { margin: -4px 5px 0 0; font-size: 13px; }
 	}
+
+	&.size-view {
+		@include icon(wideview);
+		&:before { margin: -2px 10px 0 0; height: 18px; font-size: 18px; }
+
+		&.default {
+			@include icon(defaultview);
+			&:before { margin: -2px 10px 0 0; height: 18px; font-size: 18px; }
+		}
+	}	
 }
 
 // normal

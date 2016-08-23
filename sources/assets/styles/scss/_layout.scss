@@ -249,7 +249,9 @@ main { min-height: 600px;
 article.contents {
 	@mixin inner() { position: relative; box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
 	.contents-inner { overflow: hidden; @include inner(); padding-bottom: 0px;
-		&.size-fit { margin-top: 0; padding: 0; }
+		&.size-fit { margin-top: 0; padding: 0;
+			&.fullsize { padding: 0 5%; width: 100%; }
+		}
 	}
 
 	.button-container { padding: 35px 40px 0px 40px; text-align: right; }
