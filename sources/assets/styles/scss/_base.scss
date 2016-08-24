@@ -37,7 +37,10 @@ a:hover { text-decoration: none; }
 .inline-block { display: inline-block; vertical-align: middle; }
 
 /* forms */
-fieldset { appearance: none; }
+fieldset, select { appearance: none; }
+select::-ms-expand {
+    display: none;
+}
 input[type=submit],
 input[type=search],
 input[type=number] { appearance: none; cursor: pointer; border: 0px; }
