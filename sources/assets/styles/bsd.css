@@ -126,10 +126,13 @@ a:hover {
   vertical-align: middle; }
 
 /* forms */
-fieldset {
+fieldset, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; }
+
+select::-ms-expand {
+  display: none; }
 
 input[type=submit],
 input[type=search],
@@ -158,7 +161,7 @@ div {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-close:before, .icon-dashboard:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .title .service.monitoring:before, .global-menu .title .service.workflow:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li button.dashboard:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li button.metering:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li button.asset:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li button.monitoring:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li button.workflow:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-text.edit:before, .btn-text.cancel:before, .btn-text.save-update:before, input[type=submit].btn-normal.download:before,
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-close:before, .icon-dashboard:before, .icon-defaultview:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu .title .btn-language:after, .global-menu .title .service.asset:before, .global-menu .title .service.metering:before, .global-menu .title .service.monitoring:before, .global-menu .title .service.workflow:before, .global-menu .uilts .btns.notifications:before, .global-menu .uilts .btns.dashboard:before, .global-menu .user .company:after, .sub-menus .list-menus > li .list-sub-menus:after, .popover .point:before, .global-shortcuts .type-thumbnail > li button.dashboard:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li button.metering:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li button.asset:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li button.monitoring:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li button.workflow:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-text.edit:before, .btn-text.cancel:before, .btn-text.save-update:before, .btn-text.size-view:before, .btn-text.size-view.default:before, input[type=submit].btn-normal.download:before,
 .btn-normal.download:before, input[type=submit].btn-normal.icon-its:before,
 .btn-normal.icon-its:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .btn-back:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, .forms .invalid-message:before, .forms .contactus.phone:before, .forms .contactus.email:before, .chart.none p:before, .chart-container .slick-arrow:before, .page-no-data:before, body.portal.dashboard .box-item.dashboard .info > li button.btn-txt-info:after, body.portal.home .services > li .title.asset:before, body.portal.home .services > li .title.metering:before, body.portal.home .services > li .title.monitoring:before, body.asset.dashboard .box-item > .title.perfomance:after, body.metering .growth:after, body.metering .growth.tbl:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after {
   font-family: "Icons";
@@ -197,74 +200,80 @@ div {
 .icon-dashboard:before {
   content: ""; }
 
-.icon-done:before {
+.icon-defaultview:before {
   content: ""; }
 
-.icon-dot:before {
+.icon-done:before {
   content: ""; }
 
-.icon-download:before {
+.icon-dot:before {
   content: ""; }
 
-.icon-edit:before {
+.icon-download:before {
   content: ""; }
 
-.icon-email:before {
+.icon-edit:before {
   content: ""; }
 
-.icon-export:before {
+.icon-email:before {
   content: ""; }
 
-.icon-eyes:before {
+.icon-export:before {
   content: ""; }
 
-.icon-filter:before {
+.icon-eyes:before {
   content: ""; }
 
-.icon-grid:before {
+.icon-filter:before {
   content: ""; }
 
-.icon-growth:before {
+.icon-grid:before {
   content: ""; }
 
-.icon-info:before {
+.icon-growth:before {
   content: ""; }
 
-.icon-menu:before {
+.icon-info:before {
   content: ""; }
 
-.icon-message:before {
+.icon-menu:before {
   content: ""; }
 
-.icon-metering:before {
+.icon-message:before {
   content: ""; }
 
-.icon-monitoring:before {
+.icon-metering:before {
   content: ""; }
 
-.icon-noticifation:before {
+.icon-monitoring:before {
   content: ""; }
 
-.icon-phone:before {
+.icon-noticifation:before {
   content: ""; }
 
-.icon-refresh:before {
+.icon-phone:before {
   content: ""; }
 
-.icon-reset:before {
+.icon-refresh:before {
   content: ""; }
 
-.icon-search:before {
+.icon-reset:before {
   content: ""; }
 
-.icon-settings:before {
+.icon-search:before {
   content: ""; }
 
-.icon-warning:before {
+.icon-settings:before {
   content: ""; }
 
-.icon-workflow:before {
+.icon-warning:before {
   content: ""; }
+
+.icon-wideview:before {
+  content: ""; }
+
+.icon-workflow:before {
+  content: ""; }
 
 /** web font icons **/
 /*
@@ -751,7 +760,7 @@ The `sprites` mixin generates identical output to the CSS template
   .aggrid-uitls .search {
     display: block; }
     .aggrid-uitls .search:before {
-      content: ""; }
+      content: ""; }
     .aggrid-uitls .search:before {
       display: inline-block;
       margin-right: 8px;
@@ -910,7 +919,7 @@ The `sprites` mixin generates identical output to the CSS template
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -313px -190px;
+      background-position: -403px -166px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -919,7 +928,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 443px 458px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -382px -167px;
+      background-position: -357px -166px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -928,7 +937,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 443px 458px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -405px -167px;
+      background-position: -380px -166px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -940,6 +949,10 @@ The `sprites` mixin generates identical output to the CSS template
     border-bottom: 1px solid #808080; }
   .ag-bespin-global .ag-header-cell {
     border-right: 1px solid transparent; }
+  .ag-bespin-global .ag-header-cell-resize {
+    width: 3px;
+    background: url("/assets/images/ag_cell_resize.png") center center no-repeat;
+    background-size: 3px 30px; }
   .ag-bespin-global .ag-header-cell-moving {
     background-color: #bebebe; }
     .ag-bespin-global .ag-header-cell-moving .ag-header-cell-label {
@@ -971,7 +984,7 @@ The `sprites` mixin generates identical output to the CSS template
     box-sizing: content-box;
     line-height: 40px; }
     .ag-bespin-global .ag-header-cell-menu-button:before {
-      content: ""; }
+      content: ""; }
     .ag-bespin-global .ag-header-cell-menu-button:before {
       display: block;
       position: absolute;
@@ -1773,11 +1786,11 @@ corresponds to the arrow we want to display */
       .global-menu .title .service.asset:before {
         content: ""; }
       .global-menu .title .service.metering:before {
-        content: ""; }
-      .global-menu .title .service.monitoring:before {
         content: ""; }
+      .global-menu .title .service.monitoring:before {
+        content: ""; }
       .global-menu .title .service.workflow:before {
-        content: ""; }
+        content: ""; }
   .global-menu.logout .title:before {
     right: 110px; }
   .global-menu.logout .title .btn-language {
@@ -1798,7 +1811,7 @@ corresponds to the arrow we want to display */
         display: none;
         position: relative; }
         .global-menu .uilts .btns.notifications:before {
-          content: ""; }
+          content: ""; }
         .global-menu .uilts .btns.notifications:before {
           display: block;
           color: #000;
@@ -1823,7 +1836,7 @@ corresponds to the arrow we want to display */
           border-radius: 14px;
           background-color: #f34122; }
       .global-menu .uilts .btns.dashboard:before {
-        content: ""; }
+        content: ""; }
       .global-menu .uilts .btns.dashboard:before {
         display: block;
         color: #000;
@@ -2096,7 +2109,7 @@ corresponds to the arrow we want to display */
       .side-menus li > button.vendor.total > span:before, .side-menus li a.vendor.total > span:before {
         margin-top: -8px;
         background-image: url(../images/sprites.png);
-        background-position: -313px -18px;
+        background-position: -358px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2114,7 +2127,7 @@ corresponds to the arrow we want to display */
             background-size: 443px 458px; } }
       .side-menus li > button.vendor.azure > span:before, .side-menus li a.vendor.azure > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -358px -18px;
+        background-position: -313px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2250,6 +2263,9 @@ article.contents .contents-inner {
   article.contents .contents-inner.size-fit {
     margin-top: 0;
     padding: 0; }
+    article.contents .contents-inner.size-fit.fullsize {
+      padding: 0 5%;
+      width: 100%; }
 
 article.contents .button-container {
   padding: 35px 40px 0px 40px;
@@ -2593,7 +2609,7 @@ article.contents .submit-btns {
         font-size: 41px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li button.metering:before, .global-shortcuts .type-thumbnail > li a.metering:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li button.metering:before, .global-shortcuts .type-thumbnail > li a.metering:before {
         font-size: 44px;
         line-height: 64px; }
@@ -2603,12 +2619,12 @@ article.contents .submit-btns {
         font-size: 33px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li button.monitoring:before, .global-shortcuts .type-thumbnail > li a.monitoring:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li button.monitoring:before, .global-shortcuts .type-thumbnail > li a.monitoring:before {
         font-size: 41px;
         line-height: 64px; }
       .global-shortcuts .type-thumbnail > li button.workflow:before, .global-shortcuts .type-thumbnail > li a.workflow:before {
-        content: ""; }
+        content: ""; }
       .global-shortcuts .type-thumbnail > li button.workflow:before, .global-shortcuts .type-thumbnail > li a.workflow:before {
         font-size: 41px;
         line-height: 64px; }
@@ -2723,7 +2739,7 @@ article.contents .submit-btns {
       vertical-align: middle;
       text-indent: -9999px;
       background-image: url(../images/sprites.png);
-      background-position: -358px -63px;
+      background-position: -313px -108px;
       width: 28px;
       height: 29px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2799,6 +2815,7 @@ article.contents .submit-btns {
         margin-left: 26px; }
         .accordion > dt.edit-mode .title input[type=search] {
           cursor: text;
+          height: 60px;
           width: 100%;
           font-size: 22px;
           font-weight: 500;
@@ -2807,7 +2824,7 @@ article.contents .submit-btns {
           border: 0px;
           background-color: #fff; }
       .accordion > dt.edit-mode .right {
-        padding-right: 0; }
+        padding-right: 62px; }
         .accordion > dt.edit-mode .right .content {
           padding-right: 0px; }
           .accordion > dt.edit-mode .right .content .inline-block {
@@ -2919,6 +2936,7 @@ article.contents .submit-btns {
             .metering .accordion .sub-items > li .alarm-setting-detail tbody tr td input[type=text] {
               box-sizing: border-box;
               padding-left: 15px;
+              height: 40px;
               width: 100%;
               font-size: 15px;
               font-weight: 500;
@@ -3008,7 +3026,7 @@ article.contents .submit-btns {
       color: #000; }
       .accordion-bottom .btn-add:hover:before {
         background-image: url(../images/sprites.png);
-        background-position: -313px -108px;
+        background-position: -358px -63px;
         width: 28px;
         height: 29px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3292,7 +3310,7 @@ article.contents .submit-btns {
         line-height: 1em;
         vertical-align: middle; }
         .box-item.service-group .info > li .btn-txt-info:after {
-          content: ""; }
+          content: ""; }
         .box-item.service-group .info > li .btn-txt-info:after {
           display: inline-block;
           margin: -2px 0 0 5px;
@@ -3353,45 +3371,45 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -337px -143px;
-  width: 18px;
-  height: 18px; }
+  background-position: -313px -166px;
+  width: 16px;
+  height: 16px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icheckbox {
       background-image: url(../images/sprites@2x.png);
       background-size: 443px 458px; } }
   .icheckbox.disabled {
     background-image: url(../images/sprites.png);
-    background-position: -313px -143px;
-    width: 18px;
-    height: 18px; }
+    background-position: -404px -143px;
+    width: 16px;
+    height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.disabled {
         background-image: url(../images/sprites@2x.png);
         background-size: 443px 458px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -361px -143px;
-    width: 17px;
-    height: 18px; }
+    background-position: -426px -143px;
+    width: 16px;
+    height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.checked {
         background-image: url(../images/sprites@2x.png);
         background-size: 443px 458px; } }
     .icheckbox.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -407px -143px;
-      width: 17px;
-      height: 17px; }
+      background-position: -382px -143px;
+      width: 16px;
+      height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .icheckbox.checked.disabled {
           background-image: url(../images/sprites@2x.png);
           background-size: 443px 458px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -384px -143px;
-    width: 17px;
-    height: 18px; }
+    background-position: -335px -166px;
+    width: 16px;
+    height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.indeterminate {
         background-image: url(../images/sprites@2x.png);
@@ -3403,7 +3421,7 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -359px -167px;
+  background-position: -359px -143px;
   width: 17px;
   height: 17px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3412,7 +3430,7 @@ article.contents .submit-btns {
       background-size: 443px 458px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -313px -167px;
+    background-position: -313px -143px;
     width: 17px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3421,7 +3439,7 @@ article.contents .submit-btns {
         background-size: 443px 458px; } }
     .iradio.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -336px -167px;
+      background-position: -336px -143px;
       width: 17px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3456,27 +3474,27 @@ article.contents .submit-btns {
     vertical-align: middle; }
   .all-checked[value="0"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -337px -143px;
-    width: 18px;
-    height: 18px; }
+    background-position: -313px -166px;
+    width: 16px;
+    height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="0"] > span {
         background-image: url(../images/sprites@2x.png);
         background-size: 443px 458px; } }
   .all-checked[value="1"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -361px -143px;
-    width: 17px;
-    height: 18px; }
+    background-position: -426px -143px;
+    width: 16px;
+    height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="1"] > span {
         background-image: url(../images/sprites@2x.png);
         background-size: 443px 458px; } }
   .all-checked[value="2"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -384px -143px;
-    width: 17px;
-    height: 18px; }
+    background-position: -335px -166px;
+    width: 16px;
+    height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="2"] > span {
         background-image: url(../images/sprites@2x.png);
@@ -3500,7 +3518,7 @@ article.contents .submit-btns {
   height: 21px;
   width: 21px; }
   .btn-settings:before {
-    content: ""; }
+    content: ""; }
   .btn-settings:before {
     display: block;
     height: 21px;
@@ -3521,6 +3539,7 @@ article.contents .submit-btns {
     height: 11px;
     width: 11px;
     font-size: 10px;
+    line-height: 11px;
     vertical-align: middle; }
   .btn-text:hover {
     color: #000; }
@@ -3528,24 +3547,26 @@ article.contents .submit-btns {
     color: rgba(0, 0, 0, 0.43);
     text-decoration: none; }
     .btn-text.reset:before {
-      content: ""; }
+      content: ""; }
     .btn-text.reset:before {
       vertical-align: baseline; }
   .btn-text.show-hide:before {
-    content: ""; }
+    content: ""; }
+  .btn-text.show-hide:before {
+    line-height: 11px; }
   .btn-text.refresh:before {
-    content: ""; }
+    content: ""; }
   .btn-text.refresh:before {
     margin-top: -4px;
     margin-right: 10px;
     font-size: 13px; }
   .btn-text.export:before {
-    content: ""; }
+    content: ""; }
   .btn-text.export:before {
-    margin-top: -10px;
+    margin-top: 0px;
     font-size: 16px; }
   .btn-text.edit:before {
-    content: ""; }
+    content: ""; }
   .btn-text.edit:before {
     margin: -4px 5px 0 0;
     font-size: 13px; }
@@ -3555,10 +3576,20 @@ article.contents .submit-btns {
     margin: -4px 5px 0 0;
     font-size: 13px; }
   .btn-text.save-update:before {
-    content: ""; }
+    content: ""; }
   .btn-text.save-update:before {
     margin: -4px 5px 0 0;
     font-size: 13px; }
+  .btn-text.size-view:before {
+    content: ""; }
+  .btn-text.size-view:before {
+    margin: -2px 10px 0 0;
+    font-size: 18px; }
+  .btn-text.size-view.default:before {
+    content: ""; }
+  .btn-text.size-view.default:before {
+    margin: -2px 10px 0 0;
+    font-size: 18px; }
 
 input[type=submit].btn-normal,
 .btn-normal {
@@ -3594,7 +3625,7 @@ input[type=submit].btn-normal,
     min-width: auto; }
   input[type=submit].btn-normal.download:before,
   .btn-normal.download:before {
-    content: ""; }
+    content: ""; }
   input[type=submit].btn-normal.download:before,
   .btn-normal.download:before {
     display: inline-block;
@@ -3603,7 +3634,7 @@ input[type=submit].btn-normal,
     vertical-align: middle; }
   input[type=submit].btn-normal.icon-its:before,
   .btn-normal.icon-its:before {
-    content: ""; }
+    content: ""; }
   input[type=submit].btn-normal.icon-its:before,
   .btn-normal.icon-its:before {
     margin: -1px 5px 0 0;
@@ -3623,7 +3654,7 @@ input[type=submit].btn-normal,
   position: relative;
   text-indent: -9999px;
   background-image: url(../images/sprites.png);
-  background-position: -381px -108px;
+  background-position: -426px -63px;
   width: 17px;
   height: 21px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3632,7 +3663,7 @@ input[type=submit].btn-normal,
       background-size: 443px 458px; } }
   .btn-bookmark.is-selected, .btn-bookmark:hover {
     background-image: url(../images/sprites.png);
-    background-position: -426px -63px;
+    background-position: -381px -108px;
     width: 17px;
     height: 21px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3669,7 +3700,7 @@ input[type=submit].btn-normal,
   color: #E74E0F;
   text-indent: -9999px; }
   .btn-warning:before {
-    content: ""; }
+    content: ""; }
   .btn-warning:before {
     display: block;
     position: absolute;
@@ -3691,7 +3722,7 @@ input[type=submit].btn-normal,
   color: #959595;
   text-indent: -9999px; }
   .btn-info:before {
-    content: ""; }
+    content: ""; }
   .btn-info:before {
     display: block;
     position: absolute;
@@ -3714,7 +3745,7 @@ input[type=submit].btn-normal,
   text-indent: -9999px;
   vertical-align: middle; }
   .btn-edit:before {
-    content: ""; }
+    content: ""; }
   .btn-edit:before {
     display: block;
     position: absolute;
@@ -3804,6 +3835,7 @@ input[type=submit].btn-normal,
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
   .filter-container .btn-status {
+    overflow: visible;
     position: absolute;
     top: 50%;
     right: 50px;
@@ -3838,7 +3870,7 @@ input[type=submit].btn-normal,
       color: #000;
       line-height: 47px; }
       .filter-container .results > .selected:before {
-        content: ""; }
+        content: ""; }
       .filter-container .results > .selected:before {
         display: block;
         float: left;
@@ -4005,7 +4037,7 @@ input[type=submit].btn-normal,
   background-color: #e74e0f;
   transition: max-height 0.3s ease-in; }
   .warning-container:before {
-    content: ""; }
+    content: ""; }
   .warning-container:before {
     display: block;
     position: absolute;
@@ -4094,7 +4126,7 @@ input[type=submit].btn-normal,
   .list-users-search .search {
     display: block; }
     .list-users-search .search:before {
-      content: ""; }
+      content: ""; }
     .list-users-search .search:before {
       display: inline-block;
       margin-right: 8px;
@@ -4113,13 +4145,17 @@ input[type=submit].btn-normal,
 .list-single-check {
   border-bottom: 2px solid rgba(151, 151, 151, 0.32); }
   .list-single-check > li {
-    height: 60px;
+    height: 68px;
     border-top: 2px solid rgba(151, 151, 151, 0.32); }
+    .list-single-check > li .icheck {
+      float: left;
+      margin: 25px 0 0 10px;
+      padding: 0; }
     .list-single-check > li .user {
       float: left;
       position: relative;
       padding: 0px 0px 0px 75px;
-      height: 60px;
+      height: 68px;
       width: auto;
       background-color: #fff; }
       .list-single-check > li .user .thumb {
@@ -4127,12 +4163,10 @@ input[type=submit].btn-normal,
         overflow: hidden;
         position: absolute;
         top: 50%;
-        left: 8px;
+        left: 20px;
         margin-top: -21px;
-        height: 42px;
-        width: 42px;
-        border-radius: 50%;
-        background-color: #d8d8d8; }
+        height: 46px;
+        width: 46px; }
         .list-single-check > li .user .thumb img {
           max-height: 100%;
           max-width: 100%; }
@@ -4141,13 +4175,17 @@ input[type=submit].btn-normal,
         font-size: 16px;
         font-weight: 500;
         color: #000;
-        line-height: 60px; }
+        line-height: 68px; }
         .list-single-check > li .user figcaption label button {
           display: none; }
           .list-single-check > li .user figcaption label button.is-selected {
             display: inline-block; }
         .list-single-check > li .user figcaption label:hover button {
           display: inline-block; }
+      .list-single-check > li .user.inactive .thumb {
+        opacity: 0.5; }
+      .list-single-check > li .user.inactive figcaption {
+        color: #BFBFBF; }
     .list-single-check > li .group-title {
       float: left;
       padding-left: 15px;
@@ -4155,18 +4193,32 @@ input[type=submit].btn-normal,
       font-weight: 500;
       color: #000;
       line-height: 60px; }
-    .list-single-check > li.pending .user figcaption {
-      color: rgba(0, 0, 0, 0.37); }
-      .list-single-check > li.pending .user figcaption:after {
-        content: 'PENDING';
-        display: inline-block;
-        margin-left: 15px;
-        font-size: 14px;
-        font-weight: 700;
-        color: #E74E0F; }
     .list-single-check > li .content {
       float: right;
-      line-height: 60px; }
+      line-height: 68px; }
+      .list-single-check > li .content .status {
+        display: inline-block;
+        width: 150px;
+        font-size: 16px;
+        font-weight: 700; }
+        .list-single-check > li .content .status.activate {
+          color: #67A81F; }
+        .list-single-check > li .content .status.invited {
+          color: #4A90E2; }
+        .list-single-check > li .content .status.subscribed {
+          color: #F5A623; }
+        .list-single-check > li .content .status.approval {
+          color: #F5A623; }
+        .list-single-check > li .content .status.deactivated {
+          color: #E74E0F; }
+      .list-single-check > li .content .btns {
+        display: inline-block;
+        width: 200px; }
+        .list-single-check > li .content .btns .btn-normal {
+          width: 100%; }
+      .list-single-check > li .content .status.deactivated + .btns .btn-normal {
+        min-width: auto;
+        width: 49.2%; }
       .list-single-check > li .content div.inline-block {
         margin-right: 15px; }
 
@@ -4264,7 +4316,7 @@ input[type=submit].btn-normal,
     color: #fff;
     background-color: #E74E0F; }
     .login-container .invalid-message:before {
-      content: ""; }
+      content: ""; }
     .login-container .invalid-message:before {
       display: block;
       position: absolute;
@@ -4371,7 +4423,7 @@ input[type=submit].btn-normal,
     line-height: 15px;
     background-color: #E74E0F; }
     .forms .invalid-message:before {
-      content: ""; }
+      content: ""; }
     .forms .invalid-message:before {
       display: block;
       position: absolute;
@@ -4449,6 +4501,7 @@ input[type=submit].btn-normal,
     display: inline-block;
     position: relative;
     box-sizing: border-box;
+    padding-right: 17px;
     padding-left: 23px;
     height: 50px;
     width: 100%;
@@ -4536,9 +4589,9 @@ input[type=submit].btn-normal,
       margin-right: 15px;
       vertical-align: middle; }
     .forms .contactus.phone:before {
-      content: ""; }
+      content: ""; }
     .forms .contactus.email:before {
-      content: ""; }
+      content: ""; }
 
 /**
 	chart-container
@@ -4553,7 +4606,7 @@ input[type=submit].btn-normal,
       font-weight: 500;
       color: #9B9B9B; }
       .chart.none p:before {
-        content: ""; }
+        content: ""; }
       .chart.none p:before {
         display: block;
         margin-bottom: 30px;
@@ -4641,7 +4694,7 @@ input[type=submit].btn-normal,
 .page-no-data {
   padding: 50px 0 0 105px; }
   .page-no-data:before {
-    content: ""; }
+    content: ""; }
   .page-no-data:before {
     display: block;
     margin-bottom: 33px;
@@ -4851,7 +4904,7 @@ body.portal {
             line-height: 1em;
             vertical-align: middle; }
           body.portal.dashboard .box-item.dashboard .info > li button.btn-txt-info:after {
-            content: ""; }
+            content: ""; }
           body.portal.dashboard .box-item.dashboard .info > li button.btn-txt-info:after {
             display: inline-block;
             margin: -2px 0 0 5px;
@@ -4963,11 +5016,11 @@ body.portal {
         body.portal.home .services > li .title.asset:before {
           font-size: 34px; }
         body.portal.home .services > li .title.metering:before {
-          content: ""; }
+          content: ""; }
         body.portal.home .services > li .title.metering:before {
           font-size: 38px; }
         body.portal.home .services > li .title.monitoring:before {
-          content: ""; }
+          content: ""; }
         body.portal.home .services > li .title.monitoring:before {
           font-size: 38px; }
   body.portal.home .list-detail {
@@ -5284,7 +5337,7 @@ body.asset.dashboard .box-item > .title.perfomance {
   line-height: 24px;
   background-color: #fff; }
   body.asset.dashboard .box-item > .title.perfomance:after {
-    content: ""; }
+    content: ""; }
   body.asset.dashboard .box-item > .title.perfomance:after {
     display: inline-block;
     margin: -2px 0 0 5px;
@@ -5374,7 +5427,7 @@ body.metering .growth {
   font-weight: 500;
   letter-spacing: 0em; }
   body.metering .growth:after {
-    content: ""; }
+    content: ""; }
   body.metering .growth:after {
     display: inline-block;
     height: 25px;
@@ -5401,7 +5454,7 @@ body.metering .growth {
   body.metering .growth.tbl {
     font-size: 15px; }
     body.metering .growth.tbl:before {
-      content: ""; }
+      content: ""; }
     body.metering .growth.tbl:before {
       display: inline-block;
       margin-right: 3px;
@@ -5538,7 +5591,7 @@ body.metering .box-item .btn-warning {
   text-indent: -9999px;
   background-color: #E74E0F; }
   body.metering .box-item .btn-warning:before {
-    content: ""; }
+    content: ""; }
   body.metering .box-item .btn-warning:before {
     display: block;
     position: absolute;
@@ -5647,7 +5700,7 @@ body.metering .box-item .budget .chart.none {
     font-weight: 500;
     color: #9B9B9B; }
     body.metering .box-item .budget .chart.none p:before {
-      content: ""; }
+      content: ""; }
     body.metering .box-item .budget .chart.none p:before {
       display: block;
       margin-bottom: 30px;
@@ -5684,7 +5737,7 @@ body.metering .tbl-data-v {
     line-height: 20px;
     vertical-align: middle; }
     body.metering .tbl-data-v .btn-txt-info:after {
-      content: ""; }
+      content: ""; }
     body.metering .tbl-data-v .btn-txt-info:after {
       display: inline-block;
       margin: -2px 0 0 5px;
