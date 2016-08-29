@@ -3187,6 +3187,10 @@ article.contents .submit-btns {
       line-height: 1em; }
       .box-item.dashboard .unit em {
         line-height: 1em; }
+    .box-item.dashboard .update {
+      font-size: 15px;
+      font-weight: 500;
+      color: #BBB; }
     .box-item.dashboard .status {
       display: none;
       position: absolute;
