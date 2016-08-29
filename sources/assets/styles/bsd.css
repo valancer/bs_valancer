@@ -5806,7 +5806,7 @@ body.metering.dashboard .summary {
   box-sizing: border-box;
   padding: 50px 0 0 0;
   height: 580px;
-  background: url("/assets/images/bg_metering_dashboard.png") center top no-repeat; }
+  background: url("/assets/images/bg_metering_dashboard.png") center top repeat-x; }
   body.metering.dashboard .summary .status {
     overflow: hidden; }
     body.metering.dashboard .summary .status > li {
