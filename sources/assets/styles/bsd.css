@@ -4198,9 +4198,10 @@ input[type=submit].btn-normal,
       line-height: 68px; }
       .list-single-check > li .content .status {
         display: inline-block;
+        font-family: "Noyh", "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
         width: 150px;
         font-size: 16px;
-        font-weight: 700; }
+        font-weight: 500; }
         .list-single-check > li .content .status.activate {
           color: #67A81F; }
         .list-single-check > li .content .status.invited {
