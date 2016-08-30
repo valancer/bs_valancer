@@ -274,6 +274,8 @@ article.contents {
 		h1.title { background-color: #f6f6f6;
 			.inner { @include inner(); padding-top: 19px; height: 135px; font-size: 36px; font-weight: 500; }
 			.last-logged { display: block; position: absolute; bottom: 0; right: $column-padding; font-size: 16px; font-weight: 500; color: #999; }
+
+			.right { position: absolute; top: 30px; right: 30px; }
 		}
 	}
 

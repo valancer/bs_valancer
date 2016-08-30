@@ -2330,6 +2330,10 @@ article.contents .column-right {
     font-size: 16px;
     font-weight: 500;
     color: #999; }
+  .portal article.contents h1.title .right {
+    position: absolute;
+    top: 30px;
+    right: 30px; }
 
 .metering article.contents h1.title .inner {
   position: relative;
