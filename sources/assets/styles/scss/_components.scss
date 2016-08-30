@@ -432,6 +432,7 @@
 			em { line-height: 1em; }
 		}
 
+		.update { font-size: 15px; font-weight: 500; color: #BBB; }
 		.status { display: none; position: absolute; top: 0px; right: 5px; font-size: 15px; font-weight: 500;
 			&:before { content: ''; display: inline-block; margin: -2px 5px 0 0; height: 10px; width: 10px; vertical-align: middle; border-radius: 10px; }
 
@@ -875,7 +876,7 @@ input[type=submit].btn-normal,
 		.group-title { float: left; padding-left: 15px; font-size: 20px; font-weight: 500; color: #000; line-height: 60px; }
 
 		.content { float: right; line-height: 68px;
-			.status { display: inline-block; width: 150px; font-size: 16px; font-weight: 700;
+			.status { display: inline-block; font-family: $font-base-stack;  width: 150px; font-size: 16px; font-weight: 500;
 				&.activate { color: #67A81F; }
 				&.invited { color: #4A90E2; }
 				&.subscribed { color: #F5A623; }

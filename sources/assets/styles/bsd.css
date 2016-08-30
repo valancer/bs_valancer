@@ -3187,6 +3187,10 @@ article.contents .submit-btns {
       line-height: 1em; }
       .box-item.dashboard .unit em {
         line-height: 1em; }
+    .box-item.dashboard .update {
+      font-size: 15px;
+      font-weight: 500;
+      color: #BBB; }
     .box-item.dashboard .status {
       display: none;
       position: absolute;
@@ -4198,9 +4202,10 @@ input[type=submit].btn-normal,
       line-height: 68px; }
       .list-single-check > li .content .status {
         display: inline-block;
+        font-family: "Noyh", "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
         width: 150px;
         font-size: 16px;
-        font-weight: 700; }
+        font-weight: 500; }
         .list-single-check > li .content .status.activate {
           color: #67A81F; }
         .list-single-check > li .content .status.invited {
@@ -5801,7 +5806,7 @@ body.metering.dashboard .summary {
   box-sizing: border-box;
   padding: 50px 0 0 0;
   height: 580px;
-  background: url("/assets/images/bg_metering_dashboard.png") center top no-repeat; }
+  background: url("/assets/images/bg_metering_dashboard.png") center top repeat-x; }
   body.metering.dashboard .summary .status {
     overflow: hidden; }
     body.metering.dashboard .summary .status > li {
