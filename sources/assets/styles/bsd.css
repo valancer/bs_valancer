@@ -2823,12 +2823,10 @@ article.contents .submit-btns {
           line-height: 60px;
           border: 0px;
           background-color: #fff; }
-      .accordion > dt.edit-mode .right {
-        padding-right: 62px; }
-        .accordion > dt.edit-mode .right .content {
-          padding-right: 0px; }
-          .accordion > dt.edit-mode .right .content .inline-block {
-            margin-right: 30px; }
+      .accordion > dt.edit-mode .right .content {
+        padding-right: 0px; }
+        .accordion > dt.edit-mode .right .content .inline-block {
+          margin-right: 30px; }
       .accordion > dt.edit-mode + dd {
         opacity: 1;
         max-height: 1000px;
@@ -2860,6 +2858,8 @@ article.contents .submit-btns {
     display: inline-block; }
   .metering .accordion > dt .right .content {
     font-size: 22px; }
+  .metering .accordion > dt.edit-mode .right {
+    padding-right: 62px; }
   .metering .accordion.combined > dt .right {
     padding-right: 20px; }
   .metering .accordion.combined > dt.is-opened {

@@ -226,7 +226,7 @@
 			.title { margin-left: 26px;
 				input[type=search] { cursor: text; height: 60px; width: 100%; font-size: 22px; font-weight: 500; color: #000; line-height: 60px; border: 0px; background-color: #fff; }
 			}
-			.right { padding-right: 62px;
+			.right {
 				.content { padding-right: 0px; 
 					.inline-block { margin-right: 30px; }
 				}
@@ -261,6 +261,10 @@
 		> dt {
 			.right {
 				.content { font-size: 22px; }
+			}
+
+			&.edit-mode {
+				.right { padding-right: 62px; }
 			}
 		}
 
