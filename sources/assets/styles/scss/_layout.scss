@@ -235,11 +235,11 @@
 
 /* CONTENTS */
 main { min-height: 600px;
-	&.scroll-left { min-height: 900px; height: 100%;
+	&.scroll-left { height: auto;
 		article.contents { min-height: 100%; height: 100%;
 			.contents-inner { min-height: 100%; height: 100%; }
 
-			.column-left { height: 100%; }
+			.column-left { position: absolute; top: 0; bottom: 0; left: 30px; }
 			.column-right { padding-top: 0px;
 				.filter-container { margin-bottom: 15px; }
 			}
@@ -259,9 +259,9 @@ article.contents {
 	.column-left { float: left; box-sizing: border-box; position: relative; padding-top: 35px; padding-bottom: 30px; width: $column-left-width;
 		.btn-normal { width: 100%; }
 
-		.scroll { overflow: auto; position: absolute; top: 82px; right: -10px; bottom: 135px; left: 10px; padding: 0 10px 0 0; }
+		.scroll { overflow: auto; position: absolute; top: 82px; right: 0px; bottom: 0px; left: 10px; padding: 0; }
 		
-		.its { position: absolute; top: 20px; right: -50px; left: 0; padding: 0 30px 0 10px; height: 47px; vertical-align: middle; line-height: 47px; background-color: #e7e7e7;
+		.its { position: absolute; top: 20px; right: -50px; left: 0; padding: 0 50px 0 10px; height: 47px; vertical-align: middle; line-height: 47px; background-color: #e7e7e7;
 			.btn-normal { width: 100%;  }
 		}
 	}
@@ -272,10 +272,29 @@ article.contents {
 	// protal
 	.portal & {
 		h1.title { background-color: #f6f6f6;
-			.inner { @include inner(); padding-top: 19px; height: 135px; font-size: 36px; font-weight: 500; }
-			.last-logged { display: block; position: absolute; bottom: 0; right: $column-padding; font-size: 16px; font-weight: 500; color: #999; }
+			.inner { @include inner(); padding-top: 0px; height: 100px; font-size: 36px; font-weight: 500; line-height: 100px; vertical-align: middle; }
 
-			.right { position: absolute; top: 30px; right: 30px; }
+			.service { display: block; position: relative; font-size: 36px; line-height: 100px; 
+				&:before { display: inline-block; margin: -2px 18px 0 0; height: 54px; width: 54px; font-size: 29px; color: #000; vertical-align: middle; line-height: 54px; text-align: center; border: 3px solid; background-color: #fff; }
+
+				// asset
+				&.asset { 
+					@include icon(asset); 
+				}
+				// metering
+				&.metering {
+					@include icon(metering);
+					&:before { font-size: 37px;	 }
+				}
+				// monitoring
+				&.monitoring {
+					@include icon(monitoring);
+					&:before { font-size: 42px;	 }
+				}
+			}
+
+			.last-logged { display: block; position: absolute; bottom: 0; right: $column-padding; font-size: 16px; font-weight: 500; color: #999; }
+			.right { position: absolute; top: 26px; right: 30px; }
 		}
 	}
 
