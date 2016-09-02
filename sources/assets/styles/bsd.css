@@ -2236,21 +2236,15 @@ corresponds to the arrow we want to display */
 /* CONTENTS */
 main {
   min-height: 600px; }
-  main.scroll-left {
-    height: auto; }
-    main.scroll-left article.contents {
-      min-height: 100%; }
-      main.scroll-left article.contents .contents-inner {
-        min-height: 100%; }
-      main.scroll-left article.contents .column-left {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 30px; }
-      main.scroll-left article.contents .column-right {
-        padding-top: 0px; }
-        main.scroll-left article.contents .column-right .filter-container {
-          margin-bottom: 15px; }
+  main.scroll-left article.contents .column-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px; }
+  main.scroll-left article.contents .column-right {
+    padding-top: 0px; }
+    main.scroll-left article.contents .column-right .filter-container {
+      margin-bottom: 15px; }
 
 article.contents .contents-inner {
   overflow: hidden;
