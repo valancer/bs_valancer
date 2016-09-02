@@ -16,7 +16,7 @@ body.portal {
 
 
 	&.dashboard {
-		.list-column-03 { margin: 30px -15px 0 -15px; padding: 15px 0 0 0;
+		.list-column-03 { margin: 30px -15px 100px -15px; padding: 15px 0 0 0;
 			> li { padding-bottom: 0;
 				&:nth-child(3n+1) { clear: both; }
 			}
@@ -116,7 +116,7 @@ body.portal {
 
 				.box { overflow: hidden; position: relative; margin-top: 30px; padding: 25px; height: 185px; border-top: 4px solid #000; background-color: #fff;
 					.desc { box-sizing: border-box; float: left; padding-right: 100px; height: 100%; width: 36.082474226804%; font-size: 20px; color: #4A4A4A; }
-					.btn-try { display: block; position: absolute; bottom: 25px; padding: 0 16px; width: 80px; font-size: 18px; font-weight: 400; color: #1D1D1D; text-align: center; line-height: 30px; border: 1px solid #000;
+					.btn-try { display: block; position: absolute; bottom: 25px; padding: 0 16px; width: 120px; font-size: 18px; font-weight: 400; color: #1D1D1D; text-align: center; line-height: 30px; border: 1px solid #000;
 						&:hover { color: #fff; color: #000; }
 					}
 
