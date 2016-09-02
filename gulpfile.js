@@ -1,6 +1,7 @@
 'use strict';
 
 var	gulp = require('gulp'),
+	fs = require('fs'),
 	clean = require('gulp-clean'),
 	fileinclude = require('gulp-file-include'),
 	sass = require('gulp-sass'),
@@ -19,7 +20,8 @@ var	gulp = require('gulp'),
 	livereload = require('gulp-livereload'),
 	watch = require('gulp-watch'),
 	notify = require('gulp-notify'),
-	runSequence = require('run-sequence');
+	runSequence = require('run-sequence'),
+	awspublish = require('gulp-awspublish');
 
 var paths = {
 	sources: 'sources/**',
@@ -316,6 +318,20 @@ gulp.task('connect', function () {
 });
 
 
+/* publish s3 */
+gulp.task('publish', function () {
+	var credentials = JSON.parse(fs.readFileSync('aws-credentials.json', 'utf8'));
+	var publisher = awspublish.create(credentials);
+	var headers = { 'Cache-Control': 'max-age=315360000, no-transform, public' };
+
+	return gulp.src('release/**')
+		.pipe(publisher.publish(headers))
+		// .pipe(publisher.cache())
+		.pipe(awspublish.reporter());
+});
+
+
+
 gulp.task('sass-build', ['iconfont', 'sprites:common', 'sprites:portal', 'sprites:asset', 'sprites:metering', 'sass'], function() { });
 gulp.task('sass-release', ['iconfont', 'sprites:common', 'sprites:portal', 'sprites:asset', 'sprites:metering', 'sass'], function() { });
 gulp.task('scripts-build', ['jshint'], function() { });
@@ -325,14 +341,6 @@ gulp.task('build', ['clean:build'], function() {
 	gulp.run(['sass-build', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets', 'connect', 'watch']);
 });
 
-gulp.task('release', function(callback) {
-	runSequence('clean:release', ['sass-release', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets'], ['csscomb', 'copy:release'], callback);
+gulp.task('release', ['clean:build'], function(callback) {
+	runSequence('clean:release', ['sass-release', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets'], ['csscomb', 'copy:release'], ['publish'], callback);
 });
-/*
-gulp.task('release', ['clean:release'], function() {
-	gulp.run(['sass-release', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets', 'csscomb', 'copy:release']);
-});
-gulp.task('release-after', [], function() {
-	gulp.run(['csscomb', 'copy:release']);
-});
-*/
