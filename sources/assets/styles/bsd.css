@@ -1962,8 +1962,6 @@ corresponds to the arrow we want to display */
           background-color: #dedede; }
       .sub-menus .list-menus > li.is-selected button, .sub-menus .list-menus > li.is-selected a {
         color: #000; }
-      .sub-menus .list-menus > li.is-selected .list-sub-menus {
-        display: block; }
       .sub-menus .list-menus > li:hover .list-sub-menus {
         display: block; }
       .sub-menus .list-menus > li .list-sub-menus {
@@ -5349,8 +5347,7 @@ body.asset .chart-container {
   padding: 0 0 20px 0; }
 
 body.asset.dashboard .section-box {
-  padding-top: 23px;
-  border-bottom: 2px solid #E7E7E7; }
+  padding-top: 23px; }
   body.asset.dashboard .section-box .section-title {
     padding: 0 30px;
     font-size: 18px;

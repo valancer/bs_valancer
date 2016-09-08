@@ -342,5 +342,5 @@ gulp.task('build', ['clean:build'], function() {
 });
 
 gulp.task('release', ['clean:build'], function(callback) {
-	runSequence('clean:release', ['sass-release', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets'], ['csscomb', 'copy:release'], ['publish'], callback);
+	runSequence('clean:release', ['sass-release', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets'], ['csscomb', 'copy:release'], callback);
 });

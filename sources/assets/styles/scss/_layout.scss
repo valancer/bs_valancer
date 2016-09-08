@@ -102,7 +102,7 @@
 
 			&.is-selected {
 				button, a { color: #000; }
-				.list-sub-menus { display: block; }
+				.list-sub-menus { }
 			}
 			&:hover {
 				.list-sub-menus { display: block; }
