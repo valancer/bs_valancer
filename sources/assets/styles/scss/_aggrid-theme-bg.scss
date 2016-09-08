@@ -1,9 +1,9 @@
 /**
 	agGrid util
 **/
-.aggrid-uitls { clear: both; padding: 8px 30px; background-color: #fff;
+.aggrid-uitls { clear: both; padding: 8px 0px; background-color: #fff;
 	.right-content { float: right;
-		.btn-text { margin-left: 26px; }
+		.btn-text { margin-left: 26px; font-family: $font-base-ko-stack; }
 	}
 
 	.left-content { float: left;
@@ -15,6 +15,16 @@
 		&:before { display: inline-block; margin-right: 8px; color: #999; line-height: 20px; vertical-align: middle; }
 
 		input[type=text] { height: 20px; width: 30%; font-size: 15px; font-weight: 500; color: #000; border: 0px; line-height: 20px; }
+	}
+
+	.paging-status { font-family: $font-base-ko-stack; font-size: 14px; font-weight: bold;
+		.total { }
+		.current { }
+		.count { font-weight: normal;
+			&:before { content: ''; display: inline-block; margin: -2px 10px 0 10px; height: 10px; width: 1px; vertical-align: middle; background-color: #A1A1A1; }
+		}
+
+		select { display: inline-block; margin-top: -2px; padding: 0 27px 0 12px; height: 24px; font-family: $font-base-ko-stack; font-size: 14px; font-weight: bold; color: #000; line-height: 24px; vertical-align: middle; border: 0px; border-radius: 0; background: #E7E7E7 url('/assets/images/select_arrow02.png') center right no-repeat; }
 	}
 }
 
@@ -37,8 +47,25 @@
 	}
 }
 
-.grid-bottom { padding: 20px 0; text-align: center;
+.grid-bottom { padding: 20px 0 50px 0; text-align: center;
 	.btn-more { font-size: 15px; font-weight: 700; color: #000; line-height: 30px; }
+
+	a { display: inline-block; height: 30px; width: 30px; font-size: 16px; font-weight: 400; color: #000; line-height: 30px; vertical-align: middle; text-align: center; border-radius: 30px;
+		&:hover { background-color: #ddd; }
+		&.is-selected { color: #fff; background-color: #000; }
+
+		&.btn-first,
+		&.btn-prev,
+		&.btn-next,
+		&.btn-last { text-indent: -9999px;
+			&:hover { color: #000; background-color: #fff; }
+		}
+
+		&.btn-first { @include retina-sprite($sc-btn-first-group); }
+		&.btn-prev { margin-right: 20px; @include retina-sprite($sc-btn-prev-group); }
+		&.btn-next { margin-left: 20px; @include retina-sprite($sc-btn-next-group); }
+		&.btn-last { @include retina-sprite($sc-btn-last-group); }
+	}
 }
 
 // popover

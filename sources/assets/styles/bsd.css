@@ -747,12 +747,13 @@ The `sprites` mixin generates identical output to the CSS template
 **/
 .aggrid-uitls {
   clear: both;
-  padding: 8px 30px;
+  padding: 8px 0px;
   background-color: #fff; }
   .aggrid-uitls .right-content {
     float: right; }
     .aggrid-uitls .right-content .btn-text {
-      margin-left: 26px; }
+      margin-left: 26px;
+      font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif; }
   .aggrid-uitls .left-content {
     float: left; }
     .aggrid-uitls .left-content .icheck {
@@ -775,6 +776,34 @@ The `sprites` mixin generates identical output to the CSS template
       color: #000;
       border: 0px;
       line-height: 20px; }
+  .aggrid-uitls .paging-status {
+    font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+    font-size: 14px;
+    font-weight: bold; }
+    .aggrid-uitls .paging-status .count {
+      font-weight: normal; }
+      .aggrid-uitls .paging-status .count:before {
+        content: '';
+        display: inline-block;
+        margin: -2px 10px 0 10px;
+        height: 10px;
+        width: 1px;
+        vertical-align: middle;
+        background-color: #A1A1A1; }
+    .aggrid-uitls .paging-status select {
+      display: inline-block;
+      margin-top: -2px;
+      padding: 0 27px 0 12px;
+      height: 24px;
+      font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: #000;
+      line-height: 24px;
+      vertical-align: middle;
+      border: 0px;
+      border-radius: 0;
+      background: #E7E7E7 url("/assets/images/select_arrow02.png") center right no-repeat; }
 
 .grid-detail {
   display: block;
@@ -821,13 +850,72 @@ The `sprites` mixin generates identical output to the CSS template
     transition: right 0.5s; }
 
 .grid-bottom {
-  padding: 20px 0;
+  padding: 20px 0 50px 0;
   text-align: center; }
   .grid-bottom .btn-more {
     font-size: 15px;
     font-weight: 700;
     color: #000;
     line-height: 30px; }
+  .grid-bottom a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 30px; }
+    .grid-bottom a:hover {
+      background-color: #ddd; }
+    .grid-bottom a.is-selected {
+      color: #fff;
+      background-color: #000; }
+    .grid-bottom a.btn-first, .grid-bottom a.btn-prev, .grid-bottom a.btn-next, .grid-bottom a.btn-last {
+      text-indent: -9999px; }
+      .grid-bottom a.btn-first:hover, .grid-bottom a.btn-prev:hover, .grid-bottom a.btn-next:hover, .grid-bottom a.btn-last:hover {
+        color: #000;
+        background-color: #fff; }
+    .grid-bottom a.btn-first {
+      background-image: url(../images/sprites.png);
+      background-position: -394px -63px;
+      width: 30px;
+      height: 30px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .grid-bottom a.btn-first {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 443px 458px; } }
+    .grid-bottom a.btn-prev {
+      margin-right: 20px;
+      background-image: url(../images/sprites.png);
+      background-position: -349px -108px;
+      width: 30px;
+      height: 30px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .grid-bottom a.btn-prev {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 443px 458px; } }
+    .grid-bottom a.btn-next {
+      margin-left: 20px;
+      background-image: url(../images/sprites.png);
+      background-position: -358px -63px;
+      width: 30px;
+      height: 30px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .grid-bottom a.btn-next {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 443px 458px; } }
+    .grid-bottom a.btn-last {
+      background-image: url(../images/sprites.png);
+      background-position: -313px -108px;
+      width: 30px;
+      height: 30px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .grid-bottom a.btn-last {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 443px 458px; } }
 
 .popover.export ul {
   display: block;
@@ -919,7 +1007,7 @@ The `sprites` mixin generates identical output to the CSS template
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -403px -166px;
+      background-position: -313px -225px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -928,7 +1016,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 443px 458px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -357px -166px;
+      background-position: -401px -203px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -937,7 +1025,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 443px 458px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -380px -166px;
+      background-position: -424px -203px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2107,7 +2195,7 @@ corresponds to the arrow we want to display */
       .side-menus li > button.vendor.total > span:before, .side-menus li a.vendor.total > span:before {
         margin-top: -8px;
         background-image: url(../images/sprites.png);
-        background-position: -358px -18px;
+        background-position: -313px -63px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2116,7 +2204,7 @@ corresponds to the arrow we want to display */
             background-size: 443px 458px; } }
       .side-menus li > button.vendor.aws > span:before, .side-menus li a.vendor.aws > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -403px -18px;
+        background-position: -358px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2134,7 +2222,7 @@ corresponds to the arrow we want to display */
             background-size: 443px 458px; } }
       .side-menus li > button.vendor.aliyun > span:before, .side-menus li a.vendor.aliyun > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -313px -63px;
+        background-position: -403px -18px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2764,7 +2852,7 @@ article.contents .submit-btns {
       vertical-align: middle;
       text-indent: -9999px;
       background-image: url(../images/sprites.png);
-      background-position: -313px -108px;
+      background-position: -385px -108px;
       width: 28px;
       height: 29px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2817,7 +2905,7 @@ article.contents .submit-btns {
       background-color: #F6F6F6; }
       .accordion > dt:hover .btn-delete {
         background-image: url(../images/sprites.png);
-        background-position: -347px -108px;
+        background-position: -381px -144px;
         width: 28px;
         height: 29px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3040,7 +3128,7 @@ article.contents .submit-btns {
       margin: -2px 10px 0 0px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -392px -63px;
+      background-position: -313px -144px;
       width: 28px;
       height: 29px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3051,7 +3139,7 @@ article.contents .submit-btns {
       color: #000; }
       .accordion-bottom .btn-add:hover:before {
         background-image: url(../images/sprites.png);
-        background-position: -358px -63px;
+        background-position: -347px -144px;
         width: 28px;
         height: 29px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3400,7 +3488,7 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -313px -166px;
+  background-position: -313px -203px;
   width: 16px;
   height: 16px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3409,7 +3497,7 @@ article.contents .submit-btns {
       background-size: 443px 458px; } }
   .icheckbox.disabled {
     background-image: url(../images/sprites.png);
-    background-position: -404px -143px;
+    background-position: -379px -203px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3418,7 +3506,7 @@ article.contents .submit-btns {
         background-size: 443px 458px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -426px -143px;
+    background-position: -406px -179px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3427,7 +3515,7 @@ article.contents .submit-btns {
         background-size: 443px 458px; } }
     .icheckbox.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -382px -143px;
+      background-position: -357px -203px;
       width: 16px;
       height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3436,7 +3524,7 @@ article.contents .submit-btns {
           background-size: 443px 458px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -335px -166px;
+    background-position: -335px -203px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3450,7 +3538,7 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -359px -143px;
+  background-position: -383px -179px;
   width: 17px;
   height: 17px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3459,7 +3547,7 @@ article.contents .submit-btns {
       background-size: 443px 458px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -313px -143px;
+    background-position: -337px -179px;
     width: 17px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3468,7 +3556,7 @@ article.contents .submit-btns {
         background-size: 443px 458px; } }
     .iradio.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -336px -143px;
+      background-position: -360px -179px;
       width: 17px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3503,7 +3591,7 @@ article.contents .submit-btns {
     vertical-align: middle; }
   .all-checked[value="0"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -313px -166px;
+    background-position: -313px -203px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3512,7 +3600,7 @@ article.contents .submit-btns {
         background-size: 443px 458px; } }
   .all-checked[value="1"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -426px -143px;
+    background-position: -406px -179px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3521,7 +3609,7 @@ article.contents .submit-btns {
         background-size: 443px 458px; } }
   .all-checked[value="2"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -335px -166px;
+    background-position: -335px -203px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3683,7 +3771,7 @@ input[type=submit].btn-normal,
   position: relative;
   text-indent: -9999px;
   background-image: url(../images/sprites.png);
-  background-position: -426px -63px;
+  background-position: -415px -144px;
   width: 17px;
   height: 21px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3692,7 +3780,7 @@ input[type=submit].btn-normal,
       background-size: 443px 458px; } }
   .btn-bookmark.is-selected, .btn-bookmark:hover {
     background-image: url(../images/sprites.png);
-    background-position: -381px -108px;
+    background-position: -419px -108px;
     width: 17px;
     height: 21px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -5072,7 +5160,7 @@ body.portal {
         left: 0;
         padding: 0;
         background-image: url(../images/sprites.png);
-        background-position: -428px -108px;
+        background-position: -430px -63px;
         width: 8px;
         height: 8px;
         height: 15px;
