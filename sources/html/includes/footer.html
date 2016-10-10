@@ -1,114 +1,88 @@
 <footer class="footer">
-
 	<div class="contents-inner">
+		<div class="service">
+			<h2 class="title">BESPIN GLOBAL SERVICE PLATFORM</h2>
 
-		<div class="box" style=" width: 280px;">
-			<h2>BESPIN GLOBAL SERVICE PLATFORM</h2>
-
-			<ul>
-				<li><a href="#">Asset Management</a></li>
-				<li><a href="#">Metering</a></li>
-				<li><a href="#">Monitoring Dashboard</a></li>
+			<ul class="list-shortcut">
+				<li><a href="#">ASSET MANAGEMENT</a></li>
+				<li><a href="#">METERING</a></li>
+				<li><a href="#">MONITORING DASHBOARD</a></li>
+				<li><a href="#">WORKFLOW SERVICE</a></li>
 			</ul>
 		</div>
 
-		<div class="box" style=" width: 140px;">
-			<h2>POLICY</h2>
-
-			<ul>
-				<li><a href="https://docs.google.com/gview?embedded=true&url=http://bgd.valancer.com/BespinGlobalServicePlatformTermsofService.pdf">Service Agreement</a></li>
-				<li><a href="#">Privacy Statement</a></li>
-			</ul>
-		</div>
-		
-		<div class="box" style="width: 250px;">
-			<h2>KOREA HQ</h2>
-
-			<p>
-				36, Jangmi-ro, Bundang-gu, Seongnam-si, Gyeonggi-do,<br>Korea, 13496
-			</p>
-		</div>
-
-		
-		<div class="box" style=" width: 250px;">
-			<h2>CHINA HQ</h2>
-
-			<p>
-				5-R40,T3A Building,Wangjing SOHO, Chaoyang District,<br>Beijing City
-			</p>
-		</div>
-
-
-		<div class="copyright">
-			<a href="#contact-us" class="btn-customer">Test Support</a><br>
-
-			1600-0511<br>
-			<small>
-				Business Registration Number 638-87-00223
-				<a href="mailto:Info@bespinglobal.com" class="btn-contactus">Info@bespinglobal.com</a><br>Copyright © 2016 BESPIN GLOBAL All Rights Reserved
-			</small>
-		</div>
-
-
-		<!-- contact us -->
-		<aside id="contact-us" class="modal-popup mfp-hide">
-			<button type="button" class="btn-close mfp-close">popup close</button>
-
-			<h2 class="title">Technical Support</h2>
-			<p class="desc">
-				Please fill up your contact information below for tech-support and consulting reservation. 
+		<div class="utils">
+			<p class="policy">
+				<a href="#">서비스정책</a>
+				<a href="#">개인정보취급방침</a>				
 			</p>
 
-			<div class="content">
-
-				<div class="box-item">
-					<h2 class="title">BESPIN GLOBAL KOREA</h2>
-
-					<fieldset class="forms">
-						<legend>BESPIN GLOBAL KOREA</legend>
-
-						<p class="contactus phone">1600-0511</p>
-						<p class="contactus email">info@bespinglobal.com</p>
-					</fieldset>
-				</div>
-
-				<div class="box-item">
-					<h2 class="title">CONTACT INFO</h2>
-
-					<fieldset class="forms">
-						<legend>CONTACT INFO</legend>
-
-						<p>
-							<input type="text" id="" name="" placeholder="Name">
-						</p>
-						<p>
-							<input type="text" id="" name="" placeholder="Email address">
-						</p>
-						<p>
-							<input type="text" id="" name="" placeholder="Subject">
-						</p>
-						<p>
-							<textarea name="" id="" cols="50" rows="10" placeholder="Description"></textarea>
-						</p>
-					</fieldset>
-				</div>
-
-			</div>
-
-			<div class="bottom">
-				<button type="button" class="btn-normal large">SEND REQUEST</button>
-			</div>
-
-		</aside>
-		<!--// contact us -->
-
-		<script>
-		$(document).ready(function(e) {	
-			$('.btn-customer').magnificPopup({
-				closeOnBgClick: true
-			});
-		});
-		</script>
-
+			<p class="cs">
+				<a href="#contact-us" class="btn-tech">기술지원 및 문의</a><br>
+				<span>TEL : 1600-0511</span><br>
+				<span>MAIL : <a href="mailto:info@bespinglobal.com" class="info">info@bespinglobal.com</a></span>
+			</p>
+			<small class="copyright">Copyright © 2016 BESPIN GLOBAL All Rights Reserved</small>
+		</div>
 	</div>
 </footer>
+
+
+<!-- contact us -->
+<aside id="contact-us" class="modal-popup mfp-hide">
+	<button type="button" class="btn-close mfp-close">popup close</button>
+
+	<h2 class="title">Technical Support</h2>
+	<p class="desc">
+		Please fill up your contact information below for tech-support and consulting reservation. 
+	</p>
+
+	<div class="content">
+
+		<div class="box-item">
+			<h2 class="title">BESPIN GLOBAL KOREA</h2>
+
+			<fieldset class="forms">
+				<legend>BESPIN GLOBAL KOREA</legend>
+
+				<p class="contactus phone">1600-0511</p>
+				<p class="contactus email">info@bespinglobal.com</p>
+			</fieldset>
+		</div>
+
+		<div class="box-item">
+			<h2 class="title">CONTACT INFO</h2>
+
+			<fieldset class="forms">
+				<legend>CONTACT INFO</legend>
+
+				<p>
+					<input type="text" id="" name="" placeholder="Name">
+				</p>
+				<p>
+					<input type="text" id="" name="" placeholder="Email address">
+				</p>
+				<p>
+					<input type="text" id="" name="" placeholder="Subject">
+				</p>
+				<p>
+					<textarea name="" id="" cols="50" rows="10" placeholder="Description"></textarea>
+				</p>
+			</fieldset>
+		</div>
+
+	</div>
+
+	<div class="bottom">
+		<button type="button" class="btn-normal large">SEND REQUEST</button>
+	</div>
+</aside>
+<!--// contact us -->
+
+<script>
+$(document).ready(function(e) {	
+	$('.btn-tech').magnificPopup({
+		closeOnBgClick: true
+	});
+});
+</script>

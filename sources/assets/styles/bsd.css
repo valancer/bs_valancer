@@ -890,42 +890,42 @@ The `sprites` mixin generates identical output to the CSS template
         background-color: #fff; }
     .grid-bottom a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -598px -283px;
+      background-position: -513px -352px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-first {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
     .grid-bottom a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -562px -283px;
+      background-position: -549px -352px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-prev {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
     .grid-bottom a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -728px -139px;
+      background-position: -302px -426px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-next {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
     .grid-bottom a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -526px -283px;
+      background-position: -477px -352px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-last {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
 
 .popover.export ul {
   display: block;
@@ -1017,31 +1017,31 @@ The `sprites` mixin generates identical output to the CSS template
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -715px -206px;
+      background-position: -438px -408px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -692px -206px;
+      background-position: -585px -322px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -669px -206px;
+      background-position: -589px -275px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
   .ag-bespin-global .ag-no-scrolls .ag-header-container {
     background: linear-gradient(#fff, #d3d3d3);
     border-bottom: 1px solid #808080; }
@@ -1801,24 +1801,24 @@ corresponds to the arrow we want to display */
       text-indent: -9999px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -669px -183px;
+      background-position: -515px -292px;
       width: 78px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .title .btn-home {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
   .global-menu-new.logout .title .btn-home {
     display: inline-block;
     margin-top: 22px;
     background-image: url(../images/sprites.png);
-    background-position: -467px 0px;
+    background-position: 0px -464px;
     width: 306px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .global-menu-new.logout .title .btn-home {
         background-image: url(../images/sprites@2x.png);
-        background-size: 773px 458px; } }
+        background-size: 606px 481px; } }
   .global-menu-new .custom-select-container {
     display: inline-block;
     position: relative; }
@@ -1827,49 +1827,49 @@ corresponds to the arrow we want to display */
       text-indent: -9999px; }
       .global-menu-new .custom-select-container .txt.my-dashboard {
         background-image: url(../images/sprites.png);
-        background-position: -514px -109px;
+        background-position: -302px -292px;
         width: 207px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.my-dashboard {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
       .global-menu-new .custom-select-container .txt.asset-management {
         background-image: url(../images/sprites.png);
-        background-position: -157px -146px;
+        background-position: -302px -116px;
         width: 266px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.asset-management {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
       .global-menu-new .custom-select-container .txt.metering {
         background-image: url(../images/sprites.png);
-        background-position: -467px -253px;
+        background-position: -359px -322px;
         width: 142px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.metering {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
       .global-menu-new .custom-select-container .txt.monitoring {
         background-image: url(../images/sprites.png);
-        background-position: -157px 0px;
+        background-position: -302px 0px;
         width: 304px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.monitoring {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
       .global-menu-new .custom-select-container .txt.workflow {
         background-image: url(../images/sprites.png);
-        background-position: -157px -176px;
+        background-position: -302px -176px;
         width: 264px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.workflow {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
     .global-menu-new .custom-select-container.small {
       vertical-align: middle; }
       .global-menu-new .custom-select-container.small .btn-custom-select {
@@ -2304,40 +2304,40 @@ corresponds to the arrow we want to display */
       .side-menus li > button.vendor.total > span:before, .side-menus li a.vendor.total > span:before {
         margin-top: -8px;
         background-image: url(../images/sprites.png);
-        background-position: -467px -327px;
+        background-position: -191px -58px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li > button.vendor.total > span:before, .side-menus li a.vendor.total > span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
       .side-menus li > button.vendor.aws > span:before, .side-menus li a.vendor.aws > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -557px -327px;
+        background-position: -236px -58px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li > button.vendor.aws > span:before, .side-menus li a.vendor.aws > span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
       .side-menus li > button.vendor.azure > span:before, .side-menus li a.vendor.azure > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -512px -327px;
+        background-position: -236px -103px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li > button.vendor.azure > span:before, .side-menus li a.vendor.azure > span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
       .side-menus li > button.vendor.aliyun > span:before, .side-menus li a.vendor.aliyun > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -602px -327px;
+        background-position: -191px -103px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li > button.vendor.aliyun > span:before, .side-menus li a.vendor.aliyun > span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
   .side-menus.is-editable > button:hover .btn-edit, .side-menus.is-editable a:hover .btn-edit {
     display: inline-block; }
   .side-menus.is-editable > button .btn-edit.is-selected, .side-menus.is-editable a .btn-edit.is-selected {
@@ -2351,8 +2351,7 @@ corresponds to the arrow we want to display */
 /* FOOTER */
 .footer {
   overflow: hidden;
-  height: 400px;
-  text-align: center;
+  height: 320px;
   background-color: #000; }
   .footer .contents-inner {
     overflow: hidden;
@@ -2362,70 +2361,78 @@ corresponds to the arrow we want to display */
     padding: 0;
     min-height: 100%;
     width: 1200px;
-    padding-top: 40px; }
+    color: #fff; }
     .footer .contents-inner:before {
       content: '';
-      display: inline-block;
-      margin-top: -5px;
-      margin-right: 25px;
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 0;
       background-image: url(../images/sprites.png);
-      background-position: -467px -109px;
-      width: 41px;
-      height: 138px; }
+      background-position: -157px -58px;
+      width: 28px;
+      height: 101px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .footer .contents-inner:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
-  .footer .box {
-    display: inline-block;
-    margin: 0 17px;
-    height: 200px;
-    width: auto;
-    font-size: 14px;
-    color: #CDCDCD;
-    text-align: left;
-    vertical-align: top; }
-    .footer .box h2 {
-      margin-bottom: 20px;
-      font-size: 14px;
-      font-weight: 700; }
-    .footer .box button, .footer .box a {
-      font-size: 14px;
-      font-weight: 500;
-      color: rgba(186, 186, 186, 0.73);
-      line-height: 30px; }
-      .footer .box button:hover, .footer .box a:hover {
-        color: #fff; }
-    .footer .box p {
-      font-size: 14px;
-      font-weight: 500;
-      color: rgba(186, 186, 186, 0.73);
-      line-height: 30px; }
-  .footer .copyright {
-    clear: both;
-    font-size: 14px;
-    font-weight: 700;
-    color: #999; }
-    .footer .copyright .btn-customer {
-      display: inline-block;
-      margin-bottom: 15px;
-      width: 170px;
-      font-size: 14px;
-      font-weight: 400;
-      color: #fff;
-      line-height: 37px;
-      line-height: 37px;
-      border: 1px solid #fff; }
-    .footer .copyright small {
-      display: inline-block;
-      margin-top: 10px;
-      font-size: 14px;
-      font-weight: 400;
-      color: #4E4E4E; }
-    .footer .copyright .btn-contactus {
-      display: inline-block;
-      margin: 0 0 0 15px;
-      color: #4E4E4E; }
+          background-size: 606px 481px; } }
+    .footer .contents-inner:after {
+      content: '';
+      clear: both; }
+  .footer .service {
+    float: left;
+    margin-top: 100px;
+    padding-left: 70px;
+    width: 30%; }
+    .footer .service .title {
+      display: block;
+      text-indent: -9999px;
+      background-image: url(../images/sprites.png);
+      background-position: -52px 0px;
+      width: 244px;
+      height: 52px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .footer .service .title {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 606px 481px; } }
+    .footer .service .list-shortcut {
+      margin-top: 15px; }
+      .footer .service .list-shortcut a {
+        font-family: "Montserrat", "Apple SD Gothic", sans-serif;
+        font-size: 0.750rem;
+        font-weight: 700;
+        color: #fff;
+        line-height: 2.083em; }
+  .footer .utils {
+    display: block;
+    float: right;
+    font-size: 0.750rem;
+    color: #6F6F6F;
+    text-align: right; }
+    .footer .utils .policy {
+      margin-top: 100px; }
+      .footer .utils .policy a {
+        font-weight: 700;
+        color: #fff;
+        opacity: 0.73; }
+        .footer .utils .policy a + a:before {
+          content: '|';
+          display: inline-block;
+          margin: -4px 6px 0 4px;
+          vertical-align: middle; }
+    .footer .utils .cs {
+      margin-top: 30px;
+      line-height: 1.667em; }
+      .footer .utils .cs .btn-tech {
+        display: inline-block;
+        margin-bottom: 5px;
+        color: #fff;
+        opacity: 0.73; }
+      .footer .utils .cs .info {
+        color: #6F6F6F; }
+    .footer .utils .copyright {
+      display: block;
+      margin-top: 43px; }
 
 /* CONTENTS */
 main {
@@ -2987,13 +2994,13 @@ article.contents {
       vertical-align: middle;
       text-indent: -9999px;
       background-image: url(../images/sprites.png);
-      background-position: -702px -283px;
+      background-position: -440px -426px;
       width: 28px;
       height: 29px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .accordion > dt .btn-delete {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
     .accordion > dt .title {
       display: inline-block;
       width: 45%;
@@ -3040,13 +3047,13 @@ article.contents {
       background-color: #F6F6F6; }
       .accordion > dt:hover .btn-delete {
         background-image: url(../images/sprites.png);
-        background-position: -736px -283px;
+        background-position: -406px -426px;
         width: 28px;
         height: 29px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .accordion > dt:hover .btn-delete {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
     .accordion > dt.is-opened {
       background-color: #F6F6F6; }
       .accordion > dt.is-opened .btn-folding:after {
@@ -3263,24 +3270,24 @@ article.contents {
       margin: -2px 10px 0 0px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -668px -283px;
+      background-position: -372px -426px;
       width: 28px;
       height: 29px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .accordion-bottom .btn-add:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
     .accordion-bottom .btn-add:hover {
       color: #000; }
       .accordion-bottom .btn-add:hover:before {
         background-image: url(../images/sprites.png);
-        background-position: -634px -283px;
+        background-position: -338px -426px;
         width: 28px;
         height: 29px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .accordion-bottom .btn-add:hover:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
 
 /**
 	filter-util
@@ -3484,13 +3491,13 @@ article.contents {
         display: block;
         margin: -94px auto 22px;
         background-image: url(../images/sprites.png);
-        background-position: -81px 0px;
+        background-position: -81px -58px;
         width: 70px;
         height: 120px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .box-item.dashboard .no-data:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
       .box-item.dashboard .no-data small {
         display: block;
         margin-top: 5px;
@@ -3623,49 +3630,49 @@ article.contents {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -715px -327px;
+  background-position: -518px -426px;
   width: 16px;
   height: 16px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icheckbox {
       background-image: url(../images/sprites@2x.png);
-      background-size: 773px 458px; } }
+      background-size: 606px 481px; } }
   .icheckbox.disabled {
     background-image: url(../images/sprites.png);
-    background-position: -737px -327px;
+    background-position: -474px -426px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.disabled {
         background-image: url(../images/sprites@2x.png);
-        background-size: 773px 458px; } }
+        background-size: 606px 481px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -647px -350px;
+    background-position: -540px -426px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 773px 458px; } }
+        background-size: 606px 481px; } }
     .icheckbox.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -669px -350px;
+      background-position: -496px -426px;
       width: 16px;
       height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .icheckbox.checked.disabled {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -693px -327px;
+    background-position: -585px -352px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.indeterminate {
         background-image: url(../images/sprites@2x.png);
-        background-size: 773px 458px; } }
+        background-size: 606px 481px; } }
 
 .iradio {
   display: block;
@@ -3673,31 +3680,31 @@ article.contents {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -670px -327px;
+  background-position: -589px -252px;
   width: 17px;
   height: 17px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .iradio {
       background-image: url(../images/sprites@2x.png);
-      background-size: 773px 458px; } }
+      background-size: 606px 481px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -753px -183px;
+    background-position: -589px -206px;
     width: 17px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .iradio.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 773px 458px; } }
+        background-size: 606px 481px; } }
     .iradio.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -647px -327px;
+      background-position: -589px -229px;
       width: 17px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .iradio.checked.disabled {
           background-image: url(../images/sprites@2x.png);
-          background-size: 773px 458px; } }
+          background-size: 606px 481px; } }
 
 .all-checked {
   display: block;
@@ -3726,31 +3733,31 @@ article.contents {
     vertical-align: middle; }
   .all-checked[value="0"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -715px -327px;
+    background-position: -518px -426px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="0"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 773px 458px; } }
+        background-size: 606px 481px; } }
   .all-checked[value="1"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -647px -350px;
+    background-position: -540px -426px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="1"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 773px 458px; } }
+        background-size: 606px 481px; } }
   .all-checked[value="2"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -693px -327px;
+    background-position: -585px -352px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="2"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 773px 458px; } }
+        background-size: 606px 481px; } }
   .all-checked .list-select-popup {
     display: block;
     position: absolute;
@@ -3906,22 +3913,22 @@ input[type=submit].btn-normal,
   position: relative;
   text-indent: -9999px;
   background-image: url(../images/sprites.png);
-  background-position: -615px -253px;
+  background-position: -574px -146px;
   width: 17px;
   height: 21px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .btn-bookmark {
       background-image: url(../images/sprites@2x.png);
-      background-size: 773px 458px; } }
+      background-size: 606px 481px; } }
   .btn-bookmark.is-selected, .btn-bookmark:hover {
     background-image: url(../images/sprites.png);
-    background-position: -755px -109px;
+    background-position: -572px -176px;
     width: 17px;
     height: 21px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .btn-bookmark.is-selected, .btn-bookmark:hover {
         background-image: url(../images/sprites@2x.png);
-        background-size: 773px 458px; } }
+        background-size: 606px 481px; } }
 
 .btn-close {
   display: block;
@@ -4492,13 +4499,13 @@ input[type=submit].btn-normal,
     top: 30px;
     left: 30px;
     background-image: url(../images/sprites.png);
-    background-position: -52px 0px;
+    background-position: -52px -58px;
     width: 23px;
     height: 376px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .login-container:before {
         background-image: url(../images/sprites@2x.png);
-        background-size: 773px 458px; } }
+        background-size: 606px 481px; } }
   .login-container .btn-back {
     position: absolute;
     top: -3px;
@@ -5294,7 +5301,7 @@ body.portal {
         left: 0;
         padding: 0;
         background-image: url(../images/sprites.png);
-        background-position: -764px -139px;
+        background-position: -597px -146px;
         width: 8px;
         height: 8px;
         height: 15px;
@@ -5302,7 +5309,7 @@ body.portal {
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           body.portal.home .list-detail > li:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 773px 458px; } }
+            background-size: 606px 481px; } }
   body.portal .solutions {
     position: relative;
     height: 600px;
@@ -5412,85 +5419,85 @@ body.portal {
                 height: 80px; }
               body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset01:before {
                 background-image: url(../images/sprites.png);
-                background-position: -256px -30px;
+                background-position: -401px -30px;
                 width: 80px;
                 height: 80px; }
                 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                   body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset01:before {
                     background-image: url(../images/sprites@2x.png);
-                    background-size: 773px 458px; } }
+                    background-size: 606px 481px; } }
               body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset02:before {
                 background-image: url(../images/sprites.png);
-                background-position: -157px -30px;
+                background-position: -302px -30px;
                 width: 93px;
                 height: 80px; }
                 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                   body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset02:before {
                     background-image: url(../images/sprites@2x.png);
-                    background-size: 773px 458px; } }
+                    background-size: 606px 481px; } }
               body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset03:before {
                 background-image: url(../images/sprites.png);
-                background-position: -549px -23px;
+                background-position: -302px -206px;
                 width: 73px;
                 height: 80px; }
                 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                   body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset03:before {
                     background-image: url(../images/sprites@2x.png);
-                    background-size: 773px 458px; } }
+                    background-size: 606px 481px; } }
               body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering01:before {
                 background-image: url(../images/sprites.png);
-                background-position: -467px -23px;
+                background-position: -487px -30px;
                 width: 76px;
                 height: 80px; }
                 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                   body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering01:before {
                     background-image: url(../images/sprites@2x.png);
-                    background-size: 773px 458px; } }
+                    background-size: 606px 481px; } }
               body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering02:before {
                 background-image: url(../images/sprites.png);
-                background-position: -637px -139px;
+                background-position: -569px -30px;
                 width: 26px;
                 height: 80px; }
                 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                   body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering02:before {
                     background-image: url(../images/sprites@2x.png);
-                    background-size: 773px 458px; } }
+                    background-size: 606px 481px; } }
               body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering03:before {
                 background-image: url(../images/sprites.png);
-                background-position: -580px -139px;
+                background-position: -302px -322px;
                 width: 51px;
                 height: 80px; }
                 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                   body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering03:before {
                     background-image: url(../images/sprites@2x.png);
-                    background-size: 773px 458px; } }
+                    background-size: 606px 481px; } }
               body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring01:before {
                 background-image: url(../images/sprites.png);
-                background-position: -628px -23px;
+                background-position: -381px -206px;
                 width: 69px;
                 height: 80px; }
                 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                   body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring01:before {
                     background-image: url(../images/sprites@2x.png);
-                    background-size: 773px 458px; } }
+                    background-size: 606px 481px; } }
               body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring02:before {
                 background-image: url(../images/sprites.png);
-                background-position: -703px -23px;
+                background-position: -456px -206px;
                 width: 61px;
                 height: 80px; }
                 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                   body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring02:before {
                     background-image: url(../images/sprites@2x.png);
-                    background-size: 773px 458px; } }
+                    background-size: 606px 481px; } }
               body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring03:before {
                 background-image: url(../images/sprites.png);
-                background-position: -514px -139px;
+                background-position: -523px -206px;
                 width: 60px;
                 height: 80px; }
                 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                   body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring03:before {
                     background-image: url(../images/sprites@2x.png);
-                    background-size: 773px 458px; } }
+                    background-size: 606px 481px; } }
         body.portal .solutions .solution-container .solution-item.portal {
           overflow: hidden;
           position: relative;
@@ -6269,23 +6276,23 @@ body.metering.dashboard {
         body.metering.dashboard article.contents .tbl-payment-summary .vendor.aws:before {
           margin-top: -9.5px;
           background-image: url(../images/sprites.png);
-          background-position: -662px -253px;
+          background-position: -558px -322px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .tbl-payment-summary .vendor.aws:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 773px 458px; } }
+              background-size: 606px 481px; } }
         body.metering.dashboard article.contents .tbl-payment-summary .vendor.azure:before {
           margin-top: -9.5px;
           background-image: url(../images/sprites.png);
-          background-position: -689px -253px;
+          background-position: -531px -322px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .tbl-payment-summary .vendor.azure:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 773px 458px; } }
+              background-size: 606px 481px; } }
     body.metering.dashboard article.contents .tbl-assets {
       width: 100%;
       margin-top: 14px; }
@@ -6498,23 +6505,23 @@ body.metering.dashboard {
         body.metering.dashboard article.contents .list-type-tbl .vendor.aws:before {
           margin-top: -21px;
           background-image: url(../images/sprites.png);
-          background-position: -467px -283px;
+          background-position: -418px -352px;
           width: 53px;
           height: 38px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .list-type-tbl .vendor.aws:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 773px 458px; } }
+              background-size: 606px 481px; } }
         body.metering.dashboard article.contents .list-type-tbl .vendor.azure:before {
           margin-top: -21px;
           background-image: url(../images/sprites.png);
-          background-position: -669px -139px;
+          background-position: -359px -352px;
           width: 53px;
           height: 38px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .list-type-tbl .vendor.azure:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 773px 458px; } }
+              background-size: 606px 481px; } }
       body.metering.dashboard article.contents .list-type-tbl .cost strong {
         display: block;
         font-size: 40px;
@@ -6540,22 +6547,22 @@ body.metering.dashboard {
           margin-right: 5px; }
         body.metering.dashboard article.contents .budget-status .vendor.aws:before {
           background-image: url(../images/sprites.png);
-          background-position: -662px -253px;
+          background-position: -558px -322px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .budget-status .vendor.aws:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 773px 458px; } }
+              background-size: 606px 481px; } }
         body.metering.dashboard article.contents .budget-status .vendor.azure:before {
           background-image: url(../images/sprites.png);
-          background-position: -689px -253px;
+          background-position: -531px -322px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .budget-status .vendor.azure:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 773px 458px; } }
+              background-size: 606px 481px; } }
       body.metering.dashboard article.contents .budget-status .total {
         float: right;
         font-size: 20px;
