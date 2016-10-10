@@ -893,7 +893,7 @@ The `sprites` mixin generates identical output to the CSS template
         background-color: #fff; }
     .grid-bottom a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -513px -352px;
+      background-position: -513px -371px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -903,7 +903,7 @@ The `sprites` mixin generates identical output to the CSS template
     .grid-bottom a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -549px -352px;
+      background-position: -549px -371px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -913,7 +913,7 @@ The `sprites` mixin generates identical output to the CSS template
     .grid-bottom a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -302px -426px;
+      background-position: -81px -184px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -922,7 +922,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 606px 481px; } }
     .grid-bottom a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -477px -352px;
+      background-position: -477px -371px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1020,7 +1020,7 @@ The `sprites` mixin generates identical output to the CSS template
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -438px -408px;
+      background-position: -438px -427px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1029,7 +1029,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 606px 481px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -585px -322px;
+      background-position: -585px -341px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1849,7 +1849,7 @@ corresponds to the arrow we want to display */
             background-size: 606px 481px; } }
       .global-menu-new .custom-select-container .txt.metering {
         background-image: url(../images/sprites.png);
-        background-position: -359px -322px;
+        background-position: -359px -341px;
         width: 142px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2126,20 +2126,30 @@ body {
 /* admin footer */
 .admin-footer {
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 0 35px;
   height: 60px;
   min-width: 1400px;
   color: #fff;
   background-color: #000; }
+  .admin-footer:after {
+    content: '';
+    clear: both; }
   .admin-footer .bgsp {
-    display: inline-block;
-    font-family: "Noto Sans Korean", "Apple SD Gothic", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 60px; }
+    display: block;
+    float: left;
+    margin-top: 23px;
+    text-indent: -9999px;
+    background-image: url(../images/sprites.png);
+    background-position: -302px -322px;
+    width: 300px;
+    height: 13px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .admin-footer .bgsp {
+        background-image: url(../images/sprites@2x.png);
+        background-size: 606px 481px; } }
   .admin-footer .copyright {
     float: right;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #9B9B9B;
     line-height: 60px; }
 
@@ -2148,7 +2158,7 @@ main {
   position: relative;
   display: block;
   margin-top: 90px;
-  min-height: calc(100% - 90px - 60px); }
+  min-height: calc(100% - 60px); }
 
 article.contents {
   display: block;
@@ -2513,7 +2523,7 @@ article.contents {
       margin-right: 6px;
       vertical-align: top;
       background-image: url(../images/sprites.png);
-      background-position: -558px -322px;
+      background-position: -558px -341px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2527,7 +2537,7 @@ article.contents {
       margin-right: 6px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -531px -322px;
+      background-position: -531px -341px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2617,7 +2627,7 @@ article.contents {
         background-color: #fff; }
     .navigation a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -513px -352px;
+      background-position: -513px -371px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2627,7 +2637,7 @@ article.contents {
     .navigation a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -549px -352px;
+      background-position: -549px -371px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2637,7 +2647,7 @@ article.contents {
     .navigation a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -302px -426px;
+      background-position: -81px -184px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2646,7 +2656,7 @@ article.contents {
           background-size: 606px 481px; } }
     .navigation a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -477px -352px;
+      background-position: -477px -371px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2678,7 +2688,7 @@ article.contents {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -518px -426px;
+  background-position: -81px -220px;
   width: 16px;
   height: 16px;
   background-color: #fff; }
@@ -2688,7 +2698,7 @@ article.contents {
       background-size: 606px 481px; } }
   .icheckbox.disabled {
     background-image: url(../images/sprites.png);
-    background-position: -474px -426px;
+    background-position: -253px -184px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2697,7 +2707,7 @@ article.contents {
         background-size: 606px 481px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -540px -426px;
+    background-position: -103px -220px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2706,7 +2716,7 @@ article.contents {
         background-size: 606px 481px; } }
     .icheckbox.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -496px -426px;
+      background-position: -275px -184px;
       width: 16px;
       height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2715,7 +2725,7 @@ article.contents {
           background-size: 606px 481px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -585px -352px;
+    background-position: -585px -371px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2924,7 +2934,7 @@ article.contents {
           background-size: 606px 481px; } }
     .forms .status-user.invited:before {
       background-image: url(../images/sprites.png);
-      background-position: -461px -408px;
+      background-position: -461px -427px;
       width: 13px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

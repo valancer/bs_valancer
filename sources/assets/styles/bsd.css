@@ -890,7 +890,7 @@ The `sprites` mixin generates identical output to the CSS template
         background-color: #fff; }
     .grid-bottom a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -513px -352px;
+      background-position: -513px -371px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -900,7 +900,7 @@ The `sprites` mixin generates identical output to the CSS template
     .grid-bottom a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -549px -352px;
+      background-position: -549px -371px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -910,7 +910,7 @@ The `sprites` mixin generates identical output to the CSS template
     .grid-bottom a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -302px -426px;
+      background-position: -81px -184px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -919,7 +919,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 606px 481px; } }
     .grid-bottom a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -477px -352px;
+      background-position: -477px -371px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1017,7 +1017,7 @@ The `sprites` mixin generates identical output to the CSS template
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -438px -408px;
+      background-position: -438px -427px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1026,7 +1026,7 @@ The `sprites` mixin generates identical output to the CSS template
           background-size: 606px 481px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -585px -322px;
+      background-position: -585px -341px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1845,7 +1845,7 @@ corresponds to the arrow we want to display */
             background-size: 606px 481px; } }
       .global-menu-new .custom-select-container .txt.metering {
         background-image: url(../images/sprites.png);
-        background-position: -359px -322px;
+        background-position: -359px -341px;
         width: 142px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2994,7 +2994,7 @@ article.contents {
       vertical-align: middle;
       text-indent: -9999px;
       background-image: url(../images/sprites.png);
-      background-position: -440px -426px;
+      background-position: -219px -184px;
       width: 28px;
       height: 29px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3047,7 +3047,7 @@ article.contents {
       background-color: #F6F6F6; }
       .accordion > dt:hover .btn-delete {
         background-image: url(../images/sprites.png);
-        background-position: -406px -426px;
+        background-position: -185px -184px;
         width: 28px;
         height: 29px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3270,7 +3270,7 @@ article.contents {
       margin: -2px 10px 0 0px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -372px -426px;
+      background-position: -151px -184px;
       width: 28px;
       height: 29px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3281,7 +3281,7 @@ article.contents {
       color: #000; }
       .accordion-bottom .btn-add:hover:before {
         background-image: url(../images/sprites.png);
-        background-position: -338px -426px;
+        background-position: -117px -184px;
         width: 28px;
         height: 29px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3630,7 +3630,7 @@ article.contents {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -518px -426px;
+  background-position: -81px -220px;
   width: 16px;
   height: 16px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3639,7 +3639,7 @@ article.contents {
       background-size: 606px 481px; } }
   .icheckbox.disabled {
     background-image: url(../images/sprites.png);
-    background-position: -474px -426px;
+    background-position: -253px -184px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3648,7 +3648,7 @@ article.contents {
         background-size: 606px 481px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -540px -426px;
+    background-position: -103px -220px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3657,7 +3657,7 @@ article.contents {
         background-size: 606px 481px; } }
     .icheckbox.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -496px -426px;
+      background-position: -275px -184px;
       width: 16px;
       height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3666,7 +3666,7 @@ article.contents {
           background-size: 606px 481px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -585px -352px;
+    background-position: -585px -371px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3733,7 +3733,7 @@ article.contents {
     vertical-align: middle; }
   .all-checked[value="0"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -518px -426px;
+    background-position: -81px -220px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3742,7 +3742,7 @@ article.contents {
         background-size: 606px 481px; } }
   .all-checked[value="1"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -540px -426px;
+    background-position: -103px -220px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3751,7 +3751,7 @@ article.contents {
         background-size: 606px 481px; } }
   .all-checked[value="2"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -585px -352px;
+    background-position: -585px -371px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -5464,7 +5464,7 @@ body.portal {
                     background-size: 606px 481px; } }
               body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering03:before {
                 background-image: url(../images/sprites.png);
-                background-position: -302px -322px;
+                background-position: -302px -341px;
                 width: 51px;
                 height: 80px; }
                 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -6276,7 +6276,7 @@ body.metering.dashboard {
         body.metering.dashboard article.contents .tbl-payment-summary .vendor.aws:before {
           margin-top: -9.5px;
           background-image: url(../images/sprites.png);
-          background-position: -558px -322px;
+          background-position: -558px -341px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -6286,7 +6286,7 @@ body.metering.dashboard {
         body.metering.dashboard article.contents .tbl-payment-summary .vendor.azure:before {
           margin-top: -9.5px;
           background-image: url(../images/sprites.png);
-          background-position: -531px -322px;
+          background-position: -531px -341px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -6505,7 +6505,7 @@ body.metering.dashboard {
         body.metering.dashboard article.contents .list-type-tbl .vendor.aws:before {
           margin-top: -21px;
           background-image: url(../images/sprites.png);
-          background-position: -418px -352px;
+          background-position: -418px -371px;
           width: 53px;
           height: 38px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -6515,7 +6515,7 @@ body.metering.dashboard {
         body.metering.dashboard article.contents .list-type-tbl .vendor.azure:before {
           margin-top: -21px;
           background-image: url(../images/sprites.png);
-          background-position: -359px -352px;
+          background-position: -359px -371px;
           width: 53px;
           height: 38px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -6547,7 +6547,7 @@ body.metering.dashboard {
           margin-right: 5px; }
         body.metering.dashboard article.contents .budget-status .vendor.aws:before {
           background-image: url(../images/sprites.png);
-          background-position: -558px -322px;
+          background-position: -558px -341px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -6556,7 +6556,7 @@ body.metering.dashboard {
               background-size: 606px 481px; } }
         body.metering.dashboard article.contents .budget-status .vendor.azure:before {
           background-image: url(../images/sprites.png);
-          background-position: -531px -322px;
+          background-position: -531px -341px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

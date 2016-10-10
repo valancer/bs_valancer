@@ -4,14 +4,16 @@ input, textarea, keygen, select, button { }
 
 
 /* admin footer */
-.admin-footer { box-sizing: border-box; padding: 0 30px; height: 60px; min-width: $contents-width; color: #fff; background-color: #000;
-	.bgsp { display: inline-block; font-family: $font-base-stack; font-size: 20px; font-weight: 700; line-height: 60px; }
-	.copyright { float: right; font-size: 14px; color: #9B9B9B; line-height: 60px; }
+.admin-footer { box-sizing: border-box; padding: 0 35px; height: 60px; min-width: $contents-width; color: #fff; background-color: #000;
+	&:after { content: ''; clear: both; }
+
+	.bgsp { display: block; float: left; margin-top: 23px; text-indent: -9999px; @include retina-sprite($sc-admin-footer-title-group); }
+	.copyright { float: right; font-size: 0.875rem;; color: #9B9B9B; line-height: 60px; }
 }
 
 
 /* contents */
-main { position: relative; display: block; margin-top: 90px; min-height: calc(100% - 90px - 60px); }
+main { position: relative; display: block; margin-top: 90px; min-height: calc(100% - 60px); }
 article.contents { display: block; min-height: 100%; min-width: $contents-width;
 	.title { padding-left: 30px; height: 50px; font-family: $font-base-stack; font-size: 24px; color: #fff; line-height: 50px; background-color: #575757; }
 
