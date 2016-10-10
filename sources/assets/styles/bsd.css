@@ -2358,7 +2358,7 @@ corresponds to the arrow we want to display */
     position: relative;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 20px;
     min-height: 100%;
     width: 1200px;
     color: #fff; }
@@ -2367,7 +2367,7 @@ corresponds to the arrow we want to display */
       display: block;
       position: absolute;
       top: 50px;
-      left: 0;
+      left: 20px;
       background-image: url(../images/sprites.png);
       background-position: -157px -58px;
       width: 28px;
@@ -2454,7 +2454,7 @@ article.contents {
     position: relative;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
     width: 1200px;
     padding-bottom: 0px; }
     article.contents .contents-inner.size-fit {
@@ -2464,7 +2464,7 @@ article.contents {
         padding: 0 5%;
         width: 100%; }
   article.contents .button-container {
-    padding: 35px 40px 0px 40px;
+    padding: 35px 0px 0px 4px;
     text-align: right; }
   article.contents .column-left {
     float: left;
@@ -2472,7 +2472,7 @@ article.contents {
     position: relative;
     padding-top: 35px;
     padding-bottom: 30px;
-    width: 280px; }
+    width: 300px; }
     article.contents .column-left .btn-normal {
       width: 100%; }
     article.contents .column-left .scroll {
@@ -2500,7 +2500,7 @@ article.contents {
     overflow: hidden;
     padding-top: 35px;
     padding-bottom: 30px;
-    width: 810px; }
+    width: 800px; }
     .asset article.contents .column-right {
       padding-bottom: 100px; }
   .portal article.contents h1.title {
@@ -2509,7 +2509,7 @@ article.contents {
       position: relative;
       box-sizing: border-box;
       margin: 0 auto;
-      padding: 0 30px;
+      padding: 0 20px;
       width: 1200px;
       padding-top: 0px;
       height: 100px;
@@ -2548,7 +2548,7 @@ article.contents {
       display: block;
       position: absolute;
       bottom: 0;
-      right: 30px;
+      right: 20px;
       font-size: 16px;
       font-weight: 500;
       color: #999; }
@@ -2560,7 +2560,7 @@ article.contents {
     position: relative;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
     width: 1200px;
     padding-top: 19px;
     height: 135px;
@@ -2582,13 +2582,16 @@ article.contents {
       padding: 0 0 15px 0; }
   article.contents .list-column-03 {
     overflow: hidden;
-    padding: 30px 15px; }
+    padding: 30px 0; }
     article.contents .list-column-03 > li {
       display: block;
       box-sizing: border-box;
       float: left;
-      padding: 0 15px 45px 15px;
-      width: 33.3%; }
+      padding: 0 0 45px 0;
+      width: 350px; }
+      article.contents .list-column-03 > li:nth-child(3n+2) {
+        margin-right: 55px;
+        margin-left: 55px; }
   article.contents .submit-btns {
     padding-top: 26px; }
     article.contents .submit-btns .btn-normal {
@@ -5255,8 +5258,10 @@ body.portal {
     body.portal.home .services > li {
       box-sizing: border-box;
       float: left;
-      padding: 0 20px;
-      width: 33.3%; }
+      width: 350px; }
+      body.portal.home .services > li:nth-child(3n+2) {
+        margin-right: 55px;
+        margin-left: 55px; }
       body.portal.home .services > li .title {
         font-size: 26px;
         font-weight: 700;

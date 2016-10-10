@@ -74,7 +74,9 @@ body.portal {
 	// home
 	&.home {
 		.services { overflow: hidden; padding-top: 48px; padding-bottom: 100px;
-			> li { box-sizing: border-box; float: left; padding: 0 20px; width: 33.3%;
+			> li { box-sizing: border-box; float: left; width: 350px;
+				&:nth-child(3n+2) { margin-right: 55px; margin-left: 55px; }
+
 				.title { font-size: 26px; font-weight: 700; color: #000;
 					&:before { display: block; margin-bottom: 22px; height: 52px; width: 52px; text-align: center; vertical-align: middle; line-height: 52px; border: 4px solid #000; }
 					&.asset {
