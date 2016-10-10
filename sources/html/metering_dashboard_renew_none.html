@@ -1,0 +1,310 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="metering dashboard">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "metering", "sub": "dashboard"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="is-hidden">METERING DASHBOARD</h1>
+
+			<!-- dashboard summary -->
+			<header class="summary">
+				<div class="contents-inner">
+
+					<ul class="status">
+						<li>
+							<h2 class="title">PREVIOUS MONTH TOTAL</h2>
+							<p class="cost">
+								<strong>$000,000.00</strong>
+							</p>
+						</li>
+						<li>
+							<h2 class="title">
+								CURRENT COST TOTAL
+								<span class="term"><time>2016.10.01</time> ~ <time>2016.10.05</time></span>
+							</h2>
+							<p class="cost">
+								<strong>$000,000.00</strong>
+							</p>
+							<span class="growth size-big up">00.0%</span>
+						</li>
+						<li>
+							<h2 class="title">CURRENT MONTH PROJECTORY</h2>
+							<p class="cost">
+								<strong>$000,000.00</strong>
+							</p>
+							<span class="growth size-big down">-00.0%</span>
+						</li>
+					</ul>
+
+
+					<ul class="page-sub-tabs">
+						<li><a href="#" class="is-selected">MONTHLY</a></li>
+						<li><a href="#">DAILY</a></li>
+					</ul>
+
+					<div class="chart-container">
+						
+					</div>
+
+				</div>
+			</header>
+			<!--// dashboard summary -->
+
+
+			<div class="contents-inner size-fit">
+
+
+
+				<ul class="list-column-complex">
+					<li>
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+
+							<!-- summary  -->
+							<div class="content left">
+								<h2 class="title">SUMMARY</h2>
+
+								<table class="tbl-payment-summary">
+									<caption>summary</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="l">비용 구분</th>
+											<th scope="col"><button type="button" class="btn-txt-info mtd">당월합계</button></th>
+											<th scope="col"><button type="button" class="btn-txt-info variance">증감률</button></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="3" class="none">
+												<div class="none-contents">
+													<p>No budget set to<br>display any insights!</p>
+													<div class="spinner"></div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+
+
+							<!-- 서비스 그룹별 현재 비용 TOP3  -->
+							<div class="content right">
+								<h2 class="title">서비스 그룹별 현재 비용 TOP3</h2>
+
+								<table class="tbl-payment-summary">
+									<caption>서비스 그룹별 현재 비용 TOP3</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col style="width: 40%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="l">SERVICE GROUP</th>
+											<th scope="col"><button type="button" class="btn-txt-info mtd">당월합계</button></th>
+											<th scope="col"><button type="button" class="btn-txt-info variance">증감률</button></th>
+											<th scope="col">RESOURCE</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="4" class="none">
+												<div class="none-contents">
+													<p>No budget set to<br>display any insights!</p>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+					</li>
+					<li>
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+							
+							<div class="segmented-control">
+								<a href="#" class="is-selected">AWS</a>
+								<a href="#">AZURE</a>
+							</div>
+
+
+
+							<!-- CLOUD 상품별 현재 비용 TOP5 -->
+							<div class="content left">
+								<h2 class="title">CLOUD 상품별 현재 비용 TOP5</h2>
+
+								<div class="none-contents">
+									<p>No budget set to<br>display any insights!</p>
+								</div>
+							</div>
+
+
+
+							<!-- 지역별 현재 비용 TOP5 -->
+							<div class="content right">
+								<h2 class="title">지역별 현재 비용 TOP5</h2>
+
+								<div class="none-contents">
+									<p>No budget set to<br>display any insights!</p>
+								</div>
+							</div>
+						</section>
+					</li>
+
+
+					<li class="column-02">
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+							
+							<div class="content">
+								<h2 class="title">계정별 비용</h2>
+
+								<div class="none-contents">
+									<p>No budget set to<br>display any insights!</p>
+								</div>
+							</div>
+						</section>
+					</li>
+					<li class="column-02">
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+							
+							<div class="content">
+								<h2 class="title">예산 현황</h2>
+
+								<div class="none-contents">
+									<p>No budget set to<br>display any insights!</p>
+								</div>
+							</div>
+						</section>
+					</li>
+
+
+					<li class="column-02">
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+							
+							<div class="content">
+								<h2 class="title">납부 내역</h2>
+
+								<div class="none-contents">
+									<p>No budget set to<br>display any insights!</p>
+								</div>
+							</div>
+						</section>
+					</li>
+					<li class="column-02">
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+							
+							<div class="content">
+								<h2 class="title">크레딧 현황</h2>
+
+								<div class="none-contents">
+									<p>No budget set to<br>display any insights!</p>
+								</div>
+							</div>
+						</section>
+					</li>
+				</ul>				
+
+				
+
+			</div>
+		</article>
+	</main>
+
+	<!-- popup mtd -->
+	<div id="mtd" class="popover metering-tooltip">
+		<span class="point" style="left: 50%;"></span>
+		<p>Variance rate is based on data from the same date of last month</p>
+	</div>
+
+	<!-- popup variance -->
+	<div id="variance" class="popover metering-tooltip">
+		<span class="point" style="left: 50%;"></span>
+		<p>Variance rate is based on data from the same date of last month</p>
+	</div>
+
+	<!-- popup unit price -->
+	<div id="unit-price" class="popover metering-tooltip">
+		<span class="point" style="left: 50%;"></span>
+		<p>Variance rate is based on data from the same date of last month</p>
+	</div>
+	<script>
+	$(window.document).ready(function(){
+		$('.btn-txt-info.mtd').on({
+			mouseenter: function(e) {
+				$('#mtd').popup({
+					type: 'tooltip',
+					tooltipanchor: e.target,
+					vertical: 'bottom',
+					offsettop: 20,
+					horizontal: 'center',
+					// transition: '0.3s all 0.1s',
+					autoopen: true
+				});
+			},
+			mouseleave: function(e) {
+				$('#mtd').popup('hide');
+			}
+		});
+
+		$('.btn-txt-info.variance').on({
+			mouseenter: function(e) {
+				$('#variance').popup({
+					type: 'tooltip',
+					tooltipanchor: e.target,
+					vertical: 'bottom',
+					offsettop: 20,
+					horizontal: 'center',
+					// transition: '0.3s all 0.1s',
+					autoopen: true
+				});
+			},
+			mouseleave: function(e) {
+				$('#variance').popup('hide');
+			}
+		});
+
+		$('.btn-txt-info.unit-price').on({
+			mouseenter: function(e) {
+				$('#unit-price').popup({
+					type: 'tooltip',
+					tooltipanchor: e.target,
+					vertical: 'bottom',
+					offsettop: 20,
+					horizontal: 'center',
+					// transition: '0.3s all 0.1s',
+					autoopen: true
+				});
+			},
+			mouseleave: function(e) {
+				$('#unit-price').popup('hide');
+			}
+		});
+	});
+	</script>
+
+
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

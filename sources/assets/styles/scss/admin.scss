@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@import url(notosanskr.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(magnific-popup.css);
+@import url(jquery-confirm.css);
+
+
+/**
+ * variable
+ */
+$font-base-stack: 'Noto Sans Korean', 'Apple SD Gothic', sans-serif;
+$contents-width: 1400px;
+$contents-height: 600px;
+$column-left-width: 300px;
+$column-right-width: 1500px;
+
+
+/**
+ * colors
+ */
+$sunflower-yellow: #ffdc00;
+$twilight: #6759a2;
+$vermillion: #e74e0f;
+$azure: #009ee2;
+$white: #fff;
+$gray: #e7e7e7;
+$black: #000;
+
+
+
+body { background-color: #fff; }
+
+@import "base";
+
+/** web font icons **/
+@import "icons";
+/** web font icons **/
+@import "sprites";
+@import "sprites_portal";
+@import "sprites_asset";
+@import "sprites_metering";
+
+
+/**
+ * z-index
+**/
+$z-layers: (
+	'modal':            1000,
+	'modaless':          900,
+	'gnb':	             800,
+	'dropdown':          500,
+	'hover':             200,
+	'tooltip':           100,
+	'default':             1,
+	'bottomless-pit': -10000
+);
+
+@function z($layer) {
+	@if not map-has-key($z-layers, $layer) {
+		@warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+	}
+
+	@return map-get($z-layers, $layer);
+}
+
+
+
+/**
+ * keyframes
+ */
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+@include keyframes(rotate) {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/**
+ * import
+ */
+@import "slick";
+@import "selectric";
+@import "aggrid-theme-bg";
+@import "daterangepicker_custom";
+@import "tooltipster";
+
+/** layout **/
+@import "global_menu";
+@import "admin_layout";
+/** layout **/
+
+@import "admin_component";

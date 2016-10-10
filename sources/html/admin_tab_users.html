@@ -1,0 +1,230 @@
+@@include('./admin_head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="admin">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			@@include('./admin_title.html')
+			
+
+			<div class="contents-inner">
+				<div class="column-left">
+					@@include('./admin_sidemenu.html')
+				</div>
+
+
+				<div class="column-right">
+					
+					<h1 class="page-title">Company Name 회사이름 會社</h1>
+
+					<p class="page-tabs">
+						<a href="#">COMPANY</a>
+						<a href="#">BILLING</a>
+						<a href="#">SERVICE</a>
+						<a href="#" class="selected">USERS(33)</a>
+					</p>
+
+
+					<section class="section">
+						<h2 class="section-title">
+							<button type="button" class="btn-inner-em disabled">ACTIVATE</button>
+							USER
+						</h2>
+
+						<fieldset class="forms">
+							<legend>User List</legend>
+
+							<table class="tbl-v">
+								<caption>User List</caption>
+								<colgroup>
+									<col style="width: 20px;">
+									<col style="width: 40px;">
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col style="width: 30px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="c">
+											<label for="all-accounts" class="icheck txt-none">
+												<input type="checkbox" id="all-accounts" name="accounts" class="icheckbox">
+											</label>
+										</th>
+										<th scope="col" class="c">No.</th>
+										<th scope="col">Email</th>
+										<th scope="col">User Name</th>
+										<th scope="col">Status</th>
+										<th scope="col">Position</th>
+										<th scope="col">Phone</th>
+										<th scope="col">Mobile</th>
+										<th scope="col">Role</th>
+										<th scope="col" class="c"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="c">
+											<label for="user-id01" class="icheck txt-none">
+												<input type="checkbox" id="user-id01" name="accounts" class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user approval">Approval</span>
+										</td>
+										<td>position</td>
+										<td>+82-00-0000-0000</td>
+										<td>+82-00-0000-0000</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr class="is-checked">
+										<td class="c">
+											<label for="user-id02" class="icheck txt-none">
+												<input type="checkbox" id="user-id02" name="accounts" class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user approval">Approval</span>
+										</td>
+										<td>position</td>
+										<td>+82-00-0000-0000</td>
+										<td>+82-00-0000-0000</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id03" class="icheck txt-none">
+												<input type="checkbox" id="user-id03" name="accounts" disabled class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user activated">Activate</span>
+										</td>
+										<td>position</td>
+										<td>+82-00-0000-0000</td>
+										<td>+82-00-0000-0000</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id04" class="icheck txt-none">
+												<input type="checkbox" id="user-id04" name="accounts" disabled class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user subscribed">Subscribed</span>
+										</td>
+										<td>position</td>
+										<td>+82-00-0000-0000</td>
+										<td>+82-00-0000-0000</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id05" class="icheck txt-none">
+												<input type="checkbox" id="user-id05" name="accounts" disabled class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user invited">Invited</span>
+										</td>
+										<td>position</td>
+										<td>+82-00-0000-0000</td>
+										<td>+82-00-0000-0000</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id06" class="icheck txt-none">
+												<input type="checkbox" id="user-id06" name="accounts" disabled class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user deactivated">Deactivated</span>
+										</td>
+										<td>position</td>
+										<td>+82-00-0000-0000</td>
+										<td>+82-00-0000-0000</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="navigation">
+								<a href="#" class="btn-first"></a>
+								<a href="#" class="btn-prev"></a>
+								<a href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a href="#">6</a>
+								<a href="#">7</a>
+								<a href="#" class="is-selected">8</a>
+								<a href="#">9</a>
+								<a href="#">10</a>
+								<a href="#" class="btn-next"></a>
+								<a href="#" class="btn-last"></a>
+							</div>
+						</fieldset>
+					</section>
+
+
+				</div>
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./admin_footer.html')
+
+</body>
+</html>

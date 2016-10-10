@@ -23,6 +23,17 @@ if (!window.console) {
 })();
 
 
+function resizeContents() {
+	if( $('body').hasClass("admin") ) {
+		var main = $('main').height();
+		var title = 50;
+		var content = $('article.contents').height();
+		if( content < main ) {
+			$('article.contents').height(main-title);
+		}
+	}
+}
+
 $(document).ready(function(e) {
 	// icheck
 	$('input.icheckbox').iCheck();
@@ -30,6 +41,13 @@ $(document).ready(function(e) {
 
 	// select
 	$('select.selectric').selectric({});
+
+
+	// only admin - footer position
+	resizeContents();
+	$(window).on('resize', function() {
+		resizeContents();
+	});
 });
 
 

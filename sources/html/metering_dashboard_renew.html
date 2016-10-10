@@ -1,0 +1,751 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="metering dashboard">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "metering", "sub": "dashboard"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="is-hidden">METERING DASHBOARD</h1>
+
+			<!-- dashboard summary -->
+			<header class="summary">
+				<div class="contents-inner">
+
+					<ul class="status">
+						<li>
+							<h2 class="title">PREVIOUS MONTH TOTAL</h2>
+							<p class="cost">
+								<strong>$000,000.00</strong>
+							</p>
+						</li>
+						<li>
+							<h2 class="title">
+								CURRENT COST TOTAL
+								<span class="term"><time>2016.10.01</time> ~ <time>2016.10.05</time></span>
+							</h2>
+							<p class="cost">
+								<strong>$000,000.00</strong>
+							</p>
+							<span class="growth size-big up">00.0%</span>
+						</li>
+						<li>
+							<h2 class="title">CURRENT MONTH PROJECTORY</h2>
+							<p class="cost">
+								<strong>$000,000.00</strong>
+							</p>
+							<span class="growth size-big down">-00.0%</span>
+						</li>
+					</ul>
+
+
+					<ul class="page-sub-tabs">
+						<li><a href="#" class="is-selected">MONTHLY</a></li>
+						<li><a href="#">DAILY</a></li>
+					</ul>
+
+					<div class="chart-container">
+						
+					</div>
+
+				</div>
+			</header>
+			<!--// dashboard summary -->
+
+
+			<div class="contents-inner size-fit">
+
+
+
+				<ul class="list-column-complex">
+					<li>
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+
+							<!-- summary  -->
+							<div class="content left">
+								<h2 class="title">SUMMARY</h2>
+
+								<table class="tbl-payment-summary">
+									<caption>summary</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="l">비용 구분</th>
+											<th scope="col"><button type="button" class="btn-txt-info mtd">당월합계</button></th>
+											<th scope="col"><button type="button" class="btn-txt-info variance">증감률</button></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row" class="body-th">SERVICE GROUP</th>
+											<th scope="row" class="body-th r"><strong class="total">$000,000.00</strong></th>
+											<th scope="row" class="body-th r"><span class="growth down">-00.0%</span></th>
+										</tr>
+										<tr>
+											<th scope="row"><em class="vendor aws">AWS</em></th>
+											<td class="r">$000,000.00</td>
+											<td class="r"></td>
+										</tr>
+										<tr class="line-break">
+											<th scope="row"><em class="vendor azure">AZURE</em></th>
+											<td class="r">$00,000.00</td>
+											<td class="r"></td>
+										</tr>
+
+										<tr>
+											<th scope="row" class="body-th">UNDEFINED</th>
+											<th scope="row" class="body-th r"><strong class="total">$000,000.00</strong></th>
+											<th scope="row" class="body-th r"><span class="growth up">00.0%</span></th>
+										</tr>
+										<tr>
+											<td><em class="vendor aws">AWS</em></td>
+											<td class="r">$000,000.00</td>
+											<td class="r"></td>
+										</tr>
+										<tr class="line-break">
+											<td><em class="vendor azure">AZURE</em></td>
+											<td class="r">$00,000.00</td>
+											<td class="r"></td>
+										</tr>
+
+										<tr>
+											<th scope="row" class="body-th">SHARED <button type="button" class="btn-shared">shared</button></th>
+											<th scope="row" class="body-th r"><strong class="total">$000,000.00</strong></th>
+											<th scope="row" class="body-th r"><span class="growth down">-00.0%</span></th>
+										</tr>
+										<tr>
+											<td><em class="vendor aws">AWS</em></td>
+											<td class="r">$000,000.00</td>
+											<td class="r"></td>
+										</tr>
+										<tr class="line-break">
+											<td><em class="vendor azure">AZURE</em></td>
+											<td class="r">$000,000.00</td>
+											<td class="r"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+
+
+							<!-- 서비스 그룹별 현재 비용 TOP3  -->
+							<div class="content right">
+								<h2 class="title">서비스 그룹별 현재 비용 TOP3</h2>
+
+								<table class="tbl-payment-summary">
+									<caption>서비스 그룹별 현재 비용 TOP3</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col style="width: 40%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="l">SERVICE GROUP</th>
+											<th scope="col"><button type="button" class="btn-txt-info mtd">당월합계</button></th>
+											<th scope="col"><button type="button" class="btn-txt-info variance">증감률</button></th>
+											<th scope="col">RESOURCE</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th class="body-th"><em class="vendor aws">BESPINMD</em></th>
+											<th class="body-th r">
+												<strong class="total">$000,000.00</strong>
+
+												<table class="tbl-assets">
+													<caption>assets</caption>
+													<tbody>
+														<tr>
+															<th>COMPUTING</th>
+															<td class="r">$000,000.00</td>
+														</tr>
+														<tr>
+															<th>DATABASE</th>
+															<td class="r">$00,000.00</td>
+														</tr>
+														<tr>
+															<th>STORAGE</th>
+															<td class="r">$00,000.00</td>
+														</tr>
+														<tr>
+															<th>ETC</th>
+															<td class="r">$00,000.00</td>
+														</tr>
+													</tbody>
+												</table>
+
+											</th>
+											<td class="body-th r"><span class="growth down">-00.0%</span></td>
+											<td class="body-th r">000개</td>
+										</tr>
+										<tr>
+											<th class="body-th"><em class="vendor aws">BESPINMD</em></th>
+											<th class="body-th r">
+												<strong class="total">$000,000.00</strong>
+
+												<table class="tbl-assets">
+													<caption>assets</caption>
+													<tbody>
+														<tr>
+															<th>COMPUTING</th>
+															<td class="r">$000,000.00</td>
+														</tr>
+														<tr>
+															<th>DATABASE</th>
+															<td class="r">$00,000.00</td>
+														</tr>
+														<tr>
+															<th>STORAGE</th>
+															<td class="r">$00,000.00</td>
+														</tr>
+														<tr>
+															<th>ETC</th>
+															<td class="r">$00,000.00</td>
+														</tr>
+													</tbody>
+												</table>
+
+											</th>
+											<td class="body-th r"><span class="growth down">-00.0%</span></td>
+											<td class="body-th r">000개</td>
+										</tr>
+										<tr>
+											<th class="body-th"><em class="vendor aws">BESPINMD</em></th>
+											<th class="body-th r">
+												<strong class="total">$000,000.00</strong>
+
+												<table class="tbl-assets">
+													<caption>assets</caption>
+													<tbody>
+														<tr>
+															<th>COMPUTING</th>
+															<td class="r">$000,000.00</td>
+														</tr>
+														<tr>
+															<th>DATABASE</th>
+															<td class="r">$00,000.00</td>
+														</tr>
+														<tr>
+															<th>STORAGE</th>
+															<td class="r">$00,000.00</td>
+														</tr>
+														<tr>
+															<th>ETC</th>
+															<td class="r">$00,000.00</td>
+														</tr>
+													</tbody>
+												</table>
+
+											</th>
+											<td class="body-th r"><span class="growth down">-00.0%</span></td>
+											<td class="body-th r">000개</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+					</li>
+					<li>
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+							
+							<div class="segmented-control">
+								<a href="#" class="is-selected">AWS</a>
+								<a href="#">AZURE</a>
+							</div>
+
+
+							<!-- CLOUD 상품별 현재 비용 TOP5 -->
+							<div class="content left">
+								<h2 class="title">CLOUD 상품별 현재 비용 TOP5</h2>
+
+								<div class="chart" style="height: 300px;">
+									chart
+								</div>
+
+								<ul class="list-top5">
+									<li>
+										<div class="top5-item">
+											<em class="title">Amazon Elastic Compute Cloud</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 80%;"></span>
+												<span class="last" style="width: 97%;"></span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="top5-item">
+											<em class="title">Amazon RDS Service</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 75%;"></span>
+												<span class="last" style="width: 80%;"></span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="top5-item">
+											<em class="title">Amazon ElastiCache</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 50%;"></span>
+												<span class="last" style="width: 75%;"></span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="top5-item">
+											<em class="title">Amazon Elastic MapReduce</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 38%;"></span>
+												<span class="last" style="width: 50%;"></span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="top5-item">
+											<em class="title">Amazon Simple Storage Service</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 12%;"></span>
+												<span class="last" style="width: 38%;"></span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="top5-item">
+											<em class="title">ETC</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 12%;"></span>
+												<span class="last" style="width: 38%;"></span>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+
+
+							<!-- 지역별 현재 비용 TOP5 -->
+							<div class="content right">
+								<h2 class="title">지역별 현재 비용 TOP5</h2>
+
+								<div class="chart" style="height: 300px;">
+									chart
+								</div>
+
+								<ul class="list-top5">
+									<li>
+										<div class="top5-item">
+											<em class="title">Asia Pacific (Seoul)</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 80%;"></span>
+												<span class="last" style="width: 97%;"></span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="top5-item">
+											<em class="title">US West (Oregon) Region</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 75%;"></span>
+												<span class="last" style="width: 80%;"></span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="top5-item">
+											<em class="title">US East (Northern Virginia)</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 50%;"></span>
+												<span class="last" style="width: 75%;"></span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="top5-item">
+											<em class="title">US West (Northern California)</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 38%;"></span>
+												<span class="last" style="width: 50%;"></span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="top5-item">
+											<em class="title">Asia Pacific (Sydney)</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 12%;"></span>
+												<span class="last" style="width: 38%;"></span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="top5-item">
+											<em class="title">ETC</em>
+											<p class="cost">
+												<strong class="current">$00,000.00</strong>
+												<em class="last">LAST MONTH $00,000.00</em>
+											</p>
+
+											<p class="cost-graph">
+												<span class="current" style="width: 12%;"></span>
+												<span class="last" style="width: 38%;"></span>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</li>
+
+
+					<li class="column-02">
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+							
+							<div class="content">
+								<h2 class="title">계정별 비용</h2>
+
+								<table class="list-type-tbl">
+									<caption>계정별 비용</caption>
+									<tbody>
+										<tr>
+											<th scope="row">
+												<em class="vendor aws">
+													AWS <span class="uid">819203746200</span>
+												</em>
+											</th>
+											<td class="r">
+												<p class="cost">
+													<strong>$000,000.00</strong>
+													<span class="growth down size-small">-00.0%</span>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<em class="vendor aws">
+													AWS <span class="uid">819203746200</span>
+												</em>
+											</th>
+											<td class="r">
+												<p class="cost">
+													<strong>$000,000.00</strong>
+													<span class="growth up size-small">00.0%</span>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<em class="vendor azure">
+													AZURE <span class="uid">819203746200</span>
+												</em>
+											</th>
+											<td class="r">
+												<p class="cost">
+													<strong>$000,000.00</strong>
+													<span class="growth down size-small">-00.0%</span>
+												</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+					</li>
+					<li class="column-02">
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+							
+							<div class="content">
+								<h2 class="title">예산 현황</h2>
+
+								<ul class="list-budget-status">
+									<li>
+										<div class="budget-status">
+											<em class="vendor aws">AWS</em>
+											<span class="total">총 예산 <em>$50,000.00</em></span>
+
+											<p class="budget-graph"><span class="gage" style="width: 60%;"></span></p>
+
+											<span class="used">사용액 <em>$20,000.00</em></span>
+											<strong class="balance">잔액 <em>$30,000.00</em></strong>
+										</div>
+									</li>
+									<li>
+										<div class="budget-status">
+											<em class="vendor azure">AZURE</em>
+											<span class="total">총 예산 <em>$50,000.00</em></span>
+
+											<p class="budget-graph excess"><span class="gage" style="width: 27.273%;"></span></p>
+
+											<span class="used">사용액 <em>$20,000.00</em></span>
+											<strong class="excess">초과 <em>$30,000.00</em></strong>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</li>
+
+
+					<li class="column-02">
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+							
+							<div class="content">
+								<h2 class="title">납부 내역</h2>
+
+								<table class="list-type-tbl">
+									<caption>납부 내역</caption>
+
+									<tbody>
+										<tr>
+											<th scope="row"><time datetime="">2016.07</time></th>
+											<td>
+												<dl class="price">
+													<dt>청구금액</dt>
+													<dd><strong>￦000,000,000</strong></dd>
+													<dt>납부금액</dt>
+													<dd>￦0</dd>
+												</dl>
+											</td>
+											<td class="r">
+												<strong class="pay-status unpaid">UNPAID</strong>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><time datetime="">2016.08</time></th>
+											<td>
+												<dl class="price">
+													<dt>청구금액</dt>
+													<dd><strong class="overdue">￦000,000,000</strong></dd>
+													<dt>납부금액</dt>
+													<dd>￦0</dd>
+												</dl>
+											</td>
+											<td class="r">
+												<strong class="pay-status overdue">OVERDUE</strong>
+											</td>
+										</tr>
+										<tr class="disabled">
+											<th scope="row"><time datetime="">2016.09</time></th>
+											<td>
+												<dl class="price">
+													<dt>청구금액</dt>
+													<dd><strong>￦000,000,000</strong></dd>
+													<dt>납부금액</dt>
+													<dd>￦0</dd>
+												</dl>
+											</td>
+											<td class="r">
+												<strong class="pay-status paid">PAID</strong>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</section>
+					</li>
+					<li class="column-02">
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+							
+							<div class="content">
+								<h2 class="title">크레딧 현황</h2>
+
+								<table class="list-type-tbl">
+									<caption></caption>
+									<tbody>
+										<tr>
+											<th scope="row">
+												<em class="vendor aws">
+													AWS <span class="uid">819203746200</span>
+												</em>
+											</th>
+											<td>
+												<dl class="price">
+													<dt>남은액</dt>
+													<dd><strong>￦000,000,000</strong></dd>
+													<dt>사용금액</dt>
+													<dd>￦0</dd>
+												</dl>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<em class="vendor azure">
+													AZURE <span class="uid">819203746200</span>
+												</em>
+											</th>
+											<td>
+												<dl class="price">
+													<dt>남은금액</dt>
+													<dd><strong>￦000,000,000</strong></dd>
+													<dt>사용금액</dt>
+													<dd>￦0</dd>
+												</dl>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+					</li>
+				</ul>				
+
+				
+
+			</div>
+		</article>
+	</main>
+
+
+
+
+	<!-- popup mtd -->
+	<div id="mtd" class="popover metering-tooltip">
+		<span class="point" style="left: 50%;"></span>
+		<p>Variance rate is based on data from the same date of last month</p>
+	</div>
+
+	<!-- popup variance -->
+	<div id="variance" class="popover metering-tooltip">
+		<span class="point" style="left: 50%;"></span>
+		<p>Variance rate is based on data from the same date of last month</p>
+	</div>
+
+	<!-- popup unit price -->
+	<div id="unit-price" class="popover metering-tooltip">
+		<span class="point" style="left: 50%;"></span>
+		<p>Variance rate is based on data from the same date of last month</p>
+	</div>
+	<script>
+	$(window.document).ready(function(){
+		$('.btn-txt-info.mtd').on({
+			mouseenter: function(e) {
+				$('#mtd').popup({
+					type: 'tooltip',
+					tooltipanchor: e.target,
+					vertical: 'bottom',
+					offsettop: 20,
+					horizontal: 'center',
+					// transition: '0.3s all 0.1s',
+					autoopen: true
+				});
+			},
+			mouseleave: function(e) {
+				$('#mtd').popup('hide');
+			}
+		});
+
+		$('.btn-txt-info.variance').on({
+			mouseenter: function(e) {
+				$('#variance').popup({
+					type: 'tooltip',
+					tooltipanchor: e.target,
+					vertical: 'bottom',
+					offsettop: 20,
+					horizontal: 'center',
+					// transition: '0.3s all 0.1s',
+					autoopen: true
+				});
+			},
+			mouseleave: function(e) {
+				$('#variance').popup('hide');
+			}
+		});
+
+		$('.btn-txt-info.unit-price').on({
+			mouseenter: function(e) {
+				$('#unit-price').popup({
+					type: 'tooltip',
+					tooltipanchor: e.target,
+					vertical: 'bottom',
+					offsettop: 20,
+					horizontal: 'center',
+					// transition: '0.3s all 0.1s',
+					autoopen: true
+				});
+			},
+			mouseleave: function(e) {
+				$('#unit-price').popup('hide');
+			}
+		});
+	});
+	</script>
+
+
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

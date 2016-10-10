@@ -1,0 +1,34 @@
+@@include('./admin_head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="admin">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			@@include('./admin_title.html')
+
+			<div class="contents-inner">
+				<div class="column-left">
+					@@include('./admin_sidemenu.html')
+				</div>
+
+
+				<div class="column-right">
+					column right
+				</div>
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./admin_footer.html')
+
+</body>
+</html>

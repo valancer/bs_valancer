@@ -1,0 +1,195 @@
+<fieldset class="search-container">
+	<legend>company search</legend>
+
+	<p class="search-word">
+		<input type="search" id="" name="" placeholder="company search">
+		<button type="submit" class="btn-search">search</button>
+	</p>
+
+	<div class="show-option">
+		<label for="" class="option">Show Option</label>
+
+		<div class="multiple-select">
+			<button type="button" class="btn-filter">ALL</button>
+			<ul class="list-filter">
+				<li>
+					<label for="all-company" class="icheck">
+						<input type="checkbox" id="all-company" name="all-company" data-all="company" data-title="ALL" class="icheckbox">
+						ALL
+					</label>
+				</li>
+				<li>
+					<label for="subscribed" class="icheck">
+						<input type="checkbox" id="subscribed" name="company" data-ref="company" data-title="Subscribed" class="icheckbox">
+						Subscribed
+					</label>
+				</li>
+				<li>
+					<label for="trial" class="icheck">
+						<input type="checkbox" id="trial" name="company" data-ref="company" data-title="Tiral" class="icheckbox">
+						Tiral
+					</label>
+				</li>
+				<li>
+					<label for="activate" class="icheck">
+						<input type="checkbox" id="activate" name="company" data-ref="company" data-title="Activate" class="icheckbox">
+						Activate
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</fieldset>
+<script>
+$(document).ready(function(e) {
+	var multipleSelect = (function ($) {
+		var scope,
+			$container,
+			$allItem,
+			$listChecks,
+			$checkItems,
+			$btnToggle,
+			checkedLabels,
+			init = function() {
+				$container = $('.multiple-select');
+				$btnToggle = $container.find('.btn-filter');
+				$listChecks = $container.find('.list-filter');
+				$allItem = $container.find('input[data-all]');
+				$checkItems = $container.find('input[data-ref]');
+				checkedLabels = [];
+
+				initLayout();
+				initEvent();
+			};
+
+		function initLayout() {
+		}
+
+		function initEvent() {
+			$btnToggle.on('click', function() {
+				$listChecks.toggle();
+			});
+
+			$allItem.on('ifToggled', function(e) {
+				var target = $(this).data('all');
+				var $items = $('input[data-ref=' + target + ']');
+
+				if( $(this).prop("checked") ) {
+					$items.iCheck("check");
+				} else {
+					$items.iCheck("uncheck");
+				}
+			});
+
+			$checkItems.on('ifChanged', function(e) {
+				var target = $(this).data('ref');
+				var $all = $('input[data-all=' + target + ']');
+				var $items = $('input[data-ref=' + target + ']');
+				var $checked = $('input[data-ref=' + target + ']:checked');
+
+				if( $checked.length > 0 ) {
+					if( $items.length !== $checked.length ) {
+						$all.iCheck('indeterminate');
+						checkedLabels = [];
+						$checked.each(function() {
+							checkedLabels.push($(this).closest('label').text().trim());
+						});
+					} else {
+						$all.iCheck('check');
+						checkedLabels = [];
+						checkedLabels = [$all.closest('label').text().trim()];
+					}
+				} else {
+					$all.iCheck('uncheck');
+					$all.iCheck('determinate');
+					checkedLabels = ['None'];
+				}
+
+				_updateSelectedLabels(checkedLabels);
+			});
+
+			$checkItems.on('ifIndeterminate', function(e) {
+				var target = $(this).data('ref');
+				var $all = $('input[data-all=' + target + ']');
+				$all.iCheck('indeterminate');
+			});
+
+			$allItem.iCheck('check');
+
+			$(document).click(function (e) {
+				if( e.target != $btnToggle.get(0)) {
+					$listChecks.hide();
+				}
+			});
+		}
+
+		function _updateSelectedLabels(checkedLabels) {
+			$btnToggle.html(checkedLabels.join(", "));
+		}
+
+		return {
+			init: function() {
+				init();
+			}
+		};
+	}(jQuery));
+
+	
+	multipleSelect.init();
+});
+</script>
+
+
+
+<nav class="list-company">
+	<ul>
+		<li>
+			<a href="#" class="company-item selected">
+				<em class="name">Company Name 회사이름 會社</em>
+				<p class="status activated">ACTIVATE</p>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="company-item">
+				<em class="name">Company Name</em>
+				<p class="status trial">TRIAL</p>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="company-item">
+				<em class="name">Company Name 회사이름 會社</em>
+				<p class="status subscribed">SUBSCRIBED</p>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="company-item">
+				<em class="name">Company Name 회사이름 會社</em>
+				<p class="status activated">ACTIVATE</p>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="company-item">
+				<em class="name">Company Name</em>
+				<p class="status trial">TRIAL</p>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="company-item">
+				<em class="name">Company Name 회사이름 會社</em>
+				<p class="status subscribed">SUBSCRIBED</p>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="navigation">
+	<a href="#" class="btn-prev"></a>
+	<a href="#">7</a>
+	<a href="#" class="is-selected">8</a>
+	<a href="#">9</a>
+	<a href="#">10</a>
+	<a href="#">11</a>
+	<a href="#">12</a>
+	<a href="#" class="btn-next"></a>
+</div>

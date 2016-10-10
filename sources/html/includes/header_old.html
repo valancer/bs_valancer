@@ -1,0 +1,191 @@
+<header class="global-menu">
+	<div class="contents-inner">
+
+		<div class="title">
+			<a href="#" class="btn-home">BESPIN</a>
+
+			@@if ( service == "portal" ) {<strong class="bespin-global"><span class="is-hidden">BESPIN GLOBAL</span></strong>}
+			@@if ( service == "asset" ) {<strong class="service asset">ASSET MANAGEMENT</strong>}
+			@@if ( service == "metering" ) {<strong class="service metering">METERING</strong>}
+			@@if ( service == "monitoring" ) {<strong class="service monitoring">MONITORING</strong>}
+			@@if ( service == "workflow" ) {<strong class="service workflow">WORKFLOW</strong>}
+
+			<button type="button" class="btn-language language_open">ENGLISH</button>
+			<ul id="language" class="list-select-popup small">
+				<li><button type="button" class="is-selected">ENGLISH</button></li>
+				<li><button type="button">한국어</button></li>
+				<li><button type="button">中文</button></li>
+			</ul>
+		</div>
+		
+		<!-- user -->
+		<figure class="user">
+			<a href="#user" class="thumb user-info_open"><img src="assets/images/company_profile.png" alt=""></a>
+			<figcaption>
+				<button type="button" class="name user-info_open" title="Jacob Middle Kim">박남정남</button>
+				
+				<button type="button" class="company company_open" title="NHN Asia Pacific xyz">NHN Asia Pacific xyz</button>
+				<ul id="company" class="list-select-popup">
+					<li><button type="button">NHN Korea</button></li>
+					<li><button type="button" class="is-selected">NHN Asia Pacific xyz</button></li>
+					<li><button type="button">NHN America</button></li>
+				</ul>
+			</figcaption>
+		</figure>
+		<!--// user -->
+		
+
+		<!-- notifications, shortcut -->
+		<p class="uilts">
+			<a href="#notification" class="btns notifications">
+				<span class="hidden">new</span><em class="badge">2</em> notification
+			</a>
+			<button type="button" class="btns dashboard service-shortcut_open">shortcut service</button>
+		</p>
+		<!--// notifications, shortcut -->
+	</div>
+
+	<!-- service shortcut -->
+	<aside id="service-shortcut" class="popover">
+		<span class="point"></span>
+
+		<nav class="global-shortcuts">
+			<ul class="type-thumbnail">
+				<li><a href="#" class="dashboard">My Bespin Dashboard</a></li>
+				<li><a href="#" class="metering">Cost Metering</a></li>
+				<li><a href="#" class="asset">Asset Management</a></li>
+				<li><a href="#" class="monitoring">Realtime Monitoring</a></li>
+				<li><a href="#" class="workflow">ITS Workflow</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<!-- user info -->
+	<aside id="user-info" class="popover">
+		<span class="point"></span>
+
+		<nav class="global-shortcuts">
+			<ul class="type-list">
+				<li class="is-selected"><a href="#">Home/Dashboard</a></li>
+				<li><a href="#">Permission Groups</a></li>
+				<li><a href="#">Cloud Vendor Accounts</a></li>
+				<li><a href="#">Company Service Groups </a></li>
+				<li><a href="#">Bespin Account &amp; Billing</a></li>
+			</ul>
+		</nav>
+		<button type="button" class="btn-logout">Logout</button>
+	</aside>
+</header>
+
+
+
+@@if ( service == "asset" ) {
+<nav class="sub-menus">
+	<div class="contents-inner">
+		<h2>하위 메뉴 바로가기</h2>
+		
+		<button type="button" class="btn-settings">settings</button>
+		<ul class="list-menus">
+			<li @@if ( sub == "dashboard" ) { class="is-selected" }><a href="#">DASHBOARD</a></li>
+			<li @@if ( sub == "service" ) { class="is-selected" }><a href="#">SERVICE GROUP</a></li>
+			<li @@if ( sub == "usage" ) { class="is-selected" }><a href="#">USAGE</a></li>
+			<li @@if ( sub == "performance" ) { class="is-selected" }><a href="#">PERFORMANCE</a></li>
+		</ul>
+	</div>
+</nav>
+}
+
+@@if ( service == "metering" ) {
+<nav class="sub-menus">
+	<div class="contents-inner">
+		<h2>하위 메뉴 바로가기</h2>
+
+		<button type="button" class="btn-settings">settings</button>
+		<ul class="list-menus">
+			<li @@if ( sub == "dashboard" ) { class="is-selected" }><a href="#">DASHBOARD</a></li>
+			<li @@if ( sub == "billing" ) { class="is-selected" }><a href="#">BILLING</a></li>
+			<li @@if ( sub == "statistics" ) { class="is-selected" }><a href="#">STATISTICS</a></li>
+			<li @@if ( sub == "budgeting" ) { class="is-selected" }>
+				<a href="#">BUDGETING</a>
+				<ul class="list-sub-menus">
+					<li><a href="#">Budget Overview</a></li>
+					<li class="is-selected"><a href="#">Budget Setting</a></li>
+					<li><a href="#">Alarm Setting</a></li>
+				</ul>
+			</li>
+			<li @@if ( sub == "status" ) { class="is-selected" }><a href="#">RI STATUS</a></li>
+			<li @@if ( sub == "history" ) { class="is-selected" }><a href="#">PAYMENT &amp; DISCOUNT</a></li>
+		</ul>
+	</div>
+</nav>
+}
+
+<script>
+$(document).ready(function(e) {	
+	/* GlobalMenu */
+	var GlobalMenu = (function ($) {
+		var scope,
+			$container,
+			$selectLanguage,
+			$selectCompany,
+			$userInfo,
+			$service,
+			init = function() {
+				$container = $('.global-menu');
+				$selectLanguage = $('#language');
+				$selectCompany = $('#company');
+				$service = $('#service-shortcut');
+				$userInfo = $('#user-info');
+
+
+				initLayout();
+				initEvent();
+			};
+
+		function initLayout() {
+		}
+
+		function initEvent() {
+			$selectLanguage.popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				horizontal: 'leftedge',
+				transition: '0.3s all 0.1s'
+			});
+
+			$selectCompany.popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				offsettop: -2,
+				horizontal: 'rightedge',
+				transition: '0.3s all 0.1s'
+			});
+
+			$service.popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				horizontal: 'center',
+				offsettop: 50,
+				transition: '0.3s all 0.1s'
+			});
+
+			$userInfo.popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				horizontal: 'center',
+				offsettop: 70,
+				transition: '0.3s all 0.1s'
+			});
+
+		}
+
+		return {
+			init: function() {
+				init();
+			}
+		};
+	}(jQuery));
+
+	GlobalMenu.init();
+});
+</script>

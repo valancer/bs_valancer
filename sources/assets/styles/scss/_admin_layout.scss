@@ -1,0 +1,94 @@
+html { min-height: 100%; height: 100%; }
+body { min-height: 100%; height: 100%; }
+input, textarea, keygen, select, button { }
+
+
+/* admin footer */
+.admin-footer { box-sizing: border-box; padding: 0 30px; height: 60px; min-width: $contents-width; color: #fff; background-color: #000;
+	.bgsp { display: inline-block; font-family: $font-base-stack; font-size: 20px; font-weight: 700; line-height: 60px; }
+	.copyright { float: right; font-size: 14px; color: #9B9B9B; line-height: 60px; }
+}
+
+
+/* contents */
+main { position: relative; display: block; margin-top: 90px; min-height: calc(100% - 90px - 60px); }
+article.contents { display: block; min-height: 100%; min-width: $contents-width;
+	.title { padding-left: 30px; height: 50px; font-family: $font-base-stack; font-size: 24px; color: #fff; line-height: 50px; background-color: #575757; }
+
+	.contents-inner { position: relative; padding: 0 60px 0 $column-left-width + 40; min-height: 600px; height: 100%; }
+	.column-left { position: absolute; top: 0; bottom: 0; left: 0; width: $column-left-width; background-color: #F6F6F6; box-shadow: inset -2px 1px 2px 0px rgba(0,0,0,0.10); }
+	.column-right { padding: 25px 0 200px 0; max-width: $column-right-width; background-color: #fff;
+		.page-title { font-size: 20px; font-weight: bold; color: #4A4A4A; }
+		.page-tabs { overflow: hidden; position: relative; margin-top: 28px;
+			&:before { content: ''; display: block; position: absolute; bottom: 0; height: 2px; width: 100%; background-color: #000; }
+
+			a, button { display: block; box-sizing: border-box; float: left; position: relative; z-index: z("default"); width: 25%; font-family: $font-base-stack; font-size: 16px; font-weight: 700; color: #B4B4B4; line-height: 36px; letter-spacing: 2.5px; text-align: center; border: 2px solid #EAEAEA; border-bottom: 0px; background-color: #fff;
+				&.selected { color: #000; border: 2px solid #000; border-bottom: 2px solid #fff; }
+			}
+		}
+	}
+}
+
+
+/* side menu */
+.search-container { padding: 19px 17px 8px 17px;
+	.search-word { position: relative;
+		input[type=search] { display: block; box-sizing: border-box; padding-left: 13px; height: 40px; width: 100%; font-size: 14px; color: #333; line-height: 40px; border: 2px solid #686868; }
+		.btn-search { display: block; position: absolute; top: 50%; right: 11px; margin-top: -8px; height: 16px; width: 16px; text-indent: -9999px;
+			@include icon(search02);
+			&:before { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; font-size: 16px; text-indent: 0px; text-align: center; vertical-align: middle; }
+		}
+	}
+
+	.show-option { padding: 20px 0 10px 3px;
+		.option { font-size: 14px; color: #333; line-height: 30px; }
+	}
+}
+
+
+.multiple-select { display: inline-block; float: right; position: relative; width: 155px; 
+	.btn-filter { display: block; position: relative; box-sizing: border-box; padding: 0 0 0 10px; height: 30px; width: 100%; font-size: 14px; color: #333; text-align: left; line-height: 30px; background-color: #E1E1E1;
+		@include icon(arrow01);
+		&:before { display: block; position: absolute; top: 50%; right: 5px; margin-top: -5px; height: 10px; width: 20px; font-size: 15px; color: #000; line-height: 10px; text-align: center; }
+	}
+	.list-filter { display: none; box-sizing: border-box; position: absolute; top: 30px; padding: 3px 0; width: 100%; border: 2px solid #DADADA; background-color: #fff;
+		> li { height: 30px;
+			label { display: block; padding-left: 35px; height: 30px; line-height: 30px; font-size: 14px; color: #000;
+				&:hover { background-color: #f0f0f0; }
+				.icheckbox { top: 50%; left: 9px; margin-top: -8px; }
+			}
+		}
+	}
+}
+
+
+.list-company {
+	li {
+		.company-item { display: block; box-sizing: border-box; padding: 11px 20px 0; height: 60px; font-size: 14px; line-height: 22px;
+			.name { color: #333; }
+			.status {
+				&:before { content: ''; display: inline-block; margin-right: 4px; }
+
+				&.activated { color: #67A81F;
+					&:before { height: 10px; width: 10px; border-radius: 10px; background-color: #7FCB2B; }
+				}
+				&.trial { color: #4AE2CE;
+					&:before { height: 6px; width: 6px; border: 2px solid #62E6D5; border-radius: 10px; }
+				}
+				&.subscribed { color: #4A90E2;
+					&:before { @include retina-sprite($sc-icon-plus-02-group); }
+				}
+			}
+
+			&:hover { background-color: #EAEAEA; }
+			&.selected { background-color: #000;
+				.name { color: #fff; }
+			}
+		}
+	}
+
+	+ .navigation { position: absolute; bottom: 0; right: 0; left: 0; padding: 15px 0; border-top: 1px solid #DDD;
+		.btn-prev { margin-right: 5px; }
+		.btn-next { margin-left: 5px; }
+	}
+}

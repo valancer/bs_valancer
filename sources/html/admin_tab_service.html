@@ -1,0 +1,330 @@
+@@include('./admin_head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="admin">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			@@include('./admin_title.html')
+			
+
+			<div class="contents-inner">
+				<div class="column-left">
+					@@include('./admin_sidemenu.html')
+				</div>
+
+
+				<div class="column-right">
+					
+					<h1 class="page-title">Company Name 회사이름 會社</h1>
+
+					<p class="page-tabs">
+						<a href="#">COMPANY</a>
+						<a href="#">BILLING</a>
+						<a href="#" class="selected">SERVICE</a>
+						<a href="#">USERS(33)</a>
+					</p>
+
+
+					<section class="section">
+						<h2 class="section-title">PERSON IN CHARGE</h2>
+
+						<fieldset class="forms">
+							<legend>Person in Charge</legend>
+
+
+							<div class="section-sub-title">
+								<button type="button" class="btn-add">Add System Enginer</button>
+
+								<h3>System Enginer</h3>
+							</div>
+							<table class="tbl-v">
+								<caption>System Enginer</caption>
+								<colgroup>
+									<col style="width: 40px;">
+									<col>
+									<col>
+									<col style="width: 150px;">
+									<col style="width: 30px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="c">No.</th>
+										<th scope="col">SE ID</th>
+										<th scope="col">Name</th>
+										<th scope="col" class="c">MAIN/ SUB</th>
+										<th scope="col" class="c"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="c">000</td>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+										<td class="c">
+											<select name="" id="" style="min-width: 130px;">
+												<option value="">Main</option>
+												<option value="">Sub</option>
+											</select>
+										</td>
+										<td class="c">
+											<button type="button" class="btn-inner delete">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">000</td>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+										<td class="c">
+											<select name="" id="" style="min-width: 130px;">
+												<option value="">Main</option>
+												<option value="">Sub</option>
+											</select>
+										</td>
+										<td class="c">
+											<button type="button" class="btn-inner delete">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+
+							<div class="section-sub-title">
+								<button type="button" class="btn-add">Add Sales Persons</button>
+
+								<h3>Sales Persons</h3>
+							</div>
+							<table class="tbl-v">
+								<caption>Sales Persons</caption>
+								<colgroup>
+									<col style="width: 40px;">
+									<col>
+									<col>
+									<col style="width: 30px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="c">No.</th>
+										<th scope="col">Sales ID</th>
+										<th scope="col">Name</th>
+										<th scope="col" class="c"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="c">000</td>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+										<td class="c">
+											<button type="button" class="btn-inner delete">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">000</td>
+										<td>
+											<span class="invalid"><input type="text" id="" name=""></span>
+										</td>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+										<td class="c">
+											<button type="button" class="btn-inner delete">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<p class="btn-fieldset">
+								<button type="button" class="btn-normal">CANCEL</button>
+								<button type="submit" class="btn-submit">SAVE &amp; CHANGES</button>
+							</p>
+						</fieldset>
+					</section>
+
+
+					<section class="section">
+						<h2 class="section-title">CLOUD</h2>
+
+						<fieldset class="forms">
+							<legend>Cloud</legend>
+
+							<!-- AWS -->
+							<div class="section-sub-title">
+								<button type="button" class="btn-add">Add AWS Account</button>
+
+								<h3 class="aws">AWS</h3>
+							</div>
+							<table class="tbl-v">
+								<caption>AWS account</caption>
+								<colgroup>
+									<col style="width: 40px;">
+									<col>
+									<col>
+									<col>
+									<col style="width: 30px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="c">No.</th>
+										<th scope="col">Account ID</th>
+										<th scope="col">Alias</th>
+										<th scope="col">Access Key</th>
+										<th scope="col" class="c"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="c">000</td>
+										<td>
+											000000000000
+										</td>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+										<td class="c">
+											<button type="button" class="btn-inner delete">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+
+							<!-- AZURE -->
+							<div class="section-sub-title">
+								<button type="button" class="btn-add">Add Azure Account</button>
+
+								<h3 class="azure">Azure</h3>
+							</div>
+
+							
+
+							<p class="btn-fieldset">
+								<button type="button" class="btn-normal">CANCEL</button>
+								<button type="submit" class="btn-submit">SAVE &amp; CHANGES</button>
+							</p>
+						</fieldset>
+					</section>
+
+
+
+
+					<section class="section">
+						<h2 class="section-title">SERVICE</h2>
+
+						<fieldset class="forms">
+							<legend>Searvice</legend>
+
+							<table class="tbl-v">
+								<caption>Service</caption>
+								<colgroup>
+									<col>
+									<col>
+									<col style="width: 220px;">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th>Service</th>
+										<th>Status</th>
+										<th>Changed At</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<span class="service asset">Asset Management</span>
+										</td>
+										<td>
+											<span class="status-service using-request">Using Request</span>
+											<button type="button" class="btn-inner-em">ACTIVATE</button>
+										</td>
+										<td>
+											<time datetime="">2016-08-30 00:00:00</time>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="service metering">Metering</span>
+										</td>
+										<td>
+											<span class="status-service used">Used</span>
+										</td>
+										<td>
+											<time datetime="">2016-08-30 00:00:00</time>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="service monitoring">Monitoring</span>
+										</td>
+										<td>
+											<span class="status-service break-request">Break Request</span>
+											<button type="button" class="btn-inner">NOT USE</button>
+										</td>
+										<td>
+											<time datetime="">2016-08-30 00:00:00</time>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="service monitoring">Monitoring</span>
+										</td>
+										<td>
+											<span class="status-service not-used">Not Used</span>
+										</td>
+										<td>
+											<time datetime="">2016-08-30 00:00:00</time>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="service workflow">ITS</span>
+										</td>
+										<td>
+											<span class="status-service not-used">Not Used</span>
+										</td>
+										<td>
+											<time datetime="">2016-08-30 00:00:00</time>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<p class="btn-fieldset">
+								<button type="button" class="btn-normal">CANCEL</button>
+								<button type="submit" class="btn-submit">SAVE &amp; CHANGES</button>
+							</p>
+						</fieldset>
+					</section>
+				</div>
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./admin_footer.html')
+
+</body>
+</html>

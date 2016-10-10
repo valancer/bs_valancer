@@ -1,89 +1,121 @@
-<header class="global-menu logout">
-	<div class="contents-inner">
+<header class="global-menu-new logout">
 
-		<div class="title">
-			<a href="#" class="btn-home">BESPIN</a>
-
-			<strong class="bespin-global"><span class="is-hidden">BESPIN GLOBAL</span></strong>
-
-			<button type="button" class="btn-language language_open">ENGLISH</button>
-			<ul id="language" class="list-select-popup small">
-				<li><a href="#english" class="is-selected">ENGLISH</a></li>
-				<li><a href="#korean">한국어</a></li>
-				<li><a href="#chinese">中文</a></li>
-			</ul>
+	<div class="title">
+		<a href="#" class="btn-home">BESPIN GLOBAL SERVICE</a>
+	</div>
+	
+	<!-- language, notification, user -->
+	<div class="utils">
+		<div id="language" class="custom-select-container small">
+			<button type="button" class="btn-custom-select">한국어</button>
+			<div class="list-container">
+				<ul class="list-custom-select">
+					<li><button type="button">ENGLISH</button></li>
+					<li class="is-selected"><button type="button">한국어</button></li>
+					<li><button type="button">中文</button></li>
+				</ul>
+			</div>
 		</div>
-		
-		<!-- user -->
-		<div class="user">
-			<a href="#none" class="thumb user-info_open"><img src="assets/images/user_profile.png" alt=""></a>
-		</div>
-		<!--// user -->
+
+		<p class="btns">
+			<a href="#" class="btn">LOG IN</a>
+			<a href="#" class="btn">SIGN UP</a>
+		</p>
 	</div>
 
-
-
-	<!-- user info -->
-	<aside id="user-info" class="popover">
-		<span class="point"></span>
-
-		<nav class="global-shortcuts">
-			<ul class="type-list">
-				<li><a href="#">Log In</a></li>
-				<li><a href="#">Create and Account</a></li>
-				<li><a href="#">Talk to Us?</a></li>
-			</ul>
-		</nav>
-	</aside>
 </header>
-
 <script>
-$(document).ready(function(e) {	
-	/* GlobalMenu */
-	var GlobalMenu = (function ($) {
-		var scope,
-			$container,
-			$selectLanguage,
-			$selectCompany,
-			$userInfo,
-			$service,
-			init = function() {
-				$container = $('.global-menu');
-				$selectLanguage = $('#language');
-				$service = $('#service-shortcut');
-				$userInfo = $('#user-info');
+/* BSPSelectBox */
+function BSPSelectBox($container) {
+	this.$container = $container;
+	this.$btnSelect;
+	this.$listContainer;
+	this.$listItems;
+
+	this.init();
+}
+
+BSPSelectBox.prototype.init = function() {
+	var _ = this;
+
+	_.$btnSelect = _.$container.find('.btn-custom-select');
+	_.$listContainer = _.$container.find('.list-container');
+	_.$listItems = _.$listContainer.find('button');
+
+	var btnWidth = _.$btnSelect.width();
+	var listContainerWidth = _.$listContainer.width() + 30;
+	if( btnWidth > listContainerWidth ) {
+		_.$listContainer.width(btnWidth + "px");
+	} else {
+		_.$btnSelect.width(listContainerWidth + "px");
+	}
+
+	_.$btnSelect.on('click', function(e) {
+		$(this).toggleClass("is-selected");
+	});
+
+	_.$listItems.on('click', function(e) {
+		_.select($(this));
+	});
+}
+
+BSPSelectBox.prototype.hide = function() {
+	var _ = this;
+
+	_.$btnSelect.removeClass("is-selected")
+}
+
+BSPSelectBox.prototype.select = function($item) {
+	var _ = this;
+
+	_.$listItems.closest('li').removeClass('is-selected');
+	$item.closest('li').addClass('is-selected');
+
+	_.$btnSelect.html($item.html());
+	_.hide();
+}
 
 
-				initLayout();
-				initEvent();
-			};
 
-		function initLayout() {
-		}
+/* GlobalMenu */
+var GlobalMenu = (function ($) {
+	var scope,
+		$container,
+		selectService,
+		selectCompany,
+		selectLanguage,
+		init = function() {
+			$container = $('.global-menu-new');
 
-		function initEvent() {
-			$selectLanguage.popup({
-				type: 'tooltip',
-				vertical: 'bottom',
-				horizontal: 'leftedge',
-				transition: '0.3s all 0.1s'
-			});
+			selectService = new BSPSelectBox($('#select-service'));
+			selectCompany = new BSPSelectBox($('#select-company'));
+			selectLanguage = new BSPSelectBox($('#language'));
 
-			$userInfo.popup({
-				type: 'tooltip',
-				vertical: 'bottom',
-				horizontal: 'center',
-				offsettop: 30,
-				transition: '0.3s all 0.1s'
-			});
-		}
-
-		return {
-			init: function() {
-				init();
-			}
+			initLayout();
+			initEvent();
 		};
-	}(jQuery));
+
+	function initLayout() {
+	}
+
+	function initEvent() {
+		$(document).click(function (e) {
+			if( !$(event.target).closest(".custom-select-container").length ) {
+				selectService.hide();
+				selectCompany.hide();
+				selectLanguage.hide();
+			}
+		});
+	}
+
+	return {
+		init: function() {
+			init();
+		}
+	};
+}(jQuery));
+
+$(document).ready(function(e) {
 
 	GlobalMenu.init();
 });

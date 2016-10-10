@@ -47,86 +47,104 @@
 	@if $filename == cancel {
 		$char: "\E007";
 	}
-	@if $filename == close {
+	@if $filename == check {
 		$char: "\E008";
 	}
-	@if $filename == dashboard {
+	@if $filename == close {
 		$char: "\E009";
 	}
-	@if $filename == defaultview {
+	@if $filename == close02 {
 		$char: "\E00A";
 	}
-	@if $filename == done {
+	@if $filename == dashboard {
 		$char: "\E00B";
 	}
-	@if $filename == dot {
+	@if $filename == defaultview {
 		$char: "\E00C";
 	}
-	@if $filename == download {
+	@if $filename == delete {
 		$char: "\E00D";
 	}
-	@if $filename == edit {
+	@if $filename == done {
 		$char: "\E00E";
 	}
-	@if $filename == email {
+	@if $filename == dot {
 		$char: "\E00F";
 	}
-	@if $filename == export {
+	@if $filename == download {
 		$char: "\E010";
 	}
-	@if $filename == eyes {
+	@if $filename == edit {
 		$char: "\E011";
 	}
-	@if $filename == filter {
+	@if $filename == email {
 		$char: "\E012";
 	}
-	@if $filename == grid {
+	@if $filename == export {
 		$char: "\E013";
 	}
-	@if $filename == growth {
+	@if $filename == eyes {
 		$char: "\E014";
 	}
-	@if $filename == info {
+	@if $filename == filter {
 		$char: "\E015";
 	}
-	@if $filename == menu {
+	@if $filename == grid {
 		$char: "\E016";
 	}
-	@if $filename == message {
+	@if $filename == growth {
 		$char: "\E017";
 	}
-	@if $filename == metering {
+	@if $filename == iks {
 		$char: "\E018";
 	}
-	@if $filename == monitoring {
+	@if $filename == iks02 {
 		$char: "\E019";
 	}
-	@if $filename == noticifation {
+	@if $filename == info {
 		$char: "\E01A";
 	}
-	@if $filename == phone {
+	@if $filename == menu {
 		$char: "\E01B";
 	}
-	@if $filename == refresh {
+	@if $filename == message {
 		$char: "\E01C";
 	}
-	@if $filename == reset {
+	@if $filename == metering {
 		$char: "\E01D";
 	}
-	@if $filename == search {
+	@if $filename == monitoring {
 		$char: "\E01E";
 	}
-	@if $filename == settings {
+	@if $filename == noticifation {
 		$char: "\E01F";
 	}
-	@if $filename == warning {
+	@if $filename == phone {
 		$char: "\E020";
 	}
-	@if $filename == wideview {
+	@if $filename == refresh {
 		$char: "\E021";
 	}
-	@if $filename == workflow {
+	@if $filename == reset {
 		$char: "\E022";
+	}
+	@if $filename == search {
+		$char: "\E023";
+	}
+	@if $filename == search02 {
+		$char: "\E024";
+	}
+	@if $filename == settings {
+		$char: "\E025";
+	}
+	@if $filename == warning {
+		$char: "\E026";
+	}
+	@if $filename == wideview {
+		$char: "\E027";
+	}
+	@if $filename == workflow {
+		$char: "\E028";
 	}
 
 	@return $char;
@@ -165,14 +183,23 @@
 .icon-cancel {
 	@include icon(cancel);
 }
+.icon-check {
+	@include icon(check);
+}
 .icon-close {
 	@include icon(close);
+}
+.icon-close02 {
+	@include icon(close02);
 }
 .icon-dashboard {
 	@include icon(dashboard);
 }
 .icon-defaultview {
 	@include icon(defaultview);
+}
+.icon-delete {
+	@include icon(delete);
 }
 .icon-done {
 	@include icon(done);
@@ -204,6 +231,12 @@
 .icon-growth {
 	@include icon(growth);
 }
+.icon-iks {
+	@include icon(iks);
+}
+.icon-iks02 {
+	@include icon(iks02);
+}
 .icon-info {
 	@include icon(info);
 }
@@ -233,6 +266,9 @@
 }
 .icon-search {
 	@include icon(search);
+}
+.icon-search02 {
+	@include icon(search02);
 }
 .icon-settings {
 	@include icon(settings);

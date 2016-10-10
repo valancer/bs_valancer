@@ -1,0 +1,211 @@
+@@include('./admin_head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="admin">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			@@include('./admin_title.html')
+			
+
+			<div class="contents-inner">
+				<div class="column-left">
+					@@include('./admin_sidemenu.html')
+				</div>
+
+
+				<div class="column-right">
+					
+					<h1 class="page-title">Company Name 회사이름 會社</h1>
+
+					<p class="page-tabs">
+						<a href="#" class="selected">COMPANY</a>
+						<a href="#">BILLING</a>
+						<a href="#">SERVICE</a>
+						<a href="#">USERS(33)</a>
+					</p>
+
+
+					<section class="section">
+						<h2 class="section-title">COMPANY</h2>
+
+						<fieldset class="forms">
+							<legend>Company Info</legend>
+
+							<table class="tbl-h">
+								<caption>Company Info</caption>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">Company Name</label></th>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Status</th>
+										<td>
+											<div class="status-company">
+												<span class="subscribed">Subscribed</span>
+
+												<p class="btns">
+													<button type="button" class="btn-inner">TRIAL</button>
+													<button type="button" class="btn-inner-em">ACTIVATE</button>
+												</p>
+											</div>
+
+											<div class="status-company">
+												<span class="trial">Trial (Term: 2016-08-01 ~ 2016-11-01)</span>
+
+												<p class="btns">
+													<button type="button" class="btn-inner calendar">calendar</button>
+													<button type="button" class="btn-inner-em">ACTIVATE</button>
+												</p>
+											</div>
+
+											<div class="status-company">
+												<span class="activated">Activated</span>
+
+												<p class="btns">
+													<button type="button" class="btn-inner">DEACTIVATE</button>
+												</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Admin Email</th>
+										<td>
+											admin@companyname.com
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">Department</label></th>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">Sub Department</label></th>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">Additional</label></th>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Info Created By</th>
+										<td>
+											admin@bespinglobal.com
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Info Created At</th>
+										<td>
+											<time datetime="">2016-08-30 00:00:00</time>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Info Updated By</th>
+										<td>
+											admin@bespinglobal.com
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Info Updated At</th>
+										<td>
+											<time datetime="">2016-08-30 00:00:00</time>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<p class="btn-fieldset">
+								<button type="button" class="btn-normal">CANCEL</button>
+								<button type="submit" class="btn-submit">SAVE &amp; CHANGES</button>
+							</p>
+						</fieldset>
+					</section>
+
+
+					<section class="section">
+						<h2 class="section-title">SUBSCRIBER</h2>
+
+						<fieldset class="forms">
+							<legend>subscriber Info</legend>
+
+							<table class="tbl-h">
+								<caption>subscriber Info</caption>
+								<tbody>
+									<tr>
+										<th scope="row"><label for="">Name</label></th>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">Email</label></th>
+										<td>
+											<input type="text" id="" name="">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">Phone</label></th>
+										<td>
+											<div class="phone">
+												<select name="" id="">
+													<option value="">Choose country</option>
+													<option value="">Unite States (+1)</option>
+													<option value="">China (+86)</option>
+													<option value="">Korea, Republic of (+82)</option>
+												</select>
+												<span class="invalid">
+													<input type="text" id="" name="">
+												</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label for="">Mobile</label></th>
+										<td>
+											<div class="phone">
+												<select name="" id="">
+													<option value="">Choose country</option>
+													<option value="">Unite States (+1)</option>
+													<option value="">China (+86)</option>
+													<option value="">Korea, Republic of (+82)</option>
+												</select>
+												<span>
+													<input type="text" id="" name="">
+												</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<p class="btn-fieldset">
+								<button type="button" class="btn-normal">CANCEL</button>
+								<button type="submit" class="btn-submit">SAVE &amp; CHANGES</button>
+							</p>
+						</fieldset>
+					</section>
+				</div>
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./admin_footer.html')
+
+</body>
+</html>

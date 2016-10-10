@@ -1,0 +1,122 @@
+@@include('./admin_head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="admin">
+
+
+
+	<!-- user setting -->
+	<aside id="" class="modal-popup user-setting">
+		<h2 class="title">USER SETTING</h2>
+
+		<div class="content">
+			<fieldset class="forms">
+				<legend>user setting</legend>
+
+				<div class="default">
+					<div class="item">
+						<label for="">No.</label>
+						000
+					</div>
+					<div class="item" style="width: 350px;">
+						<label for="">Email</label>
+						aaa@email.com
+					</div>
+					<div class="item">
+						<label for="">Status</label>
+<!--
+						<p>
+							<span class="status-user approval">Approval</span>
+							<button type="button" class="btn-inner-em">ACTIVATE</button>
+						</p>
+
+						<p>
+							<span class="status-user activate">Activate</span>
+							<button type="button" class="btn-inner">DEACTIVATE</button>
+						</p>
+
+						<p>
+							<span class="status-user subscribed">Subscribed</span>
+						</p>
+
+						<p>
+							<span class="status-user invited">Invited</span>
+						</p>
+-->
+						<p>
+							<span class="status-user deactivate">Deactivated</span>
+							<button type="button" class="btn-inner">DELETE</button>
+							<button type="button" class="btn-inner-em">ACTIVATE</button>
+						</p>
+					</div>
+				</div>
+
+				<div class="additional">
+					<div class="float">
+						<p class="item" style="width: 350px;">
+							<label for="">User Name</label>
+							<input type="text" id="" name="">
+						</p>
+						<p class="item" style="width: 200px;">
+							<label for="">Position</label>
+							<input type="text" id="" name="">
+						</p>
+						<p class="item">
+							<label for="">Role</label>
+							<select name="" id="">
+								<option value="">SA</option>
+								<option value="">SE</option>
+								<option value="">SD</option>
+								<option value="">SP</option>
+								<option value="">CA</option>
+							</select>
+						</p>
+					</div>
+
+					<div class="item">
+						<label for="">Phone</label>
+						<div class="phone">
+							<select name="" id="">
+								<option value="">Choose country</option>
+								<option value="">Unite States (+1)</option>
+								<option value="">China (+86)</option>
+								<option value="">Korea, Republic of (+82)</option>
+							</select>
+							<input type="text" id="" name="">
+						</div>
+					</div>
+
+					<div class="item">
+						<label for="">Mobile</label>
+						<div class="phone">
+							<select name="" id="">
+								<option value="">Choose country</option>
+								<option value="">Unite States (+1)</option>
+								<option value="">China (+86)</option>
+								<option value="">Korea, Republic of (+82)</option>
+							</select>
+							<span class="invalid">
+								<input type="text" id="" name="">
+							</span>
+						</div>
+					</div>
+
+					<p class="item">
+						<label for="">Last Login</label>
+						<time datetime="2016-08-30 00:00:00">2016-08-30 00:00:00</time>
+					</p>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="bottom">
+			<button type="button" class="btn-normal">CALCEL</button>
+			<button type="button" class="btn-submit">SAVE &amp; CHANGES</button>
+		</div>
+
+	</aside>
+
+
+</body>
+</html>

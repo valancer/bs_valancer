@@ -1,0 +1,90 @@
+<header class="global-menu logout">
+	<div class="contents-inner">
+
+		<div class="title">
+			<a href="#" class="btn-home">BESPIN</a>
+
+			<strong class="bespin-global"><span class="is-hidden">BESPIN GLOBAL</span></strong>
+
+			<button type="button" class="btn-language language_open">ENGLISH</button>
+			<ul id="language" class="list-select-popup small">
+				<li><a href="#english" class="is-selected">ENGLISH</a></li>
+				<li><a href="#korean">한국어</a></li>
+				<li><a href="#chinese">中文</a></li>
+			</ul>
+		</div>
+		
+		<!-- user -->
+		<div class="user">
+			<a href="#none" class="thumb user-info_open"><img src="assets/images/user_profile.png" alt=""></a>
+		</div>
+		<!--// user -->
+	</div>
+
+
+
+	<!-- user info -->
+	<aside id="user-info" class="popover">
+		<span class="point"></span>
+
+		<nav class="global-shortcuts">
+			<ul class="type-list">
+				<li><a href="#">Log In</a></li>
+				<li><a href="#">Create and Account</a></li>
+				<li><a href="#">Talk to Us?</a></li>
+			</ul>
+		</nav>
+	</aside>
+</header>
+
+<script>
+$(document).ready(function(e) {	
+	/* GlobalMenu */
+	var GlobalMenu = (function ($) {
+		var scope,
+			$container,
+			$selectLanguage,
+			$selectCompany,
+			$userInfo,
+			$service,
+			init = function() {
+				$container = $('.global-menu');
+				$selectLanguage = $('#language');
+				$service = $('#service-shortcut');
+				$userInfo = $('#user-info');
+
+
+				initLayout();
+				initEvent();
+			};
+
+		function initLayout() {
+		}
+
+		function initEvent() {
+			$selectLanguage.popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				horizontal: 'leftedge',
+				transition: '0.3s all 0.1s'
+			});
+
+			$userInfo.popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				horizontal: 'center',
+				offsettop: 30,
+				transition: '0.3s all 0.1s'
+			});
+		}
+
+		return {
+			init: function() {
+				init();
+			}
+		};
+	}(jQuery));
+
+	GlobalMenu.init();
+});
+</script>

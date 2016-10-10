@@ -1,0 +1,127 @@
+$font-special-stack: 'Montserrat', 'Apple SD Gothic', sans-serif;
+
+/* GNB HEADER */
+.global-menu-new { display: block; box-sizing: border-box; position: fixed; top: 0; right: 0; left: 0; z-index: z("gnb"); padding: 0 35px; height: 90px; min-width: 1280px; border-bottom: 1px solid #ccc; background-color: #fff;
+	&:after { content: ''; clear: both; }
+
+	.title { float: left; position: relative; top: 50%; margin-top: -30px; height: 60px;
+		.btn-home { display: inline-block; text-indent: -9999px; vertical-align: middle; @include retina-sprite($sc-bsp-group); }
+	}
+
+	&.logout {
+		.title {
+			.btn-home { display: inline-block; margin-top: 22px; @include retina-sprite($sc-title-bsp-group); }
+		}
+	}
+
+	/* service platform select */
+	.custom-select-container { display: inline-block; position: relative;
+		.txt { display: inline-block; text-indent: -9999px; 
+			&.my-dashboard { @include retina-sprite($sc-title-dashboard-group); }
+			&.asset-management { @include retina-sprite($sc-title-asset-management-group); }
+			&.metering { @include retina-sprite($sc-title-metering-group); }
+			&.monitoring { @include retina-sprite($sc-title-monitoring-group); }
+			&.workflow { @include retina-sprite($sc-title-workflow-group); }
+		}
+
+
+		&.small { vertical-align: middle;
+			.btn-custom-select { padding: 0 15px 0 0; height: 32px; font-size: 0.875rem; font-weight: 400; color: #000; line-height: 32px; border: 0px; border-bottom: 2px solid #000;
+				&:before { content: none; }
+				&:after { right: 6px; }
+
+				&.is-selected { border-bottom: 0px solid #000; transition: all 0.1s ease-in-out; }
+			}
+			.list-container { margin: 0;
+				.list-custom-select { padding: 0;
+					> li {
+						a, button { padding: 0 14px; height: 32px; font-size: 0.875rem; font-weight: 400; line-height: 32px; background-color: #fff;
+							&:before { content: none; }
+							&:hover { color: #fff; background-color: #000; }
+						}
+
+						&.is-selected {
+							a, button { color: #fff; background-color: #000;
+								&:before { content: none; }
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+	.btn-custom-select { display: inline-block; box-sizing: border-box; position: relative; padding: 0 57px 0 15px; height: 60px; font-size: 1.250rem; font-weight: 700; text-align: left; vertical-align: middle; white-space: nowrap; border: 3px solid #fff;
+		transition: all 0.3s ease-in-out;
+
+		@include icon(arrow01, after);
+		&:before { content: ''; display: block; position: absolute; right: 9px; bottom: 9px; left: 12px; height: 2px; background-color: #000;
+			transition: all 0.3s ease-in-out; 
+		}
+		&:after { display: block; position: absolute; top: 50%; right: 17px; margin-top: -4px; height: 9px; width: 14px; font-size: 17px; text-align: left; line-height: 9px;
+			transform: rotateX( 0deg ); transition: transform 0.3s ease-in-out;
+		}
+
+		/* 오픈 */
+		&.is-selected { border: 3px solid #000;
+			transition: all 0.3s ease-in-out;
+
+			&:before { right: 50%; left: 50%; transition: all 0.3s ease-in-out; }
+			&:after { transform: rotateX( 180deg ); transition: transform 0.3s ease-in-out; }
+
+			+ .list-container { visibility: visible; opacity: 1; top: 100%; transition: all 0.3s ease-in-out; }
+		}
+	}
+
+	.list-container { display: block; visibility: hidden; opacity: 0; box-sizing: border-box; overflow: auto; position: absolute; top: 80%; z-index: z("dropdown"); margin-top: 7px; width: 100%; max-height: 700px; border: 3px solid #000; background-color: #fff;
+		.list-custom-select { display: block; padding: 0 12px;
+			> li {
+				a, button { display: block; position: relative; padding-bottom: 2px; height: 60px; width: 100%; font-size: 1.250rem; font-weight: 700; color: #000; text-align: left; line-height: 60px; white-space: nowrap;
+					&:before { content: ''; display: block; position: absolute; bottom: 0; right: 0; left: 0px; height: 2px; background-color: rgba(0, 0, 0, 0.1);
+						transition: height 0.3s ease-in-out;
+					}
+
+					&:hover {
+						&:before { height: 6px; background-color: #000; transition: height 0.2s ease-in-out; }
+					}
+				}
+
+				&.is-selected {
+					a, button {
+						&:before { height: 6px; background-color: #000; }
+					}
+				}
+			}
+		}
+	}
+
+
+	/* language, notification, user */
+	.utils { float: right; position: relative; top: 50%; margin-top: -16px;
+		.notification { display: inline-block; position: relative; margin-left: 30px; height: 25px; width: 20px; text-indent: -9999px;
+			&:before { content: ''; display: block; position: absolute; top: 50%; left: -17px; margin-top: -10px; height: 20px; width: 1px; vertical-align: middle; background-color: #DBDBDB; }
+
+			@include icon(noticifation, after);
+			&:after { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; font-size: 25px; color: #000; line-height: 25px; text-indent: 0; }
+
+			.badge { display: block; position: absolute; top: -30%; right: -50%; z-index: z("default"); padding: 0 3px; height: 14px; min-width: 9px; font-size: 10px; font-weight: 700; color: #fff; text-align: center; text-indent: 0px; line-height: 14px; border: 2px solid #fff; border-radius: 14px; background-color: #f34122; }
+		}
+
+		.user { display: inline-block; margin-left: 13px;
+			&:before { content: ''; display: inline-block; margin-right: 17px; height: 20px; width: 1px; vertical-align: middle; background-color: #DBDBDB; }
+
+			.thumb { display: inline-block; margin-right: 6px; height: 30px; width: 30px; vertical-align: middle;
+				img { max-height: 100%; max-width: 100%; }
+			}
+			figcaption { display: inline-block; 
+				a { font-size: 0.875rem; font-weight: 700; color: #000; line-height: 30px; }
+			}
+		}
+
+		.btns { display: inline-block; margin-left: 20px; vertical-align: middle;
+			.btn { display: inline-block; box-sizing: border-box; margin-left: 6px; height: 30px; width: 100px; font-family: $font-special-stack; font-size: 0.875rem; font-weight: 700; color: #000; text-align: center; line-height: 26px; border: 2px solid #000;
+				&:hover { color: #fff; background-color: #000; }
+			}
+		}
+	}
+}

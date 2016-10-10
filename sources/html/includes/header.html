@@ -1,81 +1,203 @@
-<header class="global-menu">
-	<div class="contents-inner">
+<header class="global-menu-new">
+	<div class="title">
+		<a href="#" class="btn-home">BESPIN</a>
 
-		<div class="title">
-			<a href="#" class="btn-home">BESPIN</a>
-
-			@@if ( service == "portal" ) {<strong class="bespin-global"><span class="is-hidden">BESPIN GLOBAL</span></strong>}
-			@@if ( service == "asset" ) {<strong class="service asset">ASSET MANAGEMENT</strong>}
-			@@if ( service == "metering" ) {<strong class="service metering">METERING</strong>}
-			@@if ( service == "monitoring" ) {<strong class="service monitoring">MONITORING</strong>}
-			@@if ( service == "workflow" ) {<strong class="service workflow">WORKFLOW</strong>}
-
-			<button type="button" class="btn-language language_open">ENGLISH</button>
-			<ul id="language" class="list-select-popup small">
-				<li><button type="button" class="is-selected">ENGLISH</button></li>
-				<li><button type="button">한국어</button></li>
-				<li><button type="button">中文</button></li>
-			</ul>
-		</div>
-		
-		<!-- user -->
-		<figure class="user">
-			<a href="#user" class="thumb user-info_open"><img src="assets/images/company_profile.png" alt=""></a>
-			<figcaption>
-				<button type="button" class="name user-info_open" title="Jacob Middle Kim">박남정남</button>
-				
-				<button type="button" class="company company_open" title="NHN Asia Pacific xyz">NHN Asia Pacific xyz</button>
-				<ul id="company" class="list-select-popup">
-					<li><button type="button">NHN Korea</button></li>
-					<li><button type="button" class="is-selected">NHN Asia Pacific xyz</button></li>
-					<li><button type="button">NHN America</button></li>
+		<div id="select-service" class="custom-select-container">
+			<button type="button" class="btn-custom-select">
+				@@if ( service == "portal" ) {<span class="txt my-dashboard">MY DASHBOARD</span>}
+				@@if ( service == "asset" ) {<span class="txt asset-management">ASSET MANAGEMENT</span>}
+				@@if ( service == "metering" ) {<span class="txt metering">METERING</span>}
+				@@if ( service == "monitoring" ) {<span class="txt monitoring">MONITORING DASHBOARD</span>}
+				@@if ( service == "workflow" ) {<span class="txt workflow">WORKFLOW SERVICE</span>}
+			</button>
+			<div class="list-container">
+				<ul class="list-custom-select">
+					<li @@if ( service == "portal" ) {class="is-selected"}>
+						<button type="button">
+							<span class="txt my-dashboard">MY DASHBOARD</span>
+						</button>
+					</li>
+					<li @@if ( service == "asset" ) {class="is-selected"}>
+						<button type="button">
+							<span class="txt asset-management">ASSET MANAGEMENT</span>
+						</button>
+					</li>
+					<li @@if ( service == "metering" ) {class="is-selected"}>
+						<button type="button">
+							<span class="txt metering">METERING</span>
+						</button>
+					</li>
+					<li @@if ( service == "monitoring" ) {class="is-selected"}>
+						<button type="button">
+							<span class="txt monitoring">MONITORING DASHBOARD</span>
+						</button>
+					</li>
+					<li @@if ( service == "workflow" ) {class="is-selected"}>
+						<button type="button">
+							<span class="txt workflow">WORKFLOW SERVICE</span>
+						</button>
+					</li>
 				</ul>
-			</figcaption>
-		</figure>
-		<!--// user -->
-		
+			</div>
+		</div>
 
-		<!-- notifications, shortcut -->
-		<p class="uilts">
-			<a href="#notification" class="btns notifications">
-				<span class="hidden">new</span><em class="badge">2</em> notification
-			</a>
-			<button type="button" class="btns dashboard service-shortcut_open">shortcut service</button>
-		</p>
-		<!--// notifications, shortcut -->
+		<div id="select-company" class="custom-select-container">
+			<button type="button" class="btn-custom-select">베스핀글로벌</button>
+			<div class="list-container">
+				<ul class="list-custom-select">
+					<li><button type="button">베스핀글로벌</button></li>
+					<li class="is-selected"><button type="button">망고플레이트</button></li>
+					<li><button type="button">회사명 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트 테스트</button></li>
+					<li><button type="button">베스핀글로벌</button></li>
+					<li><button type="button">망고플레이트</button></li>
+					<li><button type="button">회사명 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트 테스트</button></li>
+					<li><button type="button">베스핀글로벌</button></li>
+					<li><button type="button">망고플레이트</button></li>
+					<li><button type="button">회사명 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트 테스트</button></li>
+					<li><button type="button">베스핀글로벌</button></li>
+					<li><button type="button">망고플레이트</button></li>
+					<li><button type="button">회사명 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트 테스트</button></li>
+					<li><button type="button">베스핀글로벌</button></li>
+					<li><button type="button">망고플레이트</button></li>
+					<li><button type="button">회사명 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트 테스트</button></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
-	<!-- service shortcut -->
-	<aside id="service-shortcut" class="popover">
-		<span class="point"></span>
 
-		<nav class="global-shortcuts">
-			<ul class="type-thumbnail">
-				<li><a href="#" class="dashboard">My Bespin Dashboard</a></li>
-				<li><a href="#" class="metering">Cost Metering</a></li>
-				<li><a href="#" class="asset">Asset Management</a></li>
-				<li><a href="#" class="monitoring">Realtime Monitoring</a></li>
-				<li><a href="#" class="workflow">ITS Workflow</a></li>
-			</ul>
-		</nav>
-	</aside>
+	<!-- language, notification, user -->
+	<div class="utils">
+		<div id="language" class="custom-select-container small">
+			<button type="button" class="btn-custom-select">한국어</button>
+			<div class="list-container">
+				<ul class="list-custom-select">
+					<li><button type="button">ENGLISH</button></li>
+					<li class="is-selected"><button type="button">한국어</button></li>
+					<li><button type="button">中文</button></li>
+				</ul>
+			</div>
+		</div>
 
-	<!-- user info -->
-	<aside id="user-info" class="popover">
-		<span class="point"></span>
+		<a href="#notification" class="notification">
+			<span class="hidden">new</span><em class="badge">2</em> notification
+		</a>
 
-		<nav class="global-shortcuts">
-			<ul class="type-list">
-				<li class="is-selected"><a href="#">Home/Dashboard</a></li>
-				<li><a href="#">Permission Groups</a></li>
-				<li><a href="#">Cloud Vendor Accounts</a></li>
-				<li><a href="#">Company Service Groups </a></li>
-				<li><a href="#">Bespin Account &amp; Billing</a></li>
-			</ul>
-		</nav>
-		<button type="button" class="btn-logout">Logout</button>
-	</aside>
+		<figure class="user">
+			<div class="thumb"><img src="assets/images/user_profile.png" alt="parkNameJung profile image"></div>
+			<figcaption>
+				<a href="#">Hello! ParkNamJung</a>
+			</figcaption>
+		</figure>
+	</div>
 </header>
+<script>
+/* BSPSelectBox */
+function BSPSelectBox($container) {
+	this.$container = $container;
+	this.$btnSelect;
+	this.$listContainer;
+	this.$listItems;
+
+	this.init();
+}
+
+BSPSelectBox.prototype.init = function() {
+	var _ = this;
+
+	_.$btnSelect = _.$container.find('.btn-custom-select');
+	_.$listContainer = _.$container.find('.list-container');
+	_.$listItems = _.$listContainer.find('button');
+
+	var btnWidth = _.$btnSelect.width();
+	var listContainerWidth = _.$listContainer.width() + 30;
+	if( btnWidth > listContainerWidth ) {
+		_.$listContainer.width(btnWidth + "px");
+	} else {
+		_.$btnSelect.width(listContainerWidth + "px");
+	}
+
+	_.$btnSelect.on('click', function(e) {
+		$(this).toggleClass("is-selected");
+	});
+
+	_.$listItems.on('click', function(e) {
+		_.select($(this));
+	});
+}
+
+BSPSelectBox.prototype.hide = function() {
+	var _ = this;
+
+	_.$btnSelect.removeClass("is-selected")
+}
+
+BSPSelectBox.prototype.select = function($item) {
+	var _ = this;
+
+	_.$listItems.closest('li').removeClass('is-selected');
+	$item.closest('li').addClass('is-selected');
+
+	_.$btnSelect.html($item.html());
+	_.hide();
+}
+
+
+
+/* GlobalMenu */
+var GlobalMenu = (function ($) {
+	var scope,
+		$container,
+		selectService,
+		selectCompany,
+		selectLanguage,
+		init = function() {
+			$container = $('.global-menu-new');
+
+			selectService = new BSPSelectBox($('#select-service'));
+			selectCompany = new BSPSelectBox($('#select-company'));
+			selectLanguage = new BSPSelectBox($('#language'));
+
+			initLayout();
+			initEvent();
+		};
+
+	function initLayout() {
+	}
+
+	function initEvent() {
+		$(document).click(function (e) {
+			if( !$(event.target).closest(".custom-select-container").length ) {
+				selectService.hide();
+				selectCompany.hide();
+				selectLanguage.hide();
+			}
+		});
+	}
+
+	return {
+		init: function() {
+			init();
+		}
+	};
+}(jQuery));
+
+$(document).ready(function(e) {
+
+	GlobalMenu.init();
+});
+</script>
+
 
 
 
@@ -84,7 +206,6 @@
 	<div class="contents-inner">
 		<h2>하위 메뉴 바로가기</h2>
 		
-		<button type="button" class="btn-settings">settings</button>
 		<ul class="list-menus">
 			<li @@if ( sub == "dashboard" ) { class="is-selected" }><a href="#">DASHBOARD</a></li>
 			<li @@if ( sub == "service" ) { class="is-selected" }><a href="#">SERVICE GROUP</a></li>
@@ -100,7 +221,6 @@
 	<div class="contents-inner">
 		<h2>하위 메뉴 바로가기</h2>
 
-		<button type="button" class="btn-settings">settings</button>
 		<ul class="list-menus">
 			<li @@if ( sub == "dashboard" ) { class="is-selected" }><a href="#">DASHBOARD</a></li>
 			<li @@if ( sub == "billing" ) { class="is-selected" }><a href="#">BILLING</a></li>
@@ -119,73 +239,3 @@
 	</div>
 </nav>
 }
-
-<script>
-$(document).ready(function(e) {	
-	/* GlobalMenu */
-	var GlobalMenu = (function ($) {
-		var scope,
-			$container,
-			$selectLanguage,
-			$selectCompany,
-			$userInfo,
-			$service,
-			init = function() {
-				$container = $('.global-menu');
-				$selectLanguage = $('#language');
-				$selectCompany = $('#company');
-				$service = $('#service-shortcut');
-				$userInfo = $('#user-info');
-
-
-				initLayout();
-				initEvent();
-			};
-
-		function initLayout() {
-		}
-
-		function initEvent() {
-			$selectLanguage.popup({
-				type: 'tooltip',
-				vertical: 'bottom',
-				horizontal: 'leftedge',
-				transition: '0.3s all 0.1s'
-			});
-
-			$selectCompany.popup({
-				type: 'tooltip',
-				vertical: 'bottom',
-				offsettop: -2,
-				horizontal: 'rightedge',
-				transition: '0.3s all 0.1s'
-			});
-
-			$service.popup({
-				type: 'tooltip',
-				vertical: 'bottom',
-				horizontal: 'center',
-				offsettop: 50,
-				transition: '0.3s all 0.1s'
-			});
-
-			$userInfo.popup({
-				type: 'tooltip',
-				vertical: 'bottom',
-				horizontal: 'center',
-				offsettop: 70,
-				transition: '0.3s all 0.1s'
-			});
-
-		}
-
-		return {
-			init: function() {
-				init();
-			}
-		};
-	}(jQuery));
-
-	GlobalMenu.init();
-});
-</script>
