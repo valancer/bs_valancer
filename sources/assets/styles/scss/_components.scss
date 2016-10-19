@@ -1,18 +1,18 @@
 /**
 	modal popup
 **/
-.modal-popup { display: block; position: relative; box-sizing: border-box; margin: 0 auto; padding: 30px 38px; width: 800px; transition: 0.3s all; background-color: #fff;
-	.btn-close { position: absolute; top: 30px; right: 38px; }
+.modal-popup { display: block; position: relative; box-sizing: border-box; margin: 0 auto; padding: 40px 40px; width: 800px; transition: 0.3s all; background-color: #fff;
+	.btn-close { position: absolute; top: 40px; right: 38px; }
 
-	.title { font-size: 36px; font-weight: 500; color: #000; line-height: 1em; }
-	.desc { font-size: 22px; font-weight: 500; color: #000; }
-	.content { padding-right: 50%;
+	.title { font-size: 1.250em; font-weight: 700; color: #000; line-height: 1em; }
+	.desc { margin-top: 20px; font-size: 22px; font-weight: 500; color: #000; }
+	.content { padding-top: 20px; padding-right: 50%;
 		.box-item { margin-top: 20px; }
 		.complete-message { padding: 40px 0; font-size: 20px; font-weight: 500; color: #4A4A4A; }
 
 		&.full { padding-right: 0; }
 	}
-	.bottom { margin-top: 25px;
+	.bottom { margin-top: 30px;
 		.step { display: block; position: absolute; bottom: 30px; right: 30px; font-size: 17px; font-weight: 500; color: rgba(0, 0, 0, 0.43); line-height: 48px; }
 	}
 }
@@ -164,8 +164,25 @@
 	.page-sub-tabs { margin-top: 23px; }
 }
 
+.page-tabs-v2 { display: block; position: relative; z-index: z("default"); margin-top: 30px; text-align: center;
+	&:before { content: none; }
+
+	> .inner { display: inline-block; position: relative; z-index: z("default"); padding: 0 34px; background-color: transparent;
+		button, a { display: inline-block; padding: 0 45px; height: 30px; font-size: 1.000rem; font-weight: 700; color: #000; text-align: center; line-height: 28px; letter-spacing: 0.1em; border: 3px solid #000; background-color: transparent;
+			&:hover,
+			&.is-selected { color: #fff; background-color: #000; }
+
+			+ a { margin-left: -6px; }
+			+ button { margin-left: -6px; }
+		}
+	}
+
+	~ .list-column-03 { padding-top: 50px !important; }
+}
+
+
 .segmented-control { display: block; position: relative; z-index: z("default");
-	button, a { display: inline-block; padding: 0 15px; font-size: 17px; font-weight: 700; color: #000; text-align: center; line-height: 29px; border: 3px solid #000; background-color: #fff;
+	button, a { display: inline-block; height: 30px; padding: 0 15px; font-size: 1.000rem; font-weight: 700; color: #000; text-align: center; line-height: 28px; border: 3px solid #000; background-color: #fff;
 		&:hover,
 		&.is-selected { color: #fff; background-color: #000; }
 
@@ -203,7 +220,7 @@
 	> dt { display: block; overflow: hidden; position: relative; padding: 0 0 0 26px; height: 62px; border-top: 2px solid rgba(151, 151, 151, 0.32); background-color: #fff;
 		.btn-delete { display: none; margin: -2px 10px 0 -10px; vertical-align: middle; text-indent: -9999px; @include retina-sprite($sc-icon-minus-group); }
 
-		.title { display: inline-block; width: 45%; font-size: 20px; font-weight: 500; color: #000; line-height: 60px;
+		.title { display: inline-block; width: 45%; font-size: 1.000rem; font-weight: 500; color: #000; line-height: 60px;
 			.thumb { display: inline-block; overflow: hidden; margin-top: -4px; margin-right: 5px; height: 43px; width: 43px; border-radius: 43px; vertical-align: middle; background-color: #0f0;
 				img { height: 100%; width: 100%; }
 			}
@@ -211,7 +228,7 @@
 			.btn-edit { display: none; margin: -2px 0 0 10px; color: #000; }
 		}
 		.right { float: right; line-height: 60px;
-			.content { display: inline-block; font-size: 17px; font-weight: 500; color: rgba(0, 0, 0, 0.37); vertical-align: middle;
+			.content { display: inline-block; font-family: $font-special-stack; font-size: 17px; font-weight: 500; color: rgba(0, 0, 0, 0.37); vertical-align: middle;
 				em { color: #000; }
 
 				.priority { margin-right: 20px; font-size: 16px; font-weight: 500; color: #000; }
@@ -290,8 +307,8 @@
 				.infrastructure { width: 100%;
 					tbody {
 						tr { border-top: 1px solid #cecece; }
-						th { padding-left: 25px; font-size: 18px; font-weight: 500; color: #000; text-align: left; line-height: 55px; }
-						td { padding-right: 20px; font-size: 18px; font-weight: 500; color: #000; line-height: 55px; }
+						th { padding-left: 25px; font-size: 0.875rem; font-weight: 500; color: #000; text-align: left; line-height: 55px; }
+						td { padding-right: 20px; font-family: $font-special-stack; font-size: 0.875rem; font-weight: 400; color: #000; line-height: 55px; }
 					}
 					.r { text-align: right; }
 				}
@@ -493,13 +510,13 @@
 	&.service-group {
 		.info { float: left; padding-top: 20px; padding-bottom: 15px;
 			> li { float: left; position: relative; padding-right: 45px;
-				.btn-txt-info { display: block; font-size: 14px; font-weight: 500; color: #000; line-height: 1em; vertical-align: middle;
+				.btn-txt-info { display: block; font-family: $font-special-stack; font-size: 0.750rem; font-weight: 400; color: #000; line-height: 1em; vertical-align: middle;
 					@include icon(info, after);
 					&:after { display: inline-block; margin: -2px 0 0 5px; height: 14px; width: 14px; font-size: 14px; color: #959595; line-height: 1em; vertical-align: middle; }
 				}
 
-				.unit { display: block; padding-top: 10px; font-size: 16px; font-weight: 500; color: #000;
-					em { font-size: 38px; font-weight: 400; line-height: 0.9em; }
+				.unit { display: block; padding-top: 10px; font-family: $font-special-stack; font-size: 1.000rem; font-weight: 400; color: #000;
+					em { font-size: 2.250rem; font-weight: 400; line-height: 0.9em; }
 				}
 			}
 		}
@@ -509,8 +526,8 @@
 
 	// asset usage
 	&.usage {
-		.unit { display: block; padding: 11px 0 15px 0; font-size: 14px; font-weight: 500; color: #000;
-			em { font-size: 38px; font-weight: 400; }
+		.unit { display: block; padding: 11px 0 15px 0; font-family: $font-special-stack; font-size: 1.000rem; font-weight: 400; color: #000;
+			em { font-size: 2.250rem; }
 		}
 
 		.chart { clear: both; height: 243px; }
@@ -527,11 +544,11 @@
 	form controls
 **/
 // checkbox & radio
-.icheck { display: inline-block; position: relative; padding: 0 0 0 23px; min-height: 18px; min-width: 18px; font-size: 14px; font-weight: 500; color: #000; line-height: 18px; vertical-align: middle; cursor: pointer;
+.icheck { display: inline-block; position: relative; padding: 0 0 0 23px; min-height: 18px; min-width: 18px; font-size: 0.750rem; font-weight: 500; color: #000; line-height: 18px; vertical-align: middle; cursor: pointer;
 	&.disabled { color: rgba(0, 0, 0, 0.3); }
 }
 
-.icheckbox { display: block; position: absolute !important; top: 0; left: 0; @include retina-sprite($sc-unchecked-group);
+.icheckbox { display: block; position: absolute !important; top: 1px; left: 0; @include retina-sprite($sc-unchecked-group);
 	&.disabled { @include retina-sprite($sc-unchecked-disabled-group); }
 	&.checked { @include retina-sprite($sc-checked-group);
 		&.disabled { @include retina-sprite($sc-checked-disabled-group); }
@@ -579,7 +596,7 @@
 }
 
 // btn text type
-.btn-text { display: inline-block; font-size: 15px; font-weight: 500; color: #959595; vertical-align: middle; text-decoration: underline;
+.btn-text { display: inline-block; font-size: 0.875rem; font-weight: 500; color: #959595; vertical-align: middle; text-decoration: underline;
 	&:before { display: inline-block; margin-right: 5px; height: 11px; width: 11px; font-size: 10px; line-height: 11px; vertical-align: middle; }
 
 	&:hover { color: #000; }
@@ -632,8 +649,8 @@
 
 // normal
 input[type=submit].btn-normal,
-.btn-normal { display: inline-block; min-width: 200px; font-size: 14px; font-weight: 700; color: #000; text-align: center; vertical-align: middle; line-height: 28px; border: 2px solid #000; background-color: #fff;
-	&.large { font-size: 15px; line-height: 44px; }
+.btn-normal { display: inline-block; min-width: 200px; font-size: 0.875rem; font-weight: 700; color: #000; text-align: center; vertical-align: middle; line-height: 28px; border: 2px solid #000; background-color: #fff;
+	&.large { font-size: 0.875rem; line-height: 44px; }
 
 	&:hover { color: #fff; background-color: #000; }
 	&[disabled] { color: #cecece; border-color: #CECECE;
@@ -711,7 +728,7 @@ input[type=submit].btn-normal,
 /**
 	filter
 **/
-.filter-container { position: relative; z-index: z("modaless") + 1; margin-top: 20px; padding: 0 30px; height: 47px; background-color: #e7e7e7;
+.filter-container { position: relative; z-index: z("dropdown") + 1; margin-top: 20px; padding: 0 30px; height: 47px; background-color: #e7e7e7;
     animation-delay: 0s;
     animation-name: filter-up;
     animation-timing-function: ease-out;
@@ -719,7 +736,7 @@ input[type=submit].btn-normal,
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-	.btn-status { overflow: visible; position: absolute; top: 50%; right: 50px; margin-top: -8px; font-size: 14px; font-weight: 700px; color: #000; border-bottom: 1px solid #000;
+	.btn-status { overflow: visible; position: absolute; top: 50%; right: 50px; margin-top: -8px; font-size: 0.875rem; font-weight: 700px; color: #000; border-bottom: 1px solid #000;
 		@include icon(arrow01, after);
 		&:after { overflow: hidden; position: absolute; top: 50%; right: -25px; margin-top: -2px; height: 8px; width: 20px; font-size: 13px; line-height: 8px; transform: rotate( 0deg ); }
 	}

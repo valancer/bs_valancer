@@ -1,0 +1,393 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="asset dashboard">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "asset", "sub": "dashboard"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="is-hidden">ASSET DASHBOARD</h1>
+				
+			<div class="contents-inner size-fit">
+
+				<div class="page-tabs">
+					<p class="inner">
+						<a href="#" class="is-selected">AWS</a>
+						<a href="#">AZURE</a>
+					</p>
+				</div>
+
+				<ul class="list-column-complex">
+					<li>
+
+						<!-- USAGE -->
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+
+							<h2 class="title">
+								USAGE
+								<time datetime="2016.10.04 16:20:00" class="last-update">2016.10.04 16:20:00</time>
+							</h2>
+
+
+							<!-- SERVER -->
+							<div class="content left">
+								
+								<div class="asset-usage">
+									<p class="total">SERVER <em>400</em> <span class="unit">개</span></p>
+
+									<!-- region -->
+									<div class="asset-usage-box region">
+										<h3 class="title">REGION</h3>
+
+										<ol class="list-top-region">
+											<li style="height: 37.5%;">
+												<span class="region-name">ap-northeast-2</span>
+												<strong class="region-count">120개</strong>
+											</li>
+											<li style="height: 25%;">
+												<span class="region-name">us-east-1</span>
+												<strong class="region-count">80개</strong>
+											</li>
+											<li style="height: 17.5%;">
+												<span class="region-name">us-west-2</span>
+												<strong class="region-count">60개</strong>
+											</li>
+											<li style="height: 10%;">
+												<span class="region-name">ap-northeast-1</span>
+												<strong class="region-count">40개</strong>
+											</li>
+											<li style="height: 10%;">
+												<span class="region-name">ap-northeast-3</span>
+												<strong class="region-count">20개</strong>
+											</li>
+										</ol>
+									</div>
+
+									<!-- service group -->
+									<div class="asset-usage-box service-group">
+										<h3 class="title">SERVICE GROUP</h3>
+
+										<dl class="list-asset-counts">
+											<dt class="key">BESPINAM</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">BESPINMD</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">BESPINMT</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">BESPINTS</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">Group1</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">Group2</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">Group3</dt>
+											<dd class="value">80개</dd>
+										</dl>
+									</div>
+
+									<!-- instance type -->
+									<div class="asset-usage-box instance-type">
+										<h3 class="title">INSTANCE TYPE</h3>
+
+										<dl class="list-asset-counts">
+											<dt class="key">r3.large</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">m4.large</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">t2.medium</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">c4.xlarge</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">t2.micro</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">m1.medium</dt>
+											<dd class="value">80개</dd>
+
+											<dt class="key">m2.medium</dt>
+											<dd class="value">80개</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+
+							<!-- DATABASE -->
+							<div class="content right">
+								<div class="asset-usage">
+									<p class="total">DATABASE <em>20</em> <span class="unit">개</span></p>
+
+									<!-- region -->
+									<div class="asset-usage-box region">
+										<h3 class="title">REGION</h3>
+
+										<ol class="list-top-region">
+											<li style="height: 60%;">
+												<span class="region-name">ap-northeast-2</span>
+												<strong class="region-count">12개</strong>
+											</li>
+											<li style="height: 40%;">
+												<span class="region-name">us-east-1</span>
+												<strong class="region-count">8개</strong>
+											</li>
+										</ol>
+									</div>
+
+									<!-- service group -->
+									<div class="asset-usage-box service-group">
+										<h3 class="title">SERVICE GROUP</h3>
+
+										<dl class="list-asset-counts">
+											<dt class="key">BESPINAM</dt>
+											<dd class="value">10개</dd>
+
+											<dt class="key">BESPINTS</dt>
+											<dd class="value">5개</dd>
+
+											<dt class="key">BESPINMT</dt>
+											<dd class="value">3개</dd>
+
+											<dt class="key">Undefined Group</dt>
+											<dd class="value">2개</dd>
+										</dl>
+									</div>
+
+									<!-- instance type -->
+									<div class="asset-usage-box instance-type">
+										<h3 class="title">INSTANCE TYPE</h3>
+
+										<dl class="list-asset-counts">
+											<dt class="key">mariadb</dt>
+											<dd class="value">20개</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</section>
+
+					</li>
+					<li>
+
+
+						<!-- PERFORMANCE -->
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+
+							<h2 class="title">
+								PERFORMANCE
+								<time datetime="2016.10.04 16:20:00" class="last-update">2016.10.04 16:20:00</time>
+							</h2>
+
+
+							<!-- CPU -->
+							<div class="content column03">
+								<div class="asset-performance-box">
+									<div class="title perfomance" data-target="#average">CPU</div>
+
+									<div id="cpu-performance" class="performance-graph">
+										<div class="arc"></div>
+										<strong class="point">
+											<span class="avg">AVG</span>
+											<span class="value">0%</span>
+										</strong>
+									</div>
+
+									<dl class="list-asset-counts">
+										<dt class="key">BESPINAM</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">BESPINMD</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">BESPINMT</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">BESPINTS</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">Group1</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">Group2</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">Group3</dt>
+										<dd class="value">80개</dd>
+									</dl>
+								</div>
+
+							</div>
+
+							<!-- MEMORY -->
+							<div class="content column03">
+								<div class="asset-performance-box">
+									<div class="title perfomance" data-target="#average">MEMORY</div>
+
+									<div id="memory-performance" class="performance-graph">
+										<div class="arc"></div>
+										<strong class="point">
+											<span class="avg">AVG</span>
+											<span class="value">0%</span>
+										</strong>
+									</div>
+
+									<dl class="list-asset-counts">
+										<dt class="key">BESPINAM</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">BESPINMD</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">BESPINMT</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">BESPINTS</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">Group1</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">Group2</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">Group3</dt>
+										<dd class="value">80개</dd>
+									</dl>
+								</div>
+
+							</div>
+
+							<!-- VOLUME -->
+							<div class="content column03">
+								<div class="asset-performance-box">
+									<div class="title perfomance" data-target="#average">VOLUME</div>
+
+									<div id="volume-performance" class="performance-graph">
+										<div class="arc"></div>
+										<strong class="point">
+											<span class="avg">AVG</span>
+											<span class="value">0%</span>
+										</strong>
+									</div>
+
+									<dl class="list-asset-counts">
+										<dt class="key">BESPINAM</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">BESPINMD</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">BESPINMT</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">BESPINTS</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">Group1</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">Group2</dt>
+										<dd class="value">80개</dd>
+
+										<dt class="key">Group3</dt>
+										<dd class="value">80개</dd>
+									</dl>
+								</div>
+
+							</div>
+						</section>
+						
+					</li>
+				</ul>
+			</div>
+
+			<!-- popup info -->
+			<div id="average" class="popover asset-tooltip">
+				<span class="point"></span>
+				<p>The value indicates usages average all of your instances.</p>
+			</div>
+
+		</article>
+	</main>
+	<script>
+	$.fn.animateRotate = function(percent, duration, easing, complete) {
+		var args = $.speed(duration, easing, complete);
+		var step = args.step;
+		var angle = percent/100 * 180;
+
+		return this.each(function(i, e) {
+			args.complete = $.proxy(args.complete, e);
+
+			args.step = function(now) {
+				$.style(e, 'transform', 'rotate(' + now + 'deg)');
+				if (step) return step.apply(e, arguments);
+			};
+
+			$({deg: 0}).animate({deg: angle}, args);
+		});
+	};
+
+	$(document).ready(function(e) {
+		// deg : 0 ~ 100
+		$('#cpu-performance .value').text('25.01'+'%');
+		$('#cpu-performance .arc').animateRotate(25.01, {
+			duration: 1000,
+			easing: 'swing',
+			complete: function() {}
+		});
+
+		$('#memory-performance .value').text('57.10'+'%');
+		$('#memory-performance .arc').animateRotate(57.10, {
+			duration: 1000,
+			easing: 'swing',
+			complete: function() {}
+		});
+
+		$('#volume-performance .value').text('100'+'%');
+		$('#volume-performance .arc').animateRotate(100, {
+			duration: 1000,
+			easing: 'swing',
+			complete: function() {}
+		});
+
+
+		// info
+		$('.title.perfomance').on({
+			mouseenter: function(e) {
+				console.log(e.target);
+				$($(this).data("target")).popup({
+					type: 'tooltip',
+					tooltipanchor: e.target,
+					offsettop: -80,
+					vertical: 'center',
+					horizontal: 'right',
+					autoopen: true
+				});
+			},
+			mouseleave: function(e) {
+				$($(this).data("target")).popup('hide');
+			}
+		});
+	});
+	</script>
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

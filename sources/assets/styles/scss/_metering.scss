@@ -1,5 +1,8 @@
 body.metering {
-	.growth { font-size: 25px; font-weight: 400;
+	article.contents { padding-top: 0; }
+
+
+	.growth { font-family: $font-special-stack; font-size: 1.250rem; font-weight: 400;
 		@include icon(growth);
 		&:before { display: inline-block; margin: -2px 4px 0 0; height: 15px; width: 15px; font-size: 15px; line-height: 15px; }
 
@@ -8,11 +11,11 @@ body.metering {
 		}
 		&.down { color: #0DACEA; }
 
-		&.size-small { font-size: 20px;
+		&.size-small { font-size: 1.250rem;
 			&:before { height: 12px; width: 12px; font-size: 12px; line-height: 12px; }
 		}
 
-		&.size-big { font-size: 27px;
+		&.size-big { font-size: 1.375rem;
 			&:before { height: 17px; width: 17px; font-size: 17px; line-height: 17px; }
 		}
 
@@ -154,9 +157,9 @@ body.metering {
 		.summary { box-sizing: border-box; padding: 50px 0 0 0; height: 580px; background: url('/assets/images/bg_metering_dashboard.png') center top repeat-x;
 			.status { overflow: hidden; margin: 0 auto; width: 1140px;
 				>li { float: left; box-sizing: border-box; padding: 0px; width: 33%;
-					.title { font-size: 16px; font-weight: 500; color: #9B9B9B; }
-					.cost { position: relative; height: 70px; font-size: 55px; font-weight: 500; color: #fff; text-align: left; letter-spacing: -0.05em; }
-					.term { display: inline-block; margin: -2px 0 0 10px; padding: 0 10px; font-size: 15px; color: #979797; vertical-align: middle; height: 18px; border-radius: 18px; border: 1px solid #979797; }
+					.title { font-size: 1.000rem; font-weight: 700; color: #9B9B9B; }
+					.cost { position: relative; margin-top: 10px; height: 70px; font-family: $font-special-stack; font-size: 2.813rem; font-weight: 400; color: #fff; text-align: left; letter-spacing: -0.05em; }
+					.term { display: inline-block; margin: -2px 0 0 10px; padding: 0 10px; font-family: $font-special-stack; font-size: 0.750rem; font-weight: 400; color: #9B9B9B; vertical-align: middle; height: 18px; line-height: 18px; border-radius: 20px; border: 1px solid #979797; }
 					.remain { display: block; font-size: 15px; font-weight: 500; color: #9B9B9B; text-align: right; line-height: 30px; }
 					// .growth { position: absolute; bottom: -40px; right: 0; }
 				}
@@ -183,7 +186,7 @@ body.metering {
 			.contents-inner { overflow: hidden; width: $contents-dashboard-width; }
 
 			// list-column-complex
-			.list-column-complex { overflow: hidden; margin-top: 50px;
+			.list-column-complex { overflow: hidden; margin-top: 50px; margin-bottom: 30px;
 				> li { display: block; clear: both; box-sizing: border-box; padding: 0 0 50px 0;
 					&.column-03 { float: left; clear: none; width: 33%; }
 					&.column-02 { float: left; clear: none; width: 50%;
@@ -198,12 +201,12 @@ body.metering {
 			/* 대쉬보드용 박스 */
 			.dashbaord-box-item { overflow: hidden; position: relative; padding: 52px 70px 60px 70px; border-top: 3px solid #000; background-color: #fff;
 				.btn-detail { position: absolute; top: -3px; right: 0; }
-				.segmented-control { margin-top: -31px; margin-bottom: 40px; }
+				.segmented-control { margin-top: -31px; margin-bottom: 40px; font-size: 1.000rem; }
 				.content {
 					&.left { box-sizing: border-box; float: left; padding-right: 35px; width: 50%; }
 					&.right { box-sizing: border-box; float: right; padding-left: 35px; width: 50%; }
 
-					> .title { display: block; margin-bottom: 39px; font-size: 17px; font-weight: 700; color: #000; }
+					> .title { display: block; margin-bottom: 39px; font-size: 1.000rem; font-weight: 700; color: #000; }
 					.chart { background-color: rgba(0, 0, 0, 0.3); }
 				}
 			}
@@ -220,23 +223,22 @@ body.metering {
 			.tbl-payment-summary { width: 100%; border-bottom: 2px solid #E5E5E5;
 				> thead {
 					> tr {
-						> th { padding: 10px 0 7px 0; font-size: 15px; font-weight: 500; color: #7B7B7B; text-align: center; border-bottom: 2px solid #E5E5E5;
+						> th { padding: 10px 0 7px 0; font-size: 15px; font-weight: 500; color: #959595; text-align: center; border-bottom: 2px solid #E5E5E5;
 							&:last-child { padding-right: 0; }
 						}
 					}
 				}
 				> tbody {
 					> tr {
-						> .body-th { padding: 12px 30px 9px 0; font-size: 25px; color: #000; vertical-align: top; border-top: 1px solid #E5E5E5;
+						> .body-th { padding: 16px 30px 11px 0; font-family: $font-special-stack; font-size: 1.250rem; font-weight: 400; color: #000; vertical-align: top; border-top: 1px solid #E5E5E5;
 							&:last-child { padding-right: 0; }
 						}
-						> th, > td { padding: 0 30px 0 0; font-size: 25px; font-weight: 400; color: #7B7B7B; text-align: left; line-height: 27px;
+						> th, > td { padding: 0 30px 0 0; font-family: $font-special-stack; font-size: 1.250rem; font-weight: 400; color: #959595; text-align: left; line-height: 27px;
 							&:last-child { padding-right: 0; }
 						}
-						.total { font-weight: 700; }
 
 						&.line-break {
-							> th, > td { padding-bottom: 10px; }
+							> th, > td { padding-bottom: 15px; }
 						}
 
 						.none { height: 383px; background-color: #F2F2F2; }
@@ -245,7 +247,7 @@ body.metering {
 
 				.l { text-align: left; }
 				.r { text-align: right; }
-				.btn-txt-info { display: inline-block; font-size: 15px; font-weight: 500; color: #7B7B7B; line-height: 20px; vertical-align: middle;
+				.btn-txt-info { display: inline-block; font-size: 0.938rem; font-weight: 500; color: #959595; line-height: 20px; vertical-align: middle;
 					@include icon(info, after);
 					&:after { display: inline-block; margin: -4px 0 0 5px; height: 15px; width: 15px; font-size: 15px; color: #959595; line-height: 1em; vertical-align: middle; }
 				}
@@ -267,16 +269,16 @@ body.metering {
 				}
 			}
 
-			.tbl-assets { width: 100%; margin-top: 14px;
+			.tbl-assets { margin-top: 3px; margin-bottom: 6px; width: 100%; 
 				tbody {
-					th { font-size: 15px; font-weight: 400; color: #7B7B7B; text-align: left; line-height: 1em; }
-					td { padding-left: 6px; font-size: 15px; font-weight: 400; color: #7B7B7B; text-align: right; line-height: 1em; }
+					th { font-size: 0.750rem; font-weight: 400; color: #959595; text-align: left; line-height: 1.250em; }
+					td { padding-left: 6px; font-size: 0.750rem; font-weight: 400; color: #959595; text-align: right; line-height: 1.250em; }
 				}
 			}
 
 			// TOP5
-			.top5-item { position: relative; overflow: hidden; padding: 17px 0 0 0;
-				.title { display: block; font-size: 20px; font-weight: 400; color: #000; }
+			.top5-item { position: relative; overflow: hidden; padding: 17px 0 0 0; font-family: $font-special-stack;
+				.title { display: block; margin-bottom: 10px; font-size: 1.000rem; font-weight: 400; color: #000; }
 				
 				.cost-graph { display: block; position: absolute; bottom: 3px; left: 0; height: 21px; width: 370px;
 					.current { display: block; height: 15px; background-color: #E8E8E8;
@@ -288,8 +290,8 @@ body.metering {
 				}
 
 				.cost { float: right; margin-top: -17px; text-align: right;
-					.current { display: block; font-size: 25px; font-weight: 700; color: #000; }
-					.last { display: block; font-size: 15px; font-weight: 400; color: #959595; line-height: 1em; }
+					.current { display: block; font-size: 1.250rem; font-weight: 400; color: #000; }
+					.last { display: block; font-size: 0.750rem; font-weight: 400; color: #959595; line-height: 1.3em; }
 				}
 			}
 
@@ -316,14 +318,14 @@ body.metering {
 						.cost-graph .last { animation-delay: 1.2s; }
 					}
 					&:nth-child(6) { 
-						.cost-graph .current { animation-delay: 1.3s; background-color: #7B7B7B; }
+						.cost-graph .current { animation-delay: 1.3s; background-color: #959595; }
 						.cost-graph .last { animation-delay: 1.4s; }
 					}
 				}
 			}
 
 			// 계정별 비용 / 납부 내역 / 크레딧 현황
-			.list-type-tbl { width: 100%; border-top: 2px solid #E5E5E5; border-bottom: 2px solid #E5E5E5;
+			.list-type-tbl { width: 100%; font-family: $font-special-stack; border-top: 2px solid #E5E5E5; border-bottom: 2px solid #E5E5E5;
 				tbody {
 					th { padding: 20px 0; border-top: 1px solid #E5E5E5; }
 					td { padding: 20px 0; border-top: 1px solid #E5E5E5; }
@@ -341,18 +343,18 @@ body.metering {
 					}
 				}
 
-				time { font-size: 25px; font-weight: 400; color: #000; }
+				time { font-size: 1.250rem; font-weight: 400; color: #000; }
 
 				.price { display: block; width: 100%; overflow: hidden;
-					dt { display: block; clear: left; float: left; height: 25px; width: 30%; font-size: 15px; font-weight: 500; color: #7B7B7B; line-height: 25px; vertical-align: middle; }
-					dd { display: block; float: left; height: 25px; /*min-width: 174px;*/ width: 70%; font-size: 22px; color: #7B7B7B; text-align: right; line-height: 25px; vertical-align: middle;
-						strong { font-weight: 700; color: #000;
+					dt { display: block; clear: left; float: left; height: 25px; width: 30%; font-size: 0.938rem; font-weight: 500; color: #959595; line-height: 25px; vertical-align: middle; }
+					dd { display: block; float: left; height: 25px; /*min-width: 174px;*/ width: 70%; font-size: 1.250rem; color: #959595; text-align: right; line-height: 25px; vertical-align: middle;
+						strong { font-weight: 400; color: #000;
 							&.overdue { color: #F00012; }
 						}
 					}
 				}
 
-				.pay-status { display: inline-block; box-sizing: border-box; position: relative; padding-left: 20px; height: 25px; width: 100px; font-size: 15px; font-weight: 700; color: #fff; text-align: center; line-height: 27px; border-radius: 25px;
+				.pay-status { display: inline-block; box-sizing: border-box; position: relative; padding-left: 20px; height: 25px; width: 100px; font-size: 0.750rem; font-weight: 400; color: #fff; text-align: center; line-height: 25px; border-radius: 25px;
 					&:before { display: block; position: absolute; top: 50%; left: 10px; margin-top: -7px; height: 12px; width: 14px; font-size: 12px; color: #fff; line-height: 12px; text-align: center; }
 
 					&.unpaid { background-color: #000;
@@ -366,7 +368,7 @@ body.metering {
 					}
 				}
 
-				.vendor { display: block; position: relative; padding: 0 0 0 $sc-icon-aws-big-width+10; font-size: 20px; font-weight: 400; color: #000; line-height: 20px;
+				.vendor { display: block; position: relative; padding: 0 0 0 $sc-icon-aws-big-width+10; font-size: 1.000rem; font-weight: 400; color: #000; line-height: 20px;
 					&:before { content: ''; display: block; position: absolute; top: 50%; left: 0; height: 40px; width: 40px; }
 					.uid { display: block; }
 
@@ -379,19 +381,19 @@ body.metering {
 				}
 
 				.cost {
-					strong { display: block; font-size: 40px; font-weight: 400; color: #000; line-height: 0.75em; }
+					strong { display: block; font-size: 1.875rem; font-weight: 400; color: #000; line-height: 0.75em; }
 				}
 			}
 
 			// 예산 현황
-			.list-budget-status { border-top: 2px solid #E5E5E5; border-bottom: 2px solid #E5E5E5;
+			.list-budget-status { font-family: $font-special-stack; border-top: 2px solid #E5E5E5; border-bottom: 2px solid #E5E5E5;
 				> li { padding: 21px 0 21px 0; border-top: 2px solid #E5E5E5;
 					&:first-child { border-top: 0; }
 				}
 			}
 
 			.budget-status { overflow: hidden;
-				.vendor { font-size: 25px; color: #000;
+				.vendor { font-size: 1.250rem; color: #000;
 					&:before { content: ''; display: inline-block; margin-right: 5px; }
 					&.aws {
 						&:before { @include retina-sprite($sc-icon-aws-small-group); }
@@ -400,16 +402,10 @@ body.metering {
 						&:before { @include retina-sprite($sc-icon-azure-small-group); }
 					}
 				}
-				.total { float: right; font-size: 20px; color: #7B7B7B; }
-				.used { font-size: 20px; color: #000;
-					em { font-size: 25px; }
-				}
-				.balance { float: right; font-size: 20px; color: #61AC0C;
-					em { font-size: 25px; }
-				}
-				.excess { float: right; font-size: 20px; color: #F00012;
-					em { font-size: 25px; }
-				}
+				.total { float: right; font-size: 1.125rem; color: #959595; }
+				.used { font-size: 1.250rem; color: #000; }
+				.balance { float: right; font-size: 1.250rem; color: #61AC0C; }
+				.excess { float: right; font-size: 1.250rem; color: #F00012; }
 
 				.budget-graph { display: block; overflow: hidden; position: relative; float: none; clear: both; margin: 17px 0 6px 0; height: 15px; width: 100%; background-color: #1C1C1C;
 					.gage { display: block; float: right; height: 15px; background-color: #92D449;
@@ -435,7 +431,7 @@ body.metering {
 		.title { font-size: 14px;
 			&.total { color: #fff; }
 		}
-		.cost { display: block; margin-top: 10px; font-size: 38px; font-weight: 500; color: #000; }
+		.cost { display: block; margin-top: 10px; font-family: $font-special-stack; font-size: 2.375rem; font-weight: 400; color: #000; }
 
 		.currency { display: block; position: absolute; bottom: 25px;
 			dt { display: block; font-size: 12px; line-height: 20px; }
@@ -486,7 +482,7 @@ body.metering {
 			.month { float: right;
 				.title { display: block; font-size: 14px; font-weight: 700; color: rgba(0, 0, 0, 0.5); }
 				.cost { text-align: right;
-					strong { display: block; float: right; font-size: 50px; font-weight: 500; color: #000; vertical-align: middle;
+					strong { display: block; float: right; font-family: $font-special-stack; font-size: 2.750rem; font-weight: 400; color: #000; vertical-align: middle;
 						small { display: block; font-size: 16px; font-weight: 500; color: rgba(0, 0, 0, 0.3); line-height: 1em; }
 					}
 					.growth { display: block; float: right; margin-top: 15px; margin-left: 10px; }

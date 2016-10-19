@@ -97,7 +97,7 @@ input, textarea, keygen, select, button {
   font-family: "Noto Sans Korean", "Apple SD Gothic", sans-serif; }
 
 strong {
-  font-weight: normal; }
+  font-weight: 400; }
 
 dfn {
   font-style: normal; }
@@ -155,13 +155,12 @@ select,
 div {
   outline: 0; }
 
-/** web font icons **/
 @font-face {
   font-family: "Icons";
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu-new .btn-custom-select:after, .global-menu-new .utils .notification:after, .search-container .search-word .btn-search:before, .multiple-select .btn-filter:before, .btn-inner.calendar:before, .btn-inner.delete:before, .btn-inner.edit:before, .forms .invalid:before, .forms .service.asset:before, .forms .service.metering:before, .forms .service.monitoring:before, .forms .service.workflow:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu-new .btn-custom-select:after, .global-menu-new .utils .notification:after, .search-container .search-word .btn-search:before, .multiple-select .btn-filter:before, .btn-inner.calendar:before, .btn-inner.delete:before, .btn-inner.edit:before, .forms .invalid:before, .forms .service.asset:before, .forms .service.metering:before, .forms .service.monitoring:before, .forms .service.workflow:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -201,97 +200,99 @@ div {
 .icon-close02:before {
   content: ""; }
 
-.icon-dashboard:before {
+.icon-cloud:before {
   content: ""; }
 
-.icon-defaultview:before {
+.icon-dashboard:before {
   content: ""; }
 
-.icon-delete:before {
+.icon-defaultview:before {
   content: ""; }
 
-.icon-done:before {
+.icon-delete:before {
   content: ""; }
 
-.icon-dot:before {
+.icon-done:before {
   content: ""; }
 
-.icon-download:before {
+.icon-dot:before {
   content: ""; }
 
-.icon-edit:before {
+.icon-download:before {
   content: ""; }
 
-.icon-email:before {
+.icon-edit:before {
   content: ""; }
 
-.icon-export:before {
+.icon-email:before {
   content: ""; }
 
-.icon-eyes:before {
+.icon-export:before {
   content: ""; }
 
-.icon-filter:before {
+.icon-eyes:before {
   content: ""; }
 
-.icon-grid:before {
+.icon-filter:before {
   content: ""; }
 
-.icon-growth:before {
+.icon-grid:before {
   content: ""; }
 
-.icon-iks:before {
+.icon-growth:before {
   content: ""; }
 
-.icon-iks02:before {
+.icon-iks:before {
   content: ""; }
 
-.icon-info:before {
+.icon-iks02:before {
   content: ""; }
 
-.icon-menu:before {
+.icon-info:before {
   content: ""; }
 
-.icon-message:before {
+.icon-menu:before {
   content: ""; }
 
-.icon-metering:before {
+.icon-message:before {
   content: ""; }
 
-.icon-monitoring:before {
+.icon-metering:before {
   content: ""; }
 
-.icon-noticifation:before {
+.icon-monitoring:before {
   content: ""; }
 
-.icon-phone:before {
+.icon-noticifation:before {
   content: ""; }
 
-.icon-refresh:before {
+.icon-phone:before {
   content: ""; }
 
-.icon-reset:before {
+.icon-refresh:before {
   content: ""; }
 
-.icon-search:before {
+.icon-reset:before {
   content: ""; }
 
-.icon-search02:before {
+.icon-search:before {
   content: ""; }
 
-.icon-settings:before {
+.icon-search02:before {
   content: ""; }
 
-.icon-warning:before {
+.icon-settings:before {
   content: ""; }
 
-.icon-wideview:before {
+.icon-warning:before {
   content: ""; }
 
-.icon-workflow:before {
+.icon-wideview:before {
   content: ""; }
 
-/** web font icons **/
+.icon-workflow:before {
+  content: ""; }
+
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
@@ -359,141 +360,6 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
   This yields the same output as CSS retina template but can be overridden in SCSS
 
 @include retina-sprites($retina-groups);
-*/
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
 */
 /**
  * z-index
@@ -776,7 +642,7 @@ The `sprites` mixin generates identical output to the CSS template
   .aggrid-uitls .search {
     display: block; }
     .aggrid-uitls .search:before {
-      content: ""; }
+      content: ""; }
     .aggrid-uitls .search:before {
       display: inline-block;
       margin-right: 8px;
@@ -893,42 +759,42 @@ The `sprites` mixin generates identical output to the CSS template
         background-color: #fff; }
     .grid-bottom a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -513px -371px;
+      background-position: -586px -180px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-first {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .grid-bottom a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -549px -371px;
+      background-position: -586px -288px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-prev {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .grid-bottom a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -81px -184px;
+      background-position: -586px -252px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-next {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .grid-bottom a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -477px -371px;
+      background-position: -586px -216px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-last {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
 
 .popover.export ul {
   display: block;
@@ -948,7 +814,7 @@ The `sprites` mixin generates identical output to the CSS template
   width: 100%;
   line-height: 1.4;
   font-family: inherit;
-  font-size: 15px;
+  font-size: 0.750rem;
   color: #000; }
   .ag-bespin-global img {
     vertical-align: middle;
@@ -1020,31 +886,31 @@ The `sprites` mixin generates identical output to the CSS template
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -438px -427px;
+      background-position: -552px -402px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -585px -341px;
+      background-position: -552px -386px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -589px -275px;
+      background-position: -552px -370px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
   .ag-bespin-global .ag-no-scrolls .ag-header-container {
     background: linear-gradient(#fff, #d3d3d3);
     border-bottom: 1px solid #808080; }
@@ -1085,7 +951,7 @@ The `sprites` mixin generates identical output to the CSS template
     box-sizing: content-box;
     line-height: 40px; }
     .ag-bespin-global .ag-header-cell-menu-button:before {
-      content: ""; }
+      content: ""; }
     .ag-bespin-global .ag-header-cell-menu-button:before {
       display: block;
       position: absolute;
@@ -1785,7 +1651,7 @@ corresponds to the arrow we want to display */
   left: 0;
   z-index: 800;
   padding: 0 35px;
-  height: 90px;
+  height: 80px;
   min-width: 1280px;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
@@ -1805,75 +1671,75 @@ corresponds to the arrow we want to display */
       text-indent: -9999px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -515px -292px;
+      background-position: -256px -289px;
       width: 78px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .title .btn-home {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
   .global-menu-new.logout .title .btn-home {
     display: inline-block;
     margin-top: 22px;
     background-image: url(../images/sprites.png);
-    background-position: 0px -464px;
+    background-position: -157px -315px;
     width: 306px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .global-menu-new.logout .title .btn-home {
         background-image: url(../images/sprites@2x.png);
-        background-size: 606px 481px; } }
+        background-size: 625px 599px; } }
   .global-menu-new .custom-select-container {
     display: inline-block;
     position: relative; }
     .global-menu-new .custom-select-container .txt {
       display: inline-block;
       text-indent: -9999px; }
-      .global-menu-new .custom-select-container .txt.my-dashboard {
+      .global-menu-new .custom-select-container .txt.service-portal {
         background-image: url(../images/sprites.png);
-        background-position: -302px -292px;
-        width: 207px;
+        background-position: -302px -141px;
+        width: 218px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-          .global-menu-new .custom-select-container .txt.my-dashboard {
+          .global-menu-new .custom-select-container .txt.service-portal {
             background-image: url(../images/sprites@2x.png);
-            background-size: 606px 481px; } }
+            background-size: 625px 599px; } }
       .global-menu-new .custom-select-container .txt.asset-management {
         background-image: url(../images/sprites.png);
-        background-position: -302px -116px;
+        background-position: -256px -229px;
         width: 266px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.asset-management {
             background-image: url(../images/sprites@2x.png);
-            background-size: 606px 481px; } }
+            background-size: 625px 599px; } }
       .global-menu-new .custom-select-container .txt.metering {
         background-image: url(../images/sprites.png);
-        background-position: -359px -341px;
+        background-position: -294px -441px;
         width: 142px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.metering {
             background-image: url(../images/sprites@2x.png);
-            background-size: 606px 481px; } }
+            background-size: 625px 599px; } }
       .global-menu-new .custom-select-container .txt.monitoring {
         background-image: url(../images/sprites.png);
-        background-position: -302px 0px;
-        width: 304px;
+        background-position: -81px -199px;
+        width: 320px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.monitoring {
             background-image: url(../images/sprites@2x.png);
-            background-size: 606px 481px; } }
-      .global-menu-new .custom-select-container .txt.workflow {
+            background-size: 625px 599px; } }
+      .global-menu-new .custom-select-container .txt.its {
         background-image: url(../images/sprites.png);
-        background-position: -302px -176px;
-        width: 264px;
+        background-position: -407px -199px;
+        width: 60px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-          .global-menu-new .custom-select-container .txt.workflow {
+          .global-menu-new .custom-select-container .txt.its {
             background-image: url(../images/sprites@2x.png);
-            background-size: 606px 481px; } }
+            background-size: 625px 599px; } }
     .global-menu-new .custom-select-container.small {
       vertical-align: middle; }
       .global-menu-new .custom-select-container.small .btn-custom-select {
@@ -1890,8 +1756,8 @@ corresponds to the arrow we want to display */
         .global-menu-new .custom-select-container.small .btn-custom-select:after {
           right: 6px; }
         .global-menu-new .custom-select-container.small .btn-custom-select.is-selected {
-          border-bottom: 0px solid #000;
-          transition: all 0.1s ease-in-out; }
+          border-bottom: 2px solid #fff;
+          transition: all 0.3s ease-in-out; }
       .global-menu-new .custom-select-container.small .list-container {
         margin: 0; }
         .global-menu-new .custom-select-container.small .list-container .list-custom-select {
@@ -1910,7 +1776,7 @@ corresponds to the arrow we want to display */
               background-color: #000; }
           .global-menu-new .custom-select-container.small .list-container .list-custom-select > li.is-selected a, .global-menu-new .custom-select-container.small .list-container .list-custom-select > li.is-selected button {
             color: #fff;
-            background-color: #000; }
+            background-color: #3d3d3d; }
             .global-menu-new .custom-select-container.small .list-container .list-custom-select > li.is-selected a:before, .global-menu-new .custom-select-container.small .list-container .list-custom-select > li.is-selected button:before {
               content: none; }
   .global-menu-new .btn-custom-select {
@@ -2037,7 +1903,7 @@ corresponds to the arrow we want to display */
         vertical-align: middle;
         background-color: #DBDBDB; }
       .global-menu-new .utils .notification:after {
-        content: ""; }
+        content: ""; }
       .global-menu-new .utils .notification:after {
         display: block;
         position: absolute;
@@ -2089,11 +1955,16 @@ corresponds to the arrow we want to display */
           max-width: 100%; }
       .global-menu-new .utils .user figcaption {
         display: inline-block; }
-        .global-menu-new .utils .user figcaption a {
+        .global-menu-new .utils .user figcaption a, .global-menu-new .utils .user figcaption button {
           font-size: 0.875rem;
           font-weight: 700;
           color: #000;
           line-height: 30px; }
+      .global-menu-new .utils .user.is-open + .user-menus {
+        visibility: visible;
+        opacity: 1;
+        top: 100%;
+        transition: all 0.3s ease-in-out; }
     .global-menu-new .utils .btns {
       display: inline-block;
       margin-left: 20px;
@@ -2114,6 +1985,37 @@ corresponds to the arrow we want to display */
         .global-menu-new .utils .btns .btn:hover {
           color: #fff;
           background-color: #000; }
+    .global-menu-new .utils .user-menus {
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 90%;
+      right: 0;
+      margin-top: 10px;
+      padding: 24px 30px;
+      width: 185px;
+      background-color: #000; }
+      .global-menu-new .utils .user-menus:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -10px;
+        right: 50px;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #000 transparent; }
+      .global-menu-new .utils .user-menus ul {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #333; }
+      .global-menu-new .utils .user-menus a, .global-menu-new .utils .user-menus button {
+        font-size: 0.938rem;
+        font-weight: 400;
+        color: #999999;
+        line-height: 40px; }
+        .global-menu-new .utils .user-menus a:hover, .global-menu-new .utils .user-menus button:hover {
+          color: #fff; }
 
 html {
   min-height: 100%;
@@ -2140,13 +2042,13 @@ body {
     margin-top: 23px;
     text-indent: -9999px;
     background-image: url(../images/sprites.png);
-    background-position: -302px -322px;
+    background-position: -81px -471px;
     width: 300px;
     height: 13px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .admin-footer .bgsp {
         background-image: url(../images/sprites@2x.png);
-        background-size: 606px 481px; } }
+        background-size: 625px 599px; } }
   .admin-footer .copyright {
     float: right;
     font-size: 0.875rem;
@@ -2252,7 +2154,7 @@ article.contents {
       width: 16px;
       text-indent: -9999px; }
       .search-container .search-word .btn-search:before {
-        content: ""; }
+        content: ""; }
       .search-container .search-word .btn-search:before {
         display: block;
         position: absolute;
@@ -2358,13 +2260,13 @@ article.contents {
     color: #4A90E2; }
     .list-company li .company-item .status.subscribed:before {
       background-image: url(../images/sprites.png);
-      background-position: -595px -176px;
+      background-position: -614px -464px;
       width: 10px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .list-company li .company-item .status.subscribed:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
   .list-company li .company-item:hover {
     background-color: #EAEAEA; }
   .list-company li .company-item.selected {
@@ -2443,7 +2345,7 @@ article.contents {
     border-radius: 3px;
     background-color: #848484; }
     .btn-inner.delete:before {
-      content: ""; }
+      content: ""; }
     .btn-inner.delete:before {
       display: block;
       text-indent: 0px;
@@ -2458,7 +2360,7 @@ article.contents {
     border-radius: 3px;
     background-color: #848484; }
     .btn-inner.edit:before {
-      content: ""; }
+      content: ""; }
     .btn-inner.edit:before {
       display: block;
       text-indent: 0px;
@@ -2492,13 +2394,13 @@ article.contents {
     margin-right: 4px;
     vertical-align: middle;
     background-image: url(../images/sprites.png);
-    background-position: -574px -116px;
+    background-position: -586px -464px;
     width: 22px;
     height: 22px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .btn-add:before {
         background-image: url(../images/sprites@2x.png);
-        background-size: 606px 481px; } }
+        background-size: 625px 599px; } }
 
 /* section */
 .section .section-title {
@@ -2523,13 +2425,13 @@ article.contents {
       margin-right: 6px;
       vertical-align: top;
       background-image: url(../images/sprites.png);
-      background-position: -558px -341px;
+      background-position: -552px -193px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .section .section-sub-title h3.aws:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .section .section-sub-title h3.azure:before {
       content: '';
       display: inline-block;
@@ -2537,13 +2439,13 @@ article.contents {
       margin-right: 6px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -531px -341px;
+      background-position: -552px -214px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .section .section-sub-title h3.azure:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
   .section .section-sub-title .btn-add {
     float: right; }
   .section .section-sub-title + .tbl-v {
@@ -2627,42 +2529,42 @@ article.contents {
         background-color: #fff; }
     .navigation a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -513px -371px;
+      background-position: -586px -180px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .navigation a.btn-first {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .navigation a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -549px -371px;
+      background-position: -586px -288px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .navigation a.btn-prev {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .navigation a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -81px -184px;
+      background-position: -586px -252px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .navigation a.btn-next {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .navigation a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -477px -371px;
+      background-position: -586px -216px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .navigation a.btn-last {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
 
 /* forms */
 .icheck {
@@ -2688,50 +2590,50 @@ article.contents {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -81px -220px;
+  background-position: -609px -519px;
   width: 16px;
   height: 16px;
   background-color: #fff; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icheckbox {
       background-image: url(../images/sprites@2x.png);
-      background-size: 606px 481px; } }
+      background-size: 625px 599px; } }
   .icheckbox.disabled {
     background-image: url(../images/sprites.png);
-    background-position: -253px -184px;
+    background-position: -552px -348px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.disabled {
         background-image: url(../images/sprites@2x.png);
-        background-size: 606px 481px; } }
+        background-size: 625px 599px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -103px -220px;
+    background-position: -552px -326px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 606px 481px; } }
+        background-size: 625px 599px; } }
     .icheckbox.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -275px -184px;
+      background-position: -552px -304px;
       width: 16px;
       height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .icheckbox.checked.disabled {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -585px -371px;
+    background-position: -609px -492px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.indeterminate {
         background-image: url(../images/sprites@2x.png);
-        background-size: 606px 481px; } }
+        background-size: 625px 599px; } }
 
 .iradio {
   display: block;
@@ -2739,31 +2641,31 @@ article.contents {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -589px -252px;
+  background-position: -552px -258px;
   width: 17px;
   height: 17px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .iradio {
       background-image: url(../images/sprites@2x.png);
-      background-size: 606px 481px; } }
+      background-size: 625px 599px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -589px -206px;
+    background-position: -552px -281px;
     width: 17px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .iradio.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 606px 481px; } }
+        background-size: 625px 599px; } }
     .iradio.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -589px -229px;
+      background-position: -552px -235px;
       width: 17px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .iradio.checked.disabled {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
 
 .forms {
   /* status & service */ }
@@ -2782,7 +2684,7 @@ article.contents {
     display: block;
     position: relative; }
     .forms .invalid:before {
-      content: ""; }
+      content: ""; }
     .forms .invalid:before {
       position: absolute;
       top: 50%;
@@ -2825,11 +2727,11 @@ article.contents {
   .forms .service.asset:before {
     content: ""; }
   .forms .service.metering:before {
-    content: ""; }
-  .forms .service.monitoring:before {
     content: ""; }
+  .forms .service.monitoring:before {
+    content: ""; }
   .forms .service.workflow:before {
-    content: ""; }
+    content: ""; }
   .forms .status-company {
     overflow: hidden;
     font-size: 14px;
@@ -2840,13 +2742,13 @@ article.contents {
       margin: -2px 8px 0 0;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -595px -176px;
+      background-position: -614px -464px;
       width: 10px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .forms .status-company .subscribed:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .forms .status-company .trial:before {
       content: '';
       display: inline-block;
@@ -2925,22 +2827,22 @@ article.contents {
       background-color: #7ED321; }
     .forms .status-user.subscribed:before {
       background-image: url(../images/sprites.png);
-      background-position: -595px -176px;
+      background-position: -614px -464px;
       width: 10px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .forms .status-user.subscribed:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .forms .status-user.invited:before {
       background-image: url(../images/sprites.png);
-      background-position: -461px -427px;
+      background-position: -610px -568px;
       width: 13px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .forms .status-user.invited:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 606px 481px; } }
+          background-size: 625px 599px; } }
     .forms .status-user.deactivated:before {
       height: 3px;
       width: 12px;

@@ -4,17 +4,17 @@
 
 		<div id="select-service" class="custom-select-container">
 			<button type="button" class="btn-custom-select">
-				@@if ( service == "portal" ) {<span class="txt my-dashboard">MY DASHBOARD</span>}
+				@@if ( service == "portal" ) {<span class="txt service-portal">SERVICE PORTAL</span>}
 				@@if ( service == "asset" ) {<span class="txt asset-management">ASSET MANAGEMENT</span>}
 				@@if ( service == "metering" ) {<span class="txt metering">METERING</span>}
 				@@if ( service == "monitoring" ) {<span class="txt monitoring">MONITORING DASHBOARD</span>}
-				@@if ( service == "workflow" ) {<span class="txt workflow">WORKFLOW SERVICE</span>}
+				@@if ( service == "its" ) {<span class="txt its">ITS</span>}
 			</button>
 			<div class="list-container">
 				<ul class="list-custom-select">
 					<li @@if ( service == "portal" ) {class="is-selected"}>
 						<button type="button">
-							<span class="txt my-dashboard">MY DASHBOARD</span>
+							<span class="txt service-portal">SERVICE PORTAL</span>
 						</button>
 					</li>
 					<li @@if ( service == "asset" ) {class="is-selected"}>
@@ -34,7 +34,7 @@
 					</li>
 					<li @@if ( service == "workflow" ) {class="is-selected"}>
 						<button type="button">
-							<span class="txt workflow">WORKFLOW SERVICE</span>
+							<span class="txt its">ITS</span>
 						</button>
 					</li>
 				</ul>
@@ -96,9 +96,21 @@
 		<figure class="user">
 			<div class="thumb"><img src="assets/images/user_profile.png" alt="parkNameJung profile image"></div>
 			<figcaption>
-				<a href="#">Hello! ParkNamJung</a>
+				<button type="button">Hello! ParkNamJung</button>
 			</figcaption>
 		</figure>
+
+		<div class="user-menus">
+			<ul>
+				<li><button type="button">대시보드</button></li>
+				<li><button type="button">내 계정</button></li>
+				<li><button type="button">회사 계정 관리</button></li>
+				<li><button type="button">사용자 및 권한 관리</button></li>
+				<li><button type="button">클라우드 계정 관리</button></li>
+				<li><button type="button">서비스 그룹 관리</button></li>
+			</ul>
+			<button type="button">로그아웃</button>
+		</div>
 	</div>
 </header>
 <script>
@@ -161,12 +173,15 @@ var GlobalMenu = (function ($) {
 		selectService,
 		selectCompany,
 		selectLanguage,
+		$user,
 		init = function() {
 			$container = $('.global-menu-new');
 
 			selectService = new BSPSelectBox($('#select-service'));
 			selectCompany = new BSPSelectBox($('#select-company'));
 			selectLanguage = new BSPSelectBox($('#language'));
+
+			$user = $container.find('.user');
 
 			initLayout();
 			initEvent();
@@ -176,10 +191,24 @@ var GlobalMenu = (function ($) {
 	}
 
 	function initEvent() {
+		$user.on('click', function() {
+			$(this).toggleClass('is-open');
+		});
+
 		$(document).click(function (e) {
-			if( !$(event.target).closest(".custom-select-container").length ) {
+			if( !$(event.target).closest(".user").length ) {
+				$user.removeClass('is-open');
+			}
+
+			if( !$(event.target).closest("#select-service").length ) {
 				selectService.hide();
+			}
+
+			if( !$(event.target).closest("#select-company").length ) {
 				selectCompany.hide();
+			}
+
+			if( !$(event.target).closest("#language").length ) {
 				selectLanguage.hide();
 			}
 		});

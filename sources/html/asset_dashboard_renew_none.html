@@ -1,0 +1,166 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="asset dashboard">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "asset", "sub": "dashboard"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="is-hidden">ASSET DASHBOARD</h1>
+				
+			<div class="contents-inner size-fit">
+
+				<div class="page-tabs">
+					<p class="inner">
+						<a href="#" class="is-selected">AWS</a>
+						<a href="#">AZURE</a>
+					</p>
+				</div>
+
+				<ul class="list-column-complex">
+					<li>
+
+						<!-- USAGE -->
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+
+							<h2 class="title">
+								USAGE
+								<time datetime="2016.10.04 16:20:00" class="last-update">2016.10.04 16:20:00</time>
+							</h2>
+
+
+							<!-- SERVER -->
+							<div class="content left">
+								
+								<div class="asset-usage">
+									<p class="total">SERVER</p>
+
+									<div class="none-contents" style="height: 572px;">
+										<p>No budget set to<br>display any insights!</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- DATABASE -->
+							<div class="content right">
+								<div class="asset-usage">
+									<p class="total">DATABASE</p>
+
+									<div class="none-contents" style="height: 572px;">
+										<p>No budget set to<br>display any insights!</p>
+									</div>
+								</div>
+							</div>
+						</section>
+
+					</li>
+					<li>
+
+
+						<!-- PERFORMANCE -->
+						<section class="dashbaord-box-item">
+							<button type="button" class="btn-detail">detail</button>
+
+							<h2 class="title">
+								PERFORMANCE
+								<time datetime="2016.10.04 16:20:00" class="last-update">2016.10.04 16:20:00</time>
+							</h2>
+
+
+							<!-- CPU -->
+							<div class="content column03">
+								<div class="asset-performance-box">
+									<div class="title">CPU</div>
+
+									<div class="none-contents" style="height: 383px;">
+										<p>No budget set to<br>display any insights!</p>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- MEMORY -->
+							<div class="content column03">
+								<div class="asset-performance-box">
+									<div class="title">MEMORY</div>
+
+									<div class="none-contents" style="height: 383px;">
+										<p>No budget set to<br>display any insights!</p>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- VOLUME -->
+							<div class="content column03">
+								<div class="asset-performance-box">
+									<div class="title">VOLUME</div>
+
+									<div class="none-contents" style="height: 383px;">
+										<p>No budget set to<br>display any insights!</p>
+									</div>
+								</div>
+
+							</div>
+						</section>
+						
+					</li>
+				</ul>
+			</div>
+
+		</article>
+	</main>
+	<script>
+	$.fn.animateRotate = function(percent, duration, easing, complete) {
+		var args = $.speed(duration, easing, complete);
+		var step = args.step;
+		var angle = percent/100 * 180;
+
+		return this.each(function(i, e) {
+			args.complete = $.proxy(args.complete, e);
+
+			args.step = function(now) {
+				$.style(e, 'transform', 'rotate(' + now + 'deg)');
+				if (step) return step.apply(e, arguments);
+			};
+
+			$({deg: 0}).animate({deg: angle}, args);
+		});
+	};
+
+	$(document).ready(function(e) {
+		// deg : 0 ~ 100
+		$('#cpu-performance .value').text('25.01'+'%');
+		$('#cpu-performance .arc').animateRotate(25.01, {
+			duration: 1000,
+			easing: 'swing',
+			complete: function() {}
+		});
+
+		$('#memory-performance .value').text('57.10'+'%');
+		$('#memory-performance .arc').animateRotate(57.10, {
+			duration: 1000,
+			easing: 'swing',
+			complete: function() {}
+		});
+
+		$('#volume-performance .value').text('100'+'%');
+		$('#volume-performance .arc').animateRotate(100, {
+			duration: 1000,
+			easing: 'swing',
+			complete: function() {}
+		});
+	});
+	</script>
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>
