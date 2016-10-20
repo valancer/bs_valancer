@@ -160,7 +160,7 @@ div {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu-new .btn-custom-select:after, .global-menu-new .utils .notification:after, .search-container .search-word .btn-search:before, .multiple-select .btn-filter:before, .btn-inner.calendar:before, .btn-inner.delete:before, .btn-inner.edit:before, .forms .invalid:before, .forms .service.asset:before, .forms .service.metering:before, .forms .service.monitoring:before, .forms .service.workflow:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu-new .btn-custom-select:after, .global-menu-new .utils .notification:after, .search-container .search-word .btn-search:before, .multiple-select .btn-filter:before, .btn-inner.calendar:before, .btn-inner.delete:before, .btn-inner.edit:before, .datepicker:after, .forms .invalid:before, .forms .service.asset:before, .forms .service.metering:before, .forms .service.monitoring:before, .forms .service.workflow:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -657,6 +657,20 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       color: #000;
       border: 0px;
       line-height: 20px; }
+  .aggrid-uitls select {
+    display: inline-block;
+    overflow: visible;
+    padding: 0 30px 0 12px;
+    height: 24px;
+    width: auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    line-height: 24px;
+    vertical-align: middle;
+    border: 0px;
+    border-radius: 0;
+    background: #E7E7E7 url("/assets/images/select_arrow02.png") center right no-repeat; }
   .aggrid-uitls .paging-status {
     font-size: 14px;
     font-weight: bold; }
@@ -670,19 +684,26 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         width: 1px;
         vertical-align: middle;
         background-color: #A1A1A1; }
-    .aggrid-uitls .paging-status select {
-      display: inline-block;
-      margin-top: -2px;
-      padding: 0 27px 0 12px;
-      height: 24px;
-      font-size: 14px;
-      font-weight: bold;
-      color: #000;
-      line-height: 24px;
-      vertical-align: middle;
-      border: 0px;
-      border-radius: 0;
-      background: #E7E7E7 url("/assets/images/select_arrow02.png") center right no-repeat; }
+  .aggrid-uitls .ri-range label {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 0.750rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 24px; }
+    .aggrid-uitls .ri-range label ~ label {
+      margin-left: 20px; }
+  .aggrid-uitls .ri-range select {
+    min-width: 130px; }
+  .aggrid-uitls .ri-range .reference-date {
+    height: 24px;
+    width: 80px;
+    font-size: 0.750rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    border: 1px solid #E4E4E4;
+    background-color: #fff; }
 
 .grid-detail {
   display: block;
@@ -769,7 +790,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .grid-bottom a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -586px -288px;
+      background-position: -586px -252px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -779,7 +800,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .grid-bottom a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -586px -252px;
+      background-position: -586px -288px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -815,19 +836,19 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
   line-height: 1.4;
   font-family: inherit;
   font-size: 0.750rem;
-  color: #000; }
+  color: #4A4A4A; }
   .ag-bespin-global img {
     vertical-align: middle;
     border: 0; }
   .ag-bespin-global .ag-hidden {
     display: none; }
   .ag-bespin-global .ag-root {
-    border-top: 1px solid #d8d8d8;
-    border-bottom: 1px solid #d8d8d8; }
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000; }
   .ag-bespin-global .ag-cell {
-    font-weight: 500;
+    font-weight: 400;
     line-height: 40px;
-    text-align: center; }
+    padding-left: 10px; }
   .ag-bespin-global .ag-cell-not-inline-editing {
     /*padding: 2px;*/ }
   .ag-bespin-global .ag-cell-range-selected-1:not(.ag-cell-focus) {
@@ -886,7 +907,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -552px -402px;
+      background-position: -552px -370px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -904,7 +925,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           background-size: 625px 599px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -552px -370px;
+      background-position: -552px -402px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -914,7 +935,11 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
   .ag-bespin-global .ag-no-scrolls .ag-header-container {
     background: linear-gradient(#fff, #d3d3d3);
     border-bottom: 1px solid #808080; }
+  .ag-bespin-global .ag-header-row {
+    border-bottom: 1px solid #D6D6D6; }
   .ag-bespin-global .ag-header-cell {
+    text-align: left;
+    padding-left: 10px;
     border-right: 1px solid transparent; }
   .ag-bespin-global .ag-header-cell-resize {
     width: 3px;
@@ -926,8 +951,6 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       opacity: 0.5;
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
       filter: alpha(opacity=50); }
-  .ag-bespin-global .ag-header-group-cell-with-group {
-    border-bottom: 1px solid #d8d8d8; }
   .ag-bespin-global .ag-header-cell-label {
     font-size: 12px;
     padding: 0;
@@ -935,7 +958,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
   .ag-bespin-global .ag-header-cell-text {
     padding-left: 2px; }
   .ag-bespin-global .ag-header-group-cell-label {
-    padding-left: 20px; }
+    padding-left: 10px; }
   .ag-bespin-global .ag-header-group-text {
     line-height: 40px;
     margin-right: 2px; }
@@ -974,14 +997,11 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     height: 28px;
     border: 2px solid #000; }
   .ag-bespin-global .ag-body {
-    background-color: #f6f6f6; }
-    .ag-bespin-global .ag-body .ag-row-odd {
-      background-color: #fff; }
-    .ag-bespin-global .ag-body .ag-row-even {
-      background-color: #f6f6f6; }
+    background-color: #fff; }
+    .ag-bespin-global .ag-body .ag-row {
+      border-bottom: 1px solid #EFEFEF; }
     .ag-bespin-global .ag-body .ag-row-selected {
-      color: #fff;
-      background-color: #000; }
+      background-color: #F6F6F6; }
   .ag-bespin-global .ag-floating-top .ag-row, .ag-bespin-global .ag-floating-bottom .ag-row {
     background-color: #fff; }
   .ag-bespin-global .ag-floating-bottom .ag-row {
@@ -992,6 +1012,8 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     z-index: 1;
     height: 50px !important;
     border-bottom: 2px solid #000; }
+  .ag-bespin-global .ag-body-viewport-wrapper {
+    border-top: 1px solid #D6D6D6; }
   .ag-bespin-global .ag-overlay-loading-wrapper {
     background-color: rgba(255, 255, 255, 0.5); }
   .ag-bespin-global .ag-overlay-loading-center {
@@ -1843,7 +1865,7 @@ corresponds to the arrow we want to display */
     top: 80%;
     z-index: 500;
     margin-top: 7px;
-    width: 100%;
+    width: auto;
     max-height: 700px;
     border: 3px solid #000;
     background-color: #fff; }
@@ -2059,7 +2081,7 @@ body {
 main {
   position: relative;
   display: block;
-  margin-top: 90px;
+  padding-top: 80px;
   min-height: calc(100% - 60px); }
 
 article.contents {
@@ -2260,11 +2282,22 @@ article.contents {
     color: #4A90E2; }
     .list-company li .company-item .status.subscribed:before {
       background-image: url(../images/sprites.png);
-      background-position: -614px -464px;
+      background-position: -552px -418px;
       width: 10px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .list-company li .company-item .status.subscribed:before {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 625px 599px; } }
+  .list-company li .company-item .status.deactivate {
+    color: #9B9B9B; }
+    .list-company li .company-item .status.deactivate:before {
+      background-image: url(../images/sprites.png);
+      background-position: -614px -464px;
+      width: 10px;
+      height: 10px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .list-company li .company-item .status.deactivate:before {
           background-image: url(../images/sprites@2x.png);
           background-size: 625px 599px; } }
   .list-company li .company-item:hover {
@@ -2425,7 +2458,7 @@ article.contents {
       margin-right: 6px;
       vertical-align: top;
       background-image: url(../images/sprites.png);
-      background-position: -552px -193px;
+      background-position: -552px -214px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2439,7 +2472,7 @@ article.contents {
       margin-right: 6px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -552px -214px;
+      background-position: -552px -193px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2539,7 +2572,7 @@ article.contents {
     .navigation a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -586px -288px;
+      background-position: -586px -252px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2549,7 +2582,7 @@ article.contents {
     .navigation a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -586px -252px;
+      background-position: -586px -288px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2600,7 +2633,7 @@ article.contents {
       background-size: 625px 599px; } }
   .icheckbox.disabled {
     background-image: url(../images/sprites.png);
-    background-position: -552px -348px;
+    background-position: -552px -304px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2618,7 +2651,7 @@ article.contents {
         background-size: 625px 599px; } }
     .icheckbox.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -552px -304px;
+      background-position: -552px -348px;
       width: 16px;
       height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2641,7 +2674,7 @@ article.contents {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -552px -258px;
+  background-position: -552px -281px;
   width: 17px;
   height: 17px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2650,7 +2683,7 @@ article.contents {
       background-size: 625px 599px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -552px -281px;
+    background-position: -552px -235px;
     width: 17px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2659,13 +2692,40 @@ article.contents {
         background-size: 625px 599px; } }
     .iradio.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -552px -235px;
+      background-position: -552px -258px;
       width: 17px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .iradio.checked.disabled {
           background-image: url(../images/sprites@2x.png);
           background-size: 625px 599px; } }
+
+.datepicker {
+  display: inline-block;
+  position: relative;
+  margin-right: 25px;
+  height: 20px;
+  border: 0px; }
+  .datepicker:after {
+    content: ""; }
+  .datepicker:after {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    margin-top: -10px; }
+  .datepicker input[type=text] {
+    display: inline-block;
+    margin-top: -1px;
+    padding: 0;
+    height: 20px !important;
+    width: 245px !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 20px;
+    text-align: left;
+    border: 0px !important;
+    background-color: transparent !important; }
 
 .forms {
   /* status & service */ }
@@ -2736,37 +2796,58 @@ article.contents {
     overflow: hidden;
     font-size: 14px;
     color: #000; }
-    .forms .status-company .subscribed:before {
-      content: '';
-      display: inline-block;
-      margin: -2px 8px 0 0;
-      vertical-align: middle;
-      background-image: url(../images/sprites.png);
-      background-position: -614px -464px;
-      width: 10px;
-      height: 10px; }
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        .forms .status-company .subscribed:before {
-          background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
-    .forms .status-company .trial:before {
-      content: '';
-      display: inline-block;
-      margin: -2px 8px 0 0;
-      vertical-align: middle;
-      height: 6px;
-      width: 6px;
-      border: 2px solid #62E6D5;
-      border-radius: 10px; }
-    .forms .status-company .activated:before {
-      content: '';
-      display: inline-block;
-      margin: -2px 8px 0 0;
-      vertical-align: middle;
-      height: 10px;
-      width: 10px;
-      border-radius: 10px;
-      background-color: #7FCB2B; }
+    .forms .status-company .subscribed {
+      line-height: 30px; }
+      .forms .status-company .subscribed:before {
+        content: '';
+        display: inline-block;
+        margin: -2px 8px 0 0;
+        vertical-align: middle;
+        background-image: url(../images/sprites.png);
+        background-position: -552px -418px;
+        width: 10px;
+        height: 10px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .forms .status-company .subscribed:before {
+            background-image: url(../images/sprites@2x.png);
+            background-size: 625px 599px; } }
+    .forms .status-company .trial {
+      line-height: 30px; }
+      .forms .status-company .trial:before {
+        content: '';
+        display: inline-block;
+        margin: -2px 8px 0 0;
+        vertical-align: middle;
+        height: 6px;
+        width: 6px;
+        border: 2px solid #62E6D5;
+        border-radius: 10px; }
+    .forms .status-company .activated {
+      line-height: 30px; }
+      .forms .status-company .activated:before {
+        content: '';
+        display: inline-block;
+        margin: -2px 8px 0 0;
+        vertical-align: middle;
+        height: 10px;
+        width: 10px;
+        border-radius: 10px;
+        background-color: #7FCB2B; }
+    .forms .status-company .deactivated {
+      line-height: 30px; }
+      .forms .status-company .deactivated:before {
+        content: '';
+        display: inline-block;
+        margin: -2px 8px 0 0;
+        vertical-align: middle;
+        background-image: url(../images/sprites.png);
+        background-position: -613px -546px;
+        width: 12px;
+        height: 12px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .forms .status-company .deactivated:before {
+            background-image: url(../images/sprites@2x.png);
+            background-size: 625px 599px; } }
     .forms .status-company .btns {
       float: right; }
       .forms .status-company .btns button {
@@ -2827,7 +2908,7 @@ article.contents {
       background-color: #7ED321; }
     .forms .status-user.subscribed:before {
       background-image: url(../images/sprites.png);
-      background-position: -614px -464px;
+      background-position: -552px -418px;
       width: 10px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

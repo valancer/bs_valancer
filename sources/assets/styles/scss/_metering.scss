@@ -535,6 +535,16 @@ body.metering {
 		}
 	}
 
+	// cost optimization
+	&.page-cost-optimization {
+		article.contents { padding-bottom: 100px; }
+
+		.left-view { overflow: hidden; float: left; width: 570px; }
+		.right-view { overflow: hidden; float: right; width: 560px;
+			.ri-chart { box-sizing: border-box; width: 100%; border: 1px solid #D2D2D2; }
+		}
+	}
+
 
 	// credit information
 	&.history.credit {

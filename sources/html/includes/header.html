@@ -132,13 +132,18 @@ BSPSelectBox.prototype.init = function() {
 	_.$listItems = _.$listContainer.find('button');
 
 	var btnWidth = _.$btnSelect.width();
-	var listContainerWidth = _.$listContainer.width() + 30;
+	var listContainerWidth = _.$listContainer.width();
+
 	if( btnWidth > listContainerWidth ) {
 		_.$listContainer.width(btnWidth + "px");
 	} else {
 		_.$btnSelect.width(listContainerWidth + "px");
+		if( _.$container.hasClass('small') ) {
+			_.$listContainer.width((_.$btnSelect.width()+15) + "px");
+		} else {
+			_.$listContainer.width((_.$btnSelect.width()+72) + "px");
+		}
 	}
-
 	_.$btnSelect.on('click', function(e) {
 		$(this).toggleClass("is-selected");
 	});
@@ -262,7 +267,7 @@ $(document).ready(function(e) {
 					<li><a href="#">Alarm Setting</a></li>
 				</ul>
 			</li>
-			<li @@if ( sub == "status" ) { class="is-selected" }><a href="#">RI STATUS</a></li>
+			<li @@if ( sub == "status" ) { class="is-selected" }><a href="#">COST OPTIMIZATION</a></li>
 			<li @@if ( sub == "history" ) { class="is-selected" }><a href="#">PAYMENT &amp; DISCOUNT</a></li>
 		</ul>
 	</div>

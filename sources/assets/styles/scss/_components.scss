@@ -179,6 +179,22 @@
 
 	~ .list-column-03 { padding-top: 50px !important; }
 }
+.inline-tabs { display: block; position: relative; z-index: z("default");
+	button, a { display: inline-block; padding: 0 20px; height: 30px; font-family: $font-special-stack; font-size: 1.000rem; font-weight: 700; color: #000; text-align: center; line-height: 30px; letter-spacing: 0.1em; border: 3px solid #000; background-color: transparent;
+		&:hover,
+		&.is-selected { color: #fff; background-color: #000; }
+
+		+ a { margin-left: -8px; }
+		+ button { margin-left: -8px; }
+	}
+}
+
+.page-sub-menu { padding-bottom: 43px;
+	button, a { display: inline-block; margin-right: 50px; font-size: 1.000rem; font-weight: 700; color: rgba(0, 0, 0, 0.3);
+		&:hover,
+		&.is-selected { color: #000; }
+	}
+}
 
 
 .segmented-control { display: block; position: relative; z-index: z("default");

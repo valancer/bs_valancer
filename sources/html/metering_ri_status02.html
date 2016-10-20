@@ -1,0 +1,102 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="metering page-cost-optimization">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "metering", "sub": "status"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					Cost Optimization
+
+					<div class="right-content">
+						<div class="inline-tabs">
+							<a href="#">AWS</a>
+							<a href="#" class="is-selected">AZURE</a>
+						</div>
+					</div>
+				</div>
+			</h1>
+
+
+			<div class="contents-inner">
+
+				<div class="page-sub-menu">
+					<a href="#">RI구매현황</a>
+					<a href="#" class="is-selected">RI사용현황</a>
+					<a href="#">RI 추천</a>
+				</div>
+
+
+				<fieldset class="aggrid-uitls">
+					<legend>Data Search &amp; uitls</legend>
+
+					<p class="right-content">
+						<button type="button" class="btn-text export export_open">Export</button>
+					</p>
+
+					<div id="export" class="popover small export">
+						<span class="point"></span>
+						<ul>
+							<li><button type="button">Export Graph</button></li>
+							<li><button type="button">Export Table</button></li>
+						</ul>
+					</div>
+
+					<div class="left-content">
+						<p class="ri-range">
+							<label for="">Time Range</label>
+							<select name="" id="">
+								<option value="">yesterday</option>
+								<option value="">last 1 weeks</option>
+								<option value="">last 1 month</option>
+								<option value="">last 3 month</option>
+							</select>
+
+							<label for="">Reference Date</label>
+							<input type="text" id="" name="" value="2016.09.13" class="reference-date">
+						</p>
+					</div>
+
+					<script>
+						$(document).ready(function(e) {
+							// export
+							$('#export').popup({
+								type: 'tooltip',
+								vertical: 'bottom',
+								horizontal: 'center',
+								offsettop: 10,
+								transition: '0.3s all 0.1s'
+							});
+						});
+					</script>
+				</fieldset>
+
+
+				<div class="left-view">
+					@@include('./inc_ag_grid.html')
+				</div>
+
+				<div class="right-view">
+					<div class="ri-chart" style="height: 500px;">
+						chart
+					</div>
+				</div>
+
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

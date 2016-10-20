@@ -1,0 +1,37 @@
+<!-- grid container -->
+<fieldset class="aggrid-uitls">
+	<legend>Data Search &amp; uitls</legend>
+
+	<p class="right-content">
+		<button type="button" class="btn-text refresh">2016-09-21 14:12:16</button>
+		<button type="button" class="btn-text export export_open">Export</button>
+	</p>
+
+	<div id="export" class="popover small export">
+		<span class="point"></span>
+		<ul>
+			<li><button type="button">Export Graph</button></li>
+			<li><button type="button">Export Table</button></li>
+		</ul>
+	</div>
+
+	<div class="left-content">
+	</div>
+
+	<script>
+		$(document).ready(function(e) {
+			// export
+			$('#export').popup({
+				type: 'tooltip',
+				vertical: 'bottom',
+				horizontal: 'center',
+				offsettop: 10,
+				transition: '0.3s all 0.1s'
+			});
+		});
+	</script>
+</fieldset>
+
+
+@@include('./inc_ag_grid.html')
+<!--// grid container -->

@@ -1,6 +1,6 @@
 
 // 2depth - sub
-.sub-menus { position: relative; z-index: z("gnb") - 1; margin-top: 80px; background-color: #f6f6f6;
+.sub-menus { position: relative; z-index: z("gnb") - 1; padding-top: 80px; background-color: #f6f6f6;
 	.contents-inner { position: relative; margin: 0 auto; height: 60px; width: $contents-width; }
 
 	h2 { display: none; }
@@ -183,9 +183,8 @@ main { min-height: 600px;
 article.contents { padding-top: 80px;
 	@mixin inner() { position: relative; box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
 	.contents-inner { overflow: hidden; @include inner(); padding-bottom: 0px;
-		&.size-fit { margin-top: 0; padding: 0;
-			&.fullsize { padding: 0 5%; width: 100%; }
-		}
+		&.size-fit { margin-top: 0; padding: 0; }
+		&.fullsize { padding: 0 5%; width: 100%; }
 	}
 
 	.button-container { padding: 50px 0px 0px 4px; text-align: right; }
@@ -235,7 +234,7 @@ article.contents { padding-top: 80px;
 	// metering
 	.metering & {
 		h1.title {
-			.inner { @include inner(); padding-top: 19px; height: 135px; font-size: 36px; font-weight: 500; }
+			.inner { @include inner(); padding-top: 40px; height: 135px; font-size: 1.875rem; font-weight: 700; line-height: 1.500em; }
 			.inline { display: inline-block; margin-left: 20px; vertical-align: middle; }
 			.right-content { float: right; }
 		}
