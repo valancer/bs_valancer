@@ -80,7 +80,7 @@ article.contents { display: block; min-height: 100%; min-width: $contents-width;
 				&.subscribed { color: #4A90E2;
 					&:before { @include retina-sprite($sc-icon-plus-02-group); }
 				}
-				&.deactivate { color: #9B9B9B;
+				&.deactivated { color: #9B9B9B;
 					&:before { @include retina-sprite($sc-icon-deny-02-group); }
 				}
 			}

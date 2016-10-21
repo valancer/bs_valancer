@@ -659,11 +659,11 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       line-height: 20px; }
   .aggrid-uitls select {
     display: inline-block;
-    overflow: visible;
+    box-sizing: border-box;
     padding: 0 30px 0 12px;
     height: 24px;
     width: auto;
-    font-size: 14px;
+    font-size: 0.750rem;
     font-weight: bold;
     color: #000;
     line-height: 24px;
@@ -684,18 +684,18 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         width: 1px;
         vertical-align: middle;
         background-color: #A1A1A1; }
-  .aggrid-uitls .ri-range label {
+  .aggrid-uitls .ri-status label {
     display: inline-block;
     margin-right: 6px;
     font-size: 0.750rem;
     font-weight: 500;
     color: #000;
     line-height: 24px; }
-    .aggrid-uitls .ri-range label ~ label {
+    .aggrid-uitls .ri-status label ~ label {
       margin-left: 20px; }
-  .aggrid-uitls .ri-range select {
-    min-width: 130px; }
-  .aggrid-uitls .ri-range .reference-date {
+  .aggrid-uitls .ri-status select {
+    width: 130px; }
+  .aggrid-uitls .ri-status .reference-date {
     height: 24px;
     width: 80px;
     font-size: 0.750rem;
@@ -2289,15 +2289,15 @@ article.contents {
         .list-company li .company-item .status.subscribed:before {
           background-image: url(../images/sprites@2x.png);
           background-size: 625px 599px; } }
-  .list-company li .company-item .status.deactivate {
+  .list-company li .company-item .status.deactivated {
     color: #9B9B9B; }
-    .list-company li .company-item .status.deactivate:before {
+    .list-company li .company-item .status.deactivated:before {
       background-image: url(../images/sprites.png);
       background-position: -614px -464px;
       width: 10px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        .list-company li .company-item .status.deactivate:before {
+        .list-company li .company-item .status.deactivated:before {
           background-image: url(../images/sprites@2x.png);
           background-size: 625px 599px; } }
   .list-company li .company-item:hover {
@@ -2937,8 +2937,10 @@ article.contents {
 /* modal popup */
 .modal-popup {
   box-sizing: border-box;
+  margin: 0 auto;
   padding: 22px 23px 5px 23px;
-  border: 2px solid #000; }
+  border: 2px solid #000;
+  background-color: #fff; }
   .modal-popup .title {
     font-size: 21px;
     font-weight: 400;

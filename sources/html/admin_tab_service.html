@@ -40,7 +40,7 @@
 
 
 							<div class="section-sub-title">
-								<button type="button" class="btn-add">Add System Enginer</button>
+								<button type="button" class="btn-add system-enginer">Add System Enginer</button>
 
 								<h3>System Enginer</h3>
 							</div>
@@ -104,7 +104,7 @@
 
 
 							<div class="section-sub-title">
-								<button type="button" class="btn-add">Add Sales Persons</button>
+								<button type="button" class="btn-add sales-persons">Add Sales Persons</button>
 
 								<h3>Sales Persons</h3>
 							</div>
@@ -321,6 +321,154 @@
 			</div>
 		</article>
 	</main>
+
+
+	<!-- add cloud account -->
+	<aside id="add-account" class="modal-popup add-account mfp-hide">
+		<h2 class="title">ADD AWS ACCOUNT</h2>
+
+		<div class="content">
+			<fieldset class="forms">
+				<legend>add account</legend>
+
+				<p class="item">
+					<label for="">Alias</label>
+					<input type="text" id="" name="">
+				</p>
+
+				<p class="item">
+					<label for="">Access Key</label>
+					<input type="text" id="" name="">
+				</p>
+
+				<p class="item">
+					<label for="">Secret Key</label>
+					<input type="text" id="" name="">
+				</p>
+			</fieldset>
+		</div>
+
+		<div class="bottom">
+			<button type="button" class="btn-submit">ADD ACCOUNT</button>
+		</div>
+	</aside>
+
+
+	<!-- add person -->
+	<aside id="add-person" class="modal-popup add-person mfp-hide">
+		<h2 class="title">ADD SYSTEM ENGINEER</h2>
+
+		<div class="content">
+			<fieldset class="search-container">
+				<legend>search</legend>
+
+				<p class="search-word">
+					<input type="search" id="" name="" placeholder="company search">
+					<button type="submit" class="btn-search">search</button>
+				</p>
+			</fieldset>
+		
+			<fieldset class="forms">
+				<legend>User List</legend>
+
+				<table class="tbl-v">
+					<caption>User List</caption>
+					<colgroup>
+						<col style="width: 20px;">
+						<col style="width: 40px;">
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" class="c">
+								<label for="all-accounts" class="icheck txt-none">
+									<input type="checkbox" id="all-accounts" name="accounts" class="icheckbox">
+								</label>
+							</th>
+							<th scope="col" class="c">No.</th>
+							<th scope="col">Name</th>
+							<th scope="col">ID</th>
+							<th scope="col">Assign</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="c">
+								<label for="user-id01" class="icheck txt-none">
+									<input type="checkbox" id="user-id01" name="accounts" class="icheckbox">
+								</label>
+							</td>
+							<td class="c">000</td>
+							<td>홍길동</td>
+							<td>hong@bespinglobal.com</td>
+							<td>15 company</td>
+						</tr>
+						<tr class="is-checked">
+							<td class="c">
+								<label for="user-id01" class="icheck txt-none">
+									<input type="checkbox" id="user-id01" name="accounts" class="icheckbox">
+								</label>
+							</td>
+							<td class="c">000</td>
+							<td>홍길동</td>
+							<td>hong@bespinglobal.com</td>
+							<td>15 company</td>
+						</tr>
+						<tr>
+							<td class="c">
+								<label for="user-id01" class="icheck txt-none">
+									<input type="checkbox" id="user-id01" name="accounts" class="icheckbox">
+								</label>
+							</td>
+							<td class="c">000</td>
+							<td>홍길동</td>
+							<td>hong@bespinglobal.com</td>
+							<td>15 company</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="navigation">
+					<a href="#" class="btn-first"></a>
+					<a href="#" class="btn-prev"></a>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#" class="is-selected">8</a>
+					<a href="#">9</a>
+					<a href="#">10</a>
+					<a href="#" class="btn-next"></a>
+					<a href="#" class="btn-last"></a>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="bottom">
+			<button type="button" class="btn-submit">ADD PERSON</button>
+		</div>
+	</aside>
+
+	<script>
+	$(document).ready(function(e) {	
+		$('.sales-persons').magnificPopup({
+			items: {
+				src: '#add-person'
+			}
+		});
+
+		$('.system-enginer').magnificPopup({
+			items: {
+				src: '#add-account'
+			}
+		});
+	});
+	</script>
 
 	
 	<!-- 하단 영역 -->

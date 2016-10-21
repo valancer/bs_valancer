@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(notosanskr.css);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(montserrat.css);
 @import url(magnific-popup.css);
 @import url(jquery-confirm.css);
 /**
@@ -658,11 +658,11 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       line-height: 20px; }
   .aggrid-uitls select {
     display: inline-block;
-    overflow: visible;
+    box-sizing: border-box;
     padding: 0 30px 0 12px;
     height: 24px;
     width: auto;
-    font-size: 14px;
+    font-size: 0.750rem;
     font-weight: bold;
     color: #000;
     line-height: 24px;
@@ -683,18 +683,18 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         width: 1px;
         vertical-align: middle;
         background-color: #A1A1A1; }
-  .aggrid-uitls .ri-range label {
+  .aggrid-uitls .ri-status label {
     display: inline-block;
     margin-right: 6px;
     font-size: 0.750rem;
     font-weight: 500;
     color: #000;
     line-height: 24px; }
-    .aggrid-uitls .ri-range label ~ label {
+    .aggrid-uitls .ri-status label ~ label {
       margin-left: 20px; }
-  .aggrid-uitls .ri-range select {
-    min-width: 130px; }
-  .aggrid-uitls .ri-range .reference-date {
+  .aggrid-uitls .ri-status select {
+    width: 130px; }
+  .aggrid-uitls .ri-status .reference-date {
     height: 24px;
     width: 80px;
     font-size: 0.750rem;
@@ -2037,6 +2037,94 @@ corresponds to the arrow we want to display */
         .global-menu-new .utils .user-menus a:hover, .global-menu-new .utils .user-menus button:hover {
           color: #fff; }
 
+/* FOOTER */
+.footer {
+  overflow: hidden;
+  height: 320px;
+  background-color: #000; }
+  .footer .contents-inner {
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 100%;
+    width: 1200px;
+    color: #fff; }
+    .footer .contents-inner:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      background-image: url(../images/sprites.png);
+      background-position: -552px 0px;
+      width: 28px;
+      height: 101px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .footer .contents-inner:before {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 625px 599px; } }
+    .footer .contents-inner:after {
+      content: '';
+      clear: both; }
+  .footer .service {
+    float: left;
+    margin-top: 100px;
+    padding-left: 70px;
+    width: 30%; }
+    .footer .service .title {
+      display: block;
+      text-indent: -9999px;
+      background-image: url(../images/sprites.png);
+      background-position: -52px -141px;
+      width: 244px;
+      height: 52px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .footer .service .title {
+          background-image: url(../images/sprites@2x.png);
+          background-size: 625px 599px; } }
+    .footer .service .list-shortcut {
+      margin-top: 15px; }
+      .footer .service .list-shortcut a {
+        font-family: "Montserrat", "Apple SD Gothic", sans-serif;
+        font-size: 0.750rem;
+        font-weight: 700;
+        color: #fff;
+        line-height: 2.083em; }
+        .footer .service .list-shortcut a:hover {
+          color: rgba(255, 255, 255, 0.5); }
+  .footer .utils {
+    display: block;
+    float: right;
+    font-size: 0.750rem;
+    color: #6F6F6F;
+    text-align: right; }
+    .footer .utils .policy {
+      margin-top: 100px; }
+      .footer .utils .policy a {
+        font-weight: 700;
+        color: #fff;
+        opacity: 0.73; }
+        .footer .utils .policy a + a:before {
+          content: '|';
+          display: inline-block;
+          margin: -4px 6px 0 4px;
+          vertical-align: middle; }
+    .footer .utils .cs {
+      margin-top: 30px;
+      line-height: 1.667em; }
+      .footer .utils .cs .btn-tech {
+        display: inline-block;
+        margin-bottom: 5px;
+        color: #fff;
+        opacity: 0.73; }
+      .footer .utils .cs .info {
+        color: #6F6F6F; }
+    .footer .utils .copyright {
+      display: block;
+      margin-top: 43px; }
+
 .sub-menus {
   position: relative;
   z-index: 799;
@@ -2279,94 +2367,6 @@ corresponds to the arrow we want to display */
     .metering .side-menus > button, .metering .side-menus a {
       margin-bottom: 10px;
       font-size: 25px; }
-
-/* FOOTER */
-.footer {
-  overflow: hidden;
-  height: 320px;
-  background-color: #000; }
-  .footer .contents-inner {
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 20px;
-    min-height: 100%;
-    width: 1200px;
-    color: #fff; }
-    .footer .contents-inner:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 50px;
-      left: 20px;
-      background-image: url(../images/sprites.png);
-      background-position: -552px 0px;
-      width: 28px;
-      height: 101px; }
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        .footer .contents-inner:before {
-          background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
-    .footer .contents-inner:after {
-      content: '';
-      clear: both; }
-  .footer .service {
-    float: left;
-    margin-top: 100px;
-    padding-left: 70px;
-    width: 30%; }
-    .footer .service .title {
-      display: block;
-      text-indent: -9999px;
-      background-image: url(../images/sprites.png);
-      background-position: -52px -141px;
-      width: 244px;
-      height: 52px; }
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        .footer .service .title {
-          background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
-    .footer .service .list-shortcut {
-      margin-top: 15px; }
-      .footer .service .list-shortcut a {
-        font-family: "Montserrat", "Apple SD Gothic", sans-serif;
-        font-size: 0.750rem;
-        font-weight: 700;
-        color: #fff;
-        line-height: 2.083em; }
-        .footer .service .list-shortcut a:hover {
-          color: rgba(255, 255, 255, 0.5); }
-  .footer .utils {
-    display: block;
-    float: right;
-    font-size: 0.750rem;
-    color: #6F6F6F;
-    text-align: right; }
-    .footer .utils .policy {
-      margin-top: 100px; }
-      .footer .utils .policy a {
-        font-weight: 700;
-        color: #fff;
-        opacity: 0.73; }
-        .footer .utils .policy a + a:before {
-          content: '|';
-          display: inline-block;
-          margin: -4px 6px 0 4px;
-          vertical-align: middle; }
-    .footer .utils .cs {
-      margin-top: 30px;
-      line-height: 1.667em; }
-      .footer .utils .cs .btn-tech {
-        display: inline-block;
-        margin-bottom: 5px;
-        color: #fff;
-        opacity: 0.73; }
-      .footer .utils .cs .info {
-        color: #6F6F6F; }
-    .footer .utils .copyright {
-      display: block;
-      margin-top: 43px; }
 
 /* CONTENTS */
 main {
