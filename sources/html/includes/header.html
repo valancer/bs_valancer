@@ -3,7 +3,7 @@
 		<a href="#" class="btn-home">BESPIN</a>
 
 		<div id="select-service" class="custom-select-container">
-			<button type="button" class="btn-custom-select">
+			<button type="button" class="btn-custom-select service">
 				@@if ( service == "portal" ) {<span class="txt service-portal">SERVICE PORTAL</span>}
 				@@if ( service == "asset" ) {<span class="txt asset-management">ASSET MANAGEMENT</span>}
 				@@if ( service == "metering" ) {<span class="txt metering">METERING</span>}
@@ -59,7 +59,7 @@
 					<li><button type="button">망고플레이트</button></li>
 					<li><button type="button">회사명 테스트</button></li>
 					<li><button type="button">회사명 테스트 테스트</button></li>
-					<li><button type="button">회사명 테스트 테스트 테스트</button></li>
+					<li><button type="button">회사명 테스트 테스트 테스트 회사명 긴 회사명</button></li>
 					<li><button type="button">베스핀글로벌</button></li>
 					<li><button type="button">망고플레이트</button></li>
 					<li><button type="button">회사명 테스트</button></li>
@@ -131,19 +131,6 @@ BSPSelectBox.prototype.init = function() {
 	_.$listContainer = _.$container.find('.list-container');
 	_.$listItems = _.$listContainer.find('button');
 
-	var btnWidth = _.$btnSelect.width();
-	var listContainerWidth = _.$listContainer.width();
-
-	if( btnWidth > listContainerWidth ) {
-		_.$listContainer.width(btnWidth + "px");
-	} else {
-		_.$btnSelect.width(listContainerWidth + "px");
-		if( _.$container.hasClass('small') ) {
-			_.$listContainer.width((_.$btnSelect.width()+15) + "px");
-		} else {
-			_.$listContainer.width((_.$btnSelect.width()+72) + "px");
-		}
-	}
 	_.$btnSelect.on('click', function(e) {
 		$(this).toggleClass("is-selected");
 	});

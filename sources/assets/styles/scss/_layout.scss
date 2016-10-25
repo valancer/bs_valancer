@@ -1,56 +1,4 @@
-
-// 2depth - sub
-.sub-menus { position: relative; z-index: z("gnb") - 1; padding-top: 80px; background-color: #f6f6f6;
-	.contents-inner { position: relative; margin: 0 auto; height: 60px; width: $contents-width; }
-
-	h2 { display: none; }
-
-	.list-menus { display: block; box-sizing: border-box; padding-left: 20px; height: 100%; width: 100%; text-align: center;
-		> li { display: inline-block; padding: 0 15px;
-			button, a { display: block; font-size: 0.875rem; font-weight: 500; color: #AFAFAF; line-height: 1em; letter-spacing: 0.1em; line-height: 60px;
-				&:hover { color: #000; }
-			}
-
-			+ li { position: relative; padding-left: 38px;
-				&:before { content: ''; display: block; position: absolute; top: 50%; left: 0; height: 1px; width: 23px; background-color: #d6d6d6; }
-			}
-
-			&.is-selected {
-				button, a { font-weight: 700; color: #000; }
-				.list-sub-menus { }
-			}
-			&:hover {
-				.list-sub-menus { display: block; }
-			}
-
-			// sub menus
-			.list-sub-menus { display: none; position: absolute; top: 100%; right: -23px; left: 0px; z-index: z("default"); padding: 15px 0; background-color: #DADADA;
-				@include icon(arrow02, after);
-				&:after { display: block; position: absolute; top: 0; left: 50%; margin-top: -15px; margin-left: -15px; height: 30px; width: 30px; font-size: 23px; color: #F6F6F6; text-align: center; line-height: 30px; }
-
-				> li { position: relative; overflow: hidden; padding: 0 20px;
-					&:before { content: ''; display: none; position: absolute; top: 50%; right: 20px; left: 20px; z-index: z("default") - 1; margin-top: -1px; height: 2px; background-color: #000; }
-
-					button, a { display: block; float: left; position: relative; z-index: z("default"); padding-right: 15px; font-size: 0.875rem; color: rgba(155, 155, 155, 0.5); line-height: 25px; letter-spacing: -0.01em; white-space: nowrap; background-color: #DADADA;
-						&:hover { color: #000; }
-					}
-
-					&.is-selected {
-						&:before { display: block; }
-
-						button, a { color: #000; }
-					}
-				}
-			}
-
-		}
-	}
-
-	+ main {
-		article.contents { padding-top: 0; }
-	}
-}
-
+body { padding-top: 80px; }
 
 // side menu
 .side-menus { margin-top: 19px;
@@ -146,7 +94,7 @@ main { min-height: 600px;
 		}
 	}
 }
-article.contents { padding-top: 80px;
+article.contents {
 	@mixin inner() { position: relative; box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; width: $contents-width; }
 	.contents-inner { overflow: hidden; @include inner(); padding-bottom: 0px;
 		&.size-fit { margin-top: 0; padding: 0; }

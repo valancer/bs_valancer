@@ -1,7 +1,5 @@
 body.metering {
-	article.contents { padding-top: 0; }
-
-
+	
 	.growth { font-family: $font-special-stack; font-size: 1.250rem; font-weight: 400;
 		@include icon(growth);
 		&:before { display: inline-block; margin: -2px 4px 0 0; height: 15px; width: 15px; font-size: 15px; line-height: 15px; }

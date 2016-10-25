@@ -160,7 +160,7 @@ div {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu-new .btn-custom-select:after, .global-menu-new .utils .notification:after, .search-container .search-word .btn-search:before, .multiple-select .btn-filter:before, .btn-inner.calendar:before, .btn-inner.delete:before, .btn-inner.edit:before, .datepicker:after, .forms .invalid:before, .forms .service.asset:before, .forms .service.metering:before, .forms .service.monitoring:before, .forms .service.workflow:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu-new .btn-custom-select:after, .global-menu-new .utils .notification:after, .sub-menus .list-menus > li .list-sub-menus:after, .search-container .search-word .btn-search:before, .multiple-select .btn-filter:before, .btn-inner.calendar:before, .btn-inner.delete:before, .btn-inner.edit:before, .datepicker:after, .forms .invalid:before, .forms .service.asset:before, .forms .service.metering:before, .forms .service.monitoring:before, .forms .service.workflow:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -780,42 +780,42 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         background-color: #fff; }
     .grid-bottom a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -586px -180px;
+      background-position: -464px -267px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-first {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .grid-bottom a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -586px -252px;
+      background-position: -382px -311px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-prev {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .grid-bottom a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -586px -288px;
+      background-position: -346px -311px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-next {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .grid-bottom a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -586px -216px;
+      background-position: -500px -267px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-last {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
 
 .popover.export ul {
   display: block;
@@ -907,31 +907,31 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -552px -370px;
+      background-position: -509px -227px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -552px -386px;
+      background-position: -463px -227px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -552px -402px;
+      background-position: -486px -227px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
   .ag-bespin-global .ag-no-scrolls .ag-header-container {
     background: linear-gradient(#fff, #d3d3d3);
     border-bottom: 1px solid #808080; }
@@ -1663,6 +1663,74 @@ corresponds to the arrow we want to display */
   left: -10px; }
 
 /** layout **/
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
 /* GNB HEADER */
 .global-menu-new {
   display: block;
@@ -1692,76 +1760,77 @@ corresponds to the arrow we want to display */
       display: inline-block;
       text-indent: -9999px;
       vertical-align: middle;
-      background-image: url(../images/sprites.png);
-      background-position: -256px -289px;
+      background-image: url(../images/layout_sprites.png);
+      background-position: -148px -118px;
       width: 78px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .title .btn-home {
-          background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-image: url(../images/layout_sprites@2x.png);
+          background-size: 570px 249px; } }
   .global-menu-new.logout .title .btn-home {
     display: inline-block;
     margin-top: 22px;
-    background-image: url(../images/sprites.png);
-    background-position: -157px -315px;
+    background-image: url(../images/layout_sprites.png);
+    background-position: -250px -30px;
     width: 306px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .global-menu-new.logout .title .btn-home {
-        background-image: url(../images/sprites@2x.png);
-        background-size: 625px 599px; } }
+        background-image: url(../images/layout_sprites@2x.png);
+        background-size: 570px 249px; } }
   .global-menu-new .custom-select-container {
     display: inline-block;
     position: relative; }
     .global-menu-new .custom-select-container .txt {
       display: inline-block;
-      text-indent: -9999px; }
+      text-indent: -9999px;
+      line-height: 1.3em; }
       .global-menu-new .custom-select-container .txt.service-portal {
-        background-image: url(../images/sprites.png);
-        background-position: -302px -141px;
+        background-image: url(../images/layout_sprites.png);
+        background-position: 0px -88px;
         width: 218px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.service-portal {
-            background-image: url(../images/sprites@2x.png);
-            background-size: 625px 599px; } }
+            background-image: url(../images/layout_sprites@2x.png);
+            background-size: 570px 249px; } }
       .global-menu-new .custom-select-container .txt.asset-management {
-        background-image: url(../images/sprites.png);
-        background-position: -256px -229px;
+        background-image: url(../images/layout_sprites.png);
+        background-position: 0px -58px;
         width: 266px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.asset-management {
-            background-image: url(../images/sprites@2x.png);
-            background-size: 625px 599px; } }
+            background-image: url(../images/layout_sprites@2x.png);
+            background-size: 570px 249px; } }
       .global-menu-new .custom-select-container .txt.metering {
-        background-image: url(../images/sprites.png);
-        background-position: -294px -441px;
+        background-image: url(../images/layout_sprites.png);
+        background-position: 0px -118px;
         width: 142px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.metering {
-            background-image: url(../images/sprites@2x.png);
-            background-size: 625px 599px; } }
+            background-image: url(../images/layout_sprites@2x.png);
+            background-size: 570px 249px; } }
       .global-menu-new .custom-select-container .txt.monitoring {
-        background-image: url(../images/sprites.png);
-        background-position: -81px -199px;
+        background-image: url(../images/layout_sprites.png);
+        background-position: -250px 0px;
         width: 320px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.monitoring {
-            background-image: url(../images/sprites@2x.png);
-            background-size: 625px 599px; } }
+            background-image: url(../images/layout_sprites@2x.png);
+            background-size: 570px 249px; } }
       .global-menu-new .custom-select-container .txt.its {
-        background-image: url(../images/sprites.png);
-        background-position: -407px -199px;
+        background-image: url(../images/layout_sprites.png);
+        background-position: -437px -88px;
         width: 60px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.its {
-            background-image: url(../images/sprites@2x.png);
-            background-size: 625px 599px; } }
+            background-image: url(../images/layout_sprites@2x.png);
+            background-size: 570px 249px; } }
     .global-menu-new .custom-select-container.small {
       vertical-align: middle; }
       .global-menu-new .custom-select-container.small .btn-custom-select {
@@ -1803,18 +1872,23 @@ corresponds to the arrow we want to display */
               content: none; }
   .global-menu-new .btn-custom-select {
     display: inline-block;
+    overflow: hidden;
     box-sizing: border-box;
     position: relative;
-    padding: 0 57px 0 15px;
+    padding: 0 30px 0 15px;
     height: 60px;
+    max-width: 380px;
     font-size: 1.250rem;
     font-weight: 700;
+    color: #000;
     text-align: left;
     vertical-align: middle;
+    text-overflow: ellipsis;
     white-space: nowrap;
     border: 3px solid #fff;
     transition: all 0.3s ease-in-out;
-    /* 오픈 */ }
+    /* 오픈 */
+    /* service 종류 사이즈 고정 */ }
     .global-menu-new .btn-custom-select:after {
       content: ""; }
     .global-menu-new .btn-custom-select:before {
@@ -1855,6 +1929,10 @@ corresponds to the arrow we want to display */
         opacity: 1;
         top: 100%;
         transition: all 0.3s ease-in-out; }
+    .global-menu-new .btn-custom-select.service {
+      width: 380px; }
+      .global-menu-new .btn-custom-select.service + .list-container {
+        width: 380px; }
   .global-menu-new .list-container {
     display: block;
     visibility: hidden;
@@ -1865,6 +1943,7 @@ corresponds to the arrow we want to display */
     top: 80%;
     z-index: 500;
     margin-top: 7px;
+    max-width: 380px;
     width: auto;
     max-height: 700px;
     border: 3px solid #000;
@@ -1874,6 +1953,7 @@ corresponds to the arrow we want to display */
       padding: 0 12px; }
       .global-menu-new .list-container .list-custom-select > li a, .global-menu-new .list-container .list-custom-select > li button {
         display: block;
+        overflow: hidden;
         position: relative;
         padding-bottom: 2px;
         height: 60px;
@@ -1883,6 +1963,7 @@ corresponds to the arrow we want to display */
         color: #000;
         text-align: left;
         line-height: 60px;
+        text-overflow: ellipsis;
         white-space: nowrap; }
         .global-menu-new .list-container .list-custom-select > li a:before, .global-menu-new .list-container .list-custom-select > li button:before {
           content: '';
@@ -2039,6 +2120,112 @@ corresponds to the arrow we want to display */
         .global-menu-new .utils .user-menus a:hover, .global-menu-new .utils .user-menus button:hover {
           color: #fff; }
 
+.sub-menus {
+  position: relative;
+  z-index: 799;
+  background-color: #f6f6f6; }
+  .sub-menus .contents-inner {
+    position: relative;
+    margin: 0 auto;
+    height: 60px;
+    width: 1400px; }
+  .sub-menus h2 {
+    display: none; }
+  .sub-menus .list-menus {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 20px;
+    height: 100%;
+    width: 100%;
+    text-align: center; }
+    .sub-menus .list-menus > li {
+      display: inline-block;
+      padding: 0 15px; }
+      .sub-menus .list-menus > li button, .sub-menus .list-menus > li a {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #AFAFAF;
+        line-height: 1em;
+        letter-spacing: 0.1em;
+        line-height: 60px; }
+        .sub-menus .list-menus > li button:hover, .sub-menus .list-menus > li a:hover {
+          color: #000; }
+      .sub-menus .list-menus > li + li {
+        position: relative;
+        padding-left: 38px; }
+        .sub-menus .list-menus > li + li:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          height: 1px;
+          width: 23px;
+          background-color: #d6d6d6; }
+      .sub-menus .list-menus > li.is-selected button, .sub-menus .list-menus > li.is-selected a {
+        font-weight: 700;
+        color: #000; }
+      .sub-menus .list-menus > li:hover .list-sub-menus {
+        display: block; }
+      .sub-menus .list-menus > li .list-sub-menus {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -23px;
+        left: 0px;
+        z-index: 1;
+        padding: 15px 0;
+        background-color: #DADADA; }
+        .sub-menus .list-menus > li .list-sub-menus:after {
+          content: ""; }
+        .sub-menus .list-menus > li .list-sub-menus:after {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-top: -15px;
+          margin-left: -15px;
+          height: 30px;
+          width: 30px;
+          font-size: 23px;
+          color: #F6F6F6;
+          text-align: center;
+          line-height: 30px; }
+        .sub-menus .list-menus > li .list-sub-menus > li {
+          position: relative;
+          overflow: hidden;
+          padding: 0 20px; }
+          .sub-menus .list-menus > li .list-sub-menus > li:before {
+            content: '';
+            display: none;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            left: 20px;
+            z-index: 0;
+            margin-top: -1px;
+            height: 2px;
+            background-color: #000; }
+          .sub-menus .list-menus > li .list-sub-menus > li button, .sub-menus .list-menus > li .list-sub-menus > li a {
+            display: block;
+            float: left;
+            position: relative;
+            z-index: 1;
+            padding-right: 15px;
+            font-size: 0.875rem;
+            color: rgba(155, 155, 155, 0.5);
+            line-height: 25px;
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+            background-color: #DADADA; }
+            .sub-menus .list-menus > li .list-sub-menus > li button:hover, .sub-menus .list-menus > li .list-sub-menus > li a:hover {
+              color: #000; }
+          .sub-menus .list-menus > li .list-sub-menus > li.is-selected:before {
+            display: block; }
+          .sub-menus .list-menus > li .list-sub-menus > li.is-selected button, .sub-menus .list-menus > li .list-sub-menus > li.is-selected a {
+            color: #000; }
+
 html {
   min-height: 100%;
   height: 100%; }
@@ -2064,13 +2251,13 @@ body {
     margin-top: 23px;
     text-indent: -9999px;
     background-image: url(../images/sprites.png);
-    background-position: -81px -471px;
+    background-position: -157px -227px;
     width: 300px;
     height: 13px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .admin-footer .bgsp {
         background-image: url(../images/sprites@2x.png);
-        background-size: 625px 599px; } }
+        background-size: 546px 599px; } }
   .admin-footer .copyright {
     float: right;
     font-size: 0.875rem;
@@ -2282,24 +2469,24 @@ article.contents {
     color: #4A90E2; }
     .list-company li .company-item .status.subscribed:before {
       background-image: url(../images/sprites.png);
-      background-position: -552px -418px;
+      background-position: -535px -141px;
       width: 10px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .list-company li .company-item .status.subscribed:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
   .list-company li .company-item .status.deactivated {
     color: #9B9B9B; }
     .list-company li .company-item .status.deactivated:before {
       background-image: url(../images/sprites.png);
-      background-position: -614px -464px;
+      background-position: -535px -157px;
       width: 10px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .list-company li .company-item .status.deactivated:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
   .list-company li .company-item:hover {
     background-color: #EAEAEA; }
   .list-company li .company-item.selected {
@@ -2427,13 +2614,13 @@ article.contents {
     margin-right: 4px;
     vertical-align: middle;
     background-image: url(../images/sprites.png);
-    background-position: -586px -464px;
+    background-position: -520px -311px;
     width: 22px;
     height: 22px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .btn-add:before {
         background-image: url(../images/sprites@2x.png);
-        background-size: 625px 599px; } }
+        background-size: 546px 599px; } }
 
 /* section */
 .section .section-title {
@@ -2458,13 +2645,13 @@ article.contents {
       margin-right: 6px;
       vertical-align: top;
       background-image: url(../images/sprites.png);
-      background-position: -552px -214px;
+      background-position: -395px -353px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .section .section-sub-title h3.aws:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .section .section-sub-title h3.azure:before {
       content: '';
       display: inline-block;
@@ -2472,13 +2659,13 @@ article.contents {
       margin-right: 6px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -552px -193px;
+      background-position: -368px -353px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .section .section-sub-title h3.azure:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
   .section .section-sub-title .btn-add {
     float: right; }
   .section .section-sub-title + .tbl-v {
@@ -2562,42 +2749,42 @@ article.contents {
         background-color: #fff; }
     .navigation a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -586px -180px;
+      background-position: -464px -267px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .navigation a.btn-first {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .navigation a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -586px -252px;
+      background-position: -382px -311px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .navigation a.btn-prev {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .navigation a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -586px -288px;
+      background-position: -346px -311px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .navigation a.btn-next {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .navigation a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -586px -216px;
+      background-position: -500px -267px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .navigation a.btn-last {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
 
 /* forms */
 .icheck {
@@ -2623,50 +2810,50 @@ article.contents {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -609px -519px;
+  background-position: -174px -398px;
   width: 16px;
   height: 16px;
   background-color: #fff; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icheckbox {
       background-image: url(../images/sprites@2x.png);
-      background-size: 625px 599px; } }
+      background-size: 546px 599px; } }
   .icheckbox.disabled {
     background-image: url(../images/sprites.png);
-    background-position: -552px -304px;
+    background-position: -262px -398px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.disabled {
         background-image: url(../images/sprites@2x.png);
-        background-size: 625px 599px; } }
+        background-size: 546px 599px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -552px -326px;
+    background-position: -218px -398px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 625px 599px; } }
+        background-size: 546px 599px; } }
     .icheckbox.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -552px -348px;
+      background-position: -240px -398px;
       width: 16px;
       height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .icheckbox.checked.disabled {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -609px -492px;
+    background-position: -196px -398px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.indeterminate {
         background-image: url(../images/sprites@2x.png);
-        background-size: 625px 599px; } }
+        background-size: 546px 599px; } }
 
 .iradio {
   display: block;
@@ -2674,31 +2861,31 @@ article.contents {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -552px -281px;
+  background-position: -128px -398px;
   width: 17px;
   height: 17px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .iradio {
       background-image: url(../images/sprites@2x.png);
-      background-size: 625px 599px; } }
+      background-size: 546px 599px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -552px -235px;
+    background-position: -105px -398px;
     width: 17px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .iradio.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 625px 599px; } }
+        background-size: 546px 599px; } }
     .iradio.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -552px -258px;
+      background-position: -151px -398px;
       width: 17px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .iradio.checked.disabled {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
 
 .datepicker {
   display: inline-block;
@@ -2804,13 +2991,13 @@ article.contents {
         margin: -2px 8px 0 0;
         vertical-align: middle;
         background-image: url(../images/sprites.png);
-        background-position: -552px -418px;
+        background-position: -535px -141px;
         width: 10px;
         height: 10px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .forms .status-company .subscribed:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 625px 599px; } }
+            background-size: 546px 599px; } }
     .forms .status-company .trial {
       line-height: 30px; }
       .forms .status-company .trial:before {
@@ -2841,13 +3028,13 @@ article.contents {
         margin: -2px 8px 0 0;
         vertical-align: middle;
         background-image: url(../images/sprites.png);
-        background-position: -613px -546px;
+        background-position: -293px -246px;
         width: 12px;
         height: 12px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .forms .status-company .deactivated:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 625px 599px; } }
+            background-size: 546px 599px; } }
     .forms .status-company .btns {
       float: right; }
       .forms .status-company .btns button {
@@ -2908,22 +3095,22 @@ article.contents {
       background-color: #7ED321; }
     .forms .status-user.subscribed:before {
       background-image: url(../images/sprites.png);
-      background-position: -552px -418px;
+      background-position: -535px -141px;
       width: 10px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .forms .status-user.subscribed:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .forms .status-user.invited:before {
       background-image: url(../images/sprites.png);
-      background-position: -610px -568px;
+      background-position: -532px -227px;
       width: 13px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .forms .status-user.invited:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 625px 599px; } }
+          background-size: 546px 599px; } }
     .forms .status-user.deactivated:before {
       height: 3px;
       width: 12px;

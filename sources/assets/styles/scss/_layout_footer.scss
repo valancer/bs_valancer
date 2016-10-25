@@ -2,12 +2,12 @@
 .footer { overflow: hidden; height: 320px; background-color: #000;
 	@mixin inner() { position: relative; box-sizing: border-box; margin: 0 auto; padding: 0 $column-padding; min-height: 100%; width: $contents-width; }
 	.contents-inner { overflow: hidden; @include inner(); color: #fff;
-		&:before { content: ''; display: block; position: absolute; top: 50px; left: 20px; @include retina-sprite($sc-footer-cloud-group); }
+		&:before { content: ''; display: block; position: absolute; top: 50px; left: 20px; @include retina-sprite($sl-footer-cloud-group); }
 		&:after { content: ''; clear: both; }
 	}
 
 	.service { float: left; margin-top: 100px; padding-left: 70px; width: 30%;
-		.title { display: block; text-indent: -9999px; @include retina-sprite($sc-footer-title-group); }
+		.title { display: block; text-indent: -9999px; @include retina-sprite($sl-footer-title-group); }
 		.list-shortcut { margin-top: 15px;
 			a { font-family: $font-special-stack; font-size: 0.750rem; font-weight: 700; color: #fff; line-height: 2.083em;
 				&:hover { color: rgba(255, 255, 255, 0.5); }
