@@ -131,11 +131,17 @@ BSPSelectBox.prototype.init = function() {
 	_.$listContainer = _.$container.find('.list-container');
 	_.$listItems = _.$listContainer.find('button');
 
-	_.$btnSelect.on('click', function(e) {
+	_.initEvent();
+}
+
+BSPSelectBox.prototype.initEvent = function() {
+	var _ = this;
+
+	_.$btnSelect.off('click').on('click', function(e) {
 		$(this).toggleClass("is-selected");
 	});
 
-	_.$listItems.on('click', function(e) {
+	_.$listItems.off('click').on('click', function(e) {
 		_.select($(this));
 	});
 }
