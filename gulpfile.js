@@ -41,6 +41,14 @@ var paths = {
 				css: 'sources/assets/styles/scss/'
 			}
 		},
+		layout: {
+			src: 'sources/assets/images/layout/sprites/*.png',
+			filter: 'sources/assets/images/layout/sprites/*@2x.png',
+			dest: {
+				img: 'sources/assets/images/',
+				css: 'sources/assets/styles/scss/'
+			}
+		},
 		portal: {
 			src: 'sources/assets/images/portal/sprites/*.png',
 			dest: {
@@ -123,6 +131,31 @@ gulp.task('sprites:common', function () {
 	return merge(imgStream, cssStream).pipe(livereload());
 });
 
+gulp.task('sprites:layout', function () {
+	var spriteData = gulp.src(paths.sprites.layout.src).pipe(spritesmith({
+		retinaSrcFilter: paths.sprites.layout.filter,
+		imgPath: '../images/layout_sprites.png',
+		imgName: 'layout_sprites.png',
+		retinaImgPath: '../images/layout_sprites@2x.png',
+		retinaImgName: 'layout_sprites@2x.png',
+		cssName: '_layout_sprites.scss',
+		padding: 6,
+		cssVarMap: function (sprite) {
+			sprite.name = 'sl-' + sprite.name;
+		}
+	}));
+
+	var imgStream = spriteData.img
+		.pipe(buffer())
+		.pipe(imagemin())
+		.pipe(gulp.dest(paths.sprites.layout.dest.img));
+
+	var cssStream = spriteData.css
+		.pipe(gulp.dest(paths.sprites.layout.dest.css));
+
+	return merge(imgStream, cssStream).pipe(livereload());
+});
+
 gulp.task('sprites:portal', function () {
 	var spriteData = gulp.src(paths.sprites.portal.src).pipe(spritesmith({
 		imgPath: '../images/portal/portal_sprites.png',
@@ -188,6 +221,7 @@ gulp.task('sprites:metering', function () {
 
 	return merge(imgStream, cssStream).pipe(livereload());
 });
+
 
 var fontName = 'Icons';
 gulp.task('iconfont', function(){
@@ -294,17 +328,13 @@ gulp.task('watch', function () {
 	gulp.watch(['sources/html/**/*.html'], ['includes']);
 	gulp.watch(['sources/assets/icons/*.svg'], ['iconfont', 'copy:iconfont']);
 	gulp.watch(['sources/assets/styles/scss/*.scss'], ['sass', 'copy:styles']);
-	gulp.watch(['sources/assets/styles/*.css'], ['sass', 'copy:styles']);
+	// gulp.watch(['sources/assets/styles/*.css'], ['sass', 'copy:styles']);
 	gulp.watch([paths.scripts.gulp], ['jshint', 'copy:scripts']);
 	gulp.watch([paths.scripts.src, paths.scripts.vendor], ['copy:scripts']);
 	gulp.watch(['sources/assets/images/*'], ['check', 'copy:images']);
 	gulp.watch(['sources/assets/images/sprites/*'], ['sprites:common', 'copy:images']);
-	gulp.watch(['sources/assets/images/portal/*'], ['check', 'copy:images']);
-	gulp.watch(['sources/assets/images/portal/sprites/*'], ['sprites:portal', 'copy:images']);
-	gulp.watch(['sources/assets/images/asset/*'], ['check', 'copy:images']);
-	gulp.watch(['sources/assets/images/asset/sprites/*'], ['sprites:asset', 'copy:images']);
-	gulp.watch(['sources/assets/images/metering/*'], ['check', 'copy:images']);
-	gulp.watch(['sources/assets/images/metering/sprites/*'], ['sprites:metering', 'copy:images']);
+	gulp.watch(['sources/assets/images/layout/*'], ['check', 'copy:images']);
+	gulp.watch(['sources/assets/images/layout/sprites/*'], ['sprites:layout', 'copy:images']);
 });
 
 
@@ -331,14 +361,13 @@ gulp.task('publish', function () {
 });
 
 
-
-gulp.task('sass-build', ['iconfont', 'sprites:common', 'sprites:portal', 'sprites:asset', 'sprites:metering', 'sass'], function() { });
-gulp.task('sass-release', ['iconfont', 'sprites:common', 'sprites:portal', 'sprites:asset', 'sprites:metering', 'sass'], function() { });
+gulp.task('sass-build', ['iconfont', 'sprites:common', 'sprites:layout', 'sass'], function() { });
+gulp.task('sass-release', ['iconfont', 'sprites:common', 'sprites:layout', 'sass'], function() { });
 gulp.task('scripts-build', ['jshint'], function() { });
 gulp.task('html-build', ['includes'], function() { });
 
-gulp.task('build', ['clean:build'], function() {
-	gulp.run(['sass-build', 'scripts-build', 'html-build', 'copy:emails', 'copy:assets', 'connect', 'watch']);
+gulp.task('build', ['clean:build'], function(callback) {
+	runSequence(['sass-build', 'scripts-build', 'html-build', 'copy:emails'], ['copy:assets'], ['connect', 'watch'], callback);
 });
 
 gulp.task('release', ['clean:build'], function(callback) {
