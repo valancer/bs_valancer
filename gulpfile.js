@@ -327,7 +327,7 @@ gulp.task('watch', function () {
 	livereload.listen();
 	gulp.watch(['sources/html/**/*.html'], ['includes']);
 	gulp.watch(['sources/assets/icons/*.svg'], ['iconfont', 'copy:iconfont']);
-	gulp.watch(['sources/assets/styles/scss/*.scss'], ['sass', 'copy:styles']);
+	gulp.watch(['sources/assets/styles/scss/*.scss'], ['watch-sass']);
 	// gulp.watch(['sources/assets/styles/*.css'], ['sass', 'copy:styles']);
 	gulp.watch([paths.scripts.gulp], ['jshint', 'copy:scripts']);
 	gulp.watch([paths.scripts.src, paths.scripts.vendor], ['copy:scripts']);
@@ -360,7 +360,9 @@ gulp.task('publish', function () {
 		.pipe(awspublish.reporter());
 });
 
-
+gulp.task('watch-sass', ['sass'], function(callback) {
+	runSequence(['copy:styles'], callback);
+});
 gulp.task('sass-build', ['iconfont', 'sprites:common', 'sprites:layout', 'sass'], function() { });
 gulp.task('sass-release', ['iconfont', 'sprites:common', 'sprites:layout', 'sass'], function() { });
 gulp.task('scripts-build', ['jshint'], function() { });
