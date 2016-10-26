@@ -42,19 +42,29 @@ BSPSelectBox.prototype.init = function() {
 	_.$listContainer = _.$container.find('.list-container');
 	_.$listItems = _.$listContainer.find('button');
 
-	var btnWidth = _.$btnSelect.width();
-	var listContainerWidth = _.$listContainer.width() + 30;
-	if( btnWidth > listContainerWidth ) {
-		_.$listContainer.width(btnWidth + "px");
-	} else {
-		_.$btnSelect.width(listContainerWidth + "px");
+	if( _.$container.hasClass('small') ) {
+		var btnWidth = _.$btnSelect.width();
+		var listContainerWidth = _.$listContainer.width();
+
+		if( btnWidth > listContainerWidth ) {
+			_.$listContainer.width(btnWidth + "px");
+		} else {
+			_.$btnSelect.width(listContainerWidth + "px");
+			_.$listContainer.width((_.$btnSelect.width()+9) + "px");
+		}
 	}
 
-	_.$btnSelect.on('click', function(e) {
+	_.initEvent();
+}
+
+BSPSelectBox.prototype.initEvent = function() {
+	var _ = this;
+
+	_.$btnSelect.off('click').on('click', function(e) {
 		$(this).toggleClass("is-selected");
 	});
 
-	_.$listItems.on('click', function(e) {
+	_.$listItems.off('click').on('click', function(e) {
 		_.select($(this));
 	});
 }
@@ -84,12 +94,15 @@ var GlobalMenu = (function ($) {
 		selectService,
 		selectCompany,
 		selectLanguage,
+		$user,
 		init = function() {
 			$container = $('.global-menu-new');
 
 			selectService = new BSPSelectBox($('#select-service'));
 			selectCompany = new BSPSelectBox($('#select-company'));
 			selectLanguage = new BSPSelectBox($('#language'));
+
+			$user = $container.find('.user');
 
 			initLayout();
 			initEvent();
@@ -99,10 +112,24 @@ var GlobalMenu = (function ($) {
 	}
 
 	function initEvent() {
+		$user.on('click', function() {
+			$(this).toggleClass('is-open');
+		});
+
 		$(document).click(function (e) {
-			if( !$(event.target).closest(".custom-select-container").length ) {
+			if( !$(event.target).closest(".user").length ) {
+				$user.removeClass('is-open');
+			}
+
+			if( !$(event.target).closest("#select-service").length ) {
 				selectService.hide();
+			}
+
+			if( !$(event.target).closest("#select-company").length ) {
 				selectCompany.hide();
+			}
+
+			if( !$(event.target).closest("#language").length ) {
 				selectLanguage.hide();
 			}
 		});

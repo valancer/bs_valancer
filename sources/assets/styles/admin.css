@@ -160,7 +160,7 @@ div {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu-new .btn-custom-select:after, .global-menu-new .utils .notification:after, .sub-menus .list-menus > li .list-sub-menus:after, .search-container .search-word .btn-search:before, .multiple-select .btn-filter:before, .btn-inner.calendar:before, .btn-inner.delete:before, .btn-inner.edit:before, .datepicker:after, .forms .invalid:before, .forms .service.asset:before, .forms .service.metering:before, .forms .service.monitoring:before, .forms .service.workflow:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu-new .btn-custom-select:after, .sub-menus .list-menus > li .list-sub-menus:after, .search-container .search-word .btn-search:before, .multiple-select .btn-filter:before, .btn-inner.calendar:before, .btn-inner.delete:before, .btn-inner.edit:before, .datepicker:after, .forms .invalid:before, .forms .service.asset:before, .forms .service.metering:before, .forms .service.monitoring:before, .forms .service.workflow:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -704,6 +704,17 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     text-align: center;
     border: 1px solid #E4E4E4;
     background-color: #fff; }
+  .aggrid-uitls .ri-status .btn-reference-submit {
+    margin-left: -5px;
+    height: 26px;
+    width: 66px;
+    font-size: 0.750rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid #C7C7C7;
+    background-color: #E7E7E7; }
 
 .grid-detail {
   display: block;
@@ -790,7 +801,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .grid-bottom a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -382px -311px;
+      background-position: -346px -311px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -800,7 +811,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .grid-bottom a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -346px -311px;
+      background-position: -500px -267px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -809,7 +820,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           background-size: 546px 599px; } }
     .grid-bottom a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -500px -267px;
+      background-position: -382px -311px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1875,7 +1886,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
-    padding: 0 30px 0 15px;
+    padding: 0 40px 0 15px;
     height: 60px;
     max-width: 380px;
     font-size: 1.250rem;
@@ -1993,7 +2004,15 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       margin-left: 30px;
       height: 25px;
       width: 20px;
-      text-indent: -9999px; }
+      text-indent: -9999px;
+      background-image: url(../images/layout_sprites.png);
+      background-position: -34px -148px;
+      width: 23px;
+      height: 27px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .global-menu-new .utils .notification {
+          background-image: url(../images/layout_sprites@2x.png);
+          background-size: 570px 249px; } }
       .global-menu-new .utils .notification:before {
         content: '';
         display: block;
@@ -2005,24 +2024,11 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         width: 1px;
         vertical-align: middle;
         background-color: #DBDBDB; }
-      .global-menu-new .utils .notification:after {
-        content: ""; }
-      .global-menu-new .utils .notification:after {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        font-size: 25px;
-        color: #000;
-        line-height: 25px;
-        text-indent: 0; }
       .global-menu-new .utils .notification .badge {
         display: block;
         position: absolute;
         top: -30%;
-        right: -50%;
+        right: -45%;
         z-index: 1;
         padding: 0 3px;
         height: 14px;
@@ -2195,7 +2201,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         .sub-menus .list-menus > li .list-sub-menus > li {
           position: relative;
           overflow: hidden;
-          padding: 0 20px; }
+          padding: 0 10px; }
           .sub-menus .list-menus > li .list-sub-menus > li:before {
             content: '';
             display: none;
@@ -2645,7 +2651,7 @@ article.contents {
       margin-right: 6px;
       vertical-align: top;
       background-image: url(../images/sprites.png);
-      background-position: -395px -353px;
+      background-position: -368px -353px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2659,7 +2665,7 @@ article.contents {
       margin-right: 6px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -368px -353px;
+      background-position: -395px -353px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2759,7 +2765,7 @@ article.contents {
     .navigation a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -382px -311px;
+      background-position: -346px -311px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2769,7 +2775,7 @@ article.contents {
     .navigation a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -346px -311px;
+      background-position: -500px -267px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2778,7 +2784,7 @@ article.contents {
           background-size: 546px 599px; } }
     .navigation a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -500px -267px;
+      background-position: -382px -311px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2829,7 +2835,7 @@ article.contents {
         background-size: 546px 599px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -218px -398px;
+    background-position: -196px -398px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2847,7 +2853,7 @@ article.contents {
           background-size: 546px 599px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -196px -398px;
+    background-position: -218px -398px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2861,7 +2867,7 @@ article.contents {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -128px -398px;
+  background-position: -151px -398px;
   width: 17px;
   height: 17px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2879,7 +2885,7 @@ article.contents {
         background-size: 546px 599px; } }
     .iradio.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -151px -398px;
+      background-position: -128px -398px;
       width: 17px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

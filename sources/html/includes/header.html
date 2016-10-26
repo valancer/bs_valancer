@@ -131,6 +131,18 @@ BSPSelectBox.prototype.init = function() {
 	_.$listContainer = _.$container.find('.list-container');
 	_.$listItems = _.$listContainer.find('button');
 
+	if( _.$container.hasClass('small') ) {
+		var btnWidth = _.$btnSelect.width();
+		var listContainerWidth = _.$listContainer.width();
+
+		if( btnWidth > listContainerWidth ) {
+			_.$listContainer.width(btnWidth + "px");
+		} else {
+			_.$btnSelect.width(listContainerWidth + "px");
+			_.$listContainer.width((_.$btnSelect.width()+9) + "px");
+		}
+	}
+
 	_.initEvent();
 }
 
@@ -236,7 +248,13 @@ $(document).ready(function(e) {
 		<ul class="list-menus">
 			<li @@if ( sub == "dashboard" ) { class="is-selected" }><a href="#">DASHBOARD</a></li>
 			<li @@if ( sub == "service" ) { class="is-selected" }><a href="#">SERVICE GROUP</a></li>
-			<li @@if ( sub == "usage" ) { class="is-selected" }><a href="#">USAGE</a></li>
+			<li @@if ( sub == "usage" ) { class="is-selected" }>
+				<a href="#">USAGE</a>
+				<ul class="list-sub-menus">
+					<li><a href="#">Usage Overview</a></li>
+					<li><a href="#">Usage Detail</a></li>
+				</ul>
+			</li>
 			<li @@if ( sub == "performance" ) { class="is-selected" }><a href="#">PERFORMANCE</a></li>
 		</ul>
 	</div>

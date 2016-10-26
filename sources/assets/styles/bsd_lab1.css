@@ -10,7 +10,7 @@ body {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .global-menu-new .btn-custom-select:after, .global-menu-new .utils .notification:after, .sub-menus .list-menus > li .list-sub-menus:after {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .global-menu-new .btn-custom-select:after, .sub-menus .list-menus > li .list-sub-menus:after {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -439,7 +439,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
-    padding: 0 30px 0 15px;
+    padding: 0 40px 0 15px;
     height: 60px;
     max-width: 380px;
     font-size: 1.250rem;
@@ -557,7 +557,15 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       margin-left: 30px;
       height: 25px;
       width: 20px;
-      text-indent: -9999px; }
+      text-indent: -9999px;
+      background-image: url(../images/layout_sprites.png);
+      background-position: -34px -148px;
+      width: 23px;
+      height: 27px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .global-menu-new .utils .notification {
+          background-image: url(../images/layout_sprites@2x.png);
+          background-size: 570px 249px; } }
       .global-menu-new .utils .notification:before {
         content: '';
         display: block;
@@ -569,24 +577,11 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         width: 1px;
         vertical-align: middle;
         background-color: #DBDBDB; }
-      .global-menu-new .utils .notification:after {
-        content: ""; }
-      .global-menu-new .utils .notification:after {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        font-size: 25px;
-        color: #000;
-        line-height: 25px;
-        text-indent: 0; }
       .global-menu-new .utils .notification .badge {
         display: block;
         position: absolute;
         top: -30%;
-        right: -50%;
+        right: -45%;
         z-index: 1;
         padding: 0 3px;
         height: 14px;
@@ -759,7 +754,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         .sub-menus .list-menus > li .list-sub-menus > li {
           position: relative;
           overflow: hidden;
-          padding: 0 20px; }
+          padding: 0 10px; }
           .sub-menus .list-menus > li .list-sub-menus > li:before {
             content: '';
             display: none;

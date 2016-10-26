@@ -44,6 +44,17 @@ $sl-footer-title-total-width: 570px;
 $sl-footer-title-total-height: 249px;
 $sl-footer-title-image: '../images/layout_sprites.png';
 $sl-footer-title: (0px, 0px, 0px, 0px, 244px, 52px, 570px, 249px, '../images/layout_sprites.png', 'sl-footer_title', );
+$sl-icon-notification-name: 'sl-icon_notification';
+$sl-icon-notification-x: 34px;
+$sl-icon-notification-y: 148px;
+$sl-icon-notification-offset-x: -34px;
+$sl-icon-notification-offset-y: -148px;
+$sl-icon-notification-width: 23px;
+$sl-icon-notification-height: 27px;
+$sl-icon-notification-total-width: 570px;
+$sl-icon-notification-total-height: 249px;
+$sl-icon-notification-image: '../images/layout_sprites.png';
+$sl-icon-notification: (34px, 148px, -34px, -148px, 23px, 27px, 570px, 249px, '../images/layout_sprites.png', 'sl-icon_notification', );
 $sl-title-asset-management-name: 'sl-title_asset_management';
 $sl-title-asset-management-x: 0px;
 $sl-title-asset-management-y: 58px;
@@ -165,6 +176,17 @@ $sl-footer-title-2x-total-width: 1140px;
 $sl-footer-title-2x-total-height: 498px;
 $sl-footer-title-2x-image: '../images/layout_sprites@2x.png';
 $sl-footer-title-2x: (0px, 0px, 0px, 0px, 488px, 104px, 1140px, 498px, '../images/layout_sprites@2x.png', 'sl-footer_title@2x', );
+$sl-icon-notification-2x-name: 'sl-icon_notification@2x';
+$sl-icon-notification-2x-x: 68px;
+$sl-icon-notification-2x-y: 296px;
+$sl-icon-notification-2x-offset-x: -68px;
+$sl-icon-notification-2x-offset-y: -296px;
+$sl-icon-notification-2x-width: 46px;
+$sl-icon-notification-2x-height: 54px;
+$sl-icon-notification-2x-total-width: 1140px;
+$sl-icon-notification-2x-total-height: 498px;
+$sl-icon-notification-2x-image: '../images/layout_sprites@2x.png';
+$sl-icon-notification-2x: (68px, 296px, -68px, -296px, 46px, 54px, 1140px, 498px, '../images/layout_sprites@2x.png', 'sl-icon_notification@2x', );
 $sl-title-asset-management-2x-name: 'sl-title_asset_management@2x';
 $sl-title-asset-management-2x-x: 0px;
 $sl-title-asset-management-2x-y: 116px;
@@ -256,12 +278,12 @@ $sl-title-workflow-2x: (544px, 116px, -544px, -116px, 528px, 48px, 1140px, 498px
 $spritesheet-width: 570px;
 $spritesheet-height: 249px;
 $spritesheet-image: '../images/layout_sprites.png';
-$spritesheet-sprites: ($sl-bsp, $sl-footer-cloud, $sl-footer-title, $sl-title-asset-management, $sl-title-bsp, $sl-title-dashboard, $sl-title-its, $sl-title-metering, $sl-title-monitoring, $sl-title-service-portal, $sl-title-workflow, );
+$spritesheet-sprites: ($sl-bsp, $sl-footer-cloud, $sl-footer-title, $sl-icon-notification, $sl-title-asset-management, $sl-title-bsp, $sl-title-dashboard, $sl-title-its, $sl-title-metering, $sl-title-monitoring, $sl-title-service-portal, $sl-title-workflow, );
 $spritesheet: (570px, 249px, '../images/layout_sprites.png', $spritesheet-sprites, );
 $retina-spritesheet-width: 1140px;
 $retina-spritesheet-height: 498px;
 $retina-spritesheet-image: '../images/layout_sprites@2x.png';
-$retina-spritesheet-sprites: ($sl-bsp-2x, $sl-footer-cloud-2x, $sl-footer-title-2x, $sl-title-asset-management-2x, $sl-title-bsp-2x, $sl-title-dashboard-2x, $sl-title-its-2x, $sl-title-metering-2x, $sl-title-monitoring-2x, $sl-title-service-portal-2x, $sl-title-workflow-2x, );
+$retina-spritesheet-sprites: ($sl-bsp-2x, $sl-footer-cloud-2x, $sl-footer-title-2x, $sl-icon-notification-2x, $sl-title-asset-management-2x, $sl-title-bsp-2x, $sl-title-dashboard-2x, $sl-title-its-2x, $sl-title-metering-2x, $sl-title-monitoring-2x, $sl-title-service-portal-2x, $sl-title-workflow-2x, );
 $retina-spritesheet: (1140px, 498px, '../images/layout_sprites@2x.png', $retina-spritesheet-sprites, );
 
 /*
@@ -275,6 +297,8 @@ $sl-footer-cloud-group-name: 'sl-footer_cloud';
 $sl-footer-cloud-group: ('sl-footer_cloud', $sl-footer-cloud, $sl-footer-cloud-2x, );
 $sl-footer-title-group-name: 'sl-footer_title';
 $sl-footer-title-group: ('sl-footer_title', $sl-footer-title, $sl-footer-title-2x, );
+$sl-icon-notification-group-name: 'sl-icon_notification';
+$sl-icon-notification-group: ('sl-icon_notification', $sl-icon-notification, $sl-icon-notification-2x, );
 $sl-title-asset-management-group-name: 'sl-title_asset_management';
 $sl-title-asset-management-group: ('sl-title_asset_management', $sl-title-asset-management, $sl-title-asset-management-2x, );
 $sl-title-bsp-group-name: 'sl-title_bsp';
@@ -291,7 +315,7 @@ $sl-title-service-portal-group-name: 'sl-title_service_portal';
 $sl-title-service-portal-group: ('sl-title_service_portal', $sl-title-service-portal, $sl-title-service-portal-2x, );
 $sl-title-workflow-group-name: 'sl-title_workflow';
 $sl-title-workflow-group: ('sl-title_workflow', $sl-title-workflow, $sl-title-workflow-2x, );
-$retina-groups: ($sl-bsp-group, $sl-footer-cloud-group, $sl-footer-title-group, $sl-title-asset-management-group, $sl-title-bsp-group, $sl-title-dashboard-group, $sl-title-its-group, $sl-title-metering-group, $sl-title-monitoring-group, $sl-title-service-portal-group, $sl-title-workflow-group, );
+$retina-groups: ($sl-bsp-group, $sl-footer-cloud-group, $sl-footer-title-group, $sl-icon-notification-group, $sl-title-asset-management-group, $sl-title-bsp-group, $sl-title-dashboard-group, $sl-title-its-group, $sl-title-metering-group, $sl-title-monitoring-group, $sl-title-service-portal-group, $sl-title-workflow-group, );
 
 /*
 The provided mixins are intended to be used with the array-like variables

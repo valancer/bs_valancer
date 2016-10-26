@@ -1,0 +1,402 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="metering page-cost-optimization">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "metering", "sub": "status"})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					Cost Optimization
+
+					<div class="right-content">
+						<div class="inline-tabs">
+							<a href="#" class="is-selected">AWS</a>
+							<a href="#">AZURE</a>
+						</div>
+					</div>
+				</div>
+			</h1>
+
+
+			<div class="contents-inner">
+
+				<div class="page-sub-menu">
+					<a href="#">RI구매현황</a>
+					<a href="#">RI사용현황</a>
+					<a href="#">사용 보고서</a>
+					<a href="#" class="is-selected">RI Optimization</a>
+				</div>
+
+				
+				<fieldset class="ri-filter-container">
+					<legend>검색</legend>
+
+					<button type="button" class="btn-toggle-options">상세검색옵션</button>
+					
+					<div class="box">
+						<div class="line">
+							<label class="title">Account</label>
+							<div class="multiple-select">
+								<button type="button" class="btn-filter">ALL</button>
+								<ul class="list-filter">
+									<li>
+										<label for="all-account" class="icheck">
+											<input type="checkbox" id="all-account" name="all-account" data-all="account" data-title="ALL" class="icheckbox">
+											ALL
+										</label>
+									</li>
+									<li>
+										<label for="129335065553" class="icheck">
+											<input type="checkbox" id="129335065553" name="account" data-ref="account" data-title="129335065553" class="icheckbox">
+											129335065553
+										</label>
+									</li>
+									<li>
+										<label for="129335065552" class="icheck">
+											<input type="checkbox" id="129335065552" name="account" data-ref="account" data-title="129335065552" class="icheckbox">
+											129335065553
+										</label>
+									</li>
+									<li>
+										<label for="129335065551" class="icheck">
+											<input type="checkbox" id="129335065551" name="account" data-ref="account" data-title="129335065551" class="icheckbox">
+											129335065551
+										</label>
+									</li>
+								</ul>
+							</div>
+
+							<label class="title">Zone</label>
+							<div class="multiple-select">
+								<button type="button" class="btn-filter">ALL</button>
+								<ul class="list-filter">
+									<li>
+										<label for="all-zone" class="icheck">
+											<input type="checkbox" id="all-zone" name="all-zone" data-all="zone" data-title="ALL" class="icheckbox">
+											ALL
+										</label>
+									</li>
+									<li>
+										<label for="us-east-1b" class="icheck">
+											<input type="checkbox" id="us-east-1b" name="zone" data-ref="zone" data-title="us-east-1b" class="icheckbox">
+											us-east-1b
+										</label>
+									</li>
+									<li>
+										<label for="us-east-1c" class="icheck">
+											<input type="checkbox" id="us-east-1c" name="zone" data-ref="zone" data-title="us-east-1c" class="icheckbox">
+											us-east-1c
+										</label>
+									</li>
+								</ul>
+							</div>
+
+							<label class="title">OS</label>
+							<div class="multiple-select">
+								<button type="button" class="btn-filter">ALL</button>
+								<ul class="list-filter">
+									<li>
+										<label for="all-os" class="icheck">
+											<input type="checkbox" id="all-os" name="all-os" data-all="os" data-title="ALL" class="icheckbox">
+											ALL
+										</label>
+									</li>
+									<li>
+										<label for="windows" class="icheck">
+											<input type="checkbox" id="windows" name="os" data-ref="os" data-title="windows" class="icheckbox">
+											windows
+										</label>
+									</li>
+									<li>
+										<label for="mac" class="icheck">
+											<input type="checkbox" id="mac" name="os" data-ref="os" data-title="mac" class="icheckbox">
+											mac
+										</label>
+									</li>
+								</ul>
+							</div>
+
+							<label class="title">Instance Type</label>
+							<div class="multiple-select">
+								<button type="button" class="btn-filter">ALL</button>
+								<ul class="list-filter">
+									<li>
+										<label for="all-instance" class="icheck">
+											<input type="checkbox" id="all-instance" name="all-instance" data-all="instance" data-title="ALL" class="icheckbox">
+											ALL
+										</label>
+									</li>
+									<li>
+										<label for="m2" class="icheck">
+											<input type="checkbox" id="m2" name="instance" data-ref="instance" data-title="m2" class="icheckbox">
+											m2
+										</label>
+									</li>
+									<li>
+										<label for="m3" class="icheck">
+											<input type="checkbox" id="m3" name="instance" data-ref="instance" data-title="m3" class="icheckbox">
+											m3
+										</label>
+									</li>
+									<li>
+										<label for="m4" class="icheck">
+											<input type="checkbox" id="m4" name="instance" data-ref="instance" data-title="m4" class="icheckbox">
+											m4
+										</label>
+									</li>
+									<li>
+										<label for="m5" class="icheck">
+											<input type="checkbox" id="m5" name="instance" data-ref="instance" data-title="m5" class="icheckbox">
+											m5
+										</label>
+									</li>
+									<li>
+										<label for="m6" class="icheck">
+											<input type="checkbox" id="m6" name="instance" data-ref="instance" data-title="m6" class="icheckbox">
+											m6
+										</label>
+									</li>
+									<li>
+										<label for="m7" class="icheck">
+											<input type="checkbox" id="m7" name="instance" data-ref="instance" data-title="m7" class="icheckbox">
+											m7
+										</label>
+									</li>
+									<li>
+										<label for="m8" class="icheck">
+											<input type="checkbox" id="m8" name="instance" data-ref="instance" data-title="m8" class="icheckbox">
+											m8
+										</label>
+									</li>
+									<li>
+										<label for="m9" class="icheck">
+											<input type="checkbox" id="m9" name="instance" data-ref="instance" data-title="m9" class="icheckbox">
+											m9
+										</label>
+									</li>
+									<li>
+										<label for="m10" class="icheck">
+											<input type="checkbox" id="m10" name="instance" data-ref="instance" data-title="m10" class="icheckbox">
+											m10
+										</label>
+									</li>
+									<li>
+										<label for="m11" class="icheck">
+											<input type="checkbox" id="m11" name="instance" data-ref="instance" data-title="m11" class="icheckbox">
+											m11
+										</label>
+									</li>
+									<li>
+										<label for="m12" class="icheck">
+											<input type="checkbox" id="m12" name="instance" data-ref="instance" data-title="m12" class="icheckbox">
+											m12
+										</label>
+									</li>
+								</ul>
+							</div>
+
+							<div class="multiple-select">
+								<button type="button" class="btn-filter">ALL</button>
+								<ul class="list-filter">
+									<li>
+										<label for="all-size" class="icheck">
+											<input type="checkbox" id="all-size" name="all-size" data-all="size" data-title="ALL" class="icheckbox">
+											ALL
+										</label>
+									</li>
+									<li>
+										<label for="large" class="icheck">
+											<input type="checkbox" id="large" name="size" data-ref="size" data-title="large" class="icheckbox">
+											m2.large
+										</label>
+									</li>
+									<li>
+										<label for="medium" class="icheck">
+											<input type="checkbox" id="medium" name="size" data-ref="size" data-title="medium" class="icheckbox">
+											m2.medium
+										</label>
+									</li>
+									<li>
+										<label for="small" class="icheck">
+											<input type="checkbox" id="small" name="size" data-ref="size" data-title="small" class="icheckbox">
+											m2.small
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="line">
+							<label class="title">Term</label>
+							<div class="multiple-select">
+								<button type="button" class="btn-filter">ALL</button>
+								<ul class="list-filter">
+									<li>
+										<label for="all-term" class="icheck">
+											<input type="checkbox" id="all-term" name="all-term" data-all="term" data-title="ALL" class="icheckbox">
+											ALL
+										</label>
+									</li>
+									<li>
+										<label for="year1" class="icheck">
+											<input type="checkbox" id="year1" name="term" data-ref="term" data-title="year1" class="icheckbox">
+											1year
+										</label>
+									</li>
+									<li>
+										<label for="year2" class="icheck">
+											<input type="checkbox" id="year2" name="term" data-ref="term" data-title="year2" class="icheckbox">
+											2years
+										</label>
+									</li>
+								</ul>
+							</div>
+
+							<label class="title">Frequency</label>
+							<input type="radio" id="u70" name="frequency">
+							<label for="u70" class="title-radio">upper 70%</label>
+
+							<input type="radio" id="u80" name="frequency">
+							<label for="u80" class="title-radio">upper 80%</label>
+
+							<input type="radio" id="u90" name="frequency">
+							<label for="u90" class="title-radio">upper 90%</label>
+						</div>
+
+						<button type="submit" class="btn-normal large search">검색</button>
+					</div>
+				</fieldset>
+				<script>
+				function BSPMultipleSelectBox($container) {
+					this.$container = $container;
+					this.$allItem;
+					this.$listChecks;
+					this.$checkItems;
+					this.btnToggle;
+					this.checkedLabels = [];
+
+					this.init();
+				}
+
+				BSPMultipleSelectBox.prototype.init = function() {
+					var _ = this;
+
+					_.$btnToggle = _.$container.find('.btn-filter');
+					_.$listChecks = _.$container.find('.list-filter');
+					_.$allItem = _.$container.find('input[data-all]');
+					_.$checkItems = _.$container.find('input[data-ref]');
+
+					_.initEvent();
+				}
+
+				BSPMultipleSelectBox.prototype.initEvent = function() {
+					var _ = this;
+
+					_.$btnToggle.off('click').on('click', function() {
+						_.$listChecks.toggle();
+					});
+
+					_.$allItem.on('ifToggled', function(e) {
+						var target = $(this).data('all');
+						var $items = $('input[data-ref=' + target + ']');
+
+						if( $(this).prop("checked") ) {
+							$items.iCheck("check");
+						} else {
+							$items.iCheck("uncheck");
+						}
+					});
+
+					_.$checkItems.off('click').on('ifChanged', function(e) {
+						var target = $(this).data('ref');
+						var $all = $('input[data-all=' + target + ']');
+						var $items = $('input[data-ref=' + target + ']');
+						var $checked = $('input[data-ref=' + target + ']:checked');
+
+						if( $checked.length > 0 ) {
+							if( $items.length !== $checked.length ) {
+								$all.iCheck('indeterminate');
+								_.checkedLabels = [];
+								$checked.each(function() {
+									_.checkedLabels.push($(this).closest('label').text().trim());
+								});
+							} else {
+								$all.iCheck('check');
+								_.checkedLabels = [];
+								_.checkedLabels = [$all.closest('label').text().trim()];
+							}
+						} else {
+							$all.iCheck('uncheck');
+							$all.iCheck('determinate');
+							_.checkedLabels = ['None'];
+						}
+
+						_.updateSelectedLabels(_.checkedLabels);
+					});
+
+					_.$checkItems.off('click').on('ifIndeterminate', function(e) {
+						var target = $(this).data('ref');
+						var $all = $('input[data-all=' + target + ']');
+						$all.iCheck('indeterminate');
+					});
+
+					_.$allItem.iCheck('check');
+
+					$(document).click(function (e) {
+						if( e.target != _.$btnToggle.get(0)) {
+							_.$listChecks.hide();
+						}
+					});
+				}
+
+				BSPMultipleSelectBox.prototype.updateSelectedLabels = function(checkedLabels) {
+					var _ = this;
+
+					_.$btnToggle.html(checkedLabels.join(", "));
+				}
+
+
+
+				$(document).ready(function(e) {
+					var multiple = [];
+					$('.multiple-select').each(function() {
+						var sb = new BSPMultipleSelectBox($(this));
+						multiple.push(sb);
+					}).promise().done( function() {
+					});
+
+					$('.btn-toggle-options').on('click', function(e) {
+						var state = $(this).attr('data-state');
+						
+						if( state == '' || state == undefined ) {
+							$(this).attr('data-state', 'is-close');
+							$('.ri-filter-container .box').hide();
+						} else {
+							$(this).attr('data-state', '');
+							$('.ri-filter-container .box').show();
+						}
+					});
+				});
+				</script>
+
+
+				@@include('./inc_metering_grid.html')
+
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>
