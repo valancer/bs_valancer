@@ -157,9 +157,9 @@ div {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .global-menu-new .btn-custom-select:after, .sub-menus .list-menus > li .list-sub-menus:after, .portal article.contents h1.title .service.asset:before, .portal article.contents h1.title .service.metering:before, .portal article.contents h1.title .service.monitoring:before, .popover .point:before, .global-shortcuts .type-thumbnail > li button.dashboard:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li button.metering:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li button.asset:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li button.monitoring:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li button.workflow:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-text.edit:before, .btn-text.cancel:before, .btn-text.save-update:before, .btn-text.size-view:before, .btn-text.size-view.default:before, input[type=submit].btn-normal.download:before,
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .portal article.contents h1.title .service.asset:before, .portal article.contents h1.title .service.metering:before, .portal article.contents h1.title .service.monitoring:before, .popover .point:before, .global-shortcuts .type-thumbnail > li button.dashboard:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li button.metering:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li button.asset:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li button.monitoring:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li button.workflow:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-text.edit:before, .btn-text.cancel:before, .btn-text.save-update:before, .btn-text.size-view:before, .btn-text.size-view.default:before, input[type=submit].btn-normal.download:before,
 .btn-normal.download:before, input[type=submit].btn-normal.icon-its:before,
-.btn-normal.icon-its:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .btn-back:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, .forms .invalid-message:before, .forms .contactus.phone:before, .forms .contactus.email:before, .chart.none p:before, .chart-container .slick-arrow:before, .page-no-data:before, body.portal.dashboard .box-item.dashboard .info > li button.btn-txt-info:after, body.portal.home .services > li .title.asset:before, body.portal.home .services > li .title.metering:before, body.portal.home .services > li .title.monitoring:before, body.asset.dashboard .box-item > .title.perfomance:after, body.asset.dashboard article.contents .none-contents p:before, body.asset.dashboard .asset-performance-box > .title:after, body.asset.service-group .box-item .title:before, body.metering .multiple-select .btn-filter:before, body.metering .growth:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after, body.metering.dashboard article.contents .none-contents p:before, body.metering.dashboard article.contents .tbl-payment-summary .btn-txt-info:after, body.metering.dashboard article.contents .tbl-payment-summary .btn-shared:before, body.metering.dashboard article.contents .list-type-tbl .pay-status.unpaid:before, body.metering.dashboard article.contents .list-type-tbl .pay-status.overdue:before, body.metering.dashboard article.contents .list-type-tbl .pay-status.paid:before {
+.btn-normal.icon-its:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .btn-back:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, .forms .invalid-message:before, .forms .contactus.phone:before, .forms .contactus.email:before, .chart.none p:before, .chart-container .slick-arrow:before, .page-no-data:before, body.portal.dashboard .box-item.dashboard .info > li button.btn-txt-info:after, body.portal.home .list-services > li .btn-learn-more:after, body.asset.dashboard .box-item > .title.perfomance:after, body.asset.dashboard article.contents .none-contents p:before, body.asset.dashboard .asset-performance-box > .title:after, body.asset.service-group .box-item .title:before, body.metering .multiple-select .btn-filter:before, body.metering .growth:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after, body.metering.dashboard article.contents .none-contents p:before, body.metering.dashboard article.contents .tbl-payment-summary .btn-txt-info:after, body.metering.dashboard article.contents .tbl-payment-summary .btn-shared:before, body.metering.dashboard article.contents .list-type-tbl .pay-status.unpaid:before, body.metering.dashboard article.contents .list-type-tbl .pay-status.overdue:before, body.metering.dashboard article.contents .list-type-tbl .pay-status.paid:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -790,42 +790,42 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         background-color: #fff; }
     .grid-bottom a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -464px -267px;
+      background-position: -719px -282px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-first {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
     .grid-bottom a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -346px -311px;
+      background-position: -485px -227px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-prev {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
     .grid-bottom a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -500px -267px;
+      background-position: -755px -282px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-next {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
     .grid-bottom a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -382px -311px;
+      background-position: -485px -263px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .grid-bottom a.btn-last {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
 
 .popover.export ul {
   display: block;
@@ -917,31 +917,31 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -509px -227px;
+      background-position: -601px -389px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -463px -227px;
+      background-position: -737px -326px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -486px -227px;
+      background-position: -760px -326px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
   .ag-bespin-global .ag-no-scrolls .ag-header-container {
     background: linear-gradient(#fff, #d3d3d3);
     border-bottom: 1px solid #808080; }
@@ -1754,6 +1754,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
   min-width: 1280px;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
+  transition: all 0.3s ease-in-out;
   /* service platform select */
   /* language, notification, user */ }
   .global-menu-new:after {
@@ -1770,24 +1771,57 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       text-indent: -9999px;
       vertical-align: middle;
       background-image: url(../images/layout_sprites.png);
-      background-position: -148px -118px;
+      background-position: -312px -88px;
       width: 78px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .title .btn-home {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 249px; } }
-  .global-menu-new.logout .title .btn-home {
-    display: inline-block;
-    margin-top: 22px;
-    background-image: url(../images/layout_sprites.png);
-    background-position: -250px -30px;
-    width: 306px;
-    height: 17px; }
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      .global-menu-new.logout .title .btn-home {
-        background-image: url(../images/layout_sprites@2x.png);
-        background-size: 570px 249px; } }
+          background-size: 570px 272px; } }
+    .global-menu-new .title .btn-bsp {
+      display: inline-block;
+      margin-top: 22px;
+      text-indent: -9999px;
+      vertical-align: middle;
+      background-image: url(../images/layout_sprites.png);
+      background-position: 0px -88px;
+      width: 306px;
+      height: 17px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .global-menu-new .title .btn-bsp {
+          background-image: url(../images/layout_sprites@2x.png);
+          background-size: 570px 272px; } }
+  .global-menu-new.logout {
+    border-bottom: 0px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out; }
+    .global-menu-new.logout .title .btn-bsp {
+      background-image: url(../images/layout_sprites.png);
+      background-position: -250px -30px;
+      width: 306px;
+      height: 17px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .global-menu-new.logout .title .btn-bsp {
+          background-image: url(../images/layout_sprites@2x.png);
+          background-size: 570px 272px; } }
+    .global-menu-new.logout .utils .btns .btn {
+      color: #fff;
+      border: 2px solid #fff; }
+      .global-menu-new.logout .utils .btns .btn:hover {
+        color: #0994F3;
+        background-color: #fff; }
+    .global-menu-new.logout .custom-select-container.small .btn-custom-select {
+      color: #fff;
+      border-bottom: 2px solid #fff; }
+      .global-menu-new.logout .custom-select-container.small .btn-custom-select:after {
+        background-image: url(../images/layout_sprites.png);
+        background-position: -542px -58px;
+        width: 14px;
+        height: 9px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .global-menu-new.logout .custom-select-container.small .btn-custom-select:after {
+            background-image: url(../images/layout_sprites@2x.png);
+            background-size: 570px 272px; } }
   .global-menu-new .custom-select-container {
     display: inline-block;
     position: relative; }
@@ -1797,13 +1831,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       line-height: 1.3em; }
       .global-menu-new .custom-select-container .txt.service-portal {
         background-image: url(../images/layout_sprites.png);
-        background-position: 0px -88px;
+        background-position: 0px -111px;
         width: 218px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.service-portal {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 249px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.asset-management {
         background-image: url(../images/layout_sprites.png);
         background-position: 0px -58px;
@@ -1812,16 +1846,16 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.asset-management {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 249px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.metering {
         background-image: url(../images/layout_sprites.png);
-        background-position: 0px -118px;
+        background-position: 0px -141px;
         width: 142px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.metering {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 249px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.monitoring {
         background-image: url(../images/layout_sprites.png);
         background-position: -250px 0px;
@@ -1830,16 +1864,16 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.monitoring {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 249px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.its {
         background-image: url(../images/layout_sprites.png);
-        background-position: -437px -88px;
+        background-position: -437px -111px;
         width: 60px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.its {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 249px; } }
+            background-size: 570px 272px; } }
     .global-menu-new .custom-select-container.small {
       vertical-align: middle; }
       .global-menu-new .custom-select-container.small .btn-custom-select {
@@ -1898,8 +1932,6 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     transition: all 0.3s ease-in-out;
     /* 오픈 */
     /* service 종류 사이즈 고정 */ }
-    .global-menu-new .btn-custom-select:after {
-      content: ""; }
     .global-menu-new .btn-custom-select:before {
       content: '';
       display: block;
@@ -1911,18 +1943,22 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       background-color: #000;
       transition: all 0.3s ease-in-out; }
     .global-menu-new .btn-custom-select:after {
+      content: '';
       display: block;
       position: absolute;
       top: 50%;
       right: 17px;
-      margin-top: -4px;
-      height: 9px;
+      margin-top: -4.5px;
+      background-image: url(../images/layout_sprites.png);
+      background-position: -542px -73px;
       width: 14px;
-      font-size: 17px;
-      text-align: left;
-      line-height: 9px;
+      height: 9px;
       transform: rotateX(0deg);
       transition: transform 0.3s ease-in-out; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .global-menu-new .btn-custom-select:after {
+          background-image: url(../images/layout_sprites@2x.png);
+          background-size: 570px 272px; } }
     .global-menu-new .btn-custom-select.is-selected {
       border: 3px solid #000;
       transition: all 0.3s ease-in-out; }
@@ -2004,13 +2040,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       width: 20px;
       text-indent: -9999px;
       background-image: url(../images/layout_sprites.png);
-      background-position: -34px -148px;
+      background-position: -34px -171px;
       width: 23px;
       height: 27px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .utils .notification {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 249px; } }
+          background-size: 570px 272px; } }
       .global-menu-new .utils .notification:before {
         content: '';
         display: block;
@@ -2182,20 +2218,20 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         padding: 15px 0;
         background-color: #DADADA; }
         .sub-menus .list-menus > li .list-sub-menus:after {
-          content: ""; }
-        .sub-menus .list-menus > li .list-sub-menus:after {
+          content: '';
           display: block;
           position: absolute;
           top: 0;
           left: 50%;
-          margin-top: -15px;
-          margin-left: -15px;
-          height: 30px;
-          width: 30px;
-          font-size: 23px;
-          color: #F6F6F6;
-          text-align: center;
-          line-height: 30px; }
+          margin-left: -16px;
+          background-image: url(../images/layout_sprites.png);
+          background-position: -396px -88px;
+          width: 32px;
+          height: 15px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .sub-menus .list-menus > li .list-sub-menus:after {
+              background-image: url(../images/layout_sprites@2x.png);
+              background-size: 570px 272px; } }
         .sub-menus .list-menus > li .list-sub-menus > li {
           position: relative;
           overflow: hidden;
@@ -2251,13 +2287,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       top: 50px;
       left: 20px;
       background-image: url(../images/layout_sprites.png);
-      background-position: 0px -148px;
+      background-position: 0px -171px;
       width: 28px;
       height: 101px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .footer .contents-inner:before {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 249px; } }
+          background-size: 570px 272px; } }
     .footer .contents-inner:after {
       content: '';
       clear: both; }
@@ -2276,7 +2312,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .footer .service .title {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 249px; } }
+          background-size: 570px 272px; } }
     .footer .service .list-shortcut {
       margin-top: 15px; }
       .footer .service .list-shortcut a {
@@ -2411,40 +2447,40 @@ body {
       .side-menus li > button.vendor.total > span:before, .side-menus li a.vendor.total > span:before {
         margin-top: -8px;
         background-image: url(../images/sprites.png);
-        background-position: -126px -353px;
+        background-position: -691px -344px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li > button.vendor.total > span:before, .side-menus li a.vendor.total > span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 546px 599px; } }
+            background-size: 795px 873px; } }
       .side-menus li > button.vendor.aws > span:before, .side-menus li a.vendor.aws > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -81px -353px;
+        background-position: -646px -344px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li > button.vendor.aws > span:before, .side-menus li a.vendor.aws > span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 546px 599px; } }
+            background-size: 795px 873px; } }
       .side-menus li > button.vendor.azure > span:before, .side-menus li a.vendor.azure > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -216px -353px;
+        background-position: -601px -344px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li > button.vendor.azure > span:before, .side-menus li a.vendor.azure > span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 546px 599px; } }
+            background-size: 795px 873px; } }
       .side-menus li > button.vendor.aliyun > span:before, .side-menus li a.vendor.aliyun > span:before {
         background-image: url(../images/sprites.png);
-        background-position: -171px -353px;
+        background-position: -736px -344px;
         width: 39px;
         height: 39px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .side-menus li > button.vendor.aliyun > span:before, .side-menus li a.vendor.aliyun > span:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 546px 599px; } }
+            background-size: 795px 873px; } }
   .side-menus.is-editable > button:hover .btn-edit, .side-menus.is-editable a:hover .btn-edit {
     display: inline-block; }
   .side-menus.is-editable > button .btn-edit.is-selected, .side-menus.is-editable a .btn-edit.is-selected {
@@ -3108,13 +3144,13 @@ article.contents .submit-btns {
       vertical-align: middle;
       text-indent: -9999px;
       background-image: url(../images/sprites.png);
-      background-position: -486px -311px;
+      background-position: -115px -434px;
       width: 28px;
       height: 29px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .accordion > dt .btn-delete {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
     .accordion > dt .title {
       display: inline-block;
       width: 45%;
@@ -3162,13 +3198,13 @@ article.contents .submit-btns {
       background-color: #F6F6F6; }
       .accordion > dt:hover .btn-delete {
         background-image: url(../images/sprites.png);
-        background-position: -452px -311px;
+        background-position: -81px -434px;
         width: 28px;
         height: 29px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .accordion > dt:hover .btn-delete {
             background-image: url(../images/sprites@2x.png);
-            background-size: 546px 599px; } }
+            background-size: 795px 873px; } }
     .accordion > dt.is-opened {
       background-color: #F6F6F6; }
       .accordion > dt.is-opened .btn-folding:after {
@@ -3386,24 +3422,24 @@ article.contents .submit-btns {
       margin: -2px 10px 0 0px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -418px -311px;
+      background-position: -486px -325px;
       width: 28px;
       height: 29px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .accordion-bottom .btn-add:before {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
     .accordion-bottom .btn-add:hover {
       color: #000; }
       .accordion-bottom .btn-add:hover:before {
         background-image: url(../images/sprites.png);
-        background-position: -261px -353px;
+        background-position: -486px -360px;
         width: 28px;
         height: 29px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .accordion-bottom .btn-add:hover:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 546px 599px; } }
+            background-size: 795px 873px; } }
 
 /**
 	filter-util
@@ -3607,13 +3643,13 @@ article.contents .submit-btns {
         display: block;
         margin: -94px auto 22px;
         background-image: url(../images/sprites.png);
-        background-position: -81px -141px;
+        background-position: -525px -282px;
         width: 70px;
         height: 120px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .box-item.dashboard .no-data:before {
             background-image: url(../images/sprites@2x.png);
-            background-size: 546px 599px; } }
+            background-size: 795px 873px; } }
       .box-item.dashboard .no-data small {
         display: block;
         margin-top: 5px;
@@ -3748,49 +3784,49 @@ article.contents .submit-btns {
   top: 1px;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -174px -398px;
+  background-position: -216px -469px;
   width: 16px;
   height: 16px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icheckbox {
       background-image: url(../images/sprites@2x.png);
-      background-size: 546px 599px; } }
+      background-size: 795px 873px; } }
   .icheckbox.disabled {
     background-image: url(../images/sprites.png);
-    background-position: -262px -398px;
+    background-position: -194px -469px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.disabled {
         background-image: url(../images/sprites@2x.png);
-        background-size: 546px 599px; } }
+        background-size: 795px 873px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -196px -398px;
+    background-position: -150px -469px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 546px 599px; } }
+        background-size: 795px 873px; } }
     .icheckbox.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -240px -398px;
+      background-position: -172px -469px;
       width: 16px;
       height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .icheckbox.checked.disabled {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -218px -398px;
+    background-position: -238px -469px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .icheckbox.indeterminate {
         background-image: url(../images/sprites@2x.png);
-        background-size: 546px 599px; } }
+        background-size: 795px 873px; } }
 
 .iradio {
   display: block;
@@ -3798,31 +3834,31 @@ article.contents .submit-btns {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -151px -398px;
+  background-position: -81px -469px;
   width: 17px;
   height: 17px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .iradio {
       background-image: url(../images/sprites@2x.png);
-      background-size: 546px 599px; } }
+      background-size: 795px 873px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -105px -398px;
+    background-position: -127px -469px;
     width: 17px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .iradio.checked {
         background-image: url(../images/sprites@2x.png);
-        background-size: 546px 599px; } }
+        background-size: 795px 873px; } }
     .iradio.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -128px -398px;
+      background-position: -104px -469px;
       width: 17px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .iradio.checked.disabled {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
 
 .all-checked {
   display: block;
@@ -3851,31 +3887,31 @@ article.contents .submit-btns {
     vertical-align: middle; }
   .all-checked[value="0"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -174px -398px;
+    background-position: -216px -469px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="0"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 546px 599px; } }
+        background-size: 795px 873px; } }
   .all-checked[value="1"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -196px -398px;
+    background-position: -150px -469px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="1"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 546px 599px; } }
+        background-size: 795px 873px; } }
   .all-checked[value="2"] > span {
     background-image: url(../images/sprites.png);
-    background-position: -218px -398px;
+    background-position: -238px -469px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .all-checked[value="2"] > span {
         background-image: url(../images/sprites@2x.png);
-        background-size: 546px 599px; } }
+        background-size: 795px 873px; } }
   .all-checked .list-select-popup {
     display: block;
     position: absolute;
@@ -4031,22 +4067,22 @@ input[type=submit].btn-normal,
   position: relative;
   text-indent: -9999px;
   background-image: url(../images/sprites.png);
-  background-position: -318px -353px;
+  background-position: -497px -180px;
   width: 17px;
   height: 21px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .btn-bookmark {
       background-image: url(../images/sprites@2x.png);
-      background-size: 546px 599px; } }
+      background-size: 795px 873px; } }
   .btn-bookmark.is-selected, .btn-bookmark:hover {
     background-image: url(../images/sprites.png);
-    background-position: -295px -353px;
+    background-position: -497px -153px;
     width: 17px;
     height: 21px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .btn-bookmark.is-selected, .btn-bookmark:hover {
         background-image: url(../images/sprites@2x.png);
-        background-size: 546px 599px; } }
+        background-size: 795px 873px; } }
 
 .btn-close {
   display: block;
@@ -4617,13 +4653,13 @@ input[type=submit].btn-normal,
     top: 30px;
     left: 30px;
     background-image: url(../images/sprites.png);
-    background-position: -52px -141px;
+    background-position: -52px -415px;
     width: 23px;
     height: 376px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .login-container:before {
         background-image: url(../images/sprites@2x.png);
-        background-size: 546px 599px; } }
+        background-size: 795px 873px; } }
   .login-container .btn-back {
     position: absolute;
     top: -3px;
@@ -5366,330 +5402,155 @@ body.portal {
           top: 50%;
           left: 50%;
           margin: -22px 0 0 -100px; }
-  body.portal.home .services {
-    overflow: hidden;
-    padding-top: 48px;
-    padding-bottom: 100px; }
-    body.portal.home .services > li {
-      box-sizing: border-box;
-      float: left;
-      width: 350px; }
-      body.portal.home .services > li:nth-child(3n+2) {
-        margin-right: 55px;
-        margin-left: 55px; }
-      body.portal.home .services > li .title {
-        font-size: 26px;
-        font-weight: 700;
-        color: #000; }
-        body.portal.home .services > li .title:before {
-          display: block;
-          margin-bottom: 22px;
-          height: 52px;
-          width: 52px;
-          text-align: center;
-          vertical-align: middle;
-          line-height: 52px;
-          border: 4px solid #000; }
-        body.portal.home .services > li .title.asset:before {
-          content: ""; }
-        body.portal.home .services > li .title.asset:before {
-          font-size: 34px; }
-        body.portal.home .services > li .title.metering:before {
-          content: ""; }
-        body.portal.home .services > li .title.metering:before {
-          font-size: 38px; }
-        body.portal.home .services > li .title.monitoring:before {
-          content: ""; }
-        body.portal.home .services > li .title.monitoring:before {
-          font-size: 38px; }
-  body.portal.home .list-detail {
-    margin-top: 3px; }
-    body.portal.home .list-detail > li {
-      display: block;
-      position: relative;
-      margin-top: 8px;
-      padding: 0 0 0 12px;
-      font-size: 15px;
-      font-weight: 400;
-      color: #6E6E6E;
-      line-height: 23px; }
-      body.portal.home .list-detail > li:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 6px;
-        left: 0;
-        padding: 0;
-        background-image: url(../images/sprites.png);
-        background-position: -535px -173px;
-        width: 8px;
-        height: 8px;
-        height: 15px;
-        width: 15px; }
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-          body.portal.home .list-detail > li:before {
-            background-image: url(../images/sprites@2x.png);
-            background-size: 546px 599px; } }
-  body.portal .solutions {
-    position: relative;
-    height: 600px;
-    background-color: #fff;
-    background-position: center top;
-    background-repeat: repeat-x; }
-    body.portal .solutions:before {
-      content: '';
-      display: block;
-      transition: all 0.3s;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: url("/assets/images/bg_solutions_02.jpg") center center no-repeat;
-      background-size: cover; }
-    body.portal .solutions:after {
-      content: '';
-      transition: all 0.3s;
-      opacity: 1;
-      display: block;
-      position: absolute;
-      top: 128px;
-      left: 0;
-      right: 65%;
-      height: 265px;
-      background: url("/assets/images/bg_solutions_02_object.png") left top repeat-x; }
-    body.portal .solutions.bg:before {
-      transition: all 0.3s;
-      background: url("/assets/images/bg_solutions.jpg") center center no-repeat;
-      background-size: cover; }
-    body.portal .solutions.bg:after {
-      transition: all 0.3s;
-      opacity: 0; }
-    body.portal .solutions .solution-container {
-      display: block;
-      box-sizing: border-box;
-      overflow: hidden;
-      padding: 0 20px;
-      height: 600px;
-      width: 100%; }
-      body.portal .solutions .solution-container .solution-item {
-        float: left;
-        margin-top: 108px; }
-        body.portal .solutions .solution-container .solution-item small {
-          display: block;
-          font-size: 18px;
-          font-weight: 500;
-          color: #3FA6F5; }
-        body.portal .solutions .solution-container .solution-item .title {
-          margin-top: 5px;
-          font-size: 50px;
+  body.portal.home {
+    padding-top: 0; }
+    body.portal.home .home-summary {
+      background: #0994F3 url("/assets/images/bg_portal_home.png") center center no-repeat; }
+      body.portal.home .home-summary .home-summary-inner {
+        margin: 0 auto;
+        padding-top: 250px;
+        height: 510px;
+        width: 1200px;
+        font-family: "Montserrat", "Apple SD Gothic", sans-serif;
+        color: #fff; }
+        body.portal.home .home-summary .home-summary-inner h1 {
+          font-size: 4.375rem;
           font-weight: 700;
+          line-height: 1.143em; }
+        body.portal.home .home-summary .home-summary-inner p {
+          margin-top: 35px;
+          font-size: 1.563rem;
+          font-weight: 400;
+          line-height: 1.200em; }
+    body.portal.home .list-services {
+      padding-bottom: 50px; }
+      body.portal.home .list-services > li {
+        position: relative;
+        padding: 50px 0 50px 0; }
+        body.portal.home .list-services > li:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 660px; }
+        body.portal.home .list-services > li.asset:after {
+          margin-top: -59.5px;
+          background-image: url(../images/sprites.png);
+          background-position: 0px 0px;
+          width: 519px;
+          height: 119px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            body.portal.home .list-services > li.asset:after {
+              background-image: url(../images/sprites@2x.png);
+              background-size: 795px 873px; } }
+        body.portal.home .list-services > li.metering:after {
+          margin-top: -48px;
+          background-image: url(../images/sprites.png);
+          background-position: 0px -125px;
+          width: 491px;
+          height: 96px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            body.portal.home .list-services > li.metering:after {
+              background-image: url(../images/sprites@2x.png);
+              background-size: 795px 873px; } }
+        body.portal.home .list-services > li.monitoring:after {
+          margin-top: -42px;
+          background-image: url(../images/sprites.png);
+          background-position: 0px -325px;
+          width: 480px;
+          height: 84px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            body.portal.home .list-services > li.monitoring:after {
+              background-image: url(../images/sprites@2x.png);
+              background-size: 795px 873px; } }
+        body.portal.home .list-services > li.its:after {
+          margin-top: -46px;
+          background-image: url(../images/sprites.png);
+          background-position: 0px -227px;
+          width: 479px;
+          height: 92px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            body.portal.home .list-services > li.its:after {
+              background-image: url(../images/sprites@2x.png);
+              background-size: 795px 873px; } }
+        body.portal.home .list-services > li .title {
+          font-family: "Montserrat", "Apple SD Gothic", sans-serif;
+          font-size: 3.438rem;
+          font-weight: 400;
           color: #000;
-          line-height: 44px; }
-        body.portal .solutions .solution-container .solution-item .box {
+          line-height: 1.091em; }
+        body.portal.home .list-services > li .sub-title {
+          margin-top: 18px;
+          font-size: 1.250rem;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.65); }
+        body.portal.home .list-services > li .description {
+          margin-top: 9px;
+          font-size: 1.250rem;
+          font-weight: 400;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 1.250em; }
+        body.portal.home .list-services > li .btn-learn-more {
+          display: block;
+          box-sizing: border-box;
           overflow: hidden;
           position: relative;
-          margin-top: 30px;
-          padding: 25px;
-          height: 185px;
-          border-top: 4px solid #000;
-          background-color: #fff; }
-          body.portal .solutions .solution-container .solution-item .box .desc {
-            box-sizing: border-box;
-            float: left;
-            padding-right: 100px;
-            height: 100%;
-            width: 36.082474226804%;
-            font-size: 20px;
-            color: #4A4A4A; }
-          body.portal .solutions .solution-container .solution-item .box .btn-try {
+          margin-top: 20px;
+          height: 40px;
+          width: 40px;
+          font-family: "Montserrat", "Apple SD Gothic", sans-serif;
+          color: #000;
+          text-align: center;
+          line-height: 36px;
+          border: 3px solid #000;
+          transition: width 0.3s ease-in-out; }
+          body.portal.home .list-services > li .btn-learn-more:after {
+            content: ""; }
+          body.portal.home .list-services > li .btn-learn-more:after {
             display: block;
             position: absolute;
-            bottom: 25px;
-            padding: 0 16px;
-            width: 120px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 34px;
+            width: 34px;
             font-size: 18px;
-            font-weight: 400;
-            color: #1D1D1D;
+            line-height: 34px;
             text-align: center;
-            line-height: 30px;
-            border: 1px solid #000; }
-            body.portal .solutions .solution-container .solution-item .box .btn-try:hover {
-              color: #fff;
-              color: #000; }
-          body.portal .solutions .solution-container .solution-item .box .list-feature {
-            float: left;
-            margin-top: 5px;
-            width: 63.917525773196%; }
-            body.portal .solutions .solution-container .solution-item .box .list-feature > li {
-              display: block;
-              box-sizing: border-box;
-              float: left;
-              padding-right: 10px;
-              width: 33%;
-              font-size: 15px;
-              font-weight: 400;
-              color: #3F3F3F;
-              line-height: 22px; }
-              body.portal .solutions .solution-container .solution-item .box .list-feature > li:before {
-                content: '';
-                display: block;
-                height: 80px; }
-              body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset01:before {
-                background-image: url(../images/sprites.png);
-                background-position: -256px -141px;
-                width: 80px;
-                height: 80px; }
-                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                  body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset01:before {
-                    background-image: url(../images/sprites@2x.png);
-                    background-size: 546px 599px; } }
-              body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset02:before {
-                background-image: url(../images/sprites.png);
-                background-position: -157px -141px;
-                width: 93px;
-                height: 80px; }
-                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                  body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset02:before {
-                    background-image: url(../images/sprites@2x.png);
-                    background-size: 546px 599px; } }
-              body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset03:before {
-                background-image: url(../images/sprites.png);
-                background-position: -424px -141px;
-                width: 73px;
-                height: 80px; }
-                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                  body.portal .solutions .solution-container .solution-item .box .list-feature > li.asset03:before {
-                    background-image: url(../images/sprites@2x.png);
-                    background-size: 546px 599px; } }
-              body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering01:before {
-                background-image: url(../images/sprites.png);
-                background-position: -342px -141px;
-                width: 76px;
-                height: 80px; }
-                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                  body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering01:before {
-                    background-image: url(../images/sprites@2x.png);
-                    background-size: 546px 599px; } }
-              body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering02:before {
-                background-image: url(../images/sprites.png);
-                background-position: -503px -141px;
-                width: 26px;
-                height: 80px; }
-                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                  body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering02:before {
-                    background-image: url(../images/sprites@2x.png);
-                    background-size: 546px 599px; } }
-              body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering03:before {
-                background-image: url(../images/sprites.png);
-                background-position: -289px -267px;
-                width: 51px;
-                height: 80px; }
-                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                  body.portal .solutions .solution-container .solution-item .box .list-feature > li.metering03:before {
-                    background-image: url(../images/sprites@2x.png);
-                    background-size: 546px 599px; } }
-              body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring01:before {
-                background-image: url(../images/sprites.png);
-                background-position: -81px -267px;
-                width: 69px;
-                height: 80px; }
-                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                  body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring01:before {
-                    background-image: url(../images/sprites@2x.png);
-                    background-size: 546px 599px; } }
-              body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring02:before {
-                background-image: url(../images/sprites.png);
-                background-position: -156px -267px;
-                width: 61px;
-                height: 80px; }
-                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                  body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring02:before {
-                    background-image: url(../images/sprites@2x.png);
-                    background-size: 546px 599px; } }
-              body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring03:before {
-                background-image: url(../images/sprites.png);
-                background-position: -223px -267px;
-                width: 60px;
-                height: 80px; }
-                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-                  body.portal .solutions .solution-container .solution-item .box .list-feature > li.monitoring03:before {
-                    background-image: url(../images/sprites@2x.png);
-                    background-size: 546px 599px; } }
-        body.portal .solutions .solution-container .solution-item.portal {
-          overflow: hidden;
-          position: relative;
-          margin-top: 28px;
-          width: 100%; }
-          body.portal .solutions .solution-container .solution-item.portal:before {
-            content: '';
+            transform: rotateX(0deg);
+            transition: transform 1.0s ease-in-out; }
+          body.portal.home .list-services > li .btn-learn-more .txt {
             display: block;
             position: absolute;
-            top: 100px;
-            left: 0;
-            height: 265px;
-            width: 979px;
-            background: url("/assets/images/bg_solutions_02_object.png") right top no-repeat; }
-          body.portal .solutions .solution-container .solution-item.portal .title {
-            position: relative;
-            padding-top: 38px;
-            height: 350px;
-            width: 550px;
-            font-size: 65px;
+            top: 0;
+            right: 40px;
+            bottom: 0;
+            opacity: 0;
+            height: 34px;
+            font-size: 1.000rem;
             font-weight: 700;
             color: #000;
-            line-height: 50px; }
-          body.portal .solutions .solution-container .solution-item.portal .message {
-            float: left;
-            margin-top: 20px;
-            font-size: 20px;
-            font-weight: 400;
-            color: #000; }
-          body.portal .solutions .solution-container .solution-item.portal .list-service {
-            overflow: hidden;
-            float: right;
-            width: 346px; }
-            body.portal .solutions .solution-container .solution-item.portal .list-service > li {
-              float: left;
-              display: block;
-              position: relative;
-              padding-left: 28px;
-              width: 145px;
-              font-size: 20px;
-              font-weight: 700;
-              color: #4A4A4A;
-              line-height: 38px; }
-              body.portal .solutions .solution-container .solution-item.portal .list-service > li:before {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 12px;
-                left: 0;
-                height: 12px;
-                width: 12px;
-                border-radius: 12px;
-                background-color: #000; }
-      body.portal .solutions .solution-container .slick-dots {
-        position: absolute;
-        bottom: 30px;
-        right: 0;
-        left: 0;
-        width: 100%;
-        text-align: center; }
-        body.portal .solutions .solution-container .slick-dots > li {
-          display: inline-block;
-          padding: 0 5px; }
-          body.portal .solutions .solution-container .slick-dots > li button {
-            height: 10px;
-            width: 10px;
-            text-indent: -9999px;
-            border: 1px solid #fff;
-            border-radius: 10px;
-            background-color: #D8D8D8; }
-          body.portal .solutions .solution-container .slick-dots > li.slick-active button {
-            background-color: #000; }
+            line-height: 34px;
+            white-space: nowrap;
+            transition: opacity 0.3s ease-in-out; }
+          body.portal.home .list-services > li .btn-learn-more:hover {
+            width: 180px;
+            transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out; }
+            body.portal.home .list-services > li .btn-learn-more:hover:after {
+              transform: rotateX(180deg);
+              transition: transform 1.0s ease-in-out; }
+            body.portal.home .list-services > li .btn-learn-more:hover .txt {
+              opacity: 1;
+              transition: opacity 0.3s ease-in-out; }
+          body.portal.home .list-services > li .btn-learn-more:active {
+            background-color: #000;
+            transition: background-color 0.3s ease-in-out; }
+            body.portal.home .list-services > li .btn-learn-more:active:after {
+              color: #fff; }
+            body.portal.home .list-services > li .btn-learn-more:active .txt {
+              color: #fff; }
+        body.portal.home .list-services > li + li {
+          border-top: 1px solid rgba(0, 0, 0, 0.2); }
 
 body.asset .chart-container {
   clear: both;
@@ -6084,13 +5945,13 @@ body.asset.dashboard {
       margin: 0 auto 30px auto;
       text-align: center;
       background-image: url(../images/sprites.png);
-      background-position: 0px 0px;
+      background-position: -525px -141px;
       width: 270px;
       height: 135px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         body.asset.dashboard .asset-performance-box .performance-graph {
           background-image: url(../images/sprites@2x.png);
-          background-size: 546px 599px; } }
+          background-size: 795px 873px; } }
       body.asset.dashboard .asset-performance-box .performance-graph .arc {
         display: block;
         overflow: hidden;
@@ -6098,7 +5959,7 @@ body.asset.dashboard {
         height: 100%;
         width: 100%;
         background-image: url(../images/sprites.png);
-        background-position: -276px 0px;
+        background-position: -525px 0px;
         width: 270px;
         height: 135px;
         background-color: #fff;
@@ -6107,7 +5968,7 @@ body.asset.dashboard {
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           body.asset.dashboard .asset-performance-box .performance-graph .arc {
             background-image: url(../images/sprites@2x.png);
-            background-size: 546px 599px; } }
+            background-size: 795px 873px; } }
       body.asset.dashboard .asset-performance-box .performance-graph .point {
         display: block;
         position: absolute;
@@ -6919,23 +6780,23 @@ body.metering.dashboard {
         body.metering.dashboard article.contents .tbl-payment-summary .vendor.aws:before {
           margin-top: -9.5px;
           background-image: url(../images/sprites.png);
-          background-position: -368px -353px;
+          background-position: -173px -434px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .tbl-payment-summary .vendor.aws:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 546px 599px; } }
+              background-size: 795px 873px; } }
         body.metering.dashboard article.contents .tbl-payment-summary .vendor.azure:before {
           margin-top: -9.5px;
           background-image: url(../images/sprites.png);
-          background-position: -395px -353px;
+          background-position: -200px -434px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .tbl-payment-summary .vendor.azure:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 546px 599px; } }
+              background-size: 795px 873px; } }
     body.metering.dashboard article.contents .tbl-assets {
       margin-top: 3px;
       margin-bottom: 6px;
@@ -7152,23 +7013,23 @@ body.metering.dashboard {
         body.metering.dashboard article.contents .list-type-tbl .vendor.aws:before {
           margin-top: -21px;
           background-image: url(../images/sprites.png);
-          background-position: -346px -267px;
+          background-position: -660px -282px;
           width: 53px;
           height: 38px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .list-type-tbl .vendor.aws:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 546px 599px; } }
+              background-size: 795px 873px; } }
         body.metering.dashboard article.contents .list-type-tbl .vendor.azure:before {
           margin-top: -21px;
           background-image: url(../images/sprites.png);
-          background-position: -405px -267px;
+          background-position: -601px -282px;
           width: 53px;
           height: 38px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .list-type-tbl .vendor.azure:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 546px 599px; } }
+              background-size: 795px 873px; } }
       body.metering.dashboard article.contents .list-type-tbl .cost strong {
         display: block;
         font-size: 1.875rem;
@@ -7195,22 +7056,22 @@ body.metering.dashboard {
           margin-right: 5px; }
         body.metering.dashboard article.contents .budget-status .vendor.aws:before {
           background-image: url(../images/sprites.png);
-          background-position: -368px -353px;
+          background-position: -173px -434px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .budget-status .vendor.aws:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 546px 599px; } }
+              background-size: 795px 873px; } }
         body.metering.dashboard article.contents .budget-status .vendor.azure:before {
           background-image: url(../images/sprites.png);
-          background-position: -395px -353px;
+          background-position: -200px -434px;
           width: 21px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             body.metering.dashboard article.contents .budget-status .vendor.azure:before {
               background-image: url(../images/sprites@2x.png);
-              background-size: 546px 599px; } }
+              background-size: 795px 873px; } }
       body.metering.dashboard article.contents .budget-status .total {
         float: right;
         font-size: 1.125rem;

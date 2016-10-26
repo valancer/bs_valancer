@@ -72,113 +72,54 @@ body.portal {
 
 
 	// home
-	&.home {
-		.services { overflow: hidden; padding-top: 48px; padding-bottom: 100px;
-			> li { box-sizing: border-box; float: left; width: 350px;
-				&:nth-child(3n+2) { margin-right: 55px; margin-left: 55px; }
-
-				.title { font-size: 26px; font-weight: 700; color: #000;
-					&:before { display: block; margin-bottom: 22px; height: 52px; width: 52px; text-align: center; vertical-align: middle; line-height: 52px; border: 4px solid #000; }
-					&.asset {
-						@include icon(asset);
-						&:before { font-size: 34px; }
-					}
-					&.metering {
-						@include icon(metering);
-						&:before { font-size: 38px; }
-					}
-					&.monitoring {
-						@include icon(monitoring);
-						&:before { font-size: 38px; }
-					}
-				}
+	&.home { padding-top: 0;
+		.home-summary { background: #0994F3 url('/assets/images/bg_portal_home.png') center center no-repeat;
+			.home-summary-inner { margin: 0 auto; padding-top: 250px; height: 510px; width: $contents-width; font-family: $font-special-stack; color: #fff; 
+				h1 { font-size: 4.375rem; font-weight: 700; line-height: 1.143em; }
+				p { margin-top: 35px; font-size: 1.563rem; font-weight: 400; line-height: 1.200em; }
 			}
 		}
 
-		.list-detail { margin-top: 3px;
-			> li { display: block; position: relative; margin-top: 8px; padding: 0 0 0 12px; font-size: 15px; font-weight: 400; color: #6E6E6E; line-height: 23px;
-				&:before { content: ''; display: block; position: absolute; top: 6px; left: 0; padding: 0; @include retina-sprite($sc-icon-dot-group); height: 15px; width: 15px; }
+		.list-services { padding-bottom: 50px;
+			> li { position: relative; padding: 50px 0 50px 0;
+				&:after { content: ''; display: block; position: absolute; top: 50%; left: 660px; }
+
+				&.asset:after { margin-top: -$sc-asset-feature-height/2; @include retina-sprite($sc-asset-feature-group); }
+				&.metering:after { margin-top: -$sc-metering-feature-height/2; @include retina-sprite($sc-metering-feature-group); }
+				&.monitoring:after { margin-top: -$sc-monitoring-feature-height/2; @include retina-sprite($sc-monitoring-feature-group); }
+				&.its:after { margin-top: -$sc-its-feature-height/2; @include retina-sprite($sc-its-feature-group); }
+
+				.title { font-family: $font-special-stack; font-size: 3.438rem; font-weight: 400; color: #000; line-height: 1.091em; }
+				.sub-title { margin-top: 18px; font-size: 1.250rem; font-weight: 500; color: rgba(0, 0, 0, 0.65); }
+				.description { margin-top: 9px; font-size: 1.250rem; font-weight: 400; color: rgba(0, 0, 0, 0.65); line-height: 1.250em; }
+
+				.btn-learn-more { display: block; box-sizing: border-box; overflow: hidden; position: relative; margin-top: 20px; height: 40px; width: 40px; font-family: $font-special-stack; color: #000; text-align: center; line-height: 36px; border: 3px solid #000;
+					transition: width 0.3s ease-in-out;
+
+					@include icon(arrow04, after);
+					&:after { display: block; position: absolute; top: 0; right: 0; bottom: 0; height: 34px; width: 34px; font-size: 18px; line-height: 34px; text-align: center;
+						transform: rotateX( 0deg ); transition: transform 1.0s ease-in-out;
+					}
+					.txt { display: block; position: absolute; top: 0; right: 40px; bottom: 0; opacity: 0; height: 34px; font-size: 1.000rem; font-weight: 700; color: #000; line-height: 34px; white-space: nowrap;
+						transition: opacity 0.3s ease-in-out; 
+					}
+					
+					&:hover { width: 180px;
+						transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+						&:after { transform: rotateX( 180deg ); transition: transform 1.0s ease-in-out; }
+						.txt { opacity: 1; transition: opacity 0.3s ease-in-out; }
+					}
+					&:active { background-color: #000;
+						transition: background-color 0.3s ease-in-out;
+						&:after { color: #fff; }
+						.txt { color: #fff; }
+					}
+				}
+
+				+ li { border-top: 1px solid rgba(0, 0, 0, 0.2); }
 			}
 		}
 	}
 
-
-	.solutions { position: relative; height: 600px; background-color: #fff; background-position: center top; background-repeat: repeat-x;
-		&:before { content: ''; display: block; transition: all 0.3s; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; background: url('/assets/images/bg_solutions_02.jpg') center center no-repeat; background-size: cover; }
-		&:after { content: ''; transition: all 0.3s; opacity: 1; display: block; position: absolute; top: 128px; left: 0; right: 65%; height: 265px; background: url('/assets/images/bg_solutions_02_object.png') left top repeat-x; }
-		&.bg {
-			&:before { transition: all 0.3s; background: url('/assets/images/bg_solutions.jpg') center center no-repeat; background-size: cover; }
-			&:after { transition: all 0.3s; opacity: 0; }
-		}
-
-		.solution-container { display: block; box-sizing: border-box; overflow: hidden; padding: 0 20px; height: 600px; width: 100%;
-			.solution-item { float: left; margin-top: 108px;
-				small { display: block; font-size: 18px; font-weight: 500; color: #3FA6F5; }
-				.title { margin-top: 5px; font-size: 50px; font-weight: 700; color: #000; line-height: 44px; }
-
-				.box { overflow: hidden; position: relative; margin-top: 30px; padding: 25px; height: 185px; border-top: 4px solid #000; background-color: #fff;
-					.desc { box-sizing: border-box; float: left; padding-right: 100px; height: 100%; width: 36.082474226804%; font-size: 20px; color: #4A4A4A; }
-					.btn-try { display: block; position: absolute; bottom: 25px; padding: 0 16px; width: 120px; font-size: 18px; font-weight: 400; color: #1D1D1D; text-align: center; line-height: 30px; border: 1px solid #000;
-						&:hover { color: #fff; color: #000; }
-					}
-
-					.list-feature { float: left; margin-top: 5px; width: 63.917525773196%;
-						> li { display: block; box-sizing: border-box; float: left; padding-right: 10px; width: 33%; font-size: 15px; font-weight: 400; color: #3F3F3F; line-height: 22px;
-							&:before { content: ''; display: block; height: 80px; }
-
-							&.asset01 {
-								&:before { @include retina-sprite($sc-asset-feature-01-group); }
-							}
-							&.asset02 {
-								&:before { @include retina-sprite($sc-asset-feature-02-group); }
-							}
-							&.asset03 {
-								&:before { @include retina-sprite($sc-asset-feature-03-group); }
-							}
-							&.metering01 {
-								&:before { @include retina-sprite($sc-metering-feature-01-group); }
-							}
-							&.metering02 {
-								&:before { @include retina-sprite($sc-metering-feature-02-group); }
-							}
-							&.metering03 {
-								&:before { @include retina-sprite($sc-metering-feature-03-group); }
-							}
-							&.monitoring01 {
-								&:before { @include retina-sprite($sc-monitoring-feature-01-group); }
-							}
-							&.monitoring02 {
-								&:before { @include retina-sprite($sc-monitoring-feature-02-group); }
-							}
-							&.monitoring03 {
-								&:before { @include retina-sprite($sc-monitoring-feature-03-group); }
-							}
-						}
-					}
-				}
-
-				&.portal { overflow: hidden; position: relative; margin-top: 28px; width: 100%;
-					&:before { content: ''; display: block; position: absolute; top: 100px; left: 0; height: 265px; width: 979px; background: url('/assets/images/bg_solutions_02_object.png') right top no-repeat; }
-
-					.title { position: relative; padding-top: 38px; height: 350px; width: 550px; font-size: 65px; font-weight: 700; color: #000; line-height: 50px; }
-					.message { float: left; margin-top: 20px; font-size: 20px; font-weight: 400; color: #000; }
-					.list-service { overflow: hidden; float: right; width: 346px;
-						> li { float: left; display: block; position: relative; padding-left: 28px; width: 145px; font-size: 20px; font-weight: 700; color: #4A4A4A; line-height: 38px;
-							&:before { content: ''; display: block; position: absolute; top: 12px; left: 0; height: 12px; width: 12px; border-radius: 12px; background-color: #000; }
-						}
-					}
-				}
-			}
-
-			.slick-dots { position: absolute; bottom: 30px; right: 0; left: 0; width: 100%; text-align: center;
-				> li { display: inline-block; padding: 0 5px;
-					button { height: 10px; width: 10px; text-indent: -9999px; border: 1px solid #fff; border-radius: 10px; background-color: #D8D8D8; }
-					&.slick-active {
-						button { background-color: #000; }
-					}
-				} 
-			}
-		}
-	}
 
 }

@@ -90,29 +90,6 @@
 						</div>
 
 					</div>	<!-- class="solution-container" -->
-					<script>
-					$(document).ready(function(e) {
-						$('.slick-container').slick({
-							slidesToShow: 1,
-							slidesToScroll: 1,
-							autoplay: true,
-							autoplaySpeed: 7000,
-							infinite: true,
-							arrows: false,
-							dots: true,
-							swipe: false,
-							speed: 300,
-						});
-						$('.slick-container').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-							if( nextSlide != 0 ) {
-								$('.solutions').addClass('bg');
-							} else {
-								$('.solutions').removeClass('bg');
-							}
-						});
-					});
-					</script>
-
 				</div>
 			</header>
 

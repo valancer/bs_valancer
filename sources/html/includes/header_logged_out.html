@@ -1,7 +1,7 @@
 <header class="global-menu-new logout">
 
 	<div class="title">
-		<a href="#" class="btn-home">BESPIN GLOBAL SERVICE</a>
+		<a href="#" class="btn-bsp">BESPIN SERVICE PLATFORM</a>
 	</div>
 	
 	<!-- language, notification, user -->
@@ -91,12 +91,14 @@ BSPSelectBox.prototype.select = function($item) {
 var GlobalMenu = (function ($) {
 	var scope,
 		$container,
+		$homeSummary,
 		selectService,
 		selectCompany,
 		selectLanguage,
 		$user,
 		init = function() {
 			$container = $('.global-menu-new');
+			$homeSummary = $('.home-summary');
 
 			selectService = new BSPSelectBox($('#select-service'));
 			selectCompany = new BSPSelectBox($('#select-company'));
@@ -114,6 +116,19 @@ var GlobalMenu = (function ($) {
 	function initEvent() {
 		$user.on('click', function() {
 			$(this).toggleClass('is-open');
+		});
+
+		$(window).scroll(function (e) {
+			if( $('body.portal.home').length ) {
+				var scrollTop = $(window).scrollTop();
+				var heightSummary = $homeSummary.height() - $container.height();
+
+				if( scrollTop > heightSummary ) {
+					$container.removeClass('logout');
+				} else {
+					$container.addClass('logout');
+				}
+			}
 		});
 
 		$(document).click(function (e) {

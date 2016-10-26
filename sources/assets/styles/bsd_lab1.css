@@ -5,144 +5,6 @@
 body {
   background-color: #fff; }
 
-@font-face {
-  font-family: "Icons";
-  src: url("../fonts/icons/Icons.eot");
-  src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
-
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .global-menu-new .btn-custom-select:after, .sub-menus .list-menus > li .list-sub-menus:after {
-  font-family: "Icons";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  text-decoration: none;
-  text-transform: none; }
-
-.icon-arrow01:before {
-  content: ""; }
-
-.icon-arrow02:before {
-  content: ""; }
-
-.icon-arrow03:before {
-  content: ""; }
-
-.icon-arrow04:before {
-  content: ""; }
-
-.icon-asset:before {
-  content: ""; }
-
-.icon-calendar:before {
-  content: ""; }
-
-.icon-cancel:before {
-  content: ""; }
-
-.icon-check:before {
-  content: ""; }
-
-.icon-close:before {
-  content: ""; }
-
-.icon-close02:before {
-  content: ""; }
-
-.icon-cloud:before {
-  content: ""; }
-
-.icon-dashboard:before {
-  content: ""; }
-
-.icon-defaultview:before {
-  content: ""; }
-
-.icon-delete:before {
-  content: ""; }
-
-.icon-done:before {
-  content: ""; }
-
-.icon-dot:before {
-  content: ""; }
-
-.icon-download:before {
-  content: ""; }
-
-.icon-edit:before {
-  content: ""; }
-
-.icon-email:before {
-  content: ""; }
-
-.icon-export:before {
-  content: ""; }
-
-.icon-eyes:before {
-  content: ""; }
-
-.icon-filter:before {
-  content: ""; }
-
-.icon-grid:before {
-  content: ""; }
-
-.icon-growth:before {
-  content: ""; }
-
-.icon-iks:before {
-  content: ""; }
-
-.icon-iks02:before {
-  content: ""; }
-
-.icon-info:before {
-  content: ""; }
-
-.icon-menu:before {
-  content: ""; }
-
-.icon-message:before {
-  content: ""; }
-
-.icon-metering:before {
-  content: ""; }
-
-.icon-monitoring:before {
-  content: ""; }
-
-.icon-noticifation:before {
-  content: ""; }
-
-.icon-phone:before {
-  content: ""; }
-
-.icon-refresh:before {
-  content: ""; }
-
-.icon-reset:before {
-  content: ""; }
-
-.icon-search:before {
-  content: ""; }
-
-.icon-search02:before {
-  content: ""; }
-
-.icon-settings:before {
-  content: ""; }
-
-.icon-warning:before {
-  content: ""; }
-
-.icon-wideview:before {
-  content: ""; }
-
-.icon-workflow:before {
-  content: ""; }
-
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
@@ -309,6 +171,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
   min-width: 1280px;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
+  transition: all 0.3s ease-in-out;
   /* service platform select */
   /* language, notification, user */ }
   .global-menu-new:after {
@@ -325,24 +188,57 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       text-indent: -9999px;
       vertical-align: middle;
       background-image: url(../images/layout_sprites.png);
-      background-position: -148px -118px;
+      background-position: -312px -88px;
       width: 78px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .title .btn-home {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 249px; } }
-  .global-menu-new.logout .title .btn-home {
-    display: inline-block;
-    margin-top: 22px;
-    background-image: url(../images/layout_sprites.png);
-    background-position: -250px -30px;
-    width: 306px;
-    height: 17px; }
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      .global-menu-new.logout .title .btn-home {
-        background-image: url(../images/layout_sprites@2x.png);
-        background-size: 570px 249px; } }
+          background-size: 570px 272px; } }
+    .global-menu-new .title .btn-bsp {
+      display: inline-block;
+      margin-top: 22px;
+      text-indent: -9999px;
+      vertical-align: middle;
+      background-image: url(../images/layout_sprites.png);
+      background-position: 0px -88px;
+      width: 306px;
+      height: 17px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .global-menu-new .title .btn-bsp {
+          background-image: url(../images/layout_sprites@2x.png);
+          background-size: 570px 272px; } }
+  .global-menu-new.logout {
+    border-bottom: 0px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out; }
+    .global-menu-new.logout .title .btn-bsp {
+      background-image: url(../images/layout_sprites.png);
+      background-position: -250px -30px;
+      width: 306px;
+      height: 17px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .global-menu-new.logout .title .btn-bsp {
+          background-image: url(../images/layout_sprites@2x.png);
+          background-size: 570px 272px; } }
+    .global-menu-new.logout .utils .btns .btn {
+      color: #fff;
+      border: 2px solid #fff; }
+      .global-menu-new.logout .utils .btns .btn:hover {
+        color: #0994F3;
+        background-color: #fff; }
+    .global-menu-new.logout .custom-select-container.small .btn-custom-select {
+      color: #fff;
+      border-bottom: 2px solid #fff; }
+      .global-menu-new.logout .custom-select-container.small .btn-custom-select:after {
+        background-image: url(../images/layout_sprites.png);
+        background-position: -542px -58px;
+        width: 14px;
+        height: 9px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .global-menu-new.logout .custom-select-container.small .btn-custom-select:after {
+            background-image: url(../images/layout_sprites@2x.png);
+            background-size: 570px 272px; } }
   .global-menu-new .custom-select-container {
     display: inline-block;
     position: relative; }
@@ -352,13 +248,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       line-height: 1.3em; }
       .global-menu-new .custom-select-container .txt.service-portal {
         background-image: url(../images/layout_sprites.png);
-        background-position: 0px -88px;
+        background-position: 0px -111px;
         width: 218px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.service-portal {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 249px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.asset-management {
         background-image: url(../images/layout_sprites.png);
         background-position: 0px -58px;
@@ -367,16 +263,16 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.asset-management {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 249px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.metering {
         background-image: url(../images/layout_sprites.png);
-        background-position: 0px -118px;
+        background-position: 0px -141px;
         width: 142px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.metering {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 249px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.monitoring {
         background-image: url(../images/layout_sprites.png);
         background-position: -250px 0px;
@@ -385,16 +281,16 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.monitoring {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 249px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.its {
         background-image: url(../images/layout_sprites.png);
-        background-position: -437px -88px;
+        background-position: -437px -111px;
         width: 60px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.its {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 249px; } }
+            background-size: 570px 272px; } }
     .global-menu-new .custom-select-container.small {
       vertical-align: middle; }
       .global-menu-new .custom-select-container.small .btn-custom-select {
@@ -453,8 +349,6 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     transition: all 0.3s ease-in-out;
     /* 오픈 */
     /* service 종류 사이즈 고정 */ }
-    .global-menu-new .btn-custom-select:after {
-      content: ""; }
     .global-menu-new .btn-custom-select:before {
       content: '';
       display: block;
@@ -466,18 +360,22 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       background-color: #000;
       transition: all 0.3s ease-in-out; }
     .global-menu-new .btn-custom-select:after {
+      content: '';
       display: block;
       position: absolute;
       top: 50%;
       right: 17px;
-      margin-top: -4px;
-      height: 9px;
+      margin-top: -4.5px;
+      background-image: url(../images/layout_sprites.png);
+      background-position: -542px -73px;
       width: 14px;
-      font-size: 17px;
-      text-align: left;
-      line-height: 9px;
+      height: 9px;
       transform: rotateX(0deg);
       transition: transform 0.3s ease-in-out; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .global-menu-new .btn-custom-select:after {
+          background-image: url(../images/layout_sprites@2x.png);
+          background-size: 570px 272px; } }
     .global-menu-new .btn-custom-select.is-selected {
       border: 3px solid #000;
       transition: all 0.3s ease-in-out; }
@@ -559,13 +457,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       width: 20px;
       text-indent: -9999px;
       background-image: url(../images/layout_sprites.png);
-      background-position: -34px -148px;
+      background-position: -34px -171px;
       width: 23px;
       height: 27px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .utils .notification {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 249px; } }
+          background-size: 570px 272px; } }
       .global-menu-new .utils .notification:before {
         content: '';
         display: block;
@@ -737,20 +635,20 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         padding: 15px 0;
         background-color: #DADADA; }
         .sub-menus .list-menus > li .list-sub-menus:after {
-          content: ""; }
-        .sub-menus .list-menus > li .list-sub-menus:after {
+          content: '';
           display: block;
           position: absolute;
           top: 0;
           left: 50%;
-          margin-top: -15px;
-          margin-left: -15px;
-          height: 30px;
-          width: 30px;
-          font-size: 23px;
-          color: #F6F6F6;
-          text-align: center;
-          line-height: 30px; }
+          margin-left: -16px;
+          background-image: url(../images/layout_sprites.png);
+          background-position: -396px -88px;
+          width: 32px;
+          height: 15px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .sub-menus .list-menus > li .list-sub-menus:after {
+              background-image: url(../images/layout_sprites@2x.png);
+              background-size: 570px 272px; } }
         .sub-menus .list-menus > li .list-sub-menus > li {
           position: relative;
           overflow: hidden;
@@ -806,13 +704,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       top: 50px;
       left: 20px;
       background-image: url(../images/layout_sprites.png);
-      background-position: 0px -148px;
+      background-position: 0px -171px;
       width: 28px;
       height: 101px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .footer .contents-inner:before {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 249px; } }
+          background-size: 570px 272px; } }
     .footer .contents-inner:after {
       content: '';
       clear: both; }
@@ -831,7 +729,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .footer .service .title {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 249px; } }
+          background-size: 570px 272px; } }
     .footer .service .list-shortcut {
       margin-top: 15px; }
       .footer .service .list-shortcut a {
