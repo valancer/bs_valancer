@@ -29,18 +29,18 @@ body.portal {
 				// portal dashboard
 				.info { float: left; padding-top: 40px; padding-bottom: 0px; width: 100%; border-bottom: 1px solid #E7E7E7;
 					> li { float: left; position: relative;
-						.btn-txt-info { display: block; font-size: 14px; font-weight: 500; color: #000; line-height: 1em; vertical-align: middle; }
+						.btn-txt-info { display: block; font-family: $font-special-stack; font-size: 0.750rem; font-weight: 400; color: #000; line-height: 1em; vertical-align: middle; }
 
 						button.btn-txt-info {
 							@include icon(info, after);
 							&:after { display: inline-block; margin: -2px 0 0 5px; height: 14px; width: 14px; font-size: 14px; color: #959595; line-height: 1em; vertical-align: middle; }
 						}
 
-						.unit { display: block; padding: 0px; height: 46px; font-size: 16px; font-weight: 500; color: #000; line-height: 46px;
-							em { font-size: 38px; font-weight: 400; line-height: 37px; }
+						.unit { display: block; padding: 0px; height: 46px; font-family: $font-special-stack; font-size: 1.000rem; font-weight: 400; color: #000; line-height: 46px;
+							em { font-size: 2.250rem; font-weight: 400; line-height: 37px; }
 
 							&.metering {
-								em { font-size: 26px; }
+								em { font-size: 1.625rem; }
 							}
 						}
 
@@ -54,7 +54,7 @@ body.portal {
 						.title { display: block; font-size: 14px; font-weight: 500; color: #000; line-height: 1em; vertical-align: middle; }
 						
 						.chart { display: block; margin-top: 10px; height: 96px; width: 96px; }
-						.radius { display: block; margin-top: 10px; height: 68px; width: 68px; font-size: 16px; font-weight: 500; line-height: 68px; text-align: center; border-radius: 100%;
+						.radius { display: block; margin-top: 10px; height: 68px; width: 68px; font-family: $font-special-stack; font-size: 1.000rem; font-weight: 400; line-height: 68px; text-align: center; border-radius: 100%;
 							&.normal { color: #0DACEA; border: 5px solid #0DACEA; }
 							&.custom { color: #FFB300; border: 5px solid #FFB300; }
 							&.volume { color: #E74E0F; border: 5px solid #E74E0F; }
@@ -74,13 +74,13 @@ body.portal {
 	// home
 	&.home { padding-top: 0;
 		.home-summary { background: #0994F3 url('/assets/images/bg_portal_home.png') center center no-repeat;
-			.home-summary-inner { margin: 0 auto; padding-top: 250px; height: 510px; width: $contents-width; font-family: $font-special-stack; color: #fff; 
+			.home-summary-inner { box-sizing: border-box; margin: 0 auto; padding-top: 190px; height: 660px; width: $contents-width; font-family: $font-special-stack; color: #fff; 
 				h1 { font-size: 4.375rem; font-weight: 700; line-height: 1.143em; }
 				p { margin-top: 35px; font-size: 1.563rem; font-weight: 400; line-height: 1.200em; }
 			}
 		}
 
-		.list-services { padding-bottom: 50px;
+		.list-services { padding-top: 40px; padding-bottom: 50px;
 			> li { position: relative; padding: 50px 0 50px 0;
 				&:after { content: ''; display: block; position: absolute; top: 50%; left: 660px; }
 
@@ -91,7 +91,7 @@ body.portal {
 
 				.title { font-family: $font-special-stack; font-size: 3.438rem; font-weight: 400; color: #000; line-height: 1.091em; }
 				.sub-title { margin-top: 18px; font-size: 1.250rem; font-weight: 500; color: rgba(0, 0, 0, 0.65); }
-				.description { margin-top: 9px; font-size: 1.250rem; font-weight: 400; color: rgba(0, 0, 0, 0.65); line-height: 1.250em; }
+				.description { margin-top: 9px; font-size: 1.250rem; font-weight: 400; color: rgba(0, 0, 0, 0.4); line-height: 1.250em; }
 
 				.btn-learn-more { display: block; box-sizing: border-box; overflow: hidden; position: relative; margin-top: 20px; height: 40px; width: 40px; font-family: $font-special-stack; color: #000; text-align: center; line-height: 36px; border: 3px solid #000;
 					transition: width 0.3s ease-in-out;

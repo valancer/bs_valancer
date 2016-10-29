@@ -224,7 +224,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .global-menu-new.logout .utils .btns .btn {
       color: #fff;
       border: 2px solid #fff; }
-      .global-menu-new.logout .utils .btns .btn:hover {
+      .global-menu-new.logout .utils .btns .btn.signup {
         color: #0994F3;
         background-color: #fff; }
     .global-menu-new.logout .custom-select-container.small .btn-custom-select {
@@ -542,7 +542,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         text-align: center;
         line-height: 26px;
         border: 2px solid #000; }
-        .global-menu-new .utils .btns .btn:hover {
+        .global-menu-new .utils .btns .btn.signup {
           color: #fff;
           background-color: #000; }
     .global-menu-new .utils .user-menus {
@@ -731,7 +731,8 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           background-image: url(../images/layout_sprites@2x.png);
           background-size: 570px 272px; } }
     .footer .service .list-shortcut {
-      margin-top: 15px; }
+      margin-top: 15px;
+      text-align: left; }
       .footer .service .list-shortcut a {
         font-family: "Montserrat", "Apple SD Gothic", sans-serif;
         font-size: 0.750rem;

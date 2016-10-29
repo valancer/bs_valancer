@@ -21,7 +21,8 @@ $font-special-stack: 'Montserrat', 'Apple SD Gothic', sans-serif;
 		.utils {
 			.btns {
 				.btn { color: #fff; border: 2px solid #fff;
-					&:hover { color: #0994F3; background-color: #fff; }
+					// &:hover { color: #fff; background-color: #0994F3; }
+					&.signup { color: #0994F3; background-color: #fff; }
 				}
 			}
 		}
@@ -144,7 +145,8 @@ $font-special-stack: 'Montserrat', 'Apple SD Gothic', sans-serif;
 
 		.btns { display: inline-block; margin-left: 20px; vertical-align: middle;
 			.btn { display: inline-block; box-sizing: border-box; margin-left: 6px; height: 30px; width: 100px; font-family: $font-special-stack; font-size: 0.875rem; font-weight: 700; color: #000; text-align: center; line-height: 26px; border: 2px solid #000;
-				&:hover { color: #fff; background-color: #000; }
+				// &:hover { color: #fff; background-color: #000; }
+				&.signup { color: #fff; background-color: #000; }
 			}
 		}
 
