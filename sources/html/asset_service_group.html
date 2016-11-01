@@ -78,14 +78,16 @@
 					// info servers
 					$sgContainer.find('.btn-txt-info.servers').on({
 						mouseenter: function(e) {
+							console.log($(this).val());
 							$($(this).val()).popup({
 								type: 'tooltip',
 								tooltipanchor: e.target,
 								vertical: 'top',
-								offsettop: 25,
+								offsettop: -50,
 								horizontal: 'leftedge',
 								transition: '0.3s all 0.1s',
-								autoopen: true
+								autoopen: true,
+								keepfocus: false
 							});
 						},
 						mouseleave: function(e) {
@@ -100,10 +102,11 @@
 								type: 'tooltip',
 								tooltipanchor: e.target,
 								vertical: 'top',
-								offsettop: 25,
+								offsettop: -50,
 								horizontal: 'leftedge',
 								transition: '0.3s all 0.1s',
-								autoopen: true
+								autoopen: true,
+								keepfocus: false
 							});
 						},
 						mouseleave: function(e) {
@@ -119,10 +122,11 @@
 								tooltipanchor: e.target,
 								vertical: 'top',
 								horizontal: 'left',
-								offsettop: 30,
+								offsettop: -40,
 								offsetleft: -260,
 								transition: '0.3s all 0.1s',
-								autoopen: true
+								autoopen: true,
+								keepfocus: false
 							});
 						},
 						mouseleave: function(e) {

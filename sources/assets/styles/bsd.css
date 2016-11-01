@@ -650,7 +650,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       vertical-align: middle; }
     .aggrid-uitls .search input[type=text] {
       height: 20px;
-      width: 30%;
+      width: 50%;
       font-size: 15px;
       font-weight: 500;
       color: #000;
@@ -3706,6 +3706,8 @@ article.contents .submit-btns {
         float: left;
         padding-right: 30px;
         width: 230px; }
+  .box-item.service-group .btn-warning {
+    z-index: 1; }
   .box-item.service-group .info {
     float: left;
     padding-top: 20px;
@@ -4196,7 +4198,7 @@ input[type=submit].btn-normal,
     color: #000;
     text-align: center;
     text-indent: 0px;
-    line-height: 32px; }
+    line-height: 26px; }
   .btn-detail:hover {
     color: #fff;
     background-color: #000; }
