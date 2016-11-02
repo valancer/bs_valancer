@@ -13,11 +13,11 @@ input, textarea, keygen, select, button { }
 
 
 /* contents */
-main { position: relative; display: block; padding-top: 80px; min-height: calc(100% - 60px); }
-article.contents { display: block; min-height: 100%; min-width: $contents-width;
+main { position: relative; display: block; padding-top: 80px; min-height: calc(100% - 80px - 60px); }
+article.contents { display: block; min-width: $contents-width;
 	.title { padding-left: 30px; height: 50px; font-family: $font-base-stack; font-size: 24px; color: #fff; line-height: 50px; background-color: #575757; }
 
-	.contents-inner { position: relative; padding: 0 60px 0 $column-left-width + 40; min-height: 600px; height: 100%; }
+	.contents-inner { position: relative; padding: 0 60px 0 $column-left-width + 40; height: calc(100% - 50px); }
 	.column-left { position: absolute; top: 0; bottom: 0; left: 0; width: $column-left-width; background-color: #F6F6F6; box-shadow: inset -2px 1px 2px 0px rgba(0,0,0,0.10); }
 	.column-right { padding: 25px 0 200px 0; max-width: $column-right-width; background-color: #fff;
 		.page-title { font-size: 20px; font-weight: bold; color: #4A4A4A; }
@@ -64,7 +64,7 @@ article.contents { display: block; min-height: 100%; min-width: $contents-width;
 }
 
 
-.list-company {
+.list-company { overflow: auto; position: absolute; top: 127px; right: 0; bottom: 61px; left: 0;
 	li {
 		.company-item { display: block; box-sizing: border-box; padding: 11px 20px 0; height: 60px; font-size: 14px; line-height: 22px;
 			.name { color: #333; }

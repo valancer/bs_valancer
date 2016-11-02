@@ -81,7 +81,7 @@ body.portal {
 		}
 
 		.list-services { padding-top: 40px; padding-bottom: 50px;
-			> li { position: relative; padding: 50px 0 50px 0;
+			> li { position: relative; padding: 50px 530px 50px 0;
 				&:after { content: ''; display: block; position: absolute; top: 50%; left: 660px; }
 
 				&.asset:after { margin-top: -$sc-asset-feature-height/2; @include retina-sprite($sc-asset-feature-group); }

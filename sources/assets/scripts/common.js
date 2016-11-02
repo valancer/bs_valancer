@@ -29,7 +29,7 @@ function resizeContents() {
 		var title = 50;
 		var content = $('article.contents').height();
 		if( content < main ) {
-			$('article.contents').height(main-title);
+			$('article.contents').height(main);
 		}
 	}
 }

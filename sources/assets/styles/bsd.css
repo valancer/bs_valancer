@@ -5434,7 +5434,7 @@ body.portal {
       padding-bottom: 50px; }
       body.portal.home .list-services > li {
         position: relative;
-        padding: 50px 0 50px 0; }
+        padding: 50px 530px 50px 0; }
         body.portal.home .list-services > li:after {
           content: '';
           display: block;
