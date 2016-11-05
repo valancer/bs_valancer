@@ -2426,6 +2426,7 @@ article.contents {
   display: inline-block;
   float: right;
   position: relative;
+  z-index: 500;
   width: 155px; }
   .multiple-select .btn-filter {
     display: block;
