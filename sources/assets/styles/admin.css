@@ -2431,13 +2431,16 @@ article.contents {
   .multiple-select .btn-filter {
     display: block;
     position: relative;
+    overflow: hidden;
     box-sizing: border-box;
-    padding: 0 0 0 10px;
+    padding: 0 20px 0 10px;
     height: 30px;
     width: 100%;
     font-size: 14px;
     color: #333;
     text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     line-height: 30px;
     background-color: #E1E1E1; }
     .multiple-select .btn-filter:before {
