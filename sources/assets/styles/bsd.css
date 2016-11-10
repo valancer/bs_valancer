@@ -4392,6 +4392,10 @@ input[type=submit].btn-normal,
             .filter-container .items .filter-item .list-filter-items > li .btn-folding.is-opened ~ .list-filter-items {
               display: block;
               height: auto; }
+            .filter-container .items .filter-item .list-filter-items > li .btn-folding + .icheck {
+              max-width: 80%; }
+          .filter-container .items .filter-item .list-filter-items > li .icheck {
+            word-break: break-all; }
           .filter-container .items .filter-item .list-filter-items > li .list-filter-items {
             display: none;
             overflow: hidden;
