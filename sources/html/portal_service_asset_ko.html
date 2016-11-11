@@ -1,0 +1,97 @@
+@@include('./head.html', {
+	"lang": "ko",
+	"title": "Bespin Global"
+})
+<body class="portal sercie-intro">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					<span class="service asset">ASSET MANAGEMENT</span>
+
+					<p class="right">
+						<a href="#" class="btn-normal large">TRY NOW</a>
+					</p>
+				</div>
+			</h1>
+			
+
+			<div class="contents-inner size-fit" style="width: 100%; text-align: center;">
+				<section class="asset-header">
+					<div class="bg">
+						<h2>Cloud와 IDC 환경을 통합한 Hybrid 자산 및 활용 현황 Service Group을 통한 고객 사 서비스 기준의 자산 관리 제공</h2>
+						<dl>
+							<dt>Asset Dashboard</dt>
+							<dd>
+								<p>Cloud, IDC 전체 자원 현황, 상태, 활용 상황 등을 종합, 요약하여 제공</p>
+							</dd>
+
+							<dt>Instance 현황</dt>
+							<dd>
+								<ul>
+									<li>자원 종류별 현황: 수량 및 사용 양(율) 중심</li>
+									<li>자원 활용 현황: CPU, Memory, Disk, Network</li>
+									<li>자원 현황 이력: 자원의 시간/일/주/월별 사용량</li>
+									<li>자원 관리 이력: 자원의 수량 및 활용도 변화를 제공</li>
+								</ul>
+							</dd>
+
+							<dt>Governance</dt>
+							<dd>
+								<ul>
+									<li>자원의 생성과 관리에 대한 규칙 설정 및 관리</li>
+									<li>설정된 규칙에 따른 감사와 위반 사항에 대한 통지</li>
+								</ul>
+							</dd>
+
+							<dt>Report</dt>
+							<dd>
+								<p>현황, 사용량에 대한 보고서 생성 및 발송</p>
+							</dd>
+
+							<dt>IDC</dt>
+							<dd>
+								<ul>
+									<li>Agent 이용 정보 수집.</li>
+									<li>Cloud 자산과 동일한 정보 제공</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</section>
+
+
+				<section class="asset-screenshot">
+					<div class="bg">
+						<h2>Asset Management Dashboard</h2>
+
+						<h3>USAGE</h3>
+						<p>
+							SERVER, DATABASE의 전체 수량과 각 Instance Type 별 수량을 표시합니다.<br>
+							Service Group별 수량과 Region 별 수량을 한 눈에 볼수 있도록 하여 현황 파악에 용이한 서비스를 제공합니다.
+						</p>
+
+						<h3>PERFORMANCE</h3>
+						<p>
+							CPU, MEMORY, VOLUME 전체 Instance에 대한 평균 사용량을 %로 표시 합니다.<br>
+							각 Resource의 사용량은 Service Group을 기준으로 표시하며, Service Group은 사용자가 유연하게 지정할 수 있도록 제공하여 고객의 편리성을 높였습니다.
+						</p>
+					</div>
+				</section>
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

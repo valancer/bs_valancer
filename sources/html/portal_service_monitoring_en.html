@@ -1,0 +1,160 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal sercie-intro">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					<span class="service monitoring">MONITORING DASHBOARD</span>
+
+					<p class="right">
+						<a href="#" class="btn-normal large">TRY NOW</a>
+					</p>
+				</div>
+			</h1>
+			
+
+			<div class="contents-inner size-fit" style="width: 100%; text-align: center;">
+				<section class="monitoring-header">
+					<div class="bg">
+						<h2>
+							Monitoring Information by customizable Service Group to provide a differentiated Insight in service Group perspective
+						</h2>
+
+						<dl>
+							<dt>Service Dashboard</dt>
+							<dd>
+								<ul>
+									<li>Summarized information by Service group</li>
+									<li>Detailed monitoring information by Servers</li>
+   								</ul>
+							</dd>
+
+							<dt>NOC Dashboard</dt>
+							<dd>
+								<ul>
+									<li>Focus on monitoring</li>
+									<li>Alarm information by service/regions</li>
+   								</ul>
+							</dd>
+
+							<dt>Provide analysis on alarm</dt>
+							<dd>
+								<ul>
+									<li>Metric comparison information based on time of alarm</li>
+									<li>Snapshot of current System process on alarm</li>
+   								</ul>
+							</dd>
+
+							<dt>Unification with Workflow</dt>
+							<dd>
+								<ul>
+									<li>Systematic Alarming Process flow with Workflow</li>
+									<li>Information  on alarm/failure and failover</li>
+									<li>Metric statistics by Service and Host</li>
+   								</ul>
+							</dd>
+						</dl>
+					</div>
+				</section>
+
+				<section class="monitoring-screenshot">
+					<div class="bg01">
+						<h2>Monitoring Dashboard</h2>
+
+						<dl>
+							<dt>Total Server</dt>
+							<dd>
+								<p>
+									Show number of managed servers and alarm status with bright color for more visibility.
+								</p>
+							</dd>
+
+							<dt>Storage</dt>
+							<dd>
+								<p>
+									Manage storage (disk) of server and current usage.
+								</p>
+							</dd>
+
+							<dt>Today’s Alarm Info</dt>
+							<dd>
+								<p>
+									Show alarmed server and details on to date.
+								</p>
+							</dd>
+
+							<dt>Usage Top 5 (Line Chart)</dt>
+							<dd>
+								<p>
+									Easily check on Usage of the top 5 servers in most-used order by CPU, Memory, Disk, Queue, Throughout, customized order and time frame.
+								</p>
+							</dd>
+
+							<dt>Service Summary</dt>
+							<dd>
+								<p>
+									Provide overall summary of monitored service with Chart and Graph to monitoring personnel.
+								</p>
+							</dd>
+
+							<dt>Top 5 List</dt>
+							<dd>
+								<p>
+									Monitoring top 5 server in selected-index order, among 5 main index.
+								</p>
+							</dd>
+						</dl>
+					</div>
+
+					<div class="bg02">
+						<h2>Monitoring Dashboard</h2>
+
+						<h3>Alarm</h3>
+						<p>
+							Check Current alarm status of selected service by date and time period. Provide the progress of the alarm and metric information based on the time of the alarm for analysis. 
+						</p>
+						<dl>
+							<dt>Alarm / Custom Alarm</dt>
+							<dd>
+								<p>
+									With alarm list and user alarm list, Users can check alarm status and progress by date/time-period. Opened alarms and customized alarms are in each colored background.
+								</p>
+							</dd>
+
+							<dt>Metric</dt>
+							<dd>
+								<p>
+									Indicate metric alarm from server and verify the status of the server.
+								</p>
+							</dd>
+
+							<dt>CPU / Memory</dt>
+							<dd>
+								<p>
+									Check the CPU and memory usage of the server to provide scaling information with most/least-used time frame.
+								</p>
+							</dd>
+						</dl>
+					</div>
+
+				</section>
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

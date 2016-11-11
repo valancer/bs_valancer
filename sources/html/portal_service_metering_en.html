@@ -1,0 +1,200 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal sercie-intro">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					<span class="service metering">METERING</span>
+
+					<p class="right">
+						<a href="#" class="btn-normal large">TRY NOW</a>
+					</p>
+				</div>
+			</h1>
+			
+
+			<div class="contents-inner size-fit" style="width: 100%; text-align: center;">
+				<section class="metering-header">
+					<div class="bg">
+						<h2>
+							Budget and Cost management by various standards such as department and service unit on Multi Cloud and consolidated billing/account.<br>
+							Cost Saving Recommendation on the basis of current resource data.
+						</h2>
+
+						<dl>
+							<dt>Metering Dashboard</dt>
+							<dd>
+								<ul>
+									<li>Summary of total Cloud cost status and Trend by Infra</li>
+									<li>Summary by service group, cloud product, region, account</li>
+									<li>Notification for Infra-cost, Credit, AWS RI</li>
+								</ul>
+							</dd>
+
+							<dt>Billing &amp; Budget</dt>
+							<dd>
+								<ul>
+									<li>Consolidated billing for Multi-Cloud and MSP service</li>
+									<li>Cost Grouping by Cloud Vendor, Account, Service, Tag</li>
+									<li>Alarm and Notification for monthly/yearly budget allocation by Cloud</li>
+								</ul>
+							</dd>
+
+							<dt>Statistics</dt>
+							<dd>
+								<ul>
+									<li>Statistics for daily, weekly, monthly cost on Cloud infra</li>
+									<li>Various filter, time stamp and Sum/Trends</li>
+								</ul>
+							</dd>
+
+							<dt>Cost Optimization</dt>
+							<dd>
+								<ul>
+									<li>Recommend Right-sizing based on the Performance Usage data of Cloud resource</li>
+									<li>Recommend AWS RI based on Cloud instance data</li>
+									<li>Exception for Optimization and Job History Management</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</section>
+
+				<section class="metering-screenshot">
+					<div class="bg01">
+						<h2>Metering Dashboard</h2>
+						<p>Increased visibility by a chart showing cost of previous, current month and estimates for each Cloud Vendor</p>
+
+						<h3>Metering Dashboard</h3>
+						<dl>
+							<dt>Total Cost for previous month</dt>
+							<dd>
+								<p>
+									Show total cost of service using for previous month.<br>
+									(All Cloud and additional service included)
+								</p>
+							</dd>
+
+							<dt>Current Cost</dt>
+							<dd>
+								<p>
+									Show total cost of current month. (Total amount on current month to date)
+								</p>
+							</dd>
+
+							<dt>Estimates</dt>
+							<dd>
+								<p>
+									Show estimate cost for end of current month. Users can compare estimate with previous month.
+								</p>
+							</dd>
+
+							<dt>Shortcut for Billing History</dt>
+							<dd>
+								<p>
+									Users can easily access from Dashboard to detailed billing information by Shortcut.
+								</p>
+							</dd>
+						</dl>
+					</div>
+
+					<div class="bg02">
+						<h3>Metering Dashboard</h3>
+						<dl>
+							<dt>Current Cost by Service Group</dt>
+							<dd>
+								<p>
+									Show Total cost of all Service Group and non-Service Group
+								</p>
+								<p>
+									Total cost for Computing : Show Computing cost, Network cost, number of instances and increase or decrease from previous month in ratio by Service Group.
+								</p>
+								<p>
+									Shared Cost : Show Cost for Non-Service Group Resource (Compute, Network, Storage, Database, Etc..) and increase or decrease from previous month in ratio.
+								</p>
+							</dd>
+
+							<dt>Shortcuts for detail information</dt>
+							<dd>
+								<p>
+									Users can easily access from Dashboard to detailed information by Shortcut.
+								</p>
+							</dd>
+
+							<dt>Current Cost for Cloud product</dt>
+							<dd>
+								<p>
+									Show the top 5 cloud product in highly-cost order. Increase visibility by showing increase or decrease trends from previous month on a chart.
+								</p>
+							</dd>
+
+							<dt>Current cost by regions</dt>
+							<dd>
+								<p>
+									Show the total cost of top 5 cloud regions in highly-cost order. Increased visibility by showing increase or decrease trends from previous month on a chart.
+								</p>
+							</dd>
+						</dl>
+					</div>
+
+
+					<div class="bg03">
+						<h3>Metering Dashboard</h3>
+						<dl>
+							<dt>Cost by account</dt>
+							<dd>
+								<p>
+									Show increase or decrease trends from previous month by Cloud product.
+								</p>
+							</dd>
+
+							<dt>Budget Status</dt>
+							<dd>
+								<p>
+									Show Status and caparison based on budget planned by Cloud Vendor. Exceeded budget will be shown separately.
+								</p>
+							</dd>
+
+							<dt>Payment History</dt>
+							<dd>
+								<p>
+									Show monthly billing history of charged and paid price and payment status for past 3 months.
+								</p>
+							</dd>
+
+							<dt>Shortcuts for detail information</dt>
+							<dd>
+								<p>
+									Users can easily access from Dashboard to detailed information by Shortcut.
+								</p>
+							</dd>
+
+							<dt>Credit Status</dt>
+							<dd>
+								<p>
+									Show current cost by Cloud Vendor and budget balance.
+								</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

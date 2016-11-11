@@ -1,0 +1,105 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal sercie-intro">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					<span class="service asset">ASSET MANAGEMENT</span>
+
+					<p class="right">
+						<a href="#" class="btn-normal large">TRY NOW</a>
+					</p>
+				</div>
+			</h1>
+			
+
+			<div class="contents-inner size-fit" style="width: 100%; text-align: center;">
+				<section class="asset-header">
+					<div class="bg">
+						<h2>Hybrid (Cloud and IDC environment) Asset and Utilization Status and Customers’ service-based Asset Management via Service Group</h2>
+						<dl>
+							<dt>Asset Dashboard</dt>
+							<dd>
+								<p>Summary of Overall Resource, Current state, Utilization status for Cloud and IDC</p>
+							</dd>
+
+							<dt>Instance status</dt>
+							<dd>
+								<ul>
+									<li>Resource Type: Quantity and Usage</li>
+									<li>Resource Utilization: CPU, Memory, Disk, Network</li>
+									<li>Resource Usage History: hour/day/week/month</li>
+									<li>Resource Management History: Changes in Quantity and Utilization</li>
+								</ul>
+							</dd>
+
+							<dt>Governance</dt>
+							<dd>
+								<ul>
+									<li>Set rules for resources creation and management</li>
+									<li>Audit in accordance with the rules</li>
+									<li>Notice upon violation of rules</li>
+								</ul>
+							</dd>
+
+							<dt>Report</dt>
+							<dd>
+								<p>Create and send reports on usage and status</p>
+							</dd>
+
+							<dt>IDC</dt>
+							<dd>
+								<ul>
+									<li>Use agents to collect data</li>
+									<li>Provide same information as Cloud assets</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</section>
+
+
+				<section class="asset-screenshot">
+					<div class="bg">
+						<h2>Asset Management Dashboard</h2>
+
+						<h3>USAGE</h3>
+						<p>
+							Show entire SERVER, DATABASE in numbers and per each Instance Type Users can check the current use of resource in Service Group and Region at a glance.
+						</p>
+
+						<h3>PERFORMANCE</h3>
+						<p>
+							Show the average usage for CPU, MEMORY and VOLUME of overall instance in percentages(%).<br>
+							Each resource is showed their usage according to their Service Group and the Service Group can be easily modified by users to provide more flexibility.
+						</p>
+					</div>
+				</section>
+<!--
+				<div style="padding: 88px 0 105px 0; text-align: center;">
+					<img src="/assets/images/service_asset_01.png" alt="">
+				</div>
+
+				<div style="padding: 125px 0 137px 0; text-align: center; background-color: #f6f6f6;">
+					<img src="/assets/images/service_asset_02.png" alt="">
+				</div>
+-->
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>
