@@ -1771,13 +1771,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       text-indent: -9999px;
       vertical-align: middle;
       background-image: url(../images/layout_sprites.png);
-      background-position: -312px -88px;
+      background-position: -148px -141px;
       width: 78px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .title .btn-home {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 295px; } }
+          background-size: 570px 272px; } }
     .global-menu-new .title .btn-bsp {
       display: inline-block;
       margin-top: 22px;
@@ -1790,33 +1790,33 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .title .btn-bsp {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 295px; } }
+          background-size: 570px 272px; } }
     .global-menu-new .title .btn-admin {
       display: inline-block;
-      margin-top: 19px;
+      margin-top: 21px;
       text-indent: -9999px;
       vertical-align: middle;
       background-image: url(../images/layout_sprites.png);
-      background-position: -250px -30px;
-      width: 289px;
-      height: 21px; }
+      background-position: -312px -88px;
+      width: 257px;
+      height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .title .btn-admin {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 295px; } }
+          background-size: 570px 272px; } }
   .global-menu-new.logout {
     border-bottom: 0px;
     background-color: transparent;
     transition: all 0.3s ease-in-out; }
     .global-menu-new.logout .title .btn-bsp {
       background-image: url(../images/layout_sprites.png);
-      background-position: 0px -111px;
+      background-position: -250px -30px;
       width: 306px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new.logout .title .btn-bsp {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 295px; } }
+          background-size: 570px 272px; } }
     .global-menu-new.logout .utils .btns .btn {
       color: #fff;
       border: 2px solid #fff; }
@@ -1828,13 +1828,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       border-bottom: 2px solid #fff; }
       .global-menu-new.logout .custom-select-container.small .btn-custom-select:after {
         background-image: url(../images/layout_sprites.png);
-        background-position: -545px -30px;
+        background-position: -542px -73px;
         width: 14px;
         height: 9px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new.logout .custom-select-container.small .btn-custom-select:after {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 295px; } }
+            background-size: 570px 272px; } }
   .global-menu-new .custom-select-container {
     display: inline-block;
     position: relative; }
@@ -1844,13 +1844,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       line-height: 1.3em; }
       .global-menu-new .custom-select-container .txt.service-portal {
         background-image: url(../images/layout_sprites.png);
-        background-position: 0px -134px;
+        background-position: 0px -111px;
         width: 218px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.service-portal {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 295px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.asset-management {
         background-image: url(../images/layout_sprites.png);
         background-position: 0px -58px;
@@ -1859,16 +1859,16 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.asset-management {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 295px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.metering {
         background-image: url(../images/layout_sprites.png);
-        background-position: 0px -164px;
+        background-position: 0px -141px;
         width: 142px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.metering {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 295px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.monitoring {
         background-image: url(../images/layout_sprites.png);
         background-position: -250px 0px;
@@ -1877,16 +1877,16 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.monitoring {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 295px; } }
+            background-size: 570px 272px; } }
       .global-menu-new .custom-select-container .txt.its {
         background-image: url(../images/layout_sprites.png);
-        background-position: -437px -134px;
+        background-position: -437px -111px;
         width: 60px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.its {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 295px; } }
+            background-size: 570px 272px; } }
     .global-menu-new .custom-select-container.small {
       vertical-align: middle; }
       .global-menu-new .custom-select-container.small .btn-custom-select {
@@ -1971,7 +1971,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .btn-custom-select:after {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 295px; } }
+          background-size: 570px 272px; } }
     .global-menu-new .btn-custom-select.is-selected {
       border: 3px solid #000;
       transition: all 0.3s ease-in-out; }
@@ -2053,13 +2053,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       width: 20px;
       text-indent: -9999px;
       background-image: url(../images/layout_sprites.png);
-      background-position: -34px -194px;
+      background-position: -34px -171px;
       width: 23px;
       height: 27px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .utils .notification {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 295px; } }
+          background-size: 570px 272px; } }
       .global-menu-new .utils .notification:before {
         content: '';
         display: block;
@@ -2238,13 +2238,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           left: 50%;
           margin-left: -16px;
           background-image: url(../images/layout_sprites.png);
-          background-position: -396px -88px;
+          background-position: -503px -111px;
           width: 32px;
           height: 15px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .sub-menus .list-menus > li .list-sub-menus:after {
               background-image: url(../images/layout_sprites@2x.png);
-              background-size: 570px 295px; } }
+              background-size: 570px 272px; } }
         .sub-menus .list-menus > li .list-sub-menus > li {
           position: relative;
           overflow: hidden;
@@ -2300,13 +2300,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       top: 50px;
       left: 20px;
       background-image: url(../images/layout_sprites.png);
-      background-position: 0px -194px;
+      background-position: 0px -171px;
       width: 28px;
       height: 101px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .footer .contents-inner:before {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 295px; } }
+          background-size: 570px 272px; } }
     .footer .contents-inner:after {
       content: '';
       clear: both; }
@@ -2325,7 +2325,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .footer .service .title {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 295px; } }
+          background-size: 570px 272px; } }
     .footer .service .list-shortcut {
       margin-top: 15px;
       text-align: left; }
