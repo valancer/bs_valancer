@@ -1777,7 +1777,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .title .btn-home {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 272px; } }
+          background-size: 570px 295px; } }
     .global-menu-new .title .btn-bsp {
       display: inline-block;
       margin-top: 22px;
@@ -1790,20 +1790,33 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .title .btn-bsp {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 272px; } }
+          background-size: 570px 295px; } }
+    .global-menu-new .title .btn-admin {
+      display: inline-block;
+      margin-top: 19px;
+      text-indent: -9999px;
+      vertical-align: middle;
+      background-image: url(../images/layout_sprites.png);
+      background-position: -250px -30px;
+      width: 289px;
+      height: 21px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .global-menu-new .title .btn-admin {
+          background-image: url(../images/layout_sprites@2x.png);
+          background-size: 570px 295px; } }
   .global-menu-new.logout {
     border-bottom: 0px;
     background-color: transparent;
     transition: all 0.3s ease-in-out; }
     .global-menu-new.logout .title .btn-bsp {
       background-image: url(../images/layout_sprites.png);
-      background-position: -250px -30px;
+      background-position: 0px -111px;
       width: 306px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new.logout .title .btn-bsp {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 272px; } }
+          background-size: 570px 295px; } }
     .global-menu-new.logout .utils .btns .btn {
       color: #fff;
       border: 2px solid #fff; }
@@ -1815,13 +1828,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       border-bottom: 2px solid #fff; }
       .global-menu-new.logout .custom-select-container.small .btn-custom-select:after {
         background-image: url(../images/layout_sprites.png);
-        background-position: -542px -58px;
+        background-position: -545px -30px;
         width: 14px;
         height: 9px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new.logout .custom-select-container.small .btn-custom-select:after {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 272px; } }
+            background-size: 570px 295px; } }
   .global-menu-new .custom-select-container {
     display: inline-block;
     position: relative; }
@@ -1831,13 +1844,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       line-height: 1.3em; }
       .global-menu-new .custom-select-container .txt.service-portal {
         background-image: url(../images/layout_sprites.png);
-        background-position: 0px -111px;
+        background-position: 0px -134px;
         width: 218px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.service-portal {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 272px; } }
+            background-size: 570px 295px; } }
       .global-menu-new .custom-select-container .txt.asset-management {
         background-image: url(../images/layout_sprites.png);
         background-position: 0px -58px;
@@ -1846,16 +1859,16 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.asset-management {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 272px; } }
+            background-size: 570px 295px; } }
       .global-menu-new .custom-select-container .txt.metering {
         background-image: url(../images/layout_sprites.png);
-        background-position: 0px -141px;
+        background-position: 0px -164px;
         width: 142px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.metering {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 272px; } }
+            background-size: 570px 295px; } }
       .global-menu-new .custom-select-container .txt.monitoring {
         background-image: url(../images/layout_sprites.png);
         background-position: -250px 0px;
@@ -1864,16 +1877,16 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.monitoring {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 272px; } }
+            background-size: 570px 295px; } }
       .global-menu-new .custom-select-container .txt.its {
         background-image: url(../images/layout_sprites.png);
-        background-position: -437px -111px;
+        background-position: -437px -134px;
         width: 60px;
         height: 24px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .global-menu-new .custom-select-container .txt.its {
             background-image: url(../images/layout_sprites@2x.png);
-            background-size: 570px 272px; } }
+            background-size: 570px 295px; } }
     .global-menu-new .custom-select-container.small {
       vertical-align: middle; }
       .global-menu-new .custom-select-container.small .btn-custom-select {
@@ -1950,7 +1963,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       right: 17px;
       margin-top: -4.5px;
       background-image: url(../images/layout_sprites.png);
-      background-position: -542px -73px;
+      background-position: -542px -58px;
       width: 14px;
       height: 9px;
       transform: rotateX(0deg);
@@ -1958,7 +1971,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .btn-custom-select:after {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 272px; } }
+          background-size: 570px 295px; } }
     .global-menu-new .btn-custom-select.is-selected {
       border: 3px solid #000;
       transition: all 0.3s ease-in-out; }
@@ -2040,13 +2053,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       width: 20px;
       text-indent: -9999px;
       background-image: url(../images/layout_sprites.png);
-      background-position: -34px -171px;
+      background-position: -34px -194px;
       width: 23px;
       height: 27px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .global-menu-new .utils .notification {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 272px; } }
+          background-size: 570px 295px; } }
       .global-menu-new .utils .notification:before {
         content: '';
         display: block;
@@ -2231,7 +2244,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .sub-menus .list-menus > li .list-sub-menus:after {
               background-image: url(../images/layout_sprites@2x.png);
-              background-size: 570px 272px; } }
+              background-size: 570px 295px; } }
         .sub-menus .list-menus > li .list-sub-menus > li {
           position: relative;
           overflow: hidden;
@@ -2287,13 +2300,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       top: 50px;
       left: 20px;
       background-image: url(../images/layout_sprites.png);
-      background-position: 0px -171px;
+      background-position: 0px -194px;
       width: 28px;
       height: 101px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .footer .contents-inner:before {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 272px; } }
+          background-size: 570px 295px; } }
     .footer .contents-inner:after {
       content: '';
       clear: both; }
@@ -2312,7 +2325,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .footer .service .title {
           background-image: url(../images/layout_sprites@2x.png);
-          background-size: 570px 272px; } }
+          background-size: 570px 295px; } }
     .footer .service .list-shortcut {
       margin-top: 15px;
       text-align: left; }
@@ -4392,6 +4405,10 @@ input[type=submit].btn-normal,
             .filter-container .items .filter-item .list-filter-items > li .btn-folding.is-opened ~ .list-filter-items {
               display: block;
               height: auto; }
+            .filter-container .items .filter-item .list-filter-items > li .btn-folding + .icheck {
+              max-width: 80%; }
+          .filter-container .items .filter-item .list-filter-items > li .icheck {
+            word-break: break-all; }
           .filter-container .items .filter-item .list-filter-items > li .list-filter-items {
             display: none;
             overflow: hidden;
@@ -5559,6 +5576,152 @@ body.portal {
               color: #fff; }
         body.portal.home .list-services > li + li {
           border-top: 1px solid rgba(0, 0, 0, 0.2); }
+  body.portal.sercie-intro .asset-header {
+    padding: 88px 0 105px 0; }
+    body.portal.sercie-intro .asset-header .bg {
+      height: 674px;
+      background: url("/assets/images/service_asset_01_en.png") center top no-repeat; }
+      body.portal.sercie-intro .asset-header .bg * {
+        display: none; }
+  body.portal.sercie-intro .asset-screenshot {
+    padding: 125px 0 137px 0;
+    background-color: #f6f6f6; }
+    body.portal.sercie-intro .asset-screenshot .bg {
+      height: 732px;
+      background: url("/assets/images/service_asset_02_en.png") center top no-repeat; }
+      body.portal.sercie-intro .asset-screenshot .bg * {
+        display: none; }
+  body.portal.sercie-intro .metering-header {
+    padding: 88px 0 105px 0; }
+    body.portal.sercie-intro .metering-header .bg {
+      height: 740px;
+      background: url("/assets/images/service_metering_01_en.png") center top no-repeat; }
+      body.portal.sercie-intro .metering-header .bg * {
+        display: none; }
+  body.portal.sercie-intro .metering-screenshot {
+    padding: 145px 0 137px 0;
+    text-align: center;
+    background-color: #f6f6f6; }
+    body.portal.sercie-intro .metering-screenshot .bg01 {
+      height: 631px;
+      background: url("/assets/images/service_metering_02_en.png") center top no-repeat; }
+      body.portal.sercie-intro .metering-screenshot .bg01 * {
+        display: none; }
+    body.portal.sercie-intro .metering-screenshot .bg02 {
+      position: relative;
+      margin-top: 120px;
+      padding: 120px 0;
+      height: 827px;
+      background: url("/assets/images/service_metering_03_en.png") center center no-repeat; }
+      body.portal.sercie-intro .metering-screenshot .bg02:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -600px;
+        height: 1px;
+        width: 1200px;
+        background-color: #E4E4E4; }
+      body.portal.sercie-intro .metering-screenshot .bg02 * {
+        display: none; }
+    body.portal.sercie-intro .metering-screenshot .bg03 {
+      position: relative;
+      margin-top: 120px;
+      padding-top: 120px;
+      height: 764px;
+      background: url("/assets/images/service_metering_04_en.png") center bottom no-repeat; }
+      body.portal.sercie-intro .metering-screenshot .bg03:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -600px;
+        height: 1px;
+        width: 1200px;
+        background-color: #E4E4E4; }
+      body.portal.sercie-intro .metering-screenshot .bg03 * {
+        display: none; }
+  body.portal.sercie-intro .monitoring-header {
+    padding: 88px 0 105px 0; }
+    body.portal.sercie-intro .monitoring-header .bg {
+      height: 664px;
+      background: url("/assets/images/service_monitoring_01_en.png") center top no-repeat; }
+      body.portal.sercie-intro .monitoring-header .bg * {
+        display: none; }
+  body.portal.sercie-intro .monitoring-screenshot {
+    padding: 145px 0 137px 0;
+    background-color: #f6f6f6; }
+    body.portal.sercie-intro .monitoring-screenshot .bg01 {
+      height: 821px;
+      background: url("/assets/images/service_monitoring_02_en.png") center top no-repeat; }
+      body.portal.sercie-intro .monitoring-screenshot .bg01 * {
+        display: none; }
+    body.portal.sercie-intro .monitoring-screenshot .bg02 {
+      position: relative;
+      margin-top: 120px;
+      padding-top: 120px;
+      height: 740px;
+      background: url("/assets/images/service_monitoring_03_en.png") center bottom no-repeat; }
+      body.portal.sercie-intro .monitoring-screenshot .bg02:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -600px;
+        height: 1px;
+        width: 1200px;
+        background-color: #E4E4E4; }
+      body.portal.sercie-intro .monitoring-screenshot .bg02 * {
+        display: none; }
+  [lang=ko] body.portal.sercie-intro .asset-header .bg {
+    height: 657px;
+    background-image: url("/assets/images/service_asset_01_ko.png"); }
+  [lang=ko] body.portal.sercie-intro .asset-screenshot .bg {
+    height: 732px;
+    background-image: url("/assets/images/service_asset_02_ko.png"); }
+  [lang=ko] body.portal.sercie-intro .metering-header .bg {
+    height: 682px;
+    background-image: url("/assets/images/service_metering_01_ko.png"); }
+  [lang=ko] body.portal.sercie-intro .metering-screenshot .bg01 {
+    background-image: url("/assets/images/service_metering_02_ko.png"); }
+  [lang=ko] body.portal.sercie-intro .metering-screenshot .bg02 {
+    background-image: url("/assets/images/service_metering_03_ko.png"); }
+  [lang=ko] body.portal.sercie-intro .metering-screenshot .bg03 {
+    background-image: url("/assets/images/service_metering_04_ko.png"); }
+  [lang=ko] body.portal.sercie-intro .monitoring-header .bg {
+    height: 691px;
+    background-image: url("/assets/images/service_monitoring_01_ko.png"); }
+  [lang=ko] body.portal.sercie-intro .monitoring-screenshot .bg01 {
+    height: 845px;
+    background-image: url("/assets/images/service_monitoring_02_ko.png"); }
+  [lang=ko] body.portal.sercie-intro .monitoring-screenshot .bg02 {
+    background-image: url("/assets/images/service_monitoring_03_ko.png"); }
+  [lang=zh] body.portal.sercie-intro .asset-header .bg {
+    height: 676px;
+    background-image: url("/assets/images/service_asset_01_zh.png"); }
+  [lang=zh] body.portal.sercie-intro .asset-screenshot .bg {
+    height: 733px;
+    background-image: url("/assets/images/service_asset_02_zh.png"); }
+  [lang=zh] body.portal.sercie-intro .metering-header .bg {
+    height: 714px;
+    background-image: url("/assets/images/service_metering_01_zh.png"); }
+  [lang=zh] body.portal.sercie-intro .metering-screenshot .bg01 {
+    background-image: url("/assets/images/service_metering_02_zh.png"); }
+  [lang=zh] body.portal.sercie-intro .metering-screenshot .bg02 {
+    background-image: url("/assets/images/service_metering_03_zh.png"); }
+  [lang=zh] body.portal.sercie-intro .metering-screenshot .bg03 {
+    background-image: url("/assets/images/service_metering_04_zh.png"); }
+  [lang=zh] body.portal.sercie-intro .monitoring-header .bg {
+    height: 664px;
+    background-image: url("/assets/images/service_monitoring_01_zh.png"); }
+  [lang=zh] body.portal.sercie-intro .monitoring-screenshot .bg01 {
+    height: 848px;
+    background-image: url("/assets/images/service_monitoring_02_zh.png"); }
+  [lang=zh] body.portal.sercie-intro .monitoring-screenshot .bg02 {
+    background-image: url("/assets/images/service_monitoring_03_zh.png"); }
 
 body.asset .chart-container {
   clear: both;

@@ -1,0 +1,199 @@
+@@include('./head.html', {
+	"lang": "ko",
+	"title": "Bespin Global"
+})
+<body class="portal sercie-intro">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					<span class="service metering">METERING</span>
+
+					<p class="right">
+						<a href="#" class="btn-normal large">TRY NOW</a>
+					</p>
+				</div>
+			</h1>
+			
+
+			<div class="contents-inner size-fit" style="width: 100%; text-align: center;">
+				<section class="metering-header">
+					<div class="bg">
+						<h2>
+							Multi Cloud 및 Account 통합 Billing을 부서와 서비스 단위의 다양한 기준으로 예산 및 비용 관리가 가능하며, 자원 사용 현황 Data를 기반으로 비용 절감 추천 기능을 제공.
+						</h2>
+
+						<dl>
+							<dt>Metering Dashboard</dt>
+							<dd>
+								<ul>
+									<li>전체 Cloud 인프라별 비용 현황 및 Trend 요약</li>
+									<li>서비스 그룹, Cloud 상품별, 지역별, 계정별 요약</li>
+									<li>인프라 예산, Credit, AWS RI 관련 Notification</li>
+								</ul>
+							</dd>
+
+							<dt>Billing &amp; Budget</dt>
+							<dd>
+								<ul>
+									<li>Multi-Cloud 및 MSP 서비스 통합 빌링</li>
+									<li>Cloud Vendor별, 계정별, 서비스별, Tag별 비용 그룹핑</li>
+									<li>Cloud별 연간, 월간 예산 편성 및 경고/알람 관리</li>
+								</ul>
+							</dd>
+
+							<dt>Statistics</dt>
+							<dd>
+								<ul>
+									<li>Cloud 인프라의 일간, 주간, 월간 비용 통계</li>
+									<li>다양한 Filter 및 기간 조회 제공, 합계/추세 보기</li>
+								</ul>
+							</dd>
+
+							<dt>Cost Optimization</dt>
+							<dd>
+								<ul>
+									<li>Cloud 자원의 Performance Usage Data 기반의 Right-Sizing 추천</li>
+									<li>Cloud Instance 활용 Data 기반의 AWS RI 추천</li>
+									<li>Optimization 예외 처리 및 작업 지시서 관리</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</section>
+
+				<section class="metering-screenshot">
+					<div class="bg01">
+						<h2>Metering Dashboard</h2>
+						<p>Cloud Vendor별로 이전 달, 이번 달, 예상 비용을 차트로 표현하여 가시성을 높였습니다.</p>
+
+						<h3>Metering Dashboard</h3>
+						<dl>
+							<dt>전달 비용 총액</dt>
+							<dd>
+								<p>
+									가입 되어진 전체 서비스를 당월 기준으로 이전 월 전체의 사용 금액을 보여 줍니다.<br>
+									(Cloud 서비스, 부가 서비스 모두 포함 금액)
+								</p>
+							</dd>
+
+							<dt>이번 달 현재 비용</dt>
+							<dd>
+								<p>
+									당월에 대한 전체 사용 금액을 보여 줍니다.  (당월 기준으로 현재 일까지의 금액)
+								</p>
+							</dd>
+
+							<dt>이번 달 예상 비용</dt>
+							<dd>
+								<p>
+									당월에 대한 전체 사용 금액을 보여 줍니다. (당월 기준으로 현재 일까지의 금액)
+								</p>
+							</dd>
+
+							<dt>Cloud Vendor별 Chart</dt>
+							<dd>
+								<p>
+									Cloud Vendor별 로 이전 달, 이번 달, 예상 비용을 차트로 표현하여 가시성을 높였습니다.
+								</p>
+							</dd>
+						</dl>
+					</div>
+
+					<div class="bg02">
+						<h3>Metering Dashboard</h3>
+						<dl>
+							<dt>서비스 그룹별 현재 비용</dt>
+							<dd>
+								<p>
+									전체 Service Group의 비용 합계와 Service Group에 속하지 않은 자원의 비용 합계를 보여 줍니다.
+								</p>
+								<p>
+									전체 Computing 비용 : Service Group별로 Computing, Network 비용 및 전달 동일 기간대비 증감 율,  Instance 수량을 보여 줍니다.
+								</p>
+								<p>
+									공유 비용 : Service Group에 속하지 않은 Resource(Compute, Network, Storage, Database, Etc)의 비용 및 전달 동일 기간 대비 증감 율을 보여 줍니다.
+								</p>
+							</dd>
+
+							<dt>상세 내역 바로 가기</dt>
+							<dd>
+								<p>
+									Dashboard에서 상세 내역을 보기 위한 바로 가기 기능을 제공 하여 사용자의 편리성을 높였습니다.
+								</p>
+							</dd>
+
+							<dt>Cloud 상품별 현재 비용</dt>
+							<dd>
+								<p>
+									Cloud 상품 별 사용 비용 높은 순으로 Top 5의 당월 사용 비용 합계를 보여 줍니다. 이전 달 동일기간 대비 사용 비용 추이를 차트로 표현하여 증감 비용에 대한 인지성을 높였습니다.
+								</p>
+							</dd>
+
+							<dt>지역별 현재 비용</dt>
+							<dd>
+								<p>
+									Cloud 지역 별 사용 비용 높은 순으로 Top 5의 당월 사용 비용 합계를 보여 줍니다. 이전 달 동일기간 대비 사용 비용 추이를 차트로 표현하여 증감 비용에 대한 인지 성을 높였습니다. 
+								</p>
+							</dd>
+						</dl>
+					</div>
+
+
+					<div class="bg03">
+						<h3>Metering Dashboard</h3>
+						<dl>
+							<dt>계정 별 비용</dt>
+							<dd>
+								<p>
+									Cloud 상품 별 당월 비용 합계와 이전 달 동일 기간 대비 사용 증감 율을 표시 합니다.
+								</p>
+							</dd>
+
+							<dt>예산 현황</dt>
+							<dd>
+								<p>
+									Cloud Vender별 Setting한 예산을 기준으로 현재 사용 비용을 표시하고 상태를 보여줍니다. 예산에서 초과 된 경우, 별도로 표시 됩니다.
+								</p>
+							</dd>
+
+							<dt>납부 내역</dt>
+							<dd>
+								<p>
+									월별 (당월 기준, 전월, 전전월) 청구 금액과 납부 금액, 납부 상태를 보여 줍니다.
+								</p>
+							</dd>
+
+							<dt>상세 내역 바로 가기</dt>
+							<dd>
+								<p>
+									Dashboard에서 상세 내역을 보기 위한 바로 가기 기능을 제공 하여 사용자의 편리성을 높였습니다.
+								</p>
+							</dd>
+
+							<dt>크레딧 현황</dt>
+							<dd>
+								<p>
+									Cloud Vender별 현재 사용 비용과 예산 대비 잔액을 보여줍니다.
+								</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

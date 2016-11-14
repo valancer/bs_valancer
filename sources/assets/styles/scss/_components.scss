@@ -794,7 +794,10 @@ input[type=submit].btn-normal,
 							&:after { transform: rotateX( 0deg ); transition-duration: 0.3s; }
 						}
 						&.is-opened ~ .list-filter-items { display: block; height: auto;  }
+
+						+ .icheck { max-width: 80%; }
 					}
+					.icheck { word-break: break-all; }
 
 					.list-filter-items { display: none; overflow: hidden; margin: 0px 0 5px 25px; padding-bottom: 0; height: 0;
 						> li { display: block;

@@ -1,0 +1,97 @@
+@@include('./head.html', {
+	"lang": "zh",
+	"title": "Bespin Global"
+})
+<body class="portal sercie-intro">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					<span class="service asset">资产托管</span>
+
+					<p class="right">
+						<a href="#" class="btn-normal large">TRY NOW</a>
+					</p>
+				</div>
+			</h1>
+			
+
+			<div class="contents-inner size-fit" style="width: 100%; text-align: center;">
+				<section class="asset-header">
+					<div class="bg">
+						<h2>提供整合云及IDC环境的混合资产及使用状况， 并且通过服务组管理基于组的客户服务资产。</h2>
+						<dl>
+							<dt>资产仪表板</dt>
+							<dd>
+								<p>总结概括云资源、IDC及所有资源的情况、状态及利用现状等。</p>
+							</dd>
+
+							<dt>实例 现状</dt>
+							<dd>
+								<ul>
+									<li>各种资源情况：数量及使用量（率）为主。</li>
+									<li>使用资源情况：CPU、内存、硬盘、网络。</li>
+									<li>资源情况历史记录：每时间/日/周/月的资源利用量。</li>
+									<li>资源管理历史记录：提供资源数量及利用率的变化。</li>
+								</ul>
+							</dd>
+
+							<dt>管理</dt>
+							<dd>
+								<ul>
+									<li>设定资源创建和管理资源的规则。</li>
+									<li>基于规则的监控审核及对于违反事项通知。</li>
+								</ul>
+							</dd>
+
+							<dt>报告</dt>
+							<dd>
+								<p>新建及发送关于现状、使用量的报告书。</p>
+							</dd>
+
+							<dt>IDC</dt>
+							<dd>
+								<ul>
+									<li>使用代理进行数据收集。</li>
+									<li>提供与云资产相似的信息</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</section>
+
+
+				<section class="asset-screenshot">
+					<div class="bg">
+						<h2>资产管理仪表板</h2>
+
+						<h3>使用量</h3>
+						<p>
+							显示服务器、数据库的整个数量和每个实例数量。<br>
+							因在一个页面显示确认每个服务组和每个区域的数量，能容易把握使用情况。
+						</p>
+
+						<h3>性能</h3>
+						<p>
+							用%显示CPU、内存、数据卷等整个实例的平均使用量。<br>
+							以服务组为准标识各个资源的使用量，并且提供便于指定的服务组，提高了便利性
+						</p>
+					</div>
+				</section>
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

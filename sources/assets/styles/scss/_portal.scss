@@ -122,4 +122,95 @@ body.portal {
 	}
 
 
+	// 서비스 소개(default : en)
+	&.sercie-intro {
+		.asset-header { padding: 88px 0 105px 0;
+			.bg { height: 674px; background: url('/assets/images/service_asset_01_en.png') center top no-repeat;
+				* { display: none; }
+			}
+		}
+		.asset-screenshot { padding: 125px 0 137px 0; background-color: #f6f6f6;
+			.bg { height: 732px; background: url('/assets/images/service_asset_02_en.png') center top no-repeat;
+				* { display: none; }
+			}
+		}
+
+		.metering-header { padding: 88px 0 105px 0;
+			.bg { height: 740px; background: url('/assets/images/service_metering_01_en.png') center top no-repeat;
+				* { display: none; }
+			}
+		}
+		.metering-screenshot { padding: 145px 0 137px 0; text-align: center; background-color: #f6f6f6;
+			.bg01 { height: 631px; background: url('/assets/images/service_metering_02_en.png') center top no-repeat;
+				* { display: none; }
+			}
+			.bg02 { position: relative; margin-top: 120px; padding: 120px 0; height: 827px; background: url('/assets/images/service_metering_03_en.png') center center no-repeat;
+				&:before { content: ''; display: block; position: absolute; top: 0; left: 50%; margin-left: -600px; height: 1px; width: 1200px; background-color: #E4E4E4; }
+				* { display: none; }
+			}
+			.bg03 { position: relative; margin-top: 120px; padding-top: 120px; height: 764px; background: url('/assets/images/service_metering_04_en.png') center bottom no-repeat;
+				&:before { content: ''; display: block; position: absolute; top: 0; left: 50%; margin-left: -600px; height: 1px; width: 1200px; background-color: #E4E4E4; }
+				* { display: none; }
+			}
+		}
+
+
+		.monitoring-header { padding: 88px 0 105px 0;
+			.bg { height: 664px; background: url('/assets/images/service_monitoring_01_en.png') center top no-repeat;
+				* { display: none; }
+			}
+		}
+		.monitoring-screenshot { padding: 145px 0 137px 0; background-color: #f6f6f6;
+			.bg01 { height: 821px; background: url('/assets/images/service_monitoring_02_en.png') center top no-repeat;
+				* { display: none; }
+			}
+			.bg02 { position: relative; margin-top: 120px; padding-top: 120px; height: 740px; background: url('/assets/images/service_monitoring_03_en.png') center bottom no-repeat;
+				&:before { content: ''; display: block; position: absolute; top: 0; left: 50%; margin-left: -600px; height: 1px; width: 1200px; background-color: #E4E4E4; }
+				* { display: none; }
+			}
+		}
+
+		[lang=ko] & {
+			.asset-header .bg { height: 657px; background-image: url('/assets/images/service_asset_01_ko.png'); }
+			.asset-screenshot .bg { height: 732px; background-image: url('/assets/images/service_asset_02_ko.png'); }
+
+			.metering-header .bg { height: 682px; background-image: url('/assets/images/service_metering_01_ko.png'); }
+			.metering-screenshot {
+				.bg01 { background-image: url('/assets/images/service_metering_02_ko.png'); }
+				.bg02 { background-image: url('/assets/images/service_metering_03_ko.png'); }
+				.bg03 { background-image: url('/assets/images/service_metering_04_ko.png'); }
+			}
+
+			.monitoring-header .bg { height: 691px; background-image: url('/assets/images/service_monitoring_01_ko.png'); }
+			.monitoring-screenshot {
+				.bg01 { height: 845px; background-image: url('/assets/images/service_monitoring_02_ko.png'); }
+				.bg02 { background-image: url('/assets/images/service_monitoring_03_ko.png'); }
+			}
+		}
+
+		[lang=zh] & {
+			.asset-header .bg { height: 676px; background-image: url('/assets/images/service_asset_01_zh.png'); }
+			.asset-screenshot .bg { height: 733px; background-image: url('/assets/images/service_asset_02_zh.png'); }
+
+			.metering-header .bg { height: 714px; background-image: url('/assets/images/service_metering_01_zh.png'); }
+			.metering-screenshot {
+				.bg01 { background-image: url('/assets/images/service_metering_02_zh.png'); }
+				.bg02 { background-image: url('/assets/images/service_metering_03_zh.png'); }
+				.bg03 { background-image: url('/assets/images/service_metering_04_zh.png'); }
+			}
+
+			.monitoring-header .bg { height: 664px; background-image: url('/assets/images/service_monitoring_01_zh.png'); }
+			.monitoring-screenshot {
+				.bg01 { height: 848px; background-image: url('/assets/images/service_monitoring_02_zh.png'); }
+				.bg02 { background-image: url('/assets/images/service_monitoring_03_zh.png'); }
+			}
+		}
+
+
+		
+
+	}
+
+
+
 }

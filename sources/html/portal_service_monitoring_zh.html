@@ -1,0 +1,160 @@
+@@include('./head.html', {
+	"lang": "zh",
+	"title": "Bespin Global"
+})
+<body class="portal sercie-intro">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<h1 class="title">
+				<div class="inner">
+					<span class="service monitoring">监控仪表板</span>
+
+					<p class="right">
+						<a href="#" class="btn-normal large">TRY NOW</a>
+					</p>
+				</div>
+			</h1>
+			
+
+			<div class="contents-inner size-fit" style="width: 100%; text-align: center;">
+				<section class="monitoring-header">
+					<div class="bg">
+						<h2>
+							根据客制化服务组的监控信息，从服务组的角度提供一个差别化的视角。
+						</h2>
+
+						<dl>
+							<dt>服务仪表盘</dt>
+							<dd>
+								<ul>
+									<li>服务组信息汇总</li>
+									<li>查询每台服务器的监控信息</li>
+         						</ul>
+							</dd>
+
+							<dt>NOC仪表</dt>
+							<dd>
+								<ul>
+									<li>重点监控</li>
+									<li>服务/区域警报信息</li>
+         						</ul>
+							</dd>
+
+							<dt>发生警报时，提供分析信息</dt>
+							<dd>
+								<ul>
+									<li>基于警报时间，度量比较信息</li>
+									<li>发生警报时，提供当前系统进程的快照</li>
+   								</ul>
+							</dd>
+
+							<dt>统一工作流</dt>
+							<dd>
+								<ul>
+									<li>链接与工作流的系统化警报流程</li>
+									<li>关于警报/故障及措施的信息</li>
+									<li>服务和主机的度量统计信息</li>
+   								</ul>
+							</dd>
+						</dl>
+					</div>
+				</section>
+
+				<section class="monitoring-screenshot">
+					<div class="bg01">
+						<h2>监控仪表板</h2>
+
+						<dl>
+							<dt>服务器总数</dt>
+							<dd>
+								<p>
+									用明亮的颜色高可见性的显示管理的服务器台数和警报状态。
+								</p>
+							</dd>
+
+							<dt>存储</dt>
+							<dd>
+								<p>
+									管理服务器的存储（磁盘）和近期的使用量。
+								</p>
+							</dd>
+
+							<dt>当日的警报信息</dt>
+							<dd>
+								<p>
+									显示当日所发生的警报及有关信息。
+								</p>
+							</dd>
+
+							<dt>前5名的使用信息(折线图)</dt>
+							<dd>
+								<p>
+									根据CPU、内存、硬盘、队列，纵观使用量排名前5的服务器，轻易的检查服务器变动趋势，并且可按照用户需求的排列方式及期间，进行设定及确认。
+								</p>
+							</dd>
+
+							<dt>服务概述</dt>
+							<dd>
+								<p>
+									通过图标和曲线图显示服务管理的信息和数值，从而管理服务的整体情况，有效的提供监控人员所需的信息。
+								</p>
+							</dd>
+
+							<dt>前5名列表</dt>
+							<dd>
+								<p>
+									根据5个主要指标中选定的指标为准，监控前5名的服务器现状。
+								</p>
+							</dd>
+						</dl>
+					</div>
+
+					<div class="bg02">
+						<h2>监控仪表板</h2>
+
+						<h3>警报</h3>
+						<p>
+							通过日期和时间周期为单位查询所选服务的警报发生现状，基于警报时间，分析警报进程情况和发生原因，提供度量信息。
+						</p>
+						<dl>
+							<dt>警报 / 自定警报</dt>
+							<dd>
+								<p>
+									显示警报列表和用户警报列表，用户可通过日期和时间期间查询警报状态和进程。并且公开的警报和自定警报用不同的背景颜色进行显示。
+								</p>
+							</dd>
+
+							<dt>度量</dt>
+							<dd>
+								<p>
+									显示在服务器上发生的度量警报，检查服务器状态。
+								</p>
+							</dd>
+
+							<dt>CPU / 内存</dt>
+							<dd>
+								<p>
+									显示不同时间段的服务器CPU及内存使用量，确认使用量的高峰期和低谷期，并且提供为调整规模所需的信息。
+								</p>
+							</dd>
+						</dl>
+					</div>
+
+				</section>
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>
