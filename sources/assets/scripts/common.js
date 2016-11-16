@@ -30,6 +30,8 @@ function resizeContents() {
 		var content = $('article.contents').height();
 		if( content < main ) {
 			$('article.contents').height(main);
+		} else {
+			$('article.contents').height("auto");
 		}
 	}
 }

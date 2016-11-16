@@ -157,7 +157,7 @@ div {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .portal article.contents h1.title .service.asset:before, .portal article.contents h1.title .service.metering:before, .portal article.contents h1.title .service.monitoring:before, .popover .point:before, .global-shortcuts .type-thumbnail > li button.dashboard:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li button.metering:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li button.asset:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li button.monitoring:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li button.workflow:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-text.edit:before, .btn-text.cancel:before, .btn-text.save-update:before, .btn-text.size-view:before, .btn-text.size-view.default:before, input[type=submit].btn-normal.download:before,
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .portal article.contents h1.title .service.asset:before, .portal article.contents h1.title .service.metering:before, .portal article.contents h1.title .service.monitoring:before, .portal article.contents h1.title .service.its:before, .popover .point:before, .global-shortcuts .type-thumbnail > li button.dashboard:before, .global-shortcuts .type-thumbnail > li a.dashboard:before, .global-shortcuts .type-thumbnail > li button.metering:before, .global-shortcuts .type-thumbnail > li a.metering:before, .global-shortcuts .type-thumbnail > li button.asset:before, .global-shortcuts .type-thumbnail > li a.asset:before, .global-shortcuts .type-thumbnail > li button.monitoring:before, .global-shortcuts .type-thumbnail > li a.monitoring:before, .global-shortcuts .type-thumbnail > li button.workflow:before, .global-shortcuts .type-thumbnail > li a.workflow:before, .accordion .btn-folding:after, .datepicker:after, .box-item.service-group .info > li .btn-txt-info:after, .all-checked:after, .btn-settings:before, .btn-text.reset:before, .btn-text.show-hide:before, .btn-text.refresh:before, .btn-text.export:before, .btn-text.edit:before, .btn-text.cancel:before, .btn-text.save-update:before, .btn-text.size-view:before, .btn-text.size-view.default:before, input[type=submit].btn-normal.download:before,
 .btn-normal.download:before, input[type=submit].btn-normal.icon-its:before,
 .btn-normal.icon-its:before, .btn-close:before, .btn-warning:before, .btn-info:before, .btn-edit:before, .btn-detail:before, .btn-back:before, .filter-container .btn-status:after, .filter-container .results > .selected:before, .filter-container .items .filter-item .list-filter-items > li .btn-folding:after, .warning-container:before, .warning-container .btn-folding:after, .list-users-search .search:before, .login-container .invalid-message:before, .forms .invalid-message:before, .forms .contactus.phone:before, .forms .contactus.email:before, .chart.none p:before, .chart-container .slick-arrow:before, .page-no-data:before, body.portal.dashboard .box-item.dashboard .info > li button.btn-txt-info:after, body.portal.home .list-services > li .btn-learn-more:after, body.asset.dashboard .box-item > .title.perfomance:after, body.asset.dashboard article.contents .none-contents p:before, body.asset.dashboard .asset-performance-box > .title:after, body.asset.service-group .box-item .title:before, body.metering .multiple-select .btn-filter:before, body.metering .growth:before, body.metering .btn-goto:before, body.metering .box-item .btn-warning:before, body.metering .box-item .budget .chart.none p:before, body.metering .tbl-data-v .btn-txt-info:after, body.metering.dashboard article.contents .none-contents p:before, body.metering.dashboard article.contents .tbl-payment-summary .btn-txt-info:after, body.metering.dashboard article.contents .tbl-payment-summary .btn-shared:before, body.metering.dashboard article.contents .list-type-tbl .pay-status.unpaid:before, body.metering.dashboard article.contents .list-type-tbl .pay-status.overdue:before, body.metering.dashboard article.contents .list-type-tbl .pay-status.paid:before {
   font-family: "Icons";
@@ -2593,7 +2593,8 @@ article.contents .column-right {
   .portal article.contents h1.title .service {
     display: block;
     position: relative;
-    font-size: 36px;
+    font-size: 2.125rem;
+    font-weight: 400;
     line-height: 100px; }
     .portal article.contents h1.title .service:before {
       display: inline-block;
@@ -2616,6 +2617,10 @@ article.contents .column-right {
     .portal article.contents h1.title .service.monitoring:before {
       content: ""; }
     .portal article.contents h1.title .service.monitoring:before {
+      font-size: 42px; }
+    .portal article.contents h1.title .service.its:before {
+      content: ""; }
+    .portal article.contents h1.title .service.its:before {
       font-size: 42px; }
   .portal article.contents h1.title .last-logged {
     display: block;
@@ -4780,6 +4785,27 @@ input[type=submit].btn-normal,
       .login-container .utils > li a:hover {
         color: #fff; }
 
+body.login {
+  padding: 0;
+  background-color: #F2F2F2; }
+
+.login-container-v2 {
+  min-height: 1200px;
+  height: 100%;
+  background: url(/assets/images/bg_login.png) center bottom no-repeat; }
+  .login-container-v2 h1 {
+    display: none; }
+  .login-container-v2 .login-forms {
+    display: block;
+    position: fixed;
+    top: 27.5%;
+    bottom: 39.166666666666667%;
+    left: 50%;
+    margin-left: -205px;
+    height: 400px;
+    width: 410px;
+    background-color: #0f0; }
+
 /**
 	setup forms
 **/
@@ -5676,6 +5702,21 @@ body.portal {
         background-color: #E4E4E4; }
       body.portal.sercie-intro .monitoring-screenshot .bg02 * {
         display: none; }
+  body.portal.sercie-intro .its-header {
+    padding: 88px 0 105px 0; }
+    body.portal.sercie-intro .its-header .bg {
+      height: 897px;
+      background: url("/assets/images/service_its_01_en.png") center top no-repeat; }
+      body.portal.sercie-intro .its-header .bg * {
+        display: none; }
+  body.portal.sercie-intro .its-screenshot {
+    padding: 125px 0 137px 0;
+    background-color: #f6f6f6; }
+    body.portal.sercie-intro .its-screenshot .bg {
+      height: 667px;
+      background: url("/assets/images/service_its_02_en.png") center top no-repeat; }
+      body.portal.sercie-intro .its-screenshot .bg * {
+        display: none; }
   [lang=ko] body.portal.sercie-intro .asset-header .bg {
     height: 657px;
     background-image: url("/assets/images/service_asset_01_ko.png"); }
@@ -5699,6 +5740,11 @@ body.portal {
     background-image: url("/assets/images/service_monitoring_02_ko.png"); }
   [lang=ko] body.portal.sercie-intro .monitoring-screenshot .bg02 {
     background-image: url("/assets/images/service_monitoring_03_ko.png"); }
+  [lang=ko] body.portal.sercie-intro .its-header .bg {
+    height: 867px;
+    background-image: url("/assets/images/service_its_01_ko.png"); }
+  [lang=ko] body.portal.sercie-intro .its-screenshot .bg {
+    background-image: url("/assets/images/service_its_02_ko.png"); }
   [lang=zh] body.portal.sercie-intro .asset-header .bg {
     height: 676px;
     background-image: url("/assets/images/service_asset_01_zh.png"); }
@@ -5722,6 +5768,11 @@ body.portal {
     background-image: url("/assets/images/service_monitoring_02_zh.png"); }
   [lang=zh] body.portal.sercie-intro .monitoring-screenshot .bg02 {
     background-image: url("/assets/images/service_monitoring_03_zh.png"); }
+  [lang=zh] body.portal.sercie-intro .its-header .bg {
+    height: 898px;
+    background-image: url("/assets/images/service_its_01_zh.png"); }
+  [lang=zh] body.portal.sercie-intro .its-screenshot .bg {
+    background-image: url("/assets/images/service_its_02_zh.png"); }
 
 body.asset .chart-container {
   clear: both;

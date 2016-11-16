@@ -997,6 +997,11 @@ input[type=submit].btn-normal,
 	}
 }
 
+body.login { padding: 0; background-color: #F2F2F2; }
+.login-container-v2 { min-height: 1200px; height: 100%; background: url(/assets/images/bg_login.png) center bottom no-repeat;
+	h1 { display: none; }
+	.login-forms { display: block; position: fixed; top: 27.5%; bottom: 39.166666666666667%; left: 50%; margin-left: -205px; height: 400px; width: 410px; background-color: #0f0; }
+}
 
 
 /**
