@@ -6221,26 +6221,34 @@ body.asset.service-group .box-item .title:before {
 body.asset.service-group .popover.service-group {
   position: absolute;
   padding: 15px;
-  min-width: 75px;
+  min-width: 120px;
   border: 2px solid #fff; }
   body.asset.service-group .popover.service-group .point {
     top: -10px;
-    z-index: 1; }
+    z-index: 0; }
   body.asset.service-group .popover.service-group .list-ea {
     overflow: hidden;
+    position: relative;
+    z-index: 1;
     font-size: 14px;
     font-weight: 500;
     color: #fff; }
     body.asset.service-group .popover.service-group .list-ea dt {
       clear: both;
+      overflow: hidden;
       float: left;
-      width: 50%;
-      line-height: 17px; }
+      height: 17px;
+      width: 70%;
+      line-height: 17px;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
     body.asset.service-group .popover.service-group .list-ea dd {
-      float: left;
-      width: 50%;
+      float: right;
+      width: 30%;
       text-align: right;
-      line-height: 17px; }
+      line-height: 17px;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
   body.asset.service-group .popover.service-group.warning {
     font-size: 14px;
     font-weight: 500;

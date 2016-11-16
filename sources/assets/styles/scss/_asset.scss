@@ -108,12 +108,12 @@ body.asset {
 				&:before { display: inline-block; margin-top: -4px; height: 16px; width: 21px; font-size: 16px; line-height: 16px; vertical-align: middle; }
 			}
 		}
-		.popover.service-group { position: absolute; padding: 15px; min-width: 75px; border: 2px solid #fff;
-			.point { top: -10px; z-index: z("default"); }
+		.popover.service-group { position: absolute; padding: 15px; min-width: 120px; border: 2px solid #fff;
+			.point { top: -10px; z-index: z("default") - 1; }
 
-			.list-ea { overflow: hidden; font-size: 14px; font-weight: 500; color: #fff;
-				dt { clear: both; float: left; width: 50%; line-height: 17px; }
-				dd { float: left; width: 50%; text-align: right; line-height: 17px; }
+			.list-ea { overflow: hidden; position: relative; z-index: z("default"); font-size: 14px; font-weight: 500; color: #fff;
+				dt { clear: both; overflow: hidden; float: left; height: 17px; width: 70%; line-height: 17px; text-overflow: ellipsis; white-space: nowrap; }
+				dd { float: right; width: 30%; text-align: right; line-height: 17px; text-overflow: ellipsis; white-space: nowrap; }
 			}
 
 			&.warning { font-size: 14px; font-weight: 500; color: #fff; line-height: 14px; width: 255px; background-color: #E74E0F;
