@@ -168,7 +168,7 @@
 
 							<!-- AWS -->
 							<div class="section-sub-title">
-								<button type="button" class="btn-add">Add AWS Account</button>
+								<button type="button" class="btn-add aws">Add AWS Account</button>
 
 								<h3 class="aws">AWS</h3>
 							</div>
@@ -212,7 +212,7 @@
 
 							<!-- AZURE -->
 							<div class="section-sub-title">
-								<button type="button" class="btn-add">Add Azure Account</button>
+								<button type="button" class="btn-add azure">Add Azure Account</button>
 
 								<h3 class="azure">Azure</h3>
 							</div>
@@ -323,15 +323,15 @@
 	</main>
 
 
-	<!-- add cloud account -->
-	<aside id="add-account" class="modal-popup add-account mfp-hide">
+	<!-- add AWS account -->
+	<aside id="add-aws-account" class="modal-popup add-account mfp-hide">
 		<h2 class="title">ADD AWS ACCOUNT</h2>
 
 		<div class="content">
 			<fieldset class="forms">
 				<legend>add account</legend>
 
-				<p class="item">
+				<p class="item invalid">
 					<label for="">Alias</label>
 					<input type="text" id="" name="">
 				</p>
@@ -341,11 +341,233 @@
 					<input type="text" id="" name="">
 				</p>
 
-				<p class="item">
+				<p class="item invalid">
 					<label for="">Secret Key</label>
 					<input type="text" id="" name="">
 				</p>
+
+				<p class="invalid-message">입력정보를 다시 확인해 주세요.</p>
 			</fieldset>
+		</div>
+
+		<div class="bottom">
+			<button type="button" class="btn-submit">ADD ACCOUNT</button>
+		</div>
+	</aside>
+
+
+	<!-- add AZURE account -->
+	<aside id="add-azure-account" class="modal-popup add-account azure mfp-hide">
+		<h2 class="title">ADD AZURE ACCOUNT</h2>
+
+		<div class="content">
+			<fieldset class="forms">
+				<legend>add account</legend>
+
+				<div class="column">
+					<p class="item invalid">
+						<label for="">User ID</label>
+						<input type="text" id="" name="">
+					</p>
+
+					<p class="item">
+						<label for="">Password</label>
+						<input type="password" id="" name="">
+					</p>
+				</div>
+
+				<div class="ea-account">
+					<label for="ea-accounts" class="icheck">
+						<input type="checkbox" id="ea-accounts" name="ea-accounts" class="icheckbox">
+						EA ACCOUNT (Enterprise Agreement)
+					</label>
+
+					<div class="ea-account-content">
+						<p class="item">
+							<label for="">Enrollment</label>
+							<input type="text" id="" name="">
+						</p>
+						<p class="item">
+							<label for="">Token</label>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</p>
+					</div>
+				</div>
+
+				<p class="get-subscriptions">
+					<button type="button" class="btn-inner">GET SUBSCRIPTIONS</button>
+				</p>
+
+				<p class="invalid-message">입력정보를 다시 확인해 주세요.</p>
+			</fieldset>
+			<script>
+			$(document).ready(function(e) {
+				$('input').on('ifChanged', function(event){
+					if( $(this).is(":checked") ) {
+						$('.ea-account-content').show();
+					} else {
+						$('.ea-account-content').hide();
+					}
+				});
+
+				// 마크업 확인용 임시 스크립트(개발시 삭제)
+				$('.get-subscriptions .btn-inner').on('click', function(e) {
+					$('.results').toggle();
+				});
+			});
+			</script>
+
+			<!-- 결과 -->
+			<div class="forms results" style="display: none;">
+				<p class="none">정보가 없습니다.</p>
+
+				<table class="tbl-v">
+					<caption>Subscriptions</caption>
+					<colgroup>
+						<col style="width: 20px;">
+						<col style="width: 170px;">
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" class="c">
+								<label for="all-subscription" class="icheck txt-none">
+									<input type="checkbox" id="all-subscription" name="subscription" class="icheckbox">
+								</label>
+							</th>
+							<th scope="col">Subscription ID</th>
+							<th scope="col">Name</th>
+							<th scope="col">State</th>
+							<th scope="col">Offer ID</th>
+							<th scope="col">Billing day</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="c">
+								<label for="subscription-id01" class="icheck txt-none">
+									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
+								</label>
+							</td>
+							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td><input type="text" value="Service"></td>
+							<td>Enabled</td>
+							<td><input type="text" value="MS-AZR-0003P"></td>
+							<td>
+								<select name="" id="" style="min-width: 80px;">
+									<option value="">01</option>
+									<option value="">02</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="is-checked">
+							<td class="c">
+								<label for="subscription-id01" class="icheck txt-none">
+									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
+								</label>
+							</td>
+							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td><input type="text" value="Service"></td>
+							<td>Enabled</td>
+							<td><input type="text" value="MS-AZR-0003P"></td>
+							<td>
+								<select name="" id="" style="min-width: 80px;">
+									<option value="">01</option>
+									<option value="">02</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="c">
+								<label for="subscription-id01" class="icheck txt-none">
+									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
+								</label>
+							</td>
+							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td><input type="text" value="Service"></td>
+							<td>Enabled</td>
+							<td><input type="text" value="MS-AZR-0003P"></td>
+							<td>
+								<select name="" id="" style="min-width: 80px;">
+									<option value="">01</option>
+									<option value="">02</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="c">
+								<label for="subscription-id01" class="icheck txt-none">
+									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
+								</label>
+							</td>
+							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td><input type="text" value="Service"></td>
+							<td>Enabled</td>
+							<td><input type="text" value="MS-AZR-0003P"></td>
+							<td>
+								<select name="" id="" style="min-width: 80px;">
+									<option value="">01</option>
+									<option value="">02</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="c">
+								<label for="subscription-id01" class="icheck txt-none">
+									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
+								</label>
+							</td>
+							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td><input type="text" value="Service"></td>
+							<td>Enabled</td>
+							<td><input type="text" value="MS-AZR-0003P"></td>
+							<td>
+								<select name="" id="" style="min-width: 80px;">
+									<option value="">01</option>
+									<option value="">02</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="c">
+								<label for="subscription-id01" class="icheck txt-none">
+									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
+								</label>
+							</td>
+							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td><input type="text" value="Service"></td>
+							<td>Enabled</td>
+							<td><input type="text" value="MS-AZR-0003P"></td>
+							<td>
+								<select name="" id="" style="min-width: 80px;">
+									<option value="">01</option>
+									<option value="">02</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="c">
+								<label for="subscription-id01" class="icheck txt-none">
+									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
+								</label>
+							</td>
+							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td><input type="text" value="Service"></td>
+							<td>Enabled</td>
+							<td><input type="text" value="MS-AZR-0003P"></td>
+							<td>
+								<select name="" id="" style="min-width: 80px;">
+									<option value="">01</option>
+									<option value="">02</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 
 		<div class="bottom">
@@ -456,15 +678,21 @@
 
 	<script>
 	$(document).ready(function(e) {	
-		$('.sales-persons').magnificPopup({
+		$('.btn-add.sales-persons, .btn-add.system-enginer').magnificPopup({
 			items: {
 				src: '#add-person'
 			}
 		});
 
-		$('.system-enginer').magnificPopup({
+		$('.btn-add.aws').magnificPopup({
 			items: {
-				src: '#add-account'
+				src: '#add-aws-account'
+			}
+		});
+
+		$('.btn-add.azure').magnificPopup({
+			items: {
+				src: '#add-azure-account'
 			}
 		});
 	});

@@ -1,6 +1,6 @@
 /* buttons */
-.btn-normal { display: inline-block; height: 50px; min-width: 200px; font-size: 14px; color: #000; text-align: center; line-height: 46px; border: 2px solid #4A4A4A; border-radius: 3px; background-color: #fff; }
-.btn-submit { display: inline-block; height: 50px; min-width: 200px; font-size: 14px; color: #fff; text-align: center; line-height: 46px; border: 2px solid #4A4A4A; border-radius: 3px; background-color: #4A4A4A; }
+.btn-normal { display: inline-block; height: 50px; min-width: 200px; font-size: 13px; font-weight: 700; color: #000; text-align: center; line-height: 46px; border: 2px solid #4A4A4A; border-radius: 3px; background-color: #fff; }
+.btn-submit { display: inline-block; height: 50px; min-width: 200px; font-size: 13px; font-weight: 700; color: #fff; text-align: center; line-height: 46px; border: 2px solid #4A4A4A; border-radius: 3px; background-color: #4A4A4A; }
 .btn-inner { display: inline-block; height: 30px; min-width: 150px; font-size: 14px; font-weight: 700; color: #000; text-align: center; vertical-align: middle; line-height: 26px; border: 2px solid #9B9B9B; border-radius: 4px; background-color: #fff;
 	&.calendar { min-width: 36px; text-indent: -9999px; vertical-align: middle;
 		@include icon(calendar);
@@ -60,10 +60,10 @@
 
 .tbl-v { margin-top: 10px; width: 100%;
 	thead {
-		th { padding: 0 10px; height: 48px; font-size: 14px; font-weight: 700; color: #898989; text-align: left; border-bottom: 2px solid #DFDFDF; background-color: #F6F6F6; }
+		th { padding: 0 10px; height: 48px; font-size: 13px; font-weight: 500; color: #898989; text-align: left; border-bottom: 2px solid #DFDFDF; background-color: #F6F6F6; }
 	}
 	tbody {
-		td { padding: 10px; font-size: 14px; color: #000; border-bottom: 1px solid #EBEBEB; background-color: #fff; }
+		td { padding: 10px; font-size: 13px; color: #000; border-bottom: 1px solid #EBEBEB; background-color: #fff; }
 		.is-checked {
 			td { color: #fff; background-color: #595959; }
 		}
@@ -92,7 +92,7 @@
 
 
 /* forms */
-.icheck { display: inline-block; position: relative; padding: 0 0 0 23px; min-height: 18px; min-width: 18px; font-size: 14px; font-weight: 500; color: #000; line-height: 18px; vertical-align: middle; cursor: pointer;
+.icheck { display: inline-block; position: relative; padding: 0 0 0 23px; min-height: 18px; min-width: 18px; font-size: 13px; font-weight: 400; color: #000; line-height: 18px; vertical-align: middle; cursor: pointer;
 	&.disabled { color: rgba(0, 0, 0, 0.3); }
 	&.txt-none { padding-left: 0; }
 }
@@ -123,7 +123,9 @@
 .forms {
 	input[type=text],
 	input[type=number],
-	input[type=password] { box-sizing: border-box; padding: 0 0 0 10px; height: 40px; width: 100%; font-size: 14px; color: #000; border: 1px solid #C4C4C4; background-color: #fff; }
+	input[type=password] { box-sizing: border-box; padding: 0 0 0 10px; height: 40px; width: 100%; font-size: 13px; color: #000; border: 1px solid #C4C4C4; background-color: #fff; }
+
+	textarea { box-sizing: border-box; padding: 10px 0 0 10px; height: 100px; width: 100%; font-size: 13px; color: #000; border: 1px solid #C4C4C4; background-color: #fff; }
 
 	.invalid { display: block; position: relative;
 		@include icon(iks)
@@ -131,8 +133,10 @@
 
 		input[type=text],
 		input[type=number],
-		input[type=password] { color: #F00012; border: 2px solid #FF2D2D; }
+		input[type=password],
+		textarea { border: 2px solid #FF2D2D; }
 	}
+	.invalid-message { font-size: 14px; color: #FF4E21; }
 	.phone {
 		input[type=text],
 		input[type=number],
@@ -207,10 +211,15 @@
 
 /* modal popup */
 .modal-popup { box-sizing: border-box; margin: 0 auto; padding: 22px 23px 5px 23px; border: 2px solid #000; background-color: #fff;
-	.title { font-size: 21px; font-weight: 400; color: #000; }
+	.title { font-family: $font-special-stack; font-size: 18px; font-weight: 700; color: #000; }
 	.bottom { padding: 15px 0; text-align: right; border-top: 2px solid #000;
 		a, button { margin-left: 17px; }
 	}
+
+	.invalid { display: block; position: relative;
+		&:before { content: none; }
+	}
+	.invalid-message { margin-top: 40px; margin-bottom: -20px; }
 
 	&.add-person { width: 800px;
 		.search-container { margin-top: 27px; padding: 0; }
@@ -218,9 +227,38 @@
 	}
 
 	&.add-account { width: 600px;
+		// aws
 		.forms { padding-bottom: 40px;
 			.item { margin-top: 21px;
-				label { display: block; margin-bottom: 4px; font-size: 14px; font-weight: 700; color: #898989; }
+				label { display: block; margin-bottom: 4px; font-size: 13px; font-weight: 500; color: #898989; }
+			}
+		}
+
+		// azure
+		&.azure { width: 800px;
+			.content { overflow: auto; max-height: 664px; min-height: 314px; }
+			.forms { position: relative; min-height: 274px;
+				.column { overflow: hidden;
+					.item { box-sizing: border-box; float: left; width: 50%;
+						&:nth-child(odd) { padding-right: 10px; }
+						&:nth-child(even) { padding-left: 10px; }
+					}
+				}
+				
+				.ea-account { padding: 23px 0 30px 0;
+					.ea-account-content { display: none; }
+				}
+
+				.get-subscriptions {
+					.btn-inner { width: 206px; }
+				}
+
+				.none { padding-top: 44px; height: 101px; font-size: 13px; font-weight: 500; color: #898989; text-align: center; background-color: #F6F6F6;
+					@include icon(warning);
+					&:before { display: block; margin: 0 auto 10px auto; font-size: 32px; font-weight: 400; color: #9B9B9B; line-height: 1em; }
+				}
+
+				.invalid-message { position: absolute; bottom: 38px; }
 			}
 		}
 	}

@@ -160,7 +160,7 @@ div {
   src: url("../fonts/icons/Icons.eot");
   src: url("../fonts/icons/Icons.eot?#iefix") format("eot"), url("../fonts/icons/Icons.woff") format("woff"), url("../fonts/icons/Icons.ttf") format("truetype"), url("../fonts/icons/Icons.svg#Icons") format("svg"); }
 
-.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .search-container .search-word .btn-search:before, .multiple-select .btn-filter:before, .btn-inner.calendar:before, .btn-inner.delete:before, .btn-inner.edit:before, .datepicker:after, .forms .invalid:before, .forms .service.asset:before, .forms .service.metering:before, .forms .service.monitoring:before, .forms .service.workflow:before {
+.icon-arrow01:before, .icon-arrow02:before, .icon-arrow03:before, .icon-arrow04:before, .icon-asset:before, .icon-calendar:before, .icon-cancel:before, .icon-check:before, .icon-close:before, .icon-close02:before, .icon-cloud:before, .icon-dashboard:before, .icon-defaultview:before, .icon-delete:before, .icon-done:before, .icon-dot:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-export:before, .icon-eyes:before, .icon-filter:before, .icon-grid:before, .icon-growth:before, .icon-iks:before, .icon-iks02:before, .icon-info:before, .icon-menu:before, .icon-message:before, .icon-metering:before, .icon-monitoring:before, .icon-noticifation:before, .icon-phone:before, .icon-refresh:before, .icon-reset:before, .icon-search:before, .icon-search02:before, .icon-settings:before, .icon-warning:before, .icon-wideview:before, .icon-workflow:before, .selectric .button:after, .aggrid-uitls .search:before, .ag-bespin-global .ag-header-cell-menu-button:before, .daterangepicker th .fa-chevron-left:before, .daterangepicker th .fa-chevron-right:before, .search-container .search-word .btn-search:before, .multiple-select .btn-filter:before, .btn-inner.calendar:before, .btn-inner.delete:before, .btn-inner.edit:before, .datepicker:after, .forms .invalid:before, .forms .service.asset:before, .forms .service.metering:before, .forms .service.monitoring:before, .forms .service.workflow:before, .modal-popup.add-account.azure .forms .none:before {
   font-family: "Icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2575,7 +2575,8 @@ article.contents {
   display: inline-block;
   height: 50px;
   min-width: 200px;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 700;
   color: #000;
   text-align: center;
   line-height: 46px;
@@ -2587,7 +2588,8 @@ article.contents {
   display: inline-block;
   height: 50px;
   min-width: 200px;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 700;
   color: #fff;
   text-align: center;
   line-height: 46px;
@@ -2768,15 +2770,15 @@ article.contents {
   .tbl-v thead th {
     padding: 0 10px;
     height: 48px;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 13px;
+    font-weight: 500;
     color: #898989;
     text-align: left;
     border-bottom: 2px solid #DFDFDF;
     background-color: #F6F6F6; }
   .tbl-v tbody td {
     padding: 10px;
-    font-size: 14px;
+    font-size: 13px;
     color: #000;
     border-bottom: 1px solid #EBEBEB;
     background-color: #fff; }
@@ -2856,8 +2858,8 @@ article.contents {
   padding: 0 0 0 23px;
   min-height: 18px;
   min-width: 18px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 400;
   color: #000;
   line-height: 18px;
   vertical-align: middle;
@@ -2986,7 +2988,16 @@ article.contents {
     padding: 0 0 0 10px;
     height: 40px;
     width: 100%;
-    font-size: 14px;
+    font-size: 13px;
+    color: #000;
+    border: 1px solid #C4C4C4;
+    background-color: #fff; }
+  .forms textarea {
+    box-sizing: border-box;
+    padding: 10px 0 0 10px;
+    height: 100px;
+    width: 100%;
+    font-size: 13px;
     color: #000;
     border: 1px solid #C4C4C4;
     background-color: #fff; }
@@ -3006,9 +3017,12 @@ article.contents {
       color: #F00012; }
     .forms .invalid input[type=text],
     .forms .invalid input[type=number],
-    .forms .invalid input[type=password] {
-      color: #F00012;
+    .forms .invalid input[type=password],
+    .forms .invalid textarea {
       border: 2px solid #FF2D2D; }
+  .forms .invalid-message {
+    font-size: 14px;
+    color: #FF4E21; }
   .forms .phone input[type=text],
   .forms .phone input[type=number],
   .forms .phone input[type=password] {
@@ -3192,8 +3206,9 @@ article.contents {
   border: 2px solid #000;
   background-color: #fff; }
   .modal-popup .title {
-    font-size: 21px;
-    font-weight: 400;
+    font-family: "Montserrat", "Apple SD Gothic", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
     color: #000; }
   .modal-popup .bottom {
     padding: 15px 0;
@@ -3201,6 +3216,14 @@ article.contents {
     border-top: 2px solid #000; }
     .modal-popup .bottom a, .modal-popup .bottom button {
       margin-left: 17px; }
+  .modal-popup .invalid {
+    display: block;
+    position: relative; }
+    .modal-popup .invalid:before {
+      content: none; }
+  .modal-popup .invalid-message {
+    margin-top: 40px;
+    margin-bottom: -20px; }
   .modal-popup.add-person {
     width: 800px; }
     .modal-popup.add-person .search-container {
@@ -3217,9 +3240,54 @@ article.contents {
         .modal-popup.add-account .forms .item label {
           display: block;
           margin-bottom: 4px;
-          font-size: 14px;
-          font-weight: 700;
+          font-size: 13px;
+          font-weight: 500;
           color: #898989; }
+    .modal-popup.add-account.azure {
+      width: 800px; }
+      .modal-popup.add-account.azure .content {
+        overflow: auto;
+        max-height: 664px;
+        min-height: 314px; }
+      .modal-popup.add-account.azure .forms {
+        position: relative;
+        min-height: 274px; }
+        .modal-popup.add-account.azure .forms .column {
+          overflow: hidden; }
+          .modal-popup.add-account.azure .forms .column .item {
+            box-sizing: border-box;
+            float: left;
+            width: 50%; }
+            .modal-popup.add-account.azure .forms .column .item:nth-child(odd) {
+              padding-right: 10px; }
+            .modal-popup.add-account.azure .forms .column .item:nth-child(even) {
+              padding-left: 10px; }
+        .modal-popup.add-account.azure .forms .ea-account {
+          padding: 23px 0 30px 0; }
+          .modal-popup.add-account.azure .forms .ea-account .ea-account-content {
+            display: none; }
+        .modal-popup.add-account.azure .forms .get-subscriptions .btn-inner {
+          width: 206px; }
+        .modal-popup.add-account.azure .forms .none {
+          padding-top: 44px;
+          height: 101px;
+          font-size: 13px;
+          font-weight: 500;
+          color: #898989;
+          text-align: center;
+          background-color: #F6F6F6; }
+          .modal-popup.add-account.azure .forms .none:before {
+            content: ""; }
+          .modal-popup.add-account.azure .forms .none:before {
+            display: block;
+            margin: 0 auto 10px auto;
+            font-size: 32px;
+            font-weight: 400;
+            color: #9B9B9B;
+            line-height: 1em; }
+        .modal-popup.add-account.azure .forms .invalid-message {
+          position: absolute;
+          bottom: 38px; }
   .modal-popup.user-setting {
     width: 800px; }
     .modal-popup.user-setting .forms {
