@@ -252,6 +252,21 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           .global-menu-new.logout .custom-select-container.small .btn-custom-select:after {
             background-image: url(../images/layout_sprites@2x.png);
             background-size: 570px 272px; } }
+    .global-menu-new.logout.admin .utils .btns .btn {
+      color: #000;
+      border: 2px solid #000; }
+    .global-menu-new.logout.admin .custom-select-container.small .btn-custom-select {
+      color: #000;
+      border-bottom: 2px solid #000; }
+      .global-menu-new.logout.admin .custom-select-container.small .btn-custom-select:after {
+        background-image: url(../images/layout_sprites.png);
+        background-position: -542px -58px;
+        width: 14px;
+        height: 9px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .global-menu-new.logout.admin .custom-select-container.small .btn-custom-select:after {
+            background-image: url(../images/layout_sprites@2x.png);
+            background-size: 570px 272px; } }
   .global-menu-new .custom-select-container {
     display: inline-block;
     position: relative; }

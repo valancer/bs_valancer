@@ -175,3 +175,55 @@ article.contents {
 		.btn-normal { margin-right: 5px; }
 	}
 }
+
+
+body.login { padding: 0; background-color: #F2F2F2;
+	.btn-bsp { display: block; position: fixed; top: 35px; left: 35px; text-indent: -9999px; @include retina-sprite($sl-title-bsp-group); }
+}
+
+.login-container-v2 { min-height: 1200px; height: 100%; background: url(/assets/images/bg_login.png) center bottom no-repeat;
+	.login-forms { display: block; position: fixed; top: 27.5%; bottom: 39.166666666666667%; left: 50%; margin-left: -205px; height: 400px; width: 410px;
+		h1.title { display: block; margin-bottom: 40px; font-family: $font-special-stack; font-size: 2.250rem; font-weight: 700; text-align: center; line-height: 1.222em; }
+		
+		.input { padding-top: 15px;
+			input[type=text],
+			input[type=password] { display: block; box-sizing: border-box; padding: 0 0 0 20px; height: 50px; width: 100%; font-size: 1.00rem; font-weight: 500; line-height: 48px; border: 1px solid #E4E4E4; background-color: #fff;
+				transition: border 0.2s ease-in-out;
+				&:focus { border: 3px solid #007AFF; }
+			}
+
+			&.invalid {
+				input[type=text],
+				input[type=password] { border: 3px solid #FF4E21;
+					transition: border 0.2s ease-in-out;
+
+					&:focus { border: 3px solid #007AFF; }
+				}
+			}
+
+		}
+		.invalid-message { display: block; margin-top: 10px; height: 40px; font-size: 0.875rem; color: #FF4E21; line-height: 1.429em; }
+
+		input[type=checkbox] { appearance: none; display: inline-block; vertical-align: middle; @include retina-sprite($sc-login-checkbox-group);
+			+ label { font-size: 0.875rem; font-weight: 400; color: #4A4A4A; vertical-align: middle; line-height: 16px; }
+
+			&:checked { @include retina-sprite($sc-login-checkbox-selected-group); }
+		}
+
+		.btns { overflow: hidden; margin-top: 20px;
+			button { display: block; box-sizing: border-box; height: 50px; width: 200px; font-family: $font-special-stack; font-size: 1.000rem; font-weight: 400; color: #fff; text-align: center;
+				&[disabled] { color: #BFBFBF; border: 2px solid #CCCCCC; background-color: #D4D4D4; }
+			}
+			.btn-cancel { float: left; border: 1px solid #505050; background-color: #606060; }
+			.btn-login { float: right; border: 1px solid #000; background-color: #000; }
+		}
+
+		.utils { margin-top: 20px; text-align: center;
+			a { display: inline-block; font-size: 0.875rem; color: #9B9B9B;
+				+ a {
+					&:before { content: ''; display: inline-block; margin-right: 10px; margin-left: 6px; height: 16px; width: 1px; vertical-align: middle; background-color: #D1D1D1; }
+				}
+			}
+		}
+	}
+}

@@ -33,6 +33,21 @@ $font-special-stack: 'Montserrat', 'Apple SD Gothic', sans-serif;
 				&:after { @include retina-sprite($sl-icon-arrow-white-group); }
 			}
 		}
+
+		// admin
+		&.admin {
+			.utils {
+				.btns {
+					.btn { color: #000; border: 2px solid #000; }
+				}
+			}
+
+			.custom-select-container.small {
+				.btn-custom-select { color: #000; border-bottom: 2px solid #000;
+					&:after { @include retina-sprite($sl-icon-arrow-group); }
+				}
+			}
+		}
 	}
 
 	/* service platform select */
