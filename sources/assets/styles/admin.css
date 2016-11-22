@@ -2586,6 +2586,7 @@ article.contents {
 
 body.login {
   padding: 0;
+  min-width: auto;
   background-color: #F2F2F2; }
   body.login .btn-bsp {
     display: block;
@@ -2601,15 +2602,19 @@ body.login {
       body.login .btn-bsp {
         background-image: url(../images/layout_sprites@2x.png);
         background-size: 570px 272px; } }
+  body.login[data-state=fixed] .login-forms {
+    top: 200px; }
+  body.login[data-state=fixed] .say-hi {
+    top: 283px; }
 
 .logout-container {
-  min-height: 1200px;
+  min-height: 900px;
   height: 100%;
   background: url(/assets/images/bg_login.png) center bottom no-repeat; }
   .logout-container .say-hi {
     display: block;
-    position: fixed;
-    top: 34.25%;
+    position: absolute;
+    top: 31.481444444444444%;
     bottom: 46%;
     left: 50%;
     margin-left: -270px;
@@ -2631,14 +2636,13 @@ body.login {
       letter-spacing: -0.01em; }
 
 .login-container-v2 {
-  min-height: 1200px;
+  min-height: 900px;
   height: 100%;
   background: url(/assets/images/bg_login.png) center bottom no-repeat; }
   .login-container-v2 .login-forms {
     display: block;
-    position: fixed;
-    top: 27.5%;
-    bottom: 39.166666666666667%;
+    position: absolute;
+    top: 22.222222222222222%;
     left: 50%;
     margin-left: -205px;
     height: 400px;

@@ -99,19 +99,23 @@ article.contents { display: block; min-width: $contents-width;
 }
 
 
-body.login { padding: 0; background-color: #F2F2F2;
+body.login { padding: 0; min-width: auto; background-color: #F2F2F2;
 	.btn-bsp { display: block; position: fixed; top: 35px; left: 35px; text-indent: -9999px; @include retina-sprite($sl-title-bsp-admin-group); }
+	&[data-state=fixed] {
+		.login-forms { top: 200px; }
+		.say-hi { top: 283px; }
+	}
 }
 
-.logout-container { min-height: 1200px; height: 100%; background: url(/assets/images/bg_login.png) center bottom no-repeat;
-	.say-hi { display: block; position: fixed; top: 34.25%; bottom: 46%; left: 50%; margin-left: -270px; height: 237px; width: 540px; font-family: $font-special-stack; font-weight: 400; color: #000; text-align: center;
+.logout-container { min-height: 900px; height: 100%; background: url(/assets/images/bg_login.png) center bottom no-repeat;
+	.say-hi { display: block; position: absolute; top: 31.481444444444444%; bottom: 46%; left: 50%; margin-left: -270px; height: 237px; width: 540px; font-family: $font-special-stack; font-weight: 400; color: #000; text-align: center;
 		h1 { margin-top: -15px; font-weight: 700;  font-size: 4.375rem; line-height: 1.143em; }
 		p { margin-top: 38px; font-size: 1.563rem; line-height: 1.200em; letter-spacing: -0.01em; }
 	}
 }
 
-.login-container-v2 { min-height: 1200px; height: 100%; background: url(/assets/images/bg_login.png) center bottom no-repeat;
-	.login-forms { display: block; position: fixed; top: 27.5%; bottom: 39.166666666666667%; left: 50%; margin-left: -205px; height: 400px; width: 410px;
+.login-container-v2 { min-height: 900px; height: 100%; background: url(/assets/images/bg_login.png) center bottom no-repeat;
+	.login-forms { display: block; position: absolute; top: 22.222222222222222%; left: 50%; margin-left: -205px; height: 400px; width: 410px;
 		h1.title { display: block; margin-bottom: 40px; font-family: $font-special-stack; font-size: 2.250rem; font-weight: 700; text-align: center; line-height: 1.222em; }
 		
 		.input { padding-top: 15px;

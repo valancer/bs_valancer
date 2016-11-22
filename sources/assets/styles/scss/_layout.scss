@@ -177,12 +177,15 @@ article.contents {
 }
 
 
-body.login { padding: 0; background-color: #F2F2F2;
+body.login { padding: 0; min-width: auto; background-color: #F2F2F2;
 	.btn-bsp { display: block; position: fixed; top: 35px; left: 35px; text-indent: -9999px; @include retina-sprite($sl-title-bsp-group); }
+	&[data-state=fixed] {
+		.login-forms { top: 200px; transition: top 0.1s linear; }
+	}
 }
 
-.login-container-v2 { min-height: 1200px; height: 100%; background: url(/assets/images/bg_login.png) center bottom no-repeat;
-	.login-forms { display: block; position: fixed; top: 27.5%; bottom: 39.166666666666667%; left: 50%; margin-left: -205px; height: 400px; width: 410px;
+.login-container-v2 { min-height: 900px; height: 100%; background: url(/assets/images/bg_login.png) center bottom no-repeat;
+	.login-forms { display: block; position: absolute; top: 22.222222222222222%; left: 50%; margin-left: -205px; height: 400px; width: 410px;
 		h1.title { display: block; margin-bottom: 40px; font-family: $font-special-stack; font-size: 2.250rem; font-weight: 700; text-align: center; line-height: 1.222em; }
 		
 		.input { padding-top: 15px;

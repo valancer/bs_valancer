@@ -34,6 +34,15 @@ function resizeContents() {
 			$('article.contents').height("auto");
 		}
 	}
+
+	if( $('body').hasClass("login") ) {
+		var height = $('body').height();
+		if( height <= 900 ) {
+			$('body').attr('data-state', 'fixed');
+		} else {
+			$('body').attr('data-state', '');
+		}
+	}
 }
 
 $(document).ready(function(e) {
