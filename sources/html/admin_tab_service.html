@@ -172,7 +172,7 @@
 
 								<h3 class="aws">AWS</h3>
 							</div>
-							<table class="tbl-v">
+							<table class="tbl-v aws">
 								<caption>AWS account</caption>
 								<colgroup>
 									<col style="width: 40px;">
@@ -180,13 +180,15 @@
 									<col>
 									<col>
 									<col style="width: 30px;">
+									<col style="width: 30px;">
 								</colgroup>
 								<thead>
 									<tr>
 										<th scope="col" class="c">No.</th>
-										<th scope="col">Account ID</th>
 										<th scope="col">Alias</th>
+										<th scope="col">Account ID</th>
 										<th scope="col">Access Key</th>
+										<th scope="col" class="c"></th>
 										<th scope="col" class="c"></th>
 									</tr>
 								</thead>
@@ -203,6 +205,9 @@
 											<input type="text" id="" name="">
 										</td>
 										<td class="c">
+											<button type="button" class="btn-inner edit">수정</button>
+										</td>
+										<td class="c">
 											<button type="button" class="btn-inner delete">삭제</button>
 										</td>
 									</tr>
@@ -216,6 +221,57 @@
 
 								<h3 class="azure">Azure</h3>
 							</div>
+							<table class="tbl-v azure">
+								<caption>AWS account</caption>
+								<colgroup>
+									<col style="width: 40px;">
+									<col>
+									<col>
+									<col style="width: 30px;">
+									<col style="width: 30px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="c">No.</th>
+										<th scope="col">Alias</th>
+										<th scope="col">User ID</th>
+										<th scope="col" class="c"></th>
+										<th scope="col" class="c"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="c">000</td>
+										<td>
+											Mango Pt
+										</td>
+										<td>
+											email@email.com
+										</td>
+										<td class="c">
+											<button type="button" class="btn-inner edit">수정</button>
+										</td>
+										<td class="c">
+											<button type="button" class="btn-inner delete">삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">000</td>
+										<td>
+											Mango Pt
+										</td>
+										<td>
+											email@email.com
+										</td>
+										<td class="c">
+											<button type="button" class="btn-inner edit">수정</button>
+										</td>
+										<td class="c">
+											<button type="button" class="btn-inner delete">삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 
 							
 
@@ -331,20 +387,20 @@
 			<fieldset class="forms">
 				<legend>add account</legend>
 
-				<p class="item invalid">
+				<div class="item invalid">
 					<label for="">Alias</label>
 					<input type="text" id="" name="">
-				</p>
+				</div>
 
-				<p class="item">
+				<div class="item">
 					<label for="">Access Key</label>
 					<input type="text" id="" name="">
-				</p>
+				</div>
 
-				<p class="item invalid">
+				<div class="item invalid">
 					<label for="">Secret Key</label>
 					<input type="text" id="" name="">
-				</p>
+				</div>
 
 				<p class="invalid-message">입력정보를 다시 확인해 주세요.</p>
 			</fieldset>
@@ -352,6 +408,40 @@
 
 		<div class="bottom">
 			<button type="button" class="btn-submit">ADD ACCOUNT</button>
+		</div>
+	</aside>
+
+
+	<!-- edit AWS account -->
+	<aside id="edit-aws-account" class="modal-popup add-account mfp-hide">
+		<h2 class="title">EDIT AWS ACCOUNT</h2>
+
+		<div class="content">
+			<fieldset class="forms">
+				<legend>edit account</legend>
+
+				<div class="item">
+					<label for="">Alias</label>
+					<input type="text" id="" name="">
+				</div>
+
+				<div class="item">
+					<label for="">Access Key</label>
+					
+					<p class="value">text</p>
+				</div>
+
+				<div class="item">
+					<label for="">Secret Key</label>
+					
+					<p class="value">text</p>
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="bottom">
+			<button type="button" class="btn-normal">CANCEL</button>
+			<button type="button" class="btn-submit">SAVE &amp; CHANGE</button>
 		</div>
 	</aside>
 
@@ -364,16 +454,21 @@
 			<fieldset class="forms">
 				<legend>add account</legend>
 
+				<div class="item">
+					<label for="">Alias</label>
+					<input type="text" id="" name="">
+				</div>
+
 				<div class="column">
-					<p class="item invalid">
+					<div class="item invalid">
 						<label for="">User ID</label>
 						<input type="text" id="" name="">
-					</p>
+					</div>
 
-					<p class="item">
+					<div class="item">
 						<label for="">Password</label>
 						<input type="password" id="" name="">
-					</p>
+					</div>
 				</div>
 
 				<div class="ea-account">
@@ -383,14 +478,14 @@
 					</label>
 
 					<div class="ea-account-content">
-						<p class="item">
+						<div class="item">
 							<label for="">Enrollment</label>
 							<input type="text" id="" name="">
-						</p>
-						<p class="item">
+						</div>
+						<div class="item">
 							<label for="">Token</label>
 							<textarea name="" id="" cols="30" rows="10"></textarea>
-						</p>
+						</div>
 					</div>
 				</div>
 
@@ -402,7 +497,7 @@
 			</fieldset>
 			<script>
 			$(document).ready(function(e) {
-				$('input').on('ifChanged', function(event){
+				$('#add-azure-account input').on('ifChanged', function(event){
 					if( $(this).is(":checked") ) {
 						$('.ea-account-content').show();
 					} else {
@@ -411,7 +506,7 @@
 				});
 
 				// 마크업 확인용 임시 스크립트(개발시 삭제)
-				$('.get-subscriptions .btn-inner').on('click', function(e) {
+				$('#add-azure-account .get-subscriptions .btn-inner').on('click', function(e) {
 					$('.results').toggle();
 				});
 			});
@@ -419,17 +514,17 @@
 
 			<!-- 결과 -->
 			<div class="forms results" style="display: none;">
-				<p class="none">정보가 없습니다.</p>
+				<!-- <p class="none">정보가 없습니다.</p> -->
 
 				<table class="tbl-v">
 					<caption>Subscriptions</caption>
 					<colgroup>
 						<col style="width: 20px;">
 						<col style="width: 170px;">
+						<col style="width: 177px;">
 						<col>
-						<col>
-						<col>
-						<col>
+						<col style="width: 177px;">
+						<col style="width: 111px;">
 					</colgroup>
 					<thead>
 						<tr>
@@ -576,6 +671,168 @@
 	</aside>
 
 
+	<!-- edit AZURE account -->
+	<aside id="edit-azure-account" class="modal-popup add-account azure mfp-hide">
+		<h2 class="title">EDIT AZURE ACCOUNT</h2>
+
+		<div class="content">
+			<fieldset class="forms">
+				<legend>edit account</legend>
+
+				<div class="item">
+					<label for="">Alias</label>
+					<input type="text" id="" name="">
+				</div>
+				<div class="column">
+					<div class="item">
+						<label for="">User ID</label>
+						
+						<p class="value">hyerin.lee@bespinglobal.com</p>
+					</div>
+
+					<div class="item">
+						<label for="">Password</label>
+						
+						<p class="value">********</p>
+					</div>
+				</div>
+
+				<div class="ea-account">
+					<label for="ea-accounts" class="icheck">
+						<input type="checkbox" id="ea-accounts" name="ea-accounts" class="icheckbox" checked="checked">
+						EA ACCOUNT (Enterprise Agreement)
+					</label>
+
+					<div class="ea-account-content">
+						<div class="item">
+							<label for="">Enrollment</label>
+							
+							<p class="value">V5701608S0255</p>
+						</div>
+						<div class="item">
+							<button type="button" class="btn-more-hide"><span>More/Hide</span></button>
+							<label for="">Token</label>
+							
+							<div class="value token">
+								eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImE5MDRPQzg0cG5DencwVGtFcmYyaEZFNmtqNCJ9.eyJFbnJvbGxtZW50TnVtYmVyIjoiVjU3MDE2MDhTMDI1NSIsIklkIjoiZDI1MzQ3MGEtNjVmNC00YTk5LWJjYWItZWZkYTdjNjdlYWYyIiwiUmVwb3J0VmlldyI6IkVudGVycHJpc2UiLCJQYXJ0bmVySWQiOiIiLCJEZXBhcnRtZW50SWQiOiIiLCJBY2NvdW50SWQiOiIiLCJpc3MiOiJlYS5taWNyb3NvZnRhenVyZS5jb20iLCJhdWQiOiJjbGllbnQuZWEubWljcm9zb2Z0YXp1cmUuY29tIiwiZXhwIjoxNDkwMDcyNzM4LCJuYmYiOjE0NzQ0MzQzMzh9.UvJsZzWdEt8KtYt2yHGQLqAHRi8hzfPtPiL_suCSwqZFU7Rnh5SdAt0KYo4DE2_ExVGX010A7YhIVRLf_sYQcdZk4MSX4J40ySyoQTbCC851ebhYgsc9eK1eUOlxNC_jU0tio7BmZueLPsbo69oje8UHPItEN4P3Ajtvkqr6_cZjcPsPqJSQq83Qbil_DLUbPv4VQMu02NsnngUxsCwyORs5Mc-HFMJLk_9kS9icv4F_CWS-
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p class="get-subscriptions">
+					<button type="button" class="btn-inner">GET SUBSCRIPTIONS</button>
+				</p>
+
+				<!-- <p class="invalid-message">입력정보를 다시 확인해 주세요.</p> -->
+			</fieldset>
+			<script>
+			$(document).ready(function(e) {
+				if( $('#edit-azure-account input').is(":checked") ) {
+					$('.ea-account-content').show();
+				} else {
+					$('.ea-account-content').hide();
+				}
+
+				$('#edit-azure-account input').on('ifChanged', function(event){
+					if( $(this).is(":checked") ) {
+						$('.ea-account-content').show();
+					} else {
+						$('.ea-account-content').hide();
+					}
+				});
+
+				$('#edit-azure-account .btn-more-hide').on('click', function(e) {
+					var state = $(this).attr('data-state');
+					if( state == '' || state == undefined ) {
+						$(this).attr('data-state', 'open');
+					} else {
+						$(this).attr('data-state', '');
+					}
+				});
+
+				// 마크업 확인용 임시 스크립트(개발시 삭제)
+				$('#edit-azure-account .get-subscriptions .btn-inner').on('click', function(e) {
+					$('.results').toggle();
+				});
+			});
+			</script>
+
+			<!-- 결과 -->
+			<div class="forms results" style="display: none;">
+				<p class="none">정보가 없습니다.</p>
+
+				<table class="tbl-v">
+					<caption>Subscriptions</caption>
+					<colgroup>
+						<col style="width: 20px;">
+						<col style="width: 170px;">
+						<col style="width: 177px;">
+						<col>
+						<col style="width: 177px;">
+						<col style="width: 111px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" class="c">
+								<label for="all-subscription" class="icheck txt-none">
+									<input type="checkbox" id="all-subscription" name="subscription" class="icheckbox">
+								</label>
+							</th>
+							<th scope="col">Subscription ID</th>
+							<th scope="col">Name</th>
+							<th scope="col">State</th>
+							<th scope="col">Offer ID</th>
+							<th scope="col">Billing day</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="c">
+								<label for="subscription-id01" class="icheck txt-none">
+									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
+								</label>
+							</td>
+							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td><input type="text" value="Service"></td>
+							<td>Enabled</td>
+							<td><input type="text" value="MS-AZR-0003P"></td>
+							<td>
+								<select name="" id="" style="min-width: 80px;">
+									<option value="">01</option>
+									<option value="">02</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="is-checked">
+							<td class="c">
+								<label for="subscription-id01" class="icheck txt-none">
+									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
+								</label>
+							</td>
+							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td><input type="text" value="Service"></td>
+							<td>Enabled</td>
+							<td><input type="text" value="MS-AZR-0003P"></td>
+							<td>
+								<select name="" id="" style="min-width: 80px;">
+									<option value="">01</option>
+									<option value="">02</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<button type="button" class="btn-normal">CANCEL</button>
+			<button type="submit" class="btn-submit">SAVE &amp; CHANGES</button>
+		</div>
+	</aside>
+
+
 	<!-- add person -->
 	<aside id="add-person" class="modal-popup add-person mfp-hide">
 		<h2 class="title">ADD SYSTEM ENGINEER</h2>
@@ -678,21 +935,38 @@
 
 	<script>
 	$(document).ready(function(e) {	
+		// add system enginer, add sales persons
 		$('.btn-add.sales-persons, .btn-add.system-enginer').magnificPopup({
 			items: {
 				src: '#add-person'
 			}
 		});
 
+		// add aws
 		$('.btn-add.aws').magnificPopup({
 			items: {
 				src: '#add-aws-account'
 			}
 		});
 
+		// edit aws
+		$('.aws .btn-inner.edit').magnificPopup({
+			items: {
+				src: '#edit-aws-account'
+			}
+		});
+
+		// add azure
 		$('.btn-add.azure').magnificPopup({
 			items: {
 				src: '#add-azure-account'
+			}
+		});
+
+		// edit azure
+		$('.azure .btn-inner.edit').magnificPopup({
+			items: {
+				src: '#edit-azure-account'
 			}
 		});
 	});

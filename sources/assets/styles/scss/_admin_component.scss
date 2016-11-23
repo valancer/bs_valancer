@@ -26,11 +26,11 @@
 
 /* section */
 .section {
-	.section-title { overflow: hidden; margin-top: 45px; font-size: 21px; font-weight: 400; color: #000;
+	.section-title { overflow: hidden; margin-top: 45px; font-family: $font-special-stack; font-size: 1.125rem; font-weight: 700; color: #000;
 		.btn-inner-em { float: right; }
 	}
 	.section-sub-title { overflow: hidden; margin-top: 13px;
-		h3 { font-size: 20px; font-weight: 400; color: #000;
+		h3 { font-family: $font-special-stack; font-size: 1.063rem; font-weight: 400; color: #000;
 			&.aws {
 				&:before { content: ''; display: inline-block; margin-right: 6px; vertical-align: top; @include retina-sprite($sc-icon-aws-small-group); }
 			}
@@ -230,14 +230,32 @@
 		// aws
 		.forms { padding-bottom: 40px;
 			.item { margin-top: 21px;
+				.btn-more-hide { display: block; float: right; position: relative; margin-top: -3px; padding: 0 30px 0 7px; height: 24px; border-radius: 5px; background-color: #F6F6F6;
+					&:before { content: 'More'; display: inline-block; font-size: 0.813rem; font-weight: 400; color: #898989; line-height: 24px; text-indent: 0px; }
+					@include icon(arrow01, after);
+					&:after { display: block; position: absolute; top: 50%; right: 5px; margin-top: -6px; color: #575757; transform: rotateX( 0deg ); transition-duration: 0.3s; }
+
+					span { display: none; }
+
+					~ .value.token { overflow: hidden; padding: 0; height: 40px; max-width: 750px; line-height: 40px; text-overflow: ellipsis; white-space: nowrap; }
+
+					&[data-state=open] {
+						&:before { content: 'Hide' }
+						&:after { transform: rotateX( 180deg ); transition-duration: 0.3s; }
+
+						~ .value.token { overflow: auto; padding-top: 10px; height: auto; line-height: 20px; text-overflow: clip; white-space: normal; }
+					}
+				}
+				
 				label { display: block; margin-bottom: 4px; font-size: 13px; font-weight: 500; color: #898989; }
+				.value { box-sizing: border-box; min-height: 40px; width: 100%; font-size: 13px; color: #000; line-height: 40px; word-break: break-all; }
 			}
 		}
 
 		// azure
 		&.azure { width: 800px;
-			.content { overflow: auto; max-height: 664px; min-height: 314px; }
-			.forms { position: relative; min-height: 274px;
+			.content { overflow: auto; overflow-x: hidden; max-height: 664px; min-height: 364px; }
+			.forms { position: relative; min-height: 324px;
 				.column { overflow: hidden;
 					.item { box-sizing: border-box; float: left; width: 50%;
 						&:nth-child(odd) { padding-right: 10px; }
@@ -259,6 +277,8 @@
 				}
 
 				.invalid-message { position: absolute; bottom: 38px; }
+
+				&.results { min-height: auto; }
 			}
 		}
 	}
