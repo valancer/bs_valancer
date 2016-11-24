@@ -2859,8 +2859,8 @@ body.login {
 
 .btn-add {
   display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 0.813rem;
+  font-weight: 500;
   color: #737373; }
   .btn-add:before {
     content: '';
@@ -2923,7 +2923,8 @@ body.login {
           background-image: url(../images/sprites@2x.png);
           background-size: 795px 873px; } }
   .section .section-sub-title .btn-add {
-    float: right; }
+    float: right;
+    margin-bottom: 5px; }
   .section .section-sub-title + .tbl-v {
     margin-top: 6px; }
   .section .section-sub-title ~ .section-sub-title {
@@ -3540,6 +3541,10 @@ body.login {
           bottom: 38px; }
         .modal-popup.add-account.azure .forms.results {
           min-height: auto; }
+      .modal-popup.add-account.azure.edit-mode .forms .ea-account-content {
+        display: block; }
+      .modal-popup.add-account.azure.edit-mode .forms.results {
+        margin-top: -50px; }
   .modal-popup.user-setting {
     width: 800px; }
     .modal-popup.user-setting .forms {

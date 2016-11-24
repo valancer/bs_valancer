@@ -20,7 +20,7 @@
 .btn-inner-em { display: inline-block; height: 30px; min-width: 150px; font-size: 14px; font-weight: 700; color: #fff; text-align: center; vertical-align: middle; line-height: 26px; border: 2px solid #7ED321; border-radius: 4px; background-color: #7ED321;
 	&.disabled { opacity: 0.3; }
 }
-.btn-add { display: inline-block; font-size: 14px; font-weight: 700; color: #737373;
+.btn-add { display: inline-block; font-size: 0.813rem; font-weight: 500; color: #737373;
 	&:before { content: ''; display: inline-block; margin-right: 4px; vertical-align: middle; @include retina-sprite($sc-icon-plus-03-group); }
 }
 
@@ -38,7 +38,7 @@
 				&:before { content: ''; display: inline-block; margin-top: -2px; margin-right: 6px; vertical-align: middle; @include retina-sprite($sc-icon-azure-small-group); }
 			}
 		}
-		.btn-add { float: right; }
+		.btn-add { float: right; margin-bottom: 5px; }
 
 		+ .tbl-v { margin-top: 6px; }
 		~ .section-sub-title { margin-top: 28px; }
@@ -279,6 +279,14 @@
 				.invalid-message { position: absolute; bottom: 38px; }
 
 				&.results { min-height: auto; }
+			}
+
+			// edit mode
+			&.edit-mode {
+				.forms {
+					.ea-account-content { display: block; }
+					&.results { margin-top: -50px; }
+				}
 			}
 		}
 	}

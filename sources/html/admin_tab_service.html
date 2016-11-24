@@ -199,10 +199,10 @@
 											000000000000
 										</td>
 										<td>
-											<input type="text" id="" name="">
+											text
 										</td>
 										<td>
-											<input type="text" id="" name="">
+											text
 										</td>
 										<td class="c">
 											<button type="button" class="btn-inner edit">수정</button>
@@ -380,7 +380,7 @@
 
 
 	<!-- add AWS account -->
-	<aside id="add-aws-account" class="modal-popup add-account mfp-hide">
+	<aside id="add-aws-account" class="modal-popup add-account add-mode mfp-hide">
 		<h2 class="title">ADD AWS ACCOUNT</h2>
 
 		<div class="content">
@@ -413,7 +413,7 @@
 
 
 	<!-- edit AWS account -->
-	<aside id="edit-aws-account" class="modal-popup add-account mfp-hide">
+	<aside id="edit-aws-account" class="modal-popup add-account edit-mode mfp-hide">
 		<h2 class="title">EDIT AWS ACCOUNT</h2>
 
 		<div class="content">
@@ -447,7 +447,7 @@
 
 
 	<!-- add AZURE account -->
-	<aside id="add-azure-account" class="modal-popup add-account azure mfp-hide">
+	<aside id="add-azure-account" class="modal-popup add-account add-mode azure mfp-hide">
 		<h2 class="title">ADD AZURE ACCOUNT</h2>
 
 		<div class="content">
@@ -497,17 +497,17 @@
 			</fieldset>
 			<script>
 			$(document).ready(function(e) {
-				$('#add-azure-account input').on('ifChanged', function(event){
+				$('.add-account.add-mode input').on('ifChanged', function(event){
 					if( $(this).is(":checked") ) {
-						$('.ea-account-content').show();
+						$('.add-account.add-mode .ea-account-content').show();
 					} else {
-						$('.ea-account-content').hide();
+						$('.add-account.add-mode .ea-account-content').hide();
 					}
 				});
 
 				// 마크업 확인용 임시 스크립트(개발시 삭제)
-				$('#add-azure-account .get-subscriptions .btn-inner').on('click', function(e) {
-					$('.results').toggle();
+				$('.add-account.add-mode .get-subscriptions .btn-inner').on('click', function(e) {
+					$('.add-account.add-mode .results').toggle();
 				});
 			});
 			</script>
@@ -672,7 +672,7 @@
 
 
 	<!-- edit AZURE account -->
-	<aside id="edit-azure-account" class="modal-popup add-account azure mfp-hide">
+	<aside id="edit-azure-account" class="modal-popup add-account edit-mode azure mfp-hide">
 		<h2 class="title">EDIT AZURE ACCOUNT</h2>
 
 		<div class="content">
@@ -698,8 +698,8 @@
 				</div>
 
 				<div class="ea-account">
-					<label for="ea-accounts" class="icheck">
-						<input type="checkbox" id="ea-accounts" name="ea-accounts" class="icheckbox" checked="checked">
+					<label for="ea-accounts-edit" class="icheck">
+						<input type="checkbox" id="ea-accounts-edit" name="ea-accounts-edit" class="icheckbox" checked disabled>
 						EA ACCOUNT (Enterprise Agreement)
 					</label>
 
@@ -719,49 +719,22 @@
 						</div>
 					</div>
 				</div>
-
-				<p class="get-subscriptions">
-					<button type="button" class="btn-inner">GET SUBSCRIPTIONS</button>
-				</p>
-
-				<!-- <p class="invalid-message">입력정보를 다시 확인해 주세요.</p> -->
+				<script>
+				$(document).ready(function(e) {
+					$('.add-account.edit-mode .btn-more-hide').on('click', function(e) {
+						var state = $(this).attr('data-state');
+						if( state == '' || state == undefined ) {
+							$(this).attr('data-state', 'open');
+						} else {
+							$(this).attr('data-state', '');
+						}
+					});
+				});
+				</script>
 			</fieldset>
-			<script>
-			$(document).ready(function(e) {
-				if( $('#edit-azure-account input').is(":checked") ) {
-					$('.ea-account-content').show();
-				} else {
-					$('.ea-account-content').hide();
-				}
-
-				$('#edit-azure-account input').on('ifChanged', function(event){
-					if( $(this).is(":checked") ) {
-						$('.ea-account-content').show();
-					} else {
-						$('.ea-account-content').hide();
-					}
-				});
-
-				$('#edit-azure-account .btn-more-hide').on('click', function(e) {
-					var state = $(this).attr('data-state');
-					if( state == '' || state == undefined ) {
-						$(this).attr('data-state', 'open');
-					} else {
-						$(this).attr('data-state', '');
-					}
-				});
-
-				// 마크업 확인용 임시 스크립트(개발시 삭제)
-				$('#edit-azure-account .get-subscriptions .btn-inner').on('click', function(e) {
-					$('.results').toggle();
-				});
-			});
-			</script>
 
 			<!-- 결과 -->
-			<div class="forms results" style="display: none;">
-				<p class="none">정보가 없습니다.</p>
-
+			<div class="forms results">
 				<table class="tbl-v">
 					<caption>Subscriptions</caption>
 					<colgroup>
