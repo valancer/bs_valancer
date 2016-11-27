@@ -312,8 +312,8 @@
 											<span class="service asset">Asset Management</span>
 										</td>
 										<td>
-											<span class="status-service using-request">Using Request</span>
-											<button type="button" class="btn-inner-em">ACTIVATE</button>
+											<span class="status-service used">Used</span>
+											<button type="button" class="btn-inner">NOT USE</button>
 										</td>
 										<td>
 											<time datetime="">2016-08-30 00:00:00</time>
@@ -325,6 +325,7 @@
 										</td>
 										<td>
 											<span class="status-service used">Used</span>
+											<button type="button" class="btn-inner">NOT USE</button>
 										</td>
 										<td>
 											<time datetime="">2016-08-30 00:00:00</time>
@@ -335,7 +336,7 @@
 											<span class="service monitoring">Monitoring</span>
 										</td>
 										<td>
-											<span class="status-service break-request">Break Request</span>
+											<span class="status-service used">Used</span>
 											<button type="button" class="btn-inner">NOT USE</button>
 										</td>
 										<td>
@@ -348,6 +349,7 @@
 										</td>
 										<td>
 											<span class="status-service not-used">Not Used</span>
+											<button type="button" class="btn-inner-em">ACTIVATE</button>
 										</td>
 										<td>
 											<time datetime="">2016-08-30 00:00:00</time>
@@ -359,6 +361,7 @@
 										</td>
 										<td>
 											<span class="status-service not-used">Not Used</span>
+											<button type="button" class="btn-inner-em">ACTIVATE</button>
 										</td>
 										<td>
 											<time datetime="">2016-08-30 00:00:00</time>
@@ -522,7 +525,6 @@
 						<col style="width: 20px;">
 						<col style="width: 170px;">
 						<col style="width: 177px;">
-						<col>
 						<col style="width: 177px;">
 						<col style="width: 111px;">
 					</colgroup>
@@ -535,7 +537,6 @@
 							</th>
 							<th scope="col">Subscription ID</th>
 							<th scope="col">Name</th>
-							<th scope="col">State</th>
 							<th scope="col">Offer ID</th>
 							<th scope="col">Billing day</th>
 						</tr>
@@ -548,10 +549,13 @@
 								</label>
 							</td>
 							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
-							<td><input type="text" value="Service"></td>
-							<td>Enabled</td>
-							<td><input type="text" value="MS-AZR-0003P"></td>
-							<td>
+							<td class="invalid">
+								<input type="text" value="Service">
+							</td>
+							<td class="invalid">
+								<input type="text" value="MS-AZR-0003P">
+							</td>
+							<td class="invalid">
 								<select name="" id="" style="min-width: 80px;">
 									<option value="">01</option>
 									<option value="">02</option>
@@ -565,8 +569,27 @@
 								</label>
 							</td>
 							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td>
+								<input type="text" value="Service">
+							</td>
+							<td>
+								<input type="text" value="MS-AZR-0003P">
+							</td>
+							<td>
+								<select name="" id="" style="min-width: 80px;">
+									<option value="">01</option>
+									<option value="">02</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="c">
+								<label for="subscription-id01" class="icheck txt-none">
+									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
+								</label>
+							</td>
+							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
 							<td><input type="text" value="Service"></td>
-							<td>Enabled</td>
 							<td><input type="text" value="MS-AZR-0003P"></td>
 							<td>
 								<select name="" id="" style="min-width: 80px;">
@@ -583,7 +606,6 @@
 							</td>
 							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
 							<td><input type="text" value="Service"></td>
-							<td>Enabled</td>
 							<td><input type="text" value="MS-AZR-0003P"></td>
 							<td>
 								<select name="" id="" style="min-width: 80px;">
@@ -600,7 +622,6 @@
 							</td>
 							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
 							<td><input type="text" value="Service"></td>
-							<td>Enabled</td>
 							<td><input type="text" value="MS-AZR-0003P"></td>
 							<td>
 								<select name="" id="" style="min-width: 80px;">
@@ -617,7 +638,6 @@
 							</td>
 							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
 							<td><input type="text" value="Service"></td>
-							<td>Enabled</td>
 							<td><input type="text" value="MS-AZR-0003P"></td>
 							<td>
 								<select name="" id="" style="min-width: 80px;">
@@ -634,24 +654,6 @@
 							</td>
 							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
 							<td><input type="text" value="Service"></td>
-							<td>Enabled</td>
-							<td><input type="text" value="MS-AZR-0003P"></td>
-							<td>
-								<select name="" id="" style="min-width: 80px;">
-									<option value="">01</option>
-									<option value="">02</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td class="c">
-								<label for="subscription-id01" class="icheck txt-none">
-									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
-								</label>
-							</td>
-							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
-							<td><input type="text" value="Service"></td>
-							<td>Enabled</td>
 							<td><input type="text" value="MS-AZR-0003P"></td>
 							<td>
 								<select name="" id="" style="min-width: 80px;">
@@ -662,10 +664,13 @@
 						</tr>
 					</tbody>
 				</table>
+
+				<p class="invalid-message">입력정보를 다시 확인해 주세요.</p>
 			</div>
 		</div>
 
 		<div class="bottom">
+			<button type="button" class="btn-normal">CANCEL</button>
 			<button type="button" class="btn-submit">ADD ACCOUNT</button>
 		</div>
 	</aside>
@@ -741,7 +746,6 @@
 						<col style="width: 20px;">
 						<col style="width: 170px;">
 						<col style="width: 177px;">
-						<col>
 						<col style="width: 177px;">
 						<col style="width: 111px;">
 					</colgroup>
@@ -754,7 +758,6 @@
 							</th>
 							<th scope="col">Subscription ID</th>
 							<th scope="col">Name</th>
-							<th scope="col">State</th>
 							<th scope="col">Offer ID</th>
 							<th scope="col">Billing day</th>
 						</tr>
@@ -768,7 +771,6 @@
 							</td>
 							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
 							<td><input type="text" value="Service"></td>
-							<td>Enabled</td>
 							<td><input type="text" value="MS-AZR-0003P"></td>
 							<td>
 								<select name="" id="" style="min-width: 80px;">
@@ -783,10 +785,9 @@
 									<input type="checkbox" id="subscription-id01" name="subscription" class="icheckbox">
 								</label>
 							</td>
-							<td>bbb75b12-ebe5-444d-af89-79463aad023</td>
-							<td><input type="text" value="Service"></td>
-							<td>Enabled</td>
-							<td><input type="text" value="MS-AZR-0003P"></td>
+							<td class="invalid">bbb75b12-ebe5-444d-af89-79463aad023</td>
+							<td class="invalid"><input type="text" value="Service"></td>
+							<td class="invalid"><input type="text" value="MS-AZR-0003P"></td>
 							<td>
 								<select name="" id="" style="min-width: 80px;">
 									<option value="">01</option>
@@ -796,6 +797,8 @@
 						</tr>
 					</tbody>
 				</table>
+
+				<p class="invalid-message">입력정보를 다시 확인해 주세요.</p>
 			</div>
 		</div>
 

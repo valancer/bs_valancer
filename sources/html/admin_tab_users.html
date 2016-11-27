@@ -32,6 +32,13 @@
 					</p>
 
 
+					<div class="users-none">
+						<p>
+							표시할 정보가 없습니다.<br>
+							There is no information to display.
+						</p>
+					</div>
+
 					<section class="section">
 						<h2 class="section-title">
 							<button type="button" class="btn-inner-em disabled">ACTIVATE</button>
@@ -47,12 +54,9 @@
 									<col style="width: 20px;">
 									<col style="width: 40px;">
 									<col>
-									<col>
-									<col>
-									<col>
-									<col>
-									<col>
-									<col>
+									<col style="width: 14.5%;">
+									<col style="width: 14.5%;">
+									<col style="width: 14.5%;">
 									<col style="width: 30px;">
 								</colgroup>
 								<thead>
@@ -66,9 +70,6 @@
 										<th scope="col">Email</th>
 										<th scope="col">User Name</th>
 										<th scope="col">Status</th>
-										<th scope="col">Position</th>
-										<th scope="col">Phone</th>
-										<th scope="col">Mobile</th>
 										<th scope="col">Role</th>
 										<th scope="col" class="c"></th>
 									</tr>
@@ -86,9 +87,6 @@
 										<td>
 											<span class="status-user approval">Approval</span>
 										</td>
-										<td>position</td>
-										<td>+82-00-0000-0000</td>
-										<td>+82-00-0000-0000</td>
 										<td>SE</td>
 										<td>
 											<button type="button" class="btn-inner edit">edit</button>
@@ -106,9 +104,6 @@
 										<td>
 											<span class="status-user approval">Approval</span>
 										</td>
-										<td>position</td>
-										<td>+82-00-0000-0000</td>
-										<td>+82-00-0000-0000</td>
 										<td>SE</td>
 										<td>
 											<button type="button" class="btn-inner edit">edit</button>
@@ -126,9 +121,6 @@
 										<td>
 											<span class="status-user activated">Activate</span>
 										</td>
-										<td>position</td>
-										<td>+82-00-0000-0000</td>
-										<td>+82-00-0000-0000</td>
 										<td>SE</td>
 										<td>
 											<button type="button" class="btn-inner edit">edit</button>
@@ -146,9 +138,6 @@
 										<td>
 											<span class="status-user subscribed">Subscribed</span>
 										</td>
-										<td>position</td>
-										<td>+82-00-0000-0000</td>
-										<td>+82-00-0000-0000</td>
 										<td>SE</td>
 										<td>
 											<button type="button" class="btn-inner edit">edit</button>
@@ -166,12 +155,9 @@
 										<td>
 											<span class="status-user invited">Invited</span>
 										</td>
-										<td>position</td>
-										<td>+82-00-0000-0000</td>
-										<td>+82-00-0000-0000</td>
 										<td>SE</td>
 										<td>
-											<button type="button" class="btn-inner edit">edit</button>
+											<button type="button" class="btn-inner edit" disabled>edit</button>
 										</td>
 									</tr>
 									<tr>
@@ -186,9 +172,159 @@
 										<td>
 											<span class="status-user deactivated">Deactivated</span>
 										</td>
-										<td>position</td>
-										<td>+82-00-0000-0000</td>
-										<td>+82-00-0000-0000</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id01" class="icheck txt-none">
+												<input type="checkbox" id="user-id01" name="accounts" class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user approval">Approval</span>
+										</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id02" class="icheck txt-none">
+												<input type="checkbox" id="user-id02" name="accounts" class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user approval">Approval</span>
+										</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id03" class="icheck txt-none">
+												<input type="checkbox" id="user-id03" name="accounts" disabled class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user activated">Activate</span>
+										</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id04" class="icheck txt-none">
+												<input type="checkbox" id="user-id04" name="accounts" disabled class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user subscribed">Subscribed</span>
+										</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id05" class="icheck txt-none">
+												<input type="checkbox" id="user-id05" name="accounts" disabled class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user invited">Invited</span>
+										</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit" disabled>edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id06" class="icheck txt-none">
+												<input type="checkbox" id="user-id06" name="accounts" disabled class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user deactivated">Deactivated</span>
+										</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id01" class="icheck txt-none">
+												<input type="checkbox" id="user-id01" name="accounts" class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user approval">Approval</span>
+										</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id02" class="icheck txt-none">
+												<input type="checkbox" id="user-id02" name="accounts" class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user approval">Approval</span>
+										</td>
+										<td>SE</td>
+										<td>
+											<button type="button" class="btn-inner edit">edit</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="c">
+											<label for="user-id03" class="icheck txt-none">
+												<input type="checkbox" id="user-id03" name="accounts" disabled class="icheckbox">
+											</label>
+										</td>
+										<td class="c">000</td>
+										<td>aaa@email.com</td>
+										<td>user name</td>
+										<td>
+											<span class="status-user activated">Activate</span>
+										</td>
 										<td>SE</td>
 										<td>
 											<button type="button" class="btn-inner edit">edit</button>
@@ -222,6 +358,134 @@
 		</article>
 	</main>
 
+
+	<!-- user setting -->
+	<aside id="edit-user-setting" class="modal-popup user-setting mfp-hide">
+		<h2 class="title">USER SETTING</h2>
+
+		<div class="content">
+			<fieldset class="forms">
+				<legend>user setting</legend>
+
+				<div class="default">
+					<div class="item">
+						<label for="">No.</label>
+						000
+					</div>
+					<div class="item" style="width: 350px;">
+						<label for="">Email</label>
+						aaa@email.com
+					</div>
+					<div class="item">
+						<label for="">Status</label>
+<!--
+						<p>
+							<span class="status-user approval">Approval</span>
+							<button type="button" class="btn-inner-em">ACTIVATE</button>
+						</p>
+
+						<p>
+							<span class="status-user activate">Activate</span>
+							<button type="button" class="btn-inner">DEACTIVATE</button>
+						</p>
+
+						<p>
+							<span class="status-user subscribed">Subscribed</span>
+						</p>
+
+						<p>
+							<span class="status-user invited">Invited</span>
+						</p>
+-->
+						<p>
+							<span class="status-user deactivate">Deactivated</span>
+							<button type="button" class="btn-inner">DELETE</button>
+							<button type="button" class="btn-inner-em">ACTIVATE</button>
+						</p>
+					</div>
+				</div>
+
+				<div class="additional">
+					<div class="float">
+						<p class="item" style="width: 350px;">
+							<label for="">User Name</label>
+							<input type="text" id="" name="">
+						</p>
+						<p class="item" style="width: 200px;">
+							<label for="">Position</label>
+							<input type="text" id="" name="">
+						</p>
+						<p class="item">
+							<label for="">Role</label>
+							<select name="" id="">
+								<option value="">SA</option>
+								<option value="">SE</option>
+								<option value="">SD</option>
+								<option value="">SP</option>
+								<option value="">CA</option>
+							</select>
+						</p>
+					</div>
+
+					<div class="item">
+						<label for="">Phone</label>
+						<div class="phone">
+							<select name="" id="">
+								<option value="">Choose country</option>
+								<option value="">Unite States (+1)</option>
+								<option value="">China (+86)</option>
+								<option value="">Korea, Republic of (+82)</option>
+							</select>
+							<input type="text" id="" name="" style="width: 160px;">
+							<input type="text" id="" name="" style="width: 160px;">
+							<input type="text" id="" name="" style="width: 160px;">
+						</div>
+					</div>
+
+					<div class="item">
+						<label for="">Mobile</label>
+						<div class="phone">
+							<select name="" id="">
+								<option value="">Choose country</option>
+								<option value="">Unite States (+1)</option>
+								<option value="">China (+86)</option>
+								<option value="">Korea, Republic of (+82)</option>
+							</select>
+							<span class="invalid">
+								<input type="text" id="" name="" style="width: 160px;">
+							</span>
+							<input type="text" id="" name="" style="width: 160px;">
+							<input type="text" id="" name="" style="width: 160px;">
+						</div>
+					</div>
+
+					<p class="item">
+						<label for="">Last Login</label>
+						<time datetime="2016-08-30 00:00:00">2016-08-30 00:00:00</time>
+					</p>
+
+					<p class="invalid-message">입력정보를 다시 확인해 주세요.</p>					
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="bottom">
+			<button type="button" class="btn-normal">CALCEL</button>
+			<button type="button" class="btn-submit">SAVE &amp; CHANGES</button>
+		</div>
+
+	</aside>
+
+	<script>
+	$(document).ready(function(e) {	
+		// edit user setting
+		$('.btn-inner.edit').magnificPopup({
+			items: {
+				src: '#edit-user-setting'
+			}
+		});
+	});
+	</script>
 	
 	<!-- 하단 영역 -->
 	@@include('./admin_footer.html')

@@ -16,6 +16,10 @@
 		@include icon(edit);
 		&:before { display: block; text-indent: 0px; font-size: 15px; color: #fff; }
 	}
+
+	&[disabled] { border: 1px solid #A6A5A6; background-color: #A6A5A6;
+		&:before { color: #D1D1D1; }
+	}
 }
 .btn-inner-em { display: inline-block; height: 30px; min-width: 150px; font-size: 14px; font-weight: 700; color: #fff; text-align: center; vertical-align: middle; line-height: 26px; border: 2px solid #7ED321; border-radius: 4px; background-color: #7ED321;
 	&.disabled { opacity: 0.3; }
@@ -69,6 +73,7 @@
 		}
 	}
 	.c { text-align: center; }
+	.invalid { display: table-cell !important; }
 }
 
 .navigation { padding: 20px 0 30px 0; text-align: center;
@@ -135,6 +140,7 @@
 		input[type=number],
 		input[type=password],
 		textarea { border: 2px solid #FF2D2D; }
+		select { border: 2px solid #FF2D2D; }
 	}
 	.invalid-message { font-size: 14px; color: #FF4E21; }
 	.phone {
@@ -255,7 +261,7 @@
 		// azure
 		&.azure { width: 800px;
 			.content { overflow: auto; overflow-x: hidden; max-height: 664px; min-height: 364px; }
-			.forms { position: relative; min-height: 324px;
+			.forms { position: relative;
 				.column { overflow: hidden;
 					.item { box-sizing: border-box; float: left; width: 50%;
 						&:nth-child(odd) { padding-right: 10px; }
@@ -276,9 +282,11 @@
 					&:before { display: block; margin: 0 auto 10px auto; font-size: 32px; font-weight: 400; color: #9B9B9B; line-height: 1em; }
 				}
 
-				.invalid-message { position: absolute; bottom: 38px; }
+				.invalid-message { margin-top: 60px; }
 
-				&.results { min-height: auto; }
+				&.results { min-height: auto;
+					.invalid-message { margin-top: 50px; }
+				}
 			}
 
 			// edit mode
@@ -328,6 +336,7 @@
 
 
 /* pages */
+.users-none { padding: 135px 0 0 0; font-size: 14px; color: #000000; line-height: 20px; text-align: center; }
 .billing-none { padding: 135px 0 0 0; font-size: 14px; color: #000000; line-height: 20px; text-align: center;
 	.btn-submit { margin-top: 32px; }
 }
