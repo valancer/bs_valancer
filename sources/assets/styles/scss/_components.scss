@@ -18,6 +18,129 @@
 }
 
 
+.modal-popup-v2 { display: block; position: relative; overflow: hidden; box-sizing: border-box; margin: 0 auto; padding: 50px; max-height: 800px; width: 950px; border: 2px solid #000; background-color: #fff;
+	.btn-close { position: absolute; top: 50px; right: 50px; }
+
+	.modal-popup-title { display: block; margin-bottom: 50px; font-size: 1.250rem; font-weight: 700; color: #000;
+		&:after { content: ''; display: block; margin-top: 16px; height: 3px; width: 60px; background-color: #000; }
+	}
+
+	.modal-popup-progress { float: left; width: 295px;
+		.progress { font-size: 1.250rem; font-weight: 400;
+			> li { position: relative; padding-top: 28px; padding-left: 30px; counter-increment: customlistcounter; color: #A6A5A6;
+				&:before { content: counter(customlistcounter); display: block; position: absolute; top: 31px; left: 0; z-index: z("default") + 1; height: 19px; width: 19px; font-size: 0.750rem; font-weight: 700; color: #fff; text-align: center; line-height: 19px; border-radius: 19px; background-color: #A6A5A6; }
+				&:after { content: ''; display: block; position: absolute; top: -5px; left: 9px; z-index: z("default"); height: 40px; width: 2px; background-color: #A6A5A6; }
+
+				&:first-child { padding-top: 0;
+					&:before { top: 3px; }
+					&:after { content: none; }
+				}
+
+				&[data-state=pass] { color: #000;
+					&:before { background-color: #000; }
+					&:after { background-color: #000; }
+				}
+			}
+		}
+	}
+
+	.modal-popup-content { float: left; overflow: auto; overflow-x: hidden; max-height: 601px; width: 551px;
+		input[type=checkbox].agreement { position: absolute; left: -9999px;
+			+ label { display: block; cursor: pointer; position: relative; padding-top: 3px; height: 23px;
+				&:before { content: ''; display: block; position: absolute; top: 0px; right: 0; @include retina-sprite($sc-radio-01-group); }
+				mark { display: inline-block; font-size: 1.250rem; font-weight: 400; color: #000; line-height: 1em; background-color: rgba(0,44,255,0.20); }
+
+				.required { display: inline-block; margin-left: 3px; vertical-align: top; text-indent: -9999px; @include retina-sprite($sc-icon-require-group); }
+			}
+
+			&:checked {
+				+ label {
+					&:before { @include retina-sprite($sc-radio-01-checked-group); }
+				}
+			}
+		}
+
+		.agreement-box { display: block; box-sizing: border-box; overflow: auto; margin-top: 15px; padding: 25px; width: 100%; border: 1px solid #E4E4E4; background-color: #fff;
+			p { margin-bottom: 10px; font-size: 0.875rem; font-weight: 400; color: #000; line-height: 1.714em; }
+		}
+	}
+
+	.modal-forms {
+		.modal-forms-item { margin-top: 20px; font-size: 0.875rem; font-weight: 500; color: #000;
+			label { display: block; margin-bottom: 6px; font-size: 0.875rem; font-weight: 700; color: #9B9B9B;
+				mark { display: inline-block; font-size: 0.875rem; font-weight: 700; color: #9B9B9B; line-height: 1em; background-color: rgba(0,44,255,0.20); }
+				.required { display: inline-block; margin-top: -7px; margin-left: 3px; vertical-align: middle; text-indent: -9999px; @include retina-sprite($sc-icon-require-group); }
+			}
+			p { line-height: 24px; }
+
+			input[type=text],
+			input[type=password],
+			select { box-sizing: border-box; padding-left: 20px; height: 50px; width: 100%; font-size: 0.813rem; font-weight: 500; color: #000; line-height: 48px; vertical-align: middle; border: 1px solid #C4C4C4; border-radius: 0; background-color: #fff;
+				&:focus { border: 1px solid #007AFF; }
+
+				&[data-validation=invalid] {
+					border: 2px solid #FF4E21;
+				}
+			}
+			.invalid-message { margin-top: 4px; font-weight: 400; color: #FF4E21; }
+
+			select { padding-right: 35px; width: auto; background: url('/assets/images/select_arrow04.png') right center no-repeat; }
+
+			// 핸드폰 영역
+			.phone { position: relative; padding-left: 215px; text-align: right;
+				select { position: absolute; left: 0; width: 205px; }
+				span { display: inline-block; margin-right: 1px; margin-left: 2px; height: 2px; width: 10px; text-align: left; text-indent: -9999px; vertical-align: middle; background-color: #000; }
+				input[type=text] { width: calc(100%/3 - 15px); }
+			}
+
+			// 인증번호 요청 관련
+			.auth-code { position: relative; margin-top: 10px; padding-left: 165px;
+				.btn-request { display: block; box-sizing: border-box; position: absolute; top: 0; left: 0; margin-right: 12px; height: 50px; width: 150px; font-size: 0.750rem; font-weight: 700; color: #000; text-align: center; line-height: 48px; vertical-align: middle; border: 2px solid #000; background-color: #fff; }
+				.btn-confirm { display: block; box-sizing: border-box; position: absolute; top: 50%; right: 15px; margin-top: -15px; height: 30px; width: 110px; font-size: 0.750rem; font-weight: 700; color: #000; text-align: center; line-height: 28px; border: 2px solid #000; background-color: #fff; }
+			}
+
+			// 비밀번호 체크
+			.pwd-validation { margin-top: 10px; height: 30px; width: 100%; background-color: rgba(216, 216, 216, 0.3);
+				legend { display: none; }
+
+				input[type=checkbox] { position: absolute; left: -9999px;
+					+ label { display: inline-block; margin-left: 20px; font-size: 0.875rem; font-weight: 500; color: #666; line-height: 30px; vertical-align: middle;
+						&:before { content: ''; display: inline-block; margin: -4px 4px 0 0; vertical-align: middle; @include retina-sprite($sc-check-01-group); }
+					}
+
+					&:checked {
+						+ label {
+							&:before { @include retina-sprite($sc-check-01-selected-group); }
+						}
+					}
+
+					&[data-validation=invalid] {
+						+ label {
+							&:before { @include retina-sprite($sc-check-01-invalid-group); }
+						}
+					}
+				}
+			}
+
+			// 어드민 비번 중복 체크
+			.check-duplicate { position: relative; padding-right: 110px;
+				.btn-request { display: block; box-sizing: border-box; position: absolute; top: 0; right: 0; height: 50px; width: 100px; font-size: 0.750rem; font-weight: 700; color: #000; text-align: center; line-height: 48px; vertical-align: middle; border: 2px solid #000; background-color: #fff; }
+			}
+
+		}
+	}
+	fieldset.modal-forms {
+		legend { display: block; position: static; visibility: visible; padding-bottom: 7px; height: auto; width: 100%; font-size: 1.250rem; font-weight: 400; color: #000; border-bottom: 3px solid #000; }
+
+		+ fieldset.modal-forms { margin-top: 38px; }
+	}
+
+	.btns { overflow: hidden; margin: 85px -7px 0 -7px;
+		.btn-normal { display: block; float: left; box-sizing: border-box; margin: 0 7px 0 7px; height: 60px; width: calc(50% - 14px); font-size: 1.250rem; font-weight: 700; color: #000; line-height: 56px; border: 2px solid #000; background-color: #fff;
+			+ .btn-normal { float: right; }
+		}
+	}
+}
 
 /**
 	popover
@@ -1234,6 +1357,10 @@ input[type=submit].btn-normal,
 	> li { list-style-type: square;
 		.filelist { padding-left: 20px;
 			> li { list-style-type: circle;
+				.filelist { padding-left: 40px;
+					> li { list-style-type: disc;
+					}
+				}
 			}
 		}
 	}

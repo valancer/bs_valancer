@@ -1,0 +1,214 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<div class="contents-inner">
+
+				<a href="#" class="btn-step01">빌링 - 결제 청구 정보</a><br>
+				<a href="#" class="btn-step02">빌링 - 사업자 정보</a><br>
+
+
+				<!-- 빌링 - 결제 청구 정보 -->
+				<aside id="setup-billing01" class="modal-popup-v2 mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
+
+					<h2 class="modal-popup-title">청구 정보</h2>
+
+					<div class="modal-popup-progress">
+						<ol class="progress">
+							<li data-state="pass">결제 청구 정보</li>
+							<li>사업자 정보</li>
+						</ol>
+					</div>
+
+					<div class="modal-popup-content">
+						<fieldset class="modal-forms">
+							<legend>청구 담당자 정보</legend>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>담당자 이름</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>Email</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>휴대전화</mark><em class="required">(필수 입력사항입니다.)</em></label>
+
+								<div class="phone">
+									<select name="" id="">
+										<option value="">대한민국 (+82)</option>
+									</select>
+									<input type="text" id="" name="">
+									<span>-</span>
+									<input type="text" id="" name="">
+									<span>-</span>
+									<input type="text" id="" name="">
+								</div>
+							</div>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>전화번호</mark><em class="required">(필수 입력사항입니다.)</em></label>
+
+								<div class="phone">
+									<select name="" id="">
+										<option value="">대한민국 (+82)</option>
+									</select>
+									<input type="text" id="" name="">
+									<span>-</span>
+									<input type="text" id="" name="">
+									<span>-</span>
+									<input type="text" id="" name="">
+								</div>
+							</div>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>팩스번호</mark></label>
+
+								<div class="phone">
+									<select name="" id="">
+										<option value="">대한민국 (+82)</option>
+									</select>
+									<input type="text" id="" name="">
+									<span>-</span>
+									<input type="text" id="" name="">
+									<span>-</span>
+									<input type="text" id="" name="">
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset class="modal-forms">
+							<legend>사무실 정보</legend>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>청구 주소</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>우편번호</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+						</fieldset>
+
+						<fieldset class="modal-forms">
+							<legend>결제 정보</legend>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>결제방식</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<select name="" id="" style="width: 100%;">
+									<option value="">현금 결제</option>
+								</select>
+							</div>
+						</fieldset>
+
+
+						<div class="btns">
+							<button type="button" class="btn-normal">취소</button>
+							<button type="button" class="btn-normal">다음</button>
+						</div>
+					</div>
+				</aside>
+
+
+
+				<!-- 빌링 - 사업자 정보 -->
+				<aside id="setup-billing02" class="modal-popup-v2 mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
+
+					<h2 class="modal-popup-title">청구 정보</h2>
+
+					<div class="modal-popup-progress">
+						<ol class="progress">
+							<li data-state="pass">결제 청구 정보</li>
+							<li data-state="pass">사업자 정보</li>
+						</ol>
+					</div>
+
+
+					<div class="modal-popup-content">
+						<fieldset class="modal-forms">
+							<legend>사업자 정보</legend>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>사업자명</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>대표이사</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>사업자 번호</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>사업자 주소</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>종목</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for=""><mark>업태</mark><em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+						</fieldset>
+
+						<div class="btns">
+							<button type="button" class="btn-normal">이 전</button>
+							<button type="button" class="btn-normal">완료</button>
+						</div>
+					</div>
+				</aside>
+
+
+
+				<script>
+				$(document).ready(function(e) {	
+					$('.btn-step01').magnificPopup({
+						items: {
+							src: '#setup-billing01'
+						},
+						closeOnBgClick: false
+					});
+
+					$('.btn-step02').magnificPopup({
+						items: {
+							src: '#setup-billing02'
+						},
+						closeOnBgClick: false
+					});
+				});
+				</script>
+
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>

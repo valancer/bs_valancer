@@ -791,7 +791,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         background-color: #fff; }
     .grid-bottom a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -719px -282px;
+      background-position: -485px -227px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -801,7 +801,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .grid-bottom a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -485px -227px;
+      background-position: -719px -282px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -811,7 +811,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .grid-bottom a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -755px -282px;
+      background-position: -485px -263px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -820,7 +820,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           background-size: 795px 873px; } }
     .grid-bottom a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -485px -263px;
+      background-position: -755px -282px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -918,7 +918,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       display: none; }
     .ag-bespin-global .ag-header-icon.ag-sort-none-icon {
       background-image: url(../images/sprites.png);
-      background-position: -601px -389px;
+      background-position: -737px -326px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -927,7 +927,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           background-size: 795px 873px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-ascending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -737px -326px;
+      background-position: -760px -326px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -936,7 +936,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           background-size: 795px 873px; } }
     .ag-bespin-global .ag-header-icon.ag-sort-descending-icon {
       background-image: url(../images/sprites.png);
-      background-position: -760px -326px;
+      background-position: -601px -389px;
       width: 17px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2548,7 +2548,7 @@ article.contents {
       color: #4A90E2; }
       .list-company li .company-item .status.subscribed:before {
         background-image: url(../images/sprites.png);
-        background-position: -783px -326px;
+        background-position: -624px -389px;
         width: 10px;
         height: 10px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2559,7 +2559,7 @@ article.contents {
       color: #9B9B9B; }
       .list-company li .company-item .status.deactivated:before {
         background-image: url(../images/sprites.png);
-        background-position: -624px -389px;
+        background-position: -640px -389px;
         width: 10px;
         height: 10px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2694,7 +2694,7 @@ body.login {
       display: inline-block;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -172px -469px;
+      background-position: -194px -469px;
       width: 16px;
       height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2709,7 +2709,7 @@ body.login {
         line-height: 16px; }
       .login-container-v2 .login-forms input[type=checkbox]:checked {
         background-image: url(../images/sprites.png);
-        background-position: -194px -469px;
+        background-position: -216px -469px;
         width: 16px;
         height: 16px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2906,7 +2906,7 @@ body.login {
       margin-right: 6px;
       vertical-align: top;
       background-image: url(../images/sprites.png);
-      background-position: -173px -434px;
+      background-position: -261px -434px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -2920,7 +2920,7 @@ body.login {
       margin-right: 6px;
       vertical-align: middle;
       background-image: url(../images/sprites.png);
-      background-position: -200px -434px;
+      background-position: -288px -434px;
       width: 21px;
       height: 15px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3013,7 +3013,7 @@ body.login {
         background-color: #fff; }
     .navigation a.btn-first {
       background-image: url(../images/sprites.png);
-      background-position: -719px -282px;
+      background-position: -485px -227px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3023,7 +3023,7 @@ body.login {
     .navigation a.btn-prev {
       margin-right: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -485px -227px;
+      background-position: -719px -282px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3033,7 +3033,7 @@ body.login {
     .navigation a.btn-next {
       margin-left: 20px;
       background-image: url(../images/sprites.png);
-      background-position: -755px -282px;
+      background-position: -485px -263px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3042,7 +3042,7 @@ body.login {
           background-size: 795px 873px; } }
     .navigation a.btn-last {
       background-image: url(../images/sprites.png);
-      background-position: -485px -263px;
+      background-position: -755px -282px;
       width: 30px;
       height: 30px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3074,7 +3074,7 @@ body.login {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -260px -469px;
+  background-position: -172px -469px;
   width: 16px;
   height: 16px;
   background-color: #fff; }
@@ -3084,7 +3084,7 @@ body.login {
       background-size: 795px 873px; } }
   .icheckbox.disabled {
     background-image: url(../images/sprites.png);
-    background-position: -238px -469px;
+    background-position: -282px -469px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3093,7 +3093,7 @@ body.login {
         background-size: 795px 873px; } }
   .icheckbox.checked {
     background-image: url(../images/sprites.png);
-    background-position: -150px -469px;
+    background-position: -238px -469px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3102,7 +3102,7 @@ body.login {
         background-size: 795px 873px; } }
     .icheckbox.checked.disabled {
       background-image: url(../images/sprites.png);
-      background-position: -216px -469px;
+      background-position: -260px -469px;
       width: 16px;
       height: 16px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3111,7 +3111,7 @@ body.login {
           background-size: 795px 873px; } }
   .icheckbox.indeterminate {
     background-image: url(../images/sprites.png);
-    background-position: -282px -469px;
+    background-position: -150px -469px;
     width: 16px;
     height: 16px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3125,7 +3125,7 @@ body.login {
   top: 0;
   left: 0;
   background-image: url(../images/sprites.png);
-  background-position: -81px -469px;
+  background-position: -127px -469px;
   width: 17px;
   height: 17px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3134,7 +3134,7 @@ body.login {
       background-size: 795px 873px; } }
   .iradio.checked {
     background-image: url(../images/sprites.png);
-    background-position: -127px -469px;
+    background-position: -81px -469px;
     width: 17px;
     height: 17px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3269,7 +3269,7 @@ body.login {
         margin: -2px 8px 0 0;
         vertical-align: middle;
         background-image: url(../images/sprites.png);
-        background-position: -783px -326px;
+        background-position: -624px -389px;
         width: 10px;
         height: 10px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -3373,7 +3373,7 @@ body.login {
       background-color: #7ED321; }
     .forms .status-user.subscribed:before {
       background-image: url(../images/sprites.png);
-      background-position: -783px -326px;
+      background-position: -624px -389px;
       width: 10px;
       height: 10px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

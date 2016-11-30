@@ -1,0 +1,227 @@
+@@include('./head.html', {
+	"lang": "en",
+	"title": "Bespin Global"
+})
+<body class="portal">
+
+	<!-- 상단 영역 -->
+	@@include('./header.html', {"service": "portal", "sub": ""})
+
+
+	<!-- 본문 영역 -->
+	<main>
+		<article class="contents">
+			<div class="contents-inner">
+
+				<a href="#" class="btn-step01">고객사 가입 - 이용 약관 동의</a><br>
+				<a href="#" class="btn-step02">고객사 가입 - 고객 가입 정보</a><br><br>
+
+
+				<!-- 고객사가입 - 이용 약관 동의 -->
+				<aside id="setup-company01" class="modal-popup-v2 mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
+
+					<h2 class="modal-popup-title">서비스 가입 신청</h2>
+
+					<div class="modal-popup-progress">
+						<ol class="progress">
+							<li data-state="pass">이용 약관 동의</li>
+							<li>고객 가입 정보</li>
+						</ol>
+					</div>
+
+					<div class="modal-popup-content">
+						<fieldset>
+							<legend>이용 약관 동의</legend>
+
+							<input type="checkbox" id="company-agree01" name="company-agree" class="agreement">
+							<label for="company-agree01"><mark>서비스약관</mark><em class="required">(필수 입력사항입니다.)</em></label>
+							
+							<div class="agreement-box" style="height: 250px;">
+								<p>베스핀 글로벌 서비스 이용 약관</p>
+								<br>
+								<p>베스핀 글로벌 서비스 이용 약관("이용 약관")에는 서비스 공급자인 베스핀 글로벌("베스핀 글로벌") 와 서비스 사용자인 고객("고객" 또는 "사용자") 간의 법적 관계를 관할하고 규정하는 조항이 자세히 설명되어 있습니다. </p>
+
+								<p>사용자는 본 이용 약관을 자세히 읽은 후 이용 약관에 동의하지 않을 경우, 본 이용 약관에 동의하거나 서비스에 등록 또는 액세스하거나 이를 이용(서비스 "이용"으로 통칭)하지 말아야 합니다. 베스핀 글로벌은 고객과 체결한 본 이용 약관의 개별 사본을 저장하지 않으므로 고객이 본인 기록용으로 본 약관의 사본을 저장해두는 것이 좋습니다. </p>
+
+								<p>고객이 (a) 민법상 미성년자이거나(단, 서비스에 따라 가입 또는 서비스 가능 연령은 다를 수 있습니다). (b) 대한민국 법률에 따라 서비스를 받을 수 없도록 금지된 사람인 경우에는 이 서비스를 이용할 수 없습니다. </p>
+
+								<p>본 이용 약관에서 "서비스"란 베스핀 글로벌의 http://account.Bespin Global.com에 자세히 설명되어 있고 경우에 따라 업데이트되는 모든 서비스를 의미하며, 별도의 계약에 따라 고객에게 제시 또는 제공되는 서비스는 제외됩니다.</p>
+
+								<p>[이용 약관 동의 방법] </p>
+								<p>베스핀 글로벌의 이용 약관 변경 방법 및 </p>
+							</div>
+
+							<input type="checkbox" id="company-agree02" name="company-agree" class="agreement">
+							<label for="company-agree02" style="margin-top: 50px;"><mark>개인정보 취급방침</mark><em class="required">(필수 입력사항입니다.)</em></label>
+
+							<div class="agreement-box" style="height: 250px;">
+								<p>개인정보 수집 및 이용에 대한 안내</p>
+								<br>
+								<p>베스핀 글로벌전자 주식회사(이하 ‘회사’라 합니다)는 최초 회원 가입 또는 서비스 이용 시 이용자로부터 아래와 같은 개인정보를 수집하고 있습니다.</p>
+								<p>이용자는 본 개인정보 수집•이용 동의서에 따른 동의 시, '필요한 최소한의 정보 외의 개인정보' 수집•이용에 동의하지 않을 권리가 있습니다.</p>
+								<p>개인정보 취급 및 처리에 대한 상세한 사항은 베스핀 글로벌어카운트 홈페이지에 공개한 '개인정보 취급(처리) 방침'을 참조하십시오. 다만, 본 동의서 내용과 상충되는 부분은 본 동의서의 내용이 우선합니다.</p>
+								<p>□ 수집항목</p>
+								<p>① 회원가입을 위해 필요한 개인정보</p>
+								<p>ㆍ이메일로 가입하는 경우 : 이메일 주소, 휴대폰 전화번호, 비밀번호, 성명, 성별, 생년월일, 국가정보, 중복가입확인정보(DI), 암호화된 동일인 식별정보(CI), 만 14세 아동의 경우 법정대리인 정보(법정대리인의 이름, 생년월일, CI, DI)</p>
+								<p>ㆍ휴대폰 전화번호로 가입 하는 경우 : 휴대폰 전화번호, 비밀번호, 성명, 성별, 생년월일, 국가정보, 중복가입확인정보(DI), 암호화된 동일인 식별정보(CI), 만 14세 아동의 경우 법정대리인 정보(법정대리인의 이름, 생년월일, CI, DI)</p>
+								<p>② 각 서비스 이용을 위해 필요한 정보, 서비스 이용기록/구매 또는 AS 관련 정보</p>
+								<p>ㆍ 각 서비스 이용 기록/ 구매 또는 AS 관련 정보</p>
+								<p>ㆍ 로그데이터, 쿠키 및 웹비콘, 이용시간, 앱 설치 및 삭제 기록, 이용자가 입력한 검색어 등</p>
+								<p>ㆍ 기기 정보 [단말모델정보, 단말OS정보, 단말고유정보(IMEI, DUID, Mac Address 등), 접속IP정보, 환경설정정보 등]</p>
+								<p>※ 스마트홈 서비스의 경우 등록된 기기정보(제조사, 시리얼번호, 모델ID, 펌웨어 버전명, 기기종류, Mac Address)가 함께 수집됩니다.</p>
+								<p>ㆍ 위치정보: 서비스를 제공하기 위하여 필수적인 경우(예를 들어, "내 디바이스 찾기" 서비스 등)에만 별도 동의를 받아 수집됩니다.</p>
+							</div>
+
+							<input type="checkbox" id="company-agree-all" name="company-agree-all" class="agreement">
+							<label for="company-agree-all" style="margin-top: 30px;">서비스 약관, 개인정보 취급 방침에 모두 동의 합니다.</label>
+						</fieldset>
+
+
+
+						<div class="btns">
+							<button type="button" class="btn-normal">동의 안 함</button>
+							<button type="button" class="btn-normal">동의함</button>
+						</div>
+					</div>
+				</aside>
+
+
+
+				<!-- 고객사가입 - 고객 가입 정보 -->
+				<aside id="setup-company02" class="modal-popup-v2 mfp-hide">
+					<button type="button" class="btn-close mfp-close">popup close</button>
+
+					<h2 class="modal-popup-title">서비스 가입 신청</h2>
+
+					<div class="modal-popup-progress">
+						<ol class="progress">
+							<li data-state="pass">이용 약관 동의</li>
+							<li data-state="pass">고객 기업 정보</li>
+						</ol>
+					</div>
+
+
+					<div class="modal-popup-content">
+						<fieldset class="modal-forms">
+							<legend>회사 정보</legend>
+
+							<div class="modal-forms-item">
+								<label for="">회사명<em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="" data-validation="invalid">
+
+								<p class="invalid-message">이메일 형식이 올바르지 않습니다.</p>
+							</div>
+
+							<div class="modal-forms-item">
+								<label for="">부서명<em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for="">가입경로</label>
+								<select name="" id="" style="width: 100%;">
+									<option value="">지인추천</option>
+								</select>
+							</div>
+						</fieldset>
+
+
+						<fieldset class="modal-forms">
+							<legend>가입 신청자 정보</legend>
+
+							<div class="modal-forms-item">
+								<label for="">이름<em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for="">Email<em class="required">(필수 입력사항입니다.)</em></label>
+								<input type="text" id="" name="">
+							</div>
+
+							<div class="modal-forms-item">
+								<label for="">휴대전화<em class="required">(필수 입력사항입니다.)</em></label>
+
+								<div class="phone">
+									<select name="" id="" data-validation="invalid">
+										<option value="">대한민국 (+82)</option>
+									</select>
+									<input type="text" id="" name="" data-validation="invalid">
+									<span>-</span>
+									<input type="text" id="" name="" data-validation="invalid">
+									<span>-</span>
+									<input type="text" id="" name="" data-validation="invalid">
+								</div>
+							</div>
+
+							<div class="modal-forms-item">
+								<label for="">전화번호</label>
+
+								<div class="phone">
+									<select name="" id="">
+										<option value="">대한민국 (+82)</option>
+									</select>
+									<input type="text" id="" name="">
+									<span>-</span>
+									<input type="text" id="" name="">
+									<span>-</span>
+									<input type="text" id="" name="">
+								</div>
+							</div>
+						</fieldset>
+
+
+						<fieldset class="modal-forms">
+							<legend>어드민 메일 정보</legend>
+
+							<div class="modal-forms-item">
+								<label for="">Email<em class="required">(필수 입력사항입니다.)</em></label>
+
+								<div class="check-duplicate">
+									<input type="text" id="" name="" data-validation="invalid">
+									<button type="button" class="btn-request">중복 확인</button>
+								</div>
+
+								<p class="invalid-message">이메일 형식이 올바르지 않습니다.</p>
+							</div>
+						</fieldset>
+
+						<div class="btns">
+							<button type="button" class="btn-normal">이 전</button>
+							<button type="button" class="btn-normal">완료</button>
+						</div>
+					</div>
+				</aside>
+
+
+
+				<script>
+				$(document).ready(function(e) {	
+					$('.btn-step01').magnificPopup({
+						items: {
+							src: '#setup-company01'
+						},
+						closeOnBgClick: false
+					});
+
+					$('.btn-step02').magnificPopup({
+						items: {
+							src: '#setup-company02'
+						},
+						closeOnBgClick: false
+					});
+				});
+				</script>
+
+
+			</div>
+		</article>
+	</main>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./footer.html')
+
+</body>
+</html>
