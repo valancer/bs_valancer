@@ -35,12 +35,30 @@ body.asset {
 			}
 		}
 
+		.running-small { display: inline-block; box-sizing: border-box; height: 20px; min-width: 30px; font-size: 0.750rem; font-weight: 400; color: #000; text-align: center; line-height: 20px; border-radius: 20px; background-color: #27B6ED; }
+		.stopped-small { display: inline-block; box-sizing: border-box; height: 20px; min-width: 30px; font-size: 0.750rem; font-weight: 400; color: #000; text-align: center; line-height: 20px; border-radius: 20px; background-color: #D8D8D8; }
 
 		@import "layout_dashboard";
 		.asset-usage {
 			.total { padding-bottom: 14px; height: 54px; font-family: $font-special-stack; font-size: 1.063rem; font-weight: 700; color: #000; vertical-align: bottom; line-height: 54px; 
-				em { display: inline-block; margin-left: 10px; font-size: 2.500rem; font-weight: 400; line-height: 54px; }
-				.unit { font-family: $font-base-stack; font-size: 1.125rem; font-weight: 400; line-height: 54px; }
+				.total-cnt { display: inline-block; width: 220px;
+					> em { display: inline-block; margin-left: 10px; font-size: 2.500rem; font-weight: 400; line-height: 54px; }
+					.unit { font-family: $font-base-stack; font-size: 1.125rem; font-weight: 400; line-height: 54px; }
+				}
+
+				.status { display: inline-block; margin-right: 20px; font-size: 1.000rem;
+					&:before { content: ''; display: inline-block; margin: -2px 4px 0 -3px; height: 15px; width: 15px; vertical-align: middle; border-radius: 15px; }
+
+					&.running {
+						&:before { background-color: #27B6ED; }
+					}
+					&.stopped {
+						&:before { background-color: #D8D8D8; }
+					}
+					.cnt { font-size: 0.875rem;
+						em { font-size: 1.000rem; }
+					}
+				}
 			}
 
 			.asset-usage-box { border-top: 2px solid #000; border-bottom: 2px solid #E4E4E4;
@@ -48,36 +66,50 @@ body.asset {
 				&.service-group { float: right; width: 350px; }
 				&.instance-type { float: right; margin-top: 40px; width: 350px; }
 
-				> .title { padding: 8px 0 0 0; height: 34px; font-family: $font-special-stack; font-size: 0.750rem; font-weight: 700; color: #000; }
+				> .title { padding: 8px 0 0 0; height: 34px; font-family: $font-special-stack; font-size: 0.750rem; font-weight: 700; color: #000;
+					em { color: #007AFF; }
+				}
 
 				// region graph
-				.list-top-region { overflow: hidden; height: 526px;
-					> li { position: relative; box-sizing: border-box; padding: 0 0 0 35px;
-						&:before { content: ''; display: block; position: absolute; top: 0; bottom: 0; left: 0; z-index: z("default"); width: 20px; animation-name: linear-down; animation-duration: 0.3s; animation-fill-mode: both; animation-timing-function: linear; }
-						&:after { content: ''; display: block; position: absolute; top: 0; right: 0; left: 0; height: 1px; background-color: #D8D8D8; }
-						&:nth-child(1):before { z-index: z("tooltip") - 10; background-color: #0DACEA; animation-delay: 0s; }
-						&:nth-child(2):before { z-index: z("tooltip") - 9; background-color: #F7A70C; animation-delay: 0.3s; }
-						&:nth-child(3):before { z-index: z("tooltip") - 8; background-color: #DC6737; animation-delay: 0.6s; }
-						&:nth-child(4):before { z-index: z("tooltip") - 7; background-color: #6651B3; animation-delay: 0.9s; }
-						&:nth-child(5):before { z-index: z("tooltip") - 6; background-color: #9E945B; animation-delay: 1.2s; }
-						&:nth-child(6):before { z-index: z("tooltip") - 5; background-color: #1C1C1C; animation-delay: 1.5s; }
-						&:nth-child(7):before { z-index: z("tooltip") - 4; background-color: #7B7B7B; animation-delay: 1.8s; }
-						&:nth-child(8):before { z-index: z("tooltip") - 3; background-color: #59C7C0; animation-delay: 2.1s; }
-						&:nth-child(9):before { z-index: z("tooltip") - 2; background-color: #F8DD29; animation-delay: 2.4s; }
-						&:nth-child(10):before { z-index: z("tooltip") - 1; background-color: #E44893; animation-delay: 2.7s; }
+				.list-top-region { display: block; box-sizing: border-box; overflow: auto; height: 526px; border-top: 2px solid #E4E4E4;
+					> li { position: relative; box-sizing: border-box; padding: 20px 0 20px 5px; border-bottom: 1px solid #D8D8D8;
+						&:last-child { border-bottom: 0; }
 
-						.region-name { display: block; padding-top: 8px; font-size: 0.750rem; font-weight: 400; color: #000; line-height: 17px; }
-						.region-count { display: block; font-size: 0.875rem; font-weight: 500; color: #000; line-height: 17px; }
+						&:nth-child(1),
+						&:nth-child(2),
+						&:nth-child(3) {
+							.region-count {
+								em { font-size: 1.875rem; }
+							}
+						}
+
+						.region-name { display: block; font-size: 0.750rem; font-weight: 400; color: #000; line-height: 17px; }
+						.region-count { display: block; font-size: 1.125rem; font-weight: 400; color: #000; line-height: 17px;
+							em { font-family: $font-special-stack; font-size: 1.250rem; font-weight: 400; }
+						}
+						
+						.seperate-cnt { display: flex; flex-direction: column; align-content: center; justify-content: center; position: absolute; top: 0; right: 16px; bottom: 0; height: 100%; width: 30px; vertical-align: middle;
+							span { margin: 3px 0 2px 0; }
+						}
 					}
 				}
 			}
 		}
 
-		.list-asset-counts { overflow: auto; box-sizing: border-box; padding: 6px 35px 0 16px; height: 218px; border-top: 2px solid #E4E4E4; background-color: #F8F8F8;
+		.list-asset-counts { overflow: auto; box-sizing: border-box; padding: 10px 16px 0 3px; height: 220px; border-top: 2px solid #E4E4E4; background-color: #F8F8F8;
 			&:after { content: ''; clear: both; }
 
-			.key { display: block; float: left; width: 70%; font-size: 0.750rem; font-weight: 400; color: #000; line-height: 34px; }
-			.value { display: block; float: right; width: 30%; font-size: 0.875rem; font-weight: 500; color: #000; text-align: right; line-height: 34px; }
+			table { width: 100%; font-size: 0.875rem; font-weight: 500; color: #000; 
+				tbody {
+					th { padding: 7px 0; font-weight: 500; }
+					td { padding: 7px 0; }
+				}
+				.rank { display: inline-block; height: 21px; width: 21px; font-family: $font-special-stack; font-size: 0.688rem; font-weight: 700; color: #F4F4F4; text-align: center; line-height: 21px; border-radius: 6px; background-color: #B3B3B3;
+					&.high { background-color: #7C7C7C; }
+				}
+				.c { text-align: center; }
+				.r { padding-right: 8px; text-align: right; }
+			}
 		}
 
 		.asset-performance-box { position: relative; border-bottom: 2px solid #E4E4E4; 

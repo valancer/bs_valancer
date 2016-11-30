@@ -39,90 +39,203 @@
 							<div class="content left">
 								
 								<div class="asset-usage">
-									<p class="total">SERVER <em>400</em> <span class="unit">개</span></p>
+									<div class="total">
+										<div class="total-cnt">
+											SERVER <em>400</em> <span class="unit">개</span>
+										</div>
+
+										<strong class="status running">RUNNING <span class="cnt">(<em>260</em>개)</span></strong>
+										<strong class="status stopped">STOPPED <span class="cnt">(<em>40</em>개)</span></strong>
+									</div>
 
 									<!-- region -->
 									<div class="asset-usage-box region">
-										<h3 class="title">REGION</h3>
+										<h3 class="title">BY REGION <em>(10)</em></h3>
 
 										<ol class="list-top-region">
-											<li style="height: 37.5%;">
+											<li>
 												<span class="region-name">ap-northeast-2</span>
-												<strong class="region-count">120개</strong>
+												<strong class="region-count"><em>120</em>개</strong>
+
+												<p class="seperate-cnt">
+													<span class="running-small">150</span>
+													<span class="stopped-small">50</span>
+												</p>
 											</li>
-											<li style="height: 25%;">
+											<li>
 												<span class="region-name">us-east-1</span>
-												<strong class="region-count">80개</strong>
+												<strong class="region-count"><em>80</em>개</strong>
+
+												<p class="seperate-cnt">
+													<span class="running-small">150</span>
+													<span class="stopped-small">50</span>
+												</p>
 											</li>
-											<li style="height: 17.5%;">
+											<li>
 												<span class="region-name">us-west-2</span>
-												<strong class="region-count">60개</strong>
+												<strong class="region-count"><em>60</em>개</strong>
+
+												<p class="seperate-cnt">
+													<span class="running-small">10</span>
+												</p>
 											</li>
-											<li style="height: 10%;">
+											<li>
 												<span class="region-name">ap-northeast-1</span>
-												<strong class="region-count">40개</strong>
+												<strong class="region-count"><em>40</em>개</strong>
+
+												<p class="seperate-cnt">
+													<span class="running-small">10</span>
+												</p>
 											</li>
-											<li style="height: 10%;">
+											<li>
 												<span class="region-name">ap-northeast-3</span>
-												<strong class="region-count">20개</strong>
+												<strong class="region-count"><em>20</em>개</strong>
+
+												<p class="seperate-cnt">
+													<span class="running-small">10</span>
+												</p>
+											</li>
+											<li>
+												<span class="region-name">ap-northeast-1</span>
+												<strong class="region-count"><em>40</em>개</strong>
+
+												<p class="seperate-cnt">
+													<span class="running-small">10</span>
+												</p>
+											</li>
+											<li>
+												<span class="region-name">ap-northeast-3</span>
+												<strong class="region-count"><em>20</em>개</strong>
+
+												<p class="seperate-cnt">
+													<span class="running-small">10</span>
+												</p>
 											</li>
 										</ol>
 									</div>
 
 									<!-- service group -->
 									<div class="asset-usage-box service-group">
-										<h3 class="title">SERVICE GROUP</h3>
+										<h3 class="title">BY SERVICE GROUP <em>(8)</em></h3>
 
-										<dl class="list-asset-counts">
-											<dt class="key">BESPINAM</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">BESPINMD</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">BESPINMT</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">BESPINTS</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">Group1</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">Group2</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">Group3</dt>
-											<dd class="value">80개</dd>
-										</dl>
+										<div class="list-asset-counts">
+											<table>
+												<caption>status</caption>
+												<colgroup>
+													<col style="width: 47px;">
+													<col>
+													<col>
+													<col style="width: 35px;">
+													<col style="width: 35px;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<td class="c"><span class="rank high">1</span></td>
+														<th>BESPINAM</th>
+														<td class="r">80개</td>
+														<td class="c"><span class="running-small">30</span></td>
+														<td class="c"><span class="stopped-small">50</span></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank high">2</span></td>
+														<th>BESPINAM</th>
+														<td class="r">40개</td>
+														<td class="c"><span class="running-small">35</span></td>
+														<td class="c"><span class="stopped-small">5</span></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank high">3</span></td>
+														<th>BESPINAM</th>
+														<td class="r">20개</td>
+														<td class="c"><span class="running-small">35</span></td>
+														<td class="c"><span class="stopped-small">5</span></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank">4</span></td>
+														<th>BESPINAM</th>
+														<td class="r">10개</td>
+														<td class="c"><span class="running-small">10</span></td>
+														<td class="c"></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank">5</span></td>
+														<th>BESPINAM</th>
+														<td class="r">8개</td>
+														<td class="c"></td>
+														<td class="c"><span class="stopped-small">8</span></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank">6</span></td>
+														<th>BESPINAM</th>
+														<td class="r">8개</td>
+														<td class="c"></td>
+														<td class="c"><span class="stopped-small">8</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
 
 									<!-- instance type -->
 									<div class="asset-usage-box instance-type">
-										<h3 class="title">INSTANCE TYPE</h3>
+										<h3 class="title">BY INSTANCE TYPE <em>(10)</em></h3>
 
-										<dl class="list-asset-counts">
-											<dt class="key">r3.large</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">m4.large</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">t2.medium</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">c4.xlarge</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">t2.micro</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">m1.medium</dt>
-											<dd class="value">80개</dd>
-
-											<dt class="key">m2.medium</dt>
-											<dd class="value">80개</dd>
-										</dl>
+										<div class="list-asset-counts">
+											<table>
+												<caption>status</caption>
+												<colgroup>
+													<col style="width: 47px;">
+													<col>
+													<col>
+													<col style="width: 35px;">
+													<col style="width: 35px;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<td class="c"><span class="rank high">1</span></td>
+														<th>r3.large</th>
+														<td class="r">80개</td>
+														<td class="c"><span class="running-small">30</span></td>
+														<td class="c"></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank high">2</span></td>
+														<th>r3.large</th>
+														<td class="r">40개</td>
+														<td class="c"><span class="running-small">35</span></td>
+														<td class="c"></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank high">3</span></td>
+														<th>r3.large</th>
+														<td class="r">20개</td>
+														<td class="c"><span class="running-small">35</span></td>
+														<td class="c"></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank">4</span></td>
+														<th>r3.large</th>
+														<td class="r">10개</td>
+														<td class="c"><span class="running-small">10</span></td>
+														<td class="c"></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank">5</span></td>
+														<th>r3.large</th>
+														<td class="r">8개</td>
+														<td class="c"></td>
+														<td class="c"></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank">6</span></td>
+														<th>r3.large</th>
+														<td class="r">8개</td>
+														<td class="c"></td>
+														<td class="c"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -130,51 +243,104 @@
 							<!-- DATABASE -->
 							<div class="content right">
 								<div class="asset-usage">
-									<p class="total">DATABASE <em>20</em> <span class="unit">개</span></p>
+									<div class="total">
+										<div class="total-cnt">
+											DATABASE <em>20</em> <span class="unit">개</span>
+										</div>
+
+										<strong class="status running">RUNNING <span class="cnt">(<em>20</em>개)</span></strong>
+									</div>
 
 									<!-- region -->
 									<div class="asset-usage-box region">
-										<h3 class="title">REGION</h3>
+										<h3 class="title">BY REGION <em>(10)</em></h3>
 
 										<ol class="list-top-region">
-											<li style="height: 60%;">
+											<li>
 												<span class="region-name">ap-northeast-2</span>
-												<strong class="region-count">12개</strong>
+												<strong class="region-count"><em>20</em>개</strong>
+
+												<p class="seperate-cnt">
+													<span class="running-small">20</span>
+												</p>
 											</li>
-											<li style="height: 40%;">
-												<span class="region-name">us-east-1</span>
-												<strong class="region-count">8개</strong>
+											<li>
+												<span class="region-name">ap-northeast-2</span>
+												<strong class="region-count"><em>5</em>개</strong>
+
+												<p class="seperate-cnt">
+													<span class="running-small">5</span>
+												</p>
 											</li>
 										</ol>
 									</div>
 
 									<!-- service group -->
 									<div class="asset-usage-box service-group">
-										<h3 class="title">SERVICE GROUP</h3>
+										<h3 class="title">BY SERVICE GROUP <em>(10)</em></h3>
 
-										<dl class="list-asset-counts">
-											<dt class="key">BESPINAM</dt>
-											<dd class="value">10개</dd>
-
-											<dt class="key">BESPINTS</dt>
-											<dd class="value">5개</dd>
-
-											<dt class="key">BESPINMT</dt>
-											<dd class="value">3개</dd>
-
-											<dt class="key">Undefined Group</dt>
-											<dd class="value">2개</dd>
-										</dl>
+										<div class="list-asset-counts">
+											<table>
+												<caption>status</caption>
+												<colgroup>
+													<col style="width: 47px;">
+													<col>
+													<col>
+													<col style="width: 35px;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<td class="c"><span class="rank high">1</span></td>
+														<th>BESPINAM</th>
+														<td class="r">10개</td>
+														<td class="c"><span class="running-small">30</span></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank high">2</span></td>
+														<th>BESPINAM</th>
+														<td class="r">5개</td>
+														<td class="c"><span class="running-small">5</span></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank high">3</span></td>
+														<th>BESPINAM</th>
+														<td class="r">3개</td>
+														<td class="c"><span class="running-small">3</span></td>
+													</tr>
+													<tr>
+														<td class="c"><span class="rank">4</span></td>
+														<th>BESPINAM</th>
+														<td class="r">2개</td>
+														<td class="c"><span class="running-small">2</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
 
 									<!-- instance type -->
 									<div class="asset-usage-box instance-type">
-										<h3 class="title">INSTANCE TYPE</h3>
+										<h3 class="title">BY INSTANCE TYPE <em>(10)</em></h3>
 
-										<dl class="list-asset-counts">
-											<dt class="key">mariadb</dt>
-											<dd class="value">20개</dd>
-										</dl>
+										<div class="list-asset-counts">
+											<table>
+												<caption>status</caption>
+												<colgroup>
+													<col style="width: 47px;">
+													<col>
+													<col>
+													<col style="width: 35px;">
+												</colgroup>
+												<tbody>
+													<tr>
+														<td class="c"><span class="rank high">1</span></td>
+														<th>BESPINAM</th>
+														<td class="r">20개</td>
+														<td class="c"><span class="running-small">20</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -207,28 +373,49 @@
 										</strong>
 									</div>
 
-									<dl class="list-asset-counts">
-										<dt class="key">BESPINAM</dt>
-										<dd class="value">80개</dd>
+									<div class="list-asset-counts">
+										<table>
+											<caption>status</caption>
+											<colgroup>
+												<col style="width: 47px;">
+												<col>
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<td class="c"><span class="rank high">1</span></td>
+													<th>BESPINAM</th>
+													<td class="r">30%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank high">2</span></td>
+													<th>BESPINAM</th>
+													<td class="r">20%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank high">3</span></td>
+													<th>BESPINAM</th>
+													<td class="r">10%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank">4</span></td>
+													<th>BESPINAM</th>
+													<td class="r">8%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank">5</span></td>
+													<th>BESPINAM</th>
+													<td class="r">5%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank">6</span></td>
+													<th>BESPINAM</th>
+													<td class="r">3%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 
-										<dt class="key">BESPINMD</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">BESPINMT</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">BESPINTS</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">Group1</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">Group2</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">Group3</dt>
-										<dd class="value">80개</dd>
-									</dl>
 								</div>
 
 							</div>
@@ -246,28 +433,49 @@
 										</strong>
 									</div>
 
-									<dl class="list-asset-counts">
-										<dt class="key">BESPINAM</dt>
-										<dd class="value">80개</dd>
+									<div class="list-asset-counts">
+										<table>
+											<caption>status</caption>
+											<colgroup>
+												<col style="width: 47px;">
+												<col>
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<td class="c"><span class="rank high">1</span></td>
+													<th>BESPINAM</th>
+													<td class="r">30%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank high">2</span></td>
+													<th>BESPINAM</th>
+													<td class="r">20%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank high">3</span></td>
+													<th>BESPINAM</th>
+													<td class="r">10%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank">4</span></td>
+													<th>BESPINAM</th>
+													<td class="r">8%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank">5</span></td>
+													<th>BESPINAM</th>
+													<td class="r">5%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank">6</span></td>
+													<th>BESPINAM</th>
+													<td class="r">3%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 
-										<dt class="key">BESPINMD</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">BESPINMT</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">BESPINTS</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">Group1</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">Group2</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">Group3</dt>
-										<dd class="value">80개</dd>
-									</dl>
 								</div>
 
 							</div>
@@ -285,28 +493,49 @@
 										</strong>
 									</div>
 
-									<dl class="list-asset-counts">
-										<dt class="key">BESPINAM</dt>
-										<dd class="value">80개</dd>
+									<div class="list-asset-counts">
+										<table>
+											<caption>status</caption>
+											<colgroup>
+												<col style="width: 47px;">
+												<col>
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<td class="c"><span class="rank high">1</span></td>
+													<th>BESPINAM</th>
+													<td class="r">30%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank high">2</span></td>
+													<th>BESPINAM</th>
+													<td class="r">20%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank high">3</span></td>
+													<th>BESPINAM</th>
+													<td class="r">10%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank">4</span></td>
+													<th>BESPINAM</th>
+													<td class="r">8%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank">5</span></td>
+													<th>BESPINAM</th>
+													<td class="r">5%</td>
+												</tr>
+												<tr>
+													<td class="c"><span class="rank">6</span></td>
+													<th>BESPINAM</th>
+													<td class="r">3%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 
-										<dt class="key">BESPINMD</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">BESPINMT</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">BESPINTS</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">Group1</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">Group2</dt>
-										<dd class="value">80개</dd>
-
-										<dt class="key">Group3</dt>
-										<dd class="value">80개</dd>
-									</dl>
 								</div>
 
 							</div>
