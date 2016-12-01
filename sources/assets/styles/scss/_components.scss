@@ -44,7 +44,7 @@
 		}
 	}
 
-	.modal-popup-content { float: left; overflow: auto; width: 551px;
+	.modal-popup-content { float: left; overflow: hidden; width: 551px;
 		input[type=checkbox].agreement { position: absolute; left: -9999px;
 			+ label { display: block; cursor: pointer; position: relative; padding-top: 3px; height: 23px;
 				&:before { content: ''; display: block; position: absolute; top: 0px; right: 0; @include retina-sprite($sc-radio-01-group); }

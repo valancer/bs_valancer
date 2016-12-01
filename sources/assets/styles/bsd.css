@@ -2993,7 +2993,7 @@ body.login {
             background-color: #000; }
   .modal-popup-v2 .modal-popup-content {
     float: left;
-    overflow: auto;
+    overflow: hidden;
     width: 551px; }
     .modal-popup-v2 .modal-popup-content input[type=checkbox].agreement {
       position: absolute;
