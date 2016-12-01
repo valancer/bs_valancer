@@ -2921,7 +2921,6 @@ body.login {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 50px;
-  max-height: 800px;
   width: 950px;
   border: 2px solid #000;
   background-color: #fff; }
@@ -2995,8 +2994,6 @@ body.login {
   .modal-popup-v2 .modal-popup-content {
     float: left;
     overflow: auto;
-    overflow-x: hidden;
-    max-height: 601px;
     width: 551px; }
     .modal-popup-v2 .modal-popup-content input[type=checkbox].agreement {
       position: absolute;
@@ -6358,6 +6355,7 @@ body.asset.dashboard {
     box-sizing: border-box;
     height: 20px;
     min-width: 30px;
+    font-family: "Montserrat", "Apple SD Gothic", sans-serif;
     font-size: 0.750rem;
     font-weight: 400;
     color: #000;
@@ -6370,6 +6368,7 @@ body.asset.dashboard {
     box-sizing: border-box;
     height: 20px;
     min-width: 30px;
+    font-family: "Montserrat", "Apple SD Gothic", sans-serif;
     font-size: 0.750rem;
     font-weight: 400;
     color: #000;
@@ -6603,12 +6602,13 @@ body.asset.dashboard {
       body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li {
         position: relative;
         box-sizing: border-box;
-        padding: 20px 0 20px 5px;
+        padding: 8px 0 8px 5px;
         border-bottom: 1px solid #D8D8D8; }
-        body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li:last-child {
-          border-bottom: 0; }
-        body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li:nth-child(1) .region-count em, body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li:nth-child(2) .region-count em, body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li:nth-child(3) .region-count em {
-          font-size: 1.875rem; }
+        body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li:nth-child(1), body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li:nth-child(2), body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li:nth-child(3) {
+          padding-top: 17px;
+          padding-bottom: 17px; }
+          body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li:nth-child(1) .region-count em, body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li:nth-child(2) .region-count em, body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li:nth-child(3) .region-count em {
+            font-size: 1.875rem; }
         body.asset.dashboard .asset-usage .asset-usage-box .list-top-region > li .region-name {
           display: block;
           font-size: 0.750rem;
@@ -6684,16 +6684,9 @@ body.asset.dashboard {
         text-align: right; }
   body.asset.dashboard .asset-performance-box {
     position: relative;
+    padding-top: 9px;
+    border-top: 2px solid #000;
     border-bottom: 2px solid #E4E4E4; }
-    body.asset.dashboard .asset-performance-box:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 7px;
-      right: 0;
-      left: 0;
-      height: 2px;
-      background-color: #000; }
     body.asset.dashboard .asset-performance-box > .title {
       float: left;
       position: relative;

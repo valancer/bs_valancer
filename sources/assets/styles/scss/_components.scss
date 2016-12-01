@@ -18,7 +18,7 @@
 }
 
 
-.modal-popup-v2 { display: block; position: relative; overflow: hidden; box-sizing: border-box; margin: 0 auto; padding: 50px; max-height: 800px; width: 950px; border: 2px solid #000; background-color: #fff;
+.modal-popup-v2 { display: block; position: relative; overflow: hidden; box-sizing: border-box; margin: 0 auto; padding: 50px; width: 950px; border: 2px solid #000; background-color: #fff;
 	.btn-close { position: absolute; top: 50px; right: 50px; }
 
 	.modal-popup-title { display: block; margin-bottom: 50px; font-size: 1.250rem; font-weight: 700; color: #000;
@@ -44,7 +44,7 @@
 		}
 	}
 
-	.modal-popup-content { float: left; overflow: auto; overflow-x: hidden; max-height: 601px; width: 551px;
+	.modal-popup-content { float: left; overflow: auto; width: 551px;
 		input[type=checkbox].agreement { position: absolute; left: -9999px;
 			+ label { display: block; cursor: pointer; position: relative; padding-top: 3px; height: 23px;
 				&:before { content: ''; display: block; position: absolute; top: 0px; right: 0; @include retina-sprite($sc-radio-01-group); }

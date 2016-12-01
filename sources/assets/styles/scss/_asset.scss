@@ -35,8 +35,8 @@ body.asset {
 			}
 		}
 
-		.running-small { display: inline-block; box-sizing: border-box; height: 20px; min-width: 30px; font-size: 0.750rem; font-weight: 400; color: #000; text-align: center; line-height: 20px; border-radius: 20px; background-color: #27B6ED; }
-		.stopped-small { display: inline-block; box-sizing: border-box; height: 20px; min-width: 30px; font-size: 0.750rem; font-weight: 400; color: #000; text-align: center; line-height: 20px; border-radius: 20px; background-color: #D8D8D8; }
+		.running-small { display: inline-block; box-sizing: border-box; height: 20px; min-width: 30px; font-family: $font-special-stack; font-size: 0.750rem; font-weight: 400; color: #000; text-align: center; line-height: 20px; border-radius: 20px; background-color: #27B6ED; }
+		.stopped-small { display: inline-block; box-sizing: border-box; height: 20px; min-width: 30px; font-family: $font-special-stack; font-size: 0.750rem; font-weight: 400; color: #000; text-align: center; line-height: 20px; border-radius: 20px; background-color: #D8D8D8; }
 
 		@import "layout_dashboard";
 		.asset-usage {
@@ -72,12 +72,11 @@ body.asset {
 
 				// region graph
 				.list-top-region { display: block; box-sizing: border-box; overflow: auto; height: 526px; border-top: 2px solid #E4E4E4;
-					> li { position: relative; box-sizing: border-box; padding: 20px 0 20px 5px; border-bottom: 1px solid #D8D8D8;
-						&:last-child { border-bottom: 0; }
+					> li { position: relative; box-sizing: border-box; padding: 8px 0 8px 5px; border-bottom: 1px solid #D8D8D8;
 
 						&:nth-child(1),
 						&:nth-child(2),
-						&:nth-child(3) {
+						&:nth-child(3) { padding-top: 17px; padding-bottom: 17px;
 							.region-count {
 								em { font-size: 1.875rem; }
 							}
@@ -112,9 +111,7 @@ body.asset {
 			}
 		}
 
-		.asset-performance-box { position: relative; border-bottom: 2px solid #E4E4E4; 
-			&:before { content: ''; display: block; position: absolute; top: 7px; right: 0; left: 0; height: 2px; background-color: #000; }
-			
+		.asset-performance-box { position: relative; padding-top: 9px; border-top: 2px solid #000; border-bottom: 2px solid #E4E4E4; 
 			> .title { float: left; position: relative; z-index: z("default"); margin-bottom: 33px; padding-right: 15px; font-family: $font-special-stack; font-size: 0.813rem; font-weight: 700; color: #000; background-color: #fff;
 				@include icon(info, after);
 				&:after { display: inline-block; margin: -2px 0 0 5px; font-size: 15px; color: #959595; vertical-align: middle; }
