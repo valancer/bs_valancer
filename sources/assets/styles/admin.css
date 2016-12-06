@@ -2947,8 +2947,8 @@ body.login {
   .tbl-h tbody th {
     padding-left: 25px;
     width: 250px;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 0.813em;
+    font-weight: 500;
     color: #898989;
     text-align: left;
     border-bottom: 1px solid #EBEBEB;
@@ -2956,7 +2956,7 @@ body.login {
   .tbl-h tbody td {
     padding: 10px 15px;
     height: 40px;
-    font-size: 14px;
+    font-size: 0.813em;
     font-weight: 400;
     color: #000;
     border-bottom: 1px solid #EBEBEB; }
@@ -3220,6 +3220,8 @@ body.login {
     .forms .invalid textarea {
       border: 2px solid #FF2D2D; }
     .forms .invalid select {
+      position: relative;
+      z-index: 1;
       border: 2px solid #FF2D2D; }
   .forms .invalid-message {
     font-size: 14px;
@@ -3398,6 +3400,8 @@ body.login {
     text-align: right; }
     .forms .btn-fieldset button {
       margin-left: 17px; }
+    .forms .btn-fieldset .invalid-message {
+      float: left; }
 
 /* modal popup */
 .modal-popup {

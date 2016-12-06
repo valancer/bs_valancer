@@ -57,8 +57,8 @@
 /* form - table container */
 .tbl-h { margin-top: 10px; width: 100%; border-top: 2px solid #DFDFDF; border-bottom: 2px solid #DFDFDF;
 	tbody {
-		th { padding-left: 25px; width: 250px; font-size: 14px; font-weight: 700; color: #898989; text-align: left; border-bottom: 1px solid #EBEBEB; background-color: #F6F6F6; }
-		td { padding: 10px 15px; height: 40px; font-size: 14px; font-weight: 400; color: #000; border-bottom: 1px solid #EBEBEB; }
+		th { padding-left: 25px; width: 250px; font-size: 0.813em; font-weight: 500; color: #898989; text-align: left; border-bottom: 1px solid #EBEBEB; background-color: #F6F6F6; }
+		td { padding: 10px 15px; height: 40px; font-size: 0.813em; font-weight: 400; color: #000; border-bottom: 1px solid #EBEBEB; }
 	}
 }
 
@@ -140,7 +140,7 @@
 		input[type=number],
 		input[type=password],
 		textarea { border: 2px solid #FF2D2D; }
-		select { border: 2px solid #FF2D2D; }
+		select { position: relative; z-index: z("default"); border: 2px solid #FF2D2D; }
 	}
 	.invalid-message { font-size: 14px; color: #FF4E21; }
 	.phone {
@@ -211,6 +211,7 @@
 
 	.btn-fieldset { margin-top: 40px; text-align: right;
 		button { margin-left: 17px; }
+		.invalid-message { float: left;  }
 	}
 }
 
